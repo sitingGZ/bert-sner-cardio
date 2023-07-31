@@ -1,0 +1,909 @@
+import copy
+import dash
+from dash import dash_table
+
+from dash import no_update
+from dash.exceptions import PreventUpdate
+import dash_bootstrap_components as dbc
+import dash_mantine_components as dmc
+from collections import OrderedDict
+
+from dash import dcc, html, callback, clientside_callback, ctx
+
+from dash import MATCH, ALL
+from dash.dependencies import Output, Input, State
+from dash_extensions import Purify
+import ast
+
+from flask import Flask
+import pathlib
+import pandas as pd
+import json 
+import os
+import logging
+import matplotlib.pyplot as plt
+import itertools
+
+from dashpages.utils import make_switch, get_spans_all_sentences
+from dashpages.utils import get_ex4cds_text_id, get_ex4cds_prediction, get_ex4cds_text_lines, map_token_spans, get_spans_all_sentences_ex4cds
+from dashpages.format_markup import dash_html_prediction_score
+from dashpages.span_markup import format_span_line_markup
+
+from dashpages.format_markup import Palette, colors_ent, color_fact, color_temporal,color_risk_att
+
+from copy import deepcopy
+import torch
+from transformers import  AutoTokenizer, AutoModelForMaskedLM
+
+
+ANNOTATEPATH = {'span': 'Kardiologie', 'href':'/annotate_cardio_success'}
+SIGGINPATH = {'span': 'Kardiologie', 'href':'/annotate_cardio_login'}
+# Preparing the model to interact with the user interface
+BASE_PATH = pathlib.Path(__file__).parent.resolve()
+#DATA_PATH = BASE_PATH.joinpath("cardiode").resolve()
+RESULT_PATH_cardio = BASE_PATH.joinpath("cardiode/finetuned_ex4cds/shot_500").resolve()
+classification_csv = "classification.csv"
+CLASSIFICATION_DB = pd.read_csv(os.path.join(RESULT_PATH_cardio, classification_csv))
+USER_DB = pd.read_csv(os.path.join(RESULT_PATH_cardio, 'users.csv'))
+all_sections = list(set(CLASSIFICATION_DB['Section']))
+
+annotators = ['BERT-SNER', 'User1']
+
+
+TSV_PATH = BASE_PATH.joinpath('cardiode/tsv/CARDIODE400_main').resolve()
+dfki_colors = ["#2980b9", "#3498db"]
+
+THRESHOLDS = {'0.5':'threshold_05', '0.6':'threshold_06', '0.7':'threshold_07'}
+
+ANNOTATEPATH = {'span': 'Kardiologie', 'href':'/annotate_cardio'}
+
+multi_layer_suggested_terms = {'Physical Object': 
+                               {'T017': 'Anatomie',
+                                "T200": "Arzneimittel", 
+                                "T103": "Chemikalien",
+                             "T074": "Medizinisches Geraet"
+                               }, 
+                               " Conceptual Entity": {
+                                   'T201': "Klinisches Attribut",
+                                   'T081': "Quantitatives Konzept",
+                                   'T184': "Zeichen oder Symptom", 
+                                   'T034': "Labor- oder Testergebnis", 
+                                   'T079': "Zeitliches Konzept"},
+                               "Activity" : {
+                                  'T059': "Laborverfahren", 
+                                   'T060': "Diagnostisches Verfahren",  
+                                   'T061':"Therapeutisches oder praeventives Verfahren"}, 
+                               "Phenomenon or Process":{
+                                'T037': "Verletzung oder Vergiftung",
+                               'T039': "Physiologische Funktion", 
+                               'T046': "Pathologische Funktion", 
+                               'T047': "Krankheit", 
+                               'T048': "Psychische oder Verhaltensstoerung"},
+                               "Health State":{'T300': "Gesunder Zustand" ,  
+                                               "T301": "Verschlechter Zustand"},
+                               "Factuality": {'T400': 'kein oder negiert', 'T401' : 'gering',  'T402' : 'fraglich','T403': 'zukueftig', 'T404': 'unwahrscheinlich'},
+                               "Temporal": {'T500': 'aktuelles Ereignis', 'T501': 'Vergangenheit zum aktuellen Ereignis','T502': 'vergangenes Ereignis','T503': 'zukuenftiges Ereignis'}}
+
+FACTUALITY = {'T400': 'kein oder negiert', 'T401' : 'gering',  'T402' : 'fraglich','T403': 'zukueftig', 'T404': 'unwahrscheinlich'}
+
+TEMPORAL = {'T500': 'aktuelles Ereignis', 'T501': 'Vergangenheit zum aktuellen Ereignis','T502': 'vergangenes Ereignis','T503': 'zukuenftiges Ereignis'}
+
+RISK_FACTORS = {'increase':'Risiko erhöhen', 'decrease': 'Risiko verringern', 'not relevant': 'kein Risiko'}
+
+#SUGGESTED_TYPES_ENT = list(Ex4CDS_TYPES_ENTITY.values())
+#SUGGESTED_TYPES_ATT = list(Ex4CDS_TYPES_KONZEPT.values())
+SECTION_LIST = ['Anrede', 'AktuellDiagnosen', 'Diagnosen', 'AllergienUnverträglichkeitenRisiken', 'Anamnese', 'AufnahmeMedikation', 'KUBefunde', 'Labor', 'Befunde', 'EchoBefunde', 'Zusammenfassung', 'EntlassMedikation', 'Abschluss']
+SECTIONS_NEPH =  ['Rejection', 'Transplantatversagen', 'Infection']
+
+def get_tsv_lines(tsv_id):
+    if type(tsv_id) != 'str' or 'tsv' not in tsv_id:
+        tsv_id='{}.tsv'.format(tsv_id)
+    tsv_lines = [l.strip() for l in open(TSV_PATH.joinpath(tsv_id))]
+    return tsv_lines
+
+def retrieve_sentences(tsv_lines):
+    sentences_dict = {}
+    for l in tsv_lines:
+        if '\t' in l:
+            l_split = l.split('\t')
+            sent_idx = l_split[0].split('-')[0]
+            if sent_idx not in sentences_dict:
+                sentences_dict[sent_idx] = []
+            sentences_dict[sent_idx].append(l_split)
+    return sentences_dict
+
+def get_result_cardio_files(result_path):
+    prediction_file_paths = {f.split('_')[0]: f for f in os.listdir(result_path) if '_score' in f}
+    classification_file_paths = {f.split('_')[0]: f for f in os.listdir(result_path) if 'ner_' in f}
+    return prediction_file_paths, classification_file_paths
+
+def return_json_cardio_dict(tsv_id,result_path, prediction_file_paths, classification_file_paths):
+    if type(tsv_id) != 'str' or 'tsv' not in tsv_id:
+        tsv_id = '{}.tsv'.format(tsv_id)
+    prediction_dict = json.load(open(os.path.join(result_path, prediction_file_paths[tsv_id])))
+    classification_dict = json.load(open(os.path.join(result_path, classification_file_paths[tsv_id])))
+    return prediction_dict, classification_dict
+
+def get_scores_dict_by_sec(scores_dict, sec_tab):
+    scores_dict_sec = deepcopy(scores_dict[sec_tab])
+    #print(scores_dict_sec)
+    sentence_ids = scores_dict_sec['sentence_ids']
+    return scores_dict_sec, sentence_ids
+
+def get_sentence_scores_by_type_cardio(scores_dict_sec, sentence_ids, tsv_sentences, sem_types, ca = None):
+    """
+    :param sem_types: selected types in all category [type1, type2])
+    
+    """
+    #category, types = sem_types[0], sem_types[1]
+    scores_types = {}
+    
+    for ty in sem_types:
+        if ca is not None and ca in scores_dict_sec:
+            current_scores = scores_dict_sec[ca]
+            if ty in current_scores: 
+                    scores = current_scores[ty]
+                    ty_words = ty.split()
+                    scores_types[ty] = []
+                    for i, d in enumerate(sentence_ids):
+                        current_sent = tsv_sentences[d]
+                        words = [l[2] for l in current_sent]
+                
+                        ty_scores = [float(s) for s in scores[i][:len(ty_words)]]
+                        word_scores = [float(s) for s in scores[i][len(ty_words):]]
+                        #print(len(ty_scores), len(word_scores), len(words), len(scores[i]))
+                        scores_types[ty].append({'type_scores': (ty_words, ty_scores), 'word_scores': (words, word_scores)})
+        else:
+            for ca, current_scores in scores_dict_sec.items():
+                if type(current_scores) == dict:
+                    #print(current_scores)
+                    if ty in current_scores: 
+                        scores = current_scores[ty]
+                        ty_words = ty.split()
+                        scores_types[ty] = []
+                        for i, d in enumerate(sentence_ids):
+                            current_sent = tsv_sentences[d]
+                            words = [l[2] for l in current_sent]
+                
+                            ty_scores = [float(s) for s in scores[i][:len(ty_words)]]
+                            word_scores = [float(s) for s in scores[i][len(ty_words):]]
+                        #print(len(ty_scores), len(word_scores), len(words), len(scores[i]))
+                        scores_types[ty].append({'type_scores': (ty_words, ty_scores), 'word_scores': (words, word_scores)})
+    return scores_types
+
+def make_section_options(sections_useful, all_sections = None):
+    # CLINIC_DOMAIN = {'Cardiology':'Kardilogie', 'Nephrology':'Nephrologie'}
+    
+        #assert sections_useful is not None, "Sections for domain {} is required.".format(sections_useful)
+        #return list(prediction_json_dict.keys())
+        if type(sections_useful) != list:
+            sections_useful = list(sections_useful)
+        options = []
+        if all_sections is not None:
+            for s in all_sections:
+                if s not in sections_useful:
+                    options.append({'label': s, 'value': s, 'disabled': True})
+                else:
+                    options.append({'label': s, 'value' :s})
+        else:
+            options = [{'label':s, 'value':s} for s in sections_useful]
+        return options, sections_useful
+    
+def get_prediction_section(prediction_scores, section):
+    scores_dict_sec = prediction_scores[section]
+    sentence_ids = [i for i in scores_dict_sec['sentence_ids']]
+    return sentence_ids, scores_dict_sec
+
+    
+def get_section_sentences(sec_sentences_ids, tsv_sentences_dict):
+    #ids = [d for d in sec_sentences_ids]
+    sentences = []
+    num_of_sentences = len(sec_sentences_ids)
+    num_of_words = 0
+    for d in sec_sentences_ids:
+        sentences.append(' '.join([l[2] for l in tsv_sentences_dict[d]]))
+        num_of_words += len(tsv_sentences_dict[d])
+    return sentences, num_of_sentences, num_of_words
+
+def get_classification_annotator(classification_sec_db, annotator="", group=""):
+    """
+    """
+    #semantic_levels = {k : i for i, k in enumerate(list(classification_dict_sec.keys()))}
+    if annotator not in classification_sec_db['Annotator']:
+        annotator = "BERT-SNER"
+    
+    classification_group = classification_sec_db[classification_sec_db['Group'] == group]
+    classification_annotator = classification_group[classification_group['Annotator']==annotator]
+    return classification_annotator
+
+
+def get_sentence_classification(classification_annotator):
+    """
+    """
+    sentences_classification = {}
+    for idx in set(classification_annotator['Sentence_idx']):
+        sent_classification_db = classification_annotator[classification_annotator['Sentence_idx'] == idx]
+        sent_classification = sent_classification_db.iloc[0]['Classification']
+        if type(sent_classification) != list:
+                sent_classification = ast.literal_eval(sent_classification)
+        sentences_classification[int(idx)] = sent_classification
+    return sentences_classification
+
+def get_sentences_spans_ner(sentences_classification_dict, spans_all_sentences, selected_sem_types):
+           
+        for idx, sent_classification in sentences_classification_dict.items():
+            sent_spans = spans_all_sentences[int(idx)]['text_spans']
+            current_ents = {}
+  
+            for t, w in enumerate(sent_classification):
+                #print(w)
+                if w[2] in selected_sem_types:
+                    if w[2] not in current_ents:
+                        current_ents[w[2]] = []
+                    current_ents[w[2]].append(t)
+            
+            #print(current_ents) 
+            if len(current_ents) > 0:
+                for ent, ts in current_ents.items():
+                    start = sent_spans[ts[0]][0]
+                    end = sent_spans[ts[0]][1]
+                    #print(ent, ts, start, end)
+                    if len(ts) > 1:
+                        for d in range(1, len(ts)):
+                            if ts[d] - ts[d-1] == 1:
+                                #print(d)
+                                end = sent_spans[ts[d]][1]
+                                if d == len(ts)-1:
+                                    #print('d == len(ts)-1', ent, start, end )
+                                    #if end < start:
+                                        #print('in the 1, len(ts) range ' ,s, ent, ts)
+                                    spans_all_sentences[int(idx)]['ner_spans'].append((start, end, ent))
+                                    #print(spans_all_sentences[s])
+                            else:
+                                #end = sent_spans[ts[d-1]][1]
+                                #print('new ent', ent, start, end )
+                                #if end < start:
+                                        #print('out of the 1, len(ts) range ' ,s, ent, ts)
+                                spans_all_sentences[int(idx)]['ner_spans'].append((start, end, ent))
+                                start = sent_spans[ts[d]][0]
+                                end = sent_spans[ts[d]][1]
+                    else:
+                       
+                        spans_all_sentences[int(idx)]['ner_spans'].append((start, end, ent))
+        return None
+
+
+def make_types_checkbox(group_colors, multi_layer_suggested_terms):
+    semantic_types_checkbox_groups = {}
+    for group, types in multi_layer_suggested_terms.items():
+        semantic_types_checkbox_groups[group] =  dbc.Checklist(
+            options=[{'label': t + ': ' + name, 'value':t} for t, name in types.items()
+            ],
+            label_style = {'color': group_colors.get(group).line.value} ,   
+            value=list(types.keys()),
+            inline=True,
+            id="annotate-{}-group".format('-'.join(group.lower().split())),
+            )
+    return semantic_types_checkbox_groups
+
+def make_select_types_to_explain(sec_scores_dict):
+    categories = [list(value.keys()) for ca, value in sec_scores_dict.items() if type(value) == dict]
+    categories_flat = list(itertools.chain.from_iterable(categories))
+    return dcc.Dropdown(id='annotate-types-options', options = [{'label':ty, 'value':ty} for ty in categories_flat], multi=True)
+
+def make_annotation_checklist(classification_dict, section, sem_group, threshold='0.5'):
+    current_classification_dict = classification_dict[section][sem_group][threshold]
+    sentence_checklist = {}
+      
+#text_id_sections_df = pd.DataFrame([{'id':f.split('.')[0], 'section':f.split('.')[2] } for f in os.listdir(DATA_PATH) ])
+CLINIC_DOMAIN = {'Cardiology':'Kardiologie', 'Nephrology':'Nephrologie'}
+
+select_domain = html.Div([
+    html.H4('Domain'), 
+    dcc.Dropdown([d for d in CLINIC_DOMAIN.values()], id='annotate-select-domain', multi=False)
+    ], style= {'textAlign': 'left'})
+
+# Third column
+colors = {l: colors_ent[i] for i, l in enumerate(list(multi_layer_suggested_terms.keys()))}
+colors_fact = {l:color_fact[0] for i, l in enumerate(list(FACTUALITY.keys()))}
+colors_temp = {l:color_temporal[0] for i, l in enumerate(TEMPORAL.keys())}
+colors.update(colors_fact)
+colors.update(colors_temp)
+
+PALETTE_ent = Palette([], colors)
+colors_types = {}
+for i, l in enumerate(list(multi_layer_suggested_terms.keys())):
+    for ty in multi_layer_suggested_terms[l]:
+        colors_types[ty] = PALETTE_ent.get(l)
+
+PALETTE_types = Palette([], colors_types)
+PALETTE_fact = Palette(color_fact)
+PALETTE_temp = Palette(color_temporal)
+PALETTE_risk_att = Palette(color_risk_att)
+
+colors_suggested_ent = {e: PALETTE_ent.get(e).name for i, e in enumerate(list(multi_layer_suggested_terms.keys()))}
+#colors_suggested_att = {e: PALETTE_att.colors[0].name for i, e in enumerate(SUGGESTED_TYPES_ATT)}
+colors_suggested_fact = {e: PALETTE_fact.colors[0].name for i, e in enumerate(list(FACTUALITY.keys()))}
+colors_suggested_temp = {e: PALETTE_temp.colors[0].name for i, e in enumerate(list(TEMPORAL.keys()))}
+colors_suggested_risk = {e: PALETTE_risk_att.colors[i].name for  i, e in enumerate(list(RISK_FACTORS.keys()))}
+
+#default_types_ent = dmc.Stack(children= [dmc.Stack([dmc.Text(html.H5(layer))] + [make_switch(label, colors_suggested_ent[layer],term) for term, label in layer_suggested_terms.items()]) for layer, layer_suggested_terms in multi_layer_suggested_terms.items()],
+#            id="annotate-label-badge-group-ent", align='flex-start', justify = 'flex-start', spacing ='xs')
+default_types_ent = make_types_checkbox(group_colors=PALETTE_ent, multi_layer_suggested_terms=multi_layer_suggested_terms)
+
+default_types_fact = dbc.Row([dbc.Col(make_switch(label, colors_suggested_fact[t],t, value=False)) for t, label in FACTUALITY.items()],
+            id="annotate-label-badge-group-fact", )
+
+default_types_temporal = dbc.Row([dbc.Col(make_switch(label, colors_suggested_temp[t],t, value=False)) for t, label in TEMPORAL.items()],
+            id="annotate-label-badge-group-fact", )
+
+default_types_risk = dbc.Row([dbc.Col(make_switch(label, colors_suggested_risk[t],t, value=False)) for t, label in RISK_FACTORS.items()],
+            id="annotate-label-badge-group-risk", )
+tooltips = {}
+
+# Init_home_page_content(app_skeleton):
+prediction_file_paths, classification_file_paths = get_result_cardio_files(RESULT_PATH_cardio)
+#print(len(prediction_file_paths), len(classification_file_paths), 'length of files')
+TEXT_IDS = [k.split('.')[0] for k in prediction_file_paths.keys()]
+#print(text_ids, 'the text ids')
+
+login_annotator = html.Div(children = 
+    [dbc.Row([ dbc.Col(html.H5("Please first login in and then select the document ID."),width=3),
+              dbc.Col(dcc.Dropdown(placeholder="Select registered user Email", options = [{'label': u, 'value': u } for u in USER_DB['user_email']], id = "annotate-email"),width=2),
+        dbc.Col(dbc.Input(placeholder="Password", id = "annotate-password", type= "password"),width=2),
+        dbc.Col(dbc.Button('Login', id="annotate-login"), width = 2)], style={'padding':'1rem 1rem'}),
+    dbc.Alert("User Email must be given for reseting password! ", id="annotate-missing-email", is_open=False),
+    dbc.Alert("Invalid Password. ", id='annotate-sigin-fail-alert', color="danger", is_open=False)]
+)
+
+select_document = html.Div(children = [dbc.Label('Document ID', style={'font-size': '20px'}),
+                                       dbc.Row([dbc.Col(dcc.Dropdown(id='annotate-selected-id'), width=8),
+                                                dbc.Col(dbc.Button("Next", id="annotate-next-doc", outline=True, color="primary",  size="sm")), 
+                                                dbc.Col(dbc.Alert("The last document!",id="alert-fade",dismissable=True,is_open=False))])])
+# Row 2
+section_checklist =  html.Div(children = [dbc.Label('Select sections for revision', style={'font-size': '20px'}), 
+                                          dbc.Checklist(id='annotate-cardio-section-checklist', options = [{'label': s, 'value':s} for s in list(set(CLASSIFICATION_DB['Section']))], value = [], label_style={'font-size': '20px'})])
+# Row 3 data statistic
+number_of_tokens = []
+number_of_sentences = []
+plot_data_statistic = html.Div(children = [dbc.Label('Number of sentences and tokens', style={'font-size': '20px'}), html.Div(id="annotate-table-number-of-sents-tokens")])
+ 
+html_div_children = []
+html_div_dropdown_ids = {}
+
+left_container_children = [
+                        select_document, html.Hr(),
+                        html.Br(), 
+                         plot_data_statistic,
+                            html.Br(),
+                                 html.Hr(style={'border-top':'1px solid blue'}),
+                                 
+                                 ]
+left_container =  dmc.Card(id='annotate-left-container',  
+                           children=left_container_children, 
+                           style = { "overflow":'scroll',
+                            "background-color": "#f8f9fa", "height": "520px"}, withBorder=True,
+                            shadow="sm",
+                        radius="md")
+
+vis_head_row = dbc.Label("Annotation Visualization by Semantic Groups", style={'font-size': '20px'}, color="primary")
+vis_groups =html.Div(children = [
+        dbc.Switch(id="annotate-vis-group-{}".format(g), label=g, label_style={'color': PALETTE_ent.get(g).text.value, 'font-size':'15px'}, value=True) for g in multi_layer_suggested_terms.keys()
+        ])
+
+#vis_tabs = dmc.Tabs(id='annotate-container-vis-tabs', 
+#                                                    orientation="horizontal", variant='pills',
+#                                                    persistence_type='local')
+vis_head = button_group = html.Div(
+    [ dbc.RadioItems(
+            id="annotate-vis-section-radios",
+            className="btn-group",
+            inputClassName="btn-check",
+            labelClassName="btn btn-outline-primary",
+            labelCheckedClassName="active",
+            label_style= {'font-size':'18px'}
+        ),
+    ],
+    className="radio-group",
+)
+
+vis_classification = html.Div(id="annotate-vis-section-classification", style = {"height": "330px", "overflow": "scroll" })
+card_vis = dmc.Card(children=[vis_head, html.Hr(), vis_classification], style = {'borderWidth': '1px',
+            'borderRadius': '2px', "background-color": "#ffffff","height": "auto", "overflow": "scroll" }, shadow="sm" )
+
+semantic_group_types = html.Div(children = [
+    dbc.RadioItems(id='annotate-select-groups', options=[{'label':g, 'value':g} for g in multi_layer_suggested_terms.keys()],
+            className="btn-group",
+            inputClassName="btn-check",
+            labelClassName="btn btn-outline-primary",
+            labelCheckedClassName="active",
+            label_style= {'font-size':'18px'},
+            value = list(multi_layer_suggested_terms.keys())[0]), 
+    html.Hr(),
+    dbc.RadioItems(options=[],id='annotate-select-group-types', 
+            inline=True,className="btn-group",
+            inputClassName="btn-check",
+            labelClassName="btn btn-outline-primary",
+            labelCheckedClassName="active",
+                label_style={'font-size':'18px'})], style={ 'borderRadius': '2px',"background-color": "#f8f9fa", "height": "auto"})
+
+
+# Explanation container
+container_exp = dbc.Container(children = [dmc.Card(id="annotate-container-exp",  style = {'borderWidth': '1px',
+            'borderRadius': '2px', "background-color": "#ffffff","height": "500px", "overflow": "scroll"}, shadow='sm')])
+
+annotate_spans = html.P(id="annotate-container-revise")
+
+dropdowns = {g: {'options': [{'label':'O', 'value': 'O'}] +[{'label':t, 'value': t} for t in terms] } for g, terms in multi_layer_suggested_terms.items()}
+annotate_table = dash_table.DataTable( id="annotate-revise-table", editable=True, column_selectable="multi", selected_columns=[],
+    style_cell=
+        { 'textAlign': 'left', 
+         'font-size':'18px',
+         'padding': '1rem',
+        } 
+    ,
+    style_data={
+        'color': 'black',
+        'backgroundColor': 'white',
+        
+    },
+    style_header={
+        'backgroundColor': 'rgb(210, 210, 210)',
+        'color': 'black',
+        'fontWeight': 'bold',
+        'padding': '1rem',
+        'font-size' :'20px'
+    },
+   
+        
+)
+
+#annotate_table = dbc.Table(id = "annotate-revise-table", bordered=True)
+#annotate_table = dash_table.DataTable(id = "annotate-revise-table")
+container_ann = html.Div(children = [
+    dmc.Card(children =[
+    dbc.Row(children=[
+    dbc.Col(dmc.Text('Semantic annotation of selecting the proper types:', style={'background-color':'#aed6f1'}))]), 
+        html.Hr(),
+        annotate_table],  style = {'borderWidth': '1px',
+            'borderRadius': '2px', "background-color": "#ffffff","height": "500px", "overflow": "scroll", }, 
+                         shadow="sm" ), 
+        dbc.Row([
+            dbc.Col([dbc.Pagination(id="annotate-exp-pagination-sentence-id", active_page=1, max_value = 1, previous_next=True, fully_expanded=False)], width= 6),
+            dbc.Col(dbc.Button('Save ', id= "annotate-save", n_clicks=0,  color="primary", size="sm")), 
+            dbc.Col(dbc.Alert(id='annotate-alert-save'))])])
+#  dbc.Button('Update', id= "annotate-update-btn", n_clicks=0,  color="primary", size="sm"),
+       
+task_overview = [dbc.Label("Task Overview", style={'font-size':'20px', 'text-align':'center'}, color= 'primary'), dmc.Card(id='annotate-eval-overview', style={'borderWidth': '1px',
+            'borderRadius': '2px', "background-color": "#ffffff","height": "auto", "overflow": "scroll" }, shadow="sm")]
+
+plot1 = [dbc.Label("Precision", style={'font-size':'20px', 'text-align':'center'}, color= 'primary'), dmc.Card(id='annotate-eval-plot1', style={'borderWidth': '1px',
+            'borderRadius': '2px', "background-color": "#ffffff","height": "auto", "overflow": "scroll" }, shadow="sm")]
+
+plot2 = [dbc.Label("Recall", style={'font-size':'20px', 'text-align':'center'}, color= 'primary'), dmc.Card(id='annotate-eval-plot2', style={'borderWidth': '1px',
+            'borderRadius': '2px', "background-color": "#ffffff","height": "auto", "overflow": "scroll" }, shadow="sm")]
+
+plot3 = [dbc.Label("F-score", style={'font-size':'20px','text-align':'center'},color= 'primary'), dmc.Card(id='annotate-eval-plot3', style={'borderWidth': '1px',
+            'borderRadius': '2px', "background-color": "#ffffff","height": "auto", "overflow": "scroll" }, shadow="sm")]
+
+container_vis = html.Div(children= [ 
+                                     vis_head_row, 
+                                      html.Hr(),
+                                    dbc.Row(children = [dbc.Col([vis_groups], width='auto'), dbc.Col([card_vis], width=10)]),
+                                    html.Br(),
+                                    ])
+
+container_exp_anns = html.Div(children = [html.Hr(style={'border-top':'1px solid blue'}),
+                                    dbc.Row([
+                                        dbc.Col([dbc.Label("Inspect Semantic Type Scores and Annotate ", style={'font-size': '20px'}, color="primary")], width=4),
+                                        dbc.Col(semantic_group_types)]),
+                                     html.Hr(),
+                                    dbc.Row([dbc.Col([container_exp, 
+                                                   ], width=4), 
+                                              dbc.Col([container_ann, 
+                                                   ], width=8)]),], style={'padding':'1rem 1rem'})
+plots =   html.Div(children = [html.Br(),
+                                html.Hr(style={'border-top':'2px solid black'}),
+                                dbc.Row(children = [dbc.Col(task_overview, width=6),
+                                                    dbc.Col(plot1, width=2),
+                                                    dbc.Col(plot2, width=2),
+                                                    dbc.Col(plot3, width=2)])],style={'padding':'1rem 1rem'})
+
+store_annotator = dcc.Store(id="annotate-annotator-memory", storage_type="memory", data="BERT-SNER")
+store_tsv_sentences = dcc.Store(id='annotate-tsv-or-line-sentences-memory', storage_type='session')
+store_section_tab = dcc.Store(id='annotate-section-tab-memory', storage_type = 'session')
+store_section_sentence = dcc.Store(id='annotate-section-sentence-memory', storage_type='session')
+store_section_scores = dcc.Store(id='annotate-section-scores-dict-memory', storage_type='session')
+store_sentences_classification = dcc.Store(id="annotate-sentences-classification-memory", storage_type="session")
+store_sentences_classification_revision = dcc.Store(id = "annotate-sentences-revision-memory", storage_type= "session")
+store_prediction_files = dcc.Store(id="annotate-prediction-files-memory", storage_type="session", data=prediction_file_paths)
+store_classification_files = dcc.Store(id="annotate-classification-files-memory", storage_type = "session", data=classification_file_paths)
+store_prediction_dict = dcc.Store(id='annotate-prediction-memory', storage_type='session')
+
+store_classification_section_db = dcc.Store(id='annotate-classification-section-memory', storage_type='session')
+
+store_vis_selected_groups = dcc.Store(id='annotate-vis-selected-groups-memory', storage_type='session')
+
+store_spans_all_sentences = dcc.Store(id='annotate-spans-all-sentences-memory', storage_type='session')
+store_word_scores = dcc.Store(id = 'annotate-word-scores-memory', storage_type ='session')
+
+title = html.Div(id='annotate-interface-title')
+storage = [store_annotator,
+        store_prediction_files,
+                    store_classification_files,
+                    store_tsv_sentences,
+                    store_spans_all_sentences,
+                    store_section_tab,
+                    store_section_scores,
+                    store_sentences_classification,
+                    store_sentences_classification_revision,
+                    store_word_scores,
+                    store_vis_selected_groups,
+                    store_section_sentence, 
+                    store_prediction_dict,
+                    store_classification_section_db]
+
+home_page_content = [login_annotator, html.Hr(), 
+    dbc.Row([dbc.Col([left_container], width=2),
+                        dbc.Col([container_vis], width=10)], style={'padding':'1rem 1rem'}),
+                      container_exp_anns,
+                     plots]
+
+layout = html.Div(children = storage + home_page_content  , id='annotate-home-page-content')
+
+@callback([Output('annotate-selected-id', 'options'),
+           Output('annotate-password', 'valid'),
+           Output('annotate-sigin-fail-alert', 'is_open'),
+           Output("annotate-annotator-memory", 'data')],
+          [Input('annotate-email', 'value'),
+           Input('annotate-password', 'value'),
+           Input('annotate-login', 'n_clicks')
+          ])
+def sign_in(user_email, password, login_btn):
+    user_password_valid = False
+   
+    login_fail = False
+    id_options = []
+    if ctx.triggered_id == "annotate-login":
+   
+        user_current_db = USER_DB[USER_DB['user_email']== user_email]
+        if user_email == "siting.liang@dfki.de":
+            user_password_valid = True
+        
+        if password == str(user_current_db.iloc[0]['password']):
+                user_password_valid = True
+                id_options = [{'label':d, 'value':d} for d in TEXT_IDS]
+               
+        else:
+            login_fail = True
+    return id_options, user_password_valid, login_fail, user_email
+
+
+@callback(Output('annotate-vis-selected-groups-memory', 'data'),
+          [Input("annotate-vis-group-{}".format(g), 'value') for g in list(multi_layer_suggested_terms.keys())]
+          )
+def update_selected_group(g1, g2, g3, g4, g5, g6, g7):
+    """
+    dbc.
+    Switch(id="annotate-vis-group-{}".format(g), label=g, label_style={'color': PALETTE_ent.get(g).text.value,
+    'font-size':'20px'}, value=True) for g in multi_layer_suggested_terms.keys()]
+    """
+    selected_gs = []
+    for i, g_value in enumerate([g1,g2,g3,g4,g5, g6, g7]):
+        if g_value and list(multi_layer_suggested_terms.keys())[i] not in selected_gs:
+            selected_gs.append(list(multi_layer_suggested_terms.keys())[i])   
+    return selected_gs
+
+@callback(Output('annotate-select-group-types', 'options'),
+          Input('annotate-select-groups', 'value'))
+def return_label_types(group_name):
+    options = []
+    #label_style = {}
+    value = []
+    if group_name:
+            #label_style = {'color': PALETTE_ent.get(group_name).text.value} 
+            options = [{'label': t+': '+ w, 'value': t} for t, w in multi_layer_suggested_terms[group_name].items()] + [{'label': 'O: null', 'value': 'O'}]
+            #value = [t for t, w in multi_layer_suggested_terms[group_name].items()]
+    return options
+
+@callback([ Output('annotate-table-number-of-sents-tokens', 'children'),
+            Output('annotate-tsv-or-line-sentences-memory', 'data'),
+            Output('annotate-prediction-memory', 'data'),
+            Output('annotate-vis-section-radios', 'options')], 
+          Input('annotate-selected-id', 'value'))
+def get_cardio_tsv_sentences(text_id):
+    sentences_dict = {}
+    prediction_dict = {}
+    #selected_sec_default = None
+    
+    number_of_sents_tokens_table = []
+    number_of_sents_tokens_list = []
+    
+    section_radios_options = []
+    #print('prediction file paths ', prediction_file_paths)
+    #print('classification file paths', classification_file_paths)
+    for key in prediction_file_paths:
+        if key not in classification_file_paths:
+            print(key, ' not in classification file path ')
+
+    if text_id is not None:
+        prediction_dict, classification_dict = return_json_cardio_dict(text_id, RESULT_PATH_cardio, prediction_file_paths=prediction_file_paths, classification_file_paths=classification_file_paths)
+        #section_options, section_values = make_section_options(list(prediction_dict.keys()))
+        section_radios_options = [{'label' : s, 'value' :s} for s in prediction_dict.keys()]
+           
+        tsv_lines = get_tsv_lines(text_id)
+        sentences_dict = retrieve_sentences(tsv_lines)
+        for sec in section_radios_options:
+            #print(sec)
+            sentence_ids = prediction_dict[sec['label']]['sentence_ids']
+            sentences, number_of_sentences, number_of_tokens = get_section_sentences(sentence_ids, sentences_dict)
+            number_of_sents_tokens_list.append({'Section': sec['label'], 'NumSentences': number_of_sentences, 'NumTokens' : number_of_tokens})
+        df = pd.DataFrame(number_of_sents_tokens_list)
+        number_of_sents_tokens_table = dash_table.DataTable(df.to_dict('records'), [{"name": i, "id": i} for i in df.columns], style_cell={'textAlign': 'left'}, style_table={ 'overflowX': 'auto'} )
+        #selected_sec_default = list(prediction_dict.keys())[0]
+       
+    return number_of_sents_tokens_table, sentences_dict, prediction_dict, section_radios_options
+        
+@callback(Output("annotate-sentences-classification-memory", 'data'),
+          [Input('annotate-selected-id', 'value'), 
+           Input('annotate-vis-section-radios', 'value'),
+         Input('annotate-vis-selected-groups-memory', 'data')],
+          State("annotate-annotator-memory", 'data'))
+def get_group_sentences_classification(tsv_id, section, selected_groups, annotator):
+    sentences_classification_dict = {}
+    if tsv_id is not None:
+            if 'tsv' not in tsv_id:
+                tsv_id='{}.tsv'.format(tsv_id)
+    classification_document = CLASSIFICATION_DB[CLASSIFICATION_DB['ID'] == tsv_id]
+    if section is not None:
+        classification_sec_db = classification_document[classification_document['Section']==section]
+        if selected_groups is not None:
+            for group in selected_groups:
+                classification_annotator = get_classification_annotator(classification_sec_db=classification_sec_db, annotator=annotator, group=group)
+                sentences_classification_dict[group] = get_sentence_classification(classification_annotator=classification_annotator)
+    return sentences_classification_dict
+       
+@callback([Output("annotate-vis-section-classification", 'children'),
+           Output('annotate-section-scores-dict-memory','data')], 
+        [Input("annotate-sentences-classification-memory", 'data'),
+         Input("annotate-sentences-revision-memory", 'data'),
+         Input('annotate-vis-section-radios', 'value'), 
+         Input('annotate-vis-selected-groups-memory', 'data'),
+         Input('annotate-tsv-or-line-sentences-memory', 'data'),
+         Input('annotate-prediction-memory', 'data')
+         ], 
+        State("annotate-annotator-memory", 'data'))
+def make_section_vis(group_sentences_classification_dict, group_sentences_revision_dict, section, selected_groups, sentences_dict, prediction_current, annotator):
+        vis_classification = []
+        spans_all_sentences = []
+        selected_types = []
+        scores_dict_sec = {}
+        #print('group sentences classification dict ', group_sentences_classification_dict)
+        if ctx.triggered_id == "annotate-update-btn" and group_sentences_revision_dict is not None:
+            
+            sentences_classification_dict = group_sentences_revision_dict
+        else:
+            sentences_classification_dict = group_sentences_classification_dict
+            
+        if selected_groups is not None and len(selected_groups) > 0:
+             for group in selected_groups:  
+                selected_types.extend(list(multi_layer_suggested_terms[group].keys()))
+        
+        if section is not None:
+            sentence_ids, scores_dict_sec  = get_prediction_section(prediction_current, section)
+            spans_all_sentences = get_spans_all_sentences(sentence_ids, sentences_dict)
+            if len(selected_types) > 0:
+                
+                for group in selected_groups:
+                    
+                    _ = get_sentences_spans_ner(sentences_classification_dict[group], spans_all_sentences= spans_all_sentences, selected_sem_types=selected_types)
+                
+                lines_str_html_ths = ''
+                for t, sent_spans in spans_all_sentences.items():
+                    lines_str_html = format_span_line_markup(text=sent_spans['text'], spans=sent_spans['ner_spans'], palette=PALETTE_types)
+                    lines_str_html_ths += '<hr>{} {}</hr>'.format(int(t) +1, ''.join(lines_str_html))
+                vis_classification.append(Purify(lines_str_html_ths))
+            #one_tab = make_one_section_ner_tab('tab-{}'.format(i), lines_str_html_ths)
+             #   tabs.append(one_tab)
+            #    section_tab['tab-{}'.format(i)] = sec
+        return vis_classification, scores_dict_sec
+    
+@callback([Output('annotate-word-scores-memory', 'data'),
+           Output("annotate-exp-pagination-sentence-id", "max_value")],
+                [Input('annotate-prediction-memory', 'data'), 
+                 Input('annotate-tsv-or-line-sentences-memory', 'data'), 
+                 Input('annotate-select-groups', 'value'),
+                 Input('annotate-vis-section-radios', 'value')
+                 ],
+                 prevent_initial_call=True)
+def get_sentences_for_explanation(scores_dict, tsv_sentences, group, section):
+        
+        main_children = [] 
+        word_scores = {}
+        sem_types = []
+        len_sentences = 1
+        #if len(term_types) > 0:
+        sem_types = list(multi_layer_suggested_terms[group].values())
+
+        if len(sem_types) > 0 and section :
+                scores_dict_sec, sentence_ids = get_scores_dict_by_sec(scores_dict, section)
+                word_scores = get_sentence_scores_by_type_cardio(scores_dict_sec,  sentence_ids=sentence_ids, tsv_sentences=tsv_sentences, sem_types=sem_types, ca=group)
+              
+                len_sentences = len(sentence_ids)
+        return word_scores, len_sentences
+    
+@callback(Output("annotate-container-exp", 'children'),
+              [Input("annotate-exp-pagination-sentence-id", 'active_page'),
+              Input('annotate-word-scores-memory', 'data')])
+def make_sentence_explanation(active_page, word_scores):   
+        #if len(sem_types) > 0 and 
+        header = dbc.Row(children=[dbc.Col(dmc.Text('Type score:', style={'background-color':'#aed6f1'}, size='l', 
+                                                 weight=500,), width=4), dbc.Col(dmc.Text('Tokens score interpretation:', style={'background-color':'#aed6f1'}, weight=500))])
+            #main_children.append(header)
+        spoiler_children = [header, html.Hr()]
+        if len(word_scores) > 0: 
+            sem_types = list(word_scores.keys())
+            #print(sem_types)
+  
+            for ty, current_sent_scores in word_scores.items():
+                if current_sent_scores is not None and len(current_sent_scores) >= active_page:
+                    current_sent_score = word_scores[ty][active_page-1]
+                    type_p = dash_html_prediction_score(current_sent_score['type_scores'][0],current_sent_score['type_scores'][1], cmap_name='bwr' )
+                    word_p = dash_html_prediction_score(current_sent_score['word_scores'][0],current_sent_score['word_scores'][1], cmap_name='bwr' )
+                    spoiler_children.append(dbc.Row(children=[dbc.Col(dmc.Text(type_p),width=4),dbc.Col(dmc.Text(word_p, style={'overflow-x': 'auto',}))]))
+                    spoiler_children.append(html.Hr())
+               # main_children.append(dmc.Spoiler(showLabel="Show more",hideLabel="Hide",maxHeight=200, children = spoiler_children))
+        return [dmc.Spoiler(children = spoiler_children, showLabel="Show more",hideLabel="Hide", maxHeight=500)]
+
+
+@callback([Output("annotate-sentences-revision-memory", 'data'),
+         Output("annotate-revise-table", 'data'),
+           Output("annotate-revise-table", 'columns'),
+           Output("annotate-revise-table", 'style_data_conditional'),
+           Output('annotate-select-group-types', 'value'),
+           Output("annotate-exp-pagination-sentence-id", 'active_page')],
+        [Input("annotate-sentences-revision-memory", 'data'),
+        Input("annotate-sentences-classification-memory", 'data'), 
+        Input("annotate-exp-pagination-sentence-id", 'active_page'),
+        Input('annotate-selected-id', 'value'),
+        Input('annotate-vis-section-radios', 'value'),
+        Input("annotate-revise-table", 'selected_columns'),          
+        Input('annotate-select-group-types', 'value'),
+        Input('annotate-select-groups', 'value')])
+def make_sentence_annotation(revised_memory, group_sentences_classification_dict, active_page, tsv_id, section, selected_columns, type_selected, group_selected):   
+        #if len(sem_types) > 0 and 
+        
+        if ctx.triggered_id == "annotate-sentences-classification-memory" or ctx.triggered_id == "annotate-vis-section-radios":
+            #if len(revised_memory) == 0 and len(group_sentences_classification_dict) > 0: 
+            print(ctx.triggered_id)
+            print(tsv_id, section)
+            revised_memory = deepcopy(group_sentences_classification_dict)
+        
+        #header = [html.Th("Token")]+ [html.Th(group) for group in multi_layer_suggested_terms.keys()]
+        data = {'Token': []}
+        groups = list(multi_layer_suggested_terms.keys())
+        data.update({group: [] for group in groups})
+        #all_options = { group: [{'label' : 'O', 'value': 'O'}] + [{'label': term, 'value': term} for term in term_types_dict.keys()] for group, term_types_dict in multi_layer_suggested_terms.items()}
+        #rows_tokens = []
+        #rows_groups = {g: [] for g in multi_layer_suggested_terms.keys()}
+        current_page = 0
+        if len(revised_memory) > 0: 
+            if ctx.triggered_id == "annotate-select-group-types" and type_selected is not None:
+                    print(ctx.triggered_id, "annotation ")
+                    print(group_selected, type_selected, active_page, )
+                    print("type selected columns and len(selected columns)", type(selected_columns), len(selected_columns))
+                    if type_selected is not None and len(selected_columns) >= 1:
+                        print("type selected ", type_selected, "column selected ", selected_columns[0])
+                        if len(revised_memory[group_selected]) >= active_page-1:
+                            print("current page ", active_page)
+                            for sel_col in selected_columns:
+                                revised_memory[group_selected][str(active_page-1)][int(sel_col)][2] = type_selected
+                            print("changed revised_memory ")
+            
+            #print('revised memory for annotation', revised_memory)
+            for  group, sentences_classification in revised_memory.items():
+                
+                sentences_classification = revised_memory[group]
+             
+                if active_page is not None and len(sentences_classification) >= active_page:
+                        current_page = active_page-1
+            
+                if current_page not in sentences_classification:
+                        current_page = str(current_page)
+            
+                #if len(sentences_classification) > 0:     
+                sentence_classification = sentences_classification[current_page]
+                
+                for idx, triple in enumerate(sentence_classification):
+                       
+                    if len(data['Token']) < len(sentence_classification):
+                        data['Token'].append(triple[0])
+                    data[group].append(triple[2])
+            
+            missing_groups = list(set(multi_layer_suggested_terms.keys()) - set(group_sentences_classification_dict.keys()))
+            if len(missing_groups) > 0:
+                for g in missing_groups:
+                    data[g] = ['O'] * len(data['Token'])            
+        
+        
+            
+        #current_table_df = pd.DataFrame(
+        #            OrderedDict([(col, value_list) for col, value_list in data.items()]     
+        #        ))
+        
+        #header = [html.Thead(html.Tr([html.Th()] + [html.Th(t+ " " * (10-len(t))) for t in data['Token']]))]
+        # [{'id': c, 'name': c} for c in df.columns]
+        columns = [{'id': 'Semantic Groups', 'name':  'Semantic Groups'}] + [{'id': str(t), 'name': w, "selectable": True} for t, w in enumerate(data['Token'])]
+        data_list =  [('Semantic Groups', groups)] 
+        
+        for i, t in enumerate(data['Token']):
+            current_row = (str(i), [])
+            for group in groups:
+                current_row[1].append(data[group][i])
+            data_list.append(current_row)
+        
+        #print(len(columns), columns)
+        #print(data_list)
+        
+        data_df = pd.DataFrame(OrderedDict(data_list))
+        
+        style_selected_columns = [{
+        'if': { 'column_id': i },
+        'background_color': '#D2F3FF'
+    } for i in selected_columns]
+        
+        #for group in multi_layer_suggested_terms.keys():
+            #current_row = html.Tr([html.Td(group)] + [html.Td(value) for i, value in enumerate(data[group])])
+        #    current_row = (group, data[group])
+        #    rows.append(current_row)
+        
+        #body = [html.Tbody(rows)]
+      
+                    #id_text = '{}-{}-{}-{}-checklist'.format(section, group, active_page, idx)
+                    #    if triple[2] not in term_types:
+                        #print(triple[2])
+                    #        current_sent_checklist = html.Span([triple[0],
+                    #                                  dcc.Dropdown(id=id_text, options=options, multi=False)], style={"margin":"2px",  "display":"inline-block"})
+                    #    else:
+                    #        current_sent_checklist = html.Span([triple[0],
+                    #                                  dcc.Dropdown(id=id_text, options=options,  value=triple[2], multi=False)], style={"margin":"2px",  "display":"inline-block"})
+                        
+                    #    children.append(current_sent_checklist)   
+                #children.append(html.P(children=checklists)) 
+      
+        return revised_memory, data_df.to_dict('records'), columns, style_selected_columns, None, active_page
+
+@callback([Output("annotate-alert-save", "is_open"),
+           Output("annotate-alert-save", 'children')],
+          [Input("annotate-save", 'n_clicks'),
+           Input("annotate-sentences-revision-memory", 'data')],
+            [State('annotate-vis-section-radios', 'value'), 
+            State("annotate-annotator-memory", 'data'),
+            State('annotate-selected-id', 'value')])
+def make_revision(save_btn, revise_memory,  section, annotator, tsv_id):
+    text = ""
+    save_btn = False
+    if tsv_id is not None:
+            if 'tsv' not in tsv_id:
+                tsv_id='{}.tsv'.format(tsv_id)
+    
+    #print('loading state', edited_cell, ctx.triggered_id)
+    #if edited_cell is not None:
+        #print('loading state ', edited_cell)
+    if len(revise_memory) > 0:
+        #print("revised memory  ", len(revise_memory), revise_memory.keys())
+    
+  
+        #to_update_classification_dict = deepcopy(group_sentences_classification_dict)
+        if ctx.triggered_id == "annotate-save":
+            text = "Save annotates to local file for annotator {} {} {}.".format(tsv_id, section,  annotator)
+            print(text)
+            save_btn = True
+    return save_btn , text
+                   
+
+                   
+                    
+            
+            
+        
