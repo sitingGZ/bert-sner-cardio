@@ -6,4 +6,4 @@ RUN pip install --upgrade pip
 COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 COPY ./app /usr/src/app
-CMD gunicorn --bind 0.0.0.0:8050 app:server
+CMD gunicorn app:server -b :8050
