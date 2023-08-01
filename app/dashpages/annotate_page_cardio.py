@@ -398,8 +398,27 @@ left_container =  dmc.Card(id='annotate-left-container',
 
 vis_head_row = dbc.Label("Annotation Visualization by Semantic Groups", style={'font-size': '25px'}, color="primary")
 vis_groups =html.Div(children = [
-        dbc.Switch(id="annotate-vis-group-{}".format(g), label=g, label_style={'color': PALETTE_ent.get(g).text.value, 'font-size':'15px'}, value=True) for g in multi_layer_suggested_terms.keys()
-        ])
+    dmc.Tooltip([dbc.Switch(
+        id="annotate-vis-group-{}".format(g), 
+        label=g, 
+        label_style={'color': PALETTE_ent.get(g).text.value, 'font-size':'15px'}, 
+        value=True)],
+        color = PALETTE_ent.get(g).text.value,
+        multiline=True,
+        width=100,
+        label = ' '.join([t + ': ' + w  for t,w in terms.items()]), position="top" ) for g, terms in multi_layer_suggested_terms.items()],
+            )
+#vis_groups = html.Div(
+#    children = [dbc.Accordion(
+#            [dbc.AccordionItem(
+#                    [dmc.Text(t + ': ' + w ) for t,w in terms.items()],
+#                    title=g,
+#                    id = "annotate-vis-group-{}".format(g),
+#                    style={'color': PALETTE_ent.get(g).text.value, 'font-size':'15px'}) 
+#             for g, terms in multi_layer_suggested_terms.items()], 
+#           flush=True
+#            )]
+#)
 
 #vis_tabs = dmc.Tabs(id='annotate-container-vis-tabs', 
 #                                                    orientation="horizontal", variant='pills',
@@ -621,10 +640,13 @@ def update_selected_group(g1, g2, g3, g4, g5, g6, g7):
     Switch(id="annotate-vis-group-{}".format(g), label=g, label_style={'color': PALETTE_ent.get(g).text.value,
     'font-size':'20px'}, value=True) for g in multi_layer_suggested_terms.keys()]
     """
+    
     selected_gs = []
     for i, g_value in enumerate([g1,g2,g3,g4,g5, g6, g7]):
-        if g_value and list(multi_layer_suggested_terms.keys())[i] not in selected_gs:
-            selected_gs.append(list(multi_layer_suggested_terms.keys())[i])   
+        if g_value:
+            group = list(multi_layer_suggested_terms.keys())[i]
+            if group not in selected_gs:
+                selected_gs.append(group)
     return selected_gs
 
 @callback(Output('annotate-select-group-types', 'options'),
