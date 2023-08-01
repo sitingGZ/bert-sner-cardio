@@ -1,0 +1,11 @@
+T2	Condition 10 21	Tx Versagen
+T3	TimeInfo 22 39	bei Vorgeschichte
+R1	has_TimeInfo arg1:T2 arg2:T3	
+A1	Factuality T2 possible_future
+T1	Conclusion 0 59	terminale Tx Versagen bei Vorgeschichte sehr wahrscheinlich
+T5	Condition 64 107	fehlendem Ansprechen auf Rejektionstherapie
+A3	Risk T5 increase_risk_factor
+T4	Condition 112 137	weiterer Verschlechterung
+A5	Risk T4 increase_symptom
+T6	Temporal 60 137	bei fehlendem Ansprechen auf Rejektionstherapie und weiterer Verschlechterung
+A6	Temporal_Element T6 past_present

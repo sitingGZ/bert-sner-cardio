@@ -1,0 +1,35 @@
+T1	HealthState 0 7	stabile
+T2	Process 8 19	Tx Funktion
+T3	TimeInfo 20 34	seit 15 Jahren
+T4	TimeInfo 49 72	in den letzten 9 Jahren
+T5	HealthState 73 81	stabiler
+T6	Process 82 98	Kreatininverlauf
+T7	Condition 104 115	Progredienz
+T8	DiagLab 123 134	Sonographie
+T9	TimeInfo 135 152	1 Jahr vor Zensur
+T10	HealthState 153 164	unauffällig
+T13	Condition 184 200	Dekompensationen
+T14	LabValues 207 218	Proteinurie
+A1	Factuality T7 negative
+R1	has_State arg1:T2 arg2:T1	
+R2	has_TimeInfo arg1:T2 arg2:T3	
+R3	has_State arg1:T6 arg2:T5	
+R4	has_TimeInfo arg1:T6 arg2:T4	
+R5	has_TimeInfo arg1:T8 arg2:T9	
+R6	has_State arg1:T8 arg2:T10	
+A2	Risk T2 decrease_symptom
+A3	Risk T6 decrease_symptom
+A4	Risk T7 decrease_symptom
+A5	Risk T8 decrease_symptom
+A6	Factuality T13 negative
+A7	Risk T13 decrease_risk_factor
+A8	Risk T14 decrease_symptom
+T11	Temporal 0 115	stabile Tx Funktion seit 15 Jahren, insbesondere in den letzten 9 Jahren stabiler Kreatininverlauf ohne Progredienz
+A9	Temporal_Element T11 past_present
+T12	Temporal 116 164	letzte Sonographie 1 Jahr vor Zensur unauffällig
+A10	Temporal_Element T12 past
+T15	Temporal 165 200	keine rez. hydrop. Dekompensationen
+A11	Temporal_Element T15 past
+T16	Temporal 201 218	keine Proteinurie
+A12	Temporal_Element T16 present
+A13	Factuality T14 negative

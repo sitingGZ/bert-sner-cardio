@@ -1,0 +1,15 @@
+T1	HealthState 0 7	Stabile
+T2	Process 8 19	Tx Funktion
+T3	Condition 38 47	Rejektion
+T4	LabValues 63 65	PU
+T5	LabValues 73 76	DSA
+A1	Factuality T3 negative
+R1	has_State arg1:T2 arg2:T1	
+A2	Risk T2 decrease_symptom
+A3	Risk T3 decrease_symptom
+A4	Risk T4 decrease_symptom
+T6	Temporal 0 55	Stabile Tx Funktion, kein Hinweis für Rejektion zuletzt
+A5	Temporal_Element T6 past_present
+T7	Temporal 57 76	keine PU, keine DSA
+A6	Temporal_Element T7 present
+A7	Risk T5 decrease_risk_factor

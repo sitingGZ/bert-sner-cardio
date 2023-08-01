@@ -1,0 +1,17 @@
+T1	TimeInfo 3 13	vor 1 Jahr
+T2	Condition 15 23	nie gute
+T3	Process 24 35	Tx-Funktion
+T5	Condition 76 85	Rejektion
+A1	Factuality T5 negative
+T6	Tx_middle 0 13	Tx vor 1 Jahr
+R1	has_State arg1:T3 arg2:T2	
+A2	Risk T6 risk_factor
+A3	Risk T3 increase_symptom
+T4	DiagLab 43 51	klinisch
+A4	Risk T5 decrease_symptom
+T7	Temporal 0 14	Tx vor 1 Jahr,
+A5	Temporal_Element T7 past
+T8	Temporal 15 42	nie gute Tx-Funktion gehabt
+A6	Temporal_Element T8 past_present
+T9	Temporal 43 85	klinisch aktuell kein Anhalt auf Rejektion
+A7	Temporal_Element T9 present

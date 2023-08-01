@@ -1,0 +1,13 @@
+T3	LabValues 30 34	Krea
+T4	Measure 39 46	unter 1
+T5	Condition 64 70	Infekt
+R1	has_Measure arg1:T3 arg2:T4	
+T1	Conclusion 0 19	Tx hat noch Reserve
+A1	Risk T3 decrease_symptom
+T2	Condition 48 55	Anstieg
+A2	Risk T2 increase_symptom
+A3	Risk T5 risk_factor
+T6	Temporal 21 47	Baseline Krea bei unter 1.
+A4	Temporal_Element T6 past_present
+T7	Temporal 48 84	Anstieg ist dem Infekt zuzuschreiben
+A5	Temporal_Element T7 present

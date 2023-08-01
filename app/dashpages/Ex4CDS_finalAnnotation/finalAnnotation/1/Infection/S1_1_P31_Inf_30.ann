@@ -1,0 +1,11 @@
+T1	TimeInfo 0 7	Aktuell
+T2	Medication 8 17	Cyclogabe
+T3	Condition 22 32	Leukopenie
+T4	Condition 49 67	Infektanfälligkeit
+R1	has_TimeInfo arg1:T2 arg2:T1	
+R2	has_TimeInfo arg1:T3 arg2:T1	
+A1	Risk T2 increase_risk_factor
+A2	Risk T3 increase_risk_factor
+T5	Conclusion 34 67	Steigerung der Infektanfälligkeit
+T6	Temporal 0 32	Aktuell Cyclogabe mit Leukopenie
+A3	Temporal_Element T6 present

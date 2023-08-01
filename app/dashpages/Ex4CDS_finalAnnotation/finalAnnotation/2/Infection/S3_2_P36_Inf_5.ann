@@ -1,0 +1,20 @@
+T1	LabValues 0 6	Leukos
+T2	LabValues 11 14	CRP
+T3	HealthState 15 25	normwertig
+T4	DiagLab 79 84	USTIX
+R1	has_State arg1:T1 arg2:T3	
+R2	has_State arg1:T2 arg2:T3	
+T5	LabValues 85 91	leukos
+T6	Measure 92 95	neg
+R3	has_Measure arg1:T5 arg2:T6	
+A1	Risk T1 decrease_symptom
+A2	Risk T2 decrease_symptom
+A3	Risk T5 decrease_symptom
+T7	Condition 47 53	Klinik
+A4	Factuality T7 speculated
+A5	Risk T7 decrease_symptom
+T8	Temporal 0 53	Leukos udn CRP normwertig, anscheinenden keine Klinik
+A6	Temporal_Element T8 present
+T9	Temporal 79 95	USTIX leukos neg
+A7	Temporal_Element T9 present
+A8	Factuality T5 negative

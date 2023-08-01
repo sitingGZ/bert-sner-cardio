@@ -1,0 +1,9 @@
+T2	Condition 22 30	Symptome
+T3	LabValues 44 55	Cya Spiegel
+T4	Measure 60 67	niedrig
+A1	Factuality T2 negative
+R1	has_Measure arg1:T3 arg2:T4	
+A2	Risk T3 decrease_risk_factor
+A3	Risk T2 decrease_symptom
+T1	Temporal 0 67	Klinisch werden keine Symptome beklagt, der Cya Spiegel ist niedrig
+A4	Temporal_Element T1 present

@@ -1,0 +1,20 @@
+T1	HealthState 0 5	gutes
+T2	LabValues 6 10	Krea
+T6	Condition 102 108	Infekt
+T7	Condition 110 119	Rejektion
+T8	Condition 121 130	Thrombose
+A2	Factuality T6 negative
+R3	has_State arg1:T2 arg2:T1	
+A3	Risk T2 decrease_symptom
+T3	Condition 51 61	TX Verlust
+T4	Conclusion 12 61	kein ersichtlicher Grund für schnellen TX Verlust
+A1	Risk T6 risk_factor
+A4	Factuality T7 negative
+A5	Risk T7 risk_factor
+T5	Temporal 62 131	außer unvorgesehenes Ereignis (schwerer Infekt, Rejektion, Thrombose)
+A6	Temporal_Element T5 future
+A7	Factuality T8 negative
+A8	Risk T8 risk_factor
+T9	Temporal 0 11	gutes Krea,
+A9	Temporal_Element T9 present
+A10	Factuality T3 negative

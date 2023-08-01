@@ -1,0 +1,23 @@
+T2	Condition 38 49	Beschwerden
+T5	Condition 91 98	Infekte
+A1	Factuality T2 negative
+A2	Factuality T5 minor
+T1	TimeInfo 99 119	in der Vorgeschichte
+R1	has_TimeInfo arg1:T5 arg2:T1	
+T3	Condition 10 22	Infektniveau
+T6	Measure 0 9	niedriges
+R2	has_Measure arg1:T3 arg2:T6	
+A3	Risk T3 decrease_symptom
+A4	Risk T2 decrease_symptom
+T4	TimeInfo 24 31	aktuell
+T7	Condition 69 83	Risikofaktoren
+A5	Risk T7 decrease_risk_factor
+A6	Factuality T7 minor
+T8	Temporal 0 49	niedriges Infektniveau, aktuell keine Beschwerden
+A7	Temporal_Element T8 present
+T9	Temporal 51 83	wenig zusätzliche Risikofaktoren
+A8	Temporal_Element T9 past_present
+T10	Temporal 85 119	wenig Infekte in der Vorgeschichte
+A9	Temporal_Element T10 past
+A10	Risk T5 decrease_risk_factor
+R3	has_TimeInfo arg1:T2 arg2:T4	

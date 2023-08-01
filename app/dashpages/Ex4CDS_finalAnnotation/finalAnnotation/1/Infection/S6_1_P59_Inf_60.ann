@@ -1,0 +1,15 @@
+T1	Condition 0 26	Rezidivierende Infektionen
+T2	Condition 28 31	CMV
+T3	Condition 33 40	Colitis
+T4	Condition 42 45	HWI
+T5	TimeInfo 54 67	Vergangenheit
+T6	Condition 79 93	Prädisposition
+T7	Condition 98 111	Infektneigung
+R1	has_TimeInfo arg1:T6 arg2:T5
+A1	Risk T4 increase_risk_factor
+A2	Risk T1 increase_risk_factor
+T8	Conclusion 68 116	legen eine Prädisposition zur Infektneigung nahe
+T9	Temporal 0 67	Rezidivierende Infektionen (CMV, Colitis, HWI) in der Vergangenheit
+A3	Temporal_Element T9 past
+A4	Risk T2 increase_risk_factor
+A5	Risk T3 increase_risk_factor

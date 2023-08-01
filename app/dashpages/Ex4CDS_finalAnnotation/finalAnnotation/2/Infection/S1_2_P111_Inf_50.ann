@@ -1,0 +1,12 @@
+T1	Condition 8 15	Infekte
+T2	TimeInfo 16 36	in der Vergangenheit
+T3	Condition 38 42	HWIs
+R1	has_TimeInfo arg1:T1 arg2:T2
+T4	Condition 43 54	Wundinfekte
+A1	Risk T1 increase_risk_factor
+A2	Risk T3 increase_risk_factor
+A3	Risk T4 increase_risk_factor
+T5	Temporal 0 59	Mehrere Infekte in der Vergangenheit: HWIs Wundinfekte etc.
+A4	Temporal_Element T5 past
+R2	has_TimeInfo arg1:T3 arg2:T2	
+R3	has_TimeInfo arg1:T4 arg2:T2	

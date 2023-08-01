@@ -1,0 +1,28 @@
+T1	Measure 0 10	steigendes
+T2	LabValues 11 15	Krea
+T3	Measure 17 26	steigende
+T4	LabValues 27 38	Proteinurie
+T5	Condition 40 60	unspez Veränderungen
+T7	Measure 85 95	wechselnde
+T8	Process 96 106	Blutdrücke
+R1	has_Measure arg1:T2 arg2:T1
+R2	has_Measure arg1:T4 arg2:T3
+R3	has_Measure arg1:T8 arg2:T7
+T6	Condition 113 124	TX Versagen
+A1	Risk T2 increase_symptom
+A2	Risk T4 increase_symptom
+T9	DiagLab 76 83	Biopsie
+R4	has_State arg1:T9 arg2:T5	
+A3	Risk T5 symptom
+A4	Risk T8 increase_symptom
+A5	Risk T6 increase_risk_factor
+T10	TimeInfo 125 130	10/12
+R5	has_TimeInfo arg1:T6 arg2:T10	
+T11	Temporal 0 39	steigendes Krea, steigende Proteinurie,
+A6	Temporal_Element T11 past_present
+T12	Temporal 40 83	unspez Veränderungen in der letzten Biopsie
+A7	Temporal_Element T12 past
+T13	Temporal 85 107	wechselnde Blutdrücke,
+A8	Temporal_Element T13 past_present
+T14	Temporal 108 130	Z.n. TX Versagen 10/12
+A9	Temporal_Element T14 past

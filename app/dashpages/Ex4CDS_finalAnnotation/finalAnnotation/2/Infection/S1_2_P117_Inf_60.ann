@@ -1,0 +1,14 @@
+T1	TimeInfo 9 14	23.02
+T2	Condition 15 21	Fieber
+T4	Condition 57 68	Cholangitis
+T5	Medication 83 86	ABX
+R2	has_TimeInfo arg1:T2 arg2:T1	
+T6	Condition 23 31	Reinfekt
+A1	Factuality T6 speculated
+A2	Risk T2 increase_symptom
+T3	Conclusion 23 46	Reinfekt wahrscheinlich
+T7	Temporal 0 22	hatte am 23.02 Fieber-
+A3	Temporal_Element T7 past
+T8	Temporal 48 86	mehrmals Cholangitis, immer wieder ABX
+A4	Temporal_Element T8 past
+A5	Risk T4 increase_risk_factor

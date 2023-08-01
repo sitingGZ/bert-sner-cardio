@@ -1,0 +1,11 @@
+T3	Condition 38 44	Infekt
+T4	LabValues 46 48	BK
+T5	Measure 49 59	rückläufig
+R2	has_Measure arg1:T4 arg2:T5
+A1	Factuality T3 negative
+T1	DiagLab 0 9	klinische
+T2	DiagLab 17 20	Lab
+A2	Risk T3 decrease_symptom
+A3	Risk T4 decrease_symptom
+T6	Temporal 0 59	klinische und im Lab kein Hinweis für Infekt, BK rückläufig
+A4	Temporal_Element T6 present

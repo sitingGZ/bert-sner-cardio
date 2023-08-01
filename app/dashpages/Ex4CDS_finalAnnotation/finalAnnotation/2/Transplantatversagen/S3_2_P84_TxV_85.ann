@@ -1,0 +1,14 @@
+T1	Condition 5 7	RX
+T2	Condition 26 28	RX
+T4	Process 30 42	NTX Funktion
+T5	Condition 43 51	schlecht
+T7	Condition 53 71	chronisch schlecht
+R2	has_State arg1:T4 arg2:T5
+R1	has_State arg1:T4 arg2:T7	
+A1	Risk T1 increase_risk_factor
+A2	Risk T2 increase_risk_factor
+A3	Risk T4 increase_symptom
+T3	Temporal 0 7	Z.n. RX
+A4	Temporal_Element T3 past
+T6	Temporal 8 71	aktuell weiterhin RX, NTX Funktion schlecht, chronisch schlecht
+A5	Temporal_Element T6 present

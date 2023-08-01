@@ -1,0 +1,17 @@
+T4	Condition 53 68	Nierenversagens
+T5	TimeInfo 75 93	seit ca 12 Monaten
+T6	Condition 95 103	Elytstrg
+T7	Condition 105 121	Phosphaterhöhung
+T8	Condition 123 135	Hst erhöhung
+T1	LabValues 26 30	Krea
+T2	Measure 30 37	anstieg
+R1	has_Measure arg1:T1 arg2:T2	
+R2	has_TimeInfo arg1:T4 arg2:T5	
+A1	Factuality T4 speculated
+A2	Risk T1 increase_symptom
+A3	Risk T4 increase_symptom
+A4	Risk T6 increase_symptom
+A5	Risk T7 increase_symptom
+A6	Risk T8 increase_symptom
+T3	Temporal 0 136	prog akut auf chronischer Kreaanstieg, Zeichen eines Nierenversagens schon seit ca 12 Monaten (Elytstrg, Phosphaterhöhung, Hst erhöhung)
+A7	Temporal_Element T3 past_present

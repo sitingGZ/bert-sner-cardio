@@ -1,0 +1,17 @@
+T1	LabValues 0 4	Krea
+T2	Measure 5 12	Anstieg
+T3	Condition 17 36	Blutdruckengleisung
+T4	Condition 41 58	Rejektionszeichen
+T5	Other 77 93	Therapieadhärenz
+R1	has_Measure arg1:T1 arg2:T2
+A1	Risk T1 increase_symptom
+A2	Risk T3 increase_symptom
+T6	Conclusion 37 58	als Rejektionszeichen
+A3	Risk T5 increase_risk_factor
+A4	Factuality T5 speculated
+T7	Temporal 0 58	Krea Anstieg und Blutdruckengleisung als Rejektionszeichen
+A5	Temporal_Element T7 present
+T8	Temporal 59 132	weiterhin unklare Therapieadhärenz da Patient lange nicht mehr vorstellig
+A6	Temporal_Element T8 past_present
+T9	Other 97 132	Patient lange nicht mehr vorstellig
+A7	Risk T9 risk_factor

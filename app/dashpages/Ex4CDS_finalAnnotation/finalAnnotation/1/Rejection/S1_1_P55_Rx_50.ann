@@ -1,0 +1,33 @@
+T1	Condition 13 19	Dyspoe
+T2	Condition 24 37	Lungenfribose
+T3	Condition 42 48	Infekt
+T4	Medication 103 119	Immunsuppression
+T5	Condition 137 157	nicht sehr compliant
+T6	LabValues 159 164	IMPDH
+T7	Measure 165 172	niedrig
+T9	Medication 209 212	MMF
+T10	Medication 214 217	Tac
+T11	Measure 235 245	zu niedrig
+R1	has_Measure arg1:T6 arg2:T7
+R2	has_Measure arg1:T10 arg2:T11	
+A1	Risk T1 symptom
+A2	Risk T2 symptom
+A3	Risk T3 risk_factor
+T8	Other 49 58	stationär
+A4	Risk T8 increase_risk_factor
+A5	Risk T5 increase_risk_factor
+T12	Measure 89 98	Reduktion
+R3	has_Measure arg1:T4 arg2:T12	
+A6	Risk T4 increase_risk_factor
+A7	Risk T6 increase_risk_factor
+A8	Risk T9 increase_risk_factor
+A9	Risk T10 increase_risk_factor
+T14	Temporal 1 48	aktuell mit Dyspoe und Lungenfribose +/- Infekt
+A10	Temporal_Element T14 present
+T15	Temporal 60 119	In diesem Rahmen sicher auch Reduktion der Immunsuppression
+A12	Temporal_Element T15 present
+A13	Factuality T5 speculated
+T16	Temporal 121 158	Patient scheint nicht sehr compliant.
+A14	Temporal_Element T16 past_present
+T17	Temporal 159 245	IMPDH niedrig bei angeblich stabiler Einnahme von MMF. Tac immer wieder mal zu niedrig
+A15	Temporal_Element T17 past_present

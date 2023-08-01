@@ -1,0 +1,13 @@
+T1	DiagLab 0 5	USTIX
+T2	Measure 13 20	positiv
+T3	LabValues 22 39	Bakteriennachweis
+T5	LabValues 50 54	Krea
+T6	Measure 55 62	anstieg
+R2	has_Measure arg1:T5 arg2:T6
+T7	LabValues 6 12	Leukos
+R3	has_Measure arg1:T7 arg2:T2	
+A1	Risk T7 increase_symptom
+A2	Risk T3 increase_symptom
+A3	Risk T5 increase_symptom
+T4	Temporal 0 62	USTIX Leukos positiv, Bakteriennachweis gelungen, Krea anstieg
+A4	Temporal_Element T4 present

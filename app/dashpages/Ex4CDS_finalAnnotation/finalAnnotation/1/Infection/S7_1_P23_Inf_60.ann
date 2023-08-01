@@ -1,0 +1,17 @@
+T1	Measure 0 8	erhöhtes
+T2	Condition 9 21	Infektniveau
+T5	Medication 58 60	IS
+T7	Condition 62 76	postop Hämatom
+T8	Condition 89 98	Infektion
+R1	has_Measure arg1:T2 arg2:T1	
+A1	Factuality T8 possible_future
+A2	Risk T2 increase_symptom
+T3	Tx_low 23 35	früh nach Tx
+A3	Risk T3 increase_risk_factor
+T4	Measure 53 57	viel
+R2	has_Measure arg1:T5 arg2:T4	
+A4	Risk T5 increase_risk_factor
+T6	Conclusion 78 98	Gefahr der Infektion
+A5	Risk T7 increase_risk_factor
+T9	Temporal 0 76	erhöhtes Infektniveau, früh nach Tx mit enstprechend viel IS. postop Hämatom
+A6	Temporal_Element T9 present

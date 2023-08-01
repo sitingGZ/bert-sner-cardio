@@ -1,0 +1,14 @@
+T2	Condition 9 14	13 kg
+T6	Condition 144 153	Symptomen
+T1	Condition 82 96	Dialysepflicht
+A1	Factuality T1 possible_future
+T3	Condition 26 53	kardiorenale Dekompensation
+A2	Factuality T3 speculated
+A3	Risk T3 increase_risk_factor
+A4	Risk T2 increase_symptom
+A5	Risk T1 increase_symptom
+T4	Temporal 55 154	möglicherweise (passagere) Dialysepflicht zur Gewichtsreduktion notwendig bei klinischen Symptomen.
+A6	Temporal_Element T4 future
+T5	Temporal 0 53	Klinisch 13 kg + und V.a. kardiorenale Dekompensation
+A7	Temporal_Element T5 present
+T7	Conclusion 55 154	möglicherweise (passagere) Dialysepflicht zur Gewichtsreduktion notwendig bei klinischen Symptomen.

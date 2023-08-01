@@ -1,0 +1,28 @@
+T1	HealthState 7 14	stabile
+T2	Process 15 26	Tx Funktion
+T3	TimeInfo 28 35	aktuell
+T4	Condition 36 39	HWI
+T5	HealthState 63 78	gut behandelbar
+T6	Measure 91 103	rückläufigen
+T7	LabValues 104 124	Retentionsparametern
+R2	has_TimeInfo arg1:T4 arg2:T3
+R1	has_State arg1:T2 arg2:T1	
+R3	has_Measure arg1:T7 arg2:T6	
+T8	Condition 136 146	Tx Verlust
+A1	Factuality T8 unlikely
+A2	Risk T2 decrease_symptom
+T9	Temporal 0 27	bisher stabile Tx Funktion,
+A3	Temporal_Element T9 past_present
+A4	Risk T4 increase_risk_factor
+A5	Risk T5 decrease_risk_factor
+A6	Risk T7 decrease_symptom
+T10	Conclusion 125 172	kompletter Tx Verlust nicht sehr wahrscheinlich
+T11	Temporal 28 47	aktuell HWI in Reha
+A7	Temporal_Element T11 present
+T12	Temporal 48 78	wahrscheinlich gut behandelbar
+A8	Temporal_Element T12 future
+A9	Factuality T5 possible_future
+T13	Temporal 79 124	bei bereits rückläufigen Retentionsparametern
+A10	Temporal_Element T13 present
+T14	Other 40 47	in Reha
+A11	Risk T14 risk_factor

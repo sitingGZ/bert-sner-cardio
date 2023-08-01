@@ -1,0 +1,13 @@
+T4	Condition 45 51	Infekt
+T5	Condition 53 58	Gicht
+A1	Factuality T4 negative
+T1	TimeInfo 66 88	jüngeren Vergangenheit
+R1	has_TimeInfo arg1:T5 arg2:T1	
+A2	Risk T4 decrease_symptom
+A3	Risk T5 symptom
+T2	DiagLab 0 8	klinisch
+T3	DiagLab 16 19	Lab
+T6	Temporal 0 52	klinisch und im Lab. kein Hinweis für akuten Infekt,
+A4	Temporal_Element T6 present
+T7	Temporal 53 88	Gicht in der jüngeren Vergangenheit
+A5	Temporal_Element T7 past

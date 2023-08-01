@@ -1,0 +1,11 @@
+T2	TimeInfo 37 44	aktuell
+T3	Condition 51 64	Infektzeichen
+A1	Factuality T3 negative
+R1	has_TimeInfo arg1:T3 arg2:T2	
+T1	Medication 5 36	Neubeginn einer Immunsupression
+A2	Risk T1 increase_risk_factor
+T4	Temporal 0 36	Z.n. Neubeginn einer Immunsupression
+A3	Temporal_Element T4 past
+T5	Temporal 37 64	aktuell keine Infektzeichen
+A4	Temporal_Element T5 present
+A5	Risk T3 decrease_symptom

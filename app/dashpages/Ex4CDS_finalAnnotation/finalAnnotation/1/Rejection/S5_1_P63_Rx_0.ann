@@ -1,0 +1,27 @@
+T1	HealthState 0 7	stabile
+T2	Process 8 19	TX Funktion
+T3	Condition 27 38	Rejektionen
+T4	TimeInfo 48 52	2003
+T5	LabValues 83 85	PU
+T6	LabValues 93 96	HLA
+T7	Medication 97 106	Triple IS
+A1	Factuality T3 negative
+R1	has_State arg1:T2 arg2:T1	
+A2	Risk T2 decrease_symptom
+A3	Risk T3 decrease_risk_factor
+T8	Condition 53 61	BANFF 1a
+A4	Risk T8 increase_risk_factor
+T9	TimeInfo 62 74	kurz nach TX
+R3	has_TimeInfo arg1:T8 arg2:T4	
+R2	has_TimeInfo arg1:T8 arg2:T9	
+A5	Factuality T5 negative
+A6	Risk T5 decrease_symptom
+A7	Factuality T6 negative
+A8	Risk T6 decrease_symptom
+A9	Risk T7 decrease_risk_factor
+T10	Temporal 77 96;97 106	keine PU, keine HLA Triple IS
+A10	Temporal_Element T10 present
+T11	Temporal 0 19	stabile TX Funktion
+A11	Temporal_Element T11 past_present
+T12	Temporal 21 75	keine Rejektionen (bis auf 2003 BANFF 1a kurz nach TX)
+A12	Temporal_Element T12 past

@@ -1,0 +1,11 @@
+T1	TimeInfo 3 16	vor 17 jahren
+T2	LabValues 18 22	Krea
+T3	HealthState 23 29	stabil
+T4	Tx_high 0 16	Tx vor 17 jahren
+R1	has_State arg1:T2 arg2:T3	
+A1	Risk T4 decrease_risk_factor
+A2	Risk T2 decrease_symptom
+T5	Temporal 0 17	Tx vor 17 jahren,
+A3	Temporal_Element T5 past
+T6	Temporal 18 29	Krea stabil
+A4	Temporal_Element T6 present

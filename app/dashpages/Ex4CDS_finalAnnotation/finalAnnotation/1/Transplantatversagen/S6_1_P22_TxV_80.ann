@@ -1,0 +1,28 @@
+T1	Condition 0 10	Unwohlsein
+T2	Condition 15 31	Verschlechterung
+T3	Condition 53 59	Infekt
+T4	Condition 65 71	Urämie
+T6	Condition 109 118	mangelnde
+T7	Process 119 130	TX Funktion
+T8	TimeInfo 160 189	seit längerem (Wochen-Monaten
+R1	has_State arg1:T7 arg2:T6
+T9	Condition 194 212	schlechtem Zustand
+R2	has_TimeInfo arg1:T9 arg2:T8	
+T10	Process 12 14	AZ
+R3	has_State arg1:T10 arg2:T2	
+A1	Factuality T3 speculated
+A2	Factuality T4 speculated
+A3	Risk T9 increase_symptom
+A4	Risk T1 increase_symptom
+A5	Risk T2 increase_symptom
+T11	Conclusion 32 76	könnten Hinweise auf Infekt oder Urämie sein
+A6	Risk T3 increase_risk_factor
+A7	Risk T4 increase_symptom
+T5	Medication 78 80	EK
+A8	Risk T5 increase_symptom
+T12	Conclusion 97 130	Hinweis auf mangelnde TX Funktion
+A9	Risk T7 increase_symptom
+T13	Temporal 0 31	Unwohlsein, AZ Verschlechterung
+A10	Temporal_Element T13 present
+T14	Temporal 78 220	EK Gabe notwendig (Hinweis auf mangelnde TX Funktion). Insgesamt scheint die Pat. seit längerem (Wochen-Monaten) in schlechtem Zustand zu sein
+A11	Temporal_Element T14 past_present

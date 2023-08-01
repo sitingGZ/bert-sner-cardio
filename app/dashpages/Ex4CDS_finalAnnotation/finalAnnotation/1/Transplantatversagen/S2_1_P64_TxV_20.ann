@@ -1,0 +1,12 @@
+T1	HealthState 0 17	sehr gute stabile
+T2	Process 18 29	Tx Funktion
+T3	TimeInfo 30 41	seit Jahren
+T4	HealthState 42 49	stabile
+T5	LabValues 50 73	Spiegel Immunsupression
+R1	has_State arg1:T2 arg2:T1	
+R2	has_TimeInfo arg1:T2 arg2:T3	
+R3	has_State arg1:T5 arg2:T4	
+A1	Risk T2 decrease_symptom
+A2	Risk T5 decrease_risk_factor
+T6	Temporal 0 41;42 73	sehr gute stabile Tx Funktion seit Jahren stabile Spiegel Immunsupression
+A3	Temporal_Element T6 past_present

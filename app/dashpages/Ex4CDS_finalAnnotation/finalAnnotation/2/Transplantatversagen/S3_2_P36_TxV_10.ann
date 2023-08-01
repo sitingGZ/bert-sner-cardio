@@ -1,0 +1,11 @@
+T1	HealthState 0 4	gute
+T2	Process 5 13	Funktion
+T3	Tx_low 15 25	frisch-NTX
+T5	LabValues 43 54	Proteinurie
+R1	has_State arg1:T2 arg2:T1	
+A1	Risk T2 decrease_symptom
+A2	Risk T3 decrease_risk_factor
+A3	Factuality T5 minor
+A4	Risk T5 decrease_symptom
+T4	Temporal 0 54	gute Funktion, frisch-NTX, keine bdeutsame Proteinurie
+A5	Temporal_Element T4 present

@@ -1,0 +1,25 @@
+T1	HealthState 0 9	sehr gute
+T2	Process 10 21	Tx-Funktion
+T3	Condition 48 59	Tx-Versagen
+T4	Condition 79 98	FSGS Rezidivrisisko
+T5	Medication 122 131	Rituximab
+T6	Measure 136 149	sehr niedrige
+T7	LabValues 150 161	Proteinurie
+T8	Process 197 208	Restdiurese
+R2	has_Measure arg1:T7 arg2:T6
+A1	Factuality T3 negative
+R1	has_State arg1:T2 arg2:T1	
+A2	Risk T2 decrease_symptom
+T9	Conclusion 23 62	es deutet sich aber kein Tx-Versagen an
+A3	Factuality T4 possible_future
+A4	Risk T4 increase_risk_factor
+A5	Risk T5 decrease_risk_factor
+A6	Risk T7 decrease_symptom
+A7	Risk T8 decrease_symptom
+T10	Temporal 0 22	sehr gute Tx-Funktion,
+A8	Temporal_Element T10 present
+T11	Temporal 63 98	prinzipiell bei FSGS Rezidivrisisko
+A9	Temporal_Element T11 future
+T12	Temporal 99 161	aber Vorbehandlung mit Rituximab und sehr niedrige Proteinurie
+A10	Temporal_Element T12 past_present
+T13	Conclusion 163 243	diese möglicherweise auch auf die Restdiurese bei präemptiver Ntx zurückzuführen

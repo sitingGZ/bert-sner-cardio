@@ -1,0 +1,50 @@
+T1	TimeInfo 0 3	26J
+T2	HealthState 14 22	stabiler
+T3	DiagLab 31 35	NiBi
+T4	TimeInfo 36 48	vor 7 Jahren
+T5	Condition 50 54	FSGS
+T7	LabValues 114 118	Krea
+T8	Measure 119 122	1,6
+T9	Measure 124 131	geringe
+T10	LabValues 132 134	PU
+R1	has_TimeInfo arg1:T3 arg2:T4	
+R2	has_Measure arg1:T7 arg2:T8	
+R3	has_Measure arg1:T10 arg2:T9	
+T11	Tx_high 0 12	26J nach NTX
+A1	ref_age T11 patient
+T12	Process 23 30	Verlauf
+R4	has_State arg1:T12 arg2:T2	
+T13	Medication 62 64	IS
+T6	Medication 111 113	IS
+T14	Measure 101 110	Reduktion
+R5	has_Measure arg1:T6 arg2:T14	
+T15	LabValues 141 144	DSA
+T16	Temporal 0 30	26J nach NTX, stabiler Verlauf
+A2	Temporal_Element T16 past_present
+A3	Risk T11 decrease_risk_factor
+A4	Risk T12 decrease_symptom
+R6	has_State arg1:T3 arg2:T5	
+A5	Risk T5 decrease_symptom
+A6	Risk T13 decrease_risk_factor
+T17	Temporal 31 54	NiBi vor 7 Jahren: FSGS
+A7	Temporal_Element T17 past
+T18	Temporal 55 64	Triple IS
+A8	Temporal_Element T18 present
+T19	Condition 73 80	ED PTLD
+A9	Risk T19 symptom
+T20	Temporal 82 113	Therapie und vorr. Reduktion IS
+A10	Temporal_Element T20 future
+A11	Factuality T6 possible_future
+A12	Risk T6 increase_risk_factor
+T21	Temporal 65 80	Problem ED PTLD
+A13	Temporal_Element T21 present
+A14	Risk T7 symptom
+A15	Risk T10 decrease_symptom
+A16	Factuality T15 speculated
+A17	Risk T15 increase_risk_factor
+T22	Measure 145 147	DQ
+R7	has_Measure arg1:T15 arg2:T22	
+T23	Temporal 114 147	Krea 1,6, geringe PU, V.a. DSA DQ
+A18	Temporal_Element T23 present
+T24	Measure 55 61	Triple
+R8	has_Measure arg1:T13 arg2:T24	

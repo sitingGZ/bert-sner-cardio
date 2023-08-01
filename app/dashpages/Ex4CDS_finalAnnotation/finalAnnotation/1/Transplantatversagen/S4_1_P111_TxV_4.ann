@@ -1,0 +1,17 @@
+T1	TimeInfo 3 13	vor 1,5 J.
+T2	LabValues 22 26	Krea
+T3	Measure 27 38	angestiegen
+T4	TimeInfo 50 57	04/2009
+T6	Condition 70 85	Tubulusatrophie
+R1	has_Measure arg1:T2 arg2:T3
+R3	has_TimeInfo arg1:T6 arg2:T4	
+T7	Tx_middle 0 13	Tx vor 1,5 J.
+A1	Risk T7 decrease_risk_factor
+A2	Risk T2 increase_symptom
+A3	Risk T6 increase_risk_factor
+T5	Temporal 0 13	Tx vor 1,5 J.
+A4	Temporal_Element T5 past
+T8	Temporal 14 39	Zuletzt Krea angestiegen.
+A5	Temporal_Element T8 past_present
+T9	Temporal 40 86	In der Bx 04/2009 bereits 40% Tubulusatrophie.
+A6	Temporal_Element T9 past

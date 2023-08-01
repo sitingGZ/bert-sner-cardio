@@ -1,0 +1,17 @@
+T1	LabValues 8 11	CRP
+T2	Condition 12 24	stark erhöht
+T3	LabValues 49 52	CMV
+T4	Condition 53 62	high risk
+T7	Medication 99 107	CellCept
+R1	has_State arg1:T1 arg2:T2
+R2	has_State arg1:T3 arg2:T4
+T8	Temporal 0 24	Zuletzt CRP stark erhöht
+A1	Temporal_Element T8 past_present
+A2	Risk T1 increase_symptom
+A3	Risk T3 increase_risk_factor
+T5	Condition 77 84	CNI Tox
+T9	Measure 108 114	erhöht
+R3	has_Measure arg1:T7 arg2:T9	
+A5	Risk T7 increase_risk_factor
+T6	Temporal 49 114	CMV high risk. Aufgrund der CNI Tox im Tx zuletzt CellCept erhöht
+A4	Temporal_Element T6 past_present

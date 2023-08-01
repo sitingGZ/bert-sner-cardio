@@ -1,0 +1,22 @@
+T1	Condition 0 26	hydropische Dekompensation
+T2	Condition 28 39	Tx Versagen
+T3	Condition 62 73	Rejektionen
+T4	LabValues 96 98	PU
+T5	TimeInfo 40 60	in der Vorgeschichte
+R1	has_TimeInfo arg1:T2 arg2:T5	
+T6	TimeInfo 74 94	in der Vorgeschichte
+R2	has_TimeInfo arg1:T3 arg2:T6	
+T7	Medication 111 113	IS
+A1	Risk T1 increase_symptom
+A2	Risk T2 increase_risk_factor
+A3	Risk T3 increase_risk_factor
+A4	Risk T4 increase_symptom
+A5	Risk T7 increase_risk_factor
+T8	Measure 100 110	Umstellung
+R3	has_Measure arg1:T7 arg2:T8	
+T9	Temporal 0 26	hydropische Dekompensation
+A6	Temporal_Element T9 present
+T10	Temporal 28 94	Tx Versagen in der Vorgeschichte, Rejektionen in der Vorgeschichte
+A7	Temporal_Element T10 past
+T11	Temporal 96 113	PU, Umstellung IS
+A8	Temporal_Element T11 present

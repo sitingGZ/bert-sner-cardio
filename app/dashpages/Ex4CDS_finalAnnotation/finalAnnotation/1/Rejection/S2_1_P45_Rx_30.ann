@@ -1,0 +1,21 @@
+T1	LabValues 3 7	Krea
+T2	Measure 8 15	Anstieg
+T3	TimeInfo 16 30	seit 3 Monaten
+T4	Measure 31 39	konstant
+T5	Measure 44 53	1,5 mg/dl
+T7	Condition 66 75	Rejektion
+T8	Measure 81 102	progredienter Anstieg
+T9	LabValues 125 128	DSA
+R1	has_Measure arg1:T1 arg2:T2
+R2	has_Measure arg1:T1 arg2:T4
+R4	has_Measure arg1:T7 arg2:T8
+R5	has_Measure arg1:T1 arg2:T5	
+R6	has_TimeInfo arg1:T1 arg2:T3	
+A1	Risk T1 decrease_symptom
+T6	Conclusion 55 114	bei akuter Rejektion wäre progredienter Anstieg zu erwarten
+A2	Factuality T9 negative
+A3	Risk T9 decrease_risk_factor
+T10	Temporal 3 53	Krea Anstieg seit 3 Monaten konstant bei 1,5 mg/dl
+A4	Temporal_Element T10 past_present
+T11	Temporal 119 136	keine DSA bekannt
+A5	Temporal_Element T11 past_present

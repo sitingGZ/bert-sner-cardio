@@ -1,0 +1,18 @@
+T1	HealthState 5 9	gute
+T2	Process 10 18	Funktion
+T3	LabValues 23 27	Krea
+T4	Measure 28 37	1,9 mg/dl
+T5	Condition 51 61	humoale Rx
+T7	Condition 99 109	Tx-Verlust
+R2	has_Measure arg1:T3 arg2:T4
+R1	has_State arg1:T2 arg2:T1	
+A1	Factuality T5 speculated
+A2	Factuality T7 possible_future
+A3	Risk T3 decrease_symptom
+A4	Risk T2 decrease_symptom
+A5	Risk T5 increase_risk_factor
+T6	Conclusion 62 144	und daher im weiteren Verlauf Risiko Tx-Verlust, allerdings eher auf längere Sicht
+T8	Temporal 0 61	noch gute Funktion mit Krea 1,9 mg/dl, jedoch eher humoale Rx
+A6	Temporal_Element T8 present
+T9	Temporal 62 144	und daher im weiteren Verlauf Risiko Tx-Verlust, allerdings eher auf längere Sicht
+A7	Temporal_Element T9 future

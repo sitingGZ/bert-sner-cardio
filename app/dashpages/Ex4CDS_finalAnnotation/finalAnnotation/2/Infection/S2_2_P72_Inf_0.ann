@@ -1,0 +1,15 @@
+T1	DiagLab 0 8	klinisch
+T2	DiagLab 13 26	laborchemisch
+T3	Condition 33 46	Infektzeichen
+T4	Medication 47 56	Immunsup.
+T5	HealthState 57 63	stabil
+T6	TimeInfo 64 78	seit 14 Jahren
+R3	has_TimeInfo arg1:T4 arg2:T6
+A1	Factuality T3 negative
+R1	has_State arg1:T4 arg2:T5	
+A2	Risk T3 decrease_symptom
+T7	Temporal 0 46	klinisch und laborchemisch keine Infektzeichen
+A3	Temporal_Element T7 present
+T8	Temporal 47 78	Immunsup. stabil seit 14 Jahren
+A4	Temporal_Element T8 past_present
+A5	Risk T4 decrease_risk_factor

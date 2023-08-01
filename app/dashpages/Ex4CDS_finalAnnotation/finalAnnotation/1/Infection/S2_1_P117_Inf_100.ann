@@ -1,0 +1,20 @@
+T2	Condition 5 18	Cholangitiden
+T4	Condition 72 82	Cholestase
+T6	Condition 103 113	Infektherd
+T8	Condition 139 144	Keime
+T9	TimeInfo 19 53	in der kurzfristigen Vorgeschichte
+R4	has_TimeInfo arg1:T2 arg2:T9	
+T1	Temporal 0 53	rez. Cholangitiden in der kurzfristigen Vorgeschichte
+A1	Temporal_Element T1 past
+A2	Risk T2 increase_risk_factor
+T3	Temporal 54 113	anhaltend unklare Cholestase als nicht sanierter Infektherd
+A3	Temporal_Element T3 past_present
+A4	Risk T4 increase_symptom
+A5	Risk T6 increase_symptom
+T5	DiagLab 148 156	Kulturen
+T7	Temporal 114 156	mehrere unterschiedliche Keime in Kulturen
+A6	Temporal_Element T7 present
+T10	Measure 114 138	mehrere unterschiedliche
+R2	has_Measure arg1:T8 arg2:T10	
+A7	Risk T8 increase_symptom
+R1	has_State arg1:T5 arg2:T8	

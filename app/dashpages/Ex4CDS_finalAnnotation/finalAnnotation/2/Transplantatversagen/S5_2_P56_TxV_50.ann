@@ -1,0 +1,13 @@
+T1	Condition 0 3	ANV
+T2	LabValues 5 7	PU
+T3	LabValues 9 12	DSA
+T6	Measure 57 60	pos
+A1	Risk T1 increase_symptom
+A2	Risk T2 increase_symptom
+A3	Risk T3 increase_risk_factor
+T4	Condition 17 51	zellulärer und humoraler Rejektion
+T5	LabValues 53 56	C4D
+R1	has_Measure arg1:T5 arg2:T6	
+A5	Risk T5 increase_risk_factor
+T7	Temporal 0 60	ANV, PU, DSA bei zellulärer und humoraler Rejektion, C4D pos
+A6	Temporal_Element T7 present

@@ -1,0 +1,18 @@
+T1	Condition 0 11	Tx-Versagen
+T2	LabValues 13 17	Krea
+T3	Measure 26 37	progredient
+T4	Measure 42 45	1,7
+T5	Measure 47 57	zunehmende
+T6	LabValues 58 68	Proteiurie
+T7	DiagLab 70 77	Biopsie
+T8	Condition 89 96	CNI-Tox
+R1	has_Measure arg1:T2 arg2:T3
+R2	has_Measure arg1:T2 arg2:T4
+R3	has_Measure arg1:T6 arg2:T5
+A1	Risk T2 increase_symptom
+A2	Risk T6 increase_symptom
+A3	Risk T8 increase_risk_factor
+T9	Temporal 13 69	Krea langsam progredient auf 1,7; zunehmende Proteiurie,
+A4	Temporal_Element T9 past_present
+T10	Temporal 70 96	Biopsie: vorrangig CNI-Tox
+A5	Temporal_Element T10 present

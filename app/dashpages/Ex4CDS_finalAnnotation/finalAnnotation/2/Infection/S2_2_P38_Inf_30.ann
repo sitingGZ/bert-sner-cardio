@@ -1,0 +1,27 @@
+T1	LabValues 0 3	CRP
+T2	Condition 12 25	latent erhöht
+T3	TimeInfo 27 34	aktuell
+T7	TimeInfo 105 115	vor kurzem
+T8	Condition 128 151	multimorbidem Patienten
+T9	TimeInfo 152 172	in nächsten 90 Tagen
+R1	has_Measure arg1:T1 arg2:T2
+T10	Age_high 120 151	älterem multimorbidem Patienten
+A2	Risk T1 increase_symptom
+T4	Condition 56 64	Korrelat
+T11	DiagLab 45 55	klinisches
+R4	has_State arg1:T11 arg2:T4	
+A1	Factuality T4 negative
+A3	Risk T4 decrease_symptom
+T5	Medication 89 104	Immunsupression
+A4	Risk T5 increase_risk_factor
+R2	has_TimeInfo arg1:T5 arg2:T7	
+A5	Risk T10 increase_risk_factor
+A6	Risk T8 increase_risk_factor
+T6	Conclusion 152 195	in nächsten 90 Tagen nicht unwahrscheinlich
+T12	Temporal 0 26	CRP nach Tx latent erhöht,
+A7	Temporal_Element T12 past_present
+T13	Temporal 27 64	aktuell zwar kein klinisches Korrelat
+A8	Temporal_Element T13 present
+T14	Temporal 65 151	baer bei Z.n. Neubeginn Immunsupression vor kurzem bei älterem multimorbidem Patienten
+A9	Temporal_Element T14 past_present
+R3	has_TimeInfo arg1:T4 arg2:T3	

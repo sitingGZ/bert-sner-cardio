@@ -1,0 +1,22 @@
+T1	TimeInfo 3 11	vor 5 J.
+T2	LabValues 12 23	Tac Spiegel
+T3	HealthState 24 26	ok
+T4	Medication 27 29	MP
+T5	Medication 34 42	Myfortic
+R1	has_State arg1:T2 arg2:T3	
+T6	Measure 30 33	4mg
+R2	has_Measure arg1:T4 arg2:T6	
+T7	Measure 43 46	540
+T8	Measure 47 52	1-0-1
+R3	has_Measure arg1:T5 arg2:T7	
+R4	has_Measure arg1:T5 arg2:T8	
+T9	Tx_middle 0 11	Tx vor 5 J.
+A1	ref_age T9 patient
+A2	Risk T9 risk_factor
+T10	Temporal 0 11	Tx vor 5 J.
+A3	Temporal_Element T10 past
+A4	Risk T2 decrease_risk_factor
+A5	Risk T4 decrease_risk_factor
+A6	Risk T5 decrease_risk_factor
+T11	Temporal 12 26;27 33;34 52	Tac Spiegel ok MP 4mg Myfortic 540 1-0-1
+A7	Temporal_Element T11 present

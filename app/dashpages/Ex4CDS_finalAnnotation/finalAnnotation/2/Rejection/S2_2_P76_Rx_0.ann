@@ -1,0 +1,7 @@
+T1	Process 16 27	Tx Funktion
+T2	HealthState 28 38	stabil gut
+R1	has_State arg1:T1 arg2:T2	
+T3	Conclusion 0 14	keine Hinweise
+A1	Risk T1 decrease_symptom
+T4	Temporal 16 38	Tx Funktion stabil gut
+A2	Temporal_Element T4 past_present

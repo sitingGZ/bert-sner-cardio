@@ -1,0 +1,14 @@
+T2	Condition 4 19	Infektgeschehen
+T3	LabValues 21 25	CRPp
+T4	Measure 38 48	ansteigend
+R1	has_Measure arg1:T3 arg2:T4
+A1	Risk T2 increase_risk_factor
+A2	Risk T3 increase_symptom
+T1	LabValues 56 72	resistente Keime
+A3	Risk T1 increase_risk_factor
+T5	Temporal 0 19	rez Infektgeschehen
+A4	Temporal_Element T5 past
+T6	Temporal 21 48	CRPp wohl wieder ansteigend
+A5	Temporal_Element T6 past_present
+T7	Temporal 50 85	teils resistente Keime nachgeweisen
+A6	Temporal_Element T7 past

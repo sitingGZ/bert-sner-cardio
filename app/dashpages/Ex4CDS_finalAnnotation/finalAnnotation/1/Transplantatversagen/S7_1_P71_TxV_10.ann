@@ -1,0 +1,19 @@
+T1	HealthState 0 4	gute
+T2	Process 5 16	Tx Funktion
+T5	LabValues 33 35	PU
+T6	HealthState 36 49	unauffälliges
+T7	DiagLab 50 54	Sono
+T8	Measure 55 72	etwas schwankende
+T9	LabValues 73 83	IS Spiegel
+R1	has_State arg1:T2 arg2:T1	
+R3	has_State arg1:T7 arg2:T6	
+R4	has_Measure arg1:T9 arg2:T8	
+A1	Risk T2 decrease_symptom
+A2	Risk T5 decrease_symptom
+A3	Factuality T5 minor
+A4	Risk T7 decrease_symptom
+A5	Risk T9 risk_factor
+T3	Temporal 0 16;17 35;36 54	gute Tx Funktion keine relevante PU unauffälliges Sono
+A6	Temporal_Element T3 present
+T4	Temporal 55 83	etwas schwankende IS Spiegel
+A7	Temporal_Element T4 past_present

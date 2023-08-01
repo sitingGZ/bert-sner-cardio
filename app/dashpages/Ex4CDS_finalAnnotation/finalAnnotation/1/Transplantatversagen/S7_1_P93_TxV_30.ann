@@ -1,0 +1,16 @@
+T1	HealthState 0 5	gutes
+T2	LabValues 6 10	Krea
+T3	TimeInfo 27 34	aktuell
+T4	Measure 35 44	steigende
+T5	Process 45 60	Retentionswerte
+T6	Condition 81 88	Infekts
+R1	has_Measure arg1:T5 arg2:T4
+R2	has_State arg1:T2 arg2:T1	
+R3	has_TimeInfo arg1:T5 arg2:T3	
+A1	Risk T2 decrease_symptom
+A2	Risk T5 increase_symptom
+A3	Risk T6 increase_risk_factor
+T7	Temporal 0 25	gutes Krea Ausgangsniveau
+A4	Temporal_Element T7 past
+T8	Temporal 27 88	aktuell steigende Retentionswerte, a.e. im Rahmen des Infekts
+A5	Temporal_Element T8 present

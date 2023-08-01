@@ -1,0 +1,28 @@
+T1	Medication 76 100	Nahrungsergänzungsmittel
+T2	Medication 102 109	Reducto
+T5	Process 158 160	RR
+T6	Condition 166 169	mau
+T9	Condition 227 233	Infekt
+R2	has_State arg1:T5 arg2:T6
+T3	Condition 13 28	klinisch malade
+T10	Condition 55 64	Diarrhoen
+T11	TimeInfo 35 54	in der letzten Zeit
+R1	has_TimeInfo arg1:T10 arg2:T11	
+T4	Condition 123 144	keine gute Abwehrlage
+A1	Factuality T9 possible_future
+A2	Risk T3 increase_symptom
+A3	Risk T10 increase_symptom
+A4	Risk T4 increase_risk_factor
+A5	Risk T6 increase_symptom
+T7	Process 171 173	HF
+T8	Condition 174 183	tachykard
+R3	has_State arg1:T7 arg2:T8	
+T12	Conclusion 185 238	dies könnten Hinweise auf einen drohenden Infekt sein
+A6	Risk T8 increase_symptom
+T13	Temporal 0 28	Die Pat. ist klinisch malade
+A7	Temporal_Element T13 present
+T14	Temporal 70 183	nimmt Nahrungsergänzungsmittel (Reducto), es scheint keine gute Abwehrlage vorzuliegen. RR eher mau, HF tachykard
+A8	Temporal_Element T14 present
+T15	Temporal 30 68	wies in der letzten Zeit Diarrhoen auf
+A9	Temporal_Element T15 past_present
+A10	Factuality T4 speculated

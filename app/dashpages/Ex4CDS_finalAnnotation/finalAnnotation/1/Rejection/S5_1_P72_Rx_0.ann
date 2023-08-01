@@ -1,0 +1,29 @@
+T1	Condition 6 17	Rejektionen
+T2	LabValues 32 35	DSA
+T3	HealthState 37 44	stabile
+T4	Process 45 47	NF
+T5	Condition 56 73	Infektproblematik
+T6	TimeInfo 74 79	2014.
+T7	TimeInfo 120 130	über Jahre
+A1	Factuality T1 negative
+R1	has_State arg1:T4 arg2:T3	
+R2	has_TimeInfo arg1:T5 arg2:T6	
+T8	Condition 80 110	Compliance nicht einzuschätzen
+A2	Risk T1 decrease_risk_factor
+A3	Factuality T2 negative
+A4	Risk T2 decrease_risk_factor
+A5	Risk T4 decrease_symptom
+A6	Risk T5 symptom
+A7	Factuality T8 speculated
+A8	Risk T8 risk_factor
+T9	Other 131 156	nicht in die Ambulanz kam
+A9	Risk T9 risk_factor
+R3	has_TimeInfo arg1:T9 arg2:T7	
+T10	Temporal 0 47	Keine Rejektionen bisher, keine DSA, stabile NF
+A10	Temporal_Element T10 past_present
+T11	Temporal 48 78	bis auf Infektproblematik 2014
+A11	Temporal_Element T11 past
+T12	Temporal 80 110	Compliance nicht einzuschätzen
+A12	Temporal_Element T12 present
+T13	Temporal 112 157	da Pat. über Jahre nicht in die Ambulanz kam.
+A13	Temporal_Element T13 past

@@ -1,0 +1,22 @@
+T1	LabValues 6 9	HLA
+T3	Condition 26 35	Rejektion
+T4	HealthState 37 45	stabiler
+T5	Medication 69 71	IS
+T6	Condition 86 89	BKV
+A1	Factuality T1 negative
+A2	Factuality T3 speculated
+T2	Process 46 53	Verlauf
+R1	has_State arg1:T2 arg2:T4	
+T7	Measure 59 68	Reduktion
+R2	has_Measure arg1:T5 arg2:T7	
+A3	Risk T1 decrease_risk_factor
+A4	Risk T3 increase_risk_factor
+A5	Risk T2 decrease_symptom
+A6	Risk T6 increase_risk_factor
+A7	Risk T5 increase_risk_factor
+T8	Temporal 0 10	keine HLA,
+A8	Temporal_Element T8 past_present
+T9	Temporal 11 35	einmalig frgl. Rejektion
+A9	Temporal_Element T9 past
+T10	Temporal 37 101	stabiler Verlauf seit Reduktion IS bei vorrangig BKV Problematik
+A10	Temporal_Element T10 past_present

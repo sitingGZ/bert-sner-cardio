@@ -1,0 +1,18 @@
+T1	HealthState 1 8	stabile
+T2	Process 9 20	Tx Funktion
+T3	TimeInfo 21 36	über lange Zeit
+T4	Condition 44 55	Rejectionen
+T6	Condition 99 108	Infektion
+T8	Condition 133 144	Tx Versagen
+A1	Factuality T4 negative
+R1	has_State arg1:T2 arg2:T1	
+R3	has_TimeInfo arg1:T2 arg2:T3	
+A2	Risk T2 decrease_symptom
+T7	Temporal 1 36	stabile Tx Funktion über lange Zeit
+A3	Temporal_Element T7 past_present
+A4	Risk T4 decrease_risk_factor
+A5	Risk T6 increase_risk_factor
+T9	Temporal 38 55	keine Rejectionen
+A7	Temporal_Element T9 past
+T10	Conclusion 57 144	Einziger wirklicher Risikofaktor ist eine Infektion plus infektassoziierten Tx Versagen
+A6	Factuality T8 possible_future

@@ -1,0 +1,12 @@
+T2	Condition 5 14	schlechte
+T3	Process 15 26	Tx Funktion
+T4	LabValues 27 30	Kre
+T5	Measure 31 35	3,45
+R1	has_Measure arg1:T4 arg2:T5
+T1	Measure 0 4	hoch
+R2	has_State arg1:T3 arg2:T2	
+R3	has_Measure arg1:T3 arg2:T1	
+A1	Risk T3 increase_symptom
+A2	Risk T4 increase_symptom
+T6	Temporal 0 35	hoch schlechte Tx Funktion Kre 3,45
+A3	Temporal_Element T6 present

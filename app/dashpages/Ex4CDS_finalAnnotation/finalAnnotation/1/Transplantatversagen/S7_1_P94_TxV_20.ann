@@ -1,0 +1,32 @@
+T1	Condition 13 15	Rj
+T2	Measure 61 69	niedrige
+T3	LabValues 70 72	PU
+T4	Condition 74 101	nicht optimal eingestellter
+T5	Process 102 104	RR
+T6	DiagLab 108 112	Sono
+T10	HealthState 187 192	gutes
+R1	has_State arg1:T5 arg2:T4	
+R2	has_Measure arg1:T3 arg2:T2	
+T12	Age_low 193 212	junges Spenderorgan
+A1	ref_age T12 donor
+T13	Condition 58 60	Rj
+A2	Factuality T13 negative
+T14	TimeInfo 23 36	länger zurück
+R4	has_TimeInfo arg1:T1 arg2:T14	
+T15	TimeInfo 38 45	zuletzt
+R5	has_TimeInfo arg1:T13 arg2:T15	
+T9	Other 200 212	Spenderorgan
+R3	has_State arg1:T9 arg2:T10	
+A3	Risk T1 increase_risk_factor
+A4	Risk T13 decrease_risk_factor
+A5	Risk T3 decrease_symptom
+A6	Risk T4 increase_risk_factor
+T7	Condition 138 164	chron. Parenchymschädigung
+R6	has_State arg1:T6 arg2:T7	
+A7	Risk T7 increase_symptom
+A8	Risk T12 decrease_risk_factor
+A9	Risk T9 increase_risk_factor
+T8	Temporal 0 36	stattgehabte Rj liegen länger zurück
+A10	Temporal_Element T8 past
+T11	Temporal 38 60;61 104;105 212	zuletzt keine neuen Rj niedrige PU, nicht optimal eingestellter RR im Sono Zeichen zwar Zeichen der chron. Parenchymschädigung, aber verhältnismäßig gutes/junges Spenderorgan
+A11	Temporal_Element T11 present

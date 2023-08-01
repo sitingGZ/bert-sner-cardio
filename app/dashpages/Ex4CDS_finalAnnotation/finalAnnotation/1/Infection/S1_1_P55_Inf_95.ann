@@ -1,0 +1,25 @@
+T2	Condition 22 29	Dyspone
+T3	Condition 34 47	Lungenfiborse
+T6	Condition 89 102	PCP Pneumonie
+T11	Medication 57 70	IVIG Therapie
+T12	Condition 75 79	CIPD
+T1	TimeInfo 0 7	aktuell
+R1	has_TimeInfo arg1:T2 arg2:T1	
+R2	has_TimeInfo arg1:T3 arg2:T1	
+T4	TimeInfo 81 88	Zuletzt
+R3	has_TimeInfo arg1:T6 arg2:T4	
+A1	Risk T2 increase_symptom
+A2	Risk T3 increase_risk_factor
+T5	Temporal 0 47	aktuell stationär mit Dyspone bei Lungenfiborse
+A3	Temporal_Element T5 present
+T7	Other 8 17	stationär
+A4	Risk T7 increase_risk_factor
+T8	Temporal 49 79	Bereits IVIG Therapie mit CIPD
+A5	Temporal_Element T8 past_present
+A6	Risk T11 risk_factor
+T9	Temporal 81 141	Zuletzt PCP Pneumonie diese wurde nicht adäquat ausgehandelt
+A7	Temporal_Element T9 past
+T10	Other 103 141	diese wurde nicht adäquat ausgehandelt
+A8	Risk T10 increase_risk_factor
+A9	Risk T6 increase_symptom
+R4	has_TimeInfo arg1:T7 arg2:T1	

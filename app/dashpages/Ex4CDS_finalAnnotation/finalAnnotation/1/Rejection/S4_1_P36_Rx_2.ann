@@ -1,0 +1,29 @@
+T1	TimeInfo 3 12	vor 16 d.
+T2	DiagLab 16 20	Sono
+T3	Condition 37 56	Rejektionsgeschehen
+T4	LabValues 58 67	Kreatinin
+T5	Measure 68 75	fallend
+T6	LabValues 77 94	Tacrolimusspiegel
+T7	HealthState 95 109	im Zielbereich
+T8	Medication 111 113	MP
+T9	Medication 119 128	Cell Cept
+R2	has_Measure arg1:T4 arg2:T5
+A1	Factuality T3 negative
+R1	has_State arg1:T6 arg2:T7	
+T10	Measure 114 118	20mg
+R3	has_Measure arg1:T8 arg2:T10	
+T11	Measure 129 135	2000mg
+R4	has_Measure arg1:T9 arg2:T11	
+T12	Tx_low 0 12	Tx vor 16 d.
+A2	ref_age T12 patient
+A3	Risk T12 increase_risk_factor
+T13	Temporal 0 12	Tx vor 16 d.
+A4	Temporal_Element T13 present
+R5	has_State arg1:T2 arg2:T3	
+A5	Risk T3 decrease_symptom
+A6	Risk T4 decrease_symptom
+A7	Risk T6 decrease_risk_factor
+A8	Risk T8 decrease_risk_factor
+A9	Risk T9 decrease_risk_factor
+T14	Temporal 13 57;58 76;77 110;111 118;119 135	Im Sono Kein Anhalt für Rejektionsgeschehen. Kreatinin fallend, Tacrolimusspiegel im Zielbereich. MP 20mg Cell Cept 2000mg
+A10	Temporal_Element T14 present

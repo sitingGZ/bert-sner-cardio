@@ -1,0 +1,12 @@
+T2	Condition 0 26	mangelnde Therapieadhärenz
+T4	Condition 31 52	schlechter Compliance
+T5	Condition 77 89	IA-Rejektion
+T6	TimeInfo 90 100	vor kurzem
+R3	has_TimeInfo arg1:T5 arg2:T6	
+A1	Risk T2 increase_risk_factor
+A2	Risk T4 increase_risk_factor
+A3	Risk T5 increase_risk_factor
+T1	Temporal 0 52	mangelnde Therapieadhärenz bei schlechter Compliance
+A4	Temporal_Element T1 past_present
+T3	Temporal 53 100	bereits diagnostizierte IA-Rejektion vor kurzem
+A5	Temporal_Element T3 past_present

@@ -1,0 +1,12 @@
+T1	LabValues 53 57	Krea
+T2	HealthState 8 39	einigermaßen zufriedenstellende
+T3	Process 40 48	Funktion
+R1	has_State arg1:T3 arg2:T2	
+T4	Measure 58 61	< 2
+R2	has_Measure arg1:T1 arg2:T4	
+A1	Risk T3 decrease_symptom
+A2	Risk T1 decrease_symptom
+T5	Temporal 0 86	erstmal einigermaßen zufriedenstellende Funktion mit Krea < 2 kurz Entlassung nach NTX
+A3	Temporal_Element T5 present
+T6	Tx_low 62 86	kurz Entlassung nach NTX
+A4	Risk T6 decrease_risk_factor

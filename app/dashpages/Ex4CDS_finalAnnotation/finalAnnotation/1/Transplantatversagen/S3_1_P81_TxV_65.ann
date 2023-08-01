@@ -1,0 +1,13 @@
+T2	Condition 40 42	RX
+T3	Condition 53 60	Kinking
+T1	Process 11 28	Funktionsaufnahme
+T4	Condition 0 10	verzögerte
+R1	has_State arg1:T1 arg2:T4	
+A1	Factuality T2 speculated
+A2	Risk T2 increase_risk_factor
+A3	Risk T1 increase_symptom
+T5	Other 44 49	Re-OP
+A4	Risk T5 increase_risk_factor
+A5	Risk T3 increase_risk_factor
+T6	Temporal 0 28	verzögerte Funktionsaufnahme
+A6	Temporal_Element T6 past_present

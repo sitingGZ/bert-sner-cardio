@@ -1,0 +1,16 @@
+T1	LabValues 0 2	PU
+T2	Measure 8 16	steigend
+T4	HealthState 43 49	stabil
+T5	LabValues 57 60	DSA
+T6	Condition 81 99	Complianceprobleme
+R1	has_Measure arg1:T1 arg2:T2
+A2	Factuality T6 negative
+T7	Process 23 37	Nierenfunktion
+R2	has_State arg1:T7 arg2:T4	
+A1	Risk T1 increase_symptom
+A3	Risk T7 decrease_symptom
+A4	Risk T5 decrease_risk_factor
+A5	Factuality T5 negative
+A6	Risk T6 decrease_risk_factor
+T3	Temporal 0 61;62 99	PU zwar steigend, aber Nierenfunktion sehr stabil. Keine DSA. Keine Hinweise für Complianceprobleme
+A7	Temporal_Element T3 present

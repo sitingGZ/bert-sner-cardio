@@ -1,0 +1,21 @@
+T1	HealthState 0 8	Stabiler
+T2	LabValues 9 18	Kreatinin
+T8	Condition 159 168	Neoplasie
+R1	has_Measure arg1:T2 arg2:T1
+T3	Condition 90 101	TX Versagen
+A2	Factuality T3 possible_future
+T5	Condition 220 234	Dialysepflicht
+A3	Risk T2 decrease_symptom
+T4	Condition 37 59	klinischen Beschwerden
+A1	Factuality T4 negative
+A4	Risk T4 decrease_symptom
+T6	Conclusion 60 117	lassen mich ein eher geringes TX Versagen Risiko annehmen
+T7	Condition 124 137	membranöse GN
+A5	Risk T7 increase_risk_factor
+A6	Factuality T7 possible_future
+A7	Risk T8 risk_factor
+T9	Temporal 119 169	Eine membranöse GN könnte auftreten bei Neoplasie.
+A8	Temporal_Element T9 future
+T10	Conclusion 170 242	Diese würde aber auch vermutlich nicht direkt zur Dialysepflicht führen.
+T11	Temporal 0 59	Stabiler Kreatinin Verlauf und keine klinischen Beschwerden
+A9	Temporal_Element T11 past_present

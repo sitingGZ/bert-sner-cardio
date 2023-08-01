@@ -1,0 +1,32 @@
+T1	TimeInfo 3 14	vor >1 Jahr
+T2	Medication 16 23	Urbason
+T3	TimeInfo 41 49	Kürzlich
+T4	Medication 61 69	Certican
+T5	Medication 74 81	Prograf
+T6	Measure 90 99	niedriger
+T7	LabValues 100 107	Spiegel
+T8	Medication 108 127	Myfortic Tagesdosis
+R1	has_Measure arg1:T7 arg2:T6
+T9	Tx_middle 0 14	Tx vor >1 Jahr
+T10	TimeInfo 28 40	jeden 2. Tag
+R2	has_TimeInfo arg1:T2 arg2:T10	
+R3	has_TimeInfo arg1:T4 arg2:T3	
+T11	Measure 128 135	1080 mg
+R4	has_Measure arg1:T8 arg2:T11	
+R5	has_TimeInfo arg1:T5 arg2:T3	
+T12	Temporal 0 14	Tx vor >1 Jahr
+A1	Temporal_Element T12 past
+A2	Risk T9 decrease_risk_factor
+A3	Risk T2 increase_risk_factor
+T13	Temporal 16 40	Urbason nur jeden 2. Tag
+A4	Temporal_Element T13 past_present
+T14	Other 50 81	Umstellung Certican auf Prograf
+A5	Risk T14 decrease_risk_factor
+A6	Risk T7 increase_risk_factor
+T15	Temporal 41 81	Kürzlich Umstellung Certican auf Prograf
+A7	Temporal_Element T15 past
+T16	Temporal 83 107	z. Zt. niedriger Spiegel
+A8	Temporal_Element T16 present
+A9	Risk T8 decrease_risk_factor
+T17	Temporal 108 135	Myfortic Tagesdosis 1080 mg
+A10	Temporal_Element T17 past_present

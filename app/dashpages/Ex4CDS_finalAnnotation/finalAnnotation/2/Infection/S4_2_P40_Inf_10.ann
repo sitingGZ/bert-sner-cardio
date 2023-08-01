@@ -1,0 +1,14 @@
+T1	Condition 8 19	Ösophagitis
+T2	Condition 21 34	CMV-Infektion
+T3	TimeInfo 35 46	vor 1 Monat
+T4	LabValues 48 51	CRP
+R1	has_TimeInfo arg1:T2 arg2:T3
+T5	Measure 52 58	6 mg/l
+R2	has_Measure arg1:T4 arg2:T5	
+A1	Risk T1 increase_risk_factor
+A2	Risk T2 increase_symptom
+A3	Risk T4 decrease_symptom
+T6	Temporal 0 47	Zuletzt Ösophagitis, CMV-Infektion vor 1 Monat;
+A4	Temporal_Element T6 past
+T7	Temporal 48 58	CRP 6 mg/l
+A5	Temporal_Element T7 present

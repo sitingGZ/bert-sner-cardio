@@ -1,0 +1,23 @@
+T2	TimeInfo 14 22	vor 2 J.
+T3	LabValues 23 27	Krea
+T4	HealthState 36 42	stabil
+T5	Measure 43 52	1,7 mg/dl
+T7	LabValues 61 65	Krea
+T8	Measure 66 72	1,3 mg
+R1	has_Measure arg1:T3 arg2:T5
+R2	has_Measure arg1:T7 arg2:T8
+R3	has_State arg1:T3 arg2:T4	
+T1	Age_middle 0 10	58 j. Pat.
+T9	Tx_middle 11 22	TX vor 2 J.
+A1	Risk T3 decrease_symptom
+A2	Risk T7 symptom
+A3	Risk T9 decrease_risk_factor
+A4	Risk T1 risk_factor
+T6	Temporal 23 52	Krea aktuell stabil 1,7 mg/dl
+A5	Temporal_Element T6 present
+T10	Temporal 54 75	bestes Krea 1,3 mg/dl
+A6	Temporal_Element T10 past
+T11	Temporal 0 10	58 j. Pat.
+A7	Temporal_Element T11 present
+T12	Temporal 11 22	TX vor 2 J.
+A8	Temporal_Element T12 past

@@ -1,0 +1,15 @@
+T1	Condition 0 5	ADPKD
+T3	Condition 44 47	PCA
+T5	Condition 79 86	Infekte
+T6	Age_high 27 37	alter Mann
+A1	Factuality T5 possible_future
+T2	Conclusion 51 87	suggeriert Anfälligkeit für Infekte.
+A2	Risk T1 increase_risk_factor
+A3	Risk T6 increase_risk_factor
+A4	Risk T3 increase_risk_factor
+T4	Temporal 0 26	ADPKD als Grunderkrankung,
+A5	Temporal_Element T4 past_present
+T7	Temporal 27 38	alter Mann,
+A6	Temporal_Element T7 present
+T8	Temporal 39 47	Z.n. PCA
+A7	Temporal_Element T8 past

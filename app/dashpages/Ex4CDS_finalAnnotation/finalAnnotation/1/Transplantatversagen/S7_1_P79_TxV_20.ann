@@ -1,0 +1,19 @@
+T1	Condition 14 20	Infekt
+T2	Condition 48 62	Reversibilität
+T3	HealthState 86 94	stabiler
+T4	Process 95 110	Langzeitverlauf
+T5	Measure 115 124	moderater
+R1	has_State arg1:T4 arg2:T3	
+T6	Process 125 136	Tx Funktion
+R2	has_Measure arg1:T6 arg2:T5	
+A1	Risk T1 increase_risk_factor
+A2	Risk T2 decrease_risk_factor
+A3	Risk T4 decrease_symptom
+A4	Risk T6 symptom
+T7	Temporal 0 46	vordergründig Infekt -> Behandlung eingeleitet
+A5	Temporal_Element T7 present
+T8	Conclusion 48 77	Reversibilität wahrscheinlich
+T9	Other 24 34	Behandlung
+A6	Risk T9 decrease_risk_factor
+T10	Temporal 78 136	zuletzt stabiler Langzeitverlauf mit moderater Tx Funktion
+A7	Temporal_Element T10 past_present

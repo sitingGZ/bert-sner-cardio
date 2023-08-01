@@ -1,0 +1,15 @@
+T1	TimeInfo 0 7	aktuell
+T3	Condition 20 39	Rejectionsgeschehen
+T5	Condition 67 78	Rejectionen
+R1	has_TimeInfo arg1:T3 arg2:T1	
+T4	TimeInfo 86 99	Vergangenheit
+R3	has_TimeInfo arg1:T5 arg2:T4	
+T2	DiagLab 40 48	biopisch
+A1	Risk T3 increase_symptom
+T6	Measure 61 66	Viele
+R2	has_Measure arg1:T5 arg2:T6	
+A2	Risk T5 increase_risk_factor
+T7	Temporal 0 59	aktuell ablaufendes Rejectionsgeschehen biopisch gesichtert
+A3	Temporal_Element T7 present
+T8	Temporal 61 99	Viele Rejectionen in der Vergangenheit
+A4	Temporal_Element T8 past

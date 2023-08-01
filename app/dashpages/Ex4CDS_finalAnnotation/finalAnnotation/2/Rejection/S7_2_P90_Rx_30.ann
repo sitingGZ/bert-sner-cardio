@@ -1,0 +1,8 @@
+T2	Condition 5 12	Infekte
+T3	Measure 14 24	reduzierte
+T4	Medication 25 27	IS
+R1	has_Measure arg1:T4 arg2:T3
+A1	Risk T2 symptom
+A2	Risk T4 increase_risk_factor
+T1	Temporal 0 27	rez. Infekte, reduzierte IS
+A3	Temporal_Element T1 past_present

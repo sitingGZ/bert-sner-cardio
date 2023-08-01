@@ -1,0 +1,31 @@
+T1	LabValues 0 6	Leukos
+T2	HealthState 7 17	normwertig
+T3	Measure 23 42	ansteigende Tendenz
+T5	LabValues 44 47	CRP
+T6	Measure 48 55	negativ
+T8	Condition 80 93	infektzeichen
+T9	Condition 130 133	HWI
+R1	has_State arg1:T1 arg2:T2
+R2	has_Measure arg1:T1 arg2:T3
+R5	has_Measure arg1:T5 arg2:T6
+A1	Factuality T8 negative
+T4	LabValues 100 104	Krea
+T7	Measure 104 111	ansteig
+R3	has_Measure arg1:T4 arg2:T7	
+A2	Risk T1 symptom
+A3	Risk T5 decrease_symptom
+T10	DiagLab 65 73	klinisch
+A4	Risk T8 decrease_symptom
+A5	Risk T4 increase_symptom
+T11	Measure 121 129	mehrfach
+R4	has_Measure arg1:T9 arg2:T11	
+A6	Risk T9 increase_risk_factor
+T12	Temporal 0 42	Leukos normwertig aber ansteigende Tendenz
+A7	Temporal_Element T12 past_present
+T13	Temporal 44 93	CRP negativ, aktuell klinisch keine infektzeichen
+A8	Temporal_Element T13 present
+T14	Temporal 95 111	aber Kreaansteig
+A9	Temporal_Element T14 past_present
+T15	Temporal 116 133	Z.b. mehrfach HWI
+A10	Temporal_Element T15 past
+A11	Factuality T5 negative

@@ -1,0 +1,10 @@
+T1	LabValues 0 4	Krea
+T2	Measure 5 14	stagniert
+T3	Condition 16 29	BKV Nephritis
+R1	has_Measure arg1:T1 arg2:T2
+A1	Risk T1 increase_symptom
+A2	Risk T3 increase_risk_factor
+T4	Condition 44 47	DGF
+A3	Risk T4 increase_risk_factor
+T5	Temporal 0 47	Krea stagniert, BKV Nephritis nachgewiesen, DGF
+A4	Temporal_Element T5 past_present

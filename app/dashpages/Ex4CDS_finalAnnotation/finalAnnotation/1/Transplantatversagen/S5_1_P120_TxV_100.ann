@@ -1,0 +1,16 @@
+T2	Measure 36 40	hohe
+T3	LabValues 41 43	PU
+T6	LabValues 57 60	DSA
+T7	Condition 62 71	Rejektion
+T8	Condition 77 81	FSGS
+T9	Condition 20 34	Nierenversagen
+R2	has_Measure arg1:T3 arg2:T2	
+A1	Risk T9 increase_symptom
+T1	Measure 45 54	>4g/gKrea
+R1	has_Measure arg1:T3 arg2:T1	
+A2	Risk T3 increase_symptom
+A3	Risk T6 increase_risk_factor
+A4	Risk T7 increase_risk_factor
+A5	Risk T8 increase_risk_factor
+T4	Temporal 0 61;62 87	rasch progredientes Nierenversagen, hohe PU (>4g/gKrea), DSA. Rejektion plus FSGS im TX
+A6	Temporal_Element T4 present

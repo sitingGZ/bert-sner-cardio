@@ -1,0 +1,27 @@
+T1	Condition 7 21	unzureichender
+T2	Process 22 40	Funktionmsaufnahme
+T3	LabValues 63 67	Krea
+T4	LabValues 68 72	krea
+T5	Measure 73 76	5,3
+T6	Measure 78 81	9,3
+T7	DiagLab 98 106	Biopsier
+T8	Condition 111 116	Ödeme
+T9	Condition 132 144	Organhypoxie
+T10	Process 168 176	Funktion
+R3	has_Measure arg1:T4 arg2:T5
+R2	has_Measure arg1:T4 arg2:T6	
+R1	has_State arg1:T2 arg2:T1	
+A1	Risk T2 increase_symptom
+A2	Risk T4 increase_symptom
+A3	Factuality T9 speculated
+A4	Risk T9 increase_risk_factor
+A5	Risk T8 increase_symptom
+T11	Conclusion 145 176	mit wneig Hoffnugn auf Funktion
+T12	Temporal 0 40	Tx mit unzureichender Funktionmsaufnahme
+A6	Temporal_Element T12 past_present
+T13	Temporal 42 76	keine Entgiftung bei Krea krea 5,3
+A7	Temporal_Element T13 present
+T14	Temporal 78 81	9,3
+A8	Temporal_Element T14 past
+T15	Temporal 84 144	wurde bereits Biopsier mit Ödeme und Frage nach Organhypoxie
+A9	Temporal_Element T15 past

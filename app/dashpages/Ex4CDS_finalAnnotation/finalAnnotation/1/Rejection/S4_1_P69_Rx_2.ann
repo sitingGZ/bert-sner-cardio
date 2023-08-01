@@ -1,0 +1,24 @@
+T1	TimeInfo 3 12	vor 5 Wo.
+T3	LabValues 25 36	Tac Spiegel
+T4	HealthState 48 62	im Zielbereich
+T5	Medication 68 75	Urbason
+T6	Medication 76 84	CellCept
+R1	has_State arg1:T3 arg2:T4	
+T7	Measure 63 67	16mg
+R2	has_Measure arg1:T5 arg2:T7	
+T8	Measure 85 91	2000mg
+R3	has_Measure arg1:T6 arg2:T8	
+T9	Tx_low 0 12	TX vor 5 Wo.
+A1	ref_age T9 patient
+T10	Temporal 0 12	TX vor 5 Wo.
+A2	Temporal_Element T10 past
+A3	Risk T9 increase_risk_factor
+T2	Condition 15 23	Mismatch
+T11	Measure 13 14	1
+R4	has_Measure arg1:T2 arg2:T11	
+A4	Risk T2 decrease_risk_factor
+A5	Risk T3 decrease_risk_factor
+A6	Risk T5 decrease_risk_factor
+A7	Risk T6 decrease_risk_factor
+T12	Temporal 13 24;25 62;63 75;76 91	1-Mismatch. Tac Spiegel weitgehend im Zielbereich 16mg Urbason CellCept 2000mg
+A8	Temporal_Element T12 present

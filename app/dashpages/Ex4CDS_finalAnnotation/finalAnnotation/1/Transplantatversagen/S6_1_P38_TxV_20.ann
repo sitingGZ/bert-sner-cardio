@@ -1,0 +1,16 @@
+T1	HealthState 0 4	Gute
+T2	Process 5 19	Primärfunktion
+T3	Condition 59 73	Venenthrombose
+T5	Condition 104 115	Tx Versagen
+R1	has_State arg1:T2 arg2:T1	
+A1	Risk T2 decrease_symptom
+A3	Factuality T3 possible_future
+A4	Risk T3 increase_risk_factor
+A5	Risk T5 increase_symptom
+T4	Tx_low 131 152	akuten post-Tx -Phase
+A2	Risk T4 risk_factor
+T6	Conclusion 21 123	eigentlich wären akute Ereignisse wie Venenthrombose oder ähnliches für ein akutes Tx Versagen denkbar
+T7	Temporal 124 152	in der akuten post-Tx -Phase
+A7	Temporal_Element T7 present
+T8	Temporal 0 19	Gute Primärfunktion
+A8	Temporal_Element T8 present

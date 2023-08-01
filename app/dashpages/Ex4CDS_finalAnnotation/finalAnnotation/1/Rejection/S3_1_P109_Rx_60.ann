@@ -1,0 +1,26 @@
+T1	HealthState 7 14	stabile
+T2	Process 15 23	Funktion
+T3	LabValues 28 35	Prograf
+T4	HealthState 36 50	im Zielbereich
+T5	LabValues 63 67	krea
+T6	Measure 68 78	ansteigend
+T7	Measure 83 93	1,0 -> 2,0
+T8	TimeInfo 94 108	in einem Monat
+T9	DiagLab 157 161	MiBi
+R2	has_Measure arg1:T5 arg2:T6
+R1	has_State arg1:T2 arg2:T1	
+R3	has_State arg1:T3 arg2:T4	
+R4	has_Measure arg1:T5 arg2:T7	
+R5	has_TimeInfo arg1:T5 arg2:T8	
+A1	Risk T2 decrease_symptom
+A2	Risk T3 decrease_risk_factor
+T10	Temporal 0 50	Bisher stabile Funktion und Prograf im Zielbereich
+A3	Temporal_Element T10 past
+A4	Risk T5 increase_symptom
+T11	Other 128 137	stationär
+A5	Factuality T11 speculated
+A6	Risk T11 increase_symptom
+T12	Temporal 52 108	jetzt aber krea ansteigend von 1,0 -> 2,0 in einem Monat
+A7	Temporal_Element T12 past_present
+T13	Temporal 112 149	at scheint sich stationär zu befinden
+A8	Temporal_Element T13 present

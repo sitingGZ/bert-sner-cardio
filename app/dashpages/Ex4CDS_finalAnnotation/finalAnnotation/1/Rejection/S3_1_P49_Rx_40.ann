@@ -1,0 +1,29 @@
+T1	DiagLab 0 4	NiBi
+T2	Condition 11 13	Rx
+T4	LabValues 45 62	sandimmun spiegel
+T5	Measure 69 76	niedrig
+T6	LabValues 78 81	RIs
+T7	Measure 82 92	ansteigend
+T8	LabValues 94 98	krea
+T9	Measure 108 111	3,7
+T10	HealthState 112 118	stabil
+T11	Condition 123 136	BKV Nephritis
+T12	Condition 153 173	Überimmunsuppresiion
+R1	has_Measure arg1:T6 arg2:T7
+R2	has_Measure arg1:T8 arg2:T9
+A1	Factuality T2 negative
+R3	has_Measure arg1:T4 arg2:T5	
+R4	has_State arg1:T8 arg2:T10	
+A2	Risk T2 decrease_symptom
+R5	has_State arg1:T1 arg2:T2	
+T3	Conclusion 15 42	jedoch Risiko sampling bias
+A3	Risk T4 increase_risk_factor
+A4	Risk T6 increase_symptom
+A5	Risk T8 decrease_symptom
+A6	Risk T11 decrease_symptom
+T13	Conclusion 137 173	als Zeichen der Überimmunsuppresiion
+A7	Risk T12 decrease_risk_factor
+T14	Temporal 0 13	NiBi keine Rx
+A8	Temporal_Element T14 present
+T15	Temporal 45 136	sandimmun spiegel teils niedrig, RIs ansteigend, krea aber bei 3,7 stabil und BKV Nephritis
+A9	Temporal_Element T15 past_present

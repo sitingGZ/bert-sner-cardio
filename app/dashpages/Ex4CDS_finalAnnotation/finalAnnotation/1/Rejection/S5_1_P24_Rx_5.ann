@@ -1,0 +1,30 @@
+T1	TimeInfo 5 14	Frühphase
+T2	Condition 38 49	Rejektionen
+T3	DiagLab 57 61	NiBi
+T5	Medication 71 78	Urbason
+T6	Condition 85 88	OAK
+T7	LabValues 89 93	Krea
+T8	HealthState 94 100	stabil
+T9	LabValues 102 104	PU
+T10	Measure 105 112	niedrig
+T11	LabValues 119 122	HLA
+R1	has_Measure arg1:T9 arg2:T10
+A1	Factuality T2 negative
+R3	has_State arg1:T7 arg2:T8	
+T12	Tx_low 5 18	Frühphase NTX
+A2	Risk T12 increase_risk_factor
+A3	Risk T2 decrease_symptom
+A4	Factuality T3 negative
+T13	Temporal 0 18	noch Frühphase NTX
+A5	Temporal_Element T13 present
+T14	Temporal 19 61	keine Hinweise für Rejektionen, keine NiBi
+A6	Temporal_Element T14 present
+T15	Temporal 62 88	1x blind Urbason wegen OAK
+A7	Temporal_Element T15 past
+A8	Risk T7 decrease_symptom
+A9	Risk T9 decrease_symptom
+A10	Factuality T11 negative
+A11	Risk T11 decrease_risk_factor
+T16	Temporal 89 112;113 122	Krea stabil, PU niedrig keine HLA
+A12	Temporal_Element T16 present
+A13	Risk T5 decrease_risk_factor

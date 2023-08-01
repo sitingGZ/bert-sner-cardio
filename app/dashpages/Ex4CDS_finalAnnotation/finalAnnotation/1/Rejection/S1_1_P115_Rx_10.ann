@@ -1,0 +1,17 @@
+T1	HealthState 0 5	gutes
+T2	LabValues 6 10	Krea
+T3	HealthState 12 25	unauffälliges
+T4	DiagLab 26 30	Sono
+T5	Measure 43 46	pos
+T6	LabValues 48 54	HLA Ak
+R1	has_State arg1:T2 arg2:T1	
+R2	has_State arg1:T4 arg2:T3	
+R3	has_Measure arg1:T6 arg2:T5	
+T7	DiagLab 77 101	Screening Untersuchungen
+A1	Risk T2 decrease_symptom
+A2	Risk T4 decrease_symptom
+A3	Risk T6 increase_risk_factor
+T8	Temporal 0 30	gutes Krea, unauffälliges Sono
+A4	Temporal_Element T8 present
+T9	Temporal 32 101	jedoch neu pos. HLA Ak in den letzten beiden Screening Untersuchungen
+A5	Temporal_Element T9 past_present

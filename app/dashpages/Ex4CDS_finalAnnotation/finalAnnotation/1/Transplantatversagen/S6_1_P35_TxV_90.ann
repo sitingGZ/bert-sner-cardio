@@ -1,0 +1,18 @@
+T1	Condition 0 3	HUS
+T3	TimeInfo 24 40	in jungen Jahren
+T8	Condition 234 244	Erkrankung
+R1	has_TimeInfo arg1:T1 arg2:T3	
+A2	Factuality T8 possible_future
+T2	Temporal 0 76	HUS als Grunderkrankung in jungen Jahren erstmanifestiert und transplantiert
+A1	Temporal_Element T2 past
+A3	Risk T1 increase_risk_factor
+T4	Condition 186 201	Schwangerschaft
+A4	Factuality T4 speculated
+A5	Risk T4 increase_risk_factor
+T5	Condition 93 111	genetische Ursache
+A6	Factuality T5 speculated
+A7	Risk T5 increase_risk_factor
+T6	Other 127 144	Stresssituationen
+A8	Factuality T6 speculated
+A9	Risk T6 increase_risk_factor
+T7	Conclusion 77 257	deutet auf eine genetische Ursache hin, die unter Stresssituationen oder einem 'second hit' (in diesem Falle Schwangerschaft) zu einem erneuten Ausbruch der Erkrankung führen kann.

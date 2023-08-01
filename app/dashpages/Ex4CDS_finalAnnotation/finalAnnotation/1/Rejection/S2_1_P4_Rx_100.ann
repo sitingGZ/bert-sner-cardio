@@ -1,0 +1,30 @@
+T2	Condition 29 36	Banf IB
+T3	TimeInfo 37 50	vor 5 Monaten
+T4	TimeInfo 58 72	seit 2 Monaten
+T6	Condition 101 113	Krea-Anstieg
+T7	Measure 132 145	mittlemäßigen
+T8	Process 146 157	Tx-Funktion
+T9	LabValues 158 173	Prograf Spiegel
+T10	Measure 185 195	zu niedrig
+T11	TimeInfo 196 204	bekannte
+T12	LabValues 205 208	DSA
+R1	has_TimeInfo arg1:T12 arg2:T11
+R3	has_TimeInfo arg1:T2 arg2:T3	
+R4	has_TimeInfo arg1:T6 arg2:T4	
+R6	has_Measure arg1:T8 arg2:T7	
+R2	has_Measure arg1:T9 arg2:T10	
+A1	Risk T2 increase_risk_factor
+T1	DiagLab 8 17	bioptisch
+R5	has_State arg1:T1 arg2:T2	
+T5	Temporal 0 50	bereits bioptisch gesicherte Banf IB vor 5 Monaten
+A2	Temporal_Element T5 past
+A3	Risk T6 increase_symptom
+A4	Risk T8 increase_symptom
+T14	Temporal 52 157	jetzt seit 2 Monaten progredienter schleichender Krea-Anstieg einer ohnhin sehr mittlemäßigen Tx-Funktion
+A5	Temporal_Element T14 past_present
+A6	Risk T9 increase_risk_factor
+A7	Risk T12 increase_risk_factor
+T15	Temporal 196 208	bekannte DSA
+A8	Temporal_Element T15 past_present
+T16	Temporal 158 195	Prograf Spiegel wiederholt zu niedrig
+A9	Temporal_Element T16 past

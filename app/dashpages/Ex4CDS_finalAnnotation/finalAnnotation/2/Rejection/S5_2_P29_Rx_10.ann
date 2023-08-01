@@ -1,0 +1,18 @@
+T1	Condition 0 9	Rejektion
+T2	Measure 33 43	reduzierte
+T3	Medication 44 46	IS
+T4	Condition 77 86	Rejektion
+T5	LabValues 94 97	HLA
+R1	has_Measure arg1:T3 arg2:T2
+A1	Factuality T5 negative
+T6	TimeInfo 14 26	kurz nach TX
+R2	has_TimeInfo arg1:T1 arg2:T6	
+A2	Risk T1 increase_risk_factor
+A3	Risk T3 increase_risk_factor
+A4	Risk T5 decrease_risk_factor
+T7	Conclusion 28 86	aber reduzierte IS und Risiko infektgetriggerter Rejektion
+T8	Temporal 0 26	Rejektion nur kurz nach TX
+A6	Temporal_Element T8 past
+T9	Temporal 88 97	keine HLA
+A7	Temporal_Element T9 present
+A8	Factuality T4 possible_future

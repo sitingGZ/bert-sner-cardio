@@ -1,0 +1,21 @@
+T1	TimeInfo 3 15	vor 3 Wochen
+T2	Measure 17 18	5
+T3	Condition 19 21	MM
+T4	LabValues 23 27	Krea
+T5	Measure 40 47	fallend
+T6	Measure 49 55	mäßige
+T7	LabValues 56 67	Proteinurie
+R1	has_Measure arg1:T3 arg2:T2
+R2	has_Measure arg1:T4 arg2:T5
+R3	has_Measure arg1:T7 arg2:T6
+T8	Tx_low 0 15	Tx vor 3 Wochen
+A1	Risk T8 increase_risk_factor
+A2	Risk T3 increase_risk_factor
+A3	Risk T4 decrease_symptom
+A4	Risk T7 symptom
+T9	Temporal 0 16	Tx vor 3 Wochen,
+A5	Temporal_Element T9 past
+T10	Temporal 17 47	5 MM, Krea tendenziell fallend
+A6	Temporal_Element T10 past_present
+T11	Temporal 49 67	mäßige Proteinurie
+A7	Temporal_Element T11 present

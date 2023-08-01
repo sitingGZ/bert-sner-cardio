@@ -1,0 +1,13 @@
+T3	Condition 55 73	Abflussproblematik
+T4	Measure 89 97	erhöhtes
+T5	Condition 98 110	INfektrisiko
+A1	Factuality T3 negative
+R1	has_Measure arg1:T5 arg2:T4	
+T1	Condition 0 16	erweitertes NBKS
+A2	Risk T1 increase_risk_factor
+T2	DiagLab 17 30	sonographisch
+R2	has_State arg1:T2 arg2:T1	
+A3	Risk T3 decrease_risk_factor
+T6	Conclusion 75 110	daher minimal erhöhtes INfektrisiko
+T7	Temporal 0 73	erweitertes NBKS sonographisch, sonst kein Hinweis auf Abflussproblematik
+A4	Temporal_Element T7 past_present

@@ -1,0 +1,18 @@
+T1	Condition 0 6	Infekt
+T2	HealthState 13 24	überstanden
+T3	LabValues 26 32	Leukos
+T4	LabValues 37 40	CRP
+T5	Measure 42 49	negativ
+R1	has_Measure arg1:T3 arg2:T5
+R2	has_Measure arg1:T4 arg2:T5
+R3	has_State arg1:T1 arg2:T2	
+A1	Risk T1 decrease_symptom
+A2	Risk T3 decrease_symptom
+A3	Risk T4 decrease_symptom
+T6	Temporal 0 24	Infekt wirkt überstanden
+A4	Temporal_Element T6 past_present
+T7	Temporal 26 49	Leukos udn CRP, negativ
+A5	Temporal_Element T7 present
+A6	Factuality T1 unlikely
+A8	Factuality T4 negative
+A7	Factuality T3 negative

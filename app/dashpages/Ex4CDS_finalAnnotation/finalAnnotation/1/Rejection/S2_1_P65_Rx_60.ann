@@ -1,0 +1,30 @@
+T2	LabValues 14 26	Krea-Anstieg
+T3	TimeInfo 27 49	in den letzten Monaten
+T5	Measure 71 78	1,4-2,2
+T6	LabValues 79 95	Immunsup-Spiegel
+T8	Measure 105 115	zu niedrig
+T9	Condition 140 149	Rejektion
+T10	TimeInfo 150 160	vor 1 Jahr
+T11	HealthState 176 181	guter
+T12	LabValues 182 186	Krea
+R1	has_TimeInfo arg1:T2 arg2:T3
+R5	has_TimeInfo arg1:T9 arg2:T10
+R7	has_State arg1:T12 arg2:T11	
+R2	has_Measure arg1:T2 arg2:T5	
+R3	has_Measure arg1:T6 arg2:T8	
+T4	Measure 210 219	1,5 mg/dl
+R4	has_Measure arg1:T12 arg2:T4	
+T7	Measure 187 193	Abfall
+R8	has_Measure arg1:T12 arg2:T7	
+T13	Temporal 0 78	progredienter Krea-Anstieg in den letzten Monaten mit Schwankungen von 1,4-2,2
+A1	Temporal_Element T13 past
+A2	Risk T2 increase_symptom
+T14	Temporal 79 115	Immunsup-Spiegel mehrfach zu niedrig
+A3	Temporal_Element T14 past
+T15	Temporal 116 160	bereits diagnostizierte Rejektion vor 1 Jahr
+A4	Temporal_Element T15 past
+A5	Risk T9 increase_risk_factor
+A6	Risk T12 decrease_symptom
+T16	Temporal 162 219	danach jedoch guter Krea-Abfall zur Baseline um 1,5 mg/dl
+A7	Temporal_Element T16 past_present
+A8	Risk T6 increase_risk_factor

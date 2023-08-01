@@ -1,0 +1,20 @@
+T2	Condition 26 32	Husten
+T4	Condition 37 55	gelblichem Auswurf
+T5	Condition 109 118	Pneumonie
+T6	Condition 120 129	-Kachexie
+T7	Medication 135 150	Immunsupression
+T10	Medication 99 102	Abx
+T1	TimeInfo 13 25	immer wieder
+R1	has_TimeInfo arg1:T2 arg2:T1	
+R2	has_TimeInfo arg1:T4 arg2:T1	
+T3	Temporal 1 55	Patient hat immer wieder Husten mit gelblichem Auswurf
+A1	Temporal_Element T3 past_present
+A2	Risk T4 increase_symptom
+A3	Risk T2 increase_symptom
+T8	Temporal 58 118	Schon mehrere stationäre Aufenthalte und Abx wegen Pneumonie
+A4	Temporal_Element T8 past
+A5	Risk T5 increase_risk_factor
+A6	Risk T7 increase_risk_factor
+A7	Risk T6 increase_risk_factor
+T9	Temporal 121 169	Kachexie plus Immunsupression als Risikofaktoren
+A8	Temporal_Element T9 present

@@ -1,0 +1,22 @@
+T1	Condition 78 87	rejeziert
+T2	Measure 111 116	hohen
+T3	Condition 117 133	Rejektionsrisiko
+T4	Measure 134 144	steigendes
+T5	LabValues 145 154	Kreatinin
+R1	has_Measure arg1:T3 arg2:T2	
+R2	has_Measure arg1:T5 arg2:T4	
+T6	Other 0 44	Achtung, ich glaube ich kenne die Patientin!
+#1	AnnotatorNotes T6	sollte entfernt werden
+T7	Measure 66 77	höhergradig
+R3	has_Measure arg1:T1 arg2:T7	
+T8	TimeInfo 57 65	kürzlich
+R4	has_TimeInfo arg1:T1 arg2:T8	
+A1	Risk T1 increase_risk_factor
+T9	Temporal 45 87	hat bereits kürzlich höhergradig rejeziert
+A2	Temporal_Element T9 past
+T10	Tx_low 88 106	Frühphase nach Ntx
+A3	Risk T10 increase_risk_factor
+T11	Conclusion 107 133	mit hohen Rejektionsrisiko
+A4	Risk T5 increase_symptom
+T12	Temporal 88 133;134 154	Frühphase nach Ntx mit hohen Rejektionsrisiko steigendes Kreatinin
+A5	Temporal_Element T12 present

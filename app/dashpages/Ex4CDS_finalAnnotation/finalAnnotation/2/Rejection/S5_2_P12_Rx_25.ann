@@ -1,0 +1,20 @@
+T1	Condition 0 27	Infektgetriggerte Rejektion
+T2	Condition 50 68	Rejektionsepisoden
+T3	LabValues 77 80	HLA
+T4	Measure 81 84	neg
+T5	Condition 92 95	ANV
+T7	Condition 101 104	CMV
+T8	Condition 109 118	Diarrhoen
+R1	has_Measure arg1:T3 arg2:T4
+A1	Factuality T2 negative
+T6	Conclusion 0 35	Infektgetriggerte Rejektion möglich
+A2	Risk T2 decrease_risk_factor
+A3	Risk T3 decrease_risk_factor
+A4	Risk T5 increase_symptom
+A5	Risk T7 risk_factor
+A6	Risk T8 symptom
+T9	Temporal 37 76	bisher keine Rejektionsepisoden bekannt
+A7	Temporal_Element T9 past_present
+T10	Temporal 77 118	HLA neg, jetzt ANV i.R. CMV und Diarrhoen
+A8	Temporal_Element T10 present
+A9	Factuality T1 possible_future

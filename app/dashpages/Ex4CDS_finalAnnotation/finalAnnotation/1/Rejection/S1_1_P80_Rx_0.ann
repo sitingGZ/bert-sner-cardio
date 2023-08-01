@@ -1,0 +1,32 @@
+T1	HealthState 39 46	Stabile
+T3	Medication 64 73	Tac-Dosis
+T4	TimeInfo 74 94	seit über einem Jahr
+T5	HealthState 96 101	Gutes
+T6	LabValues 102 111	Kreatinin
+T7	Medication 130 136	Predni
+T8	Condition 142 151	Rejection
+A1	Factuality T8 negative
+R1	has_TimeInfo arg1:T3 arg2:T4	
+R2	has_State arg1:T6 arg2:T5	
+T10	LabValues 47 54	Spiegel
+R3	has_State arg1:T10 arg2:T1	
+T2	Condition 21 30	Rejektion
+A2	Factuality T2 negative
+T9	Temporal 0 37	Bisher noch nie eine Rejektion gehabt
+A3	Temporal_Element T9 past
+A4	Risk T2 decrease_risk_factor
+A5	Risk T10 decrease_risk_factor
+A6	Risk T3 decrease_risk_factor
+T12	Temporal 39 94	Stabile Spiegel, stabile Tac-Dosis seit über einem Jahr
+A7	Temporal_Element T12 past_present
+A8	Factuality T7 negative
+T13	Tx_high 153 188	Pat ist schon lange transplantiert.
+A9	Risk T13 decrease_risk_factor
+A10	Risk T6 decrease_symptom
+T14	Temporal 96 187	Gutes Kreatinin, schon lange ohne Predni ohne Rejection. Pat ist schon lange transplantiert
+A11	Temporal_Element T14 past_present
+T15	Temporal 189 230	Keine bevorstehenden Ereignisse (OP ect.)
+A12	Temporal_Element T15 future
+T16	Other 210 220	Ereignisse
+A13	Factuality T16 negative
+A14	Risk T16 decrease_risk_factor

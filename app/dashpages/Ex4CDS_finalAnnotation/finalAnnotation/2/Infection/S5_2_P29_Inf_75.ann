@@ -1,0 +1,22 @@
+T1	Condition 14 23	Pneumonie
+T2	Condition 25 36	Leukozytose
+T5	Condition 75 78	HWI
+T7	Condition 116 119	CMV
+A1	Risk T1 increase_symptom
+A2	Risk T2 increase_symptom
+A5	Risk T5 increase_risk_factor
+T6	Condition 93 111	virale Infektionen
+T8	Condition 112 115	BKV
+T9	Measure 85 92	gehäuft
+R1	has_Measure arg1:T6 arg2:T9	
+T10	Temporal 0 36	stationär bei Pneumonie, Leukozytose
+A6	Temporal_Element T10 present
+T11	Temporal 38 78	rezidiv. Infektsymptomatik Pulmo und HWI
+A7	Temporal_Element T11 past_present
+T3	Condition 47 70	Infektsymptomatik Pulmo
+A3	Risk T3 increase_risk_factor
+A4	Risk T6 increase_risk_factor
+A8	Risk T8 increase_risk_factor
+A9	Risk T7 increase_risk_factor
+T4	Temporal 79 119	zudem gehäuft virale Infektionen BKV/CMV
+A10	Temporal_Element T4 past_present

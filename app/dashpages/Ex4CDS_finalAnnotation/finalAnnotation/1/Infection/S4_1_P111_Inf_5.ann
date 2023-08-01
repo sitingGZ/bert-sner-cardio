@@ -1,0 +1,20 @@
+T1	Condition 15 29	Harnwegsinfekt
+T3	TimeInfo 48 63	im letzten Jahr
+T4	Condition 68 76	Infekten
+T5	DiagLab 85 98	Laborchemisch
+T6	Measure 104 118	stark erhöhtes
+T7	LabValues 119 122	CRP
+R2	has_State arg1:T7 arg2:T6
+A1	Risk T4 increase_risk_factor
+A3	Risk T7 decrease_symptom
+T8	Temporal 0 30	Zuletzt erneut Harnwegsinfekt.
+A4	Temporal_Element T8 past_present
+T9	Temporal 31 76	Reduktion der IS im letzten Jahr bei Infekten
+A5	Temporal_Element T9 past
+T10	Temporal 79 122	edoch Laborchemisch kein stark erhöhtes CRP
+A6	Temporal_Element T10 present
+A7	Risk T1 increase_risk_factor
+T2	Medication 31 47	Reduktion der IS
+R1	has_TimeInfo arg1:T2 arg2:T3	
+A8	Risk T2 decrease_risk_factor
+A9	Factuality T7 minor

@@ -1,0 +1,11 @@
+T2	LabValues 27 31	Krea
+T3	Measure 42 46	3,44
+T4	Condition 79 89	Tx Verlust
+R1	has_Measure arg1:T2 arg2:T3
+A1	Factuality T4 possible_future
+T1	Conclusion 47 108	also nicht viel "Reserve" daher Tx Verlust sehr wahscheinlich
+T5	Condition 11 16	CVVHD
+A2	Risk T5 increase_symptom
+A3	Risk T2 increase_symptom
+T6	Temporal 0 46	bereits an CVVHD, baseline Krea schon bei 3,44
+A4	Temporal_Element T6 present

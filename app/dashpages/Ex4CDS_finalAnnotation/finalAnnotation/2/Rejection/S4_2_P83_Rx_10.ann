@@ -1,0 +1,17 @@
+T1	TimeInfo 3 15	vor 5 Jahren
+T4	Condition 28 37	Rejektion
+T5	TimeInfo 38 53	im Jahr nach Tx
+T6	Tx_middle 0 15	Tx vor 5 Jahren
+R1	has_TimeInfo arg1:T4 arg2:T5	
+A1	Risk T6 decrease_risk_factor
+T2	Measure 17 18	5
+T3	Condition 18 20	MM
+R2	has_Measure arg1:T3 arg2:T2	
+A2	Risk T3 increase_risk_factor
+A3	Risk T4 increase_risk_factor
+T7	Temporal 0 15	Tx vor 5 Jahren
+A4	Temporal_Element T7 past
+T8	Temporal 17 20	5MM
+A5	Temporal_Element T8 past_present
+T9	Temporal 22 53	Akute Rejektion im Jahr nach Tx
+A6	Temporal_Element T9 past

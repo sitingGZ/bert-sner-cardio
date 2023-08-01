@@ -1,0 +1,10 @@
+T1	Condition 0 22	Rezidivierende Infekte
+T2	Condition 27 54	sanierungsbedürftiges Gebiß
+T3	Condition 61 78	Diabetes mellitus
+T6	Condition 110 128	Infektanfälligkeit
+A1	Risk T1 increase_risk_factor
+A2	Risk T2 increase_risk_factor
+A3	Risk T3 increase_risk_factor
+T4	Conclusion 86 132	weisen auf eine erhöhte Infektanfälligkeit hin
+T5	Temporal 0 85	Rezidivierende Infekte und sanierungsbedürftiges Gebiß sowie Diabetes mellitus als GE
+A4	Temporal_Element T5 past_present

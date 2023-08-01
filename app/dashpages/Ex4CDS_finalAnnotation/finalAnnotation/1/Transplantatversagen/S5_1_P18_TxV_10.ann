@@ -1,0 +1,38 @@
+T2	Condition 9 12	HWI
+T4	TimeInfo 38 45	3x 2012
+T5	TimeInfo 56 60	2013
+T6	Condition 62 65	HWI
+T7	Condition 67 76	Diarrhoen
+T8	Condition 78 87	Erbrechen
+T11	HealthState 146 150	gute
+T13	LabValues 174 178	Krea
+R5	has_TimeInfo arg1:T6 arg2:T5	
+R6	has_TimeInfo arg1:T7 arg2:T5	
+R7	has_TimeInfo arg1:T8 arg2:T5	
+T16	Condition 89 100	TX versagen
+T17	Process 158 172	Nierenfunktion
+R8	has_State arg1:T17 arg2:T11	
+T12	Measure 182 183	1
+R2	has_Measure arg1:T13 arg2:T12	
+T14	Condition 185 195	TX Verlust
+A1	Factuality T14 unlikely
+A2	Risk T2 increase_risk_factor
+T1	Temporal 0 37	rezidiv. HWI als führende Problematik
+A3	Temporal_Element T1 past_present
+R1	has_TimeInfo arg1:T6 arg2:T4	
+R3	has_TimeInfo arg1:T7 arg2:T4	
+R4	has_TimeInfo arg1:T8 arg2:T4	
+R9	has_TimeInfo arg1:T16 arg2:T4	
+A4	Risk T6 increase_risk_factor
+A5	Risk T7 increase_risk_factor
+A6	Risk T8 increase_risk_factor
+A7	Risk T16 increase_risk_factor
+T3	HealthState 105 141	immunologisch sonst niedriges Risiko
+A8	Risk T3 decrease_risk_factor
+A9	Risk T17 decrease_symptom
+A10	Risk T13 decrease_symptom
+T9	Conclusion 185 221	TX Verlust als niedrig einzuschätzen
+T10	Temporal 38 100	3x 2012, mehrfach 2013: HWI, Diarrhoen, Erbrechen, TX versagen
+A11	Temporal_Element T10 past
+T15	Temporal 102 184	da immunologisch sonst niedriges Risiko und gute basale Nierenfunktion (Krea um 1)
+A12	Temporal_Element T15 present

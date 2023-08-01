@@ -1,0 +1,18 @@
+T1	HealthState 9 22	guter Verlauf
+T2	HealthState 40 45	Gutes
+T3	LabValues 46 50	Krea
+T5	HealthState 58 62	Gute
+R2	has_State arg1:T3 arg2:T2	
+T6	LabValues 63 70	Spiegel
+R3	has_State arg1:T6 arg2:T5	
+T7	Tx_low 23 38	frisch post NTX
+A1	Risk T7 increase_risk_factor
+T4	Condition 54 56	MM
+T8	Measure 52 53	5
+R1	has_Measure arg1:T4 arg2:T8	
+A2	Risk T4 increase_risk_factor
+A3	Risk T3 decrease_symptom
+A4	Risk T1 decrease_symptom
+A5	Risk T6 decrease_risk_factor
+T9	Temporal 0 71	erst mal guter Verlauf frisch post NTX. Gutes Krea. 5 MM. Gute Spiegel.
+A6	Temporal_Element T9 present

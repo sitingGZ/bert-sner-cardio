@@ -1,0 +1,25 @@
+T4	Condition 63 72	BANFF IIb
+T5	Condition 77 89	Glomerulitis
+T6	Condition 94 97	pTc
+T7	Measure 98 107	steigende
+T8	LabValues 108 110	PU
+T9	Medication 111 123	Kortisonstoß
+R2	has_Measure arg1:T8 arg2:T7
+T2	Condition 17 47	zelluläre Rejektionskomponente
+A1	Factuality T2 speculated
+A2	Risk T2 increase_symptom
+A3	Risk T4 increase_risk_factor
+A4	Risk T5 symptom
+A5	Risk T6 symptom
+A6	Risk T8 increase_symptom
+A7	Factuality T9 possible_future
+A8	Risk T9 decrease_risk_factor
+T1	Conclusion 0 47	fortlaufend V.a. zelluläre Rejektionskomponente
+T3	Conclusion 145 193	insofern zelluläre Rejektion zunächst adressiert
+T10	Temporal 49 97	Vorgeschichte BANFF IIb mit Glomerulitis und pTc
+A9	Temporal_Element T10 past
+T11	Temporal 98 110	steigende PU
+A10	Temporal_Element T11 past_present
+T12	Temporal 111 143	Kortisonstoß anscheinend geplant
+A11	Temporal_Element T12 future
+T13	Condition 154 173	zelluläre Rejektion

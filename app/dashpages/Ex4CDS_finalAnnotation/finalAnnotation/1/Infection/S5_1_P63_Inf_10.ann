@@ -1,0 +1,21 @@
+T1	TimeInfo 0 4	2017
+T2	Condition 6 22	Gichtbeschwerden
+T3	Condition 24 39	Hodenschwellung
+T4	Medication 41 46	Cipro
+T5	Condition 55 78	abdominelle Beschwerden
+T6	Condition 92 109	Infektproblematik
+A1	Factuality T6 negative
+R1	has_TimeInfo arg1:T2 arg2:T1	
+R2	has_TimeInfo arg1:T3 arg2:T1	
+T7	Age_low 111 122	junger Pat.
+R3	has_TimeInfo arg1:T4 arg2:T1	
+A2	Risk T4 increase_symptom
+A3	Risk T3 increase_symptom
+A4	Risk T5 increase_symptom
+A5	Risk T6 decrease_risk_factor
+A6	Risk T7 decrease_risk_factor
+T8	Temporal 0 46	2017: Gichtbeschwerden, Hodenschwellung, Cipro
+A7	Temporal_Element T8 past
+T9	Temporal 47 121	unklare abdominelle Beschwerden, sonst keine Infektproblematik, junger Pat
+A8	Temporal_Element T9 present
+A9	Risk T2 symptom

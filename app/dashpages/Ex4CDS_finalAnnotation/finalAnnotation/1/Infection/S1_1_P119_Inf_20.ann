@@ -1,0 +1,29 @@
+T1	Condition 23 29	Infekt
+T2	TimeInfo 30 34	2008
+T3	TimeInfo 49 60	3 Jahre her
+T4	LabValues 62 65	CRP
+T5	Measure 66 73	niedrig
+T6	Condition 91 102	Beschwerden
+T7	Measure 104 109	Hohes
+T8	Condition 110 122	"Grundrisiko
+T9	Condition 128 131	PAH
+T10	Condition 133 146	Klappenvitien
+T11	Medication 151 166	Immunsupression
+R1	has_TimeInfo arg1:T1 arg2:T2
+R2	has_Measure arg1:T4 arg2:T5
+A1	Factuality T6 negative
+R3	has_Measure arg1:T8 arg2:T7	
+R4	has_TimeInfo arg1:T1 arg2:T3	
+T12	Temporal 0 61	Letzter dokumentierter Infekt 2008 also mehr als 3 Jahre her.
+A2	Temporal_Element T12 past
+A3	Risk T1 risk_factor
+A4	Risk T4 decrease_symptom
+A5	Risk T6 decrease_symptom
+A6	Risk T9 increase_risk_factor
+A7	Risk T10 increase_risk_factor
+A8	Risk T11 increase_risk_factor
+T13	Conclusion 104 123	Hohes "Grundrisiko"
+T14	Temporal 104 167	Hohes "Grundrisiko" bei PAH, Klappenvitien und Immunsupression.
+A9	Temporal_Element T14 past_present
+T15	Temporal 62 102	CRP niedrig, keine aktuellen Beschwerden
+A10	Temporal_Element T15 present

@@ -1,0 +1,35 @@
+T1	Condition 31 40	Rejektion
+T2	Condition 47 69	Adhärenzschwirigkeiten
+T3	Medication 80 82	IS
+T4	TimeInfo 84 91	aktuell
+T5	Measure 97 107	steigendes
+T6	LabValues 108 112	Krea
+T7	Condition 124 137	Infektbedingt
+T8	LabValues 139 145	Leukos
+T9	Measure 154 157	pos
+T10	Measure 164 172	erhöhtes
+T11	Condition 173 185	Infektniveau
+R2	has_Measure arg1:T6 arg2:T5
+R3	has_Measure arg1:T8 arg2:T9
+A1	Factuality T1 negative
+A2	Factuality T2 negative
+R1	has_TimeInfo arg1:T6 arg2:T4	
+R4	has_Measure arg1:T11 arg2:T10	
+T12	TimeInfo 5 25	in der Vergangenheit
+R5	has_TimeInfo arg1:T1 arg2:T12	
+R6	has_TimeInfo arg1:T2 arg2:T12	
+R7	has_TimeInfo arg1:T3 arg2:T12	
+R8	has_TimeInfo arg1:T7 arg2:T4	
+A3	Risk T1 decrease_risk_factor
+A4	Risk T2 decrease_risk_factor
+T13	Temporal 0 83	Pat. in der Vergangenheit ohne Rejektion, ohne Adhärenzschwirigkeiten bzgl. der IS.
+A5	Temporal_Element T13 past
+A6	Risk T6 increase_symptom
+A7	Risk T7 decrease_symptom
+T14	Conclusion 114 137	aber a.e. Infektbedingt
+T15	Temporal 84 113	aktuell zwar steigendes Krea,
+A8	Temporal_Element T15 present
+A9	Risk T8 decrease_symptom
+A10	Risk T11 decrease_symptom
+T16	Temporal 139 157;158 185	Leukos im Urin pos etwas erhöhtes Infektniveau
+A11	Temporal_Element T16 present

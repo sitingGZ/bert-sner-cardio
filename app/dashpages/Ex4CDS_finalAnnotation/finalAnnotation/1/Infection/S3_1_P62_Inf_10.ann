@@ -1,0 +1,27 @@
+T2	LabValues 23 26	BKV
+T3	Measure 27 30	neg
+T4	Condition 32 35	EBV
+T5	LabValues 46 49	CRP
+T6	Measure 50 57	negativ
+T7	LabValues 59 65	leukos
+T8	DiagLab 66 71	USTIX
+T9	Measure 72 75	neg
+T10	LabValues 77 83	leukos
+T11	DiagLab 87 89	BB
+T12	HealthState 90 96	normal
+R3	has_Measure arg1:T2 arg2:T3
+R4	has_Measure arg1:T5 arg2:T6
+R6	has_Measure arg1:T7 arg2:T9
+A1	Factuality T4 speculated
+R1	has_State arg1:T10 arg2:T12	
+T1	Condition 14 21	Hinweis
+A2	Factuality T1 negative
+A3	Risk T1 decrease_symptom
+A4	Risk T2 decrease_symptom
+T13	Temporal 0 45;46 96	klinisch kein Hinweis, BKV neg, EBV ? aktuell CRP negativ, leukos USTIX neg, leukos im BB normal
+A5	Temporal_Element T13 present
+A6	Risk T5 decrease_symptom
+A7	Risk T7 decrease_symptom
+A8	Risk T10 decrease_symptom
+A9	Factuality T2 negative
+A10	Factuality T5 negative

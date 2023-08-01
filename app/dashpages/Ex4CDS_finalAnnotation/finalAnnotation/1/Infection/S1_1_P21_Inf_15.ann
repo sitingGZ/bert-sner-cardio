@@ -1,0 +1,13 @@
+T1	Condition 27 33	Infekt
+T2	Condition 43 49	Infekt
+T3	TimeInfo 50 54	2017
+T4	TimeInfo 60 74	vor einem Jahr
+R1	has_TimeInfo arg1:T2 arg2:T3
+A1	Factuality T1 negative
+R2	has_TimeInfo arg1:T2 arg2:T4	
+T5	Temporal 0 34	Kein klinischer Anhalt auf Infekt,
+A2	Temporal_Element T5 present
+T6	Temporal 35 75	letzter Infekt 2017 also vor einem Jahr.
+A3	Temporal_Element T6 past
+A4	Risk T1 decrease_symptom
+A5	Risk T2 risk_factor

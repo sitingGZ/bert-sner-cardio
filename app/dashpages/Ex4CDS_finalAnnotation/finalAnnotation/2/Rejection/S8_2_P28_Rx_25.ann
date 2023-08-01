@@ -1,0 +1,16 @@
+T2	Measure 15 22	mehrere
+T3	Condition 23 37	Komplikationen
+T1	Age_low 0 2	25
+T4	Tx_low 3 13	frische TX
+R1	has_Measure arg1:T3 arg2:T2	
+T5	Other 54 56	KH
+T6	Measure 42 50	mehrmals
+R2	has_Measure arg1:T5 arg2:T6	
+A1	Risk T1 risk_factor
+A2	Risk T4 increase_risk_factor
+A3	Risk T3 increase_risk_factor
+A4	Risk T5 risk_factor
+T7	Temporal 0 14	25 frische TX,
+A5	Temporal_Element T7 present
+T8	Temporal 15 56	mehrere Komplikationen und mehrmals im KH
+A6	Temporal_Element T8 past_present

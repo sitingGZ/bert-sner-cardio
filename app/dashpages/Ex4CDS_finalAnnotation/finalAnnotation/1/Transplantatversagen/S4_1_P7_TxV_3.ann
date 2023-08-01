@@ -1,0 +1,17 @@
+T2	TimeInfo 11 19	Woche 10
+T4	LabValues 37 48	S-Kreatinin
+T5	Measure 50 60	1,77 mg/dl
+R1	has_Measure arg1:T4 arg2:T5
+T1	Age_middle 0 10	63 j. Pat.
+T6	Measure 70 77	2 mg/dl
+R3	has_Measure arg1:T4 arg2:T6	
+T7	Tx_low 11 28	Woche 10 nach NTX
+A1	Risk T1 risk_factor
+A2	Risk T7 decrease_risk_factor
+A3	Risk T4 decrease_symptom
+T8	Temporal 0 10;11 28	63 j. Pat. Woche 10 nach NTX
+A5	Temporal_Element T8 present
+T3	Temporal 62 77	aktuell 2 mg/dl
+A4	Temporal_Element T3 present
+T9	Temporal 50 60	1,77 mg/dl
+A6	Temporal_Element T9 past

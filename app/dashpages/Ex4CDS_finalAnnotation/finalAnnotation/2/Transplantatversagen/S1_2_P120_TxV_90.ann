@@ -1,0 +1,9 @@
+T1	LabValues 0 4	krea
+T2	Measure 11 15	4,91
+R1	has_Measure arg1:T1 arg2:T2
+A1	Risk T1 increase_symptom
+T3	Other 38 40	HD
+A2	Risk T3 increase_symptom
+T4	Temporal 0 57	krea schon 4,91, im Brief steht, dass HD Vorbereitet wird
+A3	Temporal_Element T4 present
+A4	Factuality T3 possible_future

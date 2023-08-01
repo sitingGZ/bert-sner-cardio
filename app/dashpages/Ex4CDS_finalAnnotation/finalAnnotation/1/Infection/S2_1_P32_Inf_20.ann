@@ -1,0 +1,12 @@
+T2	Condition 11 18	Infekte
+T4	Condition 57 67	Infektherd
+T1	TimeInfo 19 39	in der Vorgeschichte
+R2	has_TimeInfo arg1:T2 arg2:T1	
+A1	Factuality T2 negative
+T3	Temporal 0 39	keine rez. Infekte in der Vorgeschichte
+A2	Temporal_Element T3 past
+A3	Risk T2 decrease_risk_factor
+T5	Temporal 40 67	kein unsanierter Infektherd
+A4	Temporal_Element T5 present
+A5	Factuality T4 negative
+A6	Risk T4 decrease_symptom

@@ -1,0 +1,14 @@
+T2	Condition 19 28	Diabetets
+T3	Measure 38 46	erhöhtes
+T4	LabValues 47 59	Infektniveau
+T6	Condition 68 82	Comorbiditäten
+T7	Age_else 61 66	Alter
+R1	has_Measure arg1:T4 arg2:T3	
+A1	Risk T2 increase_risk_factor
+A2	Risk T4 increase_symptom
+A3	Risk T7 risk_factor
+A4	Risk T6 risk_factor
+T1	Temporal 0 28	verkomplizierender Diabetets
+A5	Temporal_Element T1 past_present
+T5	Temporal 30 82	aktuell erhöhtes Infektniveau, Alter, Comorbiditäten
+A6	Temporal_Element T5 present

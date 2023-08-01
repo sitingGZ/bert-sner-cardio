@@ -1,0 +1,11 @@
+T1	Condition 16 29	BKV Infektion
+T4	Condition 51 54	HWI
+T5	Condition 56 74	Infektanfälligkeit
+A1	Factuality T4 possible_future
+T2	Conclusion 31 74	Risiko für rezidiv. HWI, Infektanfälligkeit
+A2	Risk T5 increase_symptom
+A3	Risk T4 increase_symptom
+A4	Factuality T5 possible_future
+A5	Risk T1 increase_risk_factor
+T3	Temporal 0 29	kontinuierliche BKV Infektion
+A6	Temporal_Element T3 past_present

@@ -1,0 +1,10 @@
+T1	HealthState 15 21	stabil
+T2	LabValues 23 34	Proteinurie
+T3	HealthState 35 41	stabil
+T4	Process 0 14	Nierenfunktion
+R1	has_State arg1:T4 arg2:T1	
+R2	has_State arg1:T2 arg2:T3	
+A1	Risk T4 decrease_symptom
+A2	Risk T2 decrease_symptom
+T5	Temporal 0 41	Nierenfunktion stabil, Proteinurie stabil
+A3	Temporal_Element T5 past_present

@@ -1,0 +1,14 @@
+T2	Condition 32 42	Tx verlust
+T3	Condition 44 54	Thrombosen
+T7	Condition 113 128	Shuntthrombosen
+A1	Factuality T2 negative
+T1	Conclusion 0 43	Kein aktuer Grund für schnellen Tx verlust.
+T4	Temporal 0 43	Kein aktuer Grund für schnellen Tx verlust.
+A2	Temporal_Element T4 present
+A3	Risk T3 increase_risk_factor
+A4	Risk T7 increase_risk_factor
+A5	Factuality T3 speculated
+T6	Temporal 44 103	Thrombosen etwas wahrscheinlicher als in der Allgemeinbbev.
+A6	Temporal_Element T6 future
+T8	Temporal 104 128	bei rez. Shuntthrombosen
+A7	Temporal_Element T8 past_present

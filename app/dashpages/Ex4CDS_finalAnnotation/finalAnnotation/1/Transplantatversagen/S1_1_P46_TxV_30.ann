@@ -1,0 +1,9 @@
+T2	Condition 28 47	Tx Verschlechterung
+T3	Condition 56 66	Tx Verlust
+A1	Factuality T3 unlikely
+A2	Risk T2 increase_symptom
+T1	Conclusion 56 89	Tx Verlust eher unwahrscheinlich.
+T4	Other 0 19	Reversible Faktoren
+A3	Risk T4 decrease_risk_factor
+T5	Temporal 0 54	Reversible Faktoren die zur Tx Verschlechterung führen
+A4	Temporal_Element T5 present

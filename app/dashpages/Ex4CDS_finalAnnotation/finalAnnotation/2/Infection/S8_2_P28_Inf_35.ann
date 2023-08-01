@@ -1,0 +1,10 @@
+T1	Measure 0 4	hohe
+T2	Medication 5 7	IS
+T4	Condition 15 25	Morbidität
+R1	has_Measure arg1:T2 arg2:T1
+T5	Age_else 9 14	Alter
+A1	Risk T2 increase_risk_factor
+A2	Risk T5 risk_factor
+A3	Risk T4 increase_risk_factor
+T3	Temporal 0 25	hohe IS, Alter,Morbidität
+A4	Temporal_Element T3 present

@@ -1,0 +1,15 @@
+T1	HealthState 0 4	gute
+T2	Process 5 13	Funktion
+T3	Medication 24 26	IS
+T4	HealthState 27 41	im Zielbereich
+R1	has_State arg1:T2 arg2:T1	
+R2	has_State arg1:T3 arg2:T4	
+A1	Risk T2 decrease_symptom
+A2	Risk T3 decrease_risk_factor
+T5	Conclusion 43 94	eher noch im kritischen berei für TCMR kur nach NTX
+T6	Condition 77 81	TCMR
+A3	Risk T6 symptom
+T7	Tx_low 82 94	kur nach NTX
+A4	Risk T7 increase_risk_factor
+T8	Temporal 0 41	gute Funktion nach NTX, IS im Zielbereich
+A5	Temporal_Element T8 present

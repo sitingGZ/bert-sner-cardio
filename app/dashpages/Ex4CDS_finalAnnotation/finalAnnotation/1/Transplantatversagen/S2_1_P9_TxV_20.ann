@@ -1,0 +1,17 @@
+T1	HealthState 0 7	stabile
+T2	Process 8 19	Tx Funktion
+T3	TimeInfo 20 33	seit 7 Jahren
+T4	HealthState 45 52	stabile
+T5	LabValues 53 61	Baseline
+T6	Measure 65 74	1,7 mg/dl
+T7	Condition 82 98	Dekompensationen
+A1	Factuality T7 negative
+R1	has_State arg1:T2 arg2:T1	
+R2	has_TimeInfo arg1:T2 arg2:T3	
+R3	has_State arg1:T5 arg2:T4	
+R4	has_Measure arg1:T5 arg2:T6	
+A2	Risk T2 decrease_symptom
+A3	Risk T5 decrease_symptom
+A4	Risk T7 decrease_risk_factor
+T8	Temporal 0 98	stabile Tx Funktion seit 7 Jahren, weiterhin stabile Baseline um 1,7 mg/dl, keine Dekompensationen
+A5	Temporal_Element T8 past_present

@@ -1,0 +1,8 @@
+T4	Measure 45 51	Abfall
+T1	LabValues 56 60	eGFR
+R1	has_Measure arg1:T1 arg2:T4	
+T2	Condition 0 26	Chronische TX Nephropathie
+A1	Risk T2 increase_risk_factor
+A2	Risk T1 increase_symptom
+T3	Temporal 0 60	Chronische TX Nephropathie mit progredientem Abfall der eGFR
+A3	Temporal_Element T3 past_present

@@ -1,0 +1,14 @@
+T1	TimeInfo 0 7	Aktuell
+T2	LabValues 8 11	CRP
+T3	Measure 18 24	erhöht
+T5	Condition 41 48	Infekte
+R1	has_Measure arg1:T2 arg2:T3
+A1	Factuality T5 minor
+R3	has_TimeInfo arg1:T2 arg2:T1	
+A2	Factuality T3 negative
+A3	Risk T2 decrease_symptom
+A4	Risk T5 decrease_risk_factor
+T4	Temporal 0 24	Aktuell CRP nicht erhöht
+A5	Temporal_Element T4 present
+T6	Temporal 26 69	keine schweren Infekte in der Vorgeschichte
+A6	Temporal_Element T6 past

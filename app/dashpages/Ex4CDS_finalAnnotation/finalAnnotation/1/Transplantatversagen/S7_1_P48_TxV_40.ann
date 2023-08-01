@@ -1,0 +1,21 @@
+T1	HealthState 42 55	gutem Verlauf
+T2	HealthState 57 61	Gute
+T3	Process 62 75	Organqualität
+T4	HealthState 123 128	gutem
+T5	Condition 166 177	Tx Versagen
+R1	has_State arg1:T3 arg2:T2	
+T6	Process 129 136	Verlauf
+R2	has_State arg1:T6 arg2:T4	
+A1	Factuality T5 possible_future
+T7	Tx_low 0 25	Führer Zeitpunkt nach NTx
+A2	Risk T7 increase_risk_factor
+A3	Risk T1 decrease_symptom
+A4	Risk T3 decrease_risk_factor
+T8	Conclusion 77 177	Es bleibt aufgrund des frühem Zeitpunkt trotz gutem Verlauf noch ein erhöhtes Risiko für Tx Versagen
+T9	Tx_low 100 116	frühem Zeitpunkt
+A5	Risk T9 increase_risk_factor
+A6	Risk T6 decrease_symptom
+T10	Temporal 0 56	Führer Zeitpunkt nach NTx mit bis hierhin gutem Verlauf.
+A7	Temporal_Element T10 past_present
+T11	Temporal 57 76	Gute Organqualität.
+A8	Temporal_Element T11 present

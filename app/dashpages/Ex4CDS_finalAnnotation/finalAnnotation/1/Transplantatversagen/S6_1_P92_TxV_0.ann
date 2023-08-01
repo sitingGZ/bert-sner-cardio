@@ -1,0 +1,20 @@
+T1	HealthState 22 26	gute
+T2	Process 27 38	TX Funktion
+T3	HealthState 40 44	gute
+T4	Process 45 55	Compliance
+R1	has_State arg1:T2 arg2:T1	
+R2	has_State arg1:T4 arg2:T3	
+T5	Process 13 20	Verlauf
+T6	HealthState 0 12	Erfreulicher
+R3	has_State arg1:T5 arg2:T6	
+A1	Risk T5 decrease_symptom
+A2	Risk T2 decrease_symptom
+A3	Risk T4 decrease_risk_factor
+T7	Other 65 83	AvFistel-Verschluß
+A4	Risk T7 decrease_symptom
+T8	Temporal 0 20	Erfreulicher Verlauf
+A5	Temporal_Element T8 past_present
+T9	Temporal 22 55	gute TX Funktion, gute Compliance
+A6	Temporal_Element T9 present
+T10	Temporal 57 83	zuletzt AvFistel-Verschluß
+A7	Temporal_Element T10 past

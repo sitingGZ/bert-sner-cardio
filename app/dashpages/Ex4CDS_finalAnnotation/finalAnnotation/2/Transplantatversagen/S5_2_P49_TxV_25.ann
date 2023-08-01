@@ -1,0 +1,20 @@
+T2	Condition 14 17	DGF
+T3	Medication 29 31	IS
+T4	Condition 38 41	BKV
+T7	Condition 91 100	Rejektion
+T8	Condition 101 124	deutlich eingeschränkte
+T9	Process 125 128	GFR
+T1	Tx_low 0 12	Frühphase TX
+T10	Measure 19 28	Reduktion
+R2	has_Measure arg1:T3 arg2:T10	
+R1	has_State arg1:T9 arg2:T8	
+A1	Risk T1 decrease_risk_factor
+A2	Risk T2 increase_risk_factor
+A3	Risk T3 increase_risk_factor
+A4	Risk T4 increase_risk_factor
+T5	Conclusion 43 100	u.a. auch erhöhtes Risiko für infektgetriggerte Rejektion
+A5	Risk T9 increase_symptom
+T6	Temporal 0 42	Frühphase TX, DGF, Reduktion IS wegen BKV,
+A6	Temporal_Element T6 present
+T11	Temporal 101 128	deutlich eingeschränkte GFR
+A7	Temporal_Element T11 present

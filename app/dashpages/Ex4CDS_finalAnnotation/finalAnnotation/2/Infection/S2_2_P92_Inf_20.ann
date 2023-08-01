@@ -1,0 +1,11 @@
+T3	Condition 38 51	Infektzeichen
+T5	Condition 57 72	Harnwegsinfekte
+A1	Factuality T3 negative
+T1	DiagLab 6 16	klinischen
+T2	DiagLab 22 37	laborchemischen
+A2	Risk T3 decrease_symptom
+A3	Risk T5 increase_risk_factor
+T4	Temporal 0 51	keine klinischen oder laborchemischen Infektzeichen
+A4	Temporal_Element T4 present
+T6	Temporal 52 72	rez. Harnwegsinfekte
+A5	Temporal_Element T6 past

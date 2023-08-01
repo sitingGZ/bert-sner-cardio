@@ -1,0 +1,22 @@
+T1	TimeInfo 3 9	vor 9J
+T2	Measure 10 11	4
+T3	LabValues 12 14	MM
+T4	Measure 24 33	schwacher
+T5	LabValues 34 37	DSA
+T6	Measure 44 47	B57
+T7	TimeInfo 48 53	10/15
+R3	has_Measure arg1:T3 arg2:T2	
+R4	has_Measure arg1:T5 arg2:T4	
+T8	Tx_high 0 9	Tx vor 9J
+A1	ref_age T8 patient
+A2	Risk T8 decrease_risk_factor
+A3	Risk T3 increase_risk_factor
+R1	has_Measure arg1:T5 arg2:T6	
+R2	has_Measure arg1:T5 arg2:T7	
+A4	Risk T5 increase_risk_factor
+T9	Temporal 15 53	einmalig schwacher DSA gegen B57 10/15
+A5	Temporal_Element T9 past
+T10	Temporal 10 14	4 MM
+A6	Temporal_Element T10 present
+T11	Temporal 0 9	Tx vor 9J
+A7	Temporal_Element T11 past

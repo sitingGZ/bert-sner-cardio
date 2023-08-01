@@ -1,0 +1,23 @@
+T1	HealthState 0 8	Stabiles
+T2	LabValues 9 13	Krea
+T3	TimeInfo 14 25	seit Jahren
+T6	Condition 157 165	Probleme
+R1	has_Measure arg1:T2 arg2:T1
+A1	Factuality T6 minor
+R2	has_TimeInfo arg1:T2 arg2:T3	
+T5	Condition 221 232	TX Versagen
+A2	Factuality T5 possible_future
+A3	Risk T2 decrease_symptom
+T9	Other 92 103	Operationen
+T10	Conclusion 184 251	daher schätze ich das Risiko für ein TX Versagen nicht als hoch ein
+T4	HealthState 43 58	gute Compliance
+A4	Risk T4 decrease_risk_factor
+T7	HealthState 63 86	match des Transplantats
+A5	Risk T7 decrease_risk_factor
+T8	Condition 119 122	CHE
+#1	AnnotatorNotes T8	Cholezystektomie
+T11	Condition 124 126	NX
+T12	Temporal 88 182	Die Operationen scheinen auch (CHE, NX) scheinen auch keine größeren Probleme gemacht zu haben
+A6	Temporal_Element T12 past
+T13	Temporal 0 87	Stabiles Krea seit Jahren spricht für eine gute Compliance und match des Transplantats.
+A7	Temporal_Element T13 past_present

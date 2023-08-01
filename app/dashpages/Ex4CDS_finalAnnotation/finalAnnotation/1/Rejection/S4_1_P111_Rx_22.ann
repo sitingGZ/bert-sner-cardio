@@ -1,0 +1,29 @@
+T1	TimeInfo 3 13	vor 1,5 J.
+T2	LabValues 22 26	Krea
+T3	Measure 27 38	angestiegen
+T4	DiagLab 53 60	Biopsie
+T5	LabValues 62 77	Certicanspiegel
+T6	HealthState 86 100	im Zielbereich
+T7	Medication 102 104	MP
+T8	Medication 109 117	Myfortic
+R1	has_Measure arg1:T2 arg2:T3
+R2	has_State arg1:T5 arg2:T6	
+T9	Measure 105 108	4mg
+R3	has_Measure arg1:T7 arg2:T9	
+T10	Measure 118 124	360 mg
+R4	has_Measure arg1:T8 arg2:T10	
+T11	Tx_middle 0 13	Tx vor 1,5 J.
+A1	ref_age T11 patient
+A2	Risk T2 increase_symptom
+A3	Risk T11 risk_factor
+T12	Other 40 48	Aufnahme
+A4	Risk T12 risk_factor
+A5	Risk T5 decrease_risk_factor
+A6	Risk T7 decrease_risk_factor
+A7	Risk T8 risk_factor
+T13	Temporal 14 61	Zuletzt Krea angestiegen. Aufnahme zur Biopsie.
+A8	Temporal_Element T13 past_present
+T14	Temporal 62 101;102 108;109 124	Certicanspiegel zuletzt im Zielbereich. MP 4mg Myfortic 360 mg
+A9	Temporal_Element T14 present
+T15	Temporal 0 13	Tx vor 1,5 J.
+A10	Temporal_Element T15 past

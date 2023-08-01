@@ -1,0 +1,75 @@
+T1	TimeInfo 3 13	vor 2,5 J.
+T3	LabValues 41 45	Krea
+T4	Measure 54 63	1,4 mg/dl
+T6	LabValues 74 78	Krea
+T7	Measure 79 88	1,1 mg/dl
+T8	HealthState 90 97	stabile
+T9	Process 98 109	Tx Funktion
+T10	LabValues 110 113	DSA
+T11	Measure 114 125	Kl I und II
+T12	Measure 127 129	A1
+T14	Medication 163 171	Cellcept
+T15	TimeInfo 182 192	seit 01/15
+T16	TimeInfo 193 197	2015
+T17	Medication 198 202	Pred
+T18	LabValues 213 224	Tac Spiegel
+T19	HealthState 236 250	im Zielbereich
+T20	Medication 256 263	Urbason
+T21	Medication 278 286	CellCept
+R1	has_Measure arg1:T3 arg2:T4	
+R2	has_Measure arg1:T6 arg2:T7	
+R3	has_State arg1:T9 arg2:T8	
+R4	has_Measure arg1:T10 arg2:T11	
+R5	has_TimeInfo arg1:T14 arg2:T15	
+R6	has_TimeInfo arg1:T17 arg2:T16	
+R7	has_State arg1:T18 arg2:T19	
+T5	Measure 252 255	4mg
+T22	TimeInfo 265 277	jeden 3. Tag
+T23	Measure 287 292	750mg
+R8	has_Measure arg1:T21 arg2:T23	
+R9	has_Measure arg1:T20 arg2:T5	
+R10	has_TimeInfo arg1:T20 arg2:T22	
+T2	Tx_middle 0 13	TX vor 2,5 J.
+A1	ref_age T2 patient
+T25	Measure 172 181	Reduktion
+R11	has_Measure arg1:T14 arg2:T25	
+T24	Condition 30 40	Mismatches
+T26	Measure 28 29	4
+R12	has_Measure arg1:T24 arg2:T26	
+A2	Risk T24 increase_risk_factor
+T27	Condition 15 27	Lebendspende
+A3	Risk T2 decrease_risk_factor
+T28	Temporal 0 27	TX vor 2,5 J., Lebendspende
+A4	Temporal_Element T28 past
+A5	Risk T3 symptom
+T29	Temporal 41 64	Krea aktuell 1,4 mg/dl,
+A6	Temporal_Element T29 present
+T30	Temporal 67 89	bestes Krea 1,1 mg/dl,
+A7	Temporal_Element T30 past
+A8	Risk T9 decrease_symptom
+T13	Measure 131 134	B37
+T31	Measure 135 139	DR10
+T32	Measure 140 143	DQ5
+R13	has_Measure arg1:T10 arg2:T12	
+R14	has_Measure arg1:T10 arg2:T13	
+R15	has_Measure arg1:T10 arg2:T31	
+R16	has_Measure arg1:T10 arg2:T32	
+A9	Risk T14 increase_risk_factor
+A10	Risk T10 increase_risk_factor
+T33	Conclusion 146 192	entwickelt unter Cellcept-Reduktion seit 01/15
+A11	Risk T18 decrease_risk_factor
+A12	Risk T20 increase_risk_factor
+A13	Risk T21 increase_risk_factor
+T34	Temporal 28 40	4-Mismatches
+A14	Temporal_Element T34 present
+T35	Temporal 90 109	stabile Tx Funktion
+A15	Temporal_Element T35 past_present
+T36	Temporal 110 192	DSA Kl I und II (A1, B37 DR10 DQ5!) entwickelt unter Cellcept-Reduktion seit 01/15
+A16	Temporal_Element T36 past_present
+T37	Temporal 193 212	2015 Pred abgesetzt
+A17	Temporal_Element T37 past
+A18	Risk T17 increase_risk_factor
+T38	Measure 203 212	abgesetzt
+R17	has_Measure arg1:T17 arg2:T38	
+T39	Temporal 213 251;252 277;278 292	Tac Spiegel weitgehend im Zielbereich. 4mg Urbason, jeden 3. Tag CellCept 750mg
+A19	Temporal_Element T39 present

@@ -1,0 +1,28 @@
+T1	HealthState 0 8	stabiler
+T2	TimeInfo 17 25	3 Jahren
+T3	Measure 35 37	1x
+T4	Condition 38 41	ANV
+T5	Condition 47 50	HWI
+T6	TimeInfo 51 65	vor ca. 1 Jahr
+T7	Medication 66 79	Steroidentzug
+T9	LabValues 93 95	PU
+R1	has_Measure arg1:T4 arg2:T3
+R2	has_TimeInfo arg1:T5 arg2:T6	
+T11	Tx_middle 17 34	3 Jahren nach NTX
+T8	Age_low 96 115	Jüngeres Pat. alter
+T10	Process 9 16	Verlauf
+R3	has_State arg1:T10 arg2:T1	
+A1	Risk T11 decrease_risk_factor
+A2	Risk T10 decrease_symptom
+A3	Risk T4 increase_symptom
+A4	Risk T5 increase_risk_factor
+T12	Temporal 0 34	stabiler Verlauf 3 Jahren nach NTX
+A5	Temporal_Element T12 past_present
+T13	Temporal 35 65	1x ANV i.R: HWI vor ca. 1 Jahr
+A6	Temporal_Element T13 past
+A7	Risk T7 decrease_risk_factor
+A8	Risk T9 symptom
+A9	Factuality T9 minor
+A10	Risk T8 decrease_risk_factor
+T14	Temporal 66 79;80 95;96 115	Steroidentzug keine relev. PU Jüngeres Pat. alter
+A11	Temporal_Element T14 present

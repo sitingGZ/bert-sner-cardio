@@ -1,0 +1,16 @@
+T2	TimeInfo 40 62	im letzten halben Jahr
+T3	Condition 67 100	fehlendem Ansprechen auf Therapie
+T4	LabValues 131 146	Retentionswerte
+T5	Measure 158 162	hohe
+T6	LabValues 163 174	Proteinurie
+T7	Condition 102 126	weitere Verschlechterung
+R2	has_State arg1:T4 arg2:T7	
+R3	has_Measure arg1:T6 arg2:T5	
+T1	Condition 17 35	humorale Rejektion
+A1	Risk T1 increase_symptom
+R1	has_TimeInfo arg1:T1 arg2:T2	
+A2	Risk T3 increase_risk_factor
+A3	Risk T4 increase_symptom
+A4	Risk T6 increase_symptom
+T8	Temporal 0 174	bereits bekannte humorale Rejektion mit im letzten halben Jahr mit fehlendem Ansprechen auf Therapie, weitere Verschlechterung der Retentionswerte, anhaltend hohe Proteinurie
+A5	Temporal_Element T8 past_present

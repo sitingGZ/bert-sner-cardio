@@ -1,0 +1,13 @@
+T1	Condition 0 7	Kinking
+T4	Condition 12 57	erschwerte anatomische operative Verhältnisse
+T5	Condition 83 93	schlechter
+T6	Process 94 116	Durchblutungssituation
+R1	has_State arg1:T6 arg2:T5	
+A1	Risk T1 increase_risk_factor
+A2	Risk T4 increase_risk_factor
+A3	Risk T6 increase_risk_factor
+T2	Temporal 0 57	Kinking und erschwerte anatomische operative Verhältnisse
+A4	Temporal_Element T2 present
+A5	Factuality T6 possible_future
+T3	Temporal 58 117	führen zu möglicherweise schlechter Durchblutungssituation.
+A6	Temporal_Element T3 future

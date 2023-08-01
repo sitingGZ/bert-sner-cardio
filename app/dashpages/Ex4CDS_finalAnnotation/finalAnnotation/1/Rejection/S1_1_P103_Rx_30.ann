@@ -1,0 +1,25 @@
+T2	Condition 21 33	Schlaganfall
+T4	Condition 49 55	Infekt
+T5	Condition 57 66	Rejektion
+T6	Medication 85 87	IS
+T8	LabValues 181 184	AKs
+A1	Factuality T8 negative
+A2	Factuality T4 speculated
+A3	Factuality T5 unlikely
+T1	Other 12 15	ITS
+A4	Risk T1 risk_factor
+T3	TimeInfo 0 7	aktuell
+A5	Risk T2 risk_factor
+A6	Risk T4 symptom
+T7	Measure 73 84	reduzierter
+R1	has_Measure arg1:T6 arg2:T7	
+A7	Risk T6 increase_risk_factor
+A8	Risk T8 decrease_risk_factor
+T10	Temporal 0 56	aktuell auf ITS nach Schlaganfall mit fraglichem Infekt.
+A9	Temporal_Element T10 present
+T9	Conclusion 57 128	Rejektion unter reduzierter IS möglich jedoch nicht sehr wahrscheinlich
+T11	Temporal 129 185	bei bisher unauffälligem Verlauf nach TX und keinen AKs.
+A10	Temporal_Element T11 past_present
+T12	HealthState 140 161	unauffälligem Verlauf
+A11	Risk T12 decrease_risk_factor
+R2	has_TimeInfo arg1:T1 arg2:T3	

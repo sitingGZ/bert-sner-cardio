@@ -1,0 +1,13 @@
+T1	HealthState 0 21	stabil eingeschränkte
+T2	Process 22 33	TX-Funktion
+T3	Condition 39 55	Dekompensationen
+T4	HealthState 56 63	stabile
+T5	LabValues 64 81	Spiegel Immunsup.
+A1	Factuality T3 negative
+R1	has_State arg1:T2 arg2:T1	
+R2	has_State arg1:T5 arg2:T4	
+A2	Risk T2 decrease_symptom
+A3	Risk T3 decrease_symptom
+A4	Risk T5 decrease_risk_factor
+T6	Temporal 0 55;56 81	stabil eingeschränkte TX-Funktion ohne Dekompensationen stabile Spiegel Immunsup.
+A5	Temporal_Element T6 past_present

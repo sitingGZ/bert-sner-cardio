@@ -1,0 +1,18 @@
+T3	Condition 53 69	Infektionsrisiko
+T5	Condition 85 96	Infektionen
+T6	Condition 98 105	Infekte
+T7	Condition 129 146	Diabetes mellitus
+T1	Condition 0 12	Zystennieren
+T2	Conclusion 33 69	bergen ein erhöhtes Infektionsrisiko
+A1	Risk T1 increase_risk_factor
+T4	TimeInfo 109 122	Vorgeschichte
+R1	has_TimeInfo arg1:T6 arg2:T4	
+A2	Risk T7 increase_risk_factor
+A3	Risk T6 increase_risk_factor
+T8	Conclusion 147 174	bestätigen/begünstigen dies
+T9	Temporal 98 122	Infekte in Vorgeschichte
+A4	Temporal_Element T9 past_present
+T10	Temporal 0 32	Zystennieren als Grunderkrankung
+A5	Temporal_Element T10 past_present
+T11	Temporal 129 174	Diabetes mellitus bestätigen/begünstigen dies
+A6	Temporal_Element T11 past_present

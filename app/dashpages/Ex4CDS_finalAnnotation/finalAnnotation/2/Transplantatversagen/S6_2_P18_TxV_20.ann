@@ -1,0 +1,9 @@
+T1	HealthState 13 26	gute Erholung
+T2	Process 31 45	Nierenfunktion
+T3	Condition 69 81	Rejeketionen
+A1	Factuality T3 negative
+R1	has_State arg1:T2 arg2:T1	
+A2	Risk T2 decrease_symptom
+A3	Risk T3 decrease_risk_factor
+T4	Temporal 0 81	Bisher immer gute Erholung der Nierenfunktion und keine Hinweise auf Rejeketionen
+A4	Temporal_Element T4 past_present

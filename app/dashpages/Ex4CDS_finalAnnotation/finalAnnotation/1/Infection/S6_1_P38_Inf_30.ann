@@ -1,0 +1,16 @@
+T1	LabValues 0 3	Tac
+T2	HealthState 4 18	im Zielbereich
+T5	Condition 73 111	Infektionsrisiko posttransplantationem
+R5	has_State arg1:T1 arg2:T2	
+T3	Condition 30 49	einliegende Schiene
+A1	Risk T3 increase_risk_factor
+A2	Risk T1 symptom
+T4	Conclusion 51 111	daher leicht erhöhtes Infektionsrisiko posttransplantationem
+T6	Other 120 134	Schiene ex ist
+A3	Factuality T6 possible_future
+T7	Conclusion 136 184	wäre das Risiko nochmal geringer in meinen Augen
+A4	Risk T6 decrease_risk_factor
+T8	Temporal 0 49	Tac im Zielbereich, aber noch einliegende Schiene
+A5	Temporal_Element T8 present
+T9	Temporal 113 184	Sobald Schiene ex ist, wäre das Risiko nochmal geringer in meinen Augen
+A6	Temporal_Element T9 future

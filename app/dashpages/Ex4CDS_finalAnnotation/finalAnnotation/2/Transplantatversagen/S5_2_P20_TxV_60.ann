@@ -1,0 +1,19 @@
+T6	Condition 141 164	Schere Herzinsuffizienz
+T9	Condition 206 219	Graft Failure
+T1	LabValues 96 99	GFR
+T3	Condition 71 95	deutlich eingeschränkter
+R1	has_State arg1:T1 arg2:T3	
+T5	Age_high 127 139	Spenderalter
+A2	ref_age T5 donor
+A3	Factuality T9 possible_future
+T2	Condition 0 34	progredientes Transplantatversagen
+A4	Risk T2 increase_symptom
+T4	Age_high 104 121	höherem Empfänger
+A1	ref_age T4 patient
+A5	Risk T4 increase_risk_factor
+A6	Risk T5 increase_risk_factor
+A7	Risk T6 increase_risk_factor
+T7	Conclusion 166 228	Insofern Risiko rascher Progredienz mit Graft Failure gegeben.
+T8	Temporal 0 165	progredientes Transplantatversagen multifaktoriell bei insgesamt schon deutlich eingeschränkter GFR und höherem Empfänger- und Spenderalter. Schere Herzinsuffizienz.
+A8	Temporal_Element T8 past_present
+A9	Risk T1 increase_symptom

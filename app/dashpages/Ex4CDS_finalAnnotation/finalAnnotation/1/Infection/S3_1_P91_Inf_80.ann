@@ -1,0 +1,23 @@
+T3	Condition 46 57	Infektionen
+T4	LabValues 59 65	Leukos
+T5	HealthState 74 78	norm
+T6	DiagLab 85 90	USTIX
+T7	Measure 91 94	pos
+T8	DiagLab 96 100	MiBi
+R1	has_Measure arg1:T6 arg2:T7	
+R3	has_State arg1:T4 arg2:T5	
+T2	TimeInfo 29 39	kurz zuvor
+T1	Condition 14 28	E. Coli Sepsis
+A1	Risk T1 increase_risk_factor
+R2	has_TimeInfo arg1:T1 arg2:T2	
+T12	Temporal 0 57	Diagnose Z.n. E. Coli Sepsis kurz zuvor, rez. Infektionen
+A2	Temporal_Element T12 past
+A3	Risk T3 increase_risk_factor
+T13	TimeInfo 66 73	aktuell
+R4	has_TimeInfo arg1:T4 arg2:T13	
+A4	Risk T4 decrease_symptom
+A5	Risk T6 increase_symptom
+T9	LabValues 101 115	E. Coli 3 MRGN
+T10	Temporal 59 124	Leukos aktuell norm, aber USTIX pos, MiBi E. Coli 3 MRGN Nachweis
+A6	Temporal_Element T10 present
+A7	Risk T9 increase_symptom

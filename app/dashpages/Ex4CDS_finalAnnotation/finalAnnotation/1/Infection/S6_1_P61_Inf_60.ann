@@ -1,0 +1,11 @@
+T1	Measure 15 23	erhöhten
+T2	Condition 24 41	Entzündungswerten
+T3	Condition 43 49	Infekt
+A1	Factuality T3 speculated
+R1	has_Measure arg1:T2 arg2:T1	
+T4	Other 0 10	Einweisung
+A2	Risk T4 increase_risk_factor
+A3	Risk T2 increase_symptom
+T5	Conclusion 43 61	Infekt als Ursache
+T6	Temporal 0 41	Einweisung mit erhöhten Entzündungswerten
+A4	Temporal_Element T6 present

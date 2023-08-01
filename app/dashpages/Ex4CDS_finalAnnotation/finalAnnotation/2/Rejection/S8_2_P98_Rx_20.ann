@@ -1,0 +1,10 @@
+T2	Condition 4 11	Infekte
+T3	Medication 40 42	IS
+A1	Risk T2 symptom
+T1	Measure 26 35	Anpassung
+R1	has_Measure arg1:T3 arg2:T1	
+A3	Risk T3 increase_risk_factor
+T4	Temporal 0 11	rez Infekte
+A4	Temporal_Element T4 past_present
+T5	Temporal 16 42	Bedarf an Anpassung der IS
+A5	Temporal_Element T5 future

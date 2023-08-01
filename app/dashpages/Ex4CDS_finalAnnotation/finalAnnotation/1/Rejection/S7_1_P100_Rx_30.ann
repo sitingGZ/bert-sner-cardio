@@ -1,0 +1,18 @@
+T1	LabValues 0 4	Krea
+T2	Condition 27 46	Infektkonstellation
+T4	Condition 65 67	Rj
+A1	Factuality T4 negative
+T5	Measure 5 10	fällt
+R2	has_Measure arg1:T1 arg2:T5	
+T6	TimeInfo 11 20	derzeitig
+R3	has_TimeInfo arg1:T1 arg2:T6	
+A2	Risk T1 decrease_symptom
+A3	Risk T2 decrease_symptom
+T3	Conclusion 22 46	a.e. Infektkonstellation
+T7	TimeInfo 68 88	in der Vergangenheit
+R1	has_TimeInfo arg1:T4 arg2:T7	
+T8	Temporal 48 88	keine relevanten Rj in der Vergangenheit
+A4	Temporal_Element T8 past
+T9	Temporal 0 21	Krea fällt derzeitig,
+A5	Temporal_Element T9 past_present
+A6	Risk T4 decrease_risk_factor

@@ -1,0 +1,8 @@
+T1	TimeInfo 0 7	Aktuell
+T2	Condition 16 25	Rejektion
+R1	has_TimeInfo arg1:T2 arg2:T1	
+T3	Measure 8 15	floride
+R2	has_Measure arg1:T2 arg2:T3	
+A1	Risk T2 increase_symptom
+T4	Temporal 0 26	Aktuell floride Rejektion.
+A2	Temporal_Element T4 present

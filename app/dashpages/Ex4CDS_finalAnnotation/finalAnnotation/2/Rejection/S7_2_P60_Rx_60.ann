@@ -1,0 +1,10 @@
+T1	Measure 0 10	reduzierte
+T2	Medication 11 13	IS
+T4	LabValues 24 27	DSA
+T5	LabValues 29 31	PU
+R2	has_Measure arg1:T2 arg2:T1	
+A1	Risk T2 increase_risk_factor
+A2	Risk T4 increase_risk_factor
+A3	Risk T5 increase_symptom
+T3	Temporal 0 31	reduzierte IS, bekannte DSA, PU
+A4	Temporal_Element T3 present

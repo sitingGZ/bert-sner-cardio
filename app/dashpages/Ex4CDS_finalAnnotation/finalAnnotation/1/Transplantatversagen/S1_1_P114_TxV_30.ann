@@ -1,0 +1,20 @@
+T1	LabValues 0 3	DSA
+T2	Measure 9 13	hohe
+T3	LabValues 14 16	PU
+T4	Condition 46 56	Tx Verlust
+T5	TimeInfo 57 73	im nächsten Jahr
+T6	TimeInfo 108 120	in 3 Monaten
+R1	has_Measure arg1:T3 arg2:T2	
+R2	has_TimeInfo arg1:T4 arg2:T5	
+R3	has_TimeInfo arg1:T4 arg2:T6	
+A1	Factuality T4 possible_future
+A2	Risk T1 increase_risk_factor
+A3	Risk T3 increase_symptom
+T9	Medication 24 44	Rejectionsbehandlung
+A4	Factuality T9 negative
+A5	Risk T9 risk_factor
+T7	Conclusion 57 120	im nächsten Jahr wahrscheinlich unwahrscheinlicher in 3 Monaten
+T8	Temporal 0 45	DSA plus hohe PU. Keine Rejectionsbehandlung.
+A6	Temporal_Element T8 present
+T10	Temporal 46 120	Tx Verlust im nächsten Jahr wahrscheinlich unwahrscheinlicher in 3 Monaten
+A7	Temporal_Element T10 future

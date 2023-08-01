@@ -1,0 +1,13 @@
+T1	Condition 0 27	Kardiorenale Dekompensation
+T2	Condition 29 41	Hypervolämie
+T4	Condition 77 86	Pneumonie
+A2	Factuality T4 possible_future
+T3	Condition 54 72	pulmonalen Stauung
+A1	Factuality T3 possible_future
+A5	Risk T1 increase_risk_factor
+T6	Temporal 0 41	Kardiorenale Dekompensation, Hypervolämie
+A6	Temporal_Element T6 present
+A7	Risk T2 increase_risk_factor
+T5	Conclusion 43 87	Gefahr der pulmonalen Stauung und Pneumonie.
+T7	Temporal 43 86	Gefahr der pulmonalen Stauung und Pneumonie
+A8	Temporal_Element T7 future

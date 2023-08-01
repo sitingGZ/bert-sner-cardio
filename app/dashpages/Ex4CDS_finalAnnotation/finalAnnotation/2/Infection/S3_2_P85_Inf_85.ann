@@ -1,0 +1,30 @@
+T1	LabValues 0 6	Nitrit
+T2	Measure 7 10	pos
+T3	Condition 12 15	HWI
+T5	Condition 27 40	Infektproblem
+T6	LabValues 52 64	E. Coli ESBL
+T7	Medication 78 83	Cipro
+T8	Condition 118 121	HST
+R1	has_Measure arg1:T1 arg2:T2
+A1	Risk T1 increase_symptom
+A2	Risk T3 increase_symptom
+A3	Risk T5 increase_risk_factor
+A4	Risk T6 increase_symptom
+T4	Other 95 115	nicht (mehr) wirksam
+A5	Risk T7 risk_factor
+T9	Other 130 144	selbstkatheter
+A6	Risk T9 increase_risk_factor
+T10	Measure 122 125	II°
+R3	has_Measure arg1:T8 arg2:T10	
+A7	Risk T8 increase_risk_factor
+T11	Temporal 0 15	Nitrit pos. HWI
+A8	Temporal_Element T11 present
+T12	Temporal 17 40	bekanntes Infektproblem
+A9	Temporal_Element T12 past
+T13	Temporal 42 64	nun sogar E. Coli ESBL
+A10	Temporal_Element T13 present
+T14	Temporal 66 117	zuletzt mit Cipro behandelt (nicht (mehr) wirksam),
+A11	Temporal_Element T14 past_present
+T15	Temporal 118 161	HST II° und selbstkatheter als Risikofaktor
+A12	Temporal_Element T15 past_present
+A13	Risk T4 increase_risk_factor

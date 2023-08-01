@@ -1,0 +1,28 @@
+T1	Condition 0 6	Faiber
+T2	Measure 16 23	erhöhte
+T3	Condition 24 35	Infektwerte
+T5	Condition 46 56	Vorinfekte
+T7	Condition 72 76	HWIs
+T8	LabValues 78 81	VRE
+T9	Condition 83 86	HEV
+R2	has_Measure arg1:T3 arg2:T2	
+T11	Condition 8 14	red AZ
+A1	Risk T1 increase_symptom
+A2	Risk T11 increase_symptom
+A3	Risk T3 increase_symptom
+A4	Risk T5 increase_risk_factor
+T6	Condition 61 68	AB0i LS
+A5	Risk T6 increase_risk_factor
+A6	Risk T7 increase_risk_factor
+A7	Risk T8 increase_symptom
+T10	Condition 94 118	CMV risiko Konstellation
+A8	Risk T10 increase_risk_factor
+T12	Condition 125 142	CMV Reaktivierung
+A9	Risk T12 risk_factor
+T13	TimeInfo 120 124	Z.n.
+R1	has_TimeInfo arg1:T12 arg2:T13	
+T14	Temporal 0 36	Faiber, red AZ, erhöhte Infektwerte,
+A10	Temporal_Element T14 present
+T15	Temporal 37 143	multiple Vorinfekte bei AB0i LS -> HWIs, VRE, HEV, zudem CMV risiko Konstellation (Z.n. CMV Reaktivierung)
+A11	Temporal_Element T15 past_present
+A12	Risk T9 increase_risk_factor

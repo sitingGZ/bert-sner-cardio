@@ -1,0 +1,32 @@
+T1	Condition 0 20	chronische Infektion
+T2	Condition 51 66	Erregernachweis
+T3	Condition 83 92	Infektion
+T4	LabValues 99 102	CRP
+T5	HealthState 103 113	normwertig
+T6	Measure 115 122	fallend
+T7	LabValues 124 130	leukos
+T8	HealthState 131 141	normwertig
+T10	Condition 182 188	Infekt
+T11	Condition 197 203	Reiziv
+T12	TimeInfo 204 227	in den nächsten Monaten
+R3	has_TimeInfo arg1:T11 arg2:T12
+A1	Factuality T10 negative
+R4	has_State arg1:T4 arg2:T5	
+R5	has_State arg1:T7 arg2:T8	
+R6	has_Measure arg1:T4 arg2:T6	
+A2	Factuality T11 possible_future
+T9	Temporal 0 66	chronische Infektion bekannt, jetzt auch immernoch Erregernachweis
+A3	Temporal_Element T9 past_present
+A4	Risk T1 increase_risk_factor
+A5	Risk T2 increase_symptom
+T13	Conclusion 190 248	Jedoch Reiziv in den nächsten Monaten nicht auszuschließen
+T14	Temporal 68 92	Vorangegangene Infektion
+A6	Temporal_Element T14 past
+T15	Temporal 99 188	CRP normwertig, fallend, leukos normwertig, daher aktuell kein Hinweis auf erneute Infekt
+A7	Temporal_Element T15 present
+T16	Conclusion 143 188	daher aktuell kein Hinweis auf erneute Infekt
+A8	Risk T4 decrease_symptom
+A9	Risk T7 decrease_symptom
+T17	Temporal 190 248	Jedoch Reiziv in den nächsten Monaten nicht auszuschließen
+A10	Temporal_Element T17 future
+A11	Risk T3 increase_risk_factor

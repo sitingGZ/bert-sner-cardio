@@ -1,0 +1,14 @@
+T1	LabValues 0 4	Krea
+T2	Measure 12 16	2,83
+T3	Measure 21 25	56kg
+T4	Condition 34 45	Rejectionen
+T5	Condition 50 57	Infekte
+R1	has_Measure arg1:T1 arg2:T2
+R2	has_Measure arg1:T1 arg2:T3	
+A1	Risk T1 increase_symptom
+A2	Risk T4 increase_risk_factor
+A3	Risk T5 increase_risk_factor
+T6	Temporal 0 28	Krea breits 2,83 bei 56kg KG
+A4	Temporal_Element T6 present
+T7	Temporal 29 57	plus Rejectionen und Infekte
+A5	Temporal_Element T7 past

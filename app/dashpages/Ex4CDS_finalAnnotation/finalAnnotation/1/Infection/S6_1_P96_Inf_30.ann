@@ -1,0 +1,18 @@
+T1	Condition 13 30	Diabetes mellitus
+T3	Condition 72 83	Infektionen
+T4	Condition 104 116	Hautläsionen
+T5	Condition 123 134	Fußtraumata
+T7	HealthState 219 247	gute Selbstfürsorgekompetenz
+A1	Factuality T3 possible_future
+A2	Risk T1 increase_risk_factor
+T2	Conclusion 31 83	besteht eventuell ein höheres Risiko für Infektionen
+A3	Factuality T4 possible_future
+A5	Factuality T5 possible_future
+T6	Conclusion 136 197	Insgesamt schätze ich das Risiko aber nicht massiv erhöht ein
+A7	Risk T7 decrease_risk_factor
+T8	Temporal 0 83	Aufgrund des Diabetes mellitus besteht eventuell ein höheres Risiko für Infektionen
+A8	Temporal_Element T8 present
+T9	Temporal 85 135	z.B. im Rahmen von Hautläsionen durch Fußtraumata.
+A9	Temporal_Element T9 future
+T10	Temporal 199 267	da der Patient eine gute Selbstfürsorgekompetenz aufzuweisen scheint
+A10	Temporal_Element T10 present

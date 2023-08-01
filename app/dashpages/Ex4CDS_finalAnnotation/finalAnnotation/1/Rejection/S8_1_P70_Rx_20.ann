@@ -1,0 +1,14 @@
+T1	HealthState 0 7	Stabile
+T2	Medication 8 10	IS
+T3	LabValues 18 29	Proteinurie
+T4	HealthState 48 62	gut sanierbare
+T5	Condition 63 72	Infektion
+A1	Factuality T3 negative
+A2	Factuality T5 negative
+R1	has_State arg1:T2 arg2:T1	
+R2	has_State arg1:T5 arg2:T4	
+A3	Risk T2 decrease_risk_factor
+A4	Risk T3 decrease_symptom
+A5	Risk T5 increase_risk_factor
+T6	Temporal 0 72	Stabile IS, keine Proteinurie. Allerdings nicht gut sanierbare Infektion
+A6	Temporal_Element T6 present

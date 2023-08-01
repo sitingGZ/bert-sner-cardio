@@ -1,0 +1,62 @@
+T1	TimeInfo 3 7	2001
+T2	Condition 9 11	LS
+T3	Condition 13 22	Rekurrenz
+T4	TimeInfo 23 27	2008
+T5	Condition 32 40	Halbmond
+T6	Medication 42 49	Endoxan
+T7	TimeInfo 50 54	2011
+T8	LabValues 56 60	Krea
+T9	Measure 61 62	7
+T11	Condition 77 84	PU hoch
+T12	Measure 86 89	>6g
+T13	DiagLab 90 94	NiBi
+T14	TimeInfo 95 102	08.2011
+T15	Condition 104 108	FSGS
+T16	Condition 110 113	IgA
+T17	LabValues 129 132	HLA
+T18	Measure 133 136	neg
+T19	Measure 150 163	höhergradigen
+T20	Condition 164 175	Rejektionen
+T21	LabValues 183 186	DSA
+R1	has_TimeInfo arg1:T3 arg2:T4
+R2	has_Measure arg1:T8 arg2:T9
+R4	has_Measure arg1:T17 arg2:T18
+A1	Factuality T20 minor
+R3	has_TimeInfo arg1:T8 arg2:T7	
+R6	has_Measure arg1:T11 arg2:T12	
+R7	has_TimeInfo arg1:T13 arg2:T14	
+R8	has_Measure arg1:T20 arg2:T19	
+T22	Age_high 0 7	TX 2001
+A3	ref_age T22 patient
+T10	Process 64 66	AZ
+T23	Condition 67 75	schlecht
+R5	has_State arg1:T10 arg2:T23	
+A2	Risk T22 decrease_risk_factor
+T24	Temporal 0 12	TX 2001, LS,
+A4	Temporal_Element T24 past
+T25	Temporal 13 49	Rekurrenz 2008 mit Halbmond, Endoxan
+A5	Temporal_Element T25 past
+A6	Risk T6 decrease_risk_factor
+A7	Risk T8 increase_symptom
+A8	Risk T11 increase_symptom
+T26	Condition 118 128	Borderline
+R9	has_State arg1:T13 arg2:T15	
+R10	has_State arg1:T13 arg2:T16	
+R11	has_State arg1:T13 arg2:T26	
+A9	Risk T15 decrease_symptom
+A10	Risk T16 decrease_symptom
+A11	Risk T26 increase_risk_factor
+A12	Risk T17 decrease_risk_factor
+A13	Risk T20 decrease_risk_factor
+A14	Risk T21 decrease_risk_factor
+A15	Risk T5 decrease_symptom
+A16	Risk T3 decrease_symptom
+T27	Temporal 50 89;90 128	2011: Krea 7, AZ schlecht, PU hoch, >6g NiBi 08.2011: FSGS, IgA und Borderline
+A17	Temporal_Element T27 past
+T28	Temporal 129 136	HLA neg
+A18	Temporal_Element T28 past_present
+T29	Temporal 137 175	bisher keine höhergradigen Rejektionen
+A19	Temporal_Element T29 past
+T30	Temporal 177 186	keine DSA
+A20	Temporal_Element T30 past_present
+A21	Factuality T21 negative

@@ -1,0 +1,22 @@
+T1	Measure 0 11	schwankende
+T2	LabValues 24 29	IMPDH
+T3	Measure 30 37	niedrig
+T4	Condition 74 87	PJP Pneumonie
+T5	Condition 107 126	Überimmunsupression
+R1	has_Measure arg1:T2 arg2:T3
+A1	Factuality T5 speculated
+T6	LabValues 12 22	Spiegel IS
+R2	has_Measure arg1:T6 arg2:T1	
+A2	Risk T6 increase_risk_factor
+A3	Risk T2 increase_risk_factor
+T7	Condition 47 61	nicht-Einnahme
+A4	Factuality T7 speculated
+A5	Risk T7 increase_risk_factor
+A6	Risk T4 decrease_symptom
+A7	Risk T5 decrease_risk_factor
+T8	Temporal 0 22	schwankende Spiegel IS
+A8	Temporal_Element T8 past_present
+T9	Temporal 24 61	IMPDH niedrig mit V.a. nicht-Einnahme
+A9	Temporal_Element T9 present
+T10	Temporal 63 126	jedoch mit PJP Pneumonie eher Zeichen einer Überimmunsupression
+A10	Temporal_Element T10 past_present

@@ -1,0 +1,21 @@
+T2	Condition 5 11	Infekt
+T4	Condition 49 83	kongenitaler urol. Grunderkrankung
+T7	Condition 119 124	Keime
+T8	Measure 154 162	Anstiege
+T9	LabValues 150 153	CRP
+R1	has_Measure arg1:T9 arg2:T8	
+T1	Condition 16 44	multiple voroperiertem Bauch
+T3	Temporal 0 83	rez. Infekt bei multiple voroperiertem Bauch mit kongenitaler urol. Grunderkrankung
+A1	Temporal_Element T3 past
+A2	Risk T1 increase_risk_factor
+A3	Risk T4 increase_risk_factor
+A4	Risk T2 increase_risk_factor
+T6	DiagLab 132 144	Urinkulturen
+R2	has_State arg1:T6 arg2:T7	
+T5	Temporal 84 144	in der Vorgeschichte unterschiedl. Keime in den Urinkulturen
+A5	Temporal_Element T5 past
+A6	Risk T7 increase_symptom
+T10	TimeInfo 84 104	in der Vorgeschichte
+T11	Temporal 145 162	rez. CRP Anstiege
+A7	Temporal_Element T11 past
+A8	Risk T9 increase_symptom

@@ -1,0 +1,26 @@
+T1	TimeInfo 3 16	vor 10 Jahren
+T2	LabValues 18 22	Krea
+T3	TimeInfo 35 50	letzten 5 Jahre
+T4	Condition 69 92	Therapieadhärenz unklar
+T7	DiagLab 134 138	Sono
+T8	Condition 164 174	Hypertonus
+T9	Condition 191 206	Tx-Insuffizienz
+T10	Condition 208 218	Tx Verlust
+T12	Condition 292 301	Rejektion
+A3	Factuality T12 negative
+T13	Tx_high 0 16	Tx vor 10 Jahren
+R1	has_TimeInfo arg1:T2 arg2:T3	
+A4	Risk T13 increase_risk_factor
+A5	Factuality T2 speculated
+A6	Factuality T4 speculated
+T5	Condition 107 130	chron. Parenchymschäden
+R2	has_State arg1:T7 arg2:T5	
+T6	Condition 144 163	nicht einstellbarer
+R3	has_Measure arg1:T8 arg2:T6	
+T14	Conclusion 208 313	Tx Verlust in Folge chron. Parenchymschäden und nicht als Folge einer behandelbaren Rejektion realistisch
+T11	Condition 228 251	chron. Parenchymschäden
+A2	Risk T9 increase_symptom
+T15	Temporal 0 93	Tx vor 10 Jahren, Krea Verlauf der letzten 5 Jahre nicht vorliegend, Therapieadhärenz unklar,
+A8	Temporal_Element T15 past
+T16	Temporal 94 206	jetzt jedoch chron. Parenchymschäden im Sono, neu nicht einstellbarer Hypertonus als Zeichen der Tx-Insuffizienz
+A9	Temporal_Element T16 present

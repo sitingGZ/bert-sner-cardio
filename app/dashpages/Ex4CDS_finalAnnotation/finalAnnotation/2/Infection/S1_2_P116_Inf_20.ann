@@ -1,0 +1,11 @@
+T3	Condition 15 24	Rejection
+T5	Medication 39 41	IS
+T1	Tx_low 0 10	frische Tx
+A1	Risk T1 increase_risk_factor
+A2	Risk T3 increase_risk_factor
+T2	Measure 34 38	viel
+R1	has_Measure arg1:T5 arg2:T2	
+A3	Risk T5 increase_risk_factor
+T4	Conclusion 43 70	daher erhöhtes Risiko zudem
+T6	Temporal 0 41	frische Tx und Rejection bedeutet viel IS
+A4	Temporal_Element T6 present

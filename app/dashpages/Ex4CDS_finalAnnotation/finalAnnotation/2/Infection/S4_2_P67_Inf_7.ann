@@ -1,0 +1,19 @@
+T1	Condition 0 20	Salmonellenenteritis
+T2	TimeInfo 21 34	vor 4 Monaten
+T3	TimeInfo 36 43	Aktuell
+T4	Condition 44 53	Schnupfen
+T5	Condition 67 80	Infektzeichen
+T6	LabValues 82 85	CRP
+T7	Measure 86 94	0,9 mg/l
+R1	has_TimeInfo arg1:T1 arg2:T2
+R2	has_Measure arg1:T6 arg2:T7
+A1	Factuality T5 negative
+R3	has_TimeInfo arg1:T4 arg2:T3	
+A2	Risk T1 increase_risk_factor
+A3	Risk T4 increase_symptom
+A4	Risk T5 decrease_symptom
+A5	Risk T6 decrease_symptom
+T8	Temporal 0 34	Salmonellenenteritis vor 4 Monaten
+A6	Temporal_Element T8 past
+T9	Temporal 36 94	Aktuell Schnupfen, sonst keine Infektzeichen, CRP 0,9 mg/l
+A7	Temporal_Element T9 present

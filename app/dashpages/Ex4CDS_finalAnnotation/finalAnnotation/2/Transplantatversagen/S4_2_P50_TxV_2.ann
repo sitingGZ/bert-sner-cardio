@@ -1,0 +1,19 @@
+T1	TimeInfo 3 16	vor 3 Monaten
+T2	HealthState 18 25	Stabile
+T3	Process 26 45	Transplantatfuntion
+T4	LabValues 47 51	Krea
+T5	Measure 56 59	1,7
+T6	Measure 64 82	niedrigstem Niveau
+T7	TimeInfo 83 90	seit Tx
+R2	has_Measure arg1:T4 arg2:T5
+T8	Tx_low 0 16	Tx vor 3 Monaten
+R1	has_State arg1:T3 arg2:T2	
+R3	has_TimeInfo arg1:T4 arg2:T7	
+R4	has_Measure arg1:T4 arg2:T6	
+A1	Risk T8 decrease_risk_factor
+A2	Risk T3 decrease_symptom
+A3	Risk T4 decrease_symptom
+T9	Temporal 0 17	Tx vor 3 Monaten,
+A4	Temporal_Element T9 past
+T10	Temporal 18 90	Stabile Transplantatfuntion, Krea mit 1,7 auf niedrigstem Niveau seit Tx
+A5	Temporal_Element T10 past_present

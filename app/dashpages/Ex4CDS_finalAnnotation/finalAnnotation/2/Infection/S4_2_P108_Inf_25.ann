@@ -1,0 +1,16 @@
+T1	Condition 6 19	Infektzeichen
+T2	TimeInfo 24 36	vor 4 Wochen
+T4	Condition 38 67	Aufreißen der Operationswunde
+T5	Condition 69 93	Diabetes mellitus Typ II
+A1	Factuality T1 negative
+T6	Tx_low 21 36	Tx vor 4 Wochen
+A2	Risk T1 decrease_symptom
+A3	Risk T6 increase_risk_factor
+A4	Risk T4 increase_risk_factor
+A5	Risk T5 increase_risk_factor
+T3	Temporal 0 20	keine Infektzeichen,
+A6	Temporal_Element T3 present
+T7	Temporal 21 37	Tx vor 4 Wochen,
+A7	Temporal_Element T7 past
+T8	Temporal 38 93	Aufreißen der Operationswunde, Diabetes mellitus Typ II
+A8	Temporal_Element T8 past_present

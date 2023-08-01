@@ -1,0 +1,16 @@
+T1	Measure 0 11	schwankende
+T2	LabValues 12 22	Krea-Werte
+T3	Measure 32 39	Ansteig
+T4	Condition 41 56	unstimmigkeiten
+T5	Medication 61 63	IS
+R1	has_Measure arg1:T2 arg2:T1
+R2	has_Measure arg1:T2 arg2:T3	
+R3	has_State arg1:T5 arg2:T4	
+T6	TimeInfo 24 31	aktuell
+R4	has_TimeInfo arg1:T2 arg2:T6	
+A1	Risk T2 increase_symptom
+A2	Risk T5 increase_risk_factor
+T7	Temporal 0 39	schwankende Krea-Werte, aktuell Ansteig
+A3	Temporal_Element T7 past_present
+T8	Temporal 41 63	unstimmigkeiten mit IS
+A4	Temporal_Element T8 present

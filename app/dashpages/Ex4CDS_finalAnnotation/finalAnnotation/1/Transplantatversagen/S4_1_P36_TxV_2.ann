@@ -1,0 +1,42 @@
+T1	TimeInfo 3 12	vor 16 d.
+T3	LabValues 20 24	Krea
+T4	Measure 25 28	1,5
+T5	LabValues 30 39	Kreatinin
+T6	Measure 40 47	fallend
+T7	LabValues 49 66	Tacrolimusspiegel
+T8	HealthState 67 81	im Zielbereich
+T9	DiagLab 86 90	Sono
+T10	HealthState 91 118	Morphologisch unauffälliges
+T11	HealthState 142 147	guter
+T12	Process 148 160	Durchblutung
+T13	Condition 178 199	Nierenarterienstenose
+T14	Condition 205 224	Rejektionsgeschehen
+T15	DiagLab 226 228	GE
+T16	Condition 230 244	Alport-Syndrom
+R1	has_Measure arg1:T3 arg2:T4
+R2	has_Measure arg1:T5 arg2:T6
+A1	Factuality T13 negative
+A2	Factuality T14 negative
+R4	has_State arg1:T7 arg2:T8	
+R5	has_State arg1:T12 arg2:T11	
+T17	Tx_low 0 12	Tx vor 16 d.
+T2	Other 119 137	Nierentransplantat
+R3	has_State arg1:T2 arg2:T10	
+A3	Risk T3 decrease_symptom
+A4	Risk T5 decrease_symptom
+A5	Risk T7 decrease_risk_factor
+A6	Risk T2 decrease_symptom
+A7	Risk T12 decrease_symptom
+A8	Risk T13 decrease_risk_factor
+A9	Risk T14 decrease_risk_factor
+A10	Risk T16 risk_factor
+T18	Temporal 0 12	Tx vor 16 d.
+A11	Temporal_Element T18 past
+T19	Temporal 13 28	Bestes Krea 1,5
+A12	Temporal_Element T19 past
+T20	Temporal 30 48;49 82	Kreatinin fallend. Tacrolimusspiegel im Zielbereich.
+A13	Temporal_Element T20 present
+T21	Temporal 83 225	Im Sono Morphologisch unauffälliges Nierentransplantat mit guter Durchblutung. Kein Anhalt für Nierenarterienstenose oder Rejektionsgeschehen.
+A14	Temporal_Element T21 present
+T22	Temporal 226 244	GE: Alport-Syndrom
+A15	Temporal_Element T22 past_present

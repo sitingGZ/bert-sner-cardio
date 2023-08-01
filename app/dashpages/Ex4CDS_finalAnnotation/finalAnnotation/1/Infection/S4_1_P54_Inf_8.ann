@@ -1,0 +1,17 @@
+T1	TimeInfo 0 7	Aktuell
+T2	LabValues 8 11	CRP
+T3	HealthState 12 24	nicht erhöht
+T5	Condition 41 48	Infekte
+T6	Condition 71 94	CMV-Risikokonstellation
+A1	Factuality T5 minor
+R1	has_State arg1:T2 arg2:T3	
+R3	has_TimeInfo arg1:T2 arg2:T1	
+A2	Risk T2 decrease_symptom
+T4	Temporal 0 24	Aktuell CRP nicht erhöht
+A3	Temporal_Element T4 present
+T7	Temporal 26 69	keine schweren Infekte in der Vorgeschichte
+A4	Temporal_Element T7 past
+T8	Temporal 71 94	CMV-Risikokonstellation
+A5	Temporal_Element T8 past_present
+A6	Risk T6 increase_risk_factor
+A7	Risk T5 decrease_risk_factor

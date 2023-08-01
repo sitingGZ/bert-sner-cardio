@@ -1,0 +1,22 @@
+T1	Condition 50 70	Infektkomplikationen
+T2	Condition 72 86	Virusinfektion
+T3	Condition 97 108	Problematik
+T4	Condition 110 113	ANV
+T5	Measure 128 139	infektiöser
+T6	Measure 144 154	prärenaler
+T7	Condition 155 161	Genese
+R1	has_Measure arg1:T7 arg2:T5
+R2	has_Measure arg1:T7 arg2:T6
+A1	Factuality T7 speculated
+T8	Condition 27 36	Rejektion
+T9	Measure 16 26	borderline
+R3	has_Measure arg1:T8 arg2:T9	
+A2	Risk T8 increase_risk_factor
+A3	Risk T1 decrease_risk_factor
+A4	Risk T2 symptom
+A5	Risk T3 symptom
+A6	Risk T4 increase_symptom
+A7	Risk T7 decrease_risk_factor
+T10	Conclusion 110 161	ANV insofern eher infektiöser bzw prärenaler Genese
+T11	Temporal 0 108	bisher einmalig borderline Rejektion bei vorangig Infektkomplikationen, Virusinfektion, kardiale Problematik
+A8	Temporal_Element T11 past_present

@@ -1,0 +1,10 @@
+T1	TimeInfo 0 7	Aktuell
+T3	Condition 20 50	zelluläres Rejectionsgeschehen
+T4	DiagLab 58 65	Biopsie
+T5	LabValues 86 89	DSA
+R1	has_TimeInfo arg1:T3 arg2:T1	
+T2	Temporal 0 89	Aktuell ablaufendes zelluläres Rejectionsgeschehen in der Biopsie + neu aufgetretende DSA
+A1	Temporal_Element T2 present
+T6	Conclusion 91 152	Fraglich ob dieses durch Behandlung noch gestoppt werden kann
+A2	Risk T5 increase_risk_factor
+A3	Risk T3 increase_symptom

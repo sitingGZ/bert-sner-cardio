@@ -1,0 +1,19 @@
+T1	HealthState 8 15	stabile
+T2	Process 16 27	Tx Funktion
+T3	Condition 29 40	Rejektionen
+T4	Measure 83 91	niedrige
+T5	LabValues 92 94	PU
+R1	has_State arg1:T2 arg2:T1	
+R2	has_Measure arg1:T5 arg2:T4	
+A1	Risk T2 decrease_symptom
+T6	TimeInfo 53 73	frühen Phase nach Tx
+R3	has_TimeInfo arg1:T3 arg2:T6	
+A2	Risk T3 risk_factor
+A3	Risk T5 decrease_symptom
+T7	Temporal 29 81	Rejektionen eher in der frühen Phase nach Tx gewesen
+A4	Temporal_Element T7 past
+T8	Temporal 0 27	zuletzt stabile Tx Funktion
+A5	Temporal_Element T8 past_present
+T9	Temporal 83 94	niedrige PU
+A6	Temporal_Element T9 present
+A7	Factuality T3 speculated

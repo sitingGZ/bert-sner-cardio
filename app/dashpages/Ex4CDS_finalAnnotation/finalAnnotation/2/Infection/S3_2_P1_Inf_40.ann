@@ -1,0 +1,20 @@
+T1	LabValues 10 13	CRP
+T2	Condition 21 35	stark erhöhtes
+T3	LabValues 36 39	CRP
+T7	HealthState 110 124	gutes Befinden
+R1	has_Measure arg1:T3 arg2:T2
+T5	LabValues 93 99	Leukos
+A2	Risk T1 increase_symptom
+A3	Risk T3 increase_symptom
+T4	Condition 67 76	Infektion
+A1	Factuality T4 speculated
+A4	Risk T4 increase_risk_factor
+A5	Risk T5 decrease_symptom
+A6	Risk T7 decrease_symptom
+T8	Temporal 0 14	weiterhin CRP,
+A7	Temporal_Element T8 present
+T9	Temporal 15 77	zuvor stark erhöhtes CRP (evtl nicht austherapierte Infektion?
+A8	Temporal_Element T9 past
+T10	Temporal 80 124	jedoch keine Leukos, klinisch gutes Befinden
+A9	Temporal_Element T10 present
+A10	Factuality T5 negative

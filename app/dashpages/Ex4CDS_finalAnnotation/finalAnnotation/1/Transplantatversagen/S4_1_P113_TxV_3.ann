@@ -1,0 +1,22 @@
+T1	HealthState 0 11	Stabil gute
+T2	Process 12 23	Tx Funktion
+T3	HealthState 25 29	gute
+T5	HealthState 55 60	guter
+T6	Process 61 75	Primärfunktion
+T8	Condition 97 104	Infekte
+R1	has_State arg1:T2 arg2:T1	
+R2	has_State arg1:T6 arg2:T5	
+T9	TimeInfo 84 91	aktuell
+R5	has_TimeInfo arg1:T8 arg2:T9	
+T10	Other 30 42	Spenderniere
+R6	has_State arg1:T10 arg2:T3	
+A1	Risk T2 decrease_symptom
+A2	Risk T10 decrease_risk_factor
+A3	Risk T6 decrease_risk_factor
+A4	Risk T8 increase_risk_factor
+T4	Temporal 77 104	Jedoch aktuell rez. Infekte
+A5	Temporal_Element T4 present
+T7	Temporal 0 42	Stabil gute Tx Funktion, gute Spenderniere
+A6	Temporal_Element T7 past_present
+T11	Temporal 43 76	mit initial guter Primärfunktion.
+A7	Temporal_Element T11 past

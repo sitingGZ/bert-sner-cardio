@@ -1,0 +1,15 @@
+T1	HealthState 0 8	Stabiles
+T2	LabValues 9 13	Krea
+T3	LabValues 21 32	Proteinurie
+T4	Condition 50 60	Leukopenie
+R1	has_State arg1:T2 arg2:T1	
+T6	Medication 83 85	IS
+A1	Risk T2 decrease_symptom
+A2	Factuality T3 negative
+A3	Risk T3 decrease_symptom
+A4	Risk T4 decrease_risk_factor
+A5	Risk T6 increase_risk_factor
+T7	Temporal 0 32	Stabiles Krea, keine Proteinurie
+A6	Temporal_Element T7 present
+T8	Temporal 34 85	allerdings Z.n. Leukopenie mit Modifizierung der IS
+A7	Temporal_Element T8 past_present

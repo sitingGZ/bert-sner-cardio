@@ -1,0 +1,23 @@
+T1	Medication 8 17	Cefuroxim
+T3	Condition 33 55	Gallenblasenentzündung
+T4	DiagLab 75 86	Sonographie
+T5	TimeInfo 91 97	29.05.
+T6	Condition 102 111	GB-Empyem
+T7	LabValues 121 124	CRP
+T8	HealthState 125 137	nicht erhöht
+R3	has_TimeInfo arg1:T4 arg2:T5	
+R2	has_TimeInfo arg1:T6 arg2:T5	
+R1	has_State arg1:T7 arg2:T8	
+A1	Risk T1 increase_symptom
+A2	Risk T3 increase_symptom
+A3	Factuality T6 speculated
+A4	Risk T6 increase_symptom
+A5	Risk T7 decrease_symptom
+T2	Temporal 113 138	Zuletzt CRP nicht erhöht.
+A6	Temporal_Element T2 past_present
+T9	Temporal 57 111	In der ambulanten Sonographie vom 29.05. V.a GB-Empyem
+A7	Temporal_Element T9 past
+T10	Temporal 0 17	Aktuell Cefuroxim
+A8	Temporal_Element T10 present
+T11	Temporal 19 55	da chronische Gallenblasenentzündung
+A9	Temporal_Element T11 past_present

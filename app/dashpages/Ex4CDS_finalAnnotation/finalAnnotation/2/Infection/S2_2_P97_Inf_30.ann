@@ -1,0 +1,21 @@
+T1	TimeInfo 0 7	aktuell
+T2	Condition 14 27	Infektzeichen
+T3	DiagLab 29 42	laborchemisch
+T5	Medication 60 77	Langzeit-Immunsup
+T6	Medication 92 105	Chemotherapie
+T7	Condition 113 120	Infekte
+R1	has_TimeInfo arg1:T2 arg2:T1
+A1	Factuality T2 negative
+A2	Factuality T7 possible_future
+T4	DiagLab 47 55	klinisch
+A3	Risk T2 decrease_symptom
+A4	Risk T5 increase_risk_factor
+A5	Factuality T6 possible_future
+A6	Risk T6 increase_risk_factor
+T8	Temporal 0 55	aktuell keine Infektzeichen, laborchemisch und klinisch
+A7	Temporal_Element T8 present
+T9	Temporal 56 77	bei Langzeit-Immunsup
+A8	Temporal_Element T9 past_present
+T10	Temporal 78 105	und geplanter Chemotherapie
+A9	Temporal_Element T10 future
+T11	Conclusion 106 143	jedoch Infekte nicht unwahrscheinlich

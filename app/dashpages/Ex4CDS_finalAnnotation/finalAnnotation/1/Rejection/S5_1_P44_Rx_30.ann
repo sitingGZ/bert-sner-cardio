@@ -1,0 +1,20 @@
+T2	Process 80 97	Funktionsaufnahme
+T3	LabValues 104 107	HLA
+T5	Medication 109 117	duale IS
+T6	Condition 11 20	Rejektion
+T1	Tx_low 55 67	Frühphae NTX
+A1	Risk T1 increase_risk_factor
+A2	Risk T2 increase_symptom
+T7	Measure 98 103	keine
+R2	has_Measure arg1:T3 arg2:T7	
+A3	Risk T3 decrease_risk_factor
+A4	Risk T5 increase_risk_factor
+T8	Measure 0 10	Borderline
+R3	has_Measure arg1:T6 arg2:T8	
+A5	Risk T6 increase_symptom
+A6	Factuality T2 minor
+T4	Temporal 98 129	keine HLA, duale IS i.R. Studie
+A7	Temporal_Element T4 present
+T9	Temporal 0 54;55 67;68 97	Borderline Rejektion im stationären Aufenthalt nach TX Frühphae NTX keine volle Funktionsaufnahme
+A8	Temporal_Element T9 past_present
+A9	Factuality T3 negative

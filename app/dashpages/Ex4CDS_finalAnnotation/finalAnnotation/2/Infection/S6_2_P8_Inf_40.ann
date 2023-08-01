@@ -1,0 +1,11 @@
+T1	Condition 0 10	Lymphozele
+T2	Condition 15 27	Komplikation
+T3	Condition 32 52	operativer Sanierung
+T4	Measure 68 76	erhöhtes
+T5	Condition 77 93	INfektionsrisiko
+R1	has_Measure arg1:T5 arg2:T4	
+A1	Risk T1 increase_risk_factor
+T6	Conclusion 56 94	daher ewtas erhöhtes INfektionsrisiko.
+A2	Risk T3 risk_factor
+T7	Temporal 0 52	Lymphozele als Komplikation mit operativer Sanierung
+A3	Temporal_Element T7 past_present

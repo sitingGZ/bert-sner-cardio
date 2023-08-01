@@ -1,0 +1,33 @@
+T1	Condition 6 17	Rejektionen
+T2	TimeInfo 22 35	letzten Jahre
+T3	HealthState 37 44	stabile
+T4	Process 45 56	TX Funktion
+T5	LabValues 58 62	Krea
+T6	Measure 63 66	1,5
+T7	LabValues 68 70	PU
+T8	Measure 71 74	neg
+T9	LabValues 76 79	HLA
+T10	Measure 80 83	neg
+T11	HealthState 84 105	Compliance: vorhanden
+R1	has_Measure arg1:T5 arg2:T6
+R2	has_Measure arg1:T9 arg2:T10
+A1	Factuality T1 negative
+R3	has_TimeInfo arg1:T1 arg2:T2	
+R4	has_State arg1:T4 arg2:T3	
+R5	has_Measure arg1:T7 arg2:T8	
+T12	Medication 113 115	IS
+A2	Risk T1 decrease_risk_factor
+A3	Risk T4 decrease_symptom
+A4	Risk T5 decrease_symptom
+A5	Risk T7 decrease_symptom
+A6	Risk T9 decrease_risk_factor
+A7	Risk T11 decrease_risk_factor
+T13	Measure 106 112	Triple
+R6	has_Measure arg1:T12 arg2:T13	
+A8	Risk T12 decrease_risk_factor
+T14	Temporal 0 57	keine Rejektionen der letzten Jahre, stabile TX Funktion,
+A9	Temporal_Element T14 past_present
+T15	Temporal 58 83;84 105;106 115	Krea 1,5, PU neg, HLA neg Compliance: vorhanden Triple IS
+A10	Temporal_Element T15 present
+A11	Factuality T9 negative
+A12	Factuality T7 negative

@@ -1,0 +1,26 @@
+T1	HealthState 0 7	Stabile
+T2	HealthState 17 25	stabiles
+T3	LabValues 26 30	Krea
+T4	HealthState 48 57	compliant
+T5	Condition 80 91	Rejectionen
+T8	Condition 115 124	Rejection
+A1	Factuality T5 negative
+R2	has_State arg1:T3 arg2:T2	
+T6	LabValues 8 15	Spiegel
+R3	has_State arg1:T6 arg2:T1	
+A2	Factuality T8 unlikely
+A3	Risk T6 decrease_symptom
+A4	Risk T3 decrease_symptom
+A5	Risk T4 decrease_risk_factor
+A6	Risk T5 decrease_risk_factor
+T7	LabValues 95 97	AK
+T9	Measure 93 94	1
+T10	Measure 98 101	B13
+R1	has_Measure arg1:T7 arg2:T10	
+R4	has_Measure arg1:T7 arg2:T9	
+A7	Risk T7 increase_risk_factor
+T11	Conclusion 102 132	Risiko einer Rejection niedrig
+T12	Temporal 32 102	Patient scheint compliant zu sein. Bisher keine Rejectionen, 1 AK B13.
+A8	Temporal_Element T12 past_present
+T13	Temporal 0 30	Stabile Spiegel, stabiles Krea
+A9	Temporal_Element T13 present

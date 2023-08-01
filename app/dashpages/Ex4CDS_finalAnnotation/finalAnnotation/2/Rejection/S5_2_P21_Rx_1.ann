@@ -1,0 +1,16 @@
+T1	HealthState 0 13	guter Verlauf
+T2	Condition 21 39	Rejektionsprobleme
+T3	LabValues 54 57	HLA
+T4	Measure 59 66	geringe
+T5	LabValues 67 69	PU
+A1	Factuality T2 negative
+A2	Factuality T3 negative
+R1	has_Measure arg1:T5 arg2:T4	
+A3	Risk T1 decrease_symptom
+A4	Risk T2 decrease_risk_factor
+A5	Risk T3 decrease_risk_factor
+A6	Risk T5 decrease_symptom
+T6	Temporal 48 69	keine HLA, geringe PU
+A7	Temporal_Element T6 present
+T7	Temporal 0 46	guter Verlauf, keine Rejektionsprobleme bisher
+A8	Temporal_Element T7 past_present

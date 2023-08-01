@@ -1,0 +1,14 @@
+T2	Condition 6 13	Infekte
+T3	Measure 61 69	erhöhter
+T4	Condition 70 88	Infektanfälligkeit
+R2	has_Measure arg1:T4 arg2:T3	
+T1	Temporal 0 20	wenig Infekte bisher
+A1	Temporal_Element T1 past
+T5	Temporal 22 56	jedoch aktuell erneut Predni- Gabe
+A2	Temporal_Element T5 present
+T6	Conclusion 57 88	mit erhöhter Infektanfälligkeit
+T7	Medication 44 56	Predni- Gabe
+A3	Risk T7 increase_risk_factor
+A4	Risk T2 decrease_risk_factor
+T8	Measure 0 5	wenig
+R1	has_Measure arg1:T2 arg2:T8	

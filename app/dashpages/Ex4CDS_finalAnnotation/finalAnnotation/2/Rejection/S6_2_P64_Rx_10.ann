@@ -1,0 +1,12 @@
+T1	DiagLab 0 4	Sono
+T2	HealthState 5 8	gut
+T4	HealthState 19 27	guter AZ
+T5	Medication 29 31	IS
+R1	has_State arg1:T1 arg2:T2	
+T3	HealthState 48 70	zuverlässiger Einnahme
+R2	has_State arg1:T5 arg2:T3	
+A1	Risk T1 decrease_symptom
+A2	Risk T4 decrease_symptom
+A3	Risk T5 decrease_risk_factor
+T6	Temporal 0 70	Sono gut, klinisch guter AZ, IS mit anscheinend zuverlässiger Einnahme
+A4	Temporal_Element T6 present

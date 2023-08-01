@@ -1,0 +1,13 @@
+T1	Condition 19 28	Infektion
+T2	LabValues 30 33	crp
+T3	Measure 34 37	neg
+T4	LabValues 40 46	leukos
+T5	HealthState 47 51	norm
+R1	has_Measure arg1:T2 arg2:T3
+R2	has_Measure arg1:T4 arg2:T5
+A1	Factuality T1 negative
+A2	Risk T4 decrease_symptom
+A3	Risk T2 decrease_symptom
+A4	Risk T1 decrease_symptom
+T6	Temporal 0 51	keine hinweise auf Infektion, crp neg., leukos norm
+A5	Temporal_Element T6 present

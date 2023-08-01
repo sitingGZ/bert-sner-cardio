@@ -1,0 +1,17 @@
+T1	Condition 8 11	HWI
+T2	Measure 16 21	hohem
+T3	LabValues 22 26	Krea
+T4	DiagLab 82 86	Sono
+T6	Condition 96 112	infizierte Zyste
+R1	has_Measure arg1:T3 arg2:T2
+A1	Risk T3 increase_symptom
+A2	Risk T1 increase_symptom
+T5	Temporal 0 47	Aktuell HWI mit hohem Krea in einer Reha Klinik
+A3	Temporal_Element T5 present
+T7	Conclusion 49 63	Rezidiv häufig
+A4	Risk T6 increase_symptom
+T8	Temporal 65 119	Zudem im Letzten Sono fraglich infizierte Zyste im NTX
+A5	Temporal_Element T8 past
+A6	Factuality T6 speculated
+T9	Other 27 47	in einer Reha Klinik
+A7	Risk T9 increase_risk_factor

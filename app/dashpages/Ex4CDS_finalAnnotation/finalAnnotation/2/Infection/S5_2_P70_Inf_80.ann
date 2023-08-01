@@ -1,0 +1,12 @@
+T1	Condition 18 22	pAVK
+T2	Condition 27 44	Infektproblematik
+T4	Condition 70 85	eitrigem Sekret
+A1	Risk T1 increase_risk_factor
+A2	Risk T2 increase_symptom
+T3	Other 46 65	stationäre Aufnahme
+A3	Risk T3 increase_risk_factor
+A4	Risk T4 increase_symptom
+T5	Temporal 0 45	nicht beherrschte pAVK mit Infektproblematik,
+A5	Temporal_Element T5 past_present
+T6	Temporal 46 85	stationäre Aufnahme bei eitrigem Sekret
+A6	Temporal_Element T6 present

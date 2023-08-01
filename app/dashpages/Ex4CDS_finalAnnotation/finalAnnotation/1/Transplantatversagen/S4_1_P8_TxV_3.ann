@@ -1,0 +1,45 @@
+T4	TimeInfo 32 38	vor 6J
+T5	Condition 39 62	CMV-Risikokonstellation
+T6	Condition 68 84	Prostatakarzinom
+T8	LabValues 98 102	Krea
+T9	Measure 111 120	1,7 mg/dl
+T11	LabValues 131 135	Krea
+T12	Measure 136 145	1,1 mg/dl
+T15	TimeInfo 180 190	über 9 Mo.
+R1	has_Measure arg1:T8 arg2:T9
+R2	has_Measure arg1:T11 arg2:T12
+T1	Age_high 0 10	77 j. Pat.
+T3	Tx_high 29 38	TX vor 6J
+T2	Condition 15 28	Membranöse GN
+A1	Risk T2 increase_risk_factor
+A2	Risk T3 risk_factor
+A3	Risk T5 increase_risk_factor
+A4	Risk T6 increase_risk_factor
+T7	Condition 86 97	kardiale VE
+A5	Risk T7 increase_risk_factor
+A6	Risk T8 decrease_symptom
+T10	Temporal 98 121	Krea aktuell 1,7 mg/dl,
+A7	Temporal_Element T10 present
+T13	Temporal 124 146	bestes Krea 1,1 mg/dl,
+A8	Temporal_Element T13 past
+A9	Risk T11 symptom
+T14	Condition 160 179	Tx Verschlechterung
+A10	Risk T14 increase_symptom
+R3	has_TimeInfo arg1:T14 arg2:T15	
+T16	Temporal 147 190	progrediente Tx Verschlechterung über 9 Mo.
+A11	Temporal_Element T16 past_present
+T17	Temporal 0 10	77 j. Pat.
+A12	Temporal_Element T17 present
+A13	Risk T1 increase_risk_factor
+T18	Temporal 11 28	GE: Membranöse GN
+A14	Temporal_Element T18 past_present
+T19	Temporal 29 38	TX vor 6J
+A15	Temporal_Element T19 past
+T20	Temporal 39 62	CMV-Risikokonstellation
+A16	Temporal_Element T20 past_present
+T21	Temporal 63 84	Z.n. Prostatakarzinom
+A17	Temporal_Element T21 past
+T22	Temporal 86 97	kardiale VE
+A18	Temporal_Element T22 past_present
+T23	DiagLab 11 13	GE
+R4	has_State arg1:T23 arg2:T2	

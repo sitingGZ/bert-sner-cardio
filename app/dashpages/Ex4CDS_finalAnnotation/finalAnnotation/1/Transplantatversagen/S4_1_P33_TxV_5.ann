@@ -1,0 +1,27 @@
+T1	TimeInfo 3 9	vor 1J
+T2	HealthState 10 17	Stabile
+T3	Process 18 38	Transplantatfunktion
+T5	LabValues 52 56	Krea
+T6	Measure 61 70	1,8 mg/dl
+T7	LabValues 71 86	Certicanspiegel
+T8	Condition 104 111	zu hoch
+T9	TimeInfo 113 120	Aktuell
+T10	Condition 121 130	Infektion
+R2	has_Measure arg1:T5 arg2:T6
+R3	has_TimeInfo arg1:T10 arg2:T9
+R1	has_State arg1:T3 arg2:T2	
+T11	Tx_middle 0 9	Tx vor 1J
+R4	has_State arg1:T7 arg2:T8	
+A1	Risk T11 decrease_risk_factor
+A2	Risk T3 decrease_symptom
+A3	Risk T5 decrease_symptom
+A4	Risk T7 decrease_risk_factor
+A5	Risk T10 increase_risk_factor
+T4	Temporal 0 9	Tx vor 1J
+A6	Temporal_Element T4 past
+T12	Temporal 10 69	Stabile Transplantatfunktion, nahe bestem Krea von 1,8 mg/d
+A7	Temporal_Element T12 present
+T13	Temporal 71 111	Certicanspiegel zwischenzeitlich zu hoch
+A8	Temporal_Element T13 past
+T14	Temporal 113 130	Aktuell Infektion
+A9	Temporal_Element T14 present

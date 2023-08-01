@@ -1,0 +1,20 @@
+T4	LabValues 50 54	Krea
+T5	Measure 69 85	adäquat gefallen
+T6	DiagLab 94 101	Biopsie
+T7	Condition 113 115	Rj
+R2	has_Measure arg1:T4 arg2:T5
+A1	Factuality T7 negative
+T1	Condition 0 16	schlechtes Match
+A2	Risk T1 increase_risk_factor
+T2	Other 17 29	ESP Programm
+A3	Risk T2 increase_risk_factor
+T3	Other 31 49	marginaler Spender
+A4	ref_age T3 donor
+A5	Risk T3 increase_risk_factor
+A6	Risk T4 increase_symptom
+A7	Risk T7 decrease_risk_factor
+R1	has_State arg1:T6 arg2:T7	
+T8	Condition 122 125	DGF
+A8	Risk T8 increase_risk_factor
+T9	Temporal 0 16;17 49;50 125	schlechtes Match ESP Programm, marginaler Spender Krea bislang nicht adäquat gefallen, in der Biopsie zwar keine Rj, a.e. DGF
+A9	Temporal_Element T9 past_present

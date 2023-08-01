@@ -1,0 +1,28 @@
+T2	Condition 9 18	Sinusitis
+T3	LabValues 26 30	Krea
+T4	Measure 31 38	Anstieg
+T5	Condition 96 99	HWI
+T6	TimeInfo 103 116	Vergangenheit
+T7	Measure 126 131	hohes
+T8	LabValues 132 135	CRP
+R1	has_Measure arg1:T3 arg2:T4
+R2	has_Measure arg1:T8 arg2:T7
+T1	Medication 44 65	Kortisonstoßtherapien
+R3	has_TimeInfo arg1:T5 arg2:T6	
+A1	Risk T2 increase_risk_factor
+A2	Risk T3 symptom
+A3	Risk T1 increase_risk_factor
+T9	Other 75 95	weitere Behandlungen
+A4	Factuality T9 possible_future
+A6	Risk T5 increase_risk_factor
+A7	Risk T8 increase_symptom
+T10	Temporal 0 19	rezidiv. Sinusitis,
+A8	Temporal_Element T10 past_present
+T11	Temporal 20 65	wegen Krea Anstieg wdh. Kortisonstoßtherapien
+A9	Temporal_Element T11 past_present
+T12	Temporal 66 95	und ggf. weitere Behandlungen
+A10	Temporal_Element T12 future
+T13	Temporal 96 116	HWI in Vergangenheit
+A11	Temporal_Element T13 past
+T14	Temporal 118 135	Aktuell hohes CRP
+A12	Temporal_Element T14 present

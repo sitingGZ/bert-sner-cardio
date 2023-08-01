@@ -1,0 +1,20 @@
+T1	Measure 0 11	schwankende
+T2	LabValues 12 22	IS-Spiegel
+T3	Condition 30 51	unterimmunsupprimiert
+T4	Condition 73 76	CMV
+T5	Measure 83 90	Anstieg
+R1	has_Measure arg1:T2 arg2:T1
+T6	Medication 66 68	IS
+T7	Measure 56 65	Reduktion
+R2	has_Measure arg1:T6 arg2:T7	
+T8	LabValues 78 82	Krea
+R3	has_Measure arg1:T8 arg2:T5	
+A1	Risk T2 increase_risk_factor
+A2	Risk T3 increase_risk_factor
+A3	Risk T6 increase_risk_factor
+A4	Risk T4 symptom
+A5	Risk T8 increase_symptom
+T9	Temporal 0 76	schwankende IS-Spiegel, teils unterimmunsupprimiert und Reduktion IS bei CMV
+A6	Temporal_Element T9 past_present
+T10	Temporal 78 90	Krea-Anstieg
+A7	Temporal_Element T10 present

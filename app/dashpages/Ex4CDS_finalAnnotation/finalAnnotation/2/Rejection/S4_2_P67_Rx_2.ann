@@ -1,0 +1,22 @@
+T1	TimeInfo 3 16	vor 6 Monaten
+T4	LabValues 39 50	Proteinurie
+T5	LabValues 52 56	Krea
+T6	Measure 61 64	1,7
+T7	HealthState 65 71	stabil
+R2	has_Measure arg1:T5 arg2:T6
+T8	Tx_low 0 16	Tx vor 6 Monaten
+R1	has_State arg1:T5 arg2:T7	
+A1	Risk T8 increase_risk_factor
+T2	Condition 19 21	MM
+T3	Measure 18 19	3
+R3	has_Measure arg1:T2 arg2:T3	
+A2	Risk T2 risk_factor
+A3	Factuality T4 minor
+A4	Risk T4 decrease_symptom
+A5	Risk T5 decrease_symptom
+T9	Temporal 0 17	Tx vor 6 Monaten,
+A6	Temporal_Element T9 past
+T10	Temporal 18 22	3MM,
+A7	Temporal_Element T10 past_present
+T11	Temporal 23 71	keine relevante Proteinurie, Krea bei 1,7 stabil
+A8	Temporal_Element T11 present

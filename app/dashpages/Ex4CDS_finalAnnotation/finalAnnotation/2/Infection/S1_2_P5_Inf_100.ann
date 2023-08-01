@@ -1,0 +1,13 @@
+T1	Condition 8 14	Infekt
+T2	LabValues 32 38	E Coli
+T3	LabValues 43 54	Pseudomonas
+T4	LabValues 63 66	CRP
+T5	Measure 67 74	99mg/dl
+R1	has_Measure arg1:T4 arg2:T5
+A1	Risk T1 increase_symptom
+A2	Risk T2 increase_symptom
+A3	Risk T3 increase_symptom
+A4	Risk T4 increase_symptom
+T6	Temporal 0 74	Aktuell Infekt mit Nachweis von E Coli und Pseudomonas im TBS- CRP 99mg/dl
+A5	Temporal_Element T6 present
+T7	Other 58 61	TBS

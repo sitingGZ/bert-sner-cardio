@@ -1,0 +1,9 @@
+T1	DiagLab 0 8	klinisch
+T2	DiagLab 13 25	anamnestisch
+T3	Condition 43 51	Probleme
+T4	Medication 60 62	IS
+A1	Factuality T3 negative
+A2	Risk T4 decrease_risk_factor
+R1	has_State arg1:T4 arg2:T3	
+T5	Temporal 0 82	klinisch und anamnestisch kein Hinweis auf Probleme mit der IS oder deren Einnahme
+A3	Temporal_Element T5 past_present

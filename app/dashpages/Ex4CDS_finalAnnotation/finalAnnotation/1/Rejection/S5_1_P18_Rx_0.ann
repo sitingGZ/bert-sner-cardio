@@ -1,0 +1,33 @@
+T1	Condition 6 17	Rejektionen
+T3	LabValues 43 46	HLA
+T5	Medication 61 65	mTOR
+T7	Condition 102 105	HWI
+T10	Condition 127 138	Rejektionen
+T12	TimeInfo 163 188	innerhalb der nä 3 Monate
+A1	Factuality T1 negative
+R3	has_TimeInfo arg1:T10 arg2:T12	
+A3	Factuality T10 unlikely
+T2	Condition 19 35	Full House Niere
+A2	Risk T2 decrease_risk_factor
+A4	Factuality T3 negative
+A5	Risk T3 decrease_risk_factor
+A6	Risk T1 decrease_risk_factor
+T4	Medication 53 55	IS
+T6	Measure 47 52	duale
+R1	has_Measure arg1:T4 arg2:T6	
+T8	Medication 56 59	CNI
+T9	Other 67 76	Reduktion
+A7	Factuality T9 possible_future
+A8	Risk T9 increase_risk_factor
+A9	Risk T4 risk_factor
+A10	Risk T8 risk_factor
+T11	Temporal 0 17	keine Rejektionen
+A11	Temporal_Element T11 past
+T13	Temporal 19 46;47 65	Full House Niere, keine HLA duale IS CNI, mTOR
+A12	Temporal_Element T13 present
+T14	Temporal 67 84	Reduktion geplant
+A13	Temporal_Element T14 future
+T15	Temporal 85 105	Problem rezidiv. HWI
+A14	Temporal_Element T15 past_present
+A15	Risk T7 symptom
+T16	Conclusion 107 205	Geringes Risiko für Rejektionen zwar vorhanden, dennoch innerhalb der nä 3 Monate unwahrscheinlich

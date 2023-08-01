@@ -1,0 +1,17 @@
+T1	HealthState 0 5	guter
+T2	HealthState 27 38	gutes match
+T3	Condition 46 48	PU
+T4	Measure 56 67	schwankende
+T5	Medication 68 78	IS Spiegel
+A1	Factuality T3 negative
+R1	has_Measure arg1:T5 arg2:T4	
+T6	Process 6 13	Verlauf
+R2	has_State arg1:T6 arg2:T1	
+T7	Other 19 25	LS NTx
+A2	Risk T7 decrease_risk_factor
+A3	Risk T6 decrease_symptom
+A4	Risk T2 decrease_risk_factor
+A5	Risk T3 decrease_symptom
+A6	Risk T5 increase_risk_factor
+T8	Temporal 0 78	guter Verlauf nach LS NTx, gutes match, keine PU, etwas schwankende IS Spiegel
+A7	Temporal_Element T8 past_present

@@ -1,0 +1,8 @@
+T1	Condition 29 47	humorale Rejektion
+A1	Risk T1 increase_symptom
+T2	DiagLab 8 17	bioptisch
+R1	has_State arg1:T2 arg2:T1	
+T3	Medication 54 62	Therapie
+A2	Risk T3 decrease_risk_factor
+T4	Temporal 0 62	Bereits bioptisch gesicherte humorale Rejektion unter Therapie
+A3	Temporal_Element T4 present

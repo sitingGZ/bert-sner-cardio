@@ -1,0 +1,21 @@
+T3	Medication 37 53	Immunsuppression
+T4	Condition 89 101	Knieprobleme
+T6	Condition 151 165	Infektprobleme
+A1	Factuality T6 negative
+T7	Age_low 170 181	junger Pat.
+T1	Conclusion 0 15	erhöhtes Risiko
+T2	Measure 22 36	intensivierter
+R1	has_Measure arg1:T3 arg2:T2	
+T5	Medication 59 79	Rejektionsbehandlung
+A2	Risk T3 increase_risk_factor
+A3	Risk T5 increase_risk_factor
+T8	Conclusion 103 134	Insgesamt niedrig einzuschätzen
+A4	Risk T6 decrease_risk_factor
+A5	Risk T7 decrease_risk_factor
+T9	Temporal 0 101	erhöhtes Risiko wegen intensivierter Immunsuppression plus Rejektionsbehandlung. Unklare Knieprobleme
+A6	Temporal_Element T9 present
+T10	Temporal 139 165	sonst keine Infektprobleme
+A7	Temporal_Element T10 past
+T11	Temporal 170 181	junger Pat.
+A8	Temporal_Element T11 present
+A9	Risk T4 increase_symptom

@@ -1,0 +1,32 @@
+T2	LabValues 11 14	CRP
+T3	Measure 23 30	fallend
+T4	Measure 36 44	rez >100
+T6	LabValues 48 54	leukos
+T7	HealthState 55 59	norm
+T8	Condition 66 85	chron infektproblem
+R1	has_Measure arg1:T2 arg2:T3
+R4	has_State arg1:T6 arg2:T7	
+T1	Process 7 9	AZ
+T5	Condition 0 5	reduz
+A1	Risk T5 increase_symptom
+R3	has_State arg1:T1 arg2:T5	
+A2	Risk T2 decrease_symptom
+T9	LabValues 11 14	CRP
+A3	Risk T9 increase_risk_factor
+R2	has_Measure arg1:T9 arg2:T4	
+T10	Temporal 0 30	reduz. AZ, CRP aktuell fallend
+A4	Temporal_Element T10 present
+T11	TimeInfo 15 22	aktuell
+A5	Risk T6 decrease_symptom
+T12	Temporal 48 60	leukos norm,
+A6	Temporal_Element T12 present
+A7	Risk T8 increase_risk_factor
+T13	Condition 90 109	Fokus nicht saniert
+A8	Risk T13 increase_symptom
+T14	Temporal 61 109	aber chron infektproblem und Fokus nicht saniert
+A9	Temporal_Element T14 past_present
+T15	Temporal 110 120	(plan LTX)
+A10	Temporal_Element T15 future
+T16	Condition 116 119	LTX
+A11	Factuality T16 possible_future
+R5	has_TimeInfo arg1:T2 arg2:T11	

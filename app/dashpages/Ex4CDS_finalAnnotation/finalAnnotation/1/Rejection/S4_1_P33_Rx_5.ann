@@ -1,0 +1,18 @@
+T1	TimeInfo 3 9	vor 1J
+T2	Measure 10 11	6
+T3	LabValues 12 14	MM
+T5	TimeInfo 27 32	04/11
+R1	has_Measure arg1:T3 arg2:T2	
+T6	Tx_middle 0 9	Tx vor 1J
+A1	ref_age T6 patient
+A2	Risk T6 increase_risk_factor
+T7	Temporal 0 9	Tx vor 1J
+A3	Temporal_Element T7 past
+A4	Risk T3 increase_risk_factor
+T4	LabValues 23 26	DSA
+R2	has_TimeInfo arg1:T4 arg2:T5	
+A5	Risk T4 increase_risk_factor
+T9	Temporal 15 44	de novo DSA 04/11 nachweisbar
+A6	Temporal_Element T9 past_present
+T10	Temporal 10 14	6 MM
+A7	Temporal_Element T10 present

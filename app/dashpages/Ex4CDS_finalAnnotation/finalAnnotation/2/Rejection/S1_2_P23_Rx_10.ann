@@ -1,0 +1,14 @@
+T1	Measure 0 5	viele
+T2	Condition 6 8	MM
+T3	HealthState 15 25	sehr guter
+T4	LabValues 26 30	Krea
+R1	has_Measure arg1:T2 arg2:T1
+R2	has_State arg1:T4 arg2:T3	
+T5	Measure 31 37	Abfall
+R4	has_Measure arg1:T4 arg2:T5	
+T6	Tx_low 54 70	sehr frische NTX
+A1	Risk T2 increase_risk_factor
+A2	Risk T4 decrease_symptom
+A3	Risk T6 increase_risk_factor
+T7	Temporal 0 70	viele MM, aber sehr guter Krea Abfall nach NTX jedoch sehr frische NTX
+A4	Temporal_Element T7 present

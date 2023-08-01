@@ -1,0 +1,8 @@
+T1	TimeInfo 0 9	aktuelles
+T2	Condition 28 39	Tx Versagen
+R1	has_TimeInfo arg1:T2 arg2:T1	
+T3	Other 10 27	dialyspflichtiges
+A1	Risk T3 increase_symptom
+A2	Risk T2 increase_symptom
+T4	Temporal 0 39	aktuelles dialyspflichtiges Tx Versagen
+A3	Temporal_Element T4 present

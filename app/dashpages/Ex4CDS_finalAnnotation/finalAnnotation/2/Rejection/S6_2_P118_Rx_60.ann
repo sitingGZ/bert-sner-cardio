@@ -1,0 +1,15 @@
+T1	DiagLab 0 9	bioptisch
+T5	Condition 80 101	mangelnder compliance
+A2	Factuality T5 speculated
+T6	Condition 18 27	Rejektion
+T2	Condition 56 75	reduzierte Adhärenz
+A1	Factuality T2 speculated
+T3	Condition 119 130	TX Versagen
+A3	Risk T6 increase_symptom
+A4	Risk T2 increase_risk_factor
+A5	Risk T5 increase_risk_factor
+A6	Factuality T3 possible_future
+R1	has_State arg1:T1 arg2:T6	
+T4	Temporal 0 40	bioptisch bereits Rejektion beschrieben,
+A8	Temporal_Element T4 past
+T7	Conclusion 41 158	möglicherweise reduzierte Adhärenz bei mangelnder compliance? (Pat. kommt bei TX Versagen nicht sofort in die Klinik)

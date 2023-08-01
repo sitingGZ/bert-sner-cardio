@@ -1,0 +1,19 @@
+T1	Condition 0 13	Infektepisode
+T2	TimeInfo 14 34	in der Vorgeschichte
+T4	Condition 61 74	Infektzeichen
+T5	Measure 75 84	niedriges
+T6	DiagLab 101 106	Labor
+A1	Factuality T4 negative
+R3	has_TimeInfo arg1:T1 arg2:T2	
+T3	Condition 85 97	Infektniveau
+R1	has_Measure arg1:T3 arg2:T5	
+A2	Risk T1 increase_risk_factor
+T7	TimeInfo 36 43	aktuell
+T8	Temporal 0 34	Infektepisode in der Vorgeschichte
+A3	Temporal_Element T8 past
+T9	Temporal 36 106	aktuell keine relevanten Infektzeichen/niedriges Infektniveau im Labor
+A4	Temporal_Element T9 present
+T10	Conclusion 110 126	moderates Risiko
+A5	Risk T4 decrease_symptom
+A6	Risk T3 decrease_symptom
+R2	has_TimeInfo arg1:T4 arg2:T7	

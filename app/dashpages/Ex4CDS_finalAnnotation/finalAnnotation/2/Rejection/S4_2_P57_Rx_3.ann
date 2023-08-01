@@ -1,0 +1,15 @@
+T1	TimeInfo 3 15	vor 7 Jahren
+T2	Measure 17 18	2
+T3	Condition 19 21	MM
+T4	LabValues 23 27	Krea
+T5	HealthState 28 34	stabil
+R1	has_Measure arg1:T3 arg2:T2
+T6	Tx_high 0 15	Tx vor 7 Jahren
+R2	has_State arg1:T4 arg2:T5	
+A1	Risk T6 decrease_risk_factor
+A2	Risk T3 decrease_risk_factor
+A3	Risk T4 decrease_symptom
+T7	Temporal 0 15	Tx vor 7 Jahren
+A4	Temporal_Element T7 past
+T8	Temporal 17 34	2 MM, Krea stabil
+A5	Temporal_Element T8 past_present

@@ -1,0 +1,17 @@
+T2	Process 10 18	Funktion
+T5	Condition 50 66	Herzinsuffizient
+T6	Condition 72 84	Schlaganfall
+T7	Condition 95 105	TX Verlust
+T8	Condition 130 145	vorgeschädigtem
+T1	Condition 0 9	Schlechte
+R1	has_State arg1:T2 arg2:T1	
+A1	Factuality T7 possible_future
+T3	Other 146 158	Transplantat
+R2	has_State arg1:T3 arg2:T8	
+A2	Risk T2 increase_symptom
+A3	Risk T5 increase_risk_factor
+A4	Risk T6 increase_risk_factor
+A5	Risk T8 increase_risk_factor
+T4	Conclusion 87 159	das zum TX Verlust führen kann bei bereits vorgeschädigtem Transplantat.
+T9	Temporal 0 86	Schlechte Funktion plus schweres "medical" Event (Herzinsuffizient plus Schlaganfall),
+A6	Temporal_Element T9 present

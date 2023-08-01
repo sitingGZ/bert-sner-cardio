@@ -1,0 +1,29 @@
+T2	Condition 54 61	Infekte
+T4	LabValues 80 84	Krea
+T5	Measure 85 95	ansteigend
+T6	Measure 103 106	4,2
+T7	Measure 112 115	3,0
+T8	TimeInfo 116 126	in 1 Monat
+R2	has_Measure arg1:T4 arg2:T5
+R3	has_Measure arg1:T4 arg2:T6
+R4	has_Measure arg1:T4 arg2:T7	
+R5	has_TimeInfo arg1:T4 arg2:T8	
+T1	LabValues 66 70	Krea
+T3	Measure 71 78	Ansteig
+R1	has_Measure arg1:T1 arg2:T3	
+T9	Condition 0 6	ah 2-3
+A1	Risk T9 increase_risk_factor
+T10	Medication 8 12	Bela
+A2	Factuality T10 possible_future
+A3	Risk T10 risk_factor
+A4	Risk T2 increase_risk_factor
+A5	Risk T1 increase_risk_factor
+A6	Risk T4 increase_symptom
+T11	Temporal 0 48	ah 2-3, Bela als letzte Hoffnung wird diskutiert
+A7	Temporal_Element T11 present
+T12	Temporal 50 95	rez Infekte mit Krea-Ansteig, Krea ansteigend
+A8	Temporal_Element T12 past_present
+T13	Temporal 97 106	jetzt 4,2
+A9	Temporal_Element T13 present
+T14	Temporal 108 115	von 3,0
+A10	Temporal_Element T14 past

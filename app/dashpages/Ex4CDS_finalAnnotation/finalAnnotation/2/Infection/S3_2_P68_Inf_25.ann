@@ -1,0 +1,14 @@
+T1	LabValues 2 8	Leukos
+T2	HealthState 9 13	norm
+T3	LabValues 15 18	CRP
+T4	HealthState 19 23	norm
+T6	Condition 50 59	infektion
+A1	Factuality T6 negative
+R1	has_State arg1:T1 arg2:T2	
+R2	has_State arg1:T3 arg2:T4	
+A2	Risk T1 decrease_symptom
+A3	Risk T3 decrease_symptom
+T5	DiagLab 25 33	klinisch
+A4	Risk T6 decrease_symptom
+T7	Temporal 2 59	Leukos norm, CRP norm, klinisch kein Anhalt für infektion
+A5	Temporal_Element T7 present

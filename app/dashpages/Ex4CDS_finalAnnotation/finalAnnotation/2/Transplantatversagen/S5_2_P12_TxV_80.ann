@@ -1,0 +1,13 @@
+T3	Condition 37 46	Diarrhoen
+T4	Condition 48 75	Infektgetriggerte Rejektion
+A1	Factuality T4 possible_future
+T5	Other 0 9	stationär
+A2	Risk T5 increase_risk_factor
+T6	Condition 14 17	ANV
+A3	Risk T6 increase_symptom
+T1	Condition 22 32	CMV Infekt
+A4	Risk T1 increase_risk_factor
+A5	Risk T3 increase_risk_factor
+T2	Conclusion 48 83	Infektgetriggerte Rejektion möglich
+T7	Temporal 0 46	stationär bei ANV mit CMV Infekt und Diarrhoen
+A6	Temporal_Element T7 present

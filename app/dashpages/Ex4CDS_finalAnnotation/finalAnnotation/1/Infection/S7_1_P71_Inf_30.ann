@@ -1,0 +1,10 @@
+T1	Condition 6 19	Infektzeichen
+T2	Condition 30 52	DD rheumatologische GE
+T4	DiagLab 23 28	Labor
+R1	has_State arg1:T4 arg2:T1	
+A1	Factuality T2 speculated
+A2	Risk T2 decrease_risk_factor
+A3	Risk T1 increase_symptom
+A4	Factuality T1 minor
+T3	Temporal 0 53	etwas Infektzeichen im Labor (DD rheumatologische GE)
+A5	Temporal_Element T3 present

@@ -1,0 +1,13 @@
+T1	TimeInfo 3 15	vor 4 Wochen
+T2	LabValues 17 21	Krea
+T3	Measure 29 32	4,6
+T4	Measure 56 65	1,5 mg/dl
+R1	has_Measure arg1:T2 arg2:T3
+T5	Tx_low 0 15	Tx vor 4 Wochen
+R2	has_Measure arg1:T2 arg2:T4	
+A1	Risk T5 decrease_risk_factor
+A2	Risk T2 decrease_symptom
+T6	Temporal 0 32	Tx vor 4 Wochen, Krea prä Tx 4,6
+A3	Temporal_Element T6 past
+T7	Temporal 33 65	jetzt stabilisiert bei 1,5 mg/dl
+A4	Temporal_Element T7 present

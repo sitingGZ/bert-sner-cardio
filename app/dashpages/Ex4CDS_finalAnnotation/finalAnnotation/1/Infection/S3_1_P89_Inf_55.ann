@@ -1,0 +1,20 @@
+T1	LabValues 0 6	leukos
+T2	HealthState 7 11	norm
+T3	LabValues 13 16	crp
+T4	Measure 17 24	niedrig
+T5	Condition 33 49	Infektionsrisiko
+T6	Measure 50 56	erhöht
+T8	Medication 69 83	Immusuppresion
+T9	Medication 90 97	Endoxan
+R2	has_Measure arg1:T3 arg2:T4
+R1	has_State arg1:T1 arg2:T2	
+R3	has_Measure arg1:T5 arg2:T6	
+A1	Risk T1 decrease_symptom
+A2	Risk T3 decrease_symptom
+T7	Measure 61 68	starker
+R4	has_Measure arg1:T8 arg2:T7	
+T10	Conclusion 33 56	Infektionsrisiko erhöht
+T11	Temporal 0 97	leukos norm, crp niedrig, jedoch Infektionsrisiko erhöht bei starker Immusuppresion unter Endoxan
+A3	Temporal_Element T11 present
+A4	Risk T9 increase_risk_factor
+A5	Risk T8 increase_risk_factor

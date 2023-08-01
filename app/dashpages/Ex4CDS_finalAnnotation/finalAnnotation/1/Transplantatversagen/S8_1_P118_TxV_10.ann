@@ -1,0 +1,12 @@
+T1	HealthState 10 22	Steady state
+T2	Medication 61 69	Steroide
+T3	Medication 74 77	ATG
+T4	Condition 32 41	Rejektion
+A1	Risk T1 decrease_symptom
+A2	Risk T4 increase_risk_factor
+A3	Risk T2 decrease_risk_factor
+A4	Risk T3 decrease_risk_factor
+T5	Temporal 0 22	Insgesamt Steady state
+A5	Temporal_Element T5 present
+T6	Temporal 23 77	bei Z.n. Rejektion und Behandlung mit Steroide und ATG
+A6	Temporal_Element T6 past

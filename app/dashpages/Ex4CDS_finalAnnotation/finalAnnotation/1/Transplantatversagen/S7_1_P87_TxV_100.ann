@@ -1,0 +1,23 @@
+T2	LabValues 48 52	Krea
+T4	Condition 107 110	CSU
+T5	Condition 118 134	Volumendepletion
+T8	Tx_middle 7 22	2 Jahre nach Tx
+T1	Age_low 35 46	47j Spender
+A1	ref_age T1 donor
+T3	Other 0 5	2.NTx
+A2	Risk T3 increase_risk_factor
+A3	Risk T8 risk_factor
+A4	Risk T1 decrease_risk_factor
+T6	Other 53 79	unter intermittierender HD
+A5	Risk T6 increase_symptom
+T10	Condition 111 113	HD
+A6	Risk T4 increase_symptom
+A7	Risk T10 increase_symptom
+A8	Risk T5 increase_symptom
+T11	DiagLab 159 164	Histo
+T7	Condition 184 201	chron. Schädigung
+T13	Temporal 0 135	2.NTx (2 Jahre nach Tx) eigentlich 47j Spender, Krea unter intermittierender HD nicht verwertbar, benötigt CSU/HD zur Volumendepletion,
+A9	Temporal_Element T13 present
+T14	Temporal 136 201	in der vorangegangenen Histo starke Zeichen der chron. Schädigung
+A10	Temporal_Element T14 past_present
+A11	Risk T2 symptom

@@ -1,0 +1,11 @@
+T1	Condition 0 27	Chronisch Humorale Rejction
+T2	HealthState 32 40	stabilem
+T3	LabValues 41 50	Kreatinin
+T5	Condition 62 72	Tx verlust
+R2	has_State arg1:T3 arg2:T2	
+A1	Factuality T5 unlikely
+A2	Risk T1 increase_risk_factor
+A3	Risk T3 decrease_symptom
+T4	Conclusion 52 94	schneller Tx verlust eher unwahscheinlich.
+T6	Temporal 0 51	Chronisch Humorale Rejction bei stabilem Kreatinin,
+A4	Temporal_Element T6 present

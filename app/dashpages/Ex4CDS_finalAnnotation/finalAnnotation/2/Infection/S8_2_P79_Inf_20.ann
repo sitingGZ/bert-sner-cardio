@@ -1,0 +1,8 @@
+T1	Condition 0 15	Prostatabiopsie
+T2	TimeInfo 16 26	vor kurzem
+T3	Condition 31 42	Hyperplasie
+R1	has_TimeInfo arg1:T1 arg2:T2
+A1	Risk T1 increase_risk_factor
+A2	Risk T3 symptom
+T4	Temporal 0 42	Prostatabiopsie vor kurzem bei Hyperplasie
+A3	Temporal_Element T4 past

@@ -1,0 +1,15 @@
+T1	HealthState 0 7	stabile
+T2	Process 8 28	Transplantatfunktion
+T3	TimeInfo 33 48	letzten 7 Jahre
+T4	LabValues 53 61	Baseline
+T5	Condition 98 113	Retentionswerte
+A1	Factuality T5 negative
+R1	has_State arg1:T2 arg2:T1	
+R2	has_TimeInfo arg1:T2 arg2:T3	
+T6	Measure 65 74	1,3 mg/dl
+R3	has_Measure arg1:T4 arg2:T6	
+A2	Risk T2 decrease_symptom
+A3	Risk T4 decrease_symptom
+A4	Risk T5 decrease_symptom
+T7	Temporal 0 113	stabile Transplantatfunktion der letzten 7 Jahre mit Baseline um 1,3 mg/dl, keine Progredienz der Retentionswerte
+A5	Temporal_Element T7 past_present

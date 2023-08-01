@@ -1,0 +1,39 @@
+T2	LabValues 7 11	krea
+T3	Measure 24 27	4,2
+T4	Measure 33 36	1,7
+T5	Condition 55 66	Proteinurie
+T6	Measure 67 77	ansteigend
+T7	Measure 82 87	1,8 g
+T8	LabValues 89 92	HLA
+T10	Measure 102 105	CL1
+T11	Measure 106 113	positiv
+T12	DiagLab 114 118	sono
+T13	HealthState 124 127	opB
+T15	TimeInfo 185 198	seit 5 Jahren
+R2	has_Measure arg1:T5 arg2:T6	
+R3	has_Measure arg1:T5 arg2:T7	
+R4	has_State arg1:T12 arg2:T13	
+T1	Measure 12 19	anstieg
+R5	has_Measure arg1:T2 arg2:T1	
+R6	has_Measure arg1:T2 arg2:T3	
+R7	has_Measure arg1:T2 arg2:T4	
+T9	TimeInfo 40 49	3 Monante
+R8	has_TimeInfo arg1:T2 arg2:T9	
+T14	Condition 129 146	fralg. Compliance
+A1	Risk T2 increase_symptom
+A2	Risk T5 increase_symptom
+R1	has_Measure arg1:T8 arg2:T10	
+R9	has_Measure arg1:T8 arg2:T11	
+A3	Risk T8 increase_risk_factor
+A4	Risk T12 decrease_symptom
+A5	Risk T14 increase_risk_factor
+T16	Other 156 184	Vorstellung int NTX-Ambulanz
+A6	Factuality T16 negative
+A7	Risk T16 increase_risk_factor
+A8	Factuality T14 speculated
+T17	Temporal 0 113	akuter krea-anstieg mit 4,2 (von 1,7 in 3 Monante) und Proteinurie ansteigend mit 1,8 g, HLA: bekannt CL1 positiv
+A9	Temporal_Element T17 past_present
+T18	Temporal 114 127	sono zwar opB
+A10	Temporal_Element T18 present
+T19	Temporal 129 198	fralg. Compliance da keine Vorstellung int NTX-Ambulanz seit 5 Jahren
+A11	Temporal_Element T19 past_present

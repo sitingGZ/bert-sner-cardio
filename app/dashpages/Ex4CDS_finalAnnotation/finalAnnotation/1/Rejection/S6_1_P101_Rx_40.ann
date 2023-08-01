@@ -1,0 +1,12 @@
+T1	Condition 13 32	depressiven Episode
+T2	Condition 44 56	Incompliance
+T3	Condition 109 118	Rejektion
+A1	Factuality T3 possible_future
+A2	Risk T1 increase_risk_factor
+A3	Risk T2 increase_risk_factor
+T4	Conclusion 92 136	daher Risiko für Rejektion nicht ganz gering
+T5	Temporal 0 32	Aufgrund der depressiven Episode
+A4	Temporal_Element T5 past_present
+T6	Temporal 33 90	kann es zu Incompliance bzgl. Medikamenteneinnahme kommen
+A5	Temporal_Element T6 future
+A6	Factuality T2 speculated

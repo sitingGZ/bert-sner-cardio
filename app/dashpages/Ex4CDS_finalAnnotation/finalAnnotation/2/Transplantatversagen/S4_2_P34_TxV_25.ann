@@ -1,0 +1,28 @@
+T1	Process 0 2	RR
+T2	Measure 3 7	hoch
+T3	Condition 9 40	kontinuierliche Gewichtszunahme
+T5	Condition 52 57	Ödeme
+T6	Condition 59 71	Hypertension
+T8	Condition 92 98	Anämie
+T9	Medication 105 108	Epo
+T10	LabValues 110 114	Krea
+T11	Measure 115 123	steigend
+T12	Measure 128 131	2,4
+T13	LabValues 133 144	Proteinurie
+T14	Measure 145 152	0,4 g/g
+R1	has_Measure arg1:T1 arg2:T2
+R3	has_Measure arg1:T10 arg2:T11
+R4	has_Measure arg1:T10 arg2:T12
+R2	has_Measure arg1:T13 arg2:T14	
+A1	Risk T1 increase_symptom
+A2	Risk T3 increase_symptom
+A3	Risk T5 increase_symptom
+A4	Risk T6 increase_symptom
+T4	Condition 73 90	Volumenüberladung
+A5	Risk T4 increase_symptom
+A6	Risk T8 increase_symptom
+A7	Risk T9 increase_symptom
+A8	Risk T10 increase_symptom
+A9	Risk T13 symptom
+T7	Temporal 0 152	RR hoch, kontinuierliche Gewichtszunahme, periphere Ödeme. Hypertension, Volumenüberladung. Anämie unter Epo. Krea steigend auf 2,4; Proteinurie 0,4 g/g
+A10	Temporal_Element T7 present

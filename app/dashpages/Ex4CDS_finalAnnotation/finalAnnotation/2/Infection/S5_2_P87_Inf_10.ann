@@ -1,0 +1,13 @@
+T5	Condition 67 76	Pneumonie
+T6	Condition 78 89	Aquaphorese
+T8	Condition 103 119	Infektionsrisiko
+A1	Factuality T8 possible_future
+T1	Condition 26 46	rediziv. Infektionen
+A2	Factuality T1 minor
+A3	Risk T1 decrease_risk_factor
+A4	Risk T5 increase_risk_factor
+T2	Conclusion 90 119	mit erhöhtem Infektionsrisiko
+T3	Temporal 0 46	bisher geringe Neigung zu rediziv. Infektionen
+A5	Temporal_Element T3 past_present
+T4	Temporal 48 76	zuletzt allerdings Pneumonie
+A6	Temporal_Element T4 past_present

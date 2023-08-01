@@ -1,0 +1,25 @@
+T2	TimeInfo 14 20	vor 9J
+T3	HealthState 21 28	Stabile
+T4	Process 29 49	Transplantatfunktion
+T5	LabValues 51 55	Krea
+T6	Measure 60 67	1 mg/dl
+T7	LabValues 81 85	Krea
+T8	Measure 90 93	0,8
+R1	has_Measure arg1:T5 arg2:T6
+R2	has_Measure arg1:T7 arg2:T8
+R3	has_State arg1:T4 arg2:T3	
+T9	Age_high 0 10	76 j. Pat.
+T10	Tx_high 11 20	Tx vor 9J
+A1	Risk T9 increase_risk_factor
+A2	Risk T10 risk_factor
+A3	Risk T4 decrease_symptom
+A4	Risk T5 decrease_symptom
+A5	Risk T7 decrease_symptom
+T11	Temporal 0 10	76 j. Pat.
+A6	Temporal_Element T11 present
+T12	Temporal 11 20	Tx vor 9J
+A7	Temporal_Element T12 past
+T13	Temporal 21 67	Stabile Transplantatfunktion, Krea von 1 mg/dl
+A8	Temporal_Element T13 present
+T14	Temporal 70 93	ahe bestem Krea von 0,8
+A9	Temporal_Element T14 past

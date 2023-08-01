@@ -1,0 +1,69 @@
+T1	TimeInfo 3 11	vor 6 Wo
+T2	LabValues 25 29	Krea
+T3	Measure 38 47	3,2 mg/dl
+T4	LabValues 58 62	Krea
+T5	Measure 63 72	2,8 mg/dl
+T7	Condition 90 99	Rejektion
+T8	TimeInfo 111 119	10.06.09
+T10	Condition 127 143	Verschlechterung
+T11	Process 148 168	Transplantatfunktion
+T12	TimeInfo 187 195	15.07.09
+T13	Condition 203 212	Rejektion
+T15	Condition 264 295	medikamentös- toxischen Schaden
+T16	Medication 311 327	Immunsuppression
+T17	Medication 350 357	Urbason
+T18	Medication 358 377	Mycophenolatnatrium
+A1	Factuality T13 negative
+A3	Factuality T15 speculated
+R1	has_Measure arg1:T2 arg2:T3	
+T19	TimeInfo 30 37	aktuell
+R2	has_TimeInfo arg1:T2 arg2:T19	
+R3	has_Measure arg1:T4 arg2:T5	
+R5	has_TimeInfo arg1:T7 arg2:T8	
+T20	Measure 345 349	12mg
+R8	has_Measure arg1:T17 arg2:T20	
+T21	Measure 378 384	320 mg
+T22	Measure 385 392	2 0 2 0
+R9	has_Measure arg1:T18 arg2:T21	
+R10	has_Measure arg1:T18 arg2:T22	
+T23	Tx_low 0 11	TX vor 6 Wo
+T6	DiagLab 169 182	Nierenbiopsie
+R4	has_TimeInfo arg1:T6 arg2:T12	
+T9	Measure 297 306	Reduktion
+R6	has_Measure arg1:T16 arg2:T9	
+R7	has_State arg1:T11 arg2:T10	
+A2	Risk T23 increase_risk_factor
+T14	Condition 14 24	Mismatches
+T24	Measure 12 13	3
+R11	has_Measure arg1:T14 arg2:T24	
+A4	Risk T14 increase_risk_factor
+T25	Temporal 0 11	TX vor 6 Wo
+A5	Temporal_Element T25 past
+T26	Temporal 12 24	3-Mismatches
+A6	Temporal_Element T26 past_present
+A7	Risk T2 symptom
+T27	Temporal 25 47	Krea aktuell 3,2 mg/dl
+A8	Temporal_Element T27 present
+T28	Temporal 51 72	bestes Krea 2,8 mg/dl
+A9	Temporal_Element T28 past
+T29	Measure 100 109	Banff 2 b
+R12	has_Measure arg1:T7 arg2:T29	
+A10	Risk T7 increase_risk_factor
+T30	Temporal 74 120	Akute zelluläre Rejektion Banff 2 b (10.06.09)
+A11	Temporal_Element T30 past
+R13	has_State arg1:T6 arg2:T13	
+A12	Risk T13 decrease_symptom
+T31	Condition 214 242	Tubulusepithelvakuolisierung
+T32	Conclusion 243 295	als Hinweis für eine medikamentös- toxischen Schaden
+A13	Risk T31 decrease_symptom
+A14	Risk T15 decrease_symptom
+A15	Risk T16 increase_risk_factor
+T33	Medication 341 344	Tac
+A16	Risk T33 decrease_risk_factor
+A17	Risk T17 decrease_risk_factor
+A18	Risk T18 decrease_risk_factor
+T34	Temporal 341 344;345 357;358 392	Tac 12mg Urbason Mycophenolatnatrium 320 mg 2 0 2 0
+A19	Temporal_Element T34 present
+T35	Temporal 121 168;169 339	Akute Verschlechterung der Transplantatfunktion Nierenbiopsie vom 15.07.09: keine Rejektion, Tubulusepithelvakuolisierung als Hinweis für eine medikamentös- toxischen Schaden, Reduktion der Immunsuppression vorgenommen
+A20	Temporal_Element T35 past_present
+A21	Risk T4 symptom

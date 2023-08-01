@@ -1,0 +1,21 @@
+T4	Condition 46 63	CMV Reaktivierung
+T7	Medication 97 113	Immunsuppression
+T8	Condition 117 122	ADPKD
+T10	Condition 148 161	Zysteninfekte
+A1	Factuality T10 speculated
+T1	DiagLab 3 11	Anamnese
+T2	Condition 12 34	rezidivierende Infekte
+T3	Condition 36 44	Harnwege
+A2	Risk T3 increase_risk_factor
+A3	Risk T2 increase_risk_factor
+A4	Risk T4 increase_risk_factor
+A5	Risk T7 increase_risk_factor
+T5	Measure 87 96	zu starke
+R1	has_Measure arg1:T7 arg2:T5	
+A6	Factuality T7 speculated
+A7	Risk T8 increase_risk_factor
+T6	Conclusion 117 173	ADPKD als Grunderkrankung kann Zysteninfekte begünstigen
+T9	Conclusion 87 113	zu starke Immunsuppression
+T11	Temporal 0 84	In Anamnese rezidivierende Infekte, Harnwege, CMV Reaktivierung mit Leberbeteiligung
+A8	Temporal_Element T11 past_present
+A10	Risk T10 increase_symptom

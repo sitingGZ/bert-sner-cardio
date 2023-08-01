@@ -1,0 +1,30 @@
+T1	LabValues 9 16	DSA pos
+T2	Condition 21 53	chron.-aktive humorale Rejektion
+T4	Condition 116 131	Minderperfusion
+T5	Condition 136 143	Kinking
+T6	DiagLab 147 150	MRT
+T7	Condition 178 181	ah3
+T8	Measure 193 203	steigendes
+T9	LabValues 204 208	Krea
+R1	has_Measure arg1:T9 arg2:T8
+T10	DiagLab 155 159	NiBi
+T11	Condition 170 172	Rx
+A1	Risk T1 increase_risk_factor
+T12	Medication 58 73	Maximaltherapie
+A2	Risk T12 risk_factor
+A3	Risk T2 increase_risk_factor
+T3	Condition 84 111	Knickstenose der Tx-arterie
+A4	Risk T3 increase_risk_factor
+R2	has_State arg1:T6 arg2:T5	
+R3	has_State arg1:T6 arg2:T4	
+A5	Risk T4 increase_risk_factor
+A6	Risk T5 increase_risk_factor
+R4	has_State arg1:T10 arg2:T11	
+R5	has_State arg1:T10 arg2:T7	
+A7	Risk T11 increase_risk_factor
+A8	Risk T7 increase_risk_factor
+A9	Risk T9 increase_symptom
+T13	Temporal 0 73	bekannte DSA pos mit chron.-aktive humorale Rejektion und Maximaltherapie
+A10	Temporal_Element T13 past_present
+T14	Temporal 75 83;84 208	außerdem Knickstenose der Tx-arterie mit Minderperfusion und Kinking im MRT, in NiBi zudem zur Rx noch ah3 und weiter steigendes Krea
+A11	Temporal_Element T14 present

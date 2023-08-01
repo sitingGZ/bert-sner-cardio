@@ -1,0 +1,14 @@
+T1	LabValues 0 4	krea
+T2	Measure 16 26	1,2 -> 3,1
+T4	TimeInfo 32 42	in 6 Tagen
+R1	has_Measure arg1:T1 arg2:T2	
+R2	has_TimeInfo arg1:T1 arg2:T4	
+A1	Risk T1 increase_symptom
+T3	Other 52 55	ITS
+A2	Risk T3 increase_risk_factor
+T5	Other 56 65	intubiert
+A3	Risk T5 increase_risk_factor
+T6	Temporal 0 42	krea ansteigend 1,2 -> 3,1 akut in 6 Tagen
+A4	Temporal_Element T6 past_present
+T7	Temporal 44 65	Pat auf ITS intubiert
+A5	Temporal_Element T7 present

@@ -1,0 +1,20 @@
+T1	HealthState 16 36	stabile Verhältnisse
+T3	LabValues 54 65	Proteinurie
+T4	Measure 72 78	Abfall
+T5	Condition 87 103	infektgetriggert
+T2	LabValues 67 71	eGFR
+R1	has_Measure arg1:T2 arg2:T4	
+T6	TimeInfo 79 86	aktuell
+R2	has_TimeInfo arg1:T5 arg2:T6	
+T7	Condition 7 14	ABOi TX
+A1	Risk T7 increase_risk_factor
+A2	Risk T1 decrease_symptom
+A3	Factuality T3 minor
+A4	Risk T3 decrease_symptom
+A5	Risk T2 symptom
+A6	Risk T5 decrease_symptom
+T8	Conclusion 67 103	eGFR Abfall aktuell infektgetriggert
+T9	Temporal 0 15	Obwohl ABOi TX,
+A7	Temporal_Element T9 past_present
+T10	Temporal 16 65	stabile Verhältnisse, keine relevante Proteinurie
+A8	Temporal_Element T10 present

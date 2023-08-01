@@ -1,0 +1,13 @@
+T1	Condition 0 22	Terminales Tx-Versagen
+T2	HealthState 27 32	guter
+T3	HealthState 83 91	stabiler
+T4	Process 92 103	Tx Funktion
+R1	has_State arg1:T4 arg2:T3	
+T5	Other 33 46	Organqualität
+R2	has_State arg1:T5 arg2:T2	
+A1	Factuality T1 unlikely
+T6	Conclusion 0 125	Terminales Tx-Versagen bei guter Organqualität nach Lebendspende und eingeschränkt stabiler Tx Funktion eher unwahrscheinlich
+A2	Risk T5 decrease_risk_factor
+T7	Other 52 64	Lebendspende
+A3	Risk T7 decrease_risk_factor
+A4	Risk T4 decrease_symptom

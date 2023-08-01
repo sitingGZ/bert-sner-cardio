@@ -1,0 +1,10 @@
+T1	Condition 10 21	Beschwerden
+T3	Condition 28 39	Infektionen
+T4	LabValues 76 79	CRP
+A1	Risk T1 increase_symptom
+T2	Medication 56 64	Therapie
+A2	Risk T2 increase_risk_factor
+A3	Risk T3 increase_risk_factor
+A4	Risk T4 increase_symptom
+T5	Temporal 0 79	weiterhin Beschwerden, rez. Infektionen, keine adäquate Therapie, weiterhin CRP
+A5	Temporal_Element T5 past_present

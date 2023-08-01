@@ -1,0 +1,13 @@
+T1	LabValues 0 16	Kreatininverlauf
+T3	Condition 33 51	Verschlechterungen
+T4	LabValues 52 68	Immunsup-Spiegel
+T5	Measure 74 81	zu hoch
+A1	Factuality T3 negative
+R1	has_Measure arg1:T4 arg2:T5	
+R2	has_State arg1:T1 arg2:T3	
+A2	Risk T3 decrease_symptom
+A3	Risk T4 decrease_risk_factor
+T2	Temporal 0 51	Kreatininverlauf ohne plötzliche Verschlechterungen
+A4	Temporal_Element T2 past_present
+T6	Temporal 52 81	Immunsup-Spiegel eher zu hoch
+A5	Temporal_Element T6 present

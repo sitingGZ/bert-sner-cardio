@@ -1,0 +1,15 @@
+T1	LabValues 0 4	Krea
+T2	Condition 5 20	stabil schlecht
+T3	TimeInfo 21 32	seit 1 Jahr
+T5	Condition 42 50	Infekten
+T6	Condition 69 75	zuviel
+T7	Medication 76 84	Immunsup
+R1	has_State arg1:T1 arg2:T2
+R2	has_State arg1:T7 arg2:T6
+R3	has_TimeInfo arg1:T1 arg2:T3	
+A1	Risk T1 symptom
+A2	Risk T5 risk_factor
+A3	Risk T7 decrease_risk_factor
+T4	Temporal 0 50	Krea stabil schlecht seit 1 Jahr bei rez. Infekten
+A4	Temporal_Element T4 past_present
+T8	Conclusion 52 84	eher Zeichen für zuviel Immunsup

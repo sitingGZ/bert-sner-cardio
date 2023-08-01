@@ -1,0 +1,16 @@
+T2	Process 10 21	Tx Funktion
+T3	LabValues 23 25	PU
+T4	Condition 27 48	kardiorenales Syndrom
+T5	Condition 50 61	Pendelfluss
+T8	DiagLab 94 98	Sono
+T1	Condition 0 9	schlechte
+R2	has_State arg1:T2 arg2:T1	
+A1	Risk T2 increase_symptom
+A2	Risk T3 increase_symptom
+A3	Risk T4 increase_risk_factor
+A4	Risk T5 increase_risk_factor
+T6	Condition 64 90	chron. Parenchymschädigung
+R1	has_State arg1:T8 arg2:T6	
+A5	Risk T6 increase_symptom
+T7	Temporal 0 98	schlechte Tx Funktion, PU, kardiorenales Syndrom (Pendelfluss), chron. Parenchymschädigung Im Sono
+A6	Temporal_Element T7 present

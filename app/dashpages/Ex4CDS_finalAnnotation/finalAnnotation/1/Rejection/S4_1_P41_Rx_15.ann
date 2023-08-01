@@ -1,0 +1,50 @@
+T1	TimeInfo 3 9	vor 5J
+T2	Medication 25 27	IS
+T3	TimeInfo 28 40	vor 4 Wochen
+T4	Medication 45 53	Advagraf
+T5	Medication 58 66	Certican
+T6	Medication 74 82	CellCept
+T7	Medication 87 93	Predni
+T8	LabValues 95 112	Tacrolimusspiegel
+T9	HealthState 121 135	im Zielbereich
+T10	TimeInfo 137 142	zuvor
+T11	Condition 143 153	zu niedrig
+T12	TimeInfo 164 172	25.01.13
+T13	Medication 175 178	MPA
+T14	TimeInfo 189 197	01.02.13
+T15	Medication 200 203	MPA
+R2	has_TimeInfo arg1:T2 arg2:T3	
+R3	has_State arg1:T8 arg2:T9	
+R4	has_TimeInfo arg1:T13 arg2:T12	
+R5	has_TimeInfo arg1:T15 arg2:T14	
+T16	Tx_middle 0 9	Tx vor 5J
+A1	ref_age T16 patient
+R6	has_TimeInfo arg1:T4 arg2:T3	
+R7	has_TimeInfo arg1:T5 arg2:T3	
+R8	has_TimeInfo arg1:T6 arg2:T3	
+R9	has_TimeInfo arg1:T7 arg2:T3	
+R1	has_Measure arg1:T8 arg2:T11	
+R10	has_TimeInfo arg1:T8 arg2:T10	
+A2	Risk T16 risk_factor
+T17	Temporal 0 9	Tx vor 5J
+A3	Temporal_Element T17 past
+A4	Risk T11 increase_risk_factor
+A5	Risk T8 decrease_risk_factor
+T18	Temporal 95 135	Tacrolimusspiegel aktuell im Zielbereich
+A6	Temporal_Element T18 present
+T19	Temporal 137 153	zuvor zu niedrig
+A7	Temporal_Element T19 past
+T20	Temporal 45 66	Advagraf und Certican
+A8	Temporal_Element T20 present
+T21	Temporal 68 93	zuvor CellCept und Predni
+A9	Temporal_Element T21 past
+T22	Temporal 10 40	Umstellung der IS vor 4 Wochen
+A10	Temporal_Element T22 past
+T23	Condition 155 163	Banff IA
+A11	Risk T23 increase_risk_factor
+T24	Condition 179 188	Banff IIA
+A12	Risk T24 increase_risk_factor
+T25	Temporal 155 178	Banff IA 25.01.13 - MPA
+A13	Temporal_Element T25 past
+T26	Temporal 179 203	Banff IIA 01.02.13 - MPA
+A14	Temporal_Element T26 past

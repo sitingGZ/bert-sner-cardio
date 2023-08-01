@@ -1,0 +1,28 @@
+T4	Medication 21 23	IS
+T6	Condition 60 71	Prostata Ca
+T7	Process 76 83	Miktion
+T8	TimeInfo 84 91	alle 2h
+T9	DiagLab 92 99	Urikult
+T11	Condition 128 137	Infektion
+T12	DiagLab 140 144	Stix
+T13	Condition 150 162	Leukozyturie
+A1	Factuality T11 negative
+A2	Factuality T13 negative
+R5	has_TimeInfo arg1:T7 arg2:T8	
+T1	Tx_low 0 13	Frühphase NTX
+A3	Risk T1 increase_risk_factor
+T2	Measure 25 31	triple
+R1	has_Measure arg1:T4 arg2:T2	
+A4	Risk T4 increase_risk_factor
+T3	Age_high 33 45	älterer Pat.
+A5	Risk T3 increase_risk_factor
+A6	Risk T6 increase_risk_factor
+A7	Risk T7 increase_symptom
+T5	Temporal 46 91	Vorgeschichte Prostata Ca mit Miktion alle 2h
+A8	Temporal_Element T5 past_present
+A9	Risk T13 decrease_symptom
+A10	Risk T11 decrease_symptom
+T14	Temporal 0 32;33 44	Frühphase NTX, volle IS (triple) älterer Pat
+A12	Temporal_Element T14 present
+T10	Temporal 92 137;138 162	Urikult stationär ohne Hinweise für Infektion U Stix ohne Leukozyturie
+A11	Temporal_Element T10 present

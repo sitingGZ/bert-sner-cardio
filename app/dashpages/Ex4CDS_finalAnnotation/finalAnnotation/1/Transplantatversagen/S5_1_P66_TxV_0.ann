@@ -1,0 +1,38 @@
+T1	HealthState 0 7	stabile
+T2	Process 8 11	NTX
+T6	Measure 48 50	1x
+T7	Condition 51 54	ANV
+T8	Condition 60 63	HWI
+T9	LabValues 64 67	DSA
+T10	Measure 78 81	pos
+T11	Medication 83 96	Steroidentzug
+T13	LabValues 110 112	PU
+T15	HealthState 113 137	Compliance erscheint gut
+R2	has_Measure arg1:T7 arg2:T6
+T16	Age_low 29 42	Donoralter 47
+T17	Tx_middle 12 27	3 Jahre nach TX
+R3	has_State arg1:T2 arg2:T1	
+A2	ref_age T16 donor
+R4	has_Measure arg1:T9 arg2:T10	
+A1	Risk T2 decrease_symptom
+A3	Risk T17 decrease_risk_factor
+A4	Risk T16 decrease_risk_factor
+T3	Condition 44 47	MM1
+A5	Risk T3 decrease_risk_factor
+A6	Risk T7 increase_risk_factor
+R5	has_State arg1:T8 arg2:T7	
+A7	Risk T8 increase_risk_factor
+A9	Risk T9 increase_risk_factor
+A10	Risk T11 increase_risk_factor
+A11	Factuality T13 minor
+A12	Risk T13 decrease_symptom
+A13	Factuality T15 speculated
+A14	Risk T15 decrease_risk_factor
+T5	Temporal 0 47	stabile NTX 3 Jahre nach TX, Donoralter 47, MM1
+A15	Temporal_Element T5 past_present
+T12	Temporal 48 63	1x ANV i.R: HWI
+A16	Temporal_Element T12 past
+T14	Temporal 64 82;83 96;97 112;113 137	DSA Kl I ggf. pos. Steroidentzug keine relev. PU Compliance erscheint gut
+A17	Temporal_Element T14 present
+T18	Measure 68 72	Kl I
+R6	has_Measure arg1:T9 arg2:T18	

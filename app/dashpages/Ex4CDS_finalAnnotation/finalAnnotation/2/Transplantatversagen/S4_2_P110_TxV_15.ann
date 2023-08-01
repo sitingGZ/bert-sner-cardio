@@ -1,0 +1,25 @@
+T1	TimeInfo 3 15	vor 3 Wochen
+T3	TimeInfo 25 32	77 Jahr
+T4	LabValues 34 38	Krea
+T5	Measure 46 53	fallend
+T6	Measure 67 69	10
+T7	Measure 82 85	4,7
+T8	LabValues 87 90	HST
+T9	Measure 91 94	140
+T10	Measure 103 110	fallend
+R1	has_Measure arg1:T4 arg2:T5
+T11	Tx_low 0 15	Tx vor 3 Wochen
+T2	Age_high 17 32	Spender 77 Jahr
+A1	ref_age T2 donor
+R2	has_Measure arg1:T4 arg2:T6	
+R3	has_Measure arg1:T4 arg2:T7	
+R4	has_Measure arg1:T8 arg2:T9	
+R5	has_Measure arg1:T8 arg2:T10	
+A2	Risk T11 decrease_risk_factor
+A3	Risk T2 increase_risk_factor
+A4	Risk T4 decrease_symptom
+A5	Risk T8 decrease_symptom
+T12	Temporal 0 16	Tx vor 3 Wochen,
+A6	Temporal_Element T12 past
+T13	Temporal 17 110	Spender 77 Jahr, Krea leicht fallend seit Tx, von 10 auf aktuell 4,7; HST 140, leicht fallend
+A7	Temporal_Element T13 past_present

@@ -1,0 +1,14 @@
+T4	Condition 76 93	Asthma bronchiale
+T5	Age_low 24 35	Junger Pat.
+T2	Other 0 22	Liegende Ureterschiene
+A1	Risk T2 increase_risk_factor
+T6	Temporal 0 22	Liegende Ureterschiene
+A2	Temporal_Element T6 present
+T1	Condition 40 66	hypertensive Herzkrankheit
+A3	Risk T1 increase_risk_factor
+T3	Condition 67 75	D. m. II
+A4	Risk T3 increase_risk_factor
+A5	Risk T4 increase_risk_factor
+A6	Risk T5 decrease_risk_factor
+T7	Temporal 40 66;67 75;76 93	hypertensive Herzkrankheit D. m. II Asthma bronchiale
+A7	Temporal_Element T7 past_present

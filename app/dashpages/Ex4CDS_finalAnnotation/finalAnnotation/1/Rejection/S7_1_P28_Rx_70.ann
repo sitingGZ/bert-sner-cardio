@@ -1,0 +1,13 @@
+T1	Condition 0 3	ESP
+T5	Measure 39 50	schwankende
+T6	LabValues 51 66	Retentionswerte
+R2	has_Measure arg1:T6 arg2:T5
+T4	Condition 29 38	schlechte
+R3	has_State arg1:T6 arg2:T4	
+T2	Condition 11 27	schlechtes Match
+A1	Risk T2 increase_risk_factor
+A2	Risk T6 increase_symptom
+T3	Temporal 0 27	ESP Niere, schlechtes Match
+A3	Temporal_Element T3 past
+T7	Temporal 29 66	schlechte/schwankende Retentionswerte
+A4	Temporal_Element T7 past_present

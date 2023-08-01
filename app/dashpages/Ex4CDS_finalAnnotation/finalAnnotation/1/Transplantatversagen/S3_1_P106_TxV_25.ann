@@ -1,0 +1,28 @@
+T1	Process 23 31	Funktion
+T2	HealthState 32 38	stabil
+T3	LabValues 40 44	Krea
+T4	Measure 45 55	rückläufig
+T5	Condition 99 113	non-compliance
+T7	Condition 119 130	Infektionen
+T9	TimeInfo 157 161	1997
+R2	has_Measure arg1:T3 arg2:T4
+R1	has_State arg1:T1 arg2:T2	
+A1	Factuality T5 speculated
+T6	LabValues 135 139	Krea
+T8	Measure 140 149	Anstiegen
+R3	has_Measure arg1:T6 arg2:T8	
+T10	Tx_else 154 161	Tx 1997
+T11	Conclusion 0 21	eher unwahrscheinlich
+A2	Risk T1 decrease_symptom
+A3	Risk T3 decrease_symptom
+A4	Risk T5 increase_risk_factor
+A5	Risk T7 increase_risk_factor
+A6	Risk T6 increase_symptom
+A7	Risk T10 increase_risk_factor
+T13	Temporal 23 73	Funktion stabil, Krea rückläufig Richtung baseline
+A8	Temporal_Element T13 present
+T12	Conclusion 162 169	möglich
+T14	Temporal 75 149	Jedoch bei Hinweise auf non-compliance, rez Infektionen mit Krea-Anstiegen
+A9	Temporal_Element T14 past_present
+T15	Temporal 150 161	und Tx 1997
+A10	Temporal_Element T15 past

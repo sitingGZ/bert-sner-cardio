@@ -1,0 +1,33 @@
+T1	LabValues 0 4	krea
+T2	Measure 5 8	3,2
+T3	Measure 10 21	stagnierend
+T4	Measure 26 33	fallend
+T6	DiagLab 62 66	NiBi
+T7	Condition 73 75	Rx
+T8	Condition 82 89	Hypoxie
+T9	LabValues 91 93	RI
+T10	Measure 94 110	grenzwertig hoch
+T12	Condition 118 120	Rx
+T13	Condition 150 163	sampling bias
+T14	DiagLab 168 175	Biopsie
+R1	has_Measure arg1:T1 arg2:T2
+R2	has_Measure arg1:T9 arg2:T10
+A1	Factuality T7 negative
+R4	has_Measure arg1:T1 arg2:T3	
+R5	has_Measure arg1:T1 arg2:T4	
+A2	Factuality T12 possible_future
+A3	Risk T1 symptom
+R3	has_State arg1:T6 arg2:T7	
+A4	Risk T7 decrease_symptom
+A5	Risk T8 decrease_symptom
+A6	Risk T9 increase_symptom
+T5	Conclusion 112 148	akute Rx nach kürzlicher NTX möglich
+T11	Tx_low 126 140	kürzlicher NTX
+A7	Risk T11 increase_risk_factor
+T15	Conclusion 150 175	sampling bias bei Biopsie
+R6	has_State arg1:T14 arg2:T13	
+A8	Factuality T13 speculated
+T16	Temporal 0 60	krea 3,2, stagnierend bzw fallend aber sehr langsam nach NTX
+A9	Temporal_Element T16 past_present
+T17	Temporal 62 110	NiBi keine Rx, aber Hypoxie, RI grenzwertig hoch
+A10	Temporal_Element T17 present

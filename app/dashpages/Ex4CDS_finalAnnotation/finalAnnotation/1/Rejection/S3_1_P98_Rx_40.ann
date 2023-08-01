@@ -1,0 +1,7 @@
+T2	Condition 4 15	Infektionen
+T3	Condition 28 48	Überimmunsuppression
+A1	Risk T2 decrease_symptom
+T1	Conclusion 16 48	als Zeichen Überimmunsuppression
+A2	Risk T3 decrease_risk_factor
+T4	Temporal 0 48	rez Infektionen als Zeichen Überimmunsuppression
+A3	Temporal_Element T4 past_present

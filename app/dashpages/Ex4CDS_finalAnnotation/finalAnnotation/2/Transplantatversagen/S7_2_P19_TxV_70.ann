@@ -1,0 +1,16 @@
+T3	Measure 42 50	erhöhtes
+T4	LabValues 51 66	Retentionswerte
+T6	Condition 101 117	chron Schädigung
+R1	has_Measure arg1:T4 arg2:T3
+T1	DiagLab 83 88	Histo
+T2	Condition 23 40	chron. Schädigung
+T5	DiagLab 3 10	Doppler
+R2	has_State arg1:T5 arg2:T2	
+A1	Risk T2 increase_symptom
+A2	Risk T4 increase_symptom
+R3	has_State arg1:T1 arg2:T6	
+A3	Risk T6 increase_symptom
+T7	Temporal 0 66	Im Doppler Zeichen der chron. Schädigung, erhöhtes Retentionswerte
+A4	Temporal_Element T7 present
+T8	Temporal 68 117	in der letzten Histo Zeichen der chron Schädigung
+A5	Temporal_Element T8 past_present

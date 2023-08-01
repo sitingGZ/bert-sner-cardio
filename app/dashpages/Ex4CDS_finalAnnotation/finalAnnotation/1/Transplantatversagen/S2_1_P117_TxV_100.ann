@@ -1,0 +1,25 @@
+T2	Condition 26 45	Tx Verschlechterung
+T3	TimeInfo 46 57	seit Jahren
+T4	Measure 66 79	grenzwertiger
+T7	Condition 105 121	Dekompensationen
+T8	TimeInfo 122 141	bereits vor Monaten
+R2	has_TimeInfo arg1:T2 arg2:T3	
+T1	Process 80 91	Tx Funktion
+R1	has_Measure arg1:T1 arg2:T4	
+T5	Condition 158 175	term. Tx Versagen
+T6	Other 142 153	Shuntanlage
+R3	has_TimeInfo arg1:T6 arg2:T8	
+R4	has_TimeInfo arg1:T5 arg2:T8	
+A1	Risk T2 increase_symptom
+A2	Risk T1 increase_symptom
+T9	Temporal 0 91	progrediente schleichende Tx Verschlechterung seit Jahren mit bei grenzwertiger Tx Funktion
+A3	Temporal_Element T9 past_present
+A4	Risk T7 increase_risk_factor
+T10	Temporal 92 121	rez. hydrop. Dekompensationen
+A5	Temporal_Element T10 past
+A6	Factuality T5 possible_future
+A7	Risk T5 increase_symptom
+A8	Factuality T6 possible_future
+A9	Risk T6 increase_symptom
+T11	Temporal 122 186	bereits vor Monaten Shuntanlage und term. Tx Versagen besprochen
+A10	Temporal_Element T11 past

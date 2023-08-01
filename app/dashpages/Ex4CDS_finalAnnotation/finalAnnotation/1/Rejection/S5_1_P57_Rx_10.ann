@@ -1,0 +1,31 @@
+T1	Measure 0 8	niedrige
+T2	Medication 9 11	IS
+T4	Condition 25 33	Infekten
+T5	Condition 38 57	Unverträglichkeiten
+T6	TimeInfo 58 65	zuletzt
+T7	Medication 81 84	MMF
+T8	Medication 89 92	Aza
+T9	LabValues 120 123	HLA
+T11	LabValues 138 140	PU
+R1	has_Measure arg1:T2 arg2:T1
+R2	has_TimeInfo arg1:T7 arg2:T6	
+R3	has_TimeInfo arg1:T8 arg2:T6	
+A1	Risk T2 increase_risk_factor
+A2	Risk T4 symptom
+A3	Risk T5 symptom
+T3	Medication 109 113	Pred
+T10	Temporal 0 11	niedrige IS
+A4	Temporal_Element T10 present
+T12	Temporal 12 57	bei rezidiv. Infekten und Unverträglichkeiten
+A5	Temporal_Element T12 past_present
+T13	Temporal 58 113	zuletzt Umstellung von MMF auf Aza, ansonsten noch Pred
+A6	Temporal_Element T13 past_present
+A7	Risk T7 risk_factor
+A8	Risk T8 risk_factor
+A9	Risk T3 risk_factor
+A10	Risk T9 decrease_risk_factor
+A11	Factuality T11 minor
+A12	Factuality T9 negative
+A13	Risk T11 decrease_symptom
+T14	Temporal 114 140	keine HLA, keine relev. PU
+A14	Temporal_Element T14 present

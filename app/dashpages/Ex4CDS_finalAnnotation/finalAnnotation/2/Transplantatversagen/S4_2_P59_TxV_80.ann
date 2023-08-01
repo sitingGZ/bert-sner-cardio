@@ -1,0 +1,14 @@
+T1	Measure 17 27	steigendes
+T2	LabValues 28 32	Krea
+T3	Measure 37 48	> 5,5 mg/dl
+T4	LabValues 50 53	HST
+T5	Measure 54 57	172
+T6	Measure 59 67	steigend
+R1	has_Measure arg1:T2 arg2:T1
+R2	has_Measure arg1:T2 arg2:T3
+R3	has_Measure arg1:T4 arg2:T5
+R4	has_Measure arg1:T4 arg2:T6	
+A1	Risk T2 increase_symptom
+A2	Risk T4 increase_symptom
+T7	Temporal 0 67	Konstant langsam steigendes Krea auf > 5,5 mg/dl. HST 172, steigend
+A3	Temporal_Element T7 past_present

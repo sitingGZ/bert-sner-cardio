@@ -1,0 +1,14 @@
+T2	Condition 13 44	Nierenfunktionsverschlechterung
+T5	Condition 99 106	Infekte
+T6	Condition 108 119	Harnstauung
+A1	Risk T2 increase_symptom
+T1	Condition 56 73	kardiales Problem
+A2	Risk T1 increase_risk_factor
+T3	Other 75 88	intermitt. HD
+A3	Risk T3 increase_symptom
+A4	Risk T5 increase_risk_factor
+A5	Risk T6 increase_risk_factor
+T4	Temporal 0 106	progrediente Nierenfunktionsverschlechterung, vorrangig kardiales Problem, intermitt. HD, rezidiv. Infekte
+A6	Temporal_Element T4 past_present
+T7	Temporal 108 147	Harnstauung der TX Niere vorbeschrieben
+A7	Temporal_Element T7 past

@@ -1,0 +1,16 @@
+T1	Condition 0 3	CMV
+T5	Condition 46 55	Infektion
+T6	LabValues 93 99	leukos
+T7	HealthState 100 104	norm
+R1	has_Measure arg1:T6 arg2:T7
+T2	LabValues 70 73	crp
+T3	Conclusion 17 55	somit mögl. Risiko für syst. Infektion
+A1	Risk T1 increase_symptom
+T4	Temporal 0 104	CMV nachweisbar, somit mögl. Risiko für syst. Infektion, aber aktuell crp nicht nachweisbar, leukos norm
+A2	Temporal_Element T4 present
+T8	HealthState 74 91	nicht nachweisbar
+R2	has_State arg1:T2 arg2:T8	
+T9	TimeInfo 62 69	aktuell
+A3	Risk T2 decrease_symptom
+A4	Risk T6 decrease_symptom
+R3	has_TimeInfo arg1:T2 arg2:T9	

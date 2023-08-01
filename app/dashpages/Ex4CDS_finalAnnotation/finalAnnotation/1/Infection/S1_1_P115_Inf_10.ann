@@ -1,0 +1,15 @@
+T1	Measure 0 6	wenige
+T2	Condition 7 14	Infekte
+T4	Condition 53 64	Symptomatik
+T5	Condition 69 75	Infekt
+R1	has_Measure arg1:T2 arg2:T1
+A1	Factuality T4 negative
+A2	Factuality T5 negative
+T3	TimeInfo 15 35	in der Vergangenkeit
+R2	has_TimeInfo arg1:T2 arg2:T3	
+T6	Temporal 0 36	wenige Infekte in der Vergangenkeit.
+A3	Temporal_Element T6 past
+T7	Temporal 37 75	Keine klinische Symptomatik für Infekt
+A4	Temporal_Element T7 present
+A5	Risk T2 decrease_risk_factor
+A6	Risk T4 decrease_symptom

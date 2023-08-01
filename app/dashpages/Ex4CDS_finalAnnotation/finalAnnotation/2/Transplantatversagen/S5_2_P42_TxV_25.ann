@@ -1,0 +1,26 @@
+T3	TimeInfo 49 62	Vorgeschichte
+T4	Condition 63 72	BANFF IIb
+T5	Condition 77 89	Glomerulitis
+T6	Condition 94 97	pTc
+T7	Measure 98 107	steigende
+T8	LabValues 108 110	PU
+R2	has_Measure arg1:T8 arg2:T7
+R1	has_TimeInfo arg1:T4 arg2:T3	
+T1	Condition 17 47	zelluläre Rejektionskomponente
+A1	Risk T1 increase_risk_factor
+A2	Risk T4 increase_risk_factor
+R3	has_TimeInfo arg1:T5 arg2:T3	
+R4	has_TimeInfo arg1:T6 arg2:T3	
+A3	Risk T5 increase_risk_factor
+A4	Risk T6 increase_risk_factor
+A5	Risk T8 increase_symptom
+T2	Condition 115 126	de novo IgA
+A6	Risk T2 symptom
+T9	Temporal 0 47	fortlaufend V.a. zelluläre Rejektionskomponente
+A7	Temporal_Element T9 past_present
+T10	Temporal 49 97	Vorgeschichte BANFF IIb mit Glomerulitis und pTc
+A8	Temporal_Element T10 past
+T11	Temporal 98 111	steigende PU.
+A9	Temporal_Element T11 past_present
+A10	Factuality T2 speculated
+A11	Factuality T1 speculated

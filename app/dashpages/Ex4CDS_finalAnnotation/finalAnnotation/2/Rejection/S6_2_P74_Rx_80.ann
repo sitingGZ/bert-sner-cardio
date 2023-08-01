@@ -1,0 +1,14 @@
+T1	Condition 5 25	zellulärer Rejektion
+T2	Condition 37 46	schlechte
+T4	Condition 63 88	Rezdiv. zell. Abstoßungen
+T5	Condition 105 109	AMBR
+T6	Process 47 61	Nierenfunktion
+R1	has_State arg1:T6 arg2:T2	
+A1	Risk T1 increase_risk_factor
+A2	Risk T6 increase_symptom
+T3	Conclusion 63 128	Rezdiv. zell. Abstoßungen können zu einer AMBR führen langfristig
+T7	Temporal 0 26	Z.n. zellulärer Rejektion,
+A5	Temporal_Element T7 past
+T8	Temporal 27 62	anhaltend schlechte Nierenfunktion.
+A6	Temporal_Element T8 past_present
+A7	Factuality T5 possible_future

@@ -1,0 +1,13 @@
+T1	HealthState 0 4	gute
+T2	Process 5 13	Funktion
+T3	LabValues 21 32	Proteinurie
+T4	Medication 34 49	Immunsupression
+T5	HealthState 50 64	im Zielbereich
+R1	has_State arg1:T2 arg2:T1	
+R2	has_State arg1:T4 arg2:T5	
+A1	Risk T2 decrease_symptom
+A2	Factuality T3 negative
+A3	Risk T3 decrease_symptom
+A4	Risk T4 decrease_risk_factor
+T6	Temporal 0 64	gute Funktion, keine Proteinurie, Immunsupression im Zielbereich
+A5	Temporal_Element T6 present

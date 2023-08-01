@@ -1,0 +1,15 @@
+T1	DiagLab 0 13	Sonographisch
+T2	Condition 48 67	Abstoßungsgeschehen
+T3	LabValues 69 71	RI
+T4	Measure 81 89	0,7-0,8.
+T7	Condition 147 152	krank
+R3	has_Measure arg1:T3 arg2:T4
+A1	Factuality T2 negative
+A2	Factuality T7 negative
+A3	Risk T2 decrease_symptom
+A4	Risk T3 decrease_symptom
+T5	HealthState 103 129	klinisch unbeeeinträchtigt
+A5	Risk T5 decrease_symptom
+A6	Risk T7 decrease_symptom
+T6	Temporal 0 152	Sonographisch finden sich keine Anhalte für ein Abstoßungsgeschehen, RI Idem bei 0,7-0,8. Pat. scheint klinisch unbeeeinträchtigt, bzw. nicht akut krank
+A7	Temporal_Element T6 present

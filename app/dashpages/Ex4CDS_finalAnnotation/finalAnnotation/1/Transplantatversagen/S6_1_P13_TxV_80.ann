@@ -1,0 +1,26 @@
+T1	LabValues 4 16	Krea-Verlauf
+T2	TimeInfo 21 32	seit langem
+T3	Measure 33 52	sukzessive steigend
+T4	Measure 57 67	deutlicher
+T5	LabValues 68 79	Proteinurie
+T6	Condition 112 116	MGUS
+T7	TimeInfo 133 141	20 Jahre
+T8	Medication 188 191	Cya
+T10	Condition 219 232	CNI Toxizität
+R1	has_Measure arg1:T1 arg2:T3
+R2	has_Measure arg1:T5 arg2:T4
+T11	Tx_high 122 156	TX ist ca. 20 Jahre transplantiert
+R3	has_TimeInfo arg1:T1 arg2:T2	
+T12	Medication 167 183	Immunsuppression
+A1	Risk T1 increase_symptom
+A2	Risk T5 increase_symptom
+A3	Risk T6 increase_risk_factor
+A4	Risk T11 increase_risk_factor
+A5	Factuality T10 speculated
+A6	Risk T10 increase_risk_factor
+A7	Risk T8 increase_risk_factor
+T9	Temporal 0 117	Der Krea-Verlauf ist seit langem sukzessive steigend mit deutlicher Proteinurie und gleichzeitig einhergehendem MGUS.
+A8	Temporal_Element T9 past_present
+T13	Temporal 118 192	Das TX ist ca. 20 Jahre transplantiert und unter Immunsuppression mit Cya,
+A9	Temporal_Element T13 present
+T14	Conclusion 193 243	es könnte eine chronische CNI Toxizität vorliegen.

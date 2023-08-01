@@ -1,0 +1,13 @@
+T1	Condition 13 27	non-compliance
+T2	LabValues 34 38	Krea
+T3	Measure 46 53	fallend
+T4	LabValues 55 59	Krea
+R1	has_Measure arg1:T2 arg2:T3
+T5	Measure 67 77	2 Baseline
+R2	has_Measure arg1:T4 arg2:T5	
+A1	Factuality T1 speculated
+A2	Risk T1 increase_risk_factor
+A3	Risk T2 decrease_symptom
+A4	Risk T4 symptom
+T6	Temporal 0 77	Hinweise auf non-compliance, aber Krea wieder fallend, Krea um die 2 Baseline
+A5	Temporal_Element T6 past_present

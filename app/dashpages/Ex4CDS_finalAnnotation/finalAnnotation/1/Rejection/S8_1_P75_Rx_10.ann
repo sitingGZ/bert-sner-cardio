@@ -1,0 +1,22 @@
+T1	Measure 0 8	stabiles
+T2	LabValues 9 13	Krea
+T3	TimeInfo 14 34	seit mehreren Jahren
+T4	LabValues 42 53	Proteinurie
+T5	TimeInfo 55 67	seit 03.2008
+T6	Medication 68 71	CNI
+T8	Medication 93 106	certican+ MMF
+R1	has_Measure arg1:T2 arg2:T1
+R2	has_TimeInfo arg1:T6 arg2:T5	
+R3	has_TimeInfo arg1:T2 arg2:T3	
+A1	Risk T2 decrease_symptom
+A2	Risk T4 decrease_symptom
+A3	Factuality T6 negative
+A4	Risk T8 increase_risk_factor
+A5	Risk T6 increase_risk_factor
+T7	Temporal 0 34	stabiles Krea seit mehreren Jahren
+A6	Temporal_Element T7 past_present
+T9	Temporal 36 53	keine Proteinurie
+A7	Temporal_Element T9 present
+T10	Temporal 55 106	seit 03.2008 CNI frei. Umstellung auf certican+ MMF
+A8	Temporal_Element T10 past_present
+A9	Factuality T4 negative

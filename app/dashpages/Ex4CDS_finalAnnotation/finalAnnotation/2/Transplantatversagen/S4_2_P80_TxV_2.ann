@@ -1,0 +1,12 @@
+T1	HealthState 15 21	stabil
+T2	Medication 23 39	Immunsuppression
+T3	HealthState 40 54	im Zielbereich
+T4	Condition 56 66	Hypertonus
+T5	Process 0 14	Nierenfunktion
+R1	has_State arg1:T5 arg2:T1	
+R2	has_State arg1:T2 arg2:T3	
+A1	Risk T5 decrease_symptom
+A2	Risk T2 decrease_risk_factor
+A3	Risk T4 increase_risk_factor
+T6	Temporal 0 66	Nierenfunktion stabil. Immunsuppression im Zielbereich. Hypertonus
+A4	Temporal_Element T6 present

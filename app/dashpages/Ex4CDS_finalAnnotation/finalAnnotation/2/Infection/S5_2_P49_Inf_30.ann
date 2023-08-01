@@ -1,0 +1,14 @@
+T2	Condition 14 17	DGF
+T3	Condition 19 35	BKV Nephropathie
+T1	Age_high 37 48	älterer Pat
+T4	Tx_low 0 12	Frühphase TX
+A1	Risk T4 increase_risk_factor
+A2	Risk T2 symptom
+A3	Risk T3 increase_symptom
+A4	Risk T1 increase_risk_factor
+T5	Condition 53 56	D.m
+A5	Risk T5 increase_risk_factor
+T6	Temporal 0 48	Frühphase TX, DGF, BKV Nephropathie, älterer Pat
+A6	Temporal_Element T6 present
+T7	Temporal 49 57	mit D.m.
+A7	Temporal_Element T7 past_present

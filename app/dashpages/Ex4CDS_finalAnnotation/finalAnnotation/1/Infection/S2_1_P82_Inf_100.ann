@@ -1,0 +1,6 @@
+T2	Condition 18 27	Infektion
+T4	TimeInfo 53 72	über mehrere Monate
+R1	has_TimeInfo arg1:T2 arg2:T4	
+T1	Temporal 0 72	nicht ausgeheilte Infektion zum Zeitpunkt der Zensur über mehrere Monate
+A1	Temporal_Element T1 past_present
+A2	Risk T2 increase_symptom

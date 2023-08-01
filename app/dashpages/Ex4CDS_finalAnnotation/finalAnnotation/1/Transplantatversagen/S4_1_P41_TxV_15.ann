@@ -1,0 +1,74 @@
+T1	TimeInfo 3 9	vor 5J
+T3	LabValues 17 21	Krea
+T4	Measure 22 25	1,8
+T5	Measure 35 44	2,6 mg/dl
+T6	Measure 62 70	steigend
+T7	LabValues 72 74	HS
+T8	Measure 75 84	144 mg/dl
+T9	LabValues 86 103	Tacrolimusspiegel
+T10	HealthState 112 126	im Zielbereich
+T11	TimeInfo 128 133	zuvor
+T12	Condition 134 144	zu niedrig
+T13	TimeInfo 146 164	Seit einigen Tagen
+T15	Condition 196 209	Kopfschmerzen
+T16	Condition 212 223	Nasenbluten
+T17	Condition 228 242	RR-Entgleisung
+T18	LabValues 253 257	Krea
+T19	Measure 274 285	angestiegen
+T20	TimeInfo 295 306	Anfang 2017
+T21	Condition 307 310	ANV
+T24	Condition 389 397	US-Ödeme
+R1	has_Measure arg1:T3 arg2:T4
+R2	has_Measure arg1:T7 arg2:T8
+R5	has_Measure arg1:T18 arg2:T19
+R7	has_Measure arg1:T3 arg2:T5	
+R8	has_Measure arg1:T3 arg2:T6	
+R9	has_State arg1:T9 arg2:T10	
+R10	has_TimeInfo arg1:T15 arg2:T13	
+R11	has_TimeInfo arg1:T16 arg2:T13	
+R12	has_TimeInfo arg1:T17 arg2:T13	
+R13	has_TimeInfo arg1:T21 arg2:T20	
+T25	Tx_middle 0 9	Tx vor 5J
+R3	has_TimeInfo arg1:T9 arg2:T11	
+R6	has_State arg1:T9 arg2:T12	
+A1	Factuality T24 minor
+A2	Risk T25 risk_factor
+A3	Risk T3 increase_symptom
+A4	Risk T7 increase_symptom
+A5	Risk T12 increase_risk_factor
+A6	Risk T9 decrease_risk_factor
+T2	Temporal 86 126	Tacrolimusspiegel aktuell im Zielbereich
+A7	Temporal_Element T2 present
+T22	Temporal 128 145	zuvor zu niedrig.
+A8	Temporal_Element T22 past
+T14	Condition 174 194	kardiale Beschwerden
+A9	Risk T14 increase_symptom
+R4	has_TimeInfo arg1:T14 arg2:T13	
+A10	Risk T15 increase_symptom
+A11	Risk T16 increase_symptom
+A12	Risk T17 increase_symptom
+A13	Risk T18 increase_symptom
+T23	Condition 325 338	kardiorenaler
+A14	Risk T23 increase_risk_factor
+A15	Risk T21 increase_risk_factor
+T26	Condition 364 379	Gewichtszunahme
+A16	Risk T26 increase_symptom
+T27	Measure 359 363	3 kg
+R14	has_Measure arg1:T26 arg2:T27	
+A17	Risk T24 increase_symptom
+T28	Temporal 0 9	Tx vor 5J
+A18	Temporal_Element T28 past
+T29	Temporal 10 26	Bestes Krea 1,8,
+A19	Temporal_Element T29 past
+T30	Temporal 27 71	aktuell 2,6 mg/dl, Tendenz langsam steigend.
+A20	Temporal_Element T30 past_present
+T31	Temporal 72 84	HS 144 mg/dl
+A21	Temporal_Element T31 present
+T32	Temporal 146 286	Seit einigen Tagen vermehrt kardiale Beschwerden, Kopfschmerzen , Nasenbluten und RR-Entgleisung. Parallel Krea ambulant erneut angestiegen,
+A22	Temporal_Element T32 past_present
+T33	Temporal 287 350	zuletzt Anfang 2017 ANV bei vor allem kardiorenaler Komponente.
+A23	Temporal_Element T33 past
+T34	Temporal 351 398	Aktuell 3 kg Gewichtszunahme, geringe US-Ödeme.
+A24	Temporal_Element T34 present
+T35	TimeInfo 27 34	aktuell
+R15	has_TimeInfo arg1:T3 arg2:T35	

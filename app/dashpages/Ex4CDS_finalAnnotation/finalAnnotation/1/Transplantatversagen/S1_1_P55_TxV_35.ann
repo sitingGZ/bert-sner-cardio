@@ -1,0 +1,17 @@
+T1	Process 0 11	Tx Funktion
+T2	HealthState 23 31	sehr gut
+T3	LabValues 36 39	Kra
+T4	Condition 52 58	Infekt
+T6	Condition 108 118	Tx Verlust
+R1	has_State arg1:T1 arg2:T2	
+T7	Measure 40 43	1.1
+R2	has_Measure arg1:T3 arg2:T7	
+A1	Risk T1 decrease_symptom
+A2	Risk T3 decrease_symptom
+A3	Risk T4 increase_risk_factor
+T8	Other 63 84	stationäre Behandlung
+A4	Risk T8 increase_risk_factor
+T9	Conclusion 45 118	Jedoch Infekt und stationäre Behandlung als Risikofaktoren für Tx Verlust
+A6	Factuality T6 possible_future
+T10	Temporal 0 84	Tx Funktion eigentlich sehr gut mit Kra 1.1. Jedoch Infekt und stationäre Behandlung
+A5	Temporal_Element T10 present

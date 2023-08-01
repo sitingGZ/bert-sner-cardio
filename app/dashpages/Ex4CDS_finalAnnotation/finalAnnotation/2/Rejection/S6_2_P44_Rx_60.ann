@@ -1,0 +1,16 @@
+T2	Medication 82 98	CNI-freie Gruppe
+T3	Condition 100 111	HWI-Neigung
+T5	Medication 144 146	IS
+T1	Condition 6 35	primäre NTX Funktionsaufnahme
+A1	Factuality T1 negative
+A2	Risk T1 increase_symptom
+A3	Factuality T2 speculated
+T4	Other 37 53	Studienteilnahme
+A5	Risk T3 risk_factor
+A6	Factuality T5 speculated
+A7	Risk T5 increase_risk_factor
+T7	Temporal 0 98	keine primäre NTX Funktionsaufnahme, Studienteilnahme und evtl. Randomisierung in CNI-freie Gruppe
+A8	Temporal_Element T7 present
+T8	Temporal 100 175	HWI-Neigung mit möglicherweise Tendenz, die IS nicht so streng einzustellen
+A9	Temporal_Element T8 past_present
+A10	Risk T4 risk_factor

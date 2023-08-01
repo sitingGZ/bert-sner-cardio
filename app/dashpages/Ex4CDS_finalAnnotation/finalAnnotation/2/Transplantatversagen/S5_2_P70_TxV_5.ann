@@ -1,0 +1,25 @@
+T1	Condition 6 26	Rejektionsereignisse
+T2	LabValues 28 31	DSA
+T3	LabValues 47 49	PU
+T4	Measure 50 57	niedrig
+T5	HealthState 59 64	gutes
+T6	LabValues 65 69	Krea
+T7	Condition 77 94	Infektproblematik
+T9	Condition 128 131	ANV
+R1	has_Measure arg1:T3 arg2:T4
+A1	Factuality T1 negative
+R2	has_State arg1:T6 arg2:T5	
+A2	Factuality T9 possible_future
+A3	Risk T1 decrease_risk_factor
+A4	Factuality T2 negative
+A5	Risk T2 decrease_risk_factor
+A6	Risk T3 decrease_symptom
+A7	Risk T6 decrease_symptom
+A8	Risk T7 increase_risk_factor
+T8	Conclusion 101 139	bei aktueller Exazerbation ANV möglich
+T10	Temporal 0 26	keine Rejektionsereignisse
+A9	Temporal_Element T10 past_present
+T11	Temporal 28 70	DSA nicht bekannt, PU niedrig, gutes Krea.
+A10	Temporal_Element T11 present
+T12	Temporal 71 95	Aber: Infektproblematik,
+A11	Temporal_Element T12 past_present

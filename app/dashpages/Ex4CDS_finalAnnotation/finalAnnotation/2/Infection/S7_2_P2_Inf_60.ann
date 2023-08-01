@@ -1,0 +1,8 @@
+T1	TimeInfo 0 7	aktuell
+T3	Condition 8 18	GG Problem
+R1	has_TimeInfo arg1:T3 arg2:T1
+T2	Medication 25 34	Antibiose
+A1	Risk T3 increase_symptom
+A2	Risk T2 risk_factor
+T4	Temporal 0 34	aktuell GG Problem unter Antibiose
+A3	Temporal_Element T4 present

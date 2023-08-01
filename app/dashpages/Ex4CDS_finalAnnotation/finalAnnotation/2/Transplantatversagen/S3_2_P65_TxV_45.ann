@@ -1,0 +1,11 @@
+T1	Measure 0 11	schwankende
+T2	LabValues 12 22	Krea-Werte
+T5	Condition 38 47	Rejektion
+R1	has_Measure arg1:T2 arg2:T1
+A1	Risk T2 increase_symptom
+T3	Condition 24 31	ABOi LS
+A3	Risk T5 increase_risk_factor
+T4	Temporal 0 32	schwankende Krea-Werte, ABOi LS,
+A4	Temporal_Element T4 past_present
+T6	Temporal 33 47	Z.n. Rejektion
+A5	Temporal_Element T6 past

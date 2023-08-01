@@ -1,0 +1,28 @@
+T1	HealthState 0 7	stabile
+T2	Process 8 16	Funktion
+T3	TimeInfo 31 38	12/2019
+T5	Condition 39 52	Borderline-Rx
+T6	TimeInfo 54 61	aktuell
+T7	LabValues 62 66	Krea
+T8	HealthState 67 73	stabil
+T9	Measure 78 81	1,5
+T10	DiagLab 83 87	sono
+R2	has_Measure arg1:T7 arg2:T9
+R1	has_State arg1:T2 arg2:T1	
+R3	has_TimeInfo arg1:T5 arg2:T3	
+R4	has_TimeInfo arg1:T7 arg2:T6	
+R5	has_State arg1:T7 arg2:T8	
+A1	Risk T2 decrease_symptom
+T4	Condition 23 26	DGF
+A2	Risk T4 increase_risk_factor
+A3	Risk T5 increase_risk_factor
+A4	Risk T7 decrease_symptom
+T11	HealthState 88 91	opB
+R6	has_State arg1:T10 arg2:T11	
+A5	Risk T10 decrease_symptom
+T12	Temporal 0 16	stabile Funktion
+A6	Temporal_Element T12 present
+T13	Temporal 18 52	aber DGF und 12/2019 Borderline-Rx
+A7	Temporal_Element T13 past
+T14	Temporal 54 91	aktuell Krea stabil bei 1,5, sono opB
+A8	Temporal_Element T14 present

@@ -1,0 +1,9 @@
+T1	TimeInfo 8 22	seit 26 Jahren
+T3	HealthState 48 53	guter
+T4	Process 54 65	Tx-Funktion
+T5	Tx_high 8 43	seit 26 Jahren nierentransplantiert
+R1	has_State arg1:T4 arg2:T3	
+A1	Risk T5 decrease_risk_factor
+A2	Risk T4 decrease_symptom
+T2	Temporal 0 66	Patient seit 26 Jahren nierentransplantiert mit guter Tx-Funktion.
+A3	Temporal_Element T2 present

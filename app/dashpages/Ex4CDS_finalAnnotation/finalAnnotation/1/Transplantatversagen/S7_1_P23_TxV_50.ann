@@ -1,0 +1,17 @@
+T1	HealthState 12 17	gutes
+T2	TimeInfo 32 39	aktuell
+T3	Condition 40 55	unbefriedigende
+T4	Process 56 67	Tx Funktion
+T5	DiagLab 69 73	Sono
+R1	has_State arg1:T4 arg2:T3
+R2	has_TimeInfo arg1:T4 arg2:T2	
+T8	Process 18 30	Spenderorgan
+R4	has_State arg1:T8 arg2:T1	
+A3	Risk T8 decrease_risk_factor
+A4	Risk T4 increase_symptom
+T6	Condition 91 105	akutes Problem
+A1	Factuality T6 speculated
+A5	Risk T6 decrease_risk_factor
+R3	has_State arg1:T5 arg2:T6	
+T7	Temporal 0 105	prinzipiell gutes Spenderorgan, aktuell unbefriedigende Tx Funktion, Sono eher Zeichen für akutes Problem
+A6	Temporal_Element T7 present

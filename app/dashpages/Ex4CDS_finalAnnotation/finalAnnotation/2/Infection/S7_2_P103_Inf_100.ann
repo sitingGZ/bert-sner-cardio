@@ -1,0 +1,21 @@
+T2	Condition 7 22	Vorerkrankungen
+T3	Condition 24 31	Infekte
+T4	Age_else 0 5	Alter
+T1	TimeInfo 32 52	in der Vorgeschichte
+R1	has_TimeInfo arg1:T3 arg2:T1	
+T5	Condition 67 87	septisches Geschehen
+T6	TimeInfo 54 61	aktuell
+R2	has_TimeInfo arg1:T5 arg2:T6	
+A1	Risk T4 risk_factor
+A2	Risk T2 increase_risk_factor
+A3	Risk T3 increase_risk_factor
+T7	Temporal 54 87	aktuell V.a. septisches Geschehen
+A4	Temporal_Element T7 present
+A5	Risk T5 increase_symptom
+A6	Factuality T5 speculated
+T8	Temporal 7 23	Vorerkrankungen,
+A7	Temporal_Element T8 past_present
+T9	Temporal 24 53	Infekte in der Vorgeschichte,
+A8	Temporal_Element T9 past
+T10	Temporal 0 6	Alter,
+A9	Temporal_Element T10 past_present

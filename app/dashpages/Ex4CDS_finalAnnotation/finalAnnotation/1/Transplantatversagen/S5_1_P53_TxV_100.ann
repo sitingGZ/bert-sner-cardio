@@ -1,0 +1,28 @@
+T2	Condition 15 29	Nierenversagen
+T3	Condition 31 38	Azidose
+T4	Condition 40 53	Hyperkaliämie
+T5	Measure 55 59	hohe
+T6	LabValues 60 62	PU
+T9	Condition 96 100	FSGS
+T10	Condition 106 115	Boderline
+T12	Process 127 135	Prognose
+R1	has_Measure arg1:T6 arg2:T5
+T1	Condition 86 94	Halbmond
+T8	Condition 117 126	schlechte
+R2	has_State arg1:T12 arg2:T8	
+A1	Risk T2 increase_symptom
+A2	Risk T3 increase_symptom
+A3	Risk T4 increase_symptom
+A4	Risk T6 increase_symptom
+T7	Condition 64 75	Rezidiv IgA
+A5	Risk T7 increase_risk_factor
+A6	Risk T1 increase_risk_factor
+R3	has_State arg1:T7 arg2:T1	
+A7	Risk T9 increase_risk_factor
+A8	Risk T10 increase_risk_factor
+T11	Conclusion 117 135	schlechte Prognose
+A9	Risk T12 increase_risk_factor
+T13	Temporal 0 63;64 115	rasch progred. Nierenversagen, Azidose, Hyperkaliämie, hohe PU. Rezidiv IgA in TX mit Halbmond, FSGS plus Boderline
+A10	Temporal_Element T13 present
+T14	Temporal 117 136	schlechte Prognose.
+A11	Temporal_Element T14 future

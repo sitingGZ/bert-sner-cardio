@@ -1,0 +1,10 @@
+T1	Condition 0 28	Klebsiellen plus Pneudomonas
+T2	Condition 54 66	schlechteres
+T3	LabValues 67 76	Kreatinin
+R1	has_Measure arg1:T3 arg2:T2
+A1	Factuality T1 speculated
+T4	DiagLab 40 48	U Kultur
+A2	Risk T1 increase_symptom
+T5	Temporal 0 76	Klebsiellen plus Pneudomonas (?) in der U Kultur plus schlechteres Kreatinin
+A3	Temporal_Element T5 present
+A4	Risk T2 increase_symptom

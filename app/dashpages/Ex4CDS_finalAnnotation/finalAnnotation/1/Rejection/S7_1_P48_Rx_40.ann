@@ -1,0 +1,51 @@
+T1	TimeInfo 0 6	Früher
+T2	HealthState 51 56	guter
+T4	LabValues 76 80	Krea
+T6	HealthState 89 93	gute
+T7	Process 94 101	Diurese
+T8	DiagLab 103 107	Sono
+T9	HealthState 108 119	unauffällig
+T10	Measure 121 126	kurze
+T11	Condition 127 139	Ischämiezeit
+T12	Measure 141 145	<10h
+T13	Condition 154 157	DGF
+T14	Condition 165 167	PU
+T15	LabValues 180 182	MM
+T16	Measure 203 213	reduzierte
+T17	LabValues 214 229	Tac Zielspiegel
+T18	Measure 249 256	erhöhts
+T19	Condition 257 259	Rj
+R4	has_Measure arg1:T11 arg2:T10
+R5	has_Measure arg1:T17 arg2:T16
+A1	Factuality T13 negative
+A2	Factuality T14 negative
+R2	has_State arg1:T7 arg2:T6	
+R3	has_State arg1:T8 arg2:T9	
+R7	has_Measure arg1:T11 arg2:T12	
+R6	has_Measure arg1:T19 arg2:T18	
+T5	Measure 81 87	Abfall
+R8	has_Measure arg1:T4 arg2:T5	
+T3	Process 57 64	Verlauf
+R1	has_State arg1:T3 arg2:T2	
+T20	Tx_low 0 25	Früher Zeitpunkt nach NTx
+A3	Risk T20 increase_risk_factor
+A4	Risk T3 decrease_symptom
+A5	Risk T4 decrease_symptom
+A6	Risk T7 decrease_symptom
+A7	Risk T8 decrease_symptom
+A8	Risk T11 symptom
+A9	Risk T13 decrease_symptom
+A10	Risk T14 decrease_symptom
+T21	Measure 174 179	viele
+R9	has_Measure arg1:T15 arg2:T21	
+A11	Risk T15 increase_risk_factor
+A12	Risk T17 increase_risk_factor
+T22	Conclusion 233 266	hierdurch etwas erhöhts Rj Risiko
+T23	Temporal 0 26	Früher Zeitpunkt nach NTx.
+A13	Temporal_Element T23 present
+T24	Temporal 27 87	Bis hier offensichtlich guter Verlauf, adäquater Krea Abfall
+A14	Temporal_Element T24 past_present
+T25	Temporal 89 167	gute Diurese, Sono unauffällig, kurze Ischämiezeit (<10h), keine DGF, keine PU
+A15	Temporal_Element T25 present
+T26	Temporal 174 229	viele MM und Studienpat. mit reduzierte Tac Zielspiegel
+A16	Temporal_Element T26 past_present

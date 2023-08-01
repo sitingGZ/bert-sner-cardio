@@ -1,0 +1,15 @@
+T1	TimeInfo 3 15	vor 3 Wochen
+T2	Condition 23 36	Infektzeichen
+T3	DiagLab 40 45	Labor
+A1	Factuality T2 negative
+T4	Tx_low 0 15	Tx vor 3 Wochen
+A2	Risk T4 increase_risk_factor
+A3	Risk T2 decrease_symptom
+T5	Other 47 69	keine klinischen Daten
+T6	Other 79 96	stationär post-Tx
+A4	Risk T6 increase_risk_factor
+T7	Temporal 0 16	Tx vor 3 Wochen.
+A5	Temporal_Element T7 past
+T8	Temporal 17 96	keine Infektzeichen im Labor, keine klinischen Daten. Aktuell stationär post-Tx
+A6	Temporal_Element T8 present
+R1	has_State arg1:T3 arg2:T2	

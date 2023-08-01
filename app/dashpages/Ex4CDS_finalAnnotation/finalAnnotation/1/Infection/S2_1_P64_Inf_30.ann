@@ -1,0 +1,7 @@
+T2	Condition 11 18	Infekte
+T1	TimeInfo 19 39	in der Vorgeschichte
+R1	has_TimeInfo arg1:T2 arg2:T1	
+T3	Temporal 0 39	keine rez. Infekte in der Vorgeschichte
+A1	Temporal_Element T3 past
+A2	Factuality T2 negative
+A3	Risk T2 decrease_risk_factor

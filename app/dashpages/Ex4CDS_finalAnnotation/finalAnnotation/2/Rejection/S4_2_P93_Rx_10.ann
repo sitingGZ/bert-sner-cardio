@@ -1,0 +1,25 @@
+T1	TimeInfo 3 15	vor 7 Jahren
+T3	LabValues 22 26	Krea
+T4	TimeInfo 27 49	in den letzten Monaten
+T5	Measure 50 58	steigend
+T6	Measure 71 80	1,8 mg/dl
+T8	LabValues 82 93	Albuminurie
+T9	Measure 94 102	steigend
+T10	Measure 107 119	600 mg/gKrea
+R1	has_Measure arg1:T3 arg2:T5
+R2	has_Measure arg1:T3 arg2:T6
+T12	Tx_high 0 15	Tx vor 7 Jahren
+R4	has_TimeInfo arg1:T3 arg2:T4	
+R3	has_Measure arg1:T8 arg2:T9	
+R5	has_Measure arg1:T8 arg2:T10	
+A1	Risk T12 decrease_risk_factor
+T2	Measure 17 18	2
+T7	Condition 18 20	MM
+A2	Risk T7 decrease_risk_factor
+R6	has_Measure arg1:T7 arg2:T2	
+A3	Risk T3 increase_symptom
+A4	Risk T8 increase_symptom
+T11	Temporal 0 16	Tx vor 7 Jahren,
+A5	Temporal_Element T11 past
+T13	Temporal 17 119	2MM, Krea in den letzten Monaten steigend auf aktuell 1,8 mg/dl, Albuminurie steigend bei 600 mg/gKrea
+A6	Temporal_Element T13 past_present

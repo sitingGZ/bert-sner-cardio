@@ -1,0 +1,21 @@
+T2	Condition 6 22	rediziv. Infekte
+T3	Condition 30 39	Infektion
+T4	Condition 41 44	BKV
+T6	TimeInfo 58 68	im Verlauf
+A1	Factuality T2 negative
+T1	Age_high 69 84	älterer Patient
+A2	Risk T2 decrease_risk_factor
+T5	Medication 45 57	Reduktion IS
+A3	Risk T5 decrease_risk_factor
+R1	has_TimeInfo arg1:T5 arg2:T6	
+A4	Risk T4 increase_risk_factor
+A5	Risk T3 increase_risk_factor
+A6	Risk T1 increase_risk_factor
+T7	Temporal 0 22	keine rediziv. Infekte
+A7	Temporal_Element T7 past
+T8	Temporal 23 44	virale Infektion: BKV
+A8	Temporal_Element T8 present
+T9	Temporal 45 68	Reduktion IS im Verlauf
+A9	Temporal_Element T9 past_present
+T10	Temporal 69 84	älterer Patient
+A10	Temporal_Element T10 present

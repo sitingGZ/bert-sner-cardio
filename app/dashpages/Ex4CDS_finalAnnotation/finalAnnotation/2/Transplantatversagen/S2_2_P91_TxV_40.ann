@@ -1,0 +1,22 @@
+T1	Condition 0 16	stabil schlechte
+T2	Process 17 29	Tx- Funktion
+T3	Condition 48 63	akutes Ereignis
+T5	Condition 123 130	Infekte
+T6	LabValues 140 152	Krea-Baselin
+A1	Factuality T3 negative
+A3	Factuality T5 negative
+R1	has_State arg1:T2 arg2:T1	
+T7	Measure 156 163	3 mg/dl
+R2	has_Measure arg1:T6 arg2:T7	
+A2	Risk T2 symptom
+A4	Risk T3 decrease_risk_factor
+T4	Condition 76 103	terminalen Verschlechterung
+A5	Risk T6 decrease_symptom
+A6	Risk T5 decrease_risk_factor
+T8	Temporal 113 183	bisherige Infekte auch auf Krea-Baselin um 3 mg/dl zurückegführt haben
+A7	Temporal_Element T8 past_present
+T9	Temporal 31 63	kein Hinweis auf akutes Ereignis
+A8	Temporal_Element T9 present
+T10	Conclusion 64 112	welches zur terminalen Verschlechterung führt da
+T11	Temporal 0 29	stabil schlechte Tx- Funktion
+A9	Temporal_Element T11 past_present

@@ -1,0 +1,38 @@
+T1	LabValues 0 3	Tac
+T2	Measure 4 27	teils unter Zielbereich
+T3	LabValues 29 32	RIs
+T4	HealthState 33 50	bessern sich zwar
+T5	LabValues 56 60	krea
+T6	Measure 61 64	2,9
+T7	DiagLab 66 69	NTX
+T8	TimeInfo 70 78	20.11.12
+T9	Measure 95 110	fallend fallend
+T10	LabValues 118 129	proteinurie
+T11	Medication 131 142	Urbasonstoß
+T12	HealthState 151 160	Besserung
+T13	Process 165 173	Funktion
+T14	DiagLab 177 181	NiBi
+T15	Medication 186 189	ASS
+R1	has_Measure arg1:T1 arg2:T2
+R2	has_Measure arg1:T5 arg2:T6
+R3	has_State arg1:T3 arg2:T4	
+R4	has_TimeInfo arg1:T7 arg2:T8	
+R5	has_Measure arg1:T5 arg2:T9	
+R6	has_State arg1:T13 arg2:T12	
+T16	Condition 227 229	Rx
+A2	Factuality T16 speculated
+A3	Risk T3 decrease_symptom
+A4	Risk T5 increase_symptom
+A5	Factuality T9 negative
+A6	Factuality T10 negative
+A7	Risk T10 decrease_symptom
+A8	Risk T11 decrease_risk_factor
+A9	Risk T13 decrease_symptom
+T17	Conclusion 215 229	Hinweis auf Rx
+A1	Risk T1 increase_risk_factor
+T18	Temporal 0 110	Tac teils unter Zielbereich, RIs bessern sich zwar,aber krea 2,9 (NTX 20.11.12) nicht wirklich fallend fallend
+A10	Temporal_Element T18 past_present
+T19	Temporal 112 129	keine proteinurie
+A11	Temporal_Element T19 present
+T20	Temporal 131 211	Urbasonstoß brachte Besserung der Funktion da NiBi bei ASS nicht erfolgen konnte
+A12	Temporal_Element T20 past_present

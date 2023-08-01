@@ -1,0 +1,8 @@
+T3	Condition 29 31	RX
+T1	Condition 33 67	kein wirkliches Therapieansprechen
+A1	Risk T3 increase_symptom
+T2	DiagLab 0 9	Bioptisch
+R1	has_State arg1:T2 arg2:T3	
+A2	Risk T1 increase_risk_factor
+T4	Temporal 0 67	Bioptisch zuletzt gesicherte RX, kein wirkliches Therapieansprechen
+A3	Temporal_Element T4 past_present

@@ -1,0 +1,31 @@
+T1	LabValues 0 3	CRP
+T2	Measure 4 14	ansteigend
+T3	Measure 22 26	99,9
+T4	LabValues 28 34	leukos
+T5	Measure 46 50	14,5
+T6	Measure 52 56	11,0
+R1	has_Measure arg1:T1 arg2:T2
+R2	has_Measure arg1:T4 arg2:T5
+R3	has_Measure arg1:T1 arg2:T3	
+R4	has_Measure arg1:T4 arg2:T6	
+A1	Risk T1 increase_symptom
+T7	Condition 75 84	intubiert
+A2	Factuality T7 speculated
+A3	Risk T7 increase_risk_factor
+T8	Other 104 107	ITS
+A4	Risk T8 increase_risk_factor
+T9	Other 85 99	mit Magensonde
+A5	Risk T9 symptom
+T10	Temporal 46 50	14,5
+A6	Temporal_Element T10 present
+T11	Temporal 52 56	11,0
+A7	Temporal_Element T11 past
+T12	Temporal 0 14	CRP ansteigend
+A8	Temporal_Element T12 past_present
+T13	Temporal 16 26	jetzt 99,9
+A9	Temporal_Element T13 present
+T14	Temporal 28 45	leukos ansteigend
+A10	Temporal_Element T14 past_present
+A11	Risk T4 increase_symptom
+T15	Temporal 59 107	Pat anscheinend intubiert mit Magensonde auf ITS
+A12	Temporal_Element T15 present

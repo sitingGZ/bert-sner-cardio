@@ -1,0 +1,30 @@
+T1	DiagLab 15 19	NiBi
+T2	Condition 48 65	chron humorale RX
+T3	LabValues 67 71	Krea
+T4	Measure 76 79	5,0
+T5	Measure 94 102	steigend
+T6	Measure 108 111	3,0
+T7	TimeInfo 112 124	in 2 Monaten
+T8	LabValues 127 138	albuminurie
+T9	Measure 139 144	7,1 g
+R1	has_Measure arg1:T3 arg2:T4
+R2	has_Measure arg1:T3 arg2:T5
+R3	has_Measure arg1:T8 arg2:T9	
+R4	has_Measure arg1:T3 arg2:T6	
+R5	has_TimeInfo arg1:T3 arg2:T7	
+T10	Condition 35 37	Rx
+T11	Measure 24 34	Borderline
+R6	has_Measure arg1:T10 arg2:T11	
+R7	has_State arg1:T1 arg2:T10	
+T12	Temporal 0 37	vorangegangene NiBi mit Borderline Rx
+A1	Temporal_Element T12 past
+T13	Temporal 39 65	bekannte chron humorale RX
+A2	Temporal_Element T13 past_present
+A3	Risk T10 increase_symptom
+A4	Risk T2 increase_symptom
+A5	Risk T3 increase_symptom
+T14	Temporal 67 125	Krea mit 5,0 immer weitere steigend (von 3,0 in 2 Monaten)
+A6	Temporal_Element T14 past_present
+T15	Temporal 127 144	albuminurie 7,1 g
+A7	Temporal_Element T15 present
+A8	Risk T8 increase_symptom

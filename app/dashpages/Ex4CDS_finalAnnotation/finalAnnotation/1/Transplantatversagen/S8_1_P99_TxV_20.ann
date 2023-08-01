@@ -1,0 +1,14 @@
+T1	HealthState 0 8	Stabiles
+T2	LabValues 9 13	Krea
+R1	has_Measure arg1:T2 arg2:T1
+T5	Condition 94 105	TX Versagen
+A1	Factuality T5 possible_future
+A2	Risk T2 decrease_symptom
+T3	Conclusion 15 113	allerdings im Rahmen einer infektiologischen oder anderen Komplikation ist ein TX Versagen möglich
+T4	Condition 42 85	infektiologischen oder anderen Komplikation
+A3	Factuality T4 possible_future
+A4	Risk T4 increase_risk_factor
+T6	Temporal 0 13	Stabiles Krea
+A5	Temporal_Element T6 present
+T7	Temporal 15 113	allerdings im Rahmen einer infektiologischen oder anderen Komplikation ist ein TX Versagen möglich
+A6	Temporal_Element T7 future

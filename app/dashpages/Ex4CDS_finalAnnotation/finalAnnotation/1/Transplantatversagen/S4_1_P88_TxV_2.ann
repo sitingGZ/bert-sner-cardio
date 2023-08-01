@@ -1,0 +1,21 @@
+T2	TimeInfo 14 22	vor 5 J.
+T3	LabValues 23 27	Krea
+T4	Measure 36 46	0,92 mg/dl
+T9	Condition 125 131	Filiae
+R1	has_Measure arg1:T3 arg2:T4
+T1	Age_middle 0 10	43 j. Pat.
+T10	Tx_middle 11 22	TX vor 5 J.
+A1	Risk T1 decrease_risk_factor
+A2	Risk T10 decrease_risk_factor
+A3	Risk T3 decrease_symptom
+T5	Condition 47 70	Adenokarzinom der Mamma
+A4	Risk T5 increase_risk_factor
+A5	Risk T9 increase_risk_factor
+T11	Temporal 47 131	Adenokarzinom der Mamma zentral links, Neu aufgetretene ossäre und hepatische Filiae
+A6	Temporal_Element T11 past_present
+T12	Temporal 0 10	43 j. Pat.
+A7	Temporal_Element T12 present
+T13	Temporal 11 22	TX vor 5 J.
+A8	Temporal_Element T13 past
+T14	Temporal 23 46	Krea aktuell 0,92 mg/dl
+A9	Temporal_Element T14 present

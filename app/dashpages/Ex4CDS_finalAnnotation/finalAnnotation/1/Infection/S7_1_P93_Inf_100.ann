@@ -1,0 +1,18 @@
+T1	Condition 0 24	Blasenentleerungsstörung
+T2	Condition 26 45	Harnstauproblematik
+T3	TimeInfo 46 53	aktuell
+T4	Measure 54 61	erhöhte
+T5	Condition 62 73	Infektwerte
+R1	has_TimeInfo arg1:T5 arg2:T3
+R2	has_Measure arg1:T5 arg2:T4	
+T7	Condition 80 84	HWIs
+A1	Risk T1 increase_risk_factor
+A2	Risk T2 increase_risk_factor
+T6	Temporal 0 45	Blasenentleerungsstörung, Harnstauproblematik
+A3	Temporal_Element T6 past_present
+T8	Temporal 46 73	aktuell erhöhte Infektwerte
+A4	Temporal_Element T8 present
+T9	Temporal 75 84	rez. HWIs
+A5	Temporal_Element T9 past
+A6	Risk T7 increase_risk_factor
+A7	Risk T5 increase_symptom

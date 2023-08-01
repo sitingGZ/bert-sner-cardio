@@ -1,0 +1,36 @@
+T1	TimeInfo 0 8	Woche 10
+T2	Condition 19 33	HLA-Mismatches
+T5	Medication 49 57	Myfortic
+T6	Condition 76 84	Diarrhoe
+T7	Medication 85 88	Tac
+T8	Medication 118 125	Urbason
+T9	LabValues 126 130	Krea
+T10	HealthState 139 145	stabil
+R2	has_State arg1:T9 arg2:T10	
+T11	Measure 114 117	8mg
+R3	has_Measure arg1:T8 arg2:T11	
+T3	Tx_low 0 17	Woche 10 nach NTX
+A1	ref_age T3 patient
+T12	Measure 97 113	über Zielbereich
+R1	has_Measure arg1:T7 arg2:T12	
+A2	Risk T3 increase_risk_factor
+T13	Temporal 0 18	Woche 10 nach NTX,
+A3	Temporal_Element T13 past_present
+T4	Measure 35 48	A/B/DR: 1/1/1
+R4	has_Measure arg1:T2 arg2:T4	
+T14	Measure 62 71	reduziert
+R5	has_Measure arg1:T5 arg2:T14	
+A4	Risk T5 increase_risk_factor
+T15	Temporal 49 84	Myfortic war reduziert bei Diarrhoe
+A5	Temporal_Element T15 past
+A6	Risk T7 decrease_risk_factor
+T16	Temporal 85 113	Tac aktuell über Zielbereich
+A7	Temporal_Element T16 present
+A8	Risk T8 decrease_risk_factor
+T17	Temporal 114 125	8mg Urbason
+A9	Temporal_Element T17 present
+A10	Risk T9 decrease_symptom
+T18	Temporal 126 145	Krea relativ stabil
+A11	Temporal_Element T18 past_present
+T19	Temporal 19 48	HLA-Mismatches: A/B/DR: 1/1/1
+A12	Temporal_Element T19 past_present

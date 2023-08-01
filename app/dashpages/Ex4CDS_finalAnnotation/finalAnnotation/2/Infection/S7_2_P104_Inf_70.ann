@@ -1,0 +1,32 @@
+T1	Measure 8 16	erhöhtes
+T2	Measure 31 35	pos.
+T3	LabValues 36 43	UStatus
+T4	Condition 45 56	Infektionen
+T5	Condition 83 92	Urosepsis
+T7	Condition 102 117	Multimorbidität
+T8	Measure 119 123	viel
+T9	Medication 124 126	IS
+R1	has_Measure arg1:T9 arg2:T8
+T10	Age_else 95 100	Alter
+T11	LabValues 17 29	Infektniveau
+R2	has_Measure arg1:T11 arg2:T1	
+R3	has_Measure arg1:T3 arg2:T2	
+T12	TimeInfo 57 77	in der Vorgeschichte
+R4	has_TimeInfo arg1:T4 arg2:T12	
+A1	Risk T11 increase_symptom
+A2	Risk T3 increase_symptom
+A3	Risk T4 increase_risk_factor
+A4	Risk T5 increase_risk_factor
+A5	Risk T10 risk_factor
+A6	Risk T7 increase_risk_factor
+A7	Risk T9 increase_risk_factor
+T6	Medication 128 146	Rejektionstherapie
+A8	Risk T6 increase_risk_factor
+T13	Temporal 0 44	aktuell erhöhtes Infektniveau, pos. UStatus,
+A9	Temporal_Element T13 present
+T14	Temporal 45 94	Infektionen in der Vorgeschichte (re. Urosepsis),
+A10	Temporal_Element T14 past
+T15	Temporal 95 126	Alter, Multimorbidität, viel IS
+A11	Temporal_Element T15 present
+T16	Temporal 127 157	/Rejektionstherapie im Vorfeld
+A12	Temporal_Element T16 past

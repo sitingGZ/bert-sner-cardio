@@ -1,0 +1,47 @@
+T1	TimeInfo 3 11	vor 8 Mo
+T3	Condition 18 37	Tx Verschlechterung
+T4	TimeInfo 38 48	seit 1 Mo.
+T5	LabValues 49 53	Krea
+T7	LabValues 80 84	Krea
+T8	Measure 85 95	1,55 mg/dl
+T9	LabValues 110 113	CyA
+T10	Measure 122 138	stark schwankend
+T11	Medication 176 183	Urbason
+T12	Medication 184 192	CellCept
+R2	has_TimeInfo arg1:T3 arg2:T4	
+T13	Measure 62 69	5 mg/dl
+R3	has_Measure arg1:T5 arg2:T13	
+R5	has_Measure arg1:T7 arg2:T8	
+R6	has_Measure arg1:T9 arg2:T10	
+T14	Measure 172 175	4mg
+T15	Measure 193 199	1500mg
+R7	has_Measure arg1:T11 arg2:T14	
+R8	has_Measure arg1:T12 arg2:T15	
+T2	Tx_low 0 11	TX vor 8 Mo
+A1	ref_age T2 patient
+T6	Measure 144 170	oberhalb des Zielbereiches
+R1	has_Measure arg1:T9 arg2:T6	
+A2	Risk T2 increase_risk_factor
+T16	Temporal 0 11	TX vor 8 Mo
+A3	Temporal_Element T16 past
+A4	Risk T3 increase_symptom
+A5	Risk T5 increase_symptom
+T17	Temporal 12 47	Akute Tx Verschlechterung seit 1 Mo
+A6	Temporal_Element T17 past_present
+T18	Temporal 49 69	Krea aktuell 5 mg/dl
+A7	Temporal_Element T18 present
+T19	Temporal 73 95	bestes Krea 1,55 mg/dl
+A8	Temporal_Element T19 past
+T20	Condition 99 109	Mismatches
+T21	Measure 97 98	3
+R4	has_Measure arg1:T20 arg2:T21	
+A9	Risk T20 increase_risk_factor
+A10	Risk T9 risk_factor
+A11	Risk T11 decrease_risk_factor
+A12	Risk T12 decrease_risk_factor
+T22	Temporal 97 109	3-Mismatches
+A13	Temporal_Element T22 present
+T23	Temporal 110 170	CyA Spiegel stark schwankend, oft oberhalb des Zielbereiches
+A14	Temporal_Element T23 past_present
+T24	Temporal 172 183;184 199	4mg Urbason CellCept 1500mg
+A15	Temporal_Element T24 present

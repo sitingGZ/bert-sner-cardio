@@ -1,0 +1,61 @@
+T1	TimeInfo 3 13	vor 1 Jahr
+T2	Measure 28 46	dialysepflichtigem
+T3	Condition 47 49	NV
+T4	Condition 54 65	Rejektionen
+T5	TimeInfo 66 90	im kurzfristigem Verlauf
+T6	Condition 92 101	Banff IIb
+T7	Condition 103 112	Banff IIA
+T9	DiagLab 148 152	NiBi
+T10	LabValues 196 199	DSA
+T15	LabValues 241 245	Krea
+T16	Measure 246 254	steigend
+T17	Measure 270 273	3,3
+T18	LabValues 276 278	PU
+T19	Measure 279 286	niedrig
+R1	has_Measure arg1:T3 arg2:T2
+R2	has_Measure arg1:T15 arg2:T16
+T20	Tx_middle 0 13	TX vor 1 Jahr
+T21	Age_high 217 235	höheres Donoralter
+A1	ref_age T21 donor
+R3	has_Measure arg1:T15 arg2:T17	
+R4	has_Measure arg1:T18 arg2:T19	
+R5	has_TimeInfo arg1:T4 arg2:T5	
+A2	Risk T20 decrease_risk_factor
+A3	Risk T3 increase_risk_factor
+A4	Risk T4 increase_risk_factor
+A5	Risk T6 increase_risk_factor
+A6	Risk T7 increase_risk_factor
+T8	Condition 114 140	Banff IB plus C4d Nachweis
+A7	Risk T8 increase_risk_factor
+T11	Medication 155 177	intensivierte Therapie
+A8	Risk T11 decrease_risk_factor
+R6	has_State arg1:T9 arg2:T8	
+R7	has_State arg1:T9 arg2:T7	
+R8	has_State arg1:T9 arg2:T6	
+T12	Other 184 186	PP
+A9	Risk T12 risk_factor
+T13	Measure 200 215	Klasse I und II
+R9	has_Measure arg1:T10 arg2:T13	
+A10	Risk T10 increase_risk_factor
+T14	Condition 237 239	MM
+T22	Measure 239 240	4
+R10	has_Measure arg1:T14 arg2:T22	
+A11	Risk T14 increase_risk_factor
+A12	Risk T21 increase_risk_factor
+A13	Risk T15 increase_symptom
+A14	Risk T18 decrease_symptom
+T23	Temporal 0 152	TX vor 1 Jahr, seitdem Z.n. dialysepflichtigem NV bei Rejektionen im kurzfristigem Verlauf: Banff IIb, Banff IIA, Banff IB plus C4d Nachweis in der NiBi
+A15	Temporal_Element T23 past
+T24	Temporal 155 186	intensivierte Therapie inkl. PP
+A16	Temporal_Element T24 past_present
+T25	Temporal 187 254	Nachweis DSA Klasse I und II, höheres Donoralter, MM4
+Krea steigend
+A17	Temporal_Element T25 present
+T26	Temporal 187 240	Nachweis DSA Klasse I und II, höheres Donoralter, MM4
+A18	Temporal_Element T26 present
+T27	Temporal 241 254	Krea steigend
+A19	Temporal_Element T27 present
+T28	Temporal 256 273	letzter WErte 3,3
+A20	Temporal_Element T28 past
+T29	Temporal 276 286	PU niedrig
+A21	Temporal_Element T29 present

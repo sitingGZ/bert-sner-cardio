@@ -1,0 +1,21 @@
+T1	DiagLab 0 11	MiBi-BEfund
+T2	Condition 16 27	Klebsiellen
+T3	Other 32 35	ITS
+T4	DiagLab 37 43	Rö_Thy
+T5	Condition 48 59	Infiltraten
+T6	LabValues 92 98	Leukos
+T7	HealthState 106 110	norm
+T8	Condition 112 115	BVK
+T9	Condition 116 119	EBV
+R1	has_State arg1:T6 arg2:T7	
+R2	has_State arg1:T1 arg2:T2	
+A1	Risk T3 increase_risk_factor
+A2	Risk T2 increase_symptom
+T10	Condition 80 89	intubiert
+A3	Factuality T10 speculated
+A4	Risk T10 increase_risk_factor
+R3	has_State arg1:T4 arg2:T5	
+A5	Risk T5 increase_symptom
+A6	Risk T6 decrease_symptom
+T11	Temporal 0 141	MiBi-BEfund mit Klebsiellen von ITS, Rö_Thy mit Infiltraten und Pat anscheinend intubiert. ´Leukos jedoch norm, BVK EBV keine aktuellen Daten
+A7	Temporal_Element T11 present

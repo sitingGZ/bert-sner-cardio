@@ -1,0 +1,15 @@
+T1	HealthState 14 30	guter Compliance
+T4	Condition 70 79	Infektion
+T5	Medication 91 107	Immunsuppression
+A2	Factuality T4 negative
+T2	Conclusion 31 79	sehe ich kein erhöhtes Risiko für eine Infektion
+A1	Risk T1 decrease_risk_factor
+A3	Risk T5 decrease_risk_factor
+T3	Measure 116 125	reduziert
+R1	has_Measure arg1:T5 arg2:T3	
+T6	TimeInfo 108 115	zuletzt
+T7	Temporal 0 30	Bei anhaltend guter Compliance
+A4	Temporal_Element T7 past_present
+T8	Temporal 81 139	zumal die Immunsuppression zuletzt reduziert werden konnte
+A5	Temporal_Element T8 past
+R2	has_TimeInfo arg1:T5 arg2:T6	

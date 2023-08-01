@@ -1,0 +1,16 @@
+T1	HealthState 0 16	stabiler Verlauf
+T2	LabValues 18 29	CyA Spiegel
+T3	HealthState 30 33	gut
+T4	LabValues 35 39	Krea
+T5	HealthState 40 46	stabil
+T6	LabValues 48 59	Proteinurie
+T7	HealthState 60 66	stabil
+R1	has_State arg1:T2 arg2:T3	
+R2	has_State arg1:T4 arg2:T5	
+R3	has_State arg1:T6 arg2:T7	
+A1	Risk T1 decrease_symptom
+A2	Risk T2 decrease_risk_factor
+A3	Risk T4 decrease_symptom
+A4	Risk T6 decrease_symptom
+T8	Temporal 0 66	stabiler Verlauf, CyA Spiegel gut, Krea stabil, Proteinurie stabil
+A5	Temporal_Element T8 present

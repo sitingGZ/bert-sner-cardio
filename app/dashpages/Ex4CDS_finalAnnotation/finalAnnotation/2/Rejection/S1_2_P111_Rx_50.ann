@@ -1,0 +1,12 @@
+T1	Condition 14 25	Rejektionen
+T2	Medication 44 46	IS
+T3	TimeInfo 47 62	im letzten Jahr
+T4	Condition 67 75	Infekten
+T5	Measure 30 39	Reduktion
+R1	has_Measure arg1:T2 arg2:T5	
+R2	has_TimeInfo arg1:T2 arg2:T3	
+A1	Risk T1 increase_risk_factor
+A2	Risk T2 increase_risk_factor
+A3	Risk T4 risk_factor
+T6	Temporal 0 76	Z.n. mehreren Rejektionen und Reduktion der IS im letzten Jahr bei Infekten.
+A4	Temporal_Element T6 past_present

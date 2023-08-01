@@ -1,0 +1,23 @@
+T1	TimeInfo 0 12	über 2 Jahre
+T2	HealthState 13 21	stabiler
+T3	LabValues 22 26	Krea
+T4	LabValues 43 45	PU
+T5	LabValues 53 56	HLA
+T6	Condition 81 92	Rejektionen
+A1	Factuality T4 negative
+A2	Factuality T5 negative
+A3	Factuality T6 negative
+R1	has_TimeInfo arg1:T3 arg2:T1	
+R2	has_State arg1:T3 arg2:T2	
+T7	TimeInfo 93 113	in der Vorgeschichte
+R3	has_TimeInfo arg1:T6 arg2:T7	
+A4	Risk T3 decrease_symptom
+A5	Risk T4 decrease_symptom
+A6	Risk T5 decrease_risk_factor
+A7	Risk T6 decrease_risk_factor
+T8	Temporal 0 34	über 2 Jahre stabiler Krea Verlauf
+A8	Temporal_Element T8 past_present
+T9	Temporal 37 73	keine PU, keine HLA soweit verfügbar
+A9	Temporal_Element T9 present
+T10	Temporal 75 113	keine Rejektionen in der Vorgeschichte
+A10	Temporal_Element T10 past

@@ -1,0 +1,15 @@
+T3	Condition 44 47	VUR
+T4	LabValues 49 53	ESBL
+T5	Condition 66 85	Selbstkatheterismus
+T6	Condition 87 102	Schieneneinlage
+T7	Condition 127 151	Infektionskomplikationen
+A1	Factuality T7 speculated
+A2	Risk T4 increase_symptom
+T1	Condition 4 38	neurogene Blasenentleerungsstörung
+A3	Risk T1 increase_risk_factor
+A4	Risk T3 increase_risk_factor
+A5	Risk T5 increase_risk_factor
+A6	Risk T6 increase_risk_factor
+T2	Conclusion 109 151	sind Hinweise auf Infektionskomplikationen
+T8	Temporal 0 151	Die neurogene Blasenentleerungsstörung, der VUR, ESBL im Urin, de Selbstkatheterismus, Schieneneinlage im TX sind Hinweise auf Infektionskomplikationen
+A7	Temporal_Element T8 past_present

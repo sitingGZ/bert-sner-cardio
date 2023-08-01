@@ -1,0 +1,15 @@
+T1	Condition 0 3	BPH
+T2	Medication 8 18	Finasterid
+T3	Medication 23 33	Tamsulosin
+T4	Other 59 76	DK-Auslassversuch
+T7	Condition 122 125	HWI
+A1	Factuality T7 possible_future
+T5	Conclusion 86 135	das könnte auf eine hohe Gefahr für HWI hinweisen
+A2	Risk T4 increase_risk_factor
+A3	Risk T1 increase_risk_factor
+A4	Risk T2 risk_factor
+A5	Risk T3 risk_factor
+T6	Temporal 0 47	BPH mit Finasterid und Tamsulosin in Medikation
+A6	Temporal_Element T6 present
+T8	Temporal 49 83	damit ein DK-Auslassversuch glückt
+A7	Temporal_Element T8 future

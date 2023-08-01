@@ -1,0 +1,8 @@
+T1	Condition 28 43	eingeschränkter
+T2	Process 44 55	Tx Funktion
+T3	Tx_low 0 18	Frühphase nach Ntx
+R1	has_State arg1:T2 arg2:T1	
+A1	Risk T3 increase_risk_factor
+A2	Risk T2 increase_symptom
+T4	Temporal 0 55	Frühphase nach Ntx mit noch eingeschränkter Tx Funktion
+A3	Temporal_Element T4 present

@@ -1,0 +1,17 @@
+T1	Measure 0 10	reduzierte
+T2	Condition 17 31	Komplikationen
+T3	Process 11 15	eGFR
+R1	has_Measure arg1:T3 arg2:T1	
+T4	Medication 55 57	IS
+T5	Measure 41 50	Reduktion
+R2	has_Measure arg1:T4 arg2:T5	
+A1	Risk T3 increase_symptom
+A2	Risk T2 increase_risk_factor
+A3	Factuality T4 speculated
+A4	Risk T4 increase_risk_factor
+T6	Temporal 17 31	Komplikationen
+A5	Temporal_Element T6 past_present
+T7	Temporal 32 57	und ggfs Reduktion der IS
+A6	Temporal_Element T7 future
+T8	Temporal 0 15	reduzierte eGFR
+A7	Temporal_Element T8 present

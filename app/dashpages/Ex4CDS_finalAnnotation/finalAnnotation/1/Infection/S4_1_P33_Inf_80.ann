@@ -1,0 +1,31 @@
+T1	TimeInfo 0 7	seit 3d
+T2	Condition 8 14	Fieber
+T3	Condition 16 35	AZ-Verschlechterung
+T4	Condition 37 53	Abgeschlagenheit
+T5	Condition 55 61	Fieber
+T6	Measure 66 70	40°C
+T8	Condition 71 87	trockener Husten
+T9	Condition 94 101	Auswurf
+T10	Condition 130 139	Pneumonie
+T11	LabValues 140 143	CRP
+T12	Condition 152 167	deutlich erhöht
+R1	has_TimeInfo arg1:T2 arg2:T1
+R3	has_Measure arg1:T11 arg2:T12
+A1	Factuality T9 negative
+R4	has_TimeInfo arg1:T3 arg2:T1	
+R5	has_TimeInfo arg1:T4 arg2:T1	
+R6	has_TimeInfo arg1:T5 arg2:T1	
+R7	has_Measure arg1:T5 arg2:T6	
+A2	Risk T2 increase_symptom
+A3	Risk T3 increase_symptom
+A4	Risk T4 increase_symptom
+A5	Risk T5 increase_symptom
+A6	Risk T8 increase_symptom
+A7	Risk T10 increase_symptom
+T7	Other 106 120	stat. Aufnahme
+A8	Risk T11 increase_symptom
+A9	Factuality T10 speculated
+A10	Risk T7 increase_risk_factor
+T13	Temporal 0 70;71 139;140 167	seit 3d Fieber, AZ-Verschlechterung, Abgeschlagenheit, Fieber bis 40°C trockener Husten, kein Auswurf, -> stat. Aufnahme bei V.a. Pneumonie CRP bereits deutlich erhöht
+A11	Temporal_Element T13 present
+A12	Risk T9 decrease_symptom

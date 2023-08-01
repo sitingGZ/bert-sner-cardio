@@ -1,0 +1,22 @@
+T1	LabValues 0 4	Krea
+T2	Measure 5 14	stagniert
+T3	HealthState 31 36	gutem
+T4	Process 37 45	Absinken
+T5	LabValues 54 56	PU
+T6	DiagLab 57 61	Sono
+T7	Measure 62 69	erhöhte
+T8	Condition 70 72	RI
+R1	has_Measure arg1:T1 arg2:T2
+R3	has_Measure arg1:T8 arg2:T7
+R2	has_State arg1:T4 arg2:T3	
+A1	Risk T1 increase_symptom
+A2	Risk T4 symptom
+A3	Risk T5 symptom
+A4	Risk T8 increase_symptom
+R4	has_State arg1:T6 arg2:T8	
+T9	Temporal 15 53	nach anfänglich gutem Absinken nach Tx
+A5	Temporal_Element T9 past_present
+T10	Temporal 54 56;57 72	PU Sono erhöhte RI
+A6	Temporal_Element T10 present
+T11	Temporal 0 14	Krea stagniert
+A7	Temporal_Element T11 present

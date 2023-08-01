@@ -1,0 +1,20 @@
+T1	Measure 0 10	steigendes
+T2	LabValues 11 15	Krea
+T3	Condition 17 26	Rejektion
+T5	LabValues 58 61	DSA
+T6	Measure 63 73	zunehmende
+T7	LabValues 74 76	PU
+R1	has_Measure arg1:T2 arg2:T1
+R2	has_Measure arg1:T7 arg2:T6	
+A1	Risk T2 increase_symptom
+T4	TimeInfo 34 47	Vorgeschichte
+R3	has_TimeInfo arg1:T3 arg2:T4	
+A2	Risk T3 increase_risk_factor
+A3	Risk T5 increase_risk_factor
+A4	Risk T7 increase_symptom
+T8	Temporal 0 15	steigendes Krea
+A5	Temporal_Element T8 past_present
+T9	Temporal 17 47	Rejektion in der Vorgeschichte
+A6	Temporal_Element T9 past
+T10	Temporal 49 76	bekannte DSA, zunehmende PU
+A7	Temporal_Element T10 past_present

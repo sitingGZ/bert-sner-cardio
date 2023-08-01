@@ -1,0 +1,13 @@
+T1	TimeInfo 0 7	aktuell
+T2	Condition 14 25	Beschwerden
+T3	Measure 27 36	niedriges
+T4	Condition 37 49	Infektniveau
+T5	Condition 51 73	Lymphozelenproblematik
+R1	has_TimeInfo arg1:T2 arg2:T1
+R2	has_Measure arg1:T4 arg2:T3
+A1	Factuality T2 negative
+A2	Risk T2 decrease_symptom
+A3	Risk T4 decrease_symptom
+A4	Risk T5 increase_risk_factor
+T6	Temporal 0 73	aktuell keine Beschwerden, niedriges Infektniveau, Lymphozelenproblematik
+A5	Temporal_Element T6 present

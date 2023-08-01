@@ -1,0 +1,12 @@
+T1	LabValues 0 3	CRP
+T2	Measure 12 18	erhöht
+T4	Condition 25 32	Infekte
+T5	TimeInfo 33 58	in den Monaten und Jahren
+R1	has_Measure arg1:T1 arg2:T2
+R3	has_TimeInfo arg1:T4 arg2:T5
+A1	Risk T1 increase_symptom
+A2	Risk T4 increase_risk_factor
+T3	Temporal 0 18	CRP bereits erhöht
+A3	Temporal_Element T3 present
+T6	Temporal 20 58	rez. Infekte in den Monaten und Jahren
+A4	Temporal_Element T6 past

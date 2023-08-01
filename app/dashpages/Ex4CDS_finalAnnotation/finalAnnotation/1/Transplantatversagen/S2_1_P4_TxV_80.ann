@@ -1,0 +1,26 @@
+T1	Measure 0 12	mittelmäßige
+T2	Process 13 24	Tx-Funktion
+T5	Measure 63 74	schwankende
+T6	LabValues 75 79	Krea
+T7	Measure 104 125	progredientem Anstieg
+T8	TimeInfo 126 140	seit 2 Monaten
+T11	Condition 154 170	Dekompensationen
+T12	Condition 171 186	Multimorbidität
+R1	has_Measure arg1:T2 arg2:T1
+R2	has_Measure arg1:T6 arg2:T5
+R4	has_Measure arg1:T6 arg2:T7	
+R5	has_TimeInfo arg1:T6 arg2:T8	
+A1	Risk T2 increase_symptom
+T3	Condition 49 61	Rejektion Ib
+A2	Risk T3 increase_risk_factor
+A3	Risk T6 increase_symptom
+A4	Risk T11 increase_risk_factor
+A5	Risk T12 increase_risk_factor
+T9	Temporal 0 62	mittelmäßige Tx-Funktion bei bereits gesicherter Rejektion Ib,
+A6	Temporal_Element T9 present
+T10	Temporal 63 140	schwankende Krea Werte seit Tx mit jetzt progredientem Anstieg seit 2 Monaten
+A7	Temporal_Element T10 past_present
+T13	Temporal 141 170	rez. hydrop. Dekompensationen
+A8	Temporal_Element T13 past
+T14	Temporal 171 200	Multimorbidität des Patienten
+A9	Temporal_Element T14 present

@@ -1,0 +1,22 @@
+T1	Condition 6 17	Rejectionen
+T2	Condition 38 44	Infekt
+T3	Medication 59 61	IS
+T5	Condition 86 97	Rej. Risiko
+T7	Condition 105 117	Incompliance
+A1	Factuality T1 negative
+A2	Factuality T7 negative
+T8	Measure 54 58	red.
+R2	has_Measure arg1:T3 arg2:T8	
+A3	Risk T1 decrease_risk_factor
+A4	Risk T2 risk_factor
+A5	Factuality T3 speculated
+A6	Risk T3 increase_risk_factor
+T4	Conclusion 62 98	und dann wieder höherem Rej. Risiko.
+A7	Factuality T5 speculated
+A8	Risk T7 decrease_risk_factor
+T6	Temporal 0 31	keine Rejectionen dokumentiert,
+A9	Temporal_Element T6 past_present
+T9	Temporal 32 61	jetzt Infekt mit ggf. red. IS
+A10	Temporal_Element T9 present
+T10	Temporal 99 131	keine Incompliance dokumentiert.
+A11	Temporal_Element T10 past_present

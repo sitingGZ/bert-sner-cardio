@@ -1,0 +1,25 @@
+T1	Condition 0 14	eingeschränkte
+T3	Condition 39 50	Infektionen
+T4	Condition 52 61	Pneumonie
+T5	Condition 63 72	Urosepsis
+T6	Measure 74 76	4x
+T7	TimeInfo 77 84	in 2012
+T8	Process 15 29	Nierenfunktion
+R1	has_Measure arg1:T8 arg2:T1	
+R3	has_Measure arg1:T5 arg2:T6	
+R4	has_TimeInfo arg1:T5 arg2:T7	
+T9	Age_high 115 127	älterer Pat.
+A1	Risk T8 increase_symptom
+A2	Risk T3 increase_risk_factor
+A3	Risk T4 increase_risk_factor
+A4	Risk T5 increase_risk_factor
+T10	Temporal 30 84	rezidiv. Infektionen, Pneumonie, Urosepsis, 4x in 2012
+A5	Temporal_Element T10 past
+T11	Temporal 0 29	eingeschränkte Nierenfunktion
+A6	Temporal_Element T11 present
+T12	Medication 100 114	duale Therapie
+A8	Risk T9 increase_risk_factor
+T13	Temporal 85 114;115 127	Umstellung IS, duale Therapie älterer Pat.
+A9	Temporal_Element T13 present
+T2	Medication 85 98	Umstellung IS
+A7	Risk T2 risk_factor

@@ -1,0 +1,11 @@
+T2	Other 7 15	Dialysen
+T3	LabValues 26 44	Kreatinin-Baseline
+T1	Condition 0 3	DGF
+A1	Risk T1 increase_risk_factor
+A2	Risk T2 increase_symptom
+T4	Measure 5 6	6
+R1	has_Measure arg1:T2 arg2:T4	
+A3	Factuality T3 speculated
+A4	Risk T3 increase_symptom
+T5	Temporal 0 61	DGF, 6 Dialysen nach NTx, Kreatinin-Baseline noch festzulegen
+A5	Temporal_Element T5 past_present

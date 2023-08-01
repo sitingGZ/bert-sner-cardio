@@ -1,0 +1,31 @@
+T2	TimeInfo 14 22	vor 6 Wo
+T3	LabValues 23 27	Krea
+T4	Measure 36 45	3,2 mg/dl
+T5	LabValues 56 60	Krea
+T6	Measure 61 70	2,8 mg/dl
+T8	Condition 72 94	Akute Verschlechterung
+T9	Process 99 119	Transplantatfunktion
+T11	Condition 171 202	medikamentös- toxischen Schaden
+R1	has_Measure arg1:T3 arg2:T4
+R2	has_Measure arg1:T5 arg2:T6
+A2	Factuality T11 speculated
+T1	Age_middle 0 9	57 j. Pat
+T12	Tx_low 11 22	TX vor 6 Wo
+R3	has_State arg1:T9 arg2:T8	
+A1	Risk T12 decrease_risk_factor
+A3	Risk T1 decrease_risk_factor
+A4	Risk T3 increase_symptom
+A6	Risk T9 increase_symptom
+T7	Condition 121 149	Tubulusepithelvakuolisierung
+A7	Risk T7 symptom
+A8	Risk T11 decrease_risk_factor
+T10	Temporal 72 202	Akute Verschlechterung der Transplantatfunktion, Tubulusepithelvakuolisierung als Hinweis für eine medikamentös- toxischen Schaden
+A9	Temporal_Element T10 present
+T13	Temporal 23 46	Krea aktuell 3,2 mg/dl,
+A10	Temporal_Element T13 present
+T14	Temporal 49 70	bestes Krea 2,8 mg/dl
+A11	Temporal_Element T14 past
+T15	Temporal 11 22	TX vor 6 Wo
+A12	Temporal_Element T15 past
+T16	Temporal 0 10	57 j. Pat.
+A13	Temporal_Element T16 present

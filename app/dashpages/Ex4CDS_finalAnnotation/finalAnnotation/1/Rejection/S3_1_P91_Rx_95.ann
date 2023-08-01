@@ -1,0 +1,14 @@
+T2	Condition 0 24	gesichérte Borderline Rx
+T3	DiagLab 28 35	Biopsie
+T4	LabValues 37 48	Albuminurie
+T5	Measure 49 59	ansteigend
+T6	LabValues 61 65	Krea
+T7	Measure 66 76	ansteigend
+R1	has_Measure arg1:T4 arg2:T5
+R2	has_Measure arg1:T6 arg2:T7
+A1	Risk T2 increase_risk_factor
+R3	has_State arg1:T3 arg2:T2	
+A2	Risk T4 increase_symptom
+A3	Risk T6 increase_symptom
+T1	Temporal 0 76	gesichérte Borderline Rx in Biopsie, Albuminurie ansteigend, Krea ansteigend
+A4	Temporal_Element T1 past_present

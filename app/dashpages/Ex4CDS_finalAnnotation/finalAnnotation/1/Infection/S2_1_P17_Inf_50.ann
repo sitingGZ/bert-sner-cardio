@@ -1,0 +1,14 @@
+T2	Condition 0 20	schlechte Compliance
+T4	Condition 67 76	Infektion
+T6	Medication 110 121	Urbasonstoß
+T7	TimeInfo 122 132	vor kurzem
+R2	has_TimeInfo arg1:T6 arg2:T7
+A1	Risk T6 increase_risk_factor
+T1	Temporal 105 132	Z.n. Urbasonstoß vor kurzem
+A2	Temporal_Element T1 past
+T3	Temporal 0 104	schlechte Compliance somit keine Reaktion auf frühe Symptome einer Infektion, verzögerte Arztvorstellung
+A3	Temporal_Element T3 present
+T5	Condition 78 104	verzögerte Arztvorstellung
+A4	Risk T5 increase_risk_factor
+A5	Risk T2 increase_risk_factor
+T8	Conclusion 21 76	somit keine Reaktion auf frühe Symptome einer Infektion

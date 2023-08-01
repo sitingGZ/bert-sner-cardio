@@ -1,0 +1,18 @@
+T1	TimeInfo 0 7	aktuell
+T3	Condition 20 38	Rejectiongeschehen
+T4	DiagLab 46 53	Biopsie
+T5	Condition 68 86	Humoralen Rejction
+T6	DiagLab 119 128	HLA Labor
+T7	Condition 129 151	Pan-HLA-DR-Reaktivität
+R1	has_TimeInfo arg1:T3 arg2:T1	
+A1	Risk T3 increase_symptom
+A2	Risk T5 increase_symptom
+T2	Conclusion 87 117	eher wenig Erfolg Versprechend
+T8	Temporal 0 53	aktuell ablaufendes Rejectiongeschehen in der Biopsie
+A4	Temporal_Element T8 present
+T9	Temporal 119 151	HLA Labor Pan-HLA-DR-Reaktivität
+A5	Temporal_Element T9 past_present
+T10	Temporal 55 117	Therapie der Humoralen Rejction eher wenig Erfolg Versprechend
+A6	Temporal_Element T10 present
+T11	Medication 55 63	Therapie
+A7	Risk T7 increase_risk_factor

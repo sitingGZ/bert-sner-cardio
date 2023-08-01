@@ -1,0 +1,16 @@
+T1	TimeInfo 15 27	postoperativ
+T2	Condition 28 31	HWI
+T4	Medication 64 66	IS
+T5	Condition 68 86	Infektanfälligkeit
+T6	Measure 112 122	ausgeprägt
+R1	has_TimeInfo arg1:T2 arg2:T1
+A2	Factuality T4 speculated
+A3	Factuality T5 speculated
+A4	Risk T2 increase_risk_factor
+T3	Condition 43 55	resp. Infekt
+A1	Factuality T3 speculated
+A5	Risk T3 increase_risk_factor
+T7	Conclusion 68 123	Infektanfälligkeit hierunter möglicherweise ausgeprägt?
+T8	Temporal 0 55	Bereits direkt postoperativ HWI und fragl. resp. Infekt
+A6	Temporal_Element T8 past
+A7	Risk T4 increase_risk_factor

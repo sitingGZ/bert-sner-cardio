@@ -1,0 +1,18 @@
+T2	Condition 29 35	Infekt
+T3	Condition 61 81	Infektkomplikationen
+T4	Condition 97 101	COPD
+A2	Factuality T2 negative
+A3	Factuality T3 negative
+A4	Factuality T4 negative
+T8	Temporal 0 35	Keine klinisches Zeichen für Infekt
+A8	Temporal_Element T8 present
+T9	Temporal 38 89	Bisher keine gehäuften Infektkomplikationen post Tx
+A9	Temporal_Element T9 past
+T10	Temporal 91 158	keine COPD oder sonstige Chron mit Infekt assoziierten Erkrankungen
+A10	Temporal_Element T10 past_present
+A11	Risk T4 decrease_risk_factor
+T5	Condition 116 158	Chron mit Infekt assoziierten Erkrankungen
+A5	Risk T5 decrease_risk_factor
+A6	Factuality T5 negative
+A12	Risk T3 decrease_risk_factor
+A13	Risk T2 decrease_symptom

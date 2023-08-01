@@ -1,0 +1,24 @@
+T1	Condition 24 30	Sepsis
+T2	LabValues 32 36	Krea
+T3	Measure 37 43	steigt
+T5	Condition 78 98	Klebsiellen-Nachweis
+T6	HealthState 117 121	gute
+T7	Process 122 130	FUnktion
+R1	has_Measure arg1:T2 arg2:T3
+R2	has_State arg1:T7 arg2:T6	
+A1	Factuality T1 speculated
+T4	Conclusion 0 30	Möglich im Rahmen einer Sepsis
+A2	Risk T2 increase_symptom
+T8	Other 52 59	auf ITS
+T9	Other 64 73	Intubiert
+A3	Risk T7 decrease_symptom
+A4	Risk T8 increase_risk_factor
+A5	Risk T9 increase_risk_factor
+T10	Temporal 32 46	Krea steigt an
+A6	Temporal_Element T10 past_present
+A7	Risk T1 increase_risk_factor
+T11	Temporal 48 98	Pat auf ITS und Intubiert mit Klebsiellen-Nachweis
+A8	Temporal_Element T11 present
+T12	Temporal 100 130	Zuvor aber immer gute FUnktion
+A9	Temporal_Element T12 past
+A10	Risk T5 increase_risk_factor

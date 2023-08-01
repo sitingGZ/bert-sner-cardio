@@ -1,0 +1,19 @@
+T1	Measure 0 12	schwankender
+T2	LabValues 13 25	Krea-Verlauf
+T4	Measure 38 57	progred. steigender
+T5	LabValues 58 66	Baseline
+T6	Condition 91 94	ANV
+T7	Condition 106 115	Pneumonie
+T9	Condition 144 160	Funktionsverlust
+R2	has_Measure arg1:T5 arg2:T4
+R4	has_Measure arg1:T2 arg2:T1	
+A1	Factuality T9 unlikely
+T3	Conclusion 116 182	insgesamt jedoch kompletter Funktionsverlust eher unwahrscheinlich
+A2	Risk T2 increase_symptom
+A3	Risk T5 increase_symptom
+A4	Risk T6 increase_risk_factor
+A5	Risk T7 increase_risk_factor
+T8	Temporal 0 67	schwankender Krea-Verlauf seit Tx mit progred. steigender Baseline,
+A6	Temporal_Element T8 past_present
+T10	Temporal 68 115	letzte Vorstellung mit ANV des Tx bei Pneumonie
+A7	Temporal_Element T10 past

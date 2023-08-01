@@ -1,0 +1,12 @@
+T1	LabValues 0 3	Crp
+T2	Measure 18 20	50
+T4	Condition 26 35	Urosepsis
+R1	has_Measure arg1:T1 arg2:T2
+A1	Risk T1 increase_symptom
+T3	Tx_low 36 49	kurz nach Ntx
+A2	Risk T4 increase_risk_factor
+T5	Temporal 0 20	Crp bereits knapp 50
+A3	Temporal_Element T5 present
+T6	Temporal 22 49	ez. Urosepsis kurz nach Ntx
+A4	Temporal_Element T6 past_present
+A5	Risk T3 increase_risk_factor

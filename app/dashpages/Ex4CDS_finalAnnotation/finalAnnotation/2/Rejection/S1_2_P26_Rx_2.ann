@@ -1,0 +1,8 @@
+T1	Medication 50 66	Immunsuppression
+T2	Conclusion 0 21	eher unwahrscheinlich
+T4	Measure 40 49	sehr viel
+R1	has_Measure arg1:T1 arg2:T4	
+A1	Risk T1 decrease_risk_factor
+T3	Medication 81 93	FSGS Schemas
+T5	Temporal 23 97	weil der Patient sehr viel Immunsuppression im Rahmen des FSGS Schemas hat
+A2	Temporal_Element T5 present

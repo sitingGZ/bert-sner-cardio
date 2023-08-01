@@ -1,0 +1,15 @@
+T1	Condition 5 8	HWI
+T2	TimeInfo 29 36	seit Tx
+T3	Condition 41 48	Problem
+T5	Medication 55 65	Antibiosen
+T6	TimeInfo 66 89	bei letzter Vorstellung
+T7	Condition 95 104	Pneumonie
+R1	has_TimeInfo arg1:T3 arg2:T2
+R2	has_TimeInfo arg1:T7 arg2:T6
+A1	Factuality T7 speculated
+A2	Risk T7 increase_symptom
+T4	Temporal 0 65	rez. HWI bereits bekannt und seit Tx ein Problem, rez. Antibiosen
+A3	Temporal_Element T4 past
+T8	Temporal 66 104	bei letzter Vorstellung V.a. Pneumonie
+A4	Temporal_Element T8 past
+A5	Risk T1 increase_risk_factor

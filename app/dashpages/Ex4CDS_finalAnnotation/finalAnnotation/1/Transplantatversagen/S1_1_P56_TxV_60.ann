@@ -1,0 +1,14 @@
+T1	Condition 0 10	Schlechtes
+T2	LabValues 11 20	Kreatinin
+T3	Measure 25 29	hohe
+T4	LabValues 30 40	Proteinure
+T5	LabValues 42 45	DSA
+T7	Condition 65 74	Rejection
+R1	has_State arg1:T2 arg2:T1
+R2	has_Measure arg1:T4 arg2:T3	
+A1	Risk T2 increase_symptom
+A2	Risk T4 increase_symptom
+A3	Risk T5 increase_risk_factor
+A4	Risk T7 increase_risk_factor
+T8	Temporal 0 75	Schlechtes Kreatinin und hohe Proteinure, DSA, aktuell zelulläre Rejection.
+A5	Temporal_Element T8 present

@@ -1,0 +1,46 @@
+T1	TimeInfo 3 13	vor 1 Jahr
+T2	Condition 23 34	Rejektionen
+T3	TimeInfo 35 59	im kurzfristigem Verlauf
+T4	Condition 61 70	Banff IIb
+T5	Condition 72 81	Banff IIA
+T6	Condition 83 91	Banff IB
+T7	DiagLab 117 121	NiBi
+T8	LabValues 165 168	DSA
+T13	LabValues 210 214	Krea
+T14	Measure 215 223	steigend
+T15	LabValues 225 227	PU
+T16	Measure 228 235	niedrig
+R1	has_Measure arg1:T13 arg2:T14
+R2	has_Measure arg1:T15 arg2:T16
+T18	Tx_middle 0 13	TX vor 1 Jahr
+T17	Tx_high 186 204	höheres Donoralter
+A1	ref_age T17 donor
+R3	has_TimeInfo arg1:T2 arg2:T3	
+A2	Risk T18 risk_factor
+A3	Risk T2 increase_risk_factor
+A4	Risk T4 increase_risk_factor
+T9	Temporal 0 14	TX vor 1 Jahr,
+A5	Temporal_Element T9 past
+T10	Temporal 15 155	seitdem Rejektionen im kurzfristigem Verlauf: Banff IIb, Banff IIA, Banff IB plus C4d Nachweis in der NiBi , intensivierte Therapie inkl. PP
+A6	Temporal_Element T10 past_present
+A7	Risk T5 increase_risk_factor
+A8	Risk T6 increase_risk_factor
+R4	has_State arg1:T7 arg2:T6	
+R5	has_State arg1:T7 arg2:T5	
+R6	has_State arg1:T7 arg2:T4	
+T11	Medication 124 146	intensivierte Therapie
+A9	Risk T11 decrease_risk_factor
+T19	Measure 169 184	Klasse I und II
+R7	has_Measure arg1:T8 arg2:T19	
+A10	Risk T8 increase_risk_factor
+A11	Risk T17 risk_factor
+T12	Condition 206 208	MM
+T20	Measure 208 209	4
+R8	has_Measure arg1:T12 arg2:T20	
+A12	Risk T12 increase_risk_factor
+A13	Risk T13 increase_symptom
+A14	Risk T15 decrease_symptom
+T21	Temporal 156 209;210 224	Nachweis DSA Klasse I und II, höheres Donoralter, MM4 Krea steigend,
+A15	Temporal_Element T21 past_present
+T22	Temporal 225 235	PU niedrig
+A16	Temporal_Element T22 present

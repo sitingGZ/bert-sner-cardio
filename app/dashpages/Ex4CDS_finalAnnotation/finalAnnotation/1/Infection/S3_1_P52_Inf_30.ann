@@ -1,0 +1,22 @@
+T1	LabValues 0 3	crp
+T2	HealthState 4 8	norm
+T3	LabValues 10 16	leukos
+T4	HealthState 17 21	norm
+T5	LabValues 31 34	EBV
+T6	Measure 35 38	neg
+T7	TimeInfo 39 48	vom 31.3.
+T8	Medication 68 84	Immunsuppression
+R1	has_Measure arg1:T5 arg2:T6
+R2	has_State arg1:T1 arg2:T2	
+R3	has_State arg1:T3 arg2:T4	
+R4	has_TimeInfo arg1:T5 arg2:T7	
+T9	LabValues 23 26	cmv
+R5	has_TimeInfo arg1:T9 arg2:T7	
+R6	has_Measure arg1:T9 arg2:T6	
+A1	Risk T1 decrease_symptom
+A2	Risk T3 decrease_symptom
+A3	Risk T9 decrease_symptom
+A4	Risk T5 decrease_symptom
+A5	Risk T8 increase_risk_factor
+T10	Temporal 0 48;49 84	crp norm, leukos norm, cmv und EBV neg vom 31.3. aber natürlich neu Immunsuppression
+A6	Temporal_Element T10 present

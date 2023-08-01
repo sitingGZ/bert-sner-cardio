@@ -1,0 +1,28 @@
+T1	TimeInfo 3 11	vor 5 J.
+T2	Medication 25 34	Sandimmun
+T3	Medication 35 42	Urbason
+T4	Medication 48 56	CellCept
+T5	HealthState 64 71	stabile
+T6	Process 72 83	Tx Funktion
+T7	Measure 57 63	500 mg
+T8	Measure 43 47	4 mg
+R1	has_Measure arg1:T3 arg2:T8	
+R2	has_Measure arg1:T4 arg2:T7	
+R3	has_State arg1:T6 arg2:T5	
+T9	Tx_middle 0 11	TX vor 5 J.
+A1	ref_age T9 patient
+A2	Risk T9 decrease_risk_factor
+T11	Temporal 0 10	TX vor 5 J
+A3	Temporal_Element T11 past
+T10	Condition 14 24	Mismatches
+T12	Measure 12 13	4
+R4	has_Measure arg1:T10 arg2:T12	
+A4	Risk T10 increase_risk_factor
+A5	Risk T2 risk_factor
+A6	Risk T3 decrease_risk_factor
+A7	Risk T4 risk_factor
+A8	Risk T6 decrease_symptom
+T13	Temporal 12 24;25 34;35 47;48 63	4-Mismatches Sandimmun Urbason 4 mg CellCept 500 mg
+A9	Temporal_Element T13 present
+T14	Temporal 64 83	stabile Tx Funktion
+A10	Temporal_Element T14 past_present

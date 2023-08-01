@@ -1,0 +1,15 @@
+T2	Condition 14 17	HWI
+T3	LabValues 45 48	CRP
+T4	Measure 49 55	max 35
+T6	Condition 94 105	Infektionen
+R2	has_Measure arg1:T3 arg2:T4
+A1	Factuality T6 negative
+A2	Risk T2 increase_risk_factor
+T1	Other 30 43	KH Aufenthalt
+A3	Risk T1 increase_risk_factor
+A4	Risk T3 increase_symptom
+A5	Risk T6 decrease_risk_factor
+T5	Temporal 0 55	stattgehabter HWI bei letztem KH Aufenthalt, CRP max 35
+A6	Temporal_Element T5 past
+T7	Other 126 161	da Pat. nicht in die Ambulanz kommt
+T8	Conclusion 57 124	Ansonsten keine Hinweise für rezdiv. Infektionen soweit beurteilbar

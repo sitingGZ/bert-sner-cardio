@@ -1,0 +1,24 @@
+T1	TimeInfo 0 7	akutell
+T2	HealthState 21 27	stabil
+T4	TimeInfo 48 73	in den nächsten 3 Monaten
+T6	Condition 112 114	Rx
+T7	TimeInfo 116 121	04/13
+R3	has_TimeInfo arg1:T2 arg2:T1	
+T3	Condition 157 164	Failure
+A1	Factuality T3 possible_future
+A2	Risk T2 decrease_symptom
+T5	Conclusion 29 73	auch für Progrnose in den nächsten 3 Monaten
+A3	Risk T6 increase_risk_factor
+T9	Conclusion 151 188	somit Failure nicht unwahrschehinlich
+T10	Measure 103 111	schwerer
+R1	has_Measure arg1:T6 arg2:T10	
+T8	Condition 122 131	BANFF IIa
+T11	Condition 132 150	humorale Rejektion
+R2	has_TimeInfo arg1:T8 arg2:T7	
+R4	has_TimeInfo arg1:T11 arg2:T7	
+T12	Temporal 98 150	Z.n. schwerer Rx, 04/13 BANFF IIa+humorale Rejektion
+A4	Temporal_Element T12 past
+T13	Temporal 0 27	akutell schein alles stabil
+A5	Temporal_Element T13 present
+T14	Temporal 29 73	auch für Progrnose in den nächsten 3 Monaten
+A6	Temporal_Element T14 future

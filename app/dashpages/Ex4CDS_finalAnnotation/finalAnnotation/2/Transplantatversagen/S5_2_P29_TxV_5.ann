@@ -1,0 +1,27 @@
+T1	Condition 0 9	Rejektion
+T2	Measure 28 38	reduzierte
+T3	Medication 39 41	IS
+T4	Conclusion 42 77	Risiko infektgetriggerter Rejektion
+T5	Measure 79 87	moderate
+T6	LabValues 88 90	PU
+T7	Condition 91 97	AKIN I
+T8	Condition 110 125	Infektgeschehen
+R1	has_Measure arg1:T3 arg2:T2
+R2	has_Measure arg1:T6 arg2:T5
+T9	Age_low 127 137	junge Pat.
+A1	Risk T1 increase_risk_factor
+T10	TimeInfo 14 26	kurz nach TX
+R3	has_TimeInfo arg1:T1 arg2:T10	
+A2	Risk T3 risk_factor
+A3	Risk T6 increase_symptom
+A4	Risk T7 increase_symptom
+A5	Risk T8 increase_risk_factor
+A6	Risk T9 decrease_risk_factor
+T12	Temporal 0 26	Rejektion nur kurz nach TX
+A7	Temporal_Element T12 past
+T13	Temporal 28 41	reduzierte IS
+A8	Temporal_Element T13 present
+T14	Temporal 79 90	moderate PU
+A9	Temporal_Element T14 present
+T15	Temporal 91 137	AKIN I im jetzigen Infektgeschehen, junge Pat.
+A10	Temporal_Element T15 present

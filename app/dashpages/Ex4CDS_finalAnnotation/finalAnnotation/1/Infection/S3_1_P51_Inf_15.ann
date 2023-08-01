@@ -1,0 +1,15 @@
+T1	Condition 17 32	Infektgeschehen
+T2	LabValues 34 37	crp
+T3	HealthState 38 42	norm
+T4	HealthState 82 123	geht anscheinend gesundheitlich subj. gut
+A1	Factuality T1 negative
+R1	has_State arg1:T2 arg2:T3	
+A2	Risk T2 decrease_symptom
+A3	Risk T1 decrease_symptom
+T5	HealthState 61 78	marathon gelaufen
+T6	Temporal 0 42	kein Hinweis auf Infektgeschehen, crp norm
+A4	Temporal_Element T6 present
+T7	Temporal 44 78	pat ist letzlich marathon gelaufen
+A5	Temporal_Element T7 past
+T8	Conclusion 82 123	geht anscheinend gesundheitlich subj. gut
+A6	Risk T5 decrease_risk_factor

@@ -1,0 +1,12 @@
+T1	Measure 22 28	Abfall
+T2	LabValues 33 37	eGFR
+R1	has_Measure arg1:T2 arg2:T1	
+T4	TimeInfo 38 45	aktuell
+R2	has_TimeInfo arg1:T2 arg2:T4	
+T3	Condition 5 21	zell. Rejektion.
+A1	Risk T3 increase_risk_factor
+A2	Risk T2 increase_symptom
+T5	Temporal 0 21	Z.n. zell. Rejektion.
+A3	Temporal_Element T5 past
+T6	Temporal 22 46	Abfall der eGFR aktuell.
+A4	Temporal_Element T6 present

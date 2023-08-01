@@ -1,0 +1,27 @@
+T1	Condition 8 24	Hirnstamminfarkt
+T2	Condition 29 39	Hemiparese
+T3	Condition 44 53	schlechte
+T4	Process 54 56	EF
+T5	Condition 58 82	Infekttiöse Komplikation
+T6	Condition 84 94	Pneuomonie
+T7	Condition 100 103	HWI
+T9	Condition 138 142	HWIs
+R1	has_Measure arg1:T4 arg2:T3
+T10	TimeInfo 143 171	bereits in der Vergangenheit
+A1	Temporal_Element T10 past
+R2	has_TimeInfo arg1:T9 arg2:T10	
+T11	TimeInfo 0 7	Aktuell
+R3	has_TimeInfo arg1:T1 arg2:T11	
+R4	has_TimeInfo arg1:T2 arg2:T11	
+T12	Conclusion 58 136	Infekttiöse Komplikation (Pneuomonie oder HWI) als Komplikation wahrscheinlich
+T13	Temporal 0 56	Aktuell Hirnstamminfarkt mit Hemiparese und schlechte EF
+A2	Temporal_Element T13 present
+T14	Temporal 138 171	HWIs bereits in der Vergangenheit
+A3	Temporal_Element T14 past
+A4	Risk T9 increase_risk_factor
+A5	Risk T1 increase_risk_factor
+A6	Risk T2 increase_risk_factor
+A7	Risk T3 increase_symptom
+A8	Factuality T5 possible_future
+A9	Factuality T6 possible_future
+A10	Factuality T7 possible_future

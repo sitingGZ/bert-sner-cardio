@@ -1,0 +1,51 @@
+T1	TimeInfo 0 6	1 Jahr
+T2	Medication 44 46	IS
+T3	Medication 51 54	CyA
+T4	Condition 61 64	BKV
+T5	Medication 75 78	MMF
+T6	Medication 94 98	mTOR
+T7	LabValues 103 107	Krea
+T8	Measure 108 115	Anstieg
+T9	LabValues 125 128	DSA
+T10	LabValues 135 139	Krea
+T11	Measure 140 159	sukzessive steigend
+T12	Condition 161 163	GE
+T13	Measure 164 170	unklar
+T14	LabValues 172 174	PU
+T15	Measure 179 184	1,4 g
+R1	has_Measure arg1:T7 arg2:T8
+R2	has_Measure arg1:T10 arg2:T11
+R3	has_Measure arg1:T12 arg2:T13
+R4	has_Measure arg1:T14 arg2:T15
+T16	Tx_middle 0 14	1 Jahr nach TX
+T17	Condition 16 26	Borderline
+A1	Risk T17 increase_risk_factor
+T18	TimeInfo 27 36	Frühphase
+R5	has_TimeInfo arg1:T17 arg2:T18	
+A2	Risk T2 decrease_risk_factor
+A3	Risk T3 increase_risk_factor
+A4	Risk T4 increase_risk_factor
+T19	Measure 65 74	Reduktion
+R6	has_Measure arg1:T5 arg2:T19	
+A5	Risk T5 increase_risk_factor
+T20	Temporal 0 14	1 Jahr nach TX
+A6	Temporal_Element T20 present
+T21	Temporal 16 36	Borderline Frühphase
+A7	Temporal_Element T21 past
+T22	Temporal 37 78;79 115	triple IS mit CyA, nach BKV Reduktion MMF Umstellung auf mTOR bei Krea Anstieg
+A8	Temporal_Element T22 past_present
+A9	Risk T6 increase_risk_factor
+A10	Risk T7 increase_symptom
+A11	Risk T9 increase_risk_factor
+A12	Risk T10 increase_symptom
+A13	Risk T14 increase_symptom
+T23	Temporal 116 134	Nachweis DSA (neu)
+A14	Temporal_Element T23 present
+T24	Temporal 135 160	Krea sukzessive steigend,
+A15	Temporal_Element T24 past_present
+A16	Factuality T12 speculated
+T25	Temporal 172 184	PU bei 1,4 g
+A17	Temporal_Element T25 present
+A18	Risk T16 risk_factor
+T26	Measure 37 43	triple
+R7	has_Measure arg1:T3 arg2:T26	

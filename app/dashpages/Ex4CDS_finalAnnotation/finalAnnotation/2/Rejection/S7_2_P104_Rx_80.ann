@@ -1,0 +1,8 @@
+T1	LabValues 0 2	PU
+T2	Condition 4 11	Infekte
+T3	Condition 13 33	Transplantatversagen
+A1	Risk T1 increase_symptom
+A2	Risk T2 symptom
+A3	Risk T3 increase_symptom
+T4	Temporal 0 33	PU, Infekte, Transplantatversagen
+A4	Temporal_Element T4 past_present

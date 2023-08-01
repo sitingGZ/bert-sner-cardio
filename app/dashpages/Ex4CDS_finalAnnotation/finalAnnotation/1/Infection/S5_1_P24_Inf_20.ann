@@ -1,0 +1,17 @@
+T2	Medication 27 29	IS
+T3	Condition 50 70	Infektkomplikationen
+A1	Factuality T3 negative
+T5	Age_middle 71 86	mittleres Alter
+T1	Tx_low 5 18	Frühphase NTX
+A2	Risk T1 increase_risk_factor
+T4	Measure 20 26	triple
+R1	has_Measure arg1:T2 arg2:T4	
+A3	Risk T2 increase_risk_factor
+A4	Risk T3 decrease_risk_factor
+A5	Risk T5 risk_factor
+T6	Temporal 0 29	noch Frühphase NTX, triple IS
+A6	Temporal_Element T6 present
+T7	Temporal 30 70	keine vorangegangen Infektkomplikationen
+A7	Temporal_Element T7 past
+T8	Temporal 71 86	mittleres Alter
+A8	Temporal_Element T8 present

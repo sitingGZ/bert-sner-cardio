@@ -1,0 +1,8 @@
+T2	Condition 9 15	Infekt
+T3	Measure 20 30	steigendes
+T4	LabValues 31 34	CRP
+R1	has_Measure arg1:T4 arg2:T3
+A1	Risk T2 increase_symptom
+A2	Risk T4 increase_symptom
+T1	Temporal 0 34	Florider Infekt und steigendes CRP
+A3	Temporal_Element T1 present

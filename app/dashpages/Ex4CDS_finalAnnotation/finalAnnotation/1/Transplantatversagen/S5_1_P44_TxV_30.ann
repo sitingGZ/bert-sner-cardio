@@ -1,0 +1,29 @@
+T1	Condition 11 20	Rejektion
+T5	Process 104 121	Funktionsaufnahme
+T6	LabValues 128 131	HLA
+T8	Medication 144 146	IS
+T3	Condition 92 103	keine volle
+R1	has_State arg1:T5 arg2:T3	
+T2	Condition 25 28	ATN
+T7	DiagLab 29 33	NiBi
+R3	has_State arg1:T7 arg2:T2	
+R4	has_State arg1:T7 arg2:T1	
+T9	Other 37 59	stationären Aufenthalt
+T10	Tx_low 78 91	Frühphase NTX
+A1	Risk T10 decrease_risk_factor
+A2	Risk T5 increase_symptom
+A3	Risk T6 decrease_risk_factor
+T11	Measure 138 143	duale
+R5	has_Measure arg1:T8 arg2:T11	
+A4	Risk T8 increase_risk_factor
+A5	Risk T1 increase_risk_factor
+A6	Risk T2 increase_risk_factor
+T12	Temporal 0 77	Borderline Rejektion und ATN NiBi im stationären Aufenthalt nach erfolgter TX
+A7	Temporal_Element T12 past
+T13	Temporal 92 121	keine volle Funktionsaufnahme
+A8	Temporal_Element T13 past_present
+T14	Temporal 78 91	Frühphase NTX
+A9	Temporal_Element T14 present
+T15	Temporal 122 158	keine HLA, aber duale IS i.R. Studie
+A10	Temporal_Element T15 present
+A11	Factuality T6 negative

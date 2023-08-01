@@ -1,0 +1,18 @@
+T1	LabValues 0 4	Krea
+T2	Measure 14 29	erhöhtem Niveau
+T3	Condition 72 78	Infekt
+T4	HealthState 80 84	gute
+T5	Process 85 105	baseline Tx Funktion
+T7	Measure 118 125	geringe
+T8	LabValues 126 128	PU
+R1	has_Measure arg1:T1 arg2:T2
+R2	has_State arg1:T5 arg2:T4	
+R3	has_Measure arg1:T8 arg2:T7	
+A1	Risk T1 symptom
+T6	Measure 31 49	fällt aber derzeit
+R4	has_Measure arg1:T1 arg2:T6	
+A2	Risk T3 increase_risk_factor
+A3	Risk T5 decrease_symptom
+A4	Risk T8 decrease_symptom
+T9	Temporal 0 128	Krea noch auf erhöhtem Niveau, fällt aber derzeit, offensichtlich neuer Infekt, gute baseline Tx Funktion, eigentlich geringe PU
+A5	Temporal_Element T9 present

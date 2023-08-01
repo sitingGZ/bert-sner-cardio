@@ -1,0 +1,33 @@
+T1	TimeInfo 3 11	vor 5 J.
+T2	LabValues 19 23	Krea
+T3	Measure 24 27	1,3
+T4	LabValues 48 50	HS
+T5	Measure 51 60	260 mg/dl
+T7	HealthState 98 104	stabil
+T8	Process 106 108	RR
+T9	TimeInfo 109 116	aktuell
+T10	Condition 117 129	viel zu hoch
+R1	has_Measure arg1:T2 arg2:T3
+R2	has_Measure arg1:T4 arg2:T5
+T11	Measure 37 46	3,5 mg/dl
+R4	has_Measure arg1:T2 arg2:T11	
+T6	Process 62 76	Nierenfunktion
+R5	has_State arg1:T6 arg2:T7	
+R6	has_TimeInfo arg1:T8 arg2:T9	
+T12	Tx_middle 0 11	Tx vor 5 J.
+R3	has_State arg1:T8 arg2:T10	
+A1	Risk T12 risk_factor
+A2	Risk T2 increase_symptom
+A3	Risk T4 increase_symptom
+A4	Risk T6 symptom
+A5	Risk T8 increase_symptom
+T13	Temporal 0 10	Tx vor 5 J
+A6	Temporal_Element T13 past
+T14	Temporal 12 28	Bestes Krea 1,3,
+A7	Temporal_Element T14 past
+T15	Temporal 29 47;48 61	aktuell 3,5 mg/dl. HS 260 mg/dl.
+A8	Temporal_Element T15 present
+T16	Temporal 62 105	Nierenfunktion auf niedrigem Niveau stabil.
+A9	Temporal_Element T16 past_present
+T17	Temporal 106 130	RR aktuell viel zu hoch.
+A10	Temporal_Element T17 present

@@ -1,0 +1,16 @@
+T1	HealthState 0 8	stabiler
+T2	Process 9 19	Tx Verlauf
+T3	Condition 27 35	Probleme
+T4	LabValues 44 62	Spiegeleinstellung
+T5	Medication 67 75	Immunsup
+T6	LabValues 82 85	DSA
+A1	Factuality T3 negative
+R1	has_State arg1:T2 arg2:T1	
+A2	Risk T2 decrease_symptom
+A3	Factuality T6 negative
+A4	Risk T6 decrease_risk_factor
+A5	Risk T3 decrease_symptom
+T7	Temporal 0 75	stabiler Tx Verlauf, keine Probleme bei der Spiegeleinstellung der Immunsup
+A6	Temporal_Element T7 past_present
+T8	Temporal 76 85	keine DSA
+A7	Temporal_Element T8 present

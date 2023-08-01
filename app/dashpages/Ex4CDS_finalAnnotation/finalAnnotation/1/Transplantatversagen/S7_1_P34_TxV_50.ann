@@ -1,0 +1,26 @@
+T1	Measure 0 10	steigendes
+T2	LabValues 11 15	Krea
+T3	Condition 31 42	Herzinsuff.
+T5	Condition 64 69	Ödeme
+T6	LabValues 79 82	DSA
+T12	Condition 173 181	Mismatch
+R1	has_Measure arg1:T2 arg2:T1
+T13	Age_low 147 161	junger Spender
+A1	ref_age T13 donor
+A2	Risk T2 increase_symptom
+A3	Risk T3 increase_risk_factor
+T4	Condition 44 59	Gewichtszunahme
+A4	Risk T4 increase_symptom
+A5	Risk T5 increase_symptom
+A6	Risk T6 increase_risk_factor
+T7	Condition 84 118	Rekurrenz der Grunderkrankung FSGS
+A7	Risk T7 increase_risk_factor
+T8	Conclusion 125 142	(mittleres Risiko
+A8	Risk T13 decrease_risk_factor
+T9	Measure 163 172	moderates
+R2	has_Measure arg1:T12 arg2:T9	
+A9	Risk T12 decrease_risk_factor
+T10	Temporal 0 69;70 124	steigendes Krea über die Zeit, Herzinsuff., Gewichtszunahme und Ödeme bekannte DSA, Rekurrenz der Grunderkrankung FSGS im Tx
+A10	Temporal_Element T10 past_present
+T11	Temporal 144 182	da junger Spender, moderates Mismatch)
+A11	Temporal_Element T11 present

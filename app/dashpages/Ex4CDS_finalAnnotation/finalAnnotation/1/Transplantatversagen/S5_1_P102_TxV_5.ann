@@ -1,0 +1,51 @@
+T1	TimeInfo 0 6	1 Jahr
+T2	Medication 37 46	triple IS
+T3	Medication 51 54	CyA
+T4	Condition 61 64	BKV
+T5	Medication 75 78	MMF
+T6	Medication 94 98	mTOR
+T7	LabValues 103 107	Krea
+T8	Measure 108 115	Anstieg
+T9	LabValues 125 128	DSA
+T10	LabValues 135 139	Krea
+T11	Measure 151 159	steigend
+T12	Measure 171 183	kontrolliert
+T13	Measure 188 195	2 mg/dl
+T15	LabValues 197 199	PU
+T16	Measure 204 209	1,4 g
+T17	HealthState 211 217	stabil
+R1	has_Measure arg1:T7 arg2:T8
+R2	has_Measure arg1:T10 arg2:T11
+R3	has_Measure arg1:T10 arg2:T12
+R4	has_Measure arg1:T15 arg2:T16
+T18	Tx_middle 0 14	1 Jahr nach TX
+R5	has_Measure arg1:T10 arg2:T13	
+R6	has_State arg1:T15 arg2:T17	
+A1	Risk T18 risk_factor
+T14	Condition 16 26	Borderline
+T20	Temporal 16 36	Borderline Frühphase
+A2	Temporal_Element T20 past
+A3	Risk T14 increase_risk_factor
+T21	Temporal 0 14	1 Jahr nach TX
+A4	Temporal_Element T21 present
+T22	Temporal 37 55	triple IS mit CyA,
+A5	Temporal_Element T22 present
+A6	Risk T2 decrease_risk_factor
+A7	Risk T3 risk_factor
+T23	Measure 65 74	Reduktion
+R8	has_Measure arg1:T5 arg2:T23	
+A8	Risk T5 increase_risk_factor
+A9	Risk T4 increase_risk_factor
+A10	Risk T7 increase_symptom
+A11	Risk T6 risk_factor
+A12	Risk T9 increase_risk_factor
+A13	Risk T10 increase_symptom
+A14	Risk T15 increase_symptom
+T24	Temporal 135 195	Krea sukzessive steigend, aber noch kontrolliert bei 2 mg/dl
+A15	Temporal_Element T24 past_present
+T25	Temporal 197 218	PU bei 1,4 g (stabil)
+A16	Temporal_Element T25 present
+T26	Temporal 56 78;79 115	nach BKV Reduktion MMF Umstellung auf mTOR bei Krea Anstieg
+A17	Temporal_Element T26 past_present
+T27	Temporal 116 134	Nachweis DSA (neu)
+A18	Temporal_Element T27 present

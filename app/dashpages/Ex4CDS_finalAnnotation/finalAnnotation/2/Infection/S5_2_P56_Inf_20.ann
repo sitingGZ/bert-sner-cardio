@@ -1,0 +1,32 @@
+T2	Condition 9 12	HWI
+T4	LabValues 50 53	CRP
+T5	Condition 78 81	ANV
+T6	LabValues 83 85	PU
+T7	LabValues 87 90	DSA
+T10	LabValues 131 134	C4D
+T11	Measure 135 138	pos
+T12	Condition 162 171	Rejektion
+T15	Condition 203 219	Infektionsrisiko
+R1	has_Measure arg1:T10 arg2:T11
+T1	Condition 36 48	Infektniveau
+A1	Factuality T1 minor
+A2	Factuality T15 possible_future
+A3	Risk T2 increase_risk_factor
+A4	Risk T1 decrease_symptom
+A5	Risk T4 decrease_symptom
+A6	Risk T5 increase_symptom
+A7	Risk T6 symptom
+A8	Risk T7 symptom
+T3	Condition 95 129	zellulärer und humoraler Rejektion
+A9	Risk T3 increase_risk_factor
+A10	Risk T10 symptom
+T8	Conclusion 140 234	infolge bei aktueller Rejektion Intensivierung IS mit erhöhtem Infektionsrisiko wahrscheinlich
+T9	Medication 172 189	Intensivierung IS
+A11	Risk T9 increase_risk_factor
+T13	Temporal 0 54	rezidiv. HWI, aber bisher niedriges Infektniveau (CRP)
+A12	Temporal_Element T13 past_present
+T14	Other 64 73	stationär
+A13	Risk T14 increase_risk_factor
+T16	Temporal 56 139	aktuell stationär bei ANV, PU, DSA bei zellulärer und humoraler Rejektion, C4D pos,
+A14	Temporal_Element T16 present
+A15	Risk T12 increase_risk_factor

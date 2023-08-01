@@ -1,0 +1,18 @@
+T1	HealthState 0 5	guter
+T2	Process 6 21	Langzeitverlauf
+T3	Condition 37 48	Problematik
+T4	Condition 61 64	D.m
+T5	Condition 73 86	Infektneigung
+T6	Condition 125 145	Pankreaszysteninfekt
+A1	Factuality T3 negative
+R1	has_State arg1:T2 arg2:T1	
+A2	Risk T2 decrease_risk_factor
+A3	Risk T3 decrease_risk_factor
+A4	Risk T4 increase_risk_factor
+A5	Risk T6 increase_risk_factor
+T7	Conclusion 50 98	Einzig der D.m. könnte Infektneigung begünstigen
+T8	Temporal 0 49	guter Langzeitverlauf ohne bisherige Problematik.
+A6	Temporal_Element T8 past_present
+T9	Temporal 100 146	aber bisher klinisch nur Pankreaszysteninfekt.
+A7	Temporal_Element T9 past
+T10	DiagLab 112 120	klinisch

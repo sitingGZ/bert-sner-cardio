@@ -1,0 +1,24 @@
+T1	LabValues 0 9	Kreatinin
+T2	TimeInfo 10 24	seit 3 Monaten
+T3	HealthState 25 31	stabil
+T4	Measure 36 39	1,5
+T5	Condition 45 56	Progredienz
+T6	DiagLab 57 61	Sono
+T7	HealthState 70 81	unauffällig
+T8	TimeInfo 103 112	1,5 Jahre
+A1	Factuality T5 negative
+T9	Tx_middle 82 116	Transplantation erst 1,5 Jahre her
+R1	has_TimeInfo arg1:T1 arg2:T2	
+R2	has_State arg1:T1 arg2:T3	
+R3	has_Measure arg1:T1 arg2:T4	
+R4	has_State arg1:T6 arg2:T7	
+A2	Risk T1 decrease_symptom
+A3	Risk T5 decrease_symptom
+A4	Risk T6 decrease_symptom
+A5	Risk T9 decrease_risk_factor
+T10	Temporal 0 56	Kreatinin seit 3 Monaten stabil bei 1,5 ohne Progredienz
+A6	Temporal_Element T10 past_present
+T11	Temporal 57 81	Sono zuletzt unauffällig
+A7	Temporal_Element T11 past
+T12	Temporal 82 116	Transplantation erst 1,5 Jahre her
+A8	Temporal_Element T12 past

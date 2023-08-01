@@ -1,0 +1,8 @@
+T2	Condition 36 47	Tx Versagen
+T3	Condition 71 80	Rejektion
+A1	Risk T2 increase_symptom
+T1	Conclusion 49 99	als Ursache kann eine Rejektion in Betracht kommen
+T4	Medication 0 31	Umstellung der Immunsuppressiva
+A2	Risk T4 increase_risk_factor
+T5	Temporal 0 47	Umstellung der Immunsuppressiva mit Tx Versagen
+A3	Temporal_Element T5 past_present

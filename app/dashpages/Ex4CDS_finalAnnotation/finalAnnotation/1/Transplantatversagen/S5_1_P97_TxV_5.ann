@@ -1,0 +1,50 @@
+T1	TimeInfo 0 3	26J
+T3	Condition 45 56	Rejektionen
+T4	DiagLab 57 61	NiBi
+T5	TimeInfo 62 74	vor 7 Jahren
+T6	Condition 76 80	FSGS
+T8	LabValues 140 144	Krea
+T9	Measure 145 148	1,6
+T10	Measure 150 157	geringe
+T11	LabValues 158 160	PU
+A1	Factuality T3 negative
+T14	Tx_high 0 12	26J nach NTX
+T2	Process 30 37	Verlauf
+T15	HealthState 21 29	stabiler
+R1	has_State arg1:T2 arg2:T15	
+R2	has_TimeInfo arg1:T4 arg2:T5	
+R3	has_Measure arg1:T8 arg2:T9	
+R4	has_Measure arg1:T11 arg2:T10	
+T7	Medication 88 90	IS
+T12	Medication 137 139	IS
+A2	Risk T14 increase_risk_factor
+A3	Risk T2 decrease_symptom
+A4	Risk T3 decrease_risk_factor
+A5	Risk T6 increase_risk_factor
+R5	has_State arg1:T4 arg2:T6	
+A6	Risk T7 decrease_risk_factor
+T13	Measure 81 87	Triple
+R6	has_Measure arg1:T7 arg2:T13	
+T16	Condition 99 106	ED PTLD
+A7	Risk T16 symptom
+T18	Measure 127 136	Reduktion
+R7	has_Measure arg1:T12 arg2:T18	
+A8	Risk T12 increase_risk_factor
+A9	Risk T8 decrease_symptom
+A10	Risk T11 decrease_symptom
+T19	LabValues 167 170	DSA
+A11	Factuality T19 speculated
+A12	Risk T19 increase_risk_factor
+T20	Measure 171 173	DQ
+R8	has_Measure arg1:T19 arg2:T20	
+T21	Conclusion 174 228	trotz langer TX Zeit Einschätzung für niedriges Risiko
+T22	Temporal 0 56	26J nach NTX, bisher stabiler Verlauf, keine Rejektionen
+A13	Temporal_Element T22 past_present
+T23	Temporal 57 80	NiBi vor 7 Jahren: FSGS
+A14	Temporal_Element T23 past
+T24	Temporal 81 90;91 106	Triple IS Problem ED PTLD
+A15	Temporal_Element T24 present
+T25	Temporal 108 139	Therapie und vorr. Reduktion IS
+A16	Temporal_Element T25 present
+T26	Temporal 140 173	Krea 1,6, geringe PU, V.a. DSA DQ
+A17	Temporal_Element T26 present

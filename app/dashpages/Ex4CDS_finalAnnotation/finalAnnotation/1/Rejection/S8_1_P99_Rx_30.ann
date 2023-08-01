@@ -1,0 +1,17 @@
+T1	LabValues 0 3	DSA
+T2	Measure 5 12	Zunahme
+T3	LabValues 13 24	Proteinurie
+T4	TimeInfo 37 44	neulich
+T5	DiagLab 45 52	Biopsie
+T6	Condition 58 67	Rejektion
+R1	has_Measure arg1:T3 arg2:T2
+R2	has_TimeInfo arg1:T5 arg2:T4
+A1	Factuality T6 negative
+R3	has_TimeInfo arg1:T6 arg2:T4	
+A2	Risk T1 increase_risk_factor
+A3	Risk T3 increase_symptom
+A4	Risk T6 decrease_symptom
+T7	Temporal 0 24	DSA, Zunahme Proteinurie
+A5	Temporal_Element T7 past_present
+T8	Temporal 26 67	allerdings neulich Biopsie ohne Rejektion
+A6	Temporal_Element T8 past

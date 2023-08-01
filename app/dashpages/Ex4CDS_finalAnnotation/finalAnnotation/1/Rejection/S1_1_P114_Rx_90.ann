@@ -1,0 +1,15 @@
+T1	LabValues 9 12	DSA
+T2	Measure 14 18	Hohe
+T3	LabValues 19 31	Proeteinurie
+T4	DiagLab 49 56	Biopsie
+R1	has_Measure arg1:T3 arg2:T2
+A1	Risk T1 increase_risk_factor
+A2	Risk T3 increase_symptom
+T5	Temporal 0 12	Bekannte DSA
+A3	Temporal_Element T5 past_present
+A4	Factuality T4 negative
+A5	Risk T4 symptom
+T6	Temporal 14 31	Hohe Proeteinurie
+A6	Temporal_Element T6 present
+T7	Temporal 36 56	bisher keine Biopsie
+A7	Temporal_Element T7 past_present

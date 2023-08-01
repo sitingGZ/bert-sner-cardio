@@ -1,0 +1,12 @@
+T1	Measure 0 8	low Dose
+T2	Medication 9 12	CNI
+T4	Medication 47 50	MMF
+R1	has_Measure arg1:T2 arg2:T1	
+T3	Medication 13 24	Steroidfrei
+A1	Risk T3 increase_risk_factor
+T5	Measure 33 42	Reduktion
+R2	has_Measure arg1:T4 arg2:T5	
+A2	Risk T2 increase_risk_factor
+A3	Risk T4 increase_risk_factor
+T6	Temporal 0 24;25 50	low Dose CNI Steroidfrei Weitere Reduktion von MMF
+A4	Temporal_Element T6 present

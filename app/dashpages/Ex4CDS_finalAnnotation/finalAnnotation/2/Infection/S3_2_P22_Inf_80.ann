@@ -1,0 +1,11 @@
+T1	LabValues 0 11	Leukozytose
+T2	LabValues 13 16	CRP
+T3	Condition 17 23	Erhöht
+T4	Condition 44 53	Infektion
+R2	has_State arg1:T2 arg2:T3
+A1	Risk T1 increase_symptom
+A2	Risk T2 increase_symptom
+A3	Risk T4 increase_symptom
+T6	Temporal 0 53	Leukozytose, CRP Erhöht, Klinik spricht für Infektion
+A4	Temporal_Element T6 present
+T5	Conclusion 25 53	Klinik spricht für Infektion

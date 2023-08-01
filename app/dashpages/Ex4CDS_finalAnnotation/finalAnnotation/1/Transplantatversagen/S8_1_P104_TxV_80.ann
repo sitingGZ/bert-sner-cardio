@@ -1,0 +1,13 @@
+T1	LabValues 0 3	GFR
+T2	Measure 13 22	15 ml/min
+T3	Measure 24 33	steigende
+T4	Condition 34 45	Infektwerte
+T7	Condition 64 77	graft failure
+R3	has_Measure arg1:T4 arg2:T3
+R1	has_Measure arg1:T1 arg2:T2	
+A1	Factuality T7 possible_future
+A2	Risk T1 increase_symptom
+A3	Risk T4 increase_risk_factor
+T5	Conclusion 47 77	hohes Risiko für graft failure
+T6	Temporal 0 46	GFR bereits <15 ml/min, steigende Infektwerte,
+A4	Temporal_Element T6 present

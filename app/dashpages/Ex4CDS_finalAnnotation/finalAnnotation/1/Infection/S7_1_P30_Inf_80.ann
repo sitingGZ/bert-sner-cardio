@@ -1,0 +1,27 @@
+T1	LabValues 0 4	Krea
+T2	Measure 5 12	Anstieg
+T3	LabValues 13 25	Leukozyturie
+T4	Condition 29 32	HWI
+T6	Condition 60 67	Infekte
+T8	Condition 116 131	Co-Morbiditäten
+T9	Condition 133 143	Adipositas
+R1	has_Measure arg1:T1 arg2:T2
+A1	Factuality T4 speculated
+T5	TimeInfo 68 88	in der Vorgeschichte
+R2	has_TimeInfo arg1:T6 arg2:T5	
+A2	Risk T1 increase_symptom
+A3	Risk T3 increase_symptom
+T7	TimeInfo 33 40	aktuell
+A4	Risk T4 increase_symptom
+A5	Risk T6 increase_risk_factor
+T10	Temporal 0 55	Krea Anstieg Leukozyturie -> HWI aktuell wahrscheinlich
+A6	Temporal_Element T10 present
+T11	Temporal 56 88	rez Infekte in der Vorgeschichte
+A7	Temporal_Element T11 past
+T12	Temporal 89 143	multiple verkomplizierende Co-Morbiditäten, Adipositas
+A8	Temporal_Element T12 past_present
+A9	Risk T8 increase_risk_factor
+A10	Risk T9 increase_risk_factor
+T13	Measure 89 97	multiple
+R3	has_Measure arg1:T8 arg2:T13	
+R4	has_TimeInfo arg1:T4 arg2:T7	

@@ -1,0 +1,20 @@
+T1	Process 0 11	Tx Funktion
+T2	HealthState 15 42	stabilen Schwankungsbereich
+T3	TimeInfo 43 66	in den letzten 7 Jahren
+T4	HealthState 88 98	sehr gutes
+T5	LabValues 99 108	Kreatinin
+T6	DiagLab 109 113	Sono
+R1	has_State arg1:T1 arg2:T2	
+R2	has_TimeInfo arg1:T1 arg2:T3	
+R3	has_State arg1:T5 arg2:T4	
+A1	Risk T1 decrease_symptom
+A2	Risk T5 decrease_symptom
+T7	HealthState 122 125	opB
+R4	has_State arg1:T6 arg2:T7	
+A3	Risk T6 decrease_symptom
+T8	Temporal 0 67	Tx Funktion im stabilen Schwankungsbereich in den letzten 7 Jahren,
+A4	Temporal_Element T8 past_present
+T9	Temporal 68 108	zum Zensurzeitpunkt sehr gutes Kreatinin
+A5	Temporal_Element T9 present
+T10	Temporal 109 125	Sono zuletzt opB
+A6	Temporal_Element T10 past

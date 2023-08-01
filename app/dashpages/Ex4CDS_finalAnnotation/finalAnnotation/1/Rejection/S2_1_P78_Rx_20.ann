@@ -1,0 +1,16 @@
+T1	TimeInfo 4 14	vor kurzem
+T4	Condition 53 62	Rejektion
+A1	Factuality T4 unlikely
+T5	Condition 39 46	CNI-Tox
+A2	Risk T5 decrease_symptom
+T2	Condition 20 34	Rezidiv der GE
+A3	Factuality T2 speculated
+A4	Risk T2 decrease_symptom
+R1	has_TimeInfo arg1:T2 arg2:T1	
+R2	has_TimeInfo arg1:T5 arg2:T1	
+A5	Factuality T5 speculated
+T3	Temporal 0 46	bei vor kurzem V.a. Rezidiv der GE und CNI-Tox
+A6	Temporal_Element T3 past
+T6	Conclusion 47 84	jetzt Rejektion eher unwahrscheinlich
+T7	Temporal 47 84	jetzt Rejektion eher unwahrscheinlich
+A7	Temporal_Element T7 present

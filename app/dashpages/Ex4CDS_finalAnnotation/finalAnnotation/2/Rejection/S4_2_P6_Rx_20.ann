@@ -1,0 +1,23 @@
+T1	TimeInfo 3 15	vor 6 Jahren
+T3	LabValues 31 34	DSA
+T4	LabValues 36 40	Krea
+T5	Measure 49 60	progredient
+T6	Measure 65 68	1,7
+T7	Measure 70 80	zunehmende
+T8	LabValues 81 91	Proteiurie
+R1	has_Measure arg1:T4 arg2:T5
+R2	has_Measure arg1:T4 arg2:T6
+T9	Tx_high 0 15	Tx vor 6 Jahren
+R3	has_Measure arg1:T8 arg2:T7	
+A1	Risk T9 decrease_risk_factor
+T2	Condition 18 20	MM
+T10	Measure 17 18	3
+R4	has_Measure arg1:T2 arg2:T10	
+A2	Risk T2 risk_factor
+A3	Risk T3 increase_risk_factor
+A4	Risk T4 increase_symptom
+A5	Risk T8 increase_symptom
+T11	Temporal 0 15	Tx vor 6 Jahren
+A6	Temporal_Element T11 past
+T12	Temporal 17 91	3MM, bekannte DSA, Krea langsam progredient auf 1,7; zunehmende Proteiurie
+A7	Temporal_Element T12 past_present

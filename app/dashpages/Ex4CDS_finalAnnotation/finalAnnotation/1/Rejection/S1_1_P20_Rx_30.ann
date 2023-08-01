@@ -1,0 +1,21 @@
+T1	TimeInfo 8 21	Vergangenheit
+T2	Condition 73 89	Verschlechterung
+T3	Condition 124 130	Infekt
+T5	Process 142 144	EF
+T6	Condition 146 157	Karidorenal
+T7	Condition 33 42	Rejection
+R2	has_TimeInfo arg1:T7 arg2:T1	
+T4	Condition 132 141	Schlechte
+R1	has_State arg1:T5 arg2:T4	
+T8	Process 94 105	Tx Funktion
+R3	has_State arg1:T8 arg2:T2	
+A1	Risk T7 increase_risk_factor
+T11	Conclusion 44 122	Aktuell anderer Grund für Tx Verschlechterung der Tx Funktion wahrscheinlicher
+A2	Risk T2 increase_symptom
+A3	Risk T3 decrease_symptom
+A4	Risk T4 decrease_symptom
+A5	Risk T6 decrease_symptom
+T12	Temporal 1 43	in der Vergangenheit Borderline Rejection.
+A6	Temporal_Element T12 past
+T13	Temporal 44 158	Aktuell anderer Grund für Tx Verschlechterung der Tx Funktion wahrscheinlicher (Infekt, Schlechte EF/ Karidorenal)
+A7	Temporal_Element T13 present

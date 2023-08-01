@@ -1,0 +1,20 @@
+T1	Measure 0 5	hohes
+T2	Measure 20 37	verkomplizierende
+T3	Condition 38 45	Co-Morb
+T4	Condition 48 58	Diab. mell
+T5	Condition 61 65	pAVK
+T6	Condition 67 71	HWIs
+T7	Condition 76 85	Urosepsis
+R1	has_Measure arg1:T3 arg2:T2
+T8	Condition 6 18	Infektniveau
+R2	has_Measure arg1:T8 arg2:T1	
+A1	Risk T8 increase_symptom
+A2	Risk T3 increase_risk_factor
+A3	Risk T4 increase_risk_factor
+A4	Risk T5 increase_risk_factor
+A5	Risk T6 increase_risk_factor
+A6	Risk T7 increase_risk_factor
+T9	Temporal 0 19	hohes Infektniveau,
+A7	Temporal_Element T9 present
+T10	Temporal 20 86	verkomplizierende Co-Morb. (Diab. mell , pAVK, HWIs und Urosepsis)
+A8	Temporal_Element T10 past_present

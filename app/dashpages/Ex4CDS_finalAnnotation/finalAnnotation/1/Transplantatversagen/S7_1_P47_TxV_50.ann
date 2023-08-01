@@ -1,0 +1,19 @@
+T1	Measure 7 22	leicht fallende
+T3	Measure 80 90	deutlicher
+T4	LabValues 91 95	Krea
+T5	Measure 96 103	Anstieg
+T7	Condition 115 130	Infektgeschehen
+R2	has_Measure arg1:T4 arg2:T5
+T8	LabValues 23 38	Retentionswerte
+R4	has_Measure arg1:T8 arg2:T1	
+T9	TimeInfo 0 6	atuell
+R5	has_TimeInfo arg1:T8 arg2:T9	
+A1	Risk T8 decrease_symptom
+A3	Risk T4 increase_symptom
+A4	Risk T7 increase_risk_factor
+T10	Temporal 72 130	zuletzt deutlicher Krea Anstieg bei akuten Infektgeschehen
+A5	Temporal_Element T10 past_present
+T11	Temporal 0 71	atuell leicht fallende Retentionswerte, aber insgesamt erhöhtes Niveau,
+A6	Temporal_Element T11 present
+T2	Measure 55 70	erhöhtes Niveau
+R1	has_Measure arg1:T8 arg2:T2	

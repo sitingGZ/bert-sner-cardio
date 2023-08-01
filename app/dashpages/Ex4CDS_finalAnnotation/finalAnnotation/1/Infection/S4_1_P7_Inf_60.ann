@@ -1,0 +1,29 @@
+T1	LabValues 16 19	CRP
+T2	Measure 20 26	86 g/l
+T3	Condition 31 39	Symptome
+T4	Condition 55 64	Schnupfen
+T5	TimeInfo 65 81	seit ca.2 Wochen
+T6	Condition 82 92	Reizhusten
+T8	Condition 102 120	gelblicher Auswurf
+T9	Medication 122 133	Antibiotika
+T10	Medication 134 146	Metronidazol
+T11	Medication 151 163	Levofloxacin
+R1	has_Measure arg1:T1 arg2:T2
+R3	has_TimeInfo arg1:T6 arg2:T5	
+A1	Risk T1 increase_symptom
+T7	TimeInfo 0 7	Aktuell
+A3	Risk T8 increase_symptom
+A4	Risk T6 increase_symptom
+A5	Risk T4 increase_symptom
+A6	Risk T3 increase_symptom
+T12	Temporal 0 39	Aktuell bereits CRP 86 g/l und Symptome
+A2	Temporal_Element T12 present
+T13	Temporal 41 121	beklagt etwas Schnupfen seit ca.2 Wochen Reizhusten und Auch gelblicher Auswurf.
+A7	Temporal_Element T13 past_present
+A8	Risk T9 increase_symptom
+A9	Risk T10 increase_symptom
+A10	Risk T11 increase_symptom
+T14	Temporal 122 172	Antibiotika Metronidazol und Levofloxacin begonnen
+A11	Temporal_Element T14 present
+R2	has_TimeInfo arg1:T1 arg2:T7	
+R4	has_TimeInfo arg1:T3 arg2:T7	

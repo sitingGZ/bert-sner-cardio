@@ -1,0 +1,14 @@
+T1	Condition 3 10	Infekte
+T2	Condition 52 63	TX Versagen
+T4	Condition 146 155	Infektion
+T5	Condition 170 179	Urosepsis
+A1	Factuality T2 possible_future
+A2	Factuality T1 possible_future
+A3	Risk T1 increase_risk_factor
+T3	Conclusion 0 214	Da Infekte auftreten können, ist das Risiko für ein TX Versagen auch erhöht - ob eine Nierenersatztherapie notwendig sein würde, ist vom Grad der Infektion abhängig. Bei Urosepsis kann dies durchaus der Fall werden
+T6	Other 86 106	Nierenersatztherapie
+A4	Risk T6 increase_symptom
+A5	Factuality T6 possible_future
+A6	Factuality T5 possible_future
+A7	Risk T5 increase_risk_factor
+A8	Factuality T4 possible_future

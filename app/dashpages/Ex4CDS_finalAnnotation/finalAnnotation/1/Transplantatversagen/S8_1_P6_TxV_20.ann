@@ -1,0 +1,16 @@
+T1	LabValues 12 23	Proteinurie
+T2	Measure 35 43	konstant
+T5	Measure 0 7	Zunahme
+R1	has_Measure arg1:T1 arg2:T5	
+T6	LabValues 25 29	eGFR
+R2	has_Measure arg1:T6 arg2:T2	
+A1	Risk T1 increase_symptom
+A2	Risk T6 decrease_symptom
+T3	Medication 60 80	Modifizierung der IS
+A3	Risk T3 increase_risk_factor
+T4	Conclusion 45 113	allerdings die Modifizierung der IS kann eine neue Dynamik auslösen.
+T7	Other 91 103	neue Dynamik
+A4	Factuality T7 possible_future
+A5	Risk T7 increase_symptom
+T8	Temporal 0 44	Zunahme der Proteinurie. eGFR noch konstant,
+A6	Temporal_Element T8 present

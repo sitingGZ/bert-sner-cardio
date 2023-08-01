@@ -1,0 +1,35 @@
+T3	Condition 15 18	SLE
+T4	TimeInfo 22 32	vor 2,5 J.
+T6	LabValues 47 51	Krea
+T7	Measure 60 69	1,4 mg/dl
+T9	LabValues 80 84	Krea
+T10	Measure 85 94	1,1 mg/dl
+T11	HealthState 96 103	stabile
+T12	Process 104 115	Tx Funktion
+R1	has_Measure arg1:T6 arg2:T7
+R2	has_Measure arg1:T9 arg2:T10
+T1	Age_middle 0 10	50 j. Pat.
+R3	has_State arg1:T12 arg2:T11	
+T5	Tx_middle 19 31	TX vor 2,5 J
+A1	Risk T1 risk_factor
+T2	Temporal 0 10	50 j. Pat.
+A2	Temporal_Element T2 present
+T8	Temporal 11 18	GE: SLE
+A3	Temporal_Element T8 past_present
+A4	Risk T3 risk_factor
+A5	Risk T5 risk_factor
+T13	Condition 34 46	Lebendspende
+A6	Risk T13 decrease_risk_factor
+A7	Risk T6 decrease_symptom
+A8	Risk T9 symptom
+T14	Temporal 19 46	TX vor 2,5 J., Lebendspende
+A9	Temporal_Element T14 past
+T15	Temporal 47 70	Krea aktuell 1,4 mg/dl,
+A10	Temporal_Element T15 present
+T16	Temporal 73 95	bestes Krea 1,1 mg/dl,
+A11	Temporal_Element T16 past
+A12	Risk T12 decrease_symptom
+T17	Temporal 96 115	stabile Tx Funktion
+A13	Temporal_Element T17 past_present
+T18	DiagLab 11 13	GE
+R4	has_State arg1:T18 arg2:T3	

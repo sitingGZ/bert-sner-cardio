@@ -1,0 +1,23 @@
+T1	TimeInfo 0 7	Aktuell
+T2	LabValues 8 11	CRP
+T4	Condition 42 48	Infekt
+T8	Condition 151 164	Adenokarzinom
+T12	Condition 207 235	ossäre und hepatische Filiae
+A1	Factuality T4 negative
+R2	has_TimeInfo arg1:T2 arg2:T1		
+T3	HealthState 12 24	nicht erhöht
+R1	has_State arg1:T2 arg2:T3	
+A2	Risk T2 decrease_symptom
+T5	Conclusion 26 48	Kein Anhalt für Infekt
+T6	Medication 62 75	Chemotherapie
+A3	Risk T6 increase_risk_factor
+T9	Temporal 190 235	Neu aufgetretene ossäre und hepatische Filiae
+A4	Temporal_Element T9 present
+T10	Temporal 50 75	jedoch Z.n. Chemotherapie
+A5	Temporal_Element T10 past
+T11	Temporal 76 188	bei Diagnose: Multifokales, mittelgradig differenziertes, invasiv-duktales Adenokarzinom der Mamma zentral links
+A6	Temporal_Element T11 past_present
+T13	Temporal 0 25	Aktuell CRP nicht erhöht.
+A7	Temporal_Element T13 present
+A8	Risk T8 increase_risk_factor
+A9	Risk T12 increase_risk_factor

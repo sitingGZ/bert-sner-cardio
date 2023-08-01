@@ -1,0 +1,10 @@
+T1	Measure 0 9	steigende
+T2	LabValues 10 25	Retentionswerte
+T3	LabValues 27 29	PU
+R1	has_Measure arg1:T2 arg2:T1	
+A1	Risk T2 increase_symptom
+T4	Temporal 0 25	steigende Retentionswerte
+A2	Temporal_Element T4 past_present
+T5	Temporal 27 29	PU
+A3	Temporal_Element T5 present
+A4	Risk T3 increase_symptom

@@ -1,0 +1,34 @@
+T1	TimeInfo 0 9	Frühphase
+T2	Condition 10 13	NTX
+T4	Medication 21 23	IS
+T6	Condition 39 50	Rejektionen
+T7	LabValues 74 77	HLA
+T8	Measure 79 86	höherer
+T9	Condition 87 89	MM
+T10	LabValues 96 100	Krea
+T11	Measure 105 119	1,9 abgefallen
+T13	Condition 137 148	Proteinurie
+R2	has_Measure arg1:T10 arg2:T11
+A1	Factuality T6 negative
+A3	Factuality T13 minor
+R6	has_Measure arg1:T9 arg2:T8	
+R1	has_TimeInfo arg1:T2 arg2:T1	
+T3	Tx_low 0 13	Frühphase NTX
+A2	Risk T3 increase_risk_factor
+T5	Measure 25 31	triple
+R3	has_Measure arg1:T4 arg2:T5	
+A4	Risk T4 decrease_risk_factor
+T12	TimeInfo 51 66	direkt nach NTX
+R4	has_TimeInfo arg1:T6 arg2:T12	
+A5	Risk T6 decrease_risk_factor
+A6	Risk T7 decrease_risk_factor
+A7	Risk T9 increase_risk_factor
+A8	Risk T10 decrease_symptom
+A9	Risk T13 decrease_symptom
+T15	Temporal 0 32	Frühphase NTX, volle IS (triple)
+A10	Temporal_Element T15 present
+T16	Temporal 33 66	keine Rejektionen direkt nach NTX
+A11	Temporal_Element T16 past
+T17	Temporal 68 148	keine HLA, höherer MM Grad, Krea auf 1,9 abgefallen, keine relevante Proteinurie
+A12	Temporal_Element T17 present
+A13	Factuality T7 negative

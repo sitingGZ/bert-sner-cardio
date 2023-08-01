@@ -1,0 +1,27 @@
+T1	Condition 16 25	Rejektion
+T2	TimeInfo 26 38	vor 4 Jahren
+T3	HealthState 52 60	stabiler
+T4	Condition 82 95	CMV-Infektion
+T5	Condition 112 125	Über-Immunsup
+T7	Condition 186 199	Über-Immunsup
+R1	has_TimeInfo arg1:T1 arg2:T2
+T8	Process 61 68	Verlauf
+R2	has_State arg1:T8 arg2:T3	
+A1	Risk T1 increase_risk_factor
+A2	Risk T8 decrease_symptom
+A3	Risk T4 decrease_symptom
+T10	Conclusion 96 125	als Zeichen der Über-Immunsup
+T11	Conclusion 170 199	als Zeichen der Über-Immunsup
+A4	Risk T5 decrease_risk_factor
+A5	Risk T7 decrease_risk_factor
+T6	Condition 155 169	atyp Pneumonie
+A6	Factuality T6 speculated
+A7	Risk T6 decrease_symptom
+T12	Temporal 0 38	Z.n. Borderline Rejektion vor 4 Jahren
+A8	Temporal_Element T12 past
+T13	Temporal 40 68	danach eher stabiler Verlauf
+A9	Temporal_Element T13 past_present
+T14	Temporal 69 125	im Anschluss CMV-Infektion als Zeichen der Über-Immunsup
+A10	Temporal_Element T14 past
+T15	Temporal 127 199	letzte Vorstellung mit V.a. atyp Pneumonie als Zeichen der Über-Immunsup
+A11	Temporal_Element T15 present

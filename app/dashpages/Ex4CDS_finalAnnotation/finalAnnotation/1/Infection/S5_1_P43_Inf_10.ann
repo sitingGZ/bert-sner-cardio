@@ -1,0 +1,20 @@
+T2	Condition 9 12	HWI
+T3	TimeInfo 19 29	2-3 Monate
+T4	Condition 43 52	Urosepsis
+T5	Condition 60 76	Hospitalisierung
+A1	Factuality T4 negative
+A2	Factuality T5 negative
+R1	has_TimeInfo arg1:T2 arg2:T3	
+T7	Age_high 83 103	hohes Patientenalter
+T1	Medication 112 114	IS
+A3	Risk T2 increase_risk_factor
+A4	Risk T4 decrease_risk_factor
+A5	Risk T5 decrease_risk_factor
+A6	Risk T7 increase_risk_factor
+T6	Measure 105 111	triple
+R2	has_Measure arg1:T1 arg2:T6	
+A7	Risk T1 increase_risk_factor
+T8	Temporal 0 76	rezidiv. HWI (alle 2-3 Monate), aber keine Urosepsis, keine Hospitalisierung
+A8	Temporal_Element T8 past
+T9	Temporal 83 114	hohes Patientenalter, triple IS
+A9	Temporal_Element T9 present

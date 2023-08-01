@@ -1,0 +1,9 @@
+T1	Condition 22 39	Infektproblematik
+T2	Condition 57 66	Abstoßung
+A1	Factuality T2 negative
+T3	TimeInfo 0 7	aktuell
+R1	has_TimeInfo arg1:T1 arg2:T3	
+A2	Risk T1 increase_risk_factor
+A3	Risk T2 decrease_risk_factor
+T4	Temporal 0 67	aktuell abgesehen von Infektproblematik kein Hinweis auf Abstoßung.
+A4	Temporal_Element T4 present

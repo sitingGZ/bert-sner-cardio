@@ -1,0 +1,13 @@
+T1	LabValues 0 4	krea
+T2	Measure 5 8	2,5
+T4	DiagLab 30 34	NibI
+R1	has_Measure arg1:T1 arg2:T2
+T3	Condition 41 43	Rx
+A1	Factuality T3 negative
+T5	Measure 10 20	stagnation
+R2	has_Measure arg1:T1 arg2:T5	
+A2	Risk T1 symptom
+R3	has_State arg1:T4 arg2:T3	
+A3	Risk T3 decrease_symptom
+T6	Temporal 0 43	krea 2,5, stagnation, aber in NibI keine Rx
+A4	Temporal_Element T6 present

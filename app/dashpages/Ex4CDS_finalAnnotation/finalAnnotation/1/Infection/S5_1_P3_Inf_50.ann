@@ -1,0 +1,44 @@
+T1	TimeInfo 3 13	vor 1 Jahr
+T2	Condition 23 34	Rejektionen
+T3	TimeInfo 35 59	im kurzfristigem Verlauf
+T4	Condition 61 70	Banff IIb
+T5	Condition 72 81	Banff IIA
+T6	Condition 83 91	Banff IB
+T7	DiagLab 117 121	NiBi
+T8	Medication 164 166	IS
+T9	Condition 178 186	Harnstau
+T10	TimeInfo 211 225	3 Monate zuvor
+T13	TimeInfo 243 267	in den letzten 3 Monaten
+T15	Condition 299 306	Infekte
+A1	Factuality T15 minor
+R3	has_TimeInfo arg1:T2 arg2:T3	
+T16	Age_high 226 241	Hohes Pat.alter
+T17	Tx_middle 0 13	TX vor 1 Jahr
+R1	has_TimeInfo arg1:T15 arg2:T13	
+A2	Risk T2 increase_risk_factor
+T11	Medication 124 155	intensivierte Therapie inkl. PP
+A3	Risk T11 increase_risk_factor
+A4	Risk T8 increase_risk_factor
+T14	Temporal 167 201	Intermitt. Harnstau und DJ Schiene
+A6	Temporal_Element T14 past_present
+T18	Condition 191 201	DJ Schiene
+A7	Risk T18 increase_risk_factor
+A8	Risk T9 increase_risk_factor
+T19	Condition 207 210	PjP
+A9	Risk T19 increase_symptom
+R2	has_TimeInfo arg1:T19 arg2:T10	
+T20	Temporal 202 225	Z.n. PjP 3 Monate zuvor
+A10	Temporal_Element T20 past
+A11	Risk T16 increase_risk_factor
+A12	Risk T15 decrease_risk_factor
+T21	Temporal 243 313	in den letzten 3 Monaten keine weiteren schwerwiegenden Infekte gehabt
+A13	Temporal_Element T21 past_present
+T22	Temporal 226 241	Hohes Pat.alter
+A14	Temporal_Element T22 present
+A15	Risk T17 increase_risk_factor
+T12	Temporal 0 121	TX vor 1 Jahr, seitdem Rejektionen im kurzfristigem Verlauf: Banff IIb, Banff IIA, Banff IB plus C4d Nachweis in der NiBi
+A5	Temporal_Element T12 past
+T23	Temporal 124 166	intensivierte Therapie inkl. PP, triple IS
+A16	Temporal_Element T23 present
+T24	Measure 157 163	triple
+R4	has_Measure arg1:T8 arg2:T24	

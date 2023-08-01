@@ -1,0 +1,20 @@
+T1	Condition 6 14	Banff Ib
+T3	Condition 48 61	BKV Infektion
+T4	Condition 73 82	Rejektion
+T5	Medication 106 108	IS
+T6	LabValues 121 124	HLA
+A1	Factuality T6 negative
+A2	Factuality T1 speculated
+T2	Measure 96 105	Reduktion
+R1	has_Measure arg1:T5 arg2:T2	
+A3	Risk T1 increase_risk_factor
+A4	Risk T3 increase_risk_factor
+T7	Conclusion 62 94	mit Risiko Rejektion zu triggern
+A5	Risk T5 increase_risk_factor
+A6	Risk T6 decrease_risk_factor
+T8	Temporal 0 30	frgl. Banff Ib in der Historie
+A7	Temporal_Element T8 past
+T9	Temporal 32 61	kontinuierliche BKV Infektion
+A8	Temporal_Element T9 past_present
+T10	Temporal 96 124	Reduktion IS, aber keine HLA
+A9	Temporal_Element T10 past_present

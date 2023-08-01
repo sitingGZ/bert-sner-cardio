@@ -1,0 +1,21 @@
+T1	TimeInfo 0 7	aktuell
+T4	TimeInfo 79 86	07/2011
+T3	LabValues 15 19	Krea
+R2	has_TimeInfo arg1:T3 arg2:T1	
+T5	DiagLab 74 78	NiBi
+R3	has_TimeInfo arg1:T5 arg2:T4	
+T2	Measure 20 27	Anstieg
+R1	has_Measure arg1:T3 arg2:T2	
+A1	Risk T3 increase_symptom
+T7	Condition 34 36	Rx
+A2	Factuality T7 speculated
+A3	Risk T7 increase_risk_factor
+T8	Other 55 61	2. NTX
+A4	Risk T8 risk_factor
+T9	Condition 91 94	ah3
+A5	Risk T9 increase_risk_factor
+R5	has_State arg1:T5 arg2:T9	
+T10	Temporal 0 61	aktuell akuter Krea-Anstieg, V.a. Rx plus dies ist die 2. NTX
+A6	Temporal_Element T10 present
+T11	Temporal 66 94	bereits NiBi 07/2011 mit ah3
+A7	Temporal_Element T11 past

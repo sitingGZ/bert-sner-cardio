@@ -1,0 +1,16 @@
+T1	Condition 13 26	bkv Nephritis
+T2	LabValues 28 34	leukos
+T3	HealthState 35 39	norm
+T4	DiagLab 41 46	USTIX
+T5	Measure 47 50	neg
+T6	LabValues 57 60	crp
+T7	HealthState 61 65	norm
+R1	has_State arg1:T2 arg2:T3	
+R2	has_Measure arg1:T4 arg2:T5	
+R3	has_State arg1:T6 arg2:T7	
+A1	Risk T1 increase_symptom
+A2	Risk T2 decrease_symptom
+A3	Risk T6 decrease_symptom
+T8	Temporal 0 65	nachgewiesen bkv Nephritis, leukos norm, USTIX neg, aber crp norm
+A4	Temporal_Element T8 present
+A5	Risk T4 decrease_symptom

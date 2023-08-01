@@ -1,0 +1,24 @@
+T2	HealthState 25 30	guter
+T3	Condition 43 47	AB0i
+T4	Measure 72 80	erhöhtes
+T5	Condition 81 97	Rejektionsrisiko
+T6	LabValues 103 111	Isotiter
+T7	Measure 118 125	negativ
+T9	Medication 157 166	Rituximab
+R1	has_Measure arg1:T5 arg2:T4	
+R2	has_Measure arg1:T6 arg2:T7	
+T1	Process 31 38	Verlauf
+R3	has_State arg1:T1 arg2:T2	
+T8	Tx_low 0 19	recht früh nach Ntx
+A1	Risk T8 increase_risk_factor
+A2	Risk T1 decrease_symptom
+T10	Conclusion 52 97	grundsätzlich etwas erhöhtes Rejektionsrisiko
+A3	Risk T3 increase_risk_factor
+A4	Risk T6 decrease_risk_factor
+A5	Risk T9 decrease_risk_factor
+T11	Temporal 0 19	recht früh nach Ntx
+A6	Temporal_Element T11 present
+T12	Temporal 20 38	aber guter Verlauf
+A7	Temporal_Element T12 past_present
+T13	Temporal 39 97;98 166	bei AB0i Ntx grundsätzlich etwas erhöhtes Rejektionsrisiko aber Isotiter waren negativ und adäquate Vorbehandlung mit Rituximab
+A8	Temporal_Element T13 past

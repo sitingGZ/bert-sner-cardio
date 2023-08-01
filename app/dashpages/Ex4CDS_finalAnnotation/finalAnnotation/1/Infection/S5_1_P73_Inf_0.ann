@@ -1,0 +1,24 @@
+T2	Condition 14 25	Infektraten
+T3	Measure 34 42	niedrige
+T4	Medication 43 45	IS
+T5	Condition 74 89	Infektproblemen
+T7	Condition 96 113	Harnleiterstenose
+T8	Condition 128 151	Infektprobleme Harnwege
+R1	has_Measure arg1:T4 arg2:T3
+A1	Factuality T2 negative
+A2	Factuality T5 negative
+A3	Factuality T8 negative
+T9	Temporal 0 45	keine erhöhte Infektraten bisher, niedrige IS
+A4	Temporal_Element T9 past_present
+A5	Risk T2 decrease_risk_factor
+A6	Risk T4 decrease_risk_factor
+T10	Other 53 67	KH Aufenthalte
+A7	Factuality T10 negative
+A8	Risk T10 decrease_risk_factor
+A9	Risk T5 decrease_risk_factor
+A10	Risk T7 increase_risk_factor
+A11	Risk T8 decrease_risk_factor
+T6	Temporal 47 89	keine KH Aufenthalte wegen Infektproblemen
+A12	Temporal_Element T6 past
+T11	Temporal 96 151	Harnleiterstenose, dennoch ohne Infektprobleme Harnwege
+A13	Temporal_Element T11 past_present

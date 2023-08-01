@@ -1,0 +1,11 @@
+T1	HealthState 21 35	medzinisch gut
+T3	HealthState 58 82	Compliance weiterhin gut
+T5	Condition 126 146	Transplantatversagen
+T6	TimeInfo 147 158	in 90 Tagen
+A2	Factuality T5 negative
+R2	has_TimeInfo arg1:T5 arg2:T6	
+A1	Risk T1 decrease_symptom
+A4	Risk T3 decrease_risk_factor
+T2	Conclusion 88 158	sehe ich kein erhöhtes Risiko für ein Transplantatversagen in 90 Tagen
+T4	Temporal 0 46	Insgesamt scheint es medzinisch gut zu laufen,
+A5	Temporal_Element T4 present

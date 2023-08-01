@@ -1,0 +1,23 @@
+T2	LabValues 9 13	Krea
+T3	LabValues 15 17	PU
+T5	Medication 46 48	IS
+T1	Condition 55 57	Rj
+T4	TimeInfo 58 78	in der Vorgeschichte
+R1	has_TimeInfo arg1:T1 arg2:T4	
+T6	Measure 0 8	creeping
+R2	has_Measure arg1:T2 arg2:T6	
+A1	Risk T2 increase_symptom
+A2	Risk T3 increase_symptom
+T7	Measure 30 41	Alterierung
+R3	has_Measure arg1:T5 arg2:T7	
+A3	Risk T5 risk_factor
+A4	Factuality T1 speculated
+A5	Risk T1 increase_risk_factor
+T8	Temporal 0 14	creeping Krea,
+A6	Temporal_Element T8 past_present
+T9	Temporal 15 18	PU,
+A7	Temporal_Element T9 present
+T10	Temporal 19 48	Z.n. K mit Alterierung der IS
+A8	Temporal_Element T10 past_present
+T11	Temporal 50 78	V.a. Rj in der Vorgeschichte
+A9	Temporal_Element T11 past
