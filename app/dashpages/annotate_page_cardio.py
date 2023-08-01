@@ -474,7 +474,7 @@ annotate_table = dash_table.DataTable( id="annotate-revise-table", editable=True
 #annotate_table = dash_table.DataTable(id = "annotate-revise-table")
 container_ann = html.Div(children = [ dbc.Row(children=[
             dbc.Col(dmc.Text('Select the span by columns and semantic types by groups'),style={'background-color':'#aed6f1', 'textAlign': 'left'}), 
-                      dbc.Col(dbc.Button('Reselect ', id= "annotate-reselect", n_clicks=0,  color="primary", size="md"))]), 
+                      dbc.Col(dbc.Button('Reselect columns', id= "annotate-reselect", n_clicks=0,  color="primary", size="md"))]), 
     dmc.Card(children =[
         html.Hr(),
         semantic_group_types,
@@ -851,7 +851,7 @@ def make_sentence_annotation(revised_memory, group_sentences_classification_dict
         
         if ctx.triggered_id == "annotate-reselect":
                 selected_columns = []
-                print(ctx.triggered_id, selected_columns)
+                #print(ctx.triggered_id, selected_columns)
         
         #header = [html.Th("Token")]+ [html.Th(group) for group in multi_layer_suggested_terms.keys()]
         data = {'Token': []}
@@ -863,21 +863,21 @@ def make_sentence_annotation(revised_memory, group_sentences_classification_dict
         current_page = 0
         if revised_memory is not None and len(revised_memory) > 0 and tsv_id is not None and section is not None: 
             if ctx.triggered_id == "annotate-select-group-types" and type_selected is not None:
-                    print(ctx.triggered_id, "annotation ")
-                    print(group_selected, type_selected, active_page, )
-                    print("type selected columns and len(selected columns)", type(selected_columns), len(selected_columns))
+                    #print(ctx.triggered_id, "annotation ")
+                    #print(group_selected, type_selected, active_page, )
+                    #print("type selected columns and len(selected columns)", type(selected_columns), len(selected_columns))
                     if type_selected is not None and len(selected_columns) >= 1:
-                        print("type selected ", type_selected, "column selected ", selected_columns[0])
+                        #print("type selected ", type_selected, "column selected ", selected_columns[0])
                         if len(revised_memory[tsv_id][section][group_selected]) >= active_page-1:
-                            print("current page ", active_page)
+                            #print("current page ", active_page)
                             for sel_col in selected_columns:
                                 revised_memory[tsv_id][section][group_selected][active_page-1][int(sel_col)][2] = type_selected
-                                print("changed revised_memory ")
+                                #print("changed revised_memory ")
             
             #print('revised memory for annotation', revised_memory)
             if section in revised_memory[tsv_id]:
                 for  group, sentences_classification in revised_memory[tsv_id][section].items():
-                    print(sentences_classification)
+                    #print(sentences_classification)
                     #sentences_classification = revised_memory[][group]
              
                     if active_page is not None and len(sentences_classification) >= active_page:
@@ -887,11 +887,12 @@ def make_sentence_annotation(revised_memory, group_sentences_classification_dict
                 #        current_page = str(current_page)
             
                 #if len(sentences_classification) > 0:
-                        print(current_page, len(sentences_classification))
+                        #print(current_page, len(sentences_classification))
                         sentence_classification = sentences_classification[current_page]
                 
                         for idx, triple in enumerate(sentence_classification):
-                        
+                            if len(sentence_classification) == 1:
+                                print(idx, triple, data['Token'])
                             if len(data['Token']) < len(sentence_classification):
                                 data['Token'].append(triple[0])
                             
@@ -929,25 +930,7 @@ def make_sentence_annotation(revised_memory, group_sentences_classification_dict
             'background_color': '#D2F3FF'
                 } for i in selected_columns]
         
-        #for group in multi_layer_suggested_terms.keys():
-            #current_row = html.Tr([html.Td(group)] + [html.Td(value) for i, value in enumerate(data[group])])
-        #    current_row = (group, data[group])
-        #    rows.append(current_row)
-        
-        #body = [html.Tbody(rows)]
-      
-                    #id_text = '{}-{}-{}-{}-checklist'.format(section, group, active_page, idx)
-                    #    if triple[2] not in term_types:
-                        #print(triple[2])
-                    #        current_sent_checklist = html.Span([triple[0],
-                    #                                  dcc.Dropdown(id=id_text, options=options, multi=False)], style={"margin":"2px",  "display":"inline-block"})
-                    #    else:
-                    #        current_sent_checklist = html.Span([triple[0],
-                    #                                  dcc.Dropdown(id=id_text, options=options,  value=triple[2], multi=False)], style={"margin":"2px",  "display":"inline-block"})
-                        
-                    #    children.append(current_sent_checklist)   
-                #children.append(html.P(children=checklists)) 
-      
+       
         return revised_memory, data_df.to_dict('records'), columns, selected_columns, style_selected_columns, None, active_page
 
 @callback([Output("annotate-alert-save", "is_open"),
@@ -974,19 +957,19 @@ def make_revision(save_btn, revise_memory,  section, annotator, tsv_id):
                 json.dump(current_revision_dict, open(path_anntotator, 'w'), indent=4)
             else:
                 previous_saved = json.load(open(path_anntotator))
-                print(len(previous_saved), "before append ")
+                #print(len(previous_saved), "before append ")
                 if tsv_id in previous_saved:
                     previous_saved[tsv_id][section] = revise_memory[tsv_id][section]
  
                 else:
                     previous_saved.update(current_revision_dict)
                     
-                print(len(previous_saved), "after append ")
+                #print(len(previous_saved), "after append ")
                 json.dump(previous_saved, open(path_anntotator, 'w'), indent=4)
             # columns = []'ID', 'Section', 'Group', 'Annotator', 'Sentence_idx', 'Classification'
 
                 text = "Save revision of document_{} section_{} to local file for current annotator {} .".format(tsv_id, section, annotator)
-                print(text)
+                #print(text)
                 save_btn = True
             
     return save_btn , text

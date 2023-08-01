@@ -42,9 +42,9 @@ def make_navbar(nav_path_list, nav_path_dict = None):
     "font":'bold',
     'color': 'dark'}
     
-    brand = dbc.NavItem(dbc.NavLink("Cross-domain Clinical Text Annotation", active=True, href=home_page.HOMEPATH['href']), style={"font-size": "30px",  'font-color':dfki_colors[0], 'font':'bold', 'text-align':'left'})
+    brand = dbc.NavItem(dbc.NavLink("Overview", active=True, href=home_page.HOMEPATH['href']), style={"font-size": "30px",  'font-color':dfki_colors[0], 'font':'bold', 'text-align':'left'})
     
-    nav_links = [brand] + [dbc.NavItem(dbc.NavLink(path['span'], active=True, href=path['href']), style={"font-size": "25px"}) for path in nav_path_list]
+    nav_links = [dbc.Col(brand)] + [dbc.Col(dbc.NavItem(dbc.NavLink(path['span'], active=True, href=path['href']), style={"font-size": "25px"})) for path in nav_path_list]
     if nav_path_dict is not None:
         nav_dropdown_menus = []
         for k, paths in nav_path_dict.items():
@@ -52,9 +52,9 @@ def make_navbar(nav_path_list, nav_path_dict = None):
             nav=True, in_navbar=True, label=k, style={"font-size": "25px", "font-color":dfki_colors[1]})
             nav_dropdown_menus.append(current_dropdown_menu)
     
-        nav_links.extend(nav_dropdown_menus)        
+        nav_links.extend([dbc.Col(nav_dropdown_menus)])        
     
-    return dbc.Navbar(children= nav_links, light=True)
+    return dbc.Navbar(children= dbc.Row(nav_links), light=True)
     
 
 nav_path_list = [analysis_page.ANALYSISPATH]
