@@ -1,0 +1,1018 @@
+#FORMAT=WebAnno TSV 3.3
+#T_SP=webanno.custom.Medication|ClassType|InNarrative
+#T_RL=webanno.custom.MedRel|BT_webanno.custom.Medication
+#T_SP=webanno.custom.Sectionsentence|Sectiontypes
+
+
+#Text=Aufnahmedatum: <[Pseudo] 2511-04-23 >
+1-1	0-13	Aufnahmedatum	_	_	_	_
+1-2	13-14	:	_	_	_	_
+1-3	15-24	<[Pseudo]	_	_	_	_
+1-4	25-29	2511	_	_	_	_
+1-5	29-30	-	_	_	_	_
+1-6	30-32	04	_	_	_	_
+1-7	32-33	-	_	_	_	_
+1-8	33-35	23	_	_	_	_
+1-9	36-37	>	_	_	_	_
+
+#Text=Geburtsdatum: <[Pseudo] 2059-03-18 >
+2-1	38-50	Geburtsdatum	_	_	_	_
+2-2	50-51	:	_	_	_	_
+2-3	52-61	<[Pseudo]	_	_	_	_
+2-4	62-66	2059	_	_	_	_
+2-5	66-67	-	_	_	_	_
+2-6	67-69	03	_	_	_	_
+2-7	69-70	-	_	_	_	_
+2-8	70-72	18	_	_	_	_
+2-9	73-74	>	_	_	_	_
+
+#Text=Alter: 452
+3-1	75-80	Alter	_	_	_	_
+3-2	80-81	:	_	_	_	_
+3-3	82-85	452	_	_	_	_
+
+#Text=über Ihren Patienten B-SALUTE B-PER I-PER geboren am <[Pseudo] 18/03/2059> wh. B-PLZ B-LOC I-ADDR I-ADDR der sich am in unserer Ambulanz vorstellte.
+4-1	87-91	über	_	_	_	Anrede
+4-2	92-97	Ihren	_	_	_	Anrede
+4-3	98-107	Patienten	_	_	_	Anrede
+4-4	108-116	B-SALUTE	_	_	_	Anrede
+4-5	117-122	B-PER	_	_	_	Anrede
+4-6	123-128	I-PER	_	_	_	Anrede
+4-7	129-136	geboren	_	_	_	Anrede
+4-8	137-139	am	_	_	_	Anrede
+4-9	140-149	<[Pseudo]	_	_	_	Anrede
+4-10	150-152	18	_	_	_	Anrede
+4-11	152-153	/	_	_	_	Anrede
+4-12	153-155	03	_	_	_	Anrede
+4-13	155-156	/	_	_	_	Anrede
+4-14	156-160	2059	_	_	_	Anrede
+4-15	160-161	>	_	_	_	Anrede
+4-16	162-164	wh	_	_	_	Anrede
+4-17	164-165	.	_	_	_	Anrede
+4-18	166-171	B-PLZ	_	_	_	Anrede
+4-19	172-177	B-LOC	_	_	_	Anrede
+4-20	178-184	I-ADDR	_	_	_	Anrede
+4-21	185-191	I-ADDR	_	_	_	Anrede
+4-22	192-195	der	_	_	_	Anrede
+4-23	196-200	sich	_	_	_	Anrede
+4-24	201-203	am	_	_	_	Anrede
+4-25	204-206	in	_	_	_	Anrede
+4-26	207-214	unserer	_	_	_	Anrede
+4-27	215-223	Ambulanz	_	_	_	Anrede
+4-28	224-234	vorstellte	_	_	_	Anrede
+4-29	234-235	.	_	_	_	Anrede
+
+#Text=Aktuell:
+5-1	237-244	Aktuell	_	_	_	AktuellDiagnosen
+5-2	244-245	:	_	_	_	AktuellDiagnosen
+
+#Text=- Postinterventionelle Thrombose der rechten A. radialis
+6-1	246-247	-	_	_	_	AktuellDiagnosen
+6-2	248-268	Postinterventionelle	_	_	_	AktuellDiagnosen
+6-3	269-278	Thrombose	_	_	_	AktuellDiagnosen
+6-4	279-282	der	_	_	_	AktuellDiagnosen
+6-5	283-290	rechten	_	_	_	AktuellDiagnosen
+6-6	291-293	A.	_	_	_	AktuellDiagnosen
+6-7	294-302	radialis	_	_	_	AktuellDiagnosen
+
+#Text=Diagnosen:
+7-1	304-313	Diagnosen	_	_	_	Diagnosen
+7-2	313-314	:	_	_	_	Diagnosen
+
+#Text=- Koronare 1-Gefäßerkrankung ohne Interventionsbedarf -LRB- B-OTHER v. <[Pseudo] 27/09/2135> -RRB-
+8-1	315-316	-	_	_	_	Diagnosen
+8-2	317-325	Koronare	_	_	_	Diagnosen
+8-3	326-343	1-Gefäßerkrankung	_	_	_	Diagnosen
+8-4	344-348	ohne	_	_	_	Diagnosen
+8-5	349-368	Interventionsbedarf	_	_	_	Diagnosen
+8-6	369-374	-LRB-	_	_	_	Diagnosen
+8-7	375-382	B-OTHER	_	_	_	Diagnosen
+8-8	383-385	v.	_	_	_	Diagnosen
+8-9	386-395	<[Pseudo]	_	_	_	Diagnosen
+8-10	396-398	27	_	_	_	Diagnosen
+8-11	398-399	/	_	_	_	Diagnosen
+8-12	399-401	09	_	_	_	Diagnosen
+8-13	401-402	/	_	_	_	Diagnosen
+8-14	402-406	2135	_	_	_	Diagnosen
+8-15	406-407	>	_	_	_	Diagnosen
+8-16	408-413	-RRB-	_	_	_	Diagnosen
+
+#Text=-UNK- Herzkatheteruntersuchung -LRB- B-OTHER vom <[Pseudo] 17/02/2144> -RRB-
+9-1	414-419	-UNK-	_	_	_	Diagnosen
+9-2	420-444	Herzkatheteruntersuchung	_	_	_	Diagnosen
+9-3	445-450	-LRB-	_	_	_	Diagnosen
+9-4	451-458	B-OTHER	_	_	_	Diagnosen
+9-5	459-462	vom	_	_	_	Diagnosen
+9-6	463-472	<[Pseudo]	_	_	_	Diagnosen
+9-7	473-475	17	_	_	_	Diagnosen
+9-8	475-476	/	_	_	_	Diagnosen
+9-9	476-478	02	_	_	_	Diagnosen
+9-10	478-479	/	_	_	_	Diagnosen
+9-11	479-483	2144	_	_	_	Diagnosen
+9-12	483-484	>	_	_	_	Diagnosen
+9-13	485-490	-RRB-	_	_	_	Diagnosen
+
+#Text=-UNK- 50%-ige ostiale Hauptstammstenose der LAD
+10-1	491-496	-UNK-	_	_	_	Diagnosen
+10-2	497-504	50%-ige	_	_	_	Diagnosen
+10-3	505-512	ostiale	_	_	_	Diagnosen
+10-4	513-530	Hauptstammstenose	_	_	_	Diagnosen
+10-5	531-534	der	_	_	_	Diagnosen
+10-6	535-538	LAD	_	_	_	Diagnosen
+
+#Text=-UNK- Koronaraneurysmata der proximalen LAD und med. RCA
+11-1	539-544	-UNK-	_	_	_	Diagnosen
+11-2	545-563	Koronaraneurysmata	_	_	_	Diagnosen
+11-3	564-567	der	_	_	_	Diagnosen
+11-4	568-578	proximalen	_	_	_	Diagnosen
+11-5	579-582	LAD	_	_	_	Diagnosen
+11-6	583-586	und	_	_	_	Diagnosen
+11-7	587-590	med	_	_	_	Diagnosen
+11-8	590-591	.	_	_	_	Diagnosen
+11-9	592-595	RCA	_	_	_	Diagnosen
+
+#Text=-UNK- LAD Hauptstammaneurysma
+12-1	596-601	-UNK-	_	_	_	Diagnosen
+12-2	602-605	LAD	_	_	_	Diagnosen
+12-3	606-625	Hauptstammaneurysma	_	_	_	Diagnosen
+
+#Text=-UNK- Herzkatheteruntersuchung -LRB- B-OTHER vom <[Pseudo] 19/02/2144> -RRB-
+13-1	626-631	-UNK-	_	_	_	Diagnosen
+13-2	632-656	Herzkatheteruntersuchung	_	_	_	Diagnosen
+13-3	657-662	-LRB-	_	_	_	Diagnosen
+13-4	663-670	B-OTHER	_	_	_	Diagnosen
+13-5	671-674	vom	_	_	_	Diagnosen
+13-6	675-684	<[Pseudo]	_	_	_	Diagnosen
+13-7	685-687	19	_	_	_	Diagnosen
+13-8	687-688	/	_	_	_	Diagnosen
+13-9	688-690	02	_	_	_	Diagnosen
+13-10	690-691	/	_	_	_	Diagnosen
+13-11	691-695	2144	_	_	_	Diagnosen
+13-12	695-696	>	_	_	_	Diagnosen
+13-13	697-702	-RRB-	_	_	_	Diagnosen
+
+#Text=-UNK- PTCA/2xDES der LAD
+14-1	703-708	-UNK-	_	_	_	Diagnosen
+14-2	709-713	PTCA	_	_	_	Diagnosen
+14-3	713-714	/	_	_	_	Diagnosen
+14-4	714-719	2xDES	_	_	_	Diagnosen
+14-5	720-723	der	_	_	_	Diagnosen
+14-6	724-727	LAD	_	_	_	Diagnosen
+
+#Text=-UNK- PTCA/1xDES des RD1 -LRB- Bifurkation LAD/RD1 in Mini-Crush-Technik -RRB-
+15-1	728-733	-UNK-	_	_	_	Diagnosen
+15-2	734-738	PTCA	_	_	_	Diagnosen
+15-3	738-739	/	_	_	_	Diagnosen
+15-4	739-744	1xDES	_	_	_	Diagnosen
+15-5	745-748	des	_	_	_	Diagnosen
+15-6	749-752	RD1	_	_	_	Diagnosen
+15-7	753-758	-LRB-	_	_	_	Diagnosen
+15-8	759-770	Bifurkation	_	_	_	Diagnosen
+15-9	771-774	LAD	_	_	_	Diagnosen
+15-10	774-775	/	_	_	_	Diagnosen
+15-11	775-778	RD1	_	_	_	Diagnosen
+15-12	779-781	in	_	_	_	Diagnosen
+15-13	782-800	Mini-Crush-Technik	_	_	_	Diagnosen
+15-14	801-806	-RRB-	_	_	_	Diagnosen
+
+#Text=-UNK- Leichtgradig eingeschränkte LV Pumpfunktion -LRB- MRT <[Pseudo] 01/2136> -RRB-
+16-1	807-812	-UNK-	_	_	_	Diagnosen
+16-2	813-825	Leichtgradig	_	_	_	Diagnosen
+16-3	826-840	eingeschränkte	_	_	_	Diagnosen
+16-4	841-843	LV	_	_	_	Diagnosen
+16-5	844-856	Pumpfunktion	_	_	_	Diagnosen
+16-6	857-862	-LRB-	_	_	_	Diagnosen
+16-7	863-866	MRT	_	_	_	Diagnosen
+16-8	867-876	<[Pseudo]	_	_	_	Diagnosen
+16-9	877-879	01	_	_	_	Diagnosen
+16-10	879-880	/	_	_	_	Diagnosen
+16-11	880-884	2136	_	_	_	Diagnosen
+16-12	884-885	>	_	_	_	Diagnosen
+16-13	886-891	-RRB-	_	_	_	Diagnosen
+
+#Text=-UNK- V. a. dilatative Kardiomyopathie mit initial global hochgradig eingeschränkter linksventrikulärer Pumpfunktion
+17-1	892-897	-UNK-	_	_	_	Diagnosen
+17-2	898-900	V.	_	_	_	Diagnosen
+17-3	901-903	a.	_	_	_	Diagnosen
+17-4	904-914	dilatative	_	_	_	Diagnosen
+17-5	915-930	Kardiomyopathie	_	_	_	Diagnosen
+17-6	931-934	mit	_	_	_	Diagnosen
+17-7	935-942	initial	_	_	_	Diagnosen
+17-8	943-949	global	_	_	_	Diagnosen
+17-9	950-960	hochgradig	_	_	_	Diagnosen
+17-10	961-976	eingeschränkter	_	_	_	Diagnosen
+17-11	977-995	linksventrikulärer	_	_	_	Diagnosen
+17-12	996-1008	Pumpfunktion	_	_	_	Diagnosen
+
+#Text=-UNK- Z. n. NSTEMI am <[Pseudo] 07/08/2141> a. e. Typ II
+18-1	1009-1014	-UNK-	_	_	_	Diagnosen
+18-2	1015-1017	Z.	_	_	_	Diagnosen
+18-3	1018-1020	n.	_	_	_	Diagnosen
+18-4	1021-1027	NSTEMI	_	_	_	Diagnosen
+18-5	1028-1030	am	_	_	_	Diagnosen
+18-6	1031-1040	<[Pseudo]	_	_	_	Diagnosen
+18-7	1041-1043	07	_	_	_	Diagnosen
+18-8	1043-1044	/	_	_	_	Diagnosen
+18-9	1044-1046	08	_	_	_	Diagnosen
+18-10	1046-1047	/	_	_	_	Diagnosen
+18-11	1047-1051	2141	_	_	_	Diagnosen
+18-12	1051-1052	>	_	_	_	Diagnosen
+18-13	1053-1055	a.	_	_	_	Diagnosen
+18-14	1056-1058	e.	_	_	_	Diagnosen
+18-15	1059-1062	Typ	_	_	_	Diagnosen
+18-16	1063-1065	II	_	_	_	Diagnosen
+
+#Text=-UNK- Leicht hypertrophierter linker Ventrikel mit global leichtgradig eingeschränkter Pumpfunktion bei Hypokinesie septal und inferior -LRB- TTE <[Pseudo] 08/08/41> -RRB-
+19-1	1066-1071	-UNK-	_	_	_	Diagnosen
+19-2	1072-1078	Leicht	_	_	_	Diagnosen
+19-3	1079-1095	hypertrophierter	_	_	_	Diagnosen
+19-4	1096-1102	linker	_	_	_	Diagnosen
+19-5	1103-1112	Ventrikel	_	_	_	Diagnosen
+19-6	1113-1116	mit	_	_	_	Diagnosen
+19-7	1117-1123	global	_	_	_	Diagnosen
+19-8	1124-1136	leichtgradig	_	_	_	Diagnosen
+19-9	1137-1152	eingeschränkter	_	_	_	Diagnosen
+19-10	1153-1165	Pumpfunktion	_	_	_	Diagnosen
+19-11	1166-1169	bei	_	_	_	Diagnosen
+19-12	1170-1181	Hypokinesie	_	_	_	Diagnosen
+19-13	1182-1188	septal	_	_	_	Diagnosen
+19-14	1189-1192	und	_	_	_	Diagnosen
+19-15	1193-1201	inferior	_	_	_	Diagnosen
+19-16	1202-1207	-LRB-	_	_	_	Diagnosen
+19-17	1208-1211	TTE	_	_	_	Diagnosen
+19-18	1212-1221	<[Pseudo]	_	_	_	Diagnosen
+19-19	1222-1224	08	_	_	_	Diagnosen
+19-20	1224-1225	/	_	_	_	Diagnosen
+19-21	1225-1227	08	_	_	_	Diagnosen
+19-22	1227-1228	/	_	_	_	Diagnosen
+19-23	1228-1230	41	_	_	_	Diagnosen
+19-24	1230-1231	>	_	_	_	Diagnosen
+19-25	1232-1237	-RRB-	_	_	_	Diagnosen
+
+#Text=-UNK- RV dilatiert mit gering eingeschränkter Funktion
+20-1	1238-1243	-UNK-	_	_	_	Diagnosen
+20-2	1244-1246	RV	_	_	_	Diagnosen
+20-3	1247-1256	dilatiert	_	_	_	Diagnosen
+20-4	1257-1260	mit	_	_	_	Diagnosen
+20-5	1261-1267	gering	_	_	_	Diagnosen
+20-6	1268-1283	eingeschränkter	_	_	_	Diagnosen
+20-7	1284-1292	Funktion	_	_	_	Diagnosen
+
+#Text=- Dilatative Kardiomyopathie -LRB- DCM -RRB-
+21-1	1293-1294	-	_	_	_	Diagnosen
+21-2	1295-1305	Dilatative	_	_	_	Diagnosen
+21-3	1306-1321	Kardiomyopathie	_	_	_	Diagnosen
+21-4	1322-1327	-LRB-	_	_	_	Diagnosen
+21-5	1328-1331	DCM	_	_	_	Diagnosen
+21-6	1332-1337	-RRB-	_	_	_	Diagnosen
+
+#Text=- Chronische thromboembolische pulmonale Hypertonie WHO III
+22-1	1338-1339	-	_	_	_	Diagnosen
+22-2	1340-1350	Chronische	_	_	_	Diagnosen
+22-3	1351-1368	thromboembolische	_	_	_	Diagnosen
+22-4	1369-1378	pulmonale	_	_	_	Diagnosen
+22-5	1379-1389	Hypertonie	_	_	_	Diagnosen
+22-6	1390-1393	WHO	_	_	_	Diagnosen
+22-7	1394-1397	III	_	_	_	Diagnosen
+
+#Text=-UNK- Respiratorische Insuffizienz Typ I
+23-1	1398-1403	-UNK-	_	_	_	Diagnosen
+23-2	1404-1419	Respiratorische	_	_	_	Diagnosen
+23-3	1420-1432	Insuffizienz	_	_	_	Diagnosen
+23-4	1433-1436	Typ	_	_	_	Diagnosen
+23-5	1437-1438	I	_	_	_	Diagnosen
+
+#Text=-UNK- Echo B-DATE: noch gute syst. LV-Fkt., Relaxationsst., RV leicht dilat. mit leicht red. Fkt, syst. PAP 50mmHg
+24-1	1439-1444	-UNK-	_	_	_	Diagnosen
+24-2	1445-1449	Echo	_	_	_	Diagnosen
+24-3	1450-1456	B-DATE	_	_	_	Diagnosen
+24-4	1456-1457	:	_	_	_	Diagnosen
+24-5	1458-1462	noch	_	_	_	Diagnosen
+24-6	1463-1467	gute	_	_	_	Diagnosen
+24-7	1468-1472	syst	_	_	_	Diagnosen
+24-8	1472-1473	.	_	_	_	Diagnosen
+24-9	1474-1480	LV-Fkt	_	_	_	Diagnosen
+24-10	1480-1481	.	_	_	_	Diagnosen
+24-11	1481-1482	,	_	_	_	Diagnosen
+24-12	1483-1496	Relaxationsst	_	_	_	Diagnosen
+24-13	1496-1497	.	_	_	_	Diagnosen
+24-14	1497-1498	,	_	_	_	Diagnosen
+24-15	1499-1501	RV	_	_	_	Diagnosen
+24-16	1502-1508	leicht	_	_	_	Diagnosen
+24-17	1509-1514	dilat	_	_	_	Diagnosen
+24-18	1514-1515	.	_	_	_	Diagnosen
+24-19	1516-1519	mit	_	_	_	Diagnosen
+24-20	1520-1526	leicht	_	_	_	Diagnosen
+24-21	1527-1530	red	_	_	_	Diagnosen
+24-22	1530-1531	.	_	_	_	Diagnosen
+24-23	1532-1535	Fkt	_	_	_	Diagnosen
+24-24	1535-1536	,	_	_	_	Diagnosen
+24-25	1537-1541	syst	_	_	_	Diagnosen
+24-26	1541-1542	.	_	_	_	Diagnosen
+24-27	1543-1546	PAP	_	_	_	Diagnosen
+24-28	1547-1553	50mmHg	_	_	_	Diagnosen
+
+#Text=-UNK- Z. n. pulmonaler Endarteriektomie <[Pseudo] 2135> -LRB- Bad I-ORG -RRB-
+25-1	1554-1559	-UNK-	_	_	_	Diagnosen
+25-2	1560-1562	Z.	_	_	_	Diagnosen
+25-3	1563-1565	n.	_	_	_	Diagnosen
+25-4	1566-1576	pulmonaler	_	_	_	Diagnosen
+25-5	1577-1593	Endarteriektomie	_	_	_	Diagnosen
+25-6	1594-1603	<[Pseudo]	_	_	_	Diagnosen
+25-7	1604-1608	2135	_	_	_	Diagnosen
+25-8	1608-1609	>	_	_	_	Diagnosen
+25-9	1610-1615	-LRB-	_	_	_	Diagnosen
+25-10	1616-1619	Bad	_	_	_	Diagnosen
+25-11	1620-1625	I-ORG	_	_	_	Diagnosen
+25-12	1626-1631	-RRB-	_	_	_	Diagnosen
+
+#Text=-UNK- Z. n. Lungenembolie <[Pseudo] 2130>
+26-1	1632-1637	-UNK-	_	_	_	Diagnosen
+26-2	1638-1640	Z.	_	_	_	Diagnosen
+26-3	1641-1643	n.	_	_	_	Diagnosen
+26-4	1644-1657	Lungenembolie	_	_	_	Diagnosen
+26-5	1658-1667	<[Pseudo]	_	_	_	Diagnosen
+26-6	1668-1672	2130	_	_	_	Diagnosen
+26-7	1672-1673	>	_	_	_	Diagnosen
+
+#Text=- Anuloaortale Ektasie mit Dilatation der Aorta asc. auf max. ca. 48 mm
+27-1	1674-1675	-	_	_	_	Diagnosen
+27-2	1676-1688	Anuloaortale	_	_	_	Diagnosen
+27-3	1689-1696	Ektasie	_	_	_	Diagnosen
+27-4	1697-1700	mit	_	_	_	Diagnosen
+27-5	1701-1711	Dilatation	_	_	_	Diagnosen
+27-6	1712-1715	der	_	_	_	Diagnosen
+27-7	1716-1721	Aorta	_	_	_	Diagnosen
+27-8	1722-1725	asc	_	_	_	Diagnosen
+27-9	1725-1726	.	_	_	_	Diagnosen
+27-10	1727-1730	auf	_	_	_	Diagnosen
+27-11	1731-1735	max.	_	_	_	Diagnosen
+27-12	1736-1739	ca.	_	_	_	Diagnosen
+27-13	1740-1742	48	_	_	_	Diagnosen
+27-14	1743-1745	mm	_	_	_	Diagnosen
+
+#Text=- Z. n. Pneumonie <[Pseudo] 10/2139> und <[Pseudo] 07/2141>
+28-1	1746-1747	-	_	_	_	Diagnosen
+28-2	1748-1750	Z.	_	_	_	Diagnosen
+28-3	1751-1753	n.	_	_	_	Diagnosen
+28-4	1754-1763	Pneumonie	_	_	_	Diagnosen
+28-5	1764-1773	<[Pseudo]	_	_	_	Diagnosen
+28-6	1774-1776	10	_	_	_	Diagnosen
+28-7	1776-1777	/	_	_	_	Diagnosen
+28-8	1777-1781	2139	_	_	_	Diagnosen
+28-9	1781-1782	>	_	_	_	Diagnosen
+28-10	1783-1786	und	_	_	_	Diagnosen
+28-11	1787-1796	<[Pseudo]	_	_	_	Diagnosen
+28-12	1797-1799	07	_	_	_	Diagnosen
+28-13	1799-1800	/	_	_	_	Diagnosen
+28-14	1800-1804	2141	_	_	_	Diagnosen
+28-15	1804-1805	>	_	_	_	Diagnosen
+
+#Text=- Monoklonale B-Lymphozytose, ED <[Pseudo] 01/2136>
+29-1	1806-1807	-	_	_	_	Diagnosen
+29-2	1808-1819	Monoklonale	_	_	_	Diagnosen
+29-3	1820-1834	B-Lymphozytose	_	_	_	Diagnosen
+29-4	1834-1835	,	_	_	_	Diagnosen
+29-5	1836-1838	ED	_	_	_	Diagnosen
+29-6	1839-1848	<[Pseudo]	_	_	_	Diagnosen
+29-7	1849-1851	01	_	_	_	Diagnosen
+29-8	1851-1852	/	_	_	_	Diagnosen
+29-9	1852-1856	2136	_	_	_	Diagnosen
+29-10	1856-1857	>	_	_	_	Diagnosen
+
+#Text=-UNK- Immunphänotyp a. e. einer chronischen lymphatischen Leukämie
+30-1	1858-1863	-UNK-	_	_	_	Diagnosen
+30-2	1864-1877	Immunphänotyp	_	_	_	Diagnosen
+30-3	1878-1880	a.	_	_	_	Diagnosen
+30-4	1881-1883	e.	_	_	_	Diagnosen
+30-5	1884-1889	einer	_	_	_	Diagnosen
+30-6	1890-1901	chronischen	_	_	_	Diagnosen
+30-7	1902-1915	lymphatischen	_	_	_	Diagnosen
+30-8	1916-1924	Leukämie	_	_	_	Diagnosen
+
+#Text=-UNK- Zytogenetik: Tumorzellen mit Deletion 13q14 -LRB- 16% -RRB- und einer Trisomie 12q13 -LRB- 24% -RRB- , entsprechend intermediäres Risiko.
+31-1	1925-1930	-UNK-	_	_	_	Diagnosen
+31-2	1931-1942	Zytogenetik	_	_	_	Diagnosen
+31-3	1942-1943	:	_	_	_	Diagnosen
+31-4	1944-1955	Tumorzellen	_	_	_	Diagnosen
+31-5	1956-1959	mit	_	_	_	Diagnosen
+31-6	1960-1968	Deletion	_	_	_	Diagnosen
+31-7	1969-1974	13q14	_	_	_	Diagnosen
+31-8	1975-1980	-LRB-	_	_	_	Diagnosen
+31-9	1981-1983	16	_	_	_	Diagnosen
+31-10	1983-1984	%	_	_	_	Diagnosen
+31-11	1985-1990	-RRB-	_	_	_	Diagnosen
+31-12	1991-1994	und	_	_	_	Diagnosen
+31-13	1995-2000	einer	_	_	_	Diagnosen
+31-14	2001-2009	Trisomie	_	_	_	Diagnosen
+31-15	2010-2015	12q13	_	_	_	Diagnosen
+31-16	2016-2021	-LRB-	_	_	_	Diagnosen
+31-17	2022-2024	24	_	_	_	Diagnosen
+31-18	2024-2025	%	_	_	_	Diagnosen
+31-19	2026-2031	-RRB-	_	_	_	Diagnosen
+31-20	2032-2033	,	_	_	_	Diagnosen
+31-21	2034-2046	entsprechend	_	_	_	Diagnosen
+31-22	2047-2060	intermediäres	_	_	_	Diagnosen
+31-23	2061-2067	Risiko	_	_	_	Diagnosen
+31-24	2067-2068	.	_	_	_	Diagnosen
+
+#Text=-UNK- Gammopathie IgG Typ kappa ED <[Pseudo] 01/2136>
+32-1	2069-2074	-UNK-	_	_	_	Diagnosen
+32-2	2075-2086	Gammopathie	_	_	_	Diagnosen
+32-3	2087-2090	IgG	_	_	_	Diagnosen
+32-4	2091-2094	Typ	_	_	_	Diagnosen
+32-5	2095-2100	kappa	_	_	_	Diagnosen
+32-6	2101-2103	ED	_	_	_	Diagnosen
+32-7	2104-2113	<[Pseudo]	_	_	_	Diagnosen
+32-8	2114-2116	01	_	_	_	Diagnosen
+32-9	2116-2117	/	_	_	_	Diagnosen
+32-10	2117-2121	2136	_	_	_	Diagnosen
+32-11	2121-2122	>	_	_	_	Diagnosen
+
+#Text=- Z. n. Poplitealvenenthrombose <[Pseudo] 2130>
+33-1	2123-2124	-	_	_	_	Diagnosen
+33-2	2125-2127	Z.	_	_	_	Diagnosen
+33-3	2128-2130	n.	_	_	_	Diagnosen
+33-4	2131-2154	Poplitealvenenthrombose	_	_	_	Diagnosen
+33-5	2155-2164	<[Pseudo]	_	_	_	Diagnosen
+33-6	2165-2169	2130	_	_	_	Diagnosen
+33-7	2169-2170	>	_	_	_	Diagnosen
+
+#Text=- Hiatushernie
+34-1	2171-2172	-	_	_	_	Diagnosen
+34-2	2173-2185	Hiatushernie	_	_	_	Diagnosen
+
+#Text=- Chronische Bronchitis
+35-1	2186-2187	-	_	_	_	Diagnosen
+35-2	2188-2198	Chronische	_	_	_	Diagnosen
+35-3	2199-2209	Bronchitis	_	_	_	Diagnosen
+
+#Text=- Z. n. Adenocarcinom des Sigmas mit Hemicolektomie links in DATE, initiales TNM-Stadium: pT3, pN0 -LRB- 0/21 -RRB- , M0, G II, R0
+36-1	2210-2211	-	_	_	_	Diagnosen
+36-2	2212-2214	Z.	_	_	_	Diagnosen
+36-3	2215-2217	n.	_	_	_	Diagnosen
+36-4	2218-2231	Adenocarcinom	_	_	_	Diagnosen
+36-5	2232-2235	des	_	_	_	Diagnosen
+36-6	2236-2242	Sigmas	_	_	_	Diagnosen
+36-7	2243-2246	mit	_	_	_	Diagnosen
+36-8	2247-2261	Hemicolektomie	_	_	_	Diagnosen
+36-9	2262-2267	links	_	_	_	Diagnosen
+36-10	2268-2270	in	_	_	_	Diagnosen
+36-11	2271-2275	DATE	_	_	_	Diagnosen
+36-12	2275-2276	,	_	_	_	Diagnosen
+36-13	2277-2286	initiales	_	_	_	Diagnosen
+36-14	2287-2298	TNM-Stadium	_	_	_	Diagnosen
+36-15	2298-2299	:	_	_	_	Diagnosen
+36-16	2300-2303	pT3	_	_	_	Diagnosen
+36-17	2303-2304	,	_	_	_	Diagnosen
+36-18	2305-2308	pN0	_	_	_	Diagnosen
+36-19	2309-2314	-LRB-	_	_	_	Diagnosen
+36-20	2315-2316	0	_	_	_	Diagnosen
+36-21	2316-2317	/	_	_	_	Diagnosen
+36-22	2317-2319	21	_	_	_	Diagnosen
+36-23	2320-2325	-RRB-	_	_	_	Diagnosen
+36-24	2326-2327	,	_	_	_	Diagnosen
+36-25	2328-2330	M0	_	_	_	Diagnosen
+36-26	2330-2331	,	_	_	_	Diagnosen
+36-27	2332-2333	G	_	_	_	Diagnosen
+36-28	2334-2336	II	_	_	_	Diagnosen
+36-29	2336-2337	,	_	_	_	Diagnosen
+36-30	2338-2340	R0	_	_	_	Diagnosen
+
+#Text=- Z. n. Darmtumor <[Pseudo] 2128>
+37-1	2341-2342	-	_	_	_	Diagnosen
+37-2	2343-2345	Z.	_	_	_	Diagnosen
+37-3	2346-2348	n.	_	_	_	Diagnosen
+37-4	2349-2358	Darmtumor	_	_	_	Diagnosen
+37-5	2359-2368	<[Pseudo]	_	_	_	Diagnosen
+37-6	2369-2373	2128	_	_	_	Diagnosen
+37-7	2373-2374	>	_	_	_	Diagnosen
+
+#Text=- Z. n. Hiluslymphdrüsen-Tbc als Kind
+38-1	2375-2376	-	_	_	_	Diagnosen
+38-2	2377-2379	Z.	_	_	_	Diagnosen
+38-3	2380-2382	n.	_	_	_	Diagnosen
+38-4	2383-2403	Hiluslymphdrüsen-Tbc	_	_	_	Diagnosen
+38-5	2404-2407	als	_	_	_	Diagnosen
+38-6	2408-2412	Kind	_	_	_	Diagnosen
+
+#Text=- Z. n. Pleuritis exsudativa rechts <[Pseudo] 10/2139>
+39-1	2413-2414	-	_	_	_	Diagnosen
+39-2	2415-2417	Z.	_	_	_	Diagnosen
+39-3	2418-2420	n.	_	_	_	Diagnosen
+39-4	2421-2430	Pleuritis	_	_	_	Diagnosen
+39-5	2431-2441	exsudativa	_	_	_	Diagnosen
+39-6	2442-2448	rechts	_	_	_	Diagnosen
+39-7	2449-2458	<[Pseudo]	_	_	_	Diagnosen
+39-8	2459-2461	10	_	_	_	Diagnosen
+39-9	2461-2462	/	_	_	_	Diagnosen
+39-10	2462-2466	2139	_	_	_	Diagnosen
+39-11	2466-2467	>	_	_	_	Diagnosen
+
+#Text=- Niereninsuffizienz im Stadium der kompensierten Retention
+40-1	2468-2469	-	_	_	_	Diagnosen
+40-2	2470-2488	Niereninsuffizienz	_	_	_	Diagnosen
+40-3	2489-2491	im	_	_	_	Diagnosen
+40-4	2492-2499	Stadium	_	_	_	Diagnosen
+40-5	2500-2503	der	_	_	_	Diagnosen
+40-6	2504-2517	kompensierten	_	_	_	Diagnosen
+40-7	2518-2527	Retention	_	_	_	Diagnosen
+
+#Text=Kardiovaskuläre Risikofaktoren:
+41-1	2528-2543	Kardiovaskuläre	_	_	_	AllergienUnverträglichkeitenRisiken
+41-2	2544-2558	Risikofaktoren	_	_	_	AllergienUnverträglichkeitenRisiken
+41-3	2558-2559	:	_	_	_	AllergienUnverträglichkeitenRisiken
+
+#Text=Arterielle Hypertonie, Hypercholesterinämie
+42-1	2560-2570	Arterielle	_	_	_	AllergienUnverträglichkeitenRisiken
+42-2	2571-2581	Hypertonie	_	_	_	AllergienUnverträglichkeitenRisiken
+42-3	2581-2582	,	_	_	_	AllergienUnverträglichkeitenRisiken
+42-4	2583-2603	Hypercholesterinämie	_	_	_	AllergienUnverträglichkeitenRisiken
+
+#Text=Allergien:
+43-1	2604-2613	Allergien	_	_	_	AllergienUnverträglichkeitenRisiken
+43-2	2613-2614	:	_	_	_	AllergienUnverträglichkeitenRisiken
+
+#Text=Anamnestisch keine bekannt
+44-1	2615-2627	Anamnestisch	_	_	_	AllergienUnverträglichkeitenRisiken
+44-2	2628-2633	keine	_	_	_	AllergienUnverträglichkeitenRisiken
+44-3	2634-2641	bekannt	_	_	_	AllergienUnverträglichkeitenRisiken
+
+#Text=Anamnese:
+45-1	2643-2651	Anamnese	_	_	_	Anamnese
+45-2	2651-2652	:	_	_	_	Anamnese
+
+#Text=Die Vorstellung erfolgte zur Verlaufskontrolle bei postinterventioneller Thrombose der rechten A. radialis. Der Patient verneint Schmerzen oder Schwellung, oder Parästhesien.
+46-1	2653-2656	Die	_	_	_	Anamnese
+46-2	2657-2668	Vorstellung	_	_	_	Anamnese
+46-3	2669-2677	erfolgte	_	_	_	Anamnese
+46-4	2678-2681	zur	_	_	_	Anamnese
+46-5	2682-2699	Verlaufskontrolle	_	_	_	Anamnese
+46-6	2700-2703	bei	_	_	_	Anamnese
+46-7	2704-2725	postinterventioneller	_	_	_	Anamnese
+46-8	2726-2735	Thrombose	_	_	_	Anamnese
+46-9	2736-2739	der	_	_	_	Anamnese
+46-10	2740-2747	rechten	_	_	_	Anamnese
+46-11	2748-2750	A.	_	_	_	Anamnese
+46-12	2751-2759	radialis	_	_	_	Anamnese
+46-13	2759-2760	.	_	_	_	Anamnese
+46-14	2761-2764	Der	_	_	_	Anamnese
+46-15	2765-2772	Patient	_	_	_	Anamnese
+46-16	2773-2781	verneint	_	_	_	Anamnese
+46-17	2782-2791	Schmerzen	_	_	_	Anamnese
+46-18	2792-2796	oder	_	_	_	Anamnese
+46-19	2797-2807	Schwellung	_	_	_	Anamnese
+46-20	2807-2808	,	_	_	_	Anamnese
+46-21	2809-2813	oder	_	_	_	Anamnese
+46-22	2814-2826	Parästhesien	_	_	_	Anamnese
+46-23	2826-2827	.	_	_	_	Anamnese
+
+#Text=Aktuelle Medikation:
+47-1	2829-2837	Aktuelle	_	_	_	AufnahmeMedikation
+47-2	2838-2848	Medikation	_	_	_	AufnahmeMedikation
+47-3	2848-2849	:	_	_	_	AufnahmeMedikation
+
+#Text=ASS 100 mg 1-0-0 -LRB- bis einschließlich <[Pseudo] 21/08/2144> -RRB- !
+48-1	2850-2853	ASS	ACTIVEING	false	_	AufnahmeMedikation
+48-2	2854-2857	100	STRENGTH[1]	false[1]	48-1[0_1]	AufnahmeMedikation
+48-3	2858-2860	mg	STRENGTH[1]	false[1]	_	AufnahmeMedikation
+48-4	2861-2862	1	FREQUENCY[2]	false[2]	48-1[0_2]	AufnahmeMedikation
+48-5	2862-2863	-	FREQUENCY[2]	false[2]	_	AufnahmeMedikation
+48-6	2863-2864	0	FREQUENCY[2]	false[2]	_	AufnahmeMedikation
+48-7	2864-2865	-	FREQUENCY[2]	false[2]	_	AufnahmeMedikation
+48-8	2865-2866	0	FREQUENCY[2]	false[2]	_	AufnahmeMedikation
+48-9	2867-2872	-LRB-	DURATION[3]	false[3]	48-1[0_3]	AufnahmeMedikation
+48-10	2873-2876	bis	DURATION[3]	false[3]	_	AufnahmeMedikation
+48-11	2877-2891	einschließlich	DURATION[3]	false[3]	_	AufnahmeMedikation
+48-12	2892-2901	<[Pseudo]	DURATION[3]	false[3]	_	AufnahmeMedikation
+48-13	2902-2904	21	DURATION[3]	false[3]	_	AufnahmeMedikation
+48-14	2904-2905	/	DURATION[3]	false[3]	_	AufnahmeMedikation
+48-15	2905-2907	08	DURATION[3]	false[3]	_	AufnahmeMedikation
+48-16	2907-2908	/	DURATION[3]	false[3]	_	AufnahmeMedikation
+48-17	2908-2912	2144	DURATION[3]	false[3]	_	AufnahmeMedikation
+48-18	2912-2913	>	DURATION[3]	false[3]	_	AufnahmeMedikation
+48-19	2914-2919	-RRB-	DURATION[3]	false[3]	_	AufnahmeMedikation
+48-20	2920-2921	!	_	_	_	AufnahmeMedikation
+
+#Text=Clopidogrel 75 mg 1-0-0 -LRB- bis einschließlich <[Pseudo] 18/02/2145> -RRB- !
+49-1	2922-2933	Clopidogrel	ACTIVEING	false	_	AufnahmeMedikation
+49-2	2934-2936	75	STRENGTH[4]	false[4]	49-1[0_4]	AufnahmeMedikation
+49-3	2937-2939	mg	STRENGTH[4]	false[4]	_	AufnahmeMedikation
+49-4	2940-2941	1	FREQUENCY[5]	false[5]	49-1[0_5]	AufnahmeMedikation
+49-5	2941-2942	-	FREQUENCY[5]	false[5]	_	AufnahmeMedikation
+49-6	2942-2943	0	FREQUENCY[5]	false[5]	_	AufnahmeMedikation
+49-7	2943-2944	-	FREQUENCY[5]	false[5]	_	AufnahmeMedikation
+49-8	2944-2945	0	FREQUENCY[5]	false[5]	_	AufnahmeMedikation
+49-9	2946-2951	-LRB-	DURATION[6]	false[6]	49-1[0_6]	AufnahmeMedikation
+49-10	2952-2955	bis	DURATION[6]	false[6]	_	AufnahmeMedikation
+49-11	2956-2970	einschließlich	DURATION[6]	false[6]	_	AufnahmeMedikation
+49-12	2971-2980	<[Pseudo]	DURATION[6]	false[6]	_	AufnahmeMedikation
+49-13	2981-2983	18	DURATION[6]	false[6]	_	AufnahmeMedikation
+49-14	2983-2984	/	DURATION[6]	false[6]	_	AufnahmeMedikation
+49-15	2984-2986	02	DURATION[6]	false[6]	_	AufnahmeMedikation
+49-16	2986-2987	/	DURATION[6]	false[6]	_	AufnahmeMedikation
+49-17	2987-2991	2145	DURATION[6]	false[6]	_	AufnahmeMedikation
+49-18	2991-2992	>	DURATION[6]	false[6]	_	AufnahmeMedikation
+49-19	2993-2998	-RRB-	DURATION[6]	false[6]	_	AufnahmeMedikation
+49-20	2999-3000	!	_	_	_	AufnahmeMedikation
+
+#Text=Apixaban 2,5 mg 1-0-1 Bis einschließlich dem B-DATE!
+50-1	3001-3009	Apixaban	ACTIVEING	false	_	AufnahmeMedikation
+50-2	3010-3013	2,5	STRENGTH[7]	false[7]	50-1[0_7]	AufnahmeMedikation
+50-3	3014-3016	mg	STRENGTH[7]	false[7]	_	AufnahmeMedikation
+50-4	3017-3018	1	FREQUENCY[8]	false[8]	50-1[0_8]	AufnahmeMedikation
+50-5	3018-3019	-	FREQUENCY[8]	false[8]	_	AufnahmeMedikation
+50-6	3019-3020	0	FREQUENCY[8]	false[8]	_	AufnahmeMedikation
+50-7	3020-3021	-	FREQUENCY[8]	false[8]	_	AufnahmeMedikation
+50-8	3021-3022	1	FREQUENCY[8]	false[8]	_	AufnahmeMedikation
+50-9	3023-3026	Bis	DURATION[9]	false[9]	50-1[0_9]	AufnahmeMedikation
+50-10	3027-3041	einschließlich	DURATION[9]	false[9]	_	AufnahmeMedikation
+50-11	3042-3045	dem	DURATION[9]	false[9]	_	AufnahmeMedikation
+50-12	3046-3052	B-DATE	DURATION[9]	false[9]	_	AufnahmeMedikation
+50-13	3052-3053	!	_	_	_	AufnahmeMedikation
+
+#Text=Apixaban 5 mg 1-0-1 Dauerhaft ab dem B-DATE!
+51-1	3054-3062	Apixaban	ACTIVEING	false	_	AufnahmeMedikation
+51-2	3063-3064	5	STRENGTH[10]	false[10]	51-1[0_10]	AufnahmeMedikation
+51-3	3065-3067	mg	STRENGTH[10]	false[10]	_	AufnahmeMedikation
+51-4	3068-3069	1	FREQUENCY[11]	false[11]	51-1[0_11]	AufnahmeMedikation
+51-5	3069-3070	-	FREQUENCY[11]	false[11]	_	AufnahmeMedikation
+51-6	3070-3071	0	FREQUENCY[11]	false[11]	_	AufnahmeMedikation
+51-7	3071-3072	-	FREQUENCY[11]	false[11]	_	AufnahmeMedikation
+51-8	3072-3073	1	FREQUENCY[11]	false[11]	_	AufnahmeMedikation
+51-9	3074-3083	Dauerhaft	DURATION[12]	false[12]	51-1[0_12]	AufnahmeMedikation
+51-10	3084-3086	ab	DURATION[12]	false[12]	_	AufnahmeMedikation
+51-11	3087-3090	dem	DURATION[12]	false[12]	_	AufnahmeMedikation
+51-12	3091-3097	B-DATE	DURATION[12]	false[12]	_	AufnahmeMedikation
+51-13	3097-3098	!	_	_	_	AufnahmeMedikation
+
+#Text=Metoprolol 47,5 mg 1-0-1
+52-1	3099-3109	Metoprolol	ACTIVEING	false	_	AufnahmeMedikation
+52-2	3110-3114	47,5	STRENGTH[13]	false[13]	52-1[0_13]	AufnahmeMedikation
+52-3	3115-3117	mg	STRENGTH[13]	false[13]	_	AufnahmeMedikation
+52-4	3118-3119	1	FREQUENCY[14]	false[14]	52-1[0_14]	AufnahmeMedikation
+52-5	3119-3120	-	FREQUENCY[14]	false[14]	_	AufnahmeMedikation
+52-6	3120-3121	0	FREQUENCY[14]	false[14]	_	AufnahmeMedikation
+52-7	3121-3122	-	FREQUENCY[14]	false[14]	_	AufnahmeMedikation
+52-8	3122-3123	1	FREQUENCY[14]	false[14]	_	AufnahmeMedikation
+
+#Text=Candesartan 8 mg -UNK- -0-0
+53-1	3124-3135	Candesartan	ACTIVEING	false	_	AufnahmeMedikation
+53-2	3136-3137	8	STRENGTH[15]	false[15]	53-1[0_15]	AufnahmeMedikation
+53-3	3138-3140	mg	STRENGTH[15]	false[15]	_	AufnahmeMedikation
+53-4	3141-3146	-UNK-	FREQUENCY[16]	false[16]	53-1[0_16]	AufnahmeMedikation
+53-5	3147-3149	-0	FREQUENCY[16]	false[16]	_	AufnahmeMedikation
+53-6	3149-3150	-	FREQUENCY[16]	false[16]	_	AufnahmeMedikation
+53-7	3150-3151	0	FREQUENCY[16]	false[16]	_	AufnahmeMedikation
+
+#Text=Spironolacton 25 mg 1-0-0
+54-1	3152-3165	Spironolacton	ACTIVEING	false	_	AufnahmeMedikation
+54-2	3166-3168	25	STRENGTH[17]	false[17]	54-1[0_17]	AufnahmeMedikation
+54-3	3169-3171	mg	STRENGTH[17]	false[17]	_	AufnahmeMedikation
+54-4	3172-3173	1	FREQUENCY[18]	false[18]	54-1[0_18]	AufnahmeMedikation
+54-5	3173-3174	-	FREQUENCY[18]	false[18]	_	AufnahmeMedikation
+54-6	3174-3175	0	FREQUENCY[18]	false[18]	_	AufnahmeMedikation
+54-7	3175-3176	-	FREQUENCY[18]	false[18]	_	AufnahmeMedikation
+54-8	3176-3177	0	FREQUENCY[18]	false[18]	_	AufnahmeMedikation
+
+#Text=Torasemid 10 mg 1- -UNK- -0
+55-1	3178-3187	Torasemid	ACTIVEING	false	_	AufnahmeMedikation
+55-2	3188-3190	10	STRENGTH[19]	false[19]	55-1[0_19]	AufnahmeMedikation
+55-3	3191-3193	mg	STRENGTH[19]	false[19]	_	AufnahmeMedikation
+55-4	3194-3196	1-	FREQUENCY[20]	false[20]	55-1[0_20]	AufnahmeMedikation
+55-5	3197-3202	-UNK-	FREQUENCY[20]	false[20]	_	AufnahmeMedikation
+55-6	3203-3205	-0	FREQUENCY[20]	false[20]	_	AufnahmeMedikation
+
+#Text=Omeprazol 20 mg 1-0-0
+56-1	3206-3215	Omeprazol	ACTIVEING	false	_	AufnahmeMedikation
+56-2	3216-3218	20	STRENGTH[21]	false[21]	56-1[0_21]	AufnahmeMedikation
+56-3	3219-3221	mg	STRENGTH[21]	false[21]	_	AufnahmeMedikation
+56-4	3222-3223	1	FREQUENCY[22]	false[22]	56-1[0_22]	AufnahmeMedikation
+56-5	3223-3224	-	FREQUENCY[22]	false[22]	_	AufnahmeMedikation
+56-6	3224-3225	0	FREQUENCY[22]	false[22]	_	AufnahmeMedikation
+56-7	3225-3226	-	FREQUENCY[22]	false[22]	_	AufnahmeMedikation
+56-8	3226-3227	0	FREQUENCY[22]	false[22]	_	AufnahmeMedikation
+
+#Text=Lokalbefund:
+57-1	3229-3240	Lokalbefund	_	_	_	Befunde
+57-2	3240-3241	:	_	_	_	Befunde
+
+#Text=Punktionsstelle reizlos, kleines Hämatom. Pulse über A. radialis, A. ulnaris und A. brachialis kräftig palpabel.
+58-1	3242-3257	Punktionsstelle	_	_	_	Befunde
+58-2	3258-3265	reizlos	_	_	_	Befunde
+58-3	3265-3266	,	_	_	_	Befunde
+58-4	3267-3274	kleines	_	_	_	Befunde
+58-5	3275-3282	Hämatom	_	_	_	Befunde
+58-6	3282-3283	.	_	_	_	Befunde
+58-7	3284-3289	Pulse	_	_	_	Befunde
+58-8	3290-3294	über	_	_	_	Befunde
+58-9	3295-3297	A.	_	_	_	Befunde
+58-10	3298-3306	radialis	_	_	_	Befunde
+58-11	3306-3307	,	_	_	_	Befunde
+58-12	3308-3310	A.	_	_	_	Befunde
+58-13	3311-3318	ulnaris	_	_	_	Befunde
+58-14	3319-3322	und	_	_	_	Befunde
+58-15	3323-3325	A.	_	_	_	Befunde
+58-16	3326-3336	brachialis	_	_	_	Befunde
+58-17	3337-3344	kräftig	_	_	_	Befunde
+58-18	3345-3353	palpabel	_	_	_	Befunde
+58-19	3353-3354	.	_	_	_	Befunde
+
+#Text=Farbduplexsonographie der Gefäße des rechten Unterarms:
+59-1	3356-3377	Farbduplexsonographie	_	_	_	Befunde
+59-2	3378-3381	der	_	_	_	Befunde
+59-3	3382-3388	Gefäße	_	_	_	Befunde
+59-4	3389-3392	des	_	_	_	Befunde
+59-5	3393-3400	rechten	_	_	_	Befunde
+59-6	3401-3410	Unterarms	_	_	_	Befunde
+59-7	3410-3411	:	_	_	_	Befunde
+
+#Text=Kein Fluss in der A. radialis im einsehbaren Verlauf am Unterarm darstellbar. Kein Hinweis für ein Aneurysma spurium oder eine AV-Fistel im Bereich der Punktionsstelle am rechten Handgelenk. A. ulnaris offen und perfundiert dartsellbar, ebenfalls A. brachialis rechts.
+60-1	3412-3416	Kein	_	_	_	Befunde
+60-2	3417-3422	Fluss	_	_	_	Befunde
+60-3	3423-3425	in	_	_	_	Befunde
+60-4	3426-3429	der	_	_	_	Befunde
+60-5	3430-3432	A.	_	_	_	Befunde
+60-6	3433-3441	radialis	_	_	_	Befunde
+60-7	3442-3444	im	_	_	_	Befunde
+60-8	3445-3456	einsehbaren	_	_	_	Befunde
+60-9	3457-3464	Verlauf	_	_	_	Befunde
+60-10	3465-3467	am	_	_	_	Befunde
+60-11	3468-3476	Unterarm	_	_	_	Befunde
+60-12	3477-3488	darstellbar	_	_	_	Befunde
+60-13	3488-3489	.	_	_	_	Befunde
+60-14	3490-3494	Kein	_	_	_	Befunde
+60-15	3495-3502	Hinweis	_	_	_	Befunde
+60-16	3503-3506	für	_	_	_	Befunde
+60-17	3507-3510	ein	_	_	_	Befunde
+60-18	3511-3520	Aneurysma	_	_	_	Befunde
+60-19	3521-3528	spurium	_	_	_	Befunde
+60-20	3529-3533	oder	_	_	_	Befunde
+60-21	3534-3538	eine	_	_	_	Befunde
+60-22	3539-3548	AV-Fistel	_	_	_	Befunde
+60-23	3549-3551	im	_	_	_	Befunde
+60-24	3552-3559	Bereich	_	_	_	Befunde
+60-25	3560-3563	der	_	_	_	Befunde
+60-26	3564-3579	Punktionsstelle	_	_	_	Befunde
+60-27	3580-3582	am	_	_	_	Befunde
+60-28	3583-3590	rechten	_	_	_	Befunde
+60-29	3591-3601	Handgelenk	_	_	_	Befunde
+60-30	3601-3602	.	_	_	_	Befunde
+60-31	3603-3605	A.	_	_	_	Befunde
+60-32	3606-3613	ulnaris	_	_	_	Befunde
+60-33	3614-3619	offen	_	_	_	Befunde
+60-34	3620-3623	und	_	_	_	Befunde
+60-35	3624-3635	perfundiert	_	_	_	Befunde
+60-36	3636-3647	dartsellbar	_	_	_	Befunde
+60-37	3647-3648	,	_	_	_	Befunde
+60-38	3649-3658	ebenfalls	_	_	_	Befunde
+60-39	3659-3661	A.	_	_	_	Befunde
+60-40	3662-3672	brachialis	_	_	_	Befunde
+60-41	3673-3679	rechts	_	_	_	Befunde
+60-42	3679-3680	.	_	_	_	Befunde
+
+#Text=Zusammenfassung:
+61-1	3683-3698	Zusammenfassung	_	_	_	Zusammenfassung
+61-2	3698-3699	:	_	_	_	Zusammenfassung
+
+#Text=Die Vorstellung erfolgte zur Verlaufskontrolle bei postinterventioneller Thrombose der rechten A. radialis. Der Patient verneint Schmerzen oder Schwellung, Parästhesien oder Kraftminderung.
+62-1	3700-3703	Die	_	_	_	Zusammenfassung
+62-2	3704-3715	Vorstellung	_	_	_	Zusammenfassung
+62-3	3716-3724	erfolgte	_	_	_	Zusammenfassung
+62-4	3725-3728	zur	_	_	_	Zusammenfassung
+62-5	3729-3746	Verlaufskontrolle	_	_	_	Zusammenfassung
+62-6	3747-3750	bei	_	_	_	Zusammenfassung
+62-7	3751-3772	postinterventioneller	_	_	_	Zusammenfassung
+62-8	3773-3782	Thrombose	_	_	_	Zusammenfassung
+62-9	3783-3786	der	_	_	_	Zusammenfassung
+62-10	3787-3794	rechten	_	_	_	Zusammenfassung
+62-11	3795-3797	A.	_	_	_	Zusammenfassung
+62-12	3798-3806	radialis	_	_	_	Zusammenfassung
+62-13	3806-3807	.	_	_	_	Zusammenfassung
+62-14	3808-3811	Der	_	_	_	Zusammenfassung
+62-15	3812-3819	Patient	_	_	_	Zusammenfassung
+62-16	3820-3828	verneint	_	_	_	Zusammenfassung
+62-17	3829-3838	Schmerzen	_	_	_	Zusammenfassung
+62-18	3839-3843	oder	_	_	_	Zusammenfassung
+62-19	3844-3854	Schwellung	_	_	_	Zusammenfassung
+62-20	3854-3855	,	_	_	_	Zusammenfassung
+62-21	3856-3868	Parästhesien	_	_	_	Zusammenfassung
+62-22	3869-3873	oder	_	_	_	Zusammenfassung
+62-23	3874-3888	Kraftminderung	_	_	_	Zusammenfassung
+62-24	3888-3889	.	_	_	_	Zusammenfassung
+
+#Text=Farbdopplersonographisch zeigte sich weiterhin keinen Fluss in der A. radialis, A. ulnaris und A. brachialis stellten sich offen und perfundiert dar. Bei subjektiver Beschwerdefreiheit empfehlen diesbezüglich ein konservatives Prozedere.
+63-1	3890-3914	Farbdopplersonographisch	_	_	_	Zusammenfassung
+63-2	3915-3921	zeigte	_	_	_	Zusammenfassung
+63-3	3922-3926	sich	_	_	_	Zusammenfassung
+63-4	3927-3936	weiterhin	_	_	_	Zusammenfassung
+63-5	3937-3943	keinen	_	_	_	Zusammenfassung
+63-6	3944-3949	Fluss	_	_	_	Zusammenfassung
+63-7	3950-3952	in	_	_	_	Zusammenfassung
+63-8	3953-3956	der	_	_	_	Zusammenfassung
+63-9	3957-3959	A.	_	_	_	Zusammenfassung
+63-10	3960-3968	radialis	_	_	_	Zusammenfassung
+63-11	3968-3969	,	_	_	_	Zusammenfassung
+63-12	3970-3972	A.	_	_	_	Zusammenfassung
+63-13	3973-3980	ulnaris	_	_	_	Zusammenfassung
+63-14	3981-3984	und	_	_	_	Zusammenfassung
+63-15	3985-3987	A.	_	_	_	Zusammenfassung
+63-16	3988-3998	brachialis	_	_	_	Zusammenfassung
+63-17	3999-4007	stellten	_	_	_	Zusammenfassung
+63-18	4008-4012	sich	_	_	_	Zusammenfassung
+63-19	4013-4018	offen	_	_	_	Zusammenfassung
+63-20	4019-4022	und	_	_	_	Zusammenfassung
+63-21	4023-4034	perfundiert	_	_	_	Zusammenfassung
+63-22	4035-4038	dar	_	_	_	Zusammenfassung
+63-23	4038-4039	.	_	_	_	Zusammenfassung
+63-24	4040-4043	Bei	_	_	_	Zusammenfassung
+63-25	4044-4055	subjektiver	_	_	_	Zusammenfassung
+63-26	4056-4074	Beschwerdefreiheit	_	_	_	Zusammenfassung
+63-27	4075-4084	empfehlen	_	_	_	Zusammenfassung
+63-28	4085-4098	diesbezüglich	_	_	_	Zusammenfassung
+63-29	4099-4102	ein	_	_	_	Zusammenfassung
+63-30	4103-4116	konservatives	_	_	_	Zusammenfassung
+63-31	4117-4126	Prozedere	_	_	_	Zusammenfassung
+63-32	4126-4127	.	_	_	_	Zusammenfassung
+
+#Text=Bei Einstweiligen Beschwerdeprogress oder Auftreten von akuten Beschwerden ist eine kurzfristige Wiedervorstellung jederzeit möglich.
+64-1	4128-4131	Bei	_	_	_	Zusammenfassung
+64-2	4132-4145	Einstweiligen	_	_	_	Zusammenfassung
+64-3	4146-4164	Beschwerdeprogress	_	_	_	Zusammenfassung
+64-4	4165-4169	oder	_	_	_	Zusammenfassung
+64-5	4170-4179	Auftreten	_	_	_	Zusammenfassung
+64-6	4180-4183	von	_	_	_	Zusammenfassung
+64-7	4184-4190	akuten	_	_	_	Zusammenfassung
+64-8	4191-4202	Beschwerden	_	_	_	Zusammenfassung
+64-9	4203-4206	ist	_	_	_	Zusammenfassung
+64-10	4207-4211	eine	_	_	_	Zusammenfassung
+64-11	4212-4224	kurzfristige	_	_	_	Zusammenfassung
+64-12	4225-4242	Wiedervorstellung	_	_	_	Zusammenfassung
+64-13	4243-4252	jederzeit	_	_	_	Zusammenfassung
+64-14	4253-4260	möglich	_	_	_	Zusammenfassung
+64-15	4260-4261	.	_	_	_	Zusammenfassung
+
+#Text=Therapieempfehlung -LRB- von angiologischer Seite -RRB- :
+65-1	4264-4282	Therapieempfehlung	_	_	_	EntlassMedikation
+65-2	4283-4288	-LRB-	_	_	_	EntlassMedikation
+65-3	4289-4292	von	_	_	_	EntlassMedikation
+65-4	4293-4307	angiologischer	_	_	_	EntlassMedikation
+65-5	4308-4313	Seite	_	_	_	EntlassMedikation
+65-6	4314-4319	-RRB-	_	_	_	EntlassMedikation
+65-7	4320-4321	:	_	_	_	EntlassMedikation
+
+#Text=ASS 100 mg 1-0-0 bis einschließlich <[Pseudo] 21/08/2144> dann absetzen
+66-1	4322-4325	ASS	ACTIVEING	false	_	EntlassMedikation
+66-2	4326-4329	100	STRENGTH[23]	false[23]	66-1[0_23]	EntlassMedikation
+66-3	4330-4332	mg	STRENGTH[23]	false[23]	_	EntlassMedikation
+66-4	4333-4334	1	FREQUENCY[24]	false[24]	66-1[0_24]	EntlassMedikation
+66-5	4334-4335	-	FREQUENCY[24]	false[24]	_	EntlassMedikation
+66-6	4335-4336	0	FREQUENCY[24]	false[24]	_	EntlassMedikation
+66-7	4336-4337	-	FREQUENCY[24]	false[24]	_	EntlassMedikation
+66-8	4337-4338	0	FREQUENCY[24]	false[24]	_	EntlassMedikation
+66-9	4339-4342	bis	DURATION[25]	false[25]	66-1[0_25]	EntlassMedikation
+66-10	4343-4357	einschließlich	DURATION[25]	false[25]	_	EntlassMedikation
+66-11	4358-4367	<[Pseudo]	DURATION[25]	false[25]	_	EntlassMedikation
+66-12	4368-4370	21	DURATION[25]	false[25]	_	EntlassMedikation
+66-13	4370-4371	/	DURATION[25]	false[25]	_	EntlassMedikation
+66-14	4371-4373	08	DURATION[25]	false[25]	_	EntlassMedikation
+66-15	4373-4374	/	DURATION[25]	false[25]	_	EntlassMedikation
+66-16	4374-4378	2144	DURATION[25]	false[25]	_	EntlassMedikation
+66-17	4378-4379	>	DURATION[25]	false[25]	_	EntlassMedikation
+66-18	4380-4384	dann	_	_	_	EntlassMedikation
+66-19	4385-4393	absetzen	_	_	_	EntlassMedikation
+
+#Text=Clopidogrel 75 mg 1-0-0 bis einschließlich <[Pseudo] 18/02/2145> dann absetzen!
+67-1	4394-4405	Clopidogrel	ACTIVEING	false	_	EntlassMedikation
+67-2	4406-4408	75	STRENGTH[26]	false[26]	67-1[0_26]	EntlassMedikation
+67-3	4409-4411	mg	STRENGTH[26]	false[26]	_	EntlassMedikation
+67-4	4412-4413	1	FREQUENCY[27]	false[27]	67-1[0_27]	EntlassMedikation
+67-5	4413-4414	-	FREQUENCY[27]	false[27]	_	EntlassMedikation
+67-6	4414-4415	0	FREQUENCY[27]	false[27]	_	EntlassMedikation
+67-7	4415-4416	-	FREQUENCY[27]	false[27]	_	EntlassMedikation
+67-8	4416-4417	0	FREQUENCY[27]	false[27]	_	EntlassMedikation
+67-9	4418-4421	bis	DURATION[28]	false[28]	67-1[0_28]	EntlassMedikation
+67-10	4422-4436	einschließlich	DURATION[28]	false[28]	_	EntlassMedikation
+67-11	4437-4446	<[Pseudo]	DURATION[28]	false[28]	_	EntlassMedikation
+67-12	4447-4449	18	DURATION[28]	false[28]	_	EntlassMedikation
+67-13	4449-4450	/	DURATION[28]	false[28]	_	EntlassMedikation
+67-14	4450-4452	02	DURATION[28]	false[28]	_	EntlassMedikation
+67-15	4452-4453	/	DURATION[28]	false[28]	_	EntlassMedikation
+67-16	4453-4457	2145	DURATION[28]	false[28]	_	EntlassMedikation
+67-17	4457-4458	>	DURATION[28]	false[28]	_	EntlassMedikation
+67-18	4459-4463	dann	_	_	_	EntlassMedikation
+67-19	4464-4472	absetzen	_	_	_	EntlassMedikation
+67-20	4472-4473	!	_	_	_	EntlassMedikation
+
+#Text=Apixaban 2,5 mg 1-0-1 bis einschließlich dem <[Pseudo] 21/08/2144> dann umstellen wie u.g.
+68-1	4474-4482	Apixaban	ACTIVEING	false	_	EntlassMedikation
+68-2	4483-4486	2,5	STRENGTH[29]	false[29]	68-1[0_29]	EntlassMedikation
+68-3	4487-4489	mg	STRENGTH[29]	false[29]	_	EntlassMedikation
+68-4	4490-4491	1	FREQUENCY[30]	false[30]	68-1[0_30]	EntlassMedikation
+68-5	4491-4492	-	FREQUENCY[30]	false[30]	_	EntlassMedikation
+68-6	4492-4493	0	FREQUENCY[30]	false[30]	_	EntlassMedikation
+68-7	4493-4494	-	FREQUENCY[30]	false[30]	_	EntlassMedikation
+68-8	4494-4495	1	FREQUENCY[30]	false[30]	_	EntlassMedikation
+68-9	4496-4499	bis	DURATION[31]	false[31]	68-1[0_31]	EntlassMedikation
+68-10	4500-4514	einschließlich	DURATION[31]	false[31]	_	EntlassMedikation
+68-11	4515-4518	dem	DURATION[31]	false[31]	_	EntlassMedikation
+68-12	4519-4528	<[Pseudo]	DURATION[31]	false[31]	_	EntlassMedikation
+68-13	4529-4531	21	DURATION[31]	false[31]	_	EntlassMedikation
+68-14	4531-4532	/	DURATION[31]	false[31]	_	EntlassMedikation
+68-15	4532-4534	08	DURATION[31]	false[31]	_	EntlassMedikation
+68-16	4534-4535	/	DURATION[31]	false[31]	_	EntlassMedikation
+68-17	4535-4539	2144	DURATION[31]	false[31]	_	EntlassMedikation
+68-18	4539-4540	>	DURATION[31]	false[31]	_	EntlassMedikation
+68-19	4541-4545	dann	_	_	_	EntlassMedikation
+68-20	4546-4555	umstellen	_	_	_	EntlassMedikation
+68-21	4556-4559	wie	_	_	_	EntlassMedikation
+68-22	4560-4563	u.g	_	_	_	EntlassMedikation
+68-23	4563-4564	.	_	_	_	EntlassMedikation
+
+#Text=Apixaban 5 mg 1-0-1 Dauerhaft ab dem B-DATE!
+69-1	4565-4573	Apixaban	ACTIVEING	false	_	EntlassMedikation
+69-2	4574-4575	5	STRENGTH[32]	false[32]	69-1[0_32]	EntlassMedikation
+69-3	4576-4578	mg	STRENGTH[32]	false[32]	_	EntlassMedikation
+69-4	4579-4580	1	FREQUENCY[33]	false[33]	69-1[0_33]	EntlassMedikation
+69-5	4580-4581	-	FREQUENCY[33]	false[33]	_	EntlassMedikation
+69-6	4581-4582	0	FREQUENCY[33]	false[33]	_	EntlassMedikation
+69-7	4582-4583	-	FREQUENCY[33]	false[33]	_	EntlassMedikation
+69-8	4583-4584	1	FREQUENCY[33]	false[33]	_	EntlassMedikation
+69-9	4585-4594	Dauerhaft	DURATION[34]	false[34]	69-1[0_34]	EntlassMedikation
+69-10	4595-4597	ab	DURATION[34]	false[34]	_	EntlassMedikation
+69-11	4598-4601	dem	DURATION[34]	false[34]	_	EntlassMedikation
+69-12	4602-4608	B-DATE	DURATION[34]	false[34]	_	EntlassMedikation
+69-13	4608-4609	!	_	_	_	EntlassMedikation
+
+#Text=Metoprolol 47,5 mg 1-0-1
+70-1	4610-4620	Metoprolol	ACTIVEING	false	_	EntlassMedikation
+70-2	4621-4625	47,5	STRENGTH[35]	false[35]	70-1[0_35]	EntlassMedikation
+70-3	4626-4628	mg	STRENGTH[35]	false[35]	_	EntlassMedikation
+70-4	4629-4630	1	FREQUENCY[36]	false[36]	70-1[0_36]	EntlassMedikation
+70-5	4630-4631	-	FREQUENCY[36]	false[36]	_	EntlassMedikation
+70-6	4631-4632	0	FREQUENCY[36]	false[36]	_	EntlassMedikation
+70-7	4632-4633	-	FREQUENCY[36]	false[36]	_	EntlassMedikation
+70-8	4633-4634	1	FREQUENCY[36]	false[36]	_	EntlassMedikation
+
+#Text=Candesartan 8 mg -UNK- -0-0
+71-1	4635-4646	Candesartan	ACTIVEING	false	_	EntlassMedikation
+71-2	4647-4648	8	STRENGTH[37]	false[37]	71-1[0_37]	EntlassMedikation
+71-3	4649-4651	mg	STRENGTH[37]	false[37]	_	EntlassMedikation
+71-4	4652-4657	-UNK-	FREQUENCY[38]	false[38]	71-1[0_38]	EntlassMedikation
+71-5	4658-4660	-0	FREQUENCY[38]	false[38]	_	EntlassMedikation
+71-6	4660-4661	-	FREQUENCY[38]	false[38]	_	EntlassMedikation
+71-7	4661-4662	0	FREQUENCY[38]	false[38]	_	EntlassMedikation
+
+#Text=Spironolacton 25 mg 1-0-0
+72-1	4663-4676	Spironolacton	ACTIVEING	false	_	EntlassMedikation
+72-2	4677-4679	25	STRENGTH[39]	false[39]	72-1[0_39]	EntlassMedikation
+72-3	4680-4682	mg	STRENGTH[39]	false[39]	_	EntlassMedikation
+72-4	4683-4684	1	FREQUENCY[40]	false[40]	72-1[0_40]	EntlassMedikation
+72-5	4684-4685	-	FREQUENCY[40]	false[40]	_	EntlassMedikation
+72-6	4685-4686	0	FREQUENCY[40]	false[40]	_	EntlassMedikation
+72-7	4686-4687	-	FREQUENCY[40]	false[40]	_	EntlassMedikation
+72-8	4687-4688	0	FREQUENCY[40]	false[40]	_	EntlassMedikation
+
+#Text=Torasemid 10 mg 1- -UNK- -0
+73-1	4689-4698	Torasemid	ACTIVEING	false	_	EntlassMedikation
+73-2	4699-4701	10	STRENGTH[41]	false[41]	73-1[0_41]	EntlassMedikation
+73-3	4702-4704	mg	STRENGTH[41]	false[41]	_	EntlassMedikation
+73-4	4705-4707	1-	FREQUENCY[42]	false[42]	73-1[0_42]	EntlassMedikation
+73-5	4708-4713	-UNK-	FREQUENCY[42]	false[42]	_	EntlassMedikation
+73-6	4714-4716	-0	FREQUENCY[42]	false[42]	_	EntlassMedikation
+
+#Text=Omeprazol 20 mg 1-0-0
+74-1	4717-4726	Omeprazol	ACTIVEING	false	_	EntlassMedikation
+74-2	4727-4729	20	STRENGTH[43]	false[43]	74-1[0_43]	EntlassMedikation
+74-3	4730-4732	mg	STRENGTH[43]	false[43]	_	EntlassMedikation
+74-4	4733-4734	1	FREQUENCY[44]	false[44]	74-1[0_44]	EntlassMedikation
+74-5	4734-4735	-	FREQUENCY[44]	false[44]	_	EntlassMedikation
+74-6	4735-4736	0	FREQUENCY[44]	false[44]	_	EntlassMedikation
+74-7	4736-4737	-	FREQUENCY[44]	false[44]	_	EntlassMedikation
+74-8	4737-4738	0	FREQUENCY[44]	false[44]	_	EntlassMedikation
+
+#Text=Mit freundlichen Grüßen
+75-1	4740-4743	Mit	_	_	_	Abschluss
+75-2	4744-4756	freundlichen	_	_	_	Abschluss
+75-3	4757-4763	Grüßen	_	_	_	Abschluss
+
+#Text=B-TITLE I-TITLE I-TITLE B-PER I-PER B-TITLE I-TITLE B-PER I-PER B-TITLE I-TITLE B-PER I-PER
+76-1	4766-4773	B-TITLE	_	_	_	Abschluss
+76-2	4774-4781	I-TITLE	_	_	_	Abschluss
+76-3	4782-4789	I-TITLE	_	_	_	Abschluss
+76-4	4790-4795	B-PER	_	_	_	Abschluss
+76-5	4796-4801	I-PER	_	_	_	Abschluss
+76-6	4802-4809	B-TITLE	_	_	_	Abschluss
+76-7	4810-4817	I-TITLE	_	_	_	Abschluss
+76-8	4818-4823	B-PER	_	_	_	Abschluss
+76-9	4824-4829	I-PER	_	_	_	Abschluss
+76-10	4830-4837	B-TITLE	_	_	_	Abschluss
+76-11	4838-4845	I-TITLE	_	_	_	Abschluss
+76-12	4846-4851	B-PER	_	_	_	Abschluss
+76-13	4852-4857	I-PER	_	_	_	Abschluss
+
+#Text=Ärztlicher Direktor Oberarzt Assistenzärztin
+77-1	4858-4868	Ärztlicher	_	_	_	Abschluss
+77-2	4869-4877	Direktor	_	_	_	Abschluss
+77-3	4878-4886	Oberarzt	_	_	_	Abschluss
+77-4	4887-4902	Assistenzärztin	_	_	_	Abschluss

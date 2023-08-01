@@ -1,0 +1,4173 @@
+#FORMAT=WebAnno TSV 3.3
+#T_SP=webanno.custom.Medication|ClassType|InNarrative
+#T_RL=webanno.custom.MedRel|BT_webanno.custom.Medication
+#T_SP=webanno.custom.Sectionsentence|Sectiontypes
+
+
+#Text=Aufnahmedatum: <[Pseudo] 2036-07-29 >
+1-1	0-13	Aufnahmedatum	_	_	_	_
+1-2	13-14	:	_	_	_	_
+1-3	15-24	<[Pseudo]	_	_	_	_
+1-4	25-29	2036	_	_	_	_
+1-5	29-30	-	_	_	_	_
+1-6	30-32	07	_	_	_	_
+1-7	32-33	-	_	_	_	_
+1-8	33-35	29	_	_	_	_
+1-9	36-37	>	_	_	_	_
+
+#Text=Geburtsdatum: <[Pseudo] 1987-09-27 >
+2-1	38-50	Geburtsdatum	_	_	_	_
+2-2	50-51	:	_	_	_	_
+2-3	52-61	<[Pseudo]	_	_	_	_
+2-4	62-66	1987	_	_	_	_
+2-5	66-67	-	_	_	_	_
+2-6	67-69	09	_	_	_	_
+2-7	69-70	-	_	_	_	_
+2-8	70-72	27	_	_	_	_
+2-9	73-74	>	_	_	_	_
+
+#Text=Alter: 48
+3-1	75-80	Alter	_	_	_	_
+3-2	80-81	:	_	_	_	_
+3-3	82-84	48	_	_	_	_
+
+#Text=über Ihren Patienten B-SALUTE B-PER I-PER geboren am <[Pseudo] 27/09/1987> wohnhaft in B-PLZ B-LOC I-ADDR I-ADDR der sich vom bis in unserer stationären Behandlung befand.
+4-1	86-90	über	_	_	_	Anrede
+4-2	91-96	Ihren	_	_	_	Anrede
+4-3	97-106	Patienten	_	_	_	Anrede
+4-4	107-115	B-SALUTE	_	_	_	Anrede
+4-5	116-121	B-PER	_	_	_	Anrede
+4-6	122-127	I-PER	_	_	_	Anrede
+4-7	128-135	geboren	_	_	_	Anrede
+4-8	136-138	am	_	_	_	Anrede
+4-9	139-148	<[Pseudo]	_	_	_	Anrede
+4-10	149-151	27	_	_	_	Anrede
+4-11	151-152	/	_	_	_	Anrede
+4-12	152-154	09	_	_	_	Anrede
+4-13	154-155	/	_	_	_	Anrede
+4-14	155-159	1987	_	_	_	Anrede
+4-15	159-160	>	_	_	_	Anrede
+4-16	161-169	wohnhaft	_	_	_	Anrede
+4-17	170-172	in	_	_	_	Anrede
+4-18	173-178	B-PLZ	_	_	_	Anrede
+4-19	179-184	B-LOC	_	_	_	Anrede
+4-20	185-191	I-ADDR	_	_	_	Anrede
+4-21	192-198	I-ADDR	_	_	_	Anrede
+4-22	199-202	der	_	_	_	Anrede
+4-23	203-207	sich	_	_	_	Anrede
+4-24	208-211	vom	_	_	_	Anrede
+4-25	212-215	bis	_	_	_	Anrede
+4-26	216-218	in	_	_	_	Anrede
+4-27	219-226	unserer	_	_	_	Anrede
+4-28	227-238	stationären	_	_	_	Anrede
+4-29	239-249	Behandlung	_	_	_	Anrede
+4-30	250-256	befand	_	_	_	Anrede
+4-31	256-257	.	_	_	_	Anrede
+
+#Text=Aktuell:
+5-1	259-266	Aktuell	_	_	_	EntlassMedikation
+5-2	266-267	:	_	_	_	EntlassMedikation
+
+#Text=- Akuter Myokardinfarkt -LRB- STEMI -RRB- am <[Pseudo] 23/07/2036> -LRB- HK vom <[Pseudo] 23/07/2036> B-OTHER -RRB- mit/bei:
+6-1	268-269	-	_	_	_	EntlassMedikation
+6-2	270-276	Akuter	_	_	_	EntlassMedikation
+6-3	277-291	Myokardinfarkt	_	_	_	EntlassMedikation
+6-4	292-297	-LRB-	_	_	_	EntlassMedikation
+6-5	298-303	STEMI	_	_	_	EntlassMedikation
+6-6	304-309	-RRB-	_	_	_	EntlassMedikation
+6-7	310-312	am	_	_	_	EntlassMedikation
+6-8	313-322	<[Pseudo]	_	_	_	EntlassMedikation
+6-9	323-325	23	_	_	_	EntlassMedikation
+6-10	325-326	/	_	_	_	EntlassMedikation
+6-11	326-328	07	_	_	_	EntlassMedikation
+6-12	328-329	/	_	_	_	EntlassMedikation
+6-13	329-333	2036	_	_	_	EntlassMedikation
+6-14	333-334	>	_	_	_	EntlassMedikation
+6-15	335-340	-LRB-	_	_	_	EntlassMedikation
+6-16	341-343	HK	_	_	_	EntlassMedikation
+6-17	344-347	vom	_	_	_	EntlassMedikation
+6-18	348-357	<[Pseudo]	_	_	_	EntlassMedikation
+6-19	358-360	23	_	_	_	EntlassMedikation
+6-20	360-361	/	_	_	_	EntlassMedikation
+6-21	361-363	07	_	_	_	EntlassMedikation
+6-22	363-364	/	_	_	_	EntlassMedikation
+6-23	364-368	2036	_	_	_	EntlassMedikation
+6-24	368-369	>	_	_	_	EntlassMedikation
+6-25	370-377	B-OTHER	_	_	_	EntlassMedikation
+6-26	378-383	-RRB-	_	_	_	EntlassMedikation
+6-27	384-387	mit	_	_	_	EntlassMedikation
+6-28	387-388	/	_	_	_	EntlassMedikation
+6-29	388-391	bei	_	_	_	EntlassMedikation
+6-30	391-392	:	_	_	_	EntlassMedikation
+
+#Text=-UNK- Erfolgreiche Rekanalisation der RCA mittels PTCA/3-fach DE-Stentimplantation -LRB- B-OTHER vom <[Pseudo] 23/07/2036> -RRB-
+7-1	393-398	-UNK-	_	_	_	EntlassMedikation
+7-2	399-411	Erfolgreiche	_	_	_	EntlassMedikation
+7-3	412-426	Rekanalisation	_	_	_	EntlassMedikation
+7-4	427-430	der	_	_	_	EntlassMedikation
+7-5	431-434	RCA	_	_	_	EntlassMedikation
+7-6	435-442	mittels	_	_	_	EntlassMedikation
+7-7	443-447	PTCA	_	_	_	EntlassMedikation
+7-8	447-448	/	_	_	_	EntlassMedikation
+7-9	448-454	3-fach	_	_	_	EntlassMedikation
+7-10	455-475	DE-Stentimplantation	_	_	_	EntlassMedikation
+7-11	476-481	-LRB-	_	_	_	EntlassMedikation
+7-12	482-489	B-OTHER	_	_	_	EntlassMedikation
+7-13	490-493	vom	_	_	_	EntlassMedikation
+7-14	494-503	<[Pseudo]	_	_	_	EntlassMedikation
+7-15	504-506	23	_	_	_	EntlassMedikation
+7-16	506-507	/	_	_	_	EntlassMedikation
+7-17	507-509	07	_	_	_	EntlassMedikation
+7-18	509-510	/	_	_	_	EntlassMedikation
+7-19	510-514	2036	_	_	_	EntlassMedikation
+7-20	514-515	>	_	_	_	EntlassMedikation
+7-21	516-521	-RRB-	_	_	_	EntlassMedikation
+
+#Text=-UNK- Verzicht auf LV-Angiographie zur Nephroprotektion
+8-1	522-527	-UNK-	_	_	_	EntlassMedikation
+8-2	528-536	Verzicht	_	_	_	EntlassMedikation
+8-3	537-540	auf	_	_	_	EntlassMedikation
+8-4	541-556	LV-Angiographie	_	_	_	EntlassMedikation
+8-5	557-560	zur	_	_	_	EntlassMedikation
+8-6	561-577	Nephroprotektion	_	_	_	EntlassMedikation
+
+#Text=-UNK- Ad Ischämienachweis der LAD mittels Stress MRT
+9-1	578-583	-UNK-	_	_	_	EntlassMedikation
+9-2	584-586	Ad	_	_	_	EntlassMedikation
+9-3	587-603	Ischämienachweis	_	_	_	EntlassMedikation
+9-4	604-607	der	_	_	_	EntlassMedikation
+9-5	608-611	LAD	_	_	_	EntlassMedikation
+9-6	612-619	mittels	_	_	_	EntlassMedikation
+9-7	620-626	Stress	_	_	_	EntlassMedikation
+9-8	627-630	MRT	_	_	_	EntlassMedikation
+
+#Text=-UNK- MRT Termin am <[Pseudo] 11/12/2036> um 14:00 Uhr
+10-1	631-636	-UNK-	_	_	_	EntlassMedikation
+10-2	637-640	MRT	_	_	_	EntlassMedikation
+10-3	641-647	Termin	_	_	_	EntlassMedikation
+10-4	648-650	am	_	_	_	EntlassMedikation
+10-5	651-660	<[Pseudo]	_	_	_	EntlassMedikation
+10-6	661-663	11	_	_	_	EntlassMedikation
+10-7	663-664	/	_	_	_	EntlassMedikation
+10-8	664-666	12	_	_	_	EntlassMedikation
+10-9	666-667	/	_	_	_	EntlassMedikation
+10-10	667-671	2036	_	_	_	EntlassMedikation
+10-11	671-672	>	_	_	_	EntlassMedikation
+10-12	673-675	um	_	_	_	EntlassMedikation
+10-13	676-681	14:00	_	_	_	EntlassMedikation
+10-14	682-685	Uhr	_	_	_	EntlassMedikation
+
+#Text=-UNK- Befundbesprechung am <[Pseudo] 25/12/2036> um 11:30 Uhr in unserer kardiologischen Ambulanz
+11-1	686-691	-UNK-	_	_	_	EntlassMedikation
+11-2	692-709	Befundbesprechung	_	_	_	EntlassMedikation
+11-3	710-712	am	_	_	_	EntlassMedikation
+11-4	713-722	<[Pseudo]	_	_	_	EntlassMedikation
+11-5	723-725	25	_	_	_	EntlassMedikation
+11-6	725-726	/	_	_	_	EntlassMedikation
+11-7	726-728	12	_	_	_	EntlassMedikation
+11-8	728-729	/	_	_	_	EntlassMedikation
+11-9	729-733	2036	_	_	_	EntlassMedikation
+11-10	733-734	>	_	_	_	EntlassMedikation
+11-11	735-737	um	_	_	_	EntlassMedikation
+11-12	738-743	11:30	_	_	_	EntlassMedikation
+11-13	744-747	Uhr	_	_	_	EntlassMedikation
+11-14	748-750	in	_	_	_	EntlassMedikation
+11-15	751-758	unserer	_	_	_	EntlassMedikation
+11-16	759-774	kardiologischen	_	_	_	EntlassMedikation
+11-17	775-783	Ambulanz	_	_	_	EntlassMedikation
+
+#Text=-UNK- Bitte aktuellen Überweisungsschien mitbringen, sowie aktuelle Laborwerte -LRB- Nierenparameter, Blutbild, Elektrolyte -RRB-
+12-1	784-789	-UNK-	_	_	_	EntlassMedikation
+12-2	790-795	Bitte	_	_	_	EntlassMedikation
+12-3	796-805	aktuellen	_	_	_	EntlassMedikation
+12-4	806-824	Überweisungsschien	_	_	_	EntlassMedikation
+12-5	825-835	mitbringen	_	_	_	EntlassMedikation
+12-6	835-836	,	_	_	_	EntlassMedikation
+12-7	837-842	sowie	_	_	_	EntlassMedikation
+12-8	843-851	aktuelle	_	_	_	EntlassMedikation
+12-9	852-862	Laborwerte	_	_	_	EntlassMedikation
+12-10	863-868	-LRB-	_	_	_	EntlassMedikation
+12-11	869-884	Nierenparameter	_	_	_	EntlassMedikation
+12-12	884-885	,	_	_	_	EntlassMedikation
+12-13	886-894	Blutbild	_	_	_	EntlassMedikation
+12-14	894-895	,	_	_	_	EntlassMedikation
+12-15	896-907	Elektrolyte	_	_	_	EntlassMedikation
+12-16	908-913	-RRB-	_	_	_	EntlassMedikation
+
+#Text=- 24 h vorher kein Kaffee/Koffein/Schwarztee/Schokolade/Kakao einnehmen
+13-1	914-915	-	_	_	_	EntlassMedikation
+13-2	916-918	24	_	_	_	EntlassMedikation
+13-3	919-920	h	_	_	_	EntlassMedikation
+13-4	921-927	vorher	_	_	_	EntlassMedikation
+13-5	928-932	kein	_	_	_	EntlassMedikation
+13-6	933-939	Kaffee	_	_	_	EntlassMedikation
+13-7	939-940	/	_	_	_	EntlassMedikation
+13-8	940-947	Koffein	_	_	_	EntlassMedikation
+13-9	947-948	/	_	_	_	EntlassMedikation
+13-10	948-958	Schwarztee	_	_	_	EntlassMedikation
+13-11	958-959	/	_	_	_	EntlassMedikation
+13-12	959-969	Schokolade	_	_	_	EntlassMedikation
+13-13	969-970	/	_	_	_	EntlassMedikation
+13-14	970-975	Kakao	_	_	_	EntlassMedikation
+13-15	976-985	einnehmen	_	_	_	EntlassMedikation
+
+#Text=- Koronare 3-Gefäßerkrankung
+14-1	986-987	-	_	_	_	EntlassMedikation
+14-2	988-996	Koronare	_	_	_	EntlassMedikation
+14-3	997-1014	3-Gefäßerkrankung	_	_	_	EntlassMedikation
+
+#Text=-UNK- Z. n. akutem Myokardinfarkt -LRB- STEMI -RRB- am <[Pseudo] 14/07/2035>
+15-1	1015-1020	-UNK-	_	_	_	EntlassMedikation
+15-2	1021-1023	Z.	_	_	_	EntlassMedikation
+15-3	1024-1026	n.	_	_	_	EntlassMedikation
+15-4	1027-1033	akutem	_	_	_	EntlassMedikation
+15-5	1034-1048	Myokardinfarkt	_	_	_	EntlassMedikation
+15-6	1049-1054	-LRB-	_	_	_	EntlassMedikation
+15-7	1055-1060	STEMI	_	_	_	EntlassMedikation
+15-8	1061-1066	-RRB-	_	_	_	EntlassMedikation
+15-9	1067-1069	am	_	_	_	EntlassMedikation
+15-10	1070-1079	<[Pseudo]	_	_	_	EntlassMedikation
+15-11	1080-1082	14	_	_	_	EntlassMedikation
+15-12	1082-1083	/	_	_	_	EntlassMedikation
+15-13	1083-1085	07	_	_	_	EntlassMedikation
+15-14	1085-1086	/	_	_	_	EntlassMedikation
+15-15	1086-1090	2035	_	_	_	EntlassMedikation
+15-16	1090-1091	>	_	_	_	EntlassMedikation
+
+#Text=-UNK- Erfolgreiche Rekanalisation der LCX mittels PTCA/3fach DE-Stentimplantation, gutes Ergebnis nach PTCA/Stentimplantation der RCA <[Pseudo] 2032> -LRB- B-OTHER vom <[Pseudo] 14/07/2035> -RRB-
+16-1	1092-1097	-UNK-	_	_	_	EntlassMedikation
+16-2	1098-1110	Erfolgreiche	_	_	_	EntlassMedikation
+16-3	1111-1125	Rekanalisation	_	_	_	EntlassMedikation
+16-4	1126-1129	der	_	_	_	EntlassMedikation
+16-5	1130-1133	LCX	_	_	_	EntlassMedikation
+16-6	1134-1141	mittels	_	_	_	EntlassMedikation
+16-7	1142-1146	PTCA	_	_	_	EntlassMedikation
+16-8	1146-1147	/	_	_	_	EntlassMedikation
+16-9	1147-1152	3fach	_	_	_	EntlassMedikation
+16-10	1153-1173	DE-Stentimplantation	_	_	_	EntlassMedikation
+16-11	1173-1174	,	_	_	_	EntlassMedikation
+16-12	1175-1180	gutes	_	_	_	EntlassMedikation
+16-13	1181-1189	Ergebnis	_	_	_	EntlassMedikation
+16-14	1190-1194	nach	_	_	_	EntlassMedikation
+16-15	1195-1199	PTCA	_	_	_	EntlassMedikation
+16-16	1199-1200	/	_	_	_	EntlassMedikation
+16-17	1200-1217	Stentimplantation	_	_	_	EntlassMedikation
+16-18	1218-1221	der	_	_	_	EntlassMedikation
+16-19	1222-1225	RCA	_	_	_	EntlassMedikation
+16-20	1226-1235	<[Pseudo]	_	_	_	EntlassMedikation
+16-21	1236-1240	2032	_	_	_	EntlassMedikation
+16-22	1240-1241	>	_	_	_	EntlassMedikation
+16-23	1242-1247	-LRB-	_	_	_	EntlassMedikation
+16-24	1248-1255	B-OTHER	_	_	_	EntlassMedikation
+16-25	1256-1259	vom	_	_	_	EntlassMedikation
+16-26	1260-1269	<[Pseudo]	_	_	_	EntlassMedikation
+16-27	1270-1272	14	_	_	_	EntlassMedikation
+16-28	1272-1273	/	_	_	_	EntlassMedikation
+16-29	1273-1275	07	_	_	_	EntlassMedikation
+16-30	1275-1276	/	_	_	_	EntlassMedikation
+16-31	1276-1280	2035	_	_	_	EntlassMedikation
+16-32	1280-1281	>	_	_	_	EntlassMedikation
+16-33	1282-1287	-RRB-	_	_	_	EntlassMedikation
+
+#Text=-UNK- Z. n. PTCA/Stentimplantation der RCA <[Pseudo] 07/2032> -LRB- B-ORG -RRB-
+17-1	1288-1293	-UNK-	_	_	_	EntlassMedikation
+17-2	1294-1296	Z.	_	_	_	EntlassMedikation
+17-3	1297-1299	n.	_	_	_	EntlassMedikation
+17-4	1300-1304	PTCA	_	_	_	EntlassMedikation
+17-5	1304-1305	/	_	_	_	EntlassMedikation
+17-6	1305-1322	Stentimplantation	_	_	_	EntlassMedikation
+17-7	1323-1326	der	_	_	_	EntlassMedikation
+17-8	1327-1330	RCA	_	_	_	EntlassMedikation
+17-9	1331-1340	<[Pseudo]	_	_	_	EntlassMedikation
+17-10	1341-1343	07	_	_	_	EntlassMedikation
+17-11	1343-1344	/	_	_	_	EntlassMedikation
+17-12	1344-1348	2032	_	_	_	EntlassMedikation
+17-13	1348-1349	>	_	_	_	EntlassMedikation
+17-14	1350-1355	-LRB-	_	_	_	EntlassMedikation
+17-15	1356-1361	B-ORG	_	_	_	EntlassMedikation
+17-16	1362-1367	-RRB-	_	_	_	EntlassMedikation
+
+#Text=-UNK- Echokardiographie vom <[Pseudo] 18/07/2035:> gute systolische LV-Pumpfunktion bei Hypokinesie inferolateral mediobasal sowie inferior basal
+18-1	1368-1373	-UNK-	_	_	_	EchoBefunde
+18-2	1374-1391	Echokardiographie	_	_	_	EchoBefunde
+18-3	1392-1395	vom	_	_	_	EchoBefunde
+18-4	1396-1405	<[Pseudo]	_	_	_	EchoBefunde
+18-5	1406-1408	18	_	_	_	EchoBefunde
+18-6	1408-1409	/	_	_	_	EchoBefunde
+18-7	1409-1411	07	_	_	_	EchoBefunde
+18-8	1411-1412	/	_	_	_	EchoBefunde
+18-9	1412-1416	2035	_	_	_	EchoBefunde
+18-10	1416-1418	:>	_	_	_	EchoBefunde
+18-11	1419-1423	gute	_	_	_	EchoBefunde
+18-12	1424-1435	systolische	_	_	_	EchoBefunde
+18-13	1436-1451	LV-Pumpfunktion	_	_	_	EchoBefunde
+18-14	1452-1455	bei	_	_	_	EchoBefunde
+18-15	1456-1467	Hypokinesie	_	_	_	EchoBefunde
+18-16	1468-1481	inferolateral	_	_	_	EchoBefunde
+18-17	1482-1492	mediobasal	_	_	_	EchoBefunde
+18-18	1493-1498	sowie	_	_	_	EchoBefunde
+18-19	1499-1507	inferior	_	_	_	EchoBefunde
+18-20	1508-1513	basal	_	_	_	EchoBefunde
+
+#Text=- Unzureichend eingestellter IDDM
+19-1	1514-1515	-	_	_	_	EchoBefunde
+19-2	1516-1528	Unzureichend	_	_	_	EchoBefunde
+19-3	1529-1542	eingestellter	_	_	_	EchoBefunde
+19-4	1543-1547	IDDM	_	_	_	EchoBefunde
+
+#Text=-UNK- HbA1C: 8.3 % -LRB- <[Pseudo] 07/2036> -RRB-
+20-1	1548-1553	-UNK-	_	_	_	AktuellDiagnosen
+20-2	1554-1559	HbA1C	_	_	_	AktuellDiagnosen
+20-3	1559-1560	:	_	_	_	AktuellDiagnosen
+20-4	1561-1564	8.3	_	_	_	AktuellDiagnosen
+20-5	1565-1566	%	_	_	_	AktuellDiagnosen
+20-6	1567-1572	-LRB-	_	_	_	AktuellDiagnosen
+20-7	1573-1582	<[Pseudo]	_	_	_	AktuellDiagnosen
+20-8	1583-1585	07	_	_	_	AktuellDiagnosen
+20-9	1585-1586	/	_	_	_	AktuellDiagnosen
+20-10	1586-1590	2036	_	_	_	AktuellDiagnosen
+20-11	1590-1591	>	_	_	_	AktuellDiagnosen
+20-12	1592-1597	-RRB-	_	_	_	AktuellDiagnosen
+
+#Text=-UNK- Empfehlung zur Optimierung der Insulintherapie / des Lebensstils
+21-1	1598-1603	-UNK-	_	_	_	AktuellDiagnosen
+21-2	1604-1614	Empfehlung	_	_	_	AktuellDiagnosen
+21-3	1615-1618	zur	_	_	_	AktuellDiagnosen
+21-4	1619-1630	Optimierung	_	_	_	AktuellDiagnosen
+21-5	1631-1634	der	_	_	_	AktuellDiagnosen
+21-6	1635-1650	Insulintherapie	_	_	_	AktuellDiagnosen
+21-7	1651-1652	/	_	_	_	AktuellDiagnosen
+21-8	1653-1656	des	_	_	_	AktuellDiagnosen
+21-9	1657-1668	Lebensstils	_	_	_	AktuellDiagnosen
+
+#Text=Diagnosen:
+22-1	1669-1678	Diagnosen	_	_	_	Diagnosen
+22-2	1678-1679	:	_	_	_	Diagnosen
+
+#Text=- Z. n. Nieren-Pankreas-Transplantation einer rechten Niere in die linke Fossa iliaca sowie Pankreas in die rechte Fossa iliaca am <[Pseudo] 02/03/2030>
+23-1	1680-1681	-	_	_	_	Diagnosen
+23-2	1682-1684	Z.	_	_	_	Diagnosen
+23-3	1685-1687	n.	_	_	_	Diagnosen
+23-4	1688-1719	Nieren-Pankreas-Transplantation	_	_	_	Diagnosen
+23-5	1720-1725	einer	_	_	_	Diagnosen
+23-6	1726-1733	rechten	_	_	_	Diagnosen
+23-7	1734-1739	Niere	_	_	_	Diagnosen
+23-8	1740-1742	in	_	_	_	Diagnosen
+23-9	1743-1746	die	_	_	_	Diagnosen
+23-10	1747-1752	linke	_	_	_	Diagnosen
+23-11	1753-1758	Fossa	_	_	_	Diagnosen
+23-12	1759-1765	iliaca	_	_	_	Diagnosen
+23-13	1766-1771	sowie	_	_	_	Diagnosen
+23-14	1772-1780	Pankreas	_	_	_	Diagnosen
+23-15	1781-1783	in	_	_	_	Diagnosen
+23-16	1784-1787	die	_	_	_	Diagnosen
+23-17	1788-1794	rechte	_	_	_	Diagnosen
+23-18	1795-1800	Fossa	_	_	_	Diagnosen
+23-19	1801-1807	iliaca	_	_	_	Diagnosen
+23-20	1808-1810	am	_	_	_	Diagnosen
+23-21	1811-1820	<[Pseudo]	_	_	_	Diagnosen
+23-22	1821-1823	02	_	_	_	Diagnosen
+23-23	1823-1824	/	_	_	_	Diagnosen
+23-24	1824-1826	03	_	_	_	Diagnosen
+23-25	1826-1827	/	_	_	_	Diagnosen
+23-26	1827-1831	2030	_	_	_	Diagnosen
+23-27	1831-1832	>	_	_	_	Diagnosen
+
+#Text=-UNK- BG Empfänger B neg./Spender B pos., CMV pos./pos.,
+24-1	1833-1838	-UNK-	_	_	_	Diagnosen
+24-2	1839-1841	BG	_	_	_	Diagnosen
+24-3	1842-1851	Empfänger	_	_	_	Diagnosen
+24-4	1852-1853	B	_	_	_	Diagnosen
+24-5	1854-1866	neg./Spender	_	_	_	Diagnosen
+24-6	1867-1868	B	_	_	_	Diagnosen
+24-7	1869-1872	pos	_	_	_	Diagnosen
+24-8	1872-1873	.	_	_	_	Diagnosen
+24-9	1873-1874	,	_	_	_	Diagnosen
+24-10	1875-1878	CMV	_	_	_	Diagnosen
+24-11	1879-1887	pos./pos	_	_	_	Diagnosen
+24-12	1887-1888	.	_	_	_	Diagnosen
+24-13	1888-1889	,	_	_	_	Diagnosen
+
+#Text=-UNK- Anti-HBc-Ak Spender pos./Empf. neg., 1 M, 5 MM, KIZ 10 h 50 Min.
+25-1	1890-1895	-UNK-	_	_	_	Diagnosen
+25-2	1896-1907	Anti-HBc-Ak	_	_	_	Diagnosen
+25-3	1908-1915	Spender	_	_	_	Diagnosen
+25-4	1916-1925	pos./Empf	_	_	_	Diagnosen
+25-5	1925-1926	.	_	_	_	Diagnosen
+25-6	1927-1930	neg	_	_	_	Diagnosen
+25-7	1930-1931	.	_	_	_	Diagnosen
+25-8	1931-1932	,	_	_	_	Diagnosen
+25-9	1933-1934	1	_	_	_	Diagnosen
+25-10	1935-1936	M	_	_	_	Diagnosen
+25-11	1936-1937	,	_	_	_	Diagnosen
+25-12	1938-1939	5	_	_	_	Diagnosen
+25-13	1940-1942	MM	_	_	_	Diagnosen
+25-14	1942-1943	,	_	_	_	Diagnosen
+25-15	1944-1947	KIZ	_	_	_	Diagnosen
+25-16	1948-1950	10	_	_	_	Diagnosen
+25-17	1951-1952	h	_	_	_	Diagnosen
+25-18	1953-1955	50	_	_	_	Diagnosen
+25-19	1956-1959	Min	_	_	_	Diagnosen
+25-20	1959-1960	.	_	_	_	Diagnosen
+
+#Text=-UNK- Niere: 1 Arterie End/zu Seit auf A. iliaca communis links, 1 Vene End/zu Seit auf Vena iliaca externa links; Pankreas: 1 Arterie End/zu Seit auf A. iliaca communis rechts, Vene End/zu Seit auf Vena cava inferior
+26-1	1961-1966	-UNK-	_	_	_	Diagnosen
+26-2	1967-1972	Niere	_	_	_	Diagnosen
+26-3	1972-1973	:	_	_	_	Diagnosen
+26-4	1974-1975	1	_	_	_	Diagnosen
+26-5	1976-1983	Arterie	_	_	_	Diagnosen
+26-6	1984-1987	End	_	_	_	Diagnosen
+26-7	1987-1988	/	_	_	_	Diagnosen
+26-8	1988-1990	zu	_	_	_	Diagnosen
+26-9	1991-1995	Seit	_	_	_	Diagnosen
+26-10	1996-1999	auf	_	_	_	Diagnosen
+26-11	2000-2002	A.	_	_	_	Diagnosen
+26-12	2003-2009	iliaca	_	_	_	Diagnosen
+26-13	2010-2018	communis	_	_	_	Diagnosen
+26-14	2019-2024	links	_	_	_	Diagnosen
+26-15	2024-2025	,	_	_	_	Diagnosen
+26-16	2026-2027	1	_	_	_	Diagnosen
+26-17	2028-2032	Vene	_	_	_	Diagnosen
+26-18	2033-2036	End	_	_	_	Diagnosen
+26-19	2036-2037	/	_	_	_	Diagnosen
+26-20	2037-2039	zu	_	_	_	Diagnosen
+26-21	2040-2044	Seit	_	_	_	Diagnosen
+26-22	2045-2048	auf	_	_	_	Diagnosen
+26-23	2049-2053	Vena	_	_	_	Diagnosen
+26-24	2054-2060	iliaca	_	_	_	Diagnosen
+26-25	2061-2068	externa	_	_	_	Diagnosen
+26-26	2069-2074	links	_	_	_	Diagnosen
+26-27	2074-2075	;	_	_	_	Diagnosen
+26-28	2076-2084	Pankreas	_	_	_	Diagnosen
+26-29	2084-2085	:	_	_	_	Diagnosen
+26-30	2086-2087	1	_	_	_	Diagnosen
+26-31	2088-2095	Arterie	_	_	_	Diagnosen
+26-32	2096-2099	End	_	_	_	Diagnosen
+26-33	2099-2100	/	_	_	_	Diagnosen
+26-34	2100-2102	zu	_	_	_	Diagnosen
+26-35	2103-2107	Seit	_	_	_	Diagnosen
+26-36	2108-2111	auf	_	_	_	Diagnosen
+26-37	2112-2114	A.	_	_	_	Diagnosen
+26-38	2115-2121	iliaca	_	_	_	Diagnosen
+26-39	2122-2130	communis	_	_	_	Diagnosen
+26-40	2131-2137	rechts	_	_	_	Diagnosen
+26-41	2137-2138	,	_	_	_	Diagnosen
+26-42	2139-2143	Vene	_	_	_	Diagnosen
+26-43	2144-2147	End	_	_	_	Diagnosen
+26-44	2147-2148	/	_	_	_	Diagnosen
+26-45	2148-2150	zu	_	_	_	Diagnosen
+26-46	2151-2155	Seit	_	_	_	Diagnosen
+26-47	2156-2159	auf	_	_	_	Diagnosen
+26-48	2160-2164	Vena	_	_	_	Diagnosen
+26-49	2165-2169	cava	_	_	_	Diagnosen
+26-50	2170-2178	inferior	_	_	_	Diagnosen
+
+#Text=-UNK- Erhöhung der Ciclosporin Dosierung
+27-1	2179-2184	-UNK-	_	_	_	Diagnosen
+27-2	2185-2193	Erhöhung	_	_	_	Diagnosen
+27-3	2194-2197	der	_	_	_	Diagnosen
+27-4	2198-2209	Ciclosporin	ACTIVEING	true	_	Diagnosen
+27-5	2210-2219	Dosierung	_	_	_	Diagnosen
+
+#Text=-UNK- Bitte um regelhafte Spiegelkontrollen -LRB- <[Pseudo] 07/2036> -RRB-
+28-1	2220-2225	-UNK-	_	_	_	Diagnosen
+28-2	2226-2231	Bitte	_	_	_	Diagnosen
+28-3	2232-2234	um	_	_	_	Diagnosen
+28-4	2235-2245	regelhafte	_	_	_	Diagnosen
+28-5	2246-2263	Spiegelkontrollen	_	_	_	Diagnosen
+28-6	2264-2269	-LRB-	_	_	_	Diagnosen
+28-7	2270-2279	<[Pseudo]	_	_	_	Diagnosen
+28-8	2280-2282	07	_	_	_	Diagnosen
+28-9	2282-2283	/	_	_	_	Diagnosen
+28-10	2283-2287	2036	_	_	_	Diagnosen
+28-11	2287-2288	>	_	_	_	Diagnosen
+28-12	2289-2294	-RRB-	_	_	_	Diagnosen
+
+#Text=- Nächste Vorstellung im B-ORG I-ORG am <[Pseudo] 29/07/2036>
+29-1	2295-2296	-	_	_	_	Diagnosen
+29-2	2297-2304	Nächste	_	_	_	Diagnosen
+29-3	2305-2316	Vorstellung	_	_	_	Diagnosen
+29-4	2317-2319	im	_	_	_	Diagnosen
+29-5	2320-2325	B-ORG	_	_	_	Diagnosen
+29-6	2326-2331	I-ORG	_	_	_	Diagnosen
+29-7	2332-2334	am	_	_	_	Diagnosen
+29-8	2335-2344	<[Pseudo]	_	_	_	Diagnosen
+29-9	2345-2347	29	_	_	_	Diagnosen
+29-10	2347-2348	/	_	_	_	Diagnosen
+29-11	2348-2350	07	_	_	_	Diagnosen
+29-12	2350-2351	/	_	_	_	Diagnosen
+29-13	2351-2355	2036	_	_	_	Diagnosen
+29-14	2355-2356	>	_	_	_	Diagnosen
+
+#Text=- Z. n. expl. Laparotomie und abdomineller Lavage am <[Pseudo] 18/03/2030> bei Hb-relevanter Blutung im Bereich der Nierenarterie
+30-1	2357-2358	-	_	_	_	Diagnosen
+30-2	2359-2361	Z.	_	_	_	Diagnosen
+30-3	2362-2364	n.	_	_	_	Diagnosen
+30-4	2365-2369	expl	_	_	_	Diagnosen
+30-5	2369-2370	.	_	_	_	Diagnosen
+30-6	2371-2382	Laparotomie	_	_	_	Diagnosen
+30-7	2383-2386	und	_	_	_	Diagnosen
+30-8	2387-2399	abdomineller	_	_	_	Diagnosen
+30-9	2400-2406	Lavage	_	_	_	Diagnosen
+30-10	2407-2409	am	_	_	_	Diagnosen
+30-11	2410-2419	<[Pseudo]	_	_	_	Diagnosen
+30-12	2420-2422	18	_	_	_	Diagnosen
+30-13	2422-2423	/	_	_	_	Diagnosen
+30-14	2423-2425	03	_	_	_	Diagnosen
+30-15	2425-2426	/	_	_	_	Diagnosen
+30-16	2426-2430	2030	_	_	_	Diagnosen
+30-17	2430-2431	>	_	_	_	Diagnosen
+30-18	2432-2435	bei	_	_	_	Diagnosen
+30-19	2436-2449	Hb-relevanter	_	_	_	Diagnosen
+30-20	2450-2457	Blutung	_	_	_	Diagnosen
+30-21	2458-2460	im	_	_	_	Diagnosen
+30-22	2461-2468	Bereich	_	_	_	Diagnosen
+30-23	2469-2472	der	_	_	_	Diagnosen
+30-24	2473-2486	Nierenarterie	_	_	_	Diagnosen
+
+#Text=-UNK- NPE am <[Pseudo] 02/04/2030:> cg0, mm0, g0, ct1, ci0, i0, t0, cv0, v0, ah0, ptc0
+31-1	2487-2492	-UNK-	_	_	_	Diagnosen
+31-2	2493-2496	NPE	_	_	_	Diagnosen
+31-3	2497-2499	am	_	_	_	Diagnosen
+31-4	2500-2509	<[Pseudo]	_	_	_	Diagnosen
+31-5	2510-2512	02	_	_	_	Diagnosen
+31-6	2512-2513	/	_	_	_	Diagnosen
+31-7	2513-2515	04	_	_	_	Diagnosen
+31-8	2515-2516	/	_	_	_	Diagnosen
+31-9	2516-2520	2030	_	_	_	Diagnosen
+31-10	2520-2522	:>	_	_	_	Diagnosen
+31-11	2523-2526	cg0	_	_	_	Diagnosen
+31-12	2526-2527	,	_	_	_	Diagnosen
+31-13	2528-2531	mm0	_	_	_	Diagnosen
+31-14	2531-2532	,	_	_	_	Diagnosen
+31-15	2533-2535	g0	_	_	_	Diagnosen
+31-16	2535-2536	,	_	_	_	Diagnosen
+31-17	2537-2540	ct1	_	_	_	Diagnosen
+31-18	2540-2541	,	_	_	_	Diagnosen
+31-19	2542-2545	ci0	_	_	_	Diagnosen
+31-20	2545-2546	,	_	_	_	Diagnosen
+31-21	2547-2549	i0	_	_	_	Diagnosen
+31-22	2549-2550	,	_	_	_	Diagnosen
+31-23	2551-2553	t0	_	_	_	Diagnosen
+31-24	2553-2554	,	_	_	_	Diagnosen
+31-25	2555-2558	cv0	_	_	_	Diagnosen
+31-26	2558-2559	,	_	_	_	Diagnosen
+31-27	2560-2562	v0	_	_	_	Diagnosen
+31-28	2562-2563	,	_	_	_	Diagnosen
+31-29	2564-2567	ah0	_	_	_	Diagnosen
+31-30	2567-2568	,	_	_	_	Diagnosen
+31-31	2569-2573	ptc0	_	_	_	Diagnosen
+
+#Text=-UNK- CT-Abdomen vom <[Pseudo] 08/04/2030:> Neu aufgetretenes Aneurysma der Pankreastransplantatarterie, Flüssigkeitsvermehrung um Pankreas-TPL und Nieren-TPL, Koprostase
+32-1	2574-2579	-UNK-	_	_	_	Diagnosen
+32-2	2580-2590	CT-Abdomen	_	_	_	Diagnosen
+32-3	2591-2594	vom	_	_	_	Diagnosen
+32-4	2595-2604	<[Pseudo]	_	_	_	Diagnosen
+32-5	2605-2607	08	_	_	_	Diagnosen
+32-6	2607-2608	/	_	_	_	Diagnosen
+32-7	2608-2610	04	_	_	_	Diagnosen
+32-8	2610-2611	/	_	_	_	Diagnosen
+32-9	2611-2615	2030	_	_	_	Diagnosen
+32-10	2615-2617	:>	_	_	_	Diagnosen
+32-11	2618-2621	Neu	_	_	_	Diagnosen
+32-12	2622-2635	aufgetretenes	_	_	_	Diagnosen
+32-13	2636-2645	Aneurysma	_	_	_	Diagnosen
+32-14	2646-2649	der	_	_	_	Diagnosen
+32-15	2650-2677	Pankreastransplantatarterie	_	_	_	Diagnosen
+32-16	2677-2678	,	_	_	_	Diagnosen
+32-17	2679-2701	Flüssigkeitsvermehrung	_	_	_	Diagnosen
+32-18	2702-2704	um	_	_	_	Diagnosen
+32-19	2705-2717	Pankreas-TPL	_	_	_	Diagnosen
+32-20	2718-2721	und	_	_	_	Diagnosen
+32-21	2722-2732	Nieren-TPL	_	_	_	Diagnosen
+32-22	2732-2733	,	_	_	_	Diagnosen
+32-23	2734-2744	Koprostase	_	_	_	Diagnosen
+
+#Text=- Z. n. Pankreas-TPL-Entfernung am <[Pseudo] 23/04/30> und Vac-Schwammeinlage, sekundärer Wundverschluss am <[Pseudo] 27/04/30> -LRB- kein Anhalt für Malignität -RRB-
+33-1	2745-2746	-	_	_	_	Diagnosen
+33-2	2747-2749	Z.	_	_	_	Diagnosen
+33-3	2750-2752	n.	_	_	_	Diagnosen
+33-4	2753-2776	Pankreas-TPL-Entfernung	_	_	_	Diagnosen
+33-5	2777-2779	am	_	_	_	Diagnosen
+33-6	2780-2789	<[Pseudo]	_	_	_	Diagnosen
+33-7	2790-2792	23	_	_	_	Diagnosen
+33-8	2792-2793	/	_	_	_	Diagnosen
+33-9	2793-2795	04	_	_	_	Diagnosen
+33-10	2795-2796	/	_	_	_	Diagnosen
+33-11	2796-2798	30	_	_	_	Diagnosen
+33-12	2798-2799	>	_	_	_	Diagnosen
+33-13	2800-2803	und	_	_	_	Diagnosen
+33-14	2804-2822	Vac-Schwammeinlage	_	_	_	Diagnosen
+33-15	2822-2823	,	_	_	_	Diagnosen
+33-16	2824-2834	sekundärer	_	_	_	Diagnosen
+33-17	2835-2849	Wundverschluss	_	_	_	Diagnosen
+33-18	2850-2852	am	_	_	_	Diagnosen
+33-19	2853-2862	<[Pseudo]	_	_	_	Diagnosen
+33-20	2863-2865	27	_	_	_	Diagnosen
+33-21	2865-2866	/	_	_	_	Diagnosen
+33-22	2866-2868	04	_	_	_	Diagnosen
+33-23	2868-2869	/	_	_	_	Diagnosen
+33-24	2869-2871	30	_	_	_	Diagnosen
+33-25	2871-2872	>	_	_	_	Diagnosen
+33-26	2873-2878	-LRB-	_	_	_	Diagnosen
+33-27	2879-2883	kein	_	_	_	Diagnosen
+33-28	2884-2890	Anhalt	_	_	_	Diagnosen
+33-29	2891-2894	für	_	_	_	Diagnosen
+33-30	2895-2905	Malignität	_	_	_	Diagnosen
+33-31	2906-2911	-RRB-	_	_	_	Diagnosen
+
+#Text=- Renale Grunderkrankung: Terminale Niereninsuffizienz bei diabet. Nephropathie und FSGS -LRB- NPE <[Pseudo] 11/04/23> -RRB-
+34-1	2912-2913	-	_	_	_	Diagnosen
+34-2	2914-2920	Renale	_	_	_	Diagnosen
+34-3	2921-2936	Grunderkrankung	_	_	_	Diagnosen
+34-4	2936-2937	:	_	_	_	Diagnosen
+34-5	2938-2947	Terminale	_	_	_	Diagnosen
+34-6	2948-2966	Niereninsuffizienz	_	_	_	Diagnosen
+34-7	2967-2970	bei	_	_	_	Diagnosen
+34-8	2971-2977	diabet	_	_	_	Diagnosen
+34-9	2977-2978	.	_	_	_	Diagnosen
+34-10	2979-2991	Nephropathie	_	_	_	Diagnosen
+34-11	2992-2995	und	_	_	_	Diagnosen
+34-12	2996-3000	FSGS	_	_	_	Diagnosen
+34-13	3001-3006	-LRB-	_	_	_	Diagnosen
+34-14	3007-3010	NPE	_	_	_	Diagnosen
+34-15	3011-3020	<[Pseudo]	_	_	_	Diagnosen
+34-16	3021-3023	11	_	_	_	Diagnosen
+34-17	3023-3024	/	_	_	_	Diagnosen
+34-18	3024-3026	04	_	_	_	Diagnosen
+34-19	3026-3027	/	_	_	_	Diagnosen
+34-20	3027-3029	23	_	_	_	Diagnosen
+34-21	3029-3030	>	_	_	_	Diagnosen
+34-22	3031-3036	-RRB-	_	_	_	Diagnosen
+
+#Text=-UNK- HD von <[Pseudo] 28/11/2028> bis <[Pseudo] 03/30>
+35-1	3037-3042	-UNK-	_	_	_	Diagnosen
+35-2	3043-3045	HD	_	_	_	Diagnosen
+35-3	3046-3049	von	_	_	_	Diagnosen
+35-4	3050-3059	<[Pseudo]	_	_	_	Diagnosen
+35-5	3060-3062	28	_	_	_	Diagnosen
+35-6	3062-3063	/	_	_	_	Diagnosen
+35-7	3063-3065	11	_	_	_	Diagnosen
+35-8	3065-3066	/	_	_	_	Diagnosen
+35-9	3066-3070	2028	_	_	_	Diagnosen
+35-10	3070-3071	>	_	_	_	Diagnosen
+35-11	3072-3075	bis	_	_	_	Diagnosen
+35-12	3076-3085	<[Pseudo]	_	_	_	Diagnosen
+35-13	3086-3088	03	_	_	_	Diagnosen
+35-14	3088-3089	/	_	_	_	Diagnosen
+35-15	3089-3091	30	_	_	_	Diagnosen
+35-16	3091-3092	>	_	_	_	Diagnosen
+
+#Text=-UNK- Frustraner Versuch der Anlage einer peripheren RC Fistel links am <[Pseudo] 27/09/2028> Anlage einer V. mediana basilica-A. radialis-Fistel am linken Unterarm am <[Pseudo] 26/12/2028>
+36-1	3093-3098	-UNK-	_	_	_	Diagnosen
+36-2	3099-3109	Frustraner	_	_	_	Diagnosen
+36-3	3110-3117	Versuch	_	_	_	Diagnosen
+36-4	3118-3121	der	_	_	_	Diagnosen
+36-5	3122-3128	Anlage	_	_	_	Diagnosen
+36-6	3129-3134	einer	_	_	_	Diagnosen
+36-7	3135-3145	peripheren	_	_	_	Diagnosen
+36-8	3146-3148	RC	_	_	_	Diagnosen
+36-9	3149-3155	Fistel	_	_	_	Diagnosen
+36-10	3156-3161	links	_	_	_	Diagnosen
+36-11	3162-3164	am	_	_	_	Diagnosen
+36-12	3165-3174	<[Pseudo]	_	_	_	Diagnosen
+36-13	3175-3177	27	_	_	_	Diagnosen
+36-14	3177-3178	/	_	_	_	Diagnosen
+36-15	3178-3180	09	_	_	_	Diagnosen
+36-16	3180-3181	/	_	_	_	Diagnosen
+36-17	3181-3185	2028	_	_	_	Diagnosen
+36-18	3185-3186	>	_	_	_	Diagnosen
+36-19	3187-3193	Anlage	_	_	_	Diagnosen
+36-20	3194-3199	einer	_	_	_	Diagnosen
+36-21	3200-3202	V.	_	_	_	Diagnosen
+36-22	3203-3210	mediana	_	_	_	Diagnosen
+36-23	3211-3222	basilica-A.	_	_	_	Diagnosen
+36-24	3223-3238	radialis-Fistel	_	_	_	Diagnosen
+36-25	3239-3241	am	_	_	_	Diagnosen
+36-26	3242-3248	linken	_	_	_	Diagnosen
+36-27	3249-3257	Unterarm	_	_	_	Diagnosen
+36-28	3258-3260	am	_	_	_	Diagnosen
+36-29	3261-3270	<[Pseudo]	_	_	_	Diagnosen
+36-30	3271-3273	26	_	_	_	Diagnosen
+36-31	3273-3274	/	_	_	_	Diagnosen
+36-32	3274-3276	12	_	_	_	Diagnosen
+36-33	3276-3277	/	_	_	_	Diagnosen
+36-34	3277-3281	2028	_	_	_	Diagnosen
+36-35	3281-3282	>	_	_	_	Diagnosen
+
+#Text=-UNK- Z. n. Anlage eines PTFE Loops am <[Pseudo] 25/01/2029>
+37-1	3283-3288	-UNK-	_	_	_	Diagnosen
+37-2	3289-3291	Z.	_	_	_	Diagnosen
+37-3	3292-3294	n.	_	_	_	Diagnosen
+37-4	3295-3301	Anlage	_	_	_	Diagnosen
+37-5	3302-3307	eines	_	_	_	Diagnosen
+37-6	3308-3312	PTFE	_	_	_	Diagnosen
+37-7	3313-3318	Loops	_	_	_	Diagnosen
+37-8	3319-3321	am	_	_	_	Diagnosen
+37-9	3322-3331	<[Pseudo]	_	_	_	Diagnosen
+37-10	3332-3334	25	_	_	_	Diagnosen
+37-11	3334-3335	/	_	_	_	Diagnosen
+37-12	3335-3337	01	_	_	_	Diagnosen
+37-13	3337-3338	/	_	_	_	Diagnosen
+37-14	3338-3342	2029	_	_	_	Diagnosen
+37-15	3342-3343	>	_	_	_	Diagnosen
+
+#Text=- Sekundärer Hyperparathyreoidismus
+38-1	3344-3345	-	_	_	_	Diagnosen
+38-2	3346-3356	Sekundärer	_	_	_	Diagnosen
+38-3	3357-3379	Hyperparathyreoidismus	_	_	_	Diagnosen
+
+#Text=- Diabetes mellitus Typ I mit diabetischer Retinopathie, Polyneuropathie und Nephropathie
+39-1	3380-3381	-	_	_	_	Diagnosen
+39-2	3382-3390	Diabetes	_	_	_	Diagnosen
+39-3	3391-3399	mellitus	_	_	_	Diagnosen
+39-4	3400-3403	Typ	_	_	_	Diagnosen
+39-5	3404-3405	I	_	_	_	Diagnosen
+39-6	3406-3409	mit	_	_	_	Diagnosen
+39-7	3410-3422	diabetischer	_	_	_	Diagnosen
+39-8	3423-3435	Retinopathie	_	_	_	Diagnosen
+39-9	3435-3436	,	_	_	_	Diagnosen
+39-10	3437-3452	Polyneuropathie	_	_	_	Diagnosen
+39-11	3453-3456	und	_	_	_	Diagnosen
+39-12	3457-3469	Nephropathie	_	_	_	Diagnosen
+
+#Text=-UNK- Z. n. mehrfacher Laserkoagulation
+40-1	3470-3475	-UNK-	_	_	_	Diagnosen
+40-2	3476-3478	Z.	_	_	_	Diagnosen
+40-3	3479-3481	n.	_	_	_	Diagnosen
+40-4	3482-3492	mehrfacher	_	_	_	Diagnosen
+40-5	3493-3509	Laserkoagulation	_	_	_	Diagnosen
+
+#Text=-UNK- Z. n. Vitrektomie <[Pseudo] 11/2021>
+41-1	3510-3515	-UNK-	_	_	_	Diagnosen
+41-2	3516-3518	Z.	_	_	_	Diagnosen
+41-3	3519-3521	n.	_	_	_	Diagnosen
+41-4	3522-3533	Vitrektomie	_	_	_	Diagnosen
+41-5	3534-3543	<[Pseudo]	_	_	_	Diagnosen
+41-6	3544-3546	11	_	_	_	Diagnosen
+41-7	3546-3547	/	_	_	_	Diagnosen
+41-8	3547-3551	2021	_	_	_	Diagnosen
+41-9	3551-3552	>	_	_	_	Diagnosen
+
+#Text=- Z. n. Leistenhernien OP rechts <[Pseudo] 03/2022>
+42-1	3553-3554	-	_	_	_	Diagnosen
+42-2	3555-3557	Z.	_	_	_	Diagnosen
+42-3	3558-3560	n.	_	_	_	Diagnosen
+42-4	3561-3575	Leistenhernien	_	_	_	Diagnosen
+42-5	3576-3578	OP	_	_	_	Diagnosen
+42-6	3579-3585	rechts	_	_	_	Diagnosen
+42-7	3586-3595	<[Pseudo]	_	_	_	Diagnosen
+42-8	3596-3598	03	_	_	_	Diagnosen
+42-9	3598-3599	/	_	_	_	Diagnosen
+42-10	3599-3603	2022	_	_	_	Diagnosen
+42-11	3603-3604	>	_	_	_	Diagnosen
+
+#Text=- Undifferenzierte Coxitis rechts, Z. n. Radiosynoviorthese <[Pseudo] 04/2022>
+43-1	3605-3606	-	_	_	_	Diagnosen
+43-2	3607-3623	Undifferenzierte	_	_	_	Diagnosen
+43-3	3624-3631	Coxitis	_	_	_	Diagnosen
+43-4	3632-3638	rechts	_	_	_	Diagnosen
+43-5	3638-3639	,	_	_	_	Diagnosen
+43-6	3640-3642	Z.	_	_	_	Diagnosen
+43-7	3643-3645	n.	_	_	_	Diagnosen
+43-8	3646-3664	Radiosynoviorthese	_	_	_	Diagnosen
+43-9	3665-3674	<[Pseudo]	_	_	_	Diagnosen
+43-10	3675-3677	04	_	_	_	Diagnosen
+43-11	3677-3678	/	_	_	_	Diagnosen
+43-12	3678-3682	2022	_	_	_	Diagnosen
+43-13	3682-3683	>	_	_	_	Diagnosen
+
+#Text=- Periarthropathia coxae rechts, Enthesiopathie im Ansatz der Adduktoren
+44-1	3684-3685	-	_	_	_	Diagnosen
+44-2	3686-3702	Periarthropathia	_	_	_	Diagnosen
+44-3	3703-3708	coxae	_	_	_	Diagnosen
+44-4	3709-3715	rechts	_	_	_	Diagnosen
+44-5	3715-3716	,	_	_	_	Diagnosen
+44-6	3717-3731	Enthesiopathie	_	_	_	Diagnosen
+44-7	3732-3734	im	_	_	_	Diagnosen
+44-8	3735-3741	Ansatz	_	_	_	Diagnosen
+44-9	3742-3745	der	_	_	_	Diagnosen
+44-10	3746-3756	Adduktoren	_	_	_	Diagnosen
+
+#Text=- Thrombose in der V. axillaris li. -LRB- <[Pseudo] 05/2030> -RRB-
+45-1	3757-3758	-	_	_	_	Diagnosen
+45-2	3759-3768	Thrombose	_	_	_	Diagnosen
+45-3	3769-3771	in	_	_	_	Diagnosen
+45-4	3772-3775	der	_	_	_	Diagnosen
+45-5	3776-3778	V.	_	_	_	Diagnosen
+45-6	3779-3788	axillaris	_	_	_	Diagnosen
+45-7	3789-3791	li	_	_	_	Diagnosen
+45-8	3791-3792	.	_	_	_	Diagnosen
+45-9	3793-3798	-LRB-	_	_	_	Diagnosen
+45-10	3799-3808	<[Pseudo]	_	_	_	Diagnosen
+45-11	3809-3811	05	_	_	_	Diagnosen
+45-12	3811-3812	/	_	_	_	Diagnosen
+45-13	3812-3816	2030	_	_	_	Diagnosen
+45-14	3816-3817	>	_	_	_	Diagnosen
+45-15	3818-3823	-RRB-	_	_	_	Diagnosen
+
+#Text=- ÖGD vom <[Pseudo] 16/05/30:> Pangastritis
+46-1	3824-3825	-	_	_	_	Diagnosen
+46-2	3826-3829	ÖGD	_	_	_	Diagnosen
+46-3	3830-3833	vom	_	_	_	Diagnosen
+46-4	3834-3843	<[Pseudo]	_	_	_	Diagnosen
+46-5	3844-3846	16	_	_	_	Diagnosen
+46-6	3846-3847	/	_	_	_	Diagnosen
+46-7	3847-3849	05	_	_	_	Diagnosen
+46-8	3849-3850	/	_	_	_	Diagnosen
+46-9	3850-3852	30	_	_	_	Diagnosen
+46-10	3852-3854	:>	_	_	_	Diagnosen
+46-11	3855-3867	Pangastritis	_	_	_	Diagnosen
+
+#Text=- Anlagebedingter enger Spinalkanal, kleiner Prolaps S1
+47-1	3868-3869	-	_	_	_	Diagnosen
+47-2	3870-3885	Anlagebedingter	_	_	_	Diagnosen
+47-3	3886-3891	enger	_	_	_	Diagnosen
+47-4	3892-3903	Spinalkanal	_	_	_	Diagnosen
+47-5	3903-3904	,	_	_	_	Diagnosen
+47-6	3905-3912	kleiner	_	_	_	Diagnosen
+47-7	3913-3920	Prolaps	_	_	_	Diagnosen
+47-8	3921-3923	S1	_	_	_	Diagnosen
+
+#Text=- Z. n. Perinealabszess <[Pseudo] 01/35>
+48-1	3924-3925	-	_	_	_	Diagnosen
+48-2	3926-3928	Z.	_	_	_	Diagnosen
+48-3	3929-3931	n.	_	_	_	Diagnosen
+48-4	3932-3947	Perinealabszess	_	_	_	Diagnosen
+48-5	3948-3957	<[Pseudo]	_	_	_	Diagnosen
+48-6	3958-3960	01	_	_	_	Diagnosen
+48-7	3960-3961	/	_	_	_	Diagnosen
+48-8	3961-3963	35	_	_	_	Diagnosen
+48-9	3963-3964	>	_	_	_	Diagnosen
+
+#Text=- Erniedrigte aPC-Resistenz bei heterozygoter Faktor-V-Leiden-Mutation -LRB- nur ASS-Therapie -RRB-
+49-1	3965-3966	-	_	_	_	Diagnosen
+49-2	3967-3978	Erniedrigte	_	_	_	Diagnosen
+49-3	3979-3992	aPC-Resistenz	_	_	_	Diagnosen
+49-4	3993-3996	bei	_	_	_	Diagnosen
+49-5	3997-4010	heterozygoter	_	_	_	Diagnosen
+49-6	4011-4035	Faktor-V-Leiden-Mutation	_	_	_	Diagnosen
+49-7	4036-4041	-LRB-	_	_	_	Diagnosen
+49-8	4042-4045	nur	_	_	_	Diagnosen
+49-9	4046-4058	ASS-Therapie	_	_	_	Diagnosen
+49-10	4059-4064	-RRB-	_	_	_	Diagnosen
+
+#Text=Kardiovaskuläre Risikofaktoren:
+50-1	4066-4081	Kardiovaskuläre	_	_	_	AllergienUnverträglichkeitenRisiken
+50-2	4082-4096	Risikofaktoren	_	_	_	AllergienUnverträglichkeitenRisiken
+50-3	4096-4097	:	_	_	_	AllergienUnverträglichkeitenRisiken
+
+#Text=Arterielle Hypertonie, Hypercholesterinämie, Diabetes mellitus Typ 1
+51-1	4098-4108	Arterielle	_	_	_	AllergienUnverträglichkeitenRisiken
+51-2	4109-4119	Hypertonie	_	_	_	AllergienUnverträglichkeitenRisiken
+51-3	4119-4120	,	_	_	_	AllergienUnverträglichkeitenRisiken
+51-4	4121-4141	Hypercholesterinämie	_	_	_	AllergienUnverträglichkeitenRisiken
+51-5	4141-4142	,	_	_	_	AllergienUnverträglichkeitenRisiken
+51-6	4143-4151	Diabetes	_	_	_	AllergienUnverträglichkeitenRisiken
+51-7	4152-4160	mellitus	_	_	_	AllergienUnverträglichkeitenRisiken
+51-8	4161-4164	Typ	_	_	_	AllergienUnverträglichkeitenRisiken
+51-9	4165-4166	1	_	_	_	AllergienUnverträglichkeitenRisiken
+
+#Text=Allergien:
+52-1	4168-4177	Allergien	_	_	_	AllergienUnverträglichkeitenRisiken
+52-2	4177-4178	:	_	_	_	AllergienUnverträglichkeitenRisiken
+
+#Text=Pollen
+53-1	4179-4185	Pollen	_	_	_	AllergienUnverträglichkeitenRisiken
+
+#Text=Anamnese:
+54-1	4187-4195	Anamnese	_	_	_	Anamnese
+54-2	4195-4196	:	_	_	_	Anamnese
+
+#Text=Die Aufnahme auf unsere Station erfolgte über unsere B-ORG zur Nachsorge nach einer Koronarangiographie -LRB- HK vom <[Pseudo] 23/07/2036> -RRB- bei akutem Myokardinfarkt -LRB- STEMI -RRB- vom B-DATE.
+55-1	4197-4200	Die	_	_	_	Anamnese
+55-2	4201-4209	Aufnahme	_	_	_	Anamnese
+55-3	4210-4213	auf	_	_	_	Anamnese
+55-4	4214-4220	unsere	_	_	_	Anamnese
+55-5	4221-4228	Station	_	_	_	Anamnese
+55-6	4229-4237	erfolgte	_	_	_	Anamnese
+55-7	4238-4242	über	_	_	_	Anamnese
+55-8	4243-4249	unsere	_	_	_	Anamnese
+55-9	4250-4255	B-ORG	_	_	_	Anamnese
+55-10	4256-4259	zur	_	_	_	Anamnese
+55-11	4260-4269	Nachsorge	_	_	_	Anamnese
+55-12	4270-4274	nach	_	_	_	Anamnese
+55-13	4275-4280	einer	_	_	_	Anamnese
+55-14	4281-4300	Koronarangiographie	_	_	_	Anamnese
+55-15	4301-4306	-LRB-	_	_	_	Anamnese
+55-16	4307-4309	HK	_	_	_	Anamnese
+55-17	4310-4313	vom	_	_	_	Anamnese
+55-18	4314-4323	<[Pseudo]	_	_	_	Anamnese
+55-19	4324-4326	23	_	_	_	Anamnese
+55-20	4326-4327	/	_	_	_	Anamnese
+55-21	4327-4329	07	_	_	_	Anamnese
+55-22	4329-4330	/	_	_	_	Anamnese
+55-23	4330-4334	2036	_	_	_	Anamnese
+55-24	4334-4335	>	_	_	_	Anamnese
+55-25	4336-4341	-RRB-	_	_	_	Anamnese
+55-26	4342-4345	bei	_	_	_	Anamnese
+55-27	4346-4352	akutem	_	_	_	Anamnese
+55-28	4353-4367	Myokardinfarkt	_	_	_	Anamnese
+55-29	4368-4373	-LRB-	_	_	_	Anamnese
+55-30	4374-4379	STEMI	_	_	_	Anamnese
+55-31	4380-4385	-RRB-	_	_	_	Anamnese
+55-32	4386-4389	vom	_	_	_	Anamnese
+55-33	4390-4396	B-DATE	_	_	_	Anamnese
+55-34	4396-4397	.	_	_	_	Anamnese
+
+#Text=Die Aufnahme des Patienten erfolgte initial via Notarzt bei STEMI mit Hebungen in II, III, aVF und V5/6 im Notarzt-EKG. Er sei gegen 03:00 Uhr mit stärksten retrosternalen Schmerzen erwacht. Keine Dyspnoe, keine Synkope, 1 x Vomitus. Durch den Notarzt wurden kumulativ 17mg Morphin sowie ASS 250mg und UFH 5000IE verabreicht. Nach der Herzkatheteruntersuchung und Übernahme von unserer B-ORG präsentiert sich der Patient wach, spontan atmend und beschwerdefrei.
+56-1	4398-4401	Die	_	_	_	Anamnese
+56-2	4402-4410	Aufnahme	_	_	_	Anamnese
+56-3	4411-4414	des	_	_	_	Anamnese
+56-4	4415-4424	Patienten	_	_	_	Anamnese
+56-5	4425-4433	erfolgte	_	_	_	Anamnese
+56-6	4434-4441	initial	_	_	_	Anamnese
+56-7	4442-4445	via	_	_	_	Anamnese
+56-8	4446-4453	Notarzt	_	_	_	Anamnese
+56-9	4454-4457	bei	_	_	_	Anamnese
+56-10	4458-4463	STEMI	_	_	_	Anamnese
+56-11	4464-4467	mit	_	_	_	Anamnese
+56-12	4468-4476	Hebungen	_	_	_	Anamnese
+56-13	4477-4479	in	_	_	_	Anamnese
+56-14	4480-4482	II	_	_	_	Anamnese
+56-15	4482-4483	,	_	_	_	Anamnese
+56-16	4484-4487	III	_	_	_	Anamnese
+56-17	4487-4488	,	_	_	_	Anamnese
+56-18	4489-4492	aVF	_	_	_	Anamnese
+56-19	4493-4496	und	_	_	_	Anamnese
+56-20	4497-4499	V5	_	_	_	Anamnese
+56-21	4499-4500	/	_	_	_	Anamnese
+56-22	4500-4501	6	_	_	_	Anamnese
+56-23	4502-4504	im	_	_	_	Anamnese
+56-24	4505-4516	Notarzt-EKG	_	_	_	Anamnese
+56-25	4516-4517	.	_	_	_	Anamnese
+56-26	4518-4520	Er	_	_	_	Anamnese
+56-27	4521-4524	sei	_	_	_	Anamnese
+56-28	4525-4530	gegen	_	_	_	Anamnese
+56-29	4531-4536	03:00	_	_	_	Anamnese
+56-30	4537-4540	Uhr	_	_	_	Anamnese
+56-31	4541-4544	mit	_	_	_	Anamnese
+56-32	4545-4554	stärksten	_	_	_	Anamnese
+56-33	4555-4569	retrosternalen	_	_	_	Anamnese
+56-34	4570-4579	Schmerzen	_	_	_	Anamnese
+56-35	4580-4587	erwacht	_	_	_	Anamnese
+56-36	4587-4588	.	_	_	_	Anamnese
+56-37	4589-4594	Keine	_	_	_	Anamnese
+56-38	4595-4602	Dyspnoe	_	_	_	Anamnese
+56-39	4602-4603	,	_	_	_	Anamnese
+56-40	4604-4609	keine	_	_	_	Anamnese
+56-41	4610-4617	Synkope	_	_	_	Anamnese
+56-42	4617-4618	,	_	_	_	Anamnese
+56-43	4619-4620	1	_	_	_	Anamnese
+56-44	4621-4622	x	_	_	_	Anamnese
+56-45	4623-4630	Vomitus	_	_	_	Anamnese
+56-46	4630-4631	.	_	_	_	Anamnese
+56-47	4632-4637	Durch	_	_	_	Anamnese
+56-48	4638-4641	den	_	_	_	Anamnese
+56-49	4642-4649	Notarzt	_	_	_	Anamnese
+56-50	4650-4656	wurden	_	_	_	Anamnese
+56-51	4657-4666	kumulativ	_	_	_	Anamnese
+56-52	4667-4669	17	DOSAGE[1]	false[1]	56-54[0_1]	Anamnese
+56-53	4669-4671	mg	DOSAGE[1]	false[1]	_	Anamnese
+56-54	4672-4679	Morphin	ACTIVEING	true	_	Anamnese
+56-55	4680-4685	sowie	_	_	_	Anamnese
+56-56	4686-4689	ASS	ACTIVEING	true	_	Anamnese
+56-57	4690-4693	250	STRENGTH[2]	false[2]	56-56[0_2]	Anamnese
+56-58	4693-4695	mg	STRENGTH[2]	false[2]	_	Anamnese
+56-59	4696-4699	und	_	_	_	Anamnese
+56-60	4700-4703	UFH	ACTIVEING	false	_	Anamnese
+56-61	4704-4710	5000IE	STRENGTH	false	56-60	Anamnese
+56-62	4711-4722	verabreicht	_	_	_	Anamnese
+56-63	4722-4723	.	_	_	_	Anamnese
+56-64	4724-4728	Nach	_	_	_	Anamnese
+56-65	4729-4732	der	_	_	_	Anamnese
+56-66	4733-4757	Herzkatheteruntersuchung	_	_	_	Anamnese
+56-67	4758-4761	und	_	_	_	Anamnese
+56-68	4762-4771	Übernahme	_	_	_	Anamnese
+56-69	4772-4775	von	_	_	_	Anamnese
+56-70	4776-4783	unserer	_	_	_	Anamnese
+56-71	4784-4789	B-ORG	_	_	_	Anamnese
+56-72	4790-4801	präsentiert	_	_	_	Anamnese
+56-73	4802-4806	sich	_	_	_	Anamnese
+56-74	4807-4810	der	_	_	_	Anamnese
+56-75	4811-4818	Patient	_	_	_	Anamnese
+56-76	4819-4823	wach	_	_	_	Anamnese
+56-77	4823-4824	,	_	_	_	Anamnese
+56-78	4825-4832	spontan	_	_	_	Anamnese
+56-79	4833-4839	atmend	_	_	_	Anamnese
+56-80	4840-4843	und	_	_	_	Anamnese
+56-81	4844-4858	beschwerdefrei	_	_	_	Anamnese
+56-82	4858-4859	.	_	_	_	Anamnese
+
+#Text=Medikation bei Aufnahme:
+57-1	4863-4873	Medikation	_	_	_	AufnahmeMedikation
+57-2	4874-4877	bei	_	_	_	AufnahmeMedikation
+57-3	4878-4886	Aufnahme	_	_	_	AufnahmeMedikation
+57-4	4886-4887	:	_	_	_	AufnahmeMedikation
+
+#Text=ASS 100 mg 1-0-0
+58-1	4888-4891	ASS	ACTIVEING	false	_	AufnahmeMedikation
+58-2	4892-4895	100	STRENGTH[3]	false[3]	58-1[0_3]	AufnahmeMedikation
+58-3	4896-4898	mg	STRENGTH[3]	false[3]	_	AufnahmeMedikation
+58-4	4899-4900	1	FREQUENCY[4]	false[4]	58-1[0_4]	AufnahmeMedikation
+58-5	4900-4901	-	FREQUENCY[4]	false[4]	_	AufnahmeMedikation
+58-6	4901-4902	0	FREQUENCY[4]	false[4]	_	AufnahmeMedikation
+58-7	4902-4903	-	FREQUENCY[4]	false[4]	_	AufnahmeMedikation
+58-8	4903-4904	0	FREQUENCY[4]	false[4]	_	AufnahmeMedikation
+
+#Text=Ticagrelor 90 mg 1-0-1 für 12 Monate
+59-1	4905-4915	Ticagrelor	ACTIVEING	false	_	AufnahmeMedikation
+59-2	4916-4918	90	STRENGTH[5]	false[5]	59-1[0_5]	AufnahmeMedikation
+59-3	4919-4921	mg	STRENGTH[5]	false[5]	_	AufnahmeMedikation
+59-4	4922-4923	1	FREQUENCY[6]	false[6]	59-1[0_6]	AufnahmeMedikation
+59-5	4923-4924	-	FREQUENCY[6]	false[6]	_	AufnahmeMedikation
+59-6	4924-4925	0	FREQUENCY[6]	false[6]	_	AufnahmeMedikation
+59-7	4925-4926	-	FREQUENCY[6]	false[6]	_	AufnahmeMedikation
+59-8	4926-4927	1	FREQUENCY[6]	false[6]	_	AufnahmeMedikation
+59-9	4928-4931	für	DURATION[7]	false[7]	59-1[0_7]	AufnahmeMedikation
+59-10	4932-4934	12	DURATION[7]	false[7]	_	AufnahmeMedikation
+59-11	4935-4941	Monate	DURATION[7]	false[7]	_	AufnahmeMedikation
+
+#Text=Bisoprolol 2,5 mg aktuell Pause
+60-1	4942-4952	Bisoprolol	ACTIVEING	false	_	AufnahmeMedikation
+60-2	4953-4956	2,5	STRENGTH[8]	false[8]	60-1[0_8]	AufnahmeMedikation
+60-3	4957-4959	mg	STRENGTH[8]	false[8]	_	AufnahmeMedikation
+60-4	4960-4967	aktuell	_	_	_	AufnahmeMedikation
+60-5	4968-4973	Pause	DURATION	false	60-1	AufnahmeMedikation
+
+#Text=Atorvastatin 20 mg 0-0-1
+61-1	4974-4986	Atorvastatin	ACTIVEING	false	_	AufnahmeMedikation
+61-2	4987-4989	20	STRENGTH[9]	false[9]	61-1[0_9]	AufnahmeMedikation
+61-3	4990-4992	mg	STRENGTH[9]	false[9]	_	AufnahmeMedikation
+61-4	4993-4994	0	FREQUENCY[10]	false[10]	61-1[0_10]	AufnahmeMedikation
+61-5	4994-4995	-	FREQUENCY[10]	false[10]	_	AufnahmeMedikation
+61-6	4995-4996	0	FREQUENCY[10]	false[10]	_	AufnahmeMedikation
+61-7	4996-4997	-	FREQUENCY[10]	false[10]	_	AufnahmeMedikation
+61-8	4997-4998	1	FREQUENCY[10]	false[10]	_	AufnahmeMedikation
+
+#Text=Pantozol 40 mg 1-0-0
+62-1	4999-5007	Pantozol	DRUG	false	_	AufnahmeMedikation
+62-2	5008-5010	40	STRENGTH[11]	false[11]	62-1[0_11]	AufnahmeMedikation
+62-3	5011-5013	mg	STRENGTH[11]	false[11]	_	AufnahmeMedikation
+62-4	5014-5015	1	FREQUENCY[12]	false[12]	62-1[0_12]	AufnahmeMedikation
+62-5	5015-5016	-	FREQUENCY[12]	false[12]	_	AufnahmeMedikation
+62-6	5016-5017	0	FREQUENCY[12]	false[12]	_	AufnahmeMedikation
+62-7	5017-5018	-	FREQUENCY[12]	false[12]	_	AufnahmeMedikation
+62-8	5018-5019	0	FREQUENCY[12]	false[12]	_	AufnahmeMedikation
+
+#Text=Clexane 40 mg 0-0-1 Thromboseprophylaxe
+63-1	5020-5027	Clexane	DRUG	false	_	AufnahmeMedikation
+63-2	5028-5030	40	STRENGTH[13]	false[13]	63-1[0_13]	AufnahmeMedikation
+63-3	5031-5033	mg	STRENGTH[13]	false[13]	_	AufnahmeMedikation
+63-4	5034-5035	0	FREQUENCY[14]	false[14]	63-1[0_14]	AufnahmeMedikation
+63-5	5035-5036	-	FREQUENCY[14]	false[14]	_	AufnahmeMedikation
+63-6	5036-5037	0	FREQUENCY[14]	false[14]	_	AufnahmeMedikation
+63-7	5037-5038	-	FREQUENCY[14]	false[14]	_	AufnahmeMedikation
+63-8	5038-5039	1	FREQUENCY[14]	false[14]	_	AufnahmeMedikation
+63-9	5040-5059	Thromboseprophylaxe	REASON	false	63-1	AufnahmeMedikation
+
+#Text=Ciclosporin 75 mg 1-0-1
+64-1	5060-5071	Ciclosporin	ACTIVEING	false	_	AufnahmeMedikation
+64-2	5072-5074	75	STRENGTH[15]	false[15]	64-1[0_15]	AufnahmeMedikation
+64-3	5075-5077	mg	STRENGTH[15]	false[15]	_	AufnahmeMedikation
+64-4	5078-5079	1	FREQUENCY[16]	false[16]	64-1[0_16]	AufnahmeMedikation
+64-5	5079-5080	-	FREQUENCY[16]	false[16]	_	AufnahmeMedikation
+64-6	5080-5081	0	FREQUENCY[16]	false[16]	_	AufnahmeMedikation
+64-7	5081-5082	-	FREQUENCY[16]	false[16]	_	AufnahmeMedikation
+64-8	5082-5083	1	FREQUENCY[16]	false[16]	_	AufnahmeMedikation
+
+#Text=Mycophenolat 500 mg 1-0-1
+65-1	5084-5096	Mycophenolat	ACTIVEING	false	_	AufnahmeMedikation
+65-2	5097-5100	500	STRENGTH[17]	false[17]	65-1[0_17]	AufnahmeMedikation
+65-3	5101-5103	mg	STRENGTH[17]	false[17]	_	AufnahmeMedikation
+65-4	5104-5105	1	FREQUENCY[18]	false[18]	65-1[0_18]	AufnahmeMedikation
+65-5	5105-5106	-	FREQUENCY[18]	false[18]	_	AufnahmeMedikation
+65-6	5106-5107	0	FREQUENCY[18]	false[18]	_	AufnahmeMedikation
+65-7	5107-5108	-	FREQUENCY[18]	false[18]	_	AufnahmeMedikation
+65-8	5108-5109	1	FREQUENCY[18]	false[18]	_	AufnahmeMedikation
+
+#Text=Methyprednisolon 4 mg 1-0-0
+66-1	5110-5126	Methyprednisolon	ACTIVEING	false	_	AufnahmeMedikation
+66-2	5127-5128	4	STRENGTH[19]	false[19]	66-1[0_19]	AufnahmeMedikation
+66-3	5129-5131	mg	STRENGTH[19]	false[19]	_	AufnahmeMedikation
+66-4	5132-5133	1	FREQUENCY[20]	false[20]	66-1[0_20]	AufnahmeMedikation
+66-5	5133-5134	-	FREQUENCY[20]	false[20]	_	AufnahmeMedikation
+66-6	5134-5135	0	FREQUENCY[20]	false[20]	_	AufnahmeMedikation
+66-7	5135-5136	-	FREQUENCY[20]	false[20]	_	AufnahmeMedikation
+66-8	5136-5137	0	FREQUENCY[20]	false[20]	_	AufnahmeMedikation
+
+#Text=Ramipril 5 mg 1-0-0
+67-1	5138-5146	Ramipril	ACTIVEING	false	_	AufnahmeMedikation
+67-2	5147-5148	5	STRENGTH[21]	false[21]	67-1[0_21]	AufnahmeMedikation
+67-3	5149-5151	mg	STRENGTH[21]	false[21]	_	AufnahmeMedikation
+67-4	5152-5153	1	FREQUENCY[22]	false[22]	67-1[0_22]	AufnahmeMedikation
+67-5	5153-5154	-	FREQUENCY[22]	false[22]	_	AufnahmeMedikation
+67-6	5154-5155	0	FREQUENCY[22]	false[22]	_	AufnahmeMedikation
+67-7	5155-5156	-	FREQUENCY[22]	false[22]	_	AufnahmeMedikation
+67-8	5156-5157	0	FREQUENCY[22]	false[22]	_	AufnahmeMedikation
+
+#Text=Amlodipin 5 mg 1-0-0
+68-1	5158-5167	Amlodipin	ACTIVEING	false	_	AufnahmeMedikation
+68-2	5168-5169	5	STRENGTH[23]	false[23]	68-1[0_23]	AufnahmeMedikation
+68-3	5170-5172	mg	STRENGTH[23]	false[23]	_	AufnahmeMedikation
+68-4	5173-5174	1	FREQUENCY[24]	false[24]	68-1[0_24]	AufnahmeMedikation
+68-5	5174-5175	-	FREQUENCY[24]	false[24]	_	AufnahmeMedikation
+68-6	5175-5176	0	FREQUENCY[24]	false[24]	_	AufnahmeMedikation
+68-7	5176-5177	-	FREQUENCY[24]	false[24]	_	AufnahmeMedikation
+68-8	5177-5178	0	FREQUENCY[24]	false[24]	_	AufnahmeMedikation
+
+#Text=Insulin nach eigenem Schema
+69-1	5179-5186	Insulin	ACTIVEING	false	_	AufnahmeMedikation
+69-2	5187-5191	nach	_	_	_	AufnahmeMedikation
+69-3	5192-5199	eigenem	_	_	_	AufnahmeMedikation
+69-4	5200-5206	Schema	_	_	_	AufnahmeMedikation
+
+#Text=Körperlicher Untersuchungsbefund:
+70-1	5208-5220	Körperlicher	_	_	_	KUBefunde
+70-2	5221-5240	Untersuchungsbefund	_	_	_	KUBefunde
+70-3	5240-5241	:	_	_	_	KUBefunde
+
+#Text=AZ: gut.
+71-1	5243-5245	AZ	_	_	_	KUBefunde
+71-2	5245-5246	:	_	_	_	KUBefunde
+71-3	5247-5250	gut	_	_	_	KUBefunde
+71-4	5250-5251	.	_	_	_	KUBefunde
+
+#Text=EZ gut
+72-1	5252-5254	EZ	_	_	_	KUBefunde
+72-2	5255-5258	gut	_	_	_	KUBefunde
+
+#Text=HF: 100/min, regelmäßig
+73-1	5259-5261	HF	_	_	_	KUBefunde
+73-2	5261-5262	:	_	_	_	KUBefunde
+73-3	5263-5266	100	_	_	_	KUBefunde
+73-4	5266-5267	/	_	_	_	KUBefunde
+73-5	5267-5270	min	_	_	_	KUBefunde
+73-6	5270-5271	,	_	_	_	KUBefunde
+73-7	5272-5282	regelmäßig	_	_	_	KUBefunde
+
+#Text=RR: 177/90 mmHg
+74-1	5283-5285	RR	_	_	_	KUBefunde
+74-2	5285-5286	:	_	_	_	KUBefunde
+74-3	5287-5290	177	_	_	_	KUBefunde
+74-4	5290-5291	/	_	_	_	KUBefunde
+74-5	5291-5293	90	_	_	_	KUBefunde
+74-6	5294-5298	mmHg	_	_	_	KUBefunde
+
+#Text=Keine Zyanose, Anämiezeichen, Ikterus. Kopf/Hals unauffällig. Schilddrüse o.B.
+75-1	5299-5304	Keine	_	_	_	KUBefunde
+75-2	5305-5312	Zyanose	_	_	_	KUBefunde
+75-3	5312-5313	,	_	_	_	KUBefunde
+75-4	5314-5327	Anämiezeichen	_	_	_	KUBefunde
+75-5	5327-5328	,	_	_	_	KUBefunde
+75-6	5329-5336	Ikterus	_	_	_	KUBefunde
+75-7	5336-5337	.	_	_	_	KUBefunde
+75-8	5338-5342	Kopf	_	_	_	KUBefunde
+75-9	5342-5343	/	_	_	_	KUBefunde
+75-10	5343-5347	Hals	_	_	_	KUBefunde
+75-11	5348-5359	unauffällig	_	_	_	KUBefunde
+75-12	5359-5360	.	_	_	_	KUBefunde
+75-13	5361-5372	Schilddrüse	_	_	_	KUBefunde
+75-14	5373-5375	o.	_	_	_	KUBefunde
+75-15	5375-5377	B.	_	_	_	KUBefunde
+
+#Text=HT: 4/6 Systolikum
+76-1	5378-5380	HT	_	_	_	KUBefunde
+76-2	5380-5381	:	_	_	_	KUBefunde
+76-3	5382-5383	4	_	_	_	KUBefunde
+76-4	5383-5384	/	_	_	_	KUBefunde
+76-5	5384-5385	6	_	_	_	KUBefunde
+76-6	5386-5396	Systolikum	_	_	_	KUBefunde
+
+#Text=Lunge: VAG bds.
+77-1	5397-5402	Lunge	_	_	_	KUBefunde
+77-2	5402-5403	:	_	_	_	KUBefunde
+77-3	5404-5407	VAG	_	_	_	KUBefunde
+77-4	5408-5411	bds	_	_	_	KUBefunde
+77-5	5411-5412	.	_	_	_	KUBefunde
+
+#Text=Periphere Ödeme: bds US leicht
+78-1	5413-5422	Periphere	_	_	_	KUBefunde
+78-2	5423-5428	Ödeme	_	_	_	KUBefunde
+78-3	5428-5429	:	_	_	_	KUBefunde
+78-4	5430-5433	bds	_	_	_	KUBefunde
+78-5	5434-5436	US	_	_	_	KUBefunde
+78-6	5437-5443	leicht	_	_	_	KUBefunde
+
+#Text=Pulsstatus: o.B.
+79-1	5444-5454	Pulsstatus	_	_	_	KUBefunde
+79-2	5454-5455	:	_	_	_	KUBefunde
+79-3	5456-5457	o	_	_	_	KUBefunde
+79-4	5457-5458	.	_	_	_	KUBefunde
+79-5	5458-5460	B.	_	_	_	KUBefunde
+
+#Text=Neurologischer Status: orientierend o.B.
+80-1	5461-5475	Neurologischer	_	_	_	KUBefunde
+80-2	5476-5482	Status	_	_	_	KUBefunde
+80-3	5482-5483	:	_	_	_	KUBefunde
+80-4	5484-5496	orientierend	_	_	_	KUBefunde
+80-5	5497-5499	o.	_	_	_	KUBefunde
+80-6	5499-5501	B.	_	_	_	KUBefunde
+
+#Text=sonstige Auffälligkeiten: keine
+81-1	5502-5510	sonstige	_	_	_	KUBefunde
+81-2	5511-5526	Auffälligkeiten	_	_	_	KUBefunde
+81-3	5526-5527	:	_	_	_	KUBefunde
+81-4	5528-5533	keine	_	_	_	KUBefunde
+
+#Text=Labor:
+82-1	5535-5540	Labor	_	_	_	Labor
+82-2	5540-5541	:	_	_	_	Labor
+
+#Text=Werte wurden ermittelt zwischen dem <[Pseudo] 23/07/2036> und dem <[Pseudo] 28/07/2036>
+83-1	5544-5549	Werte	_	_	_	Labor
+83-2	5550-5556	wurden	_	_	_	Labor
+83-3	5557-5566	ermittelt	_	_	_	Labor
+83-4	5567-5575	zwischen	_	_	_	Labor
+83-5	5576-5579	dem	_	_	_	Labor
+83-6	5580-5589	<[Pseudo]	_	_	_	Labor
+83-7	5590-5592	23	_	_	_	Labor
+83-8	5592-5593	/	_	_	_	Labor
+83-9	5593-5595	07	_	_	_	Labor
+83-10	5595-5596	/	_	_	_	Labor
+83-11	5596-5600	2036	_	_	_	Labor
+83-12	5600-5601	>	_	_	_	Labor
+83-13	5602-5605	und	_	_	_	Labor
+83-14	5606-5609	dem	_	_	_	Labor
+83-15	5610-5619	<[Pseudo]	_	_	_	Labor
+83-16	5620-5622	28	_	_	_	Labor
+83-17	5622-5623	/	_	_	_	Labor
+83-18	5623-5625	07	_	_	_	Labor
+83-19	5625-5626	/	_	_	_	Labor
+83-20	5626-5630	2036	_	_	_	Labor
+83-21	5630-5631	>	_	_	_	Labor
+
+#Text=Blutbild
+84-1	5633-5641	Blutbild	_	_	_	Labor
+
+#Text=Parameter
+85-1	5643-5652	Parameter	_	_	_	Labor
+
+#Text=Wert
+86-1	5653-5657	Wert	_	_	_	Labor
+
+#Text=Normb / Dimension
+87-1	5658-5663	Normb	_	_	_	Labor
+87-2	5664-5665	/	_	_	_	Labor
+87-3	5666-5675	Dimension	_	_	_	Labor
+
+#Text=Datum
+88-1	5676-5681	Datum	_	_	_	Labor
+
+#Text=Leukozyten
+89-1	5682-5692	Leukozyten	_	_	_	Labor
+
+#Text=6.27
+90-1	5693-5697	6.27	_	_	_	Labor
+
+#Text=4 - 10 /nl
+91-1	5698-5699	4	_	_	_	Labor
+91-2	5700-5701	-	_	_	_	Labor
+91-3	5702-5704	10	_	_	_	Labor
+91-4	5705-5708	/nl	_	_	_	Labor
+
+#Text=B-DATE
+92-1	5709-5715	B-DATE	_	_	_	Labor
+
+#Text=Hb
+93-1	5716-5718	Hb	_	_	_	Labor
+
+#Text=14.2
+94-1	5719-5723	14.2	_	_	_	Labor
+
+#Text=13 - 17 g/dl
+95-1	5724-5726	13	_	_	_	Labor
+95-2	5727-5728	-	_	_	_	Labor
+95-3	5729-5731	17	_	_	_	Labor
+95-4	5732-5733	g	_	_	_	Labor
+95-5	5733-5734	/	_	_	_	Labor
+95-6	5734-5736	dl	_	_	_	Labor
+
+#Text=B-DATE
+96-1	5737-5743	B-DATE	_	_	_	Labor
+
+#Text=Erythrozyten
+97-1	5744-5756	Erythrozyten	_	_	_	Labor
+
+#Text=5.0
+98-1	5757-5760	5.0	_	_	_	Labor
+
+#Text=4,3 - 6,1 /pl
+99-1	5761-5764	4,3	_	_	_	Labor
+99-2	5765-5766	-	_	_	_	Labor
+99-3	5767-5770	6,1	_	_	_	Labor
+99-4	5771-5774	/pl	_	_	_	Labor
+
+#Text=B-DATE
+100-1	5775-5781	B-DATE	_	_	_	Labor
+
+#Text=Haematokrit
+101-1	5782-5793	Haematokrit	_	_	_	Labor
+
+#Text=0.420
+102-1	5794-5799	0.420	_	_	_	Labor
+
+#Text=0,38 - 0,52 l/l
+103-1	5800-5804	0,38	_	_	_	Labor
+103-2	5805-5806	-	_	_	_	Labor
+103-3	5807-5811	0,52	_	_	_	Labor
+103-4	5812-5813	l	_	_	_	Labor
+103-5	5813-5814	/	_	_	_	Labor
+103-6	5814-5815	l	_	_	_	Labor
+
+#Text=B-DATE
+104-1	5816-5822	B-DATE	_	_	_	Labor
+
+#Text=MCV
+105-1	5823-5826	MCV	_	_	_	Labor
+
+#Text=83
+106-1	5827-5829	83	_	_	_	Labor
+
+#Text=83 - 97 fl
+107-1	5830-5832	83	_	_	_	Labor
+107-2	5833-5834	-	_	_	_	Labor
+107-3	5835-5837	97	_	_	_	Labor
+107-4	5838-5840	fl	_	_	_	Labor
+
+#Text=<[Pseudo] 28/07/36>
+108-1	5841-5850	<[Pseudo]	_	_	_	Labor
+108-2	5851-5853	28	_	_	_	Labor
+108-3	5853-5854	/	_	_	_	Labor
+108-4	5854-5856	07	_	_	_	Labor
+108-5	5856-5857	/	_	_	_	Labor
+108-6	5857-5859	36	_	_	_	Labor
+108-7	5859-5860	>	_	_	_	Labor
+
+#Text=Parameter
+109-1	5863-5872	Parameter	_	_	_	Labor
+
+#Text=Wert
+110-1	5873-5877	Wert	_	_	_	Labor
+
+#Text=Normb / Dimension
+111-1	5878-5883	Normb	_	_	_	Labor
+111-2	5884-5885	/	_	_	_	Labor
+111-3	5886-5895	Dimension	_	_	_	Labor
+
+#Text=Datum
+112-1	5896-5901	Datum	_	_	_	Labor
+
+#Text=MCH
+113-1	5902-5905	MCH	_	_	_	Labor
+
+#Text=28
+114-1	5906-5908	28	_	_	_	Labor
+
+#Text=27 - 33 pg
+115-1	5909-5911	27	_	_	_	Labor
+115-2	5912-5913	-	_	_	_	Labor
+115-3	5914-5916	33	_	_	_	Labor
+115-4	5917-5919	pg	_	_	_	Labor
+
+#Text=<[Pseudo] 28/07/36>
+116-1	5920-5929	<[Pseudo]	_	_	_	Labor
+116-2	5930-5932	28	_	_	_	Labor
+116-3	5932-5933	/	_	_	_	Labor
+116-4	5933-5935	07	_	_	_	Labor
+116-5	5935-5936	/	_	_	_	Labor
+116-6	5936-5938	36	_	_	_	Labor
+116-7	5938-5939	>	_	_	_	Labor
+
+#Text=MCHC
+117-1	5940-5944	MCHC	_	_	_	Labor
+
+#Text=34
+118-1	5945-5947	34	_	_	_	Labor
+
+#Text=30 - 36 g/dl
+119-1	5948-5950	30	_	_	_	Labor
+119-2	5951-5952	-	_	_	_	Labor
+119-3	5953-5955	36	_	_	_	Labor
+119-4	5956-5957	g	_	_	_	Labor
+119-5	5957-5958	/	_	_	_	Labor
+119-6	5958-5960	dl	_	_	_	Labor
+
+#Text=<[Pseudo] 28/07/36>
+120-1	5961-5970	<[Pseudo]	_	_	_	Labor
+120-2	5971-5973	28	_	_	_	Labor
+120-3	5973-5974	/	_	_	_	Labor
+120-4	5974-5976	07	_	_	_	Labor
+120-5	5976-5977	/	_	_	_	Labor
+120-6	5977-5979	36	_	_	_	Labor
+120-7	5979-5980	>	_	_	_	Labor
+
+#Text=RDW
+121-1	5981-5984	RDW	_	_	_	Labor
+
+#Text=14.2
+122-1	5985-5989	14.2	_	_	_	Labor
+
+#Text=12,9 - 18,7 %
+123-1	5990-5994	12,9	_	_	_	Labor
+123-2	5995-5996	-	_	_	_	Labor
+123-3	5997-6001	18,7	_	_	_	Labor
+123-4	6002-6003	%	_	_	_	Labor
+
+#Text=<[Pseudo] 28/07/36>
+124-1	6004-6013	<[Pseudo]	_	_	_	Labor
+124-2	6014-6016	28	_	_	_	Labor
+124-3	6016-6017	/	_	_	_	Labor
+124-4	6017-6019	07	_	_	_	Labor
+124-5	6019-6020	/	_	_	_	Labor
+124-6	6020-6022	36	_	_	_	Labor
+124-7	6022-6023	>	_	_	_	Labor
+
+#Text=hypochr.Erythroz.
+125-1	6024-6031	hypochr	_	_	_	Labor
+125-2	6031-6032	.	_	_	_	Labor
+125-3	6032-6040	Erythroz	_	_	_	Labor
+125-4	6040-6041	.	_	_	_	Labor
+
+#Text=0.2
+126-1	6042-6045	0.2	_	_	_	Labor
+
+#Text=0 - 2 %
+127-1	6046-6047	0	_	_	_	Labor
+127-2	6048-6049	-	_	_	_	Labor
+127-3	6050-6051	2	_	_	_	Labor
+127-4	6052-6053	%	_	_	_	Labor
+
+#Text=<[Pseudo] 28/07/36>
+128-1	6054-6063	<[Pseudo]	_	_	_	Labor
+128-2	6064-6066	28	_	_	_	Labor
+128-3	6066-6067	/	_	_	_	Labor
+128-4	6067-6069	07	_	_	_	Labor
+128-5	6069-6070	/	_	_	_	Labor
+128-6	6070-6072	36	_	_	_	Labor
+128-7	6072-6073	>	_	_	_	Labor
+
+#Text=Thrombozyten
+129-1	6074-6086	Thrombozyten	_	_	_	Labor
+
+#Text=246
+130-1	6087-6090	246	_	_	_	Labor
+
+#Text=150 - 440 /nl
+131-1	6091-6094	150	_	_	_	Labor
+131-2	6095-6096	-	_	_	_	Labor
+131-3	6097-6100	440	_	_	_	Labor
+131-4	6101-6104	/nl	_	_	_	Labor
+
+#Text=<[Pseudo] 28/07/36>
+132-1	6105-6114	<[Pseudo]	_	_	_	Labor
+132-2	6115-6117	28	_	_	_	Labor
+132-3	6117-6118	/	_	_	_	Labor
+132-4	6118-6120	07	_	_	_	Labor
+132-5	6120-6121	/	_	_	_	Labor
+132-6	6121-6123	36	_	_	_	Labor
+132-7	6123-6124	>	_	_	_	Labor
+
+#Text=Elektrolyte & Nierenfunktionsparameter
+133-1	6127-6138	Elektrolyte	_	_	_	Labor
+133-2	6139-6140	&	_	_	_	Labor
+133-3	6141-6165	Nierenfunktionsparameter	_	_	_	Labor
+
+#Text=Parameter
+134-1	6167-6176	Parameter	_	_	_	Labor
+
+#Text=Wert
+135-1	6177-6181	Wert	_	_	_	Labor
+
+#Text=Normb / Dimension
+136-1	6182-6187	Normb	_	_	_	Labor
+136-2	6188-6189	/	_	_	_	Labor
+136-3	6190-6199	Dimension	_	_	_	Labor
+
+#Text=Datum
+137-1	6200-6205	Datum	_	_	_	Labor
+
+#Text=Natrium -LRB- ISE -RRB-
+138-1	6206-6213	Natrium	_	_	_	Labor
+138-2	6214-6219	-LRB-	_	_	_	Labor
+138-3	6220-6223	ISE	_	_	_	Labor
+138-4	6224-6229	-RRB-	_	_	_	Labor
+
+#Text=134 !L
+139-1	6230-6233	134	_	_	_	Labor
+139-2	6234-6235	!	_	_	_	Labor
+139-3	6235-6236	L	_	_	_	Labor
+
+#Text=135 - 146 mmol/l
+140-1	6237-6240	135	_	_	_	Labor
+140-2	6241-6242	-	_	_	_	Labor
+140-3	6243-6246	146	_	_	_	Labor
+140-4	6247-6251	mmol	_	_	_	Labor
+140-5	6251-6252	/	_	_	_	Labor
+140-6	6252-6253	l	_	_	_	Labor
+
+#Text=<[Pseudo] 28/07/36>
+141-1	6254-6263	<[Pseudo]	_	_	_	Labor
+141-2	6264-6266	28	_	_	_	Labor
+141-3	6266-6267	/	_	_	_	Labor
+141-4	6267-6269	07	_	_	_	Labor
+141-5	6269-6270	/	_	_	_	Labor
+141-6	6270-6272	36	_	_	_	Labor
+141-7	6272-6273	>	_	_	_	Labor
+
+#Text=Kalium -LRB- ISE -RRB-
+142-1	6274-6280	Kalium	_	_	_	Labor
+142-2	6281-6286	-LRB-	_	_	_	Labor
+142-3	6287-6290	ISE	_	_	_	Labor
+142-4	6291-6296	-RRB-	_	_	_	Labor
+
+#Text=3.85
+143-1	6297-6301	3.85	_	_	_	Labor
+
+#Text=3,4 - 4,8 mmol/l
+144-1	6302-6305	3,4	_	_	_	Labor
+144-2	6306-6307	-	_	_	_	Labor
+144-3	6308-6311	4,8	_	_	_	Labor
+144-4	6312-6316	mmol	_	_	_	Labor
+144-5	6316-6317	/	_	_	_	Labor
+144-6	6317-6318	l	_	_	_	Labor
+
+#Text=<[Pseudo] 28/07/36>
+145-1	6319-6328	<[Pseudo]	_	_	_	Labor
+145-2	6329-6331	28	_	_	_	Labor
+145-3	6331-6332	/	_	_	_	Labor
+145-4	6332-6334	07	_	_	_	Labor
+145-5	6334-6335	/	_	_	_	Labor
+145-6	6335-6337	36	_	_	_	Labor
+145-7	6337-6338	>	_	_	_	Labor
+
+#Text=Calcium
+146-1	6339-6346	Calcium	_	_	_	Labor
+
+#Text=2.28
+147-1	6347-6351	2.28	_	_	_	Labor
+
+#Text=2,11 - 2,59 mmol/l
+148-1	6352-6356	2,11	_	_	_	Labor
+148-2	6357-6358	-	_	_	_	Labor
+148-3	6359-6363	2,59	_	_	_	Labor
+148-4	6364-6368	mmol	_	_	_	Labor
+148-5	6368-6369	/	_	_	_	Labor
+148-6	6369-6370	l	_	_	_	Labor
+
+#Text=<[Pseudo] 23/07/36>
+149-1	6371-6380	<[Pseudo]	_	_	_	Labor
+149-2	6381-6383	23	_	_	_	Labor
+149-3	6383-6384	/	_	_	_	Labor
+149-4	6384-6386	07	_	_	_	Labor
+149-5	6386-6387	/	_	_	_	Labor
+149-6	6387-6389	36	_	_	_	Labor
+149-7	6389-6390	>	_	_	_	Labor
+
+#Text=Phosphat
+150-1	6391-6399	Phosphat	_	_	_	Labor
+
+#Text=1.24
+151-1	6400-6404	1.24	_	_	_	Labor
+
+#Text=0,84 - 1,45 mmol/l
+152-1	6405-6409	0,84	_	_	_	Labor
+152-2	6410-6411	-	_	_	_	Labor
+152-3	6412-6416	1,45	_	_	_	Labor
+152-4	6417-6421	mmol	_	_	_	Labor
+152-5	6421-6422	/	_	_	_	Labor
+152-6	6422-6423	l	_	_	_	Labor
+
+#Text=<[Pseudo] 23/07/36>
+153-1	6424-6433	<[Pseudo]	_	_	_	Labor
+153-2	6434-6436	23	_	_	_	Labor
+153-3	6436-6437	/	_	_	_	Labor
+153-4	6437-6439	07	_	_	_	Labor
+153-5	6439-6440	/	_	_	_	Labor
+153-6	6440-6442	36	_	_	_	Labor
+153-7	6442-6443	>	_	_	_	Labor
+
+#Text=Magnesium
+154-1	6444-6453	Magnesium	_	_	_	Labor
+
+#Text=0.76
+155-1	6454-6458	0.76	_	_	_	Labor
+
+#Text=0,75 - 1,05 mmol/l
+156-1	6459-6463	0,75	_	_	_	Labor
+156-2	6464-6465	-	_	_	_	Labor
+156-3	6466-6470	1,05	_	_	_	Labor
+156-4	6471-6475	mmol	_	_	_	Labor
+156-5	6475-6476	/	_	_	_	Labor
+156-6	6476-6477	l	_	_	_	Labor
+
+#Text=<[Pseudo] 23/07/36>
+157-1	6478-6487	<[Pseudo]	_	_	_	Labor
+157-2	6488-6490	23	_	_	_	Labor
+157-3	6490-6491	/	_	_	_	Labor
+157-4	6491-6493	07	_	_	_	Labor
+157-5	6493-6494	/	_	_	_	Labor
+157-6	6494-6496	36	_	_	_	Labor
+157-7	6496-6497	>	_	_	_	Labor
+
+#Text=Parameter
+158-1	6500-6509	Parameter	_	_	_	Labor
+
+#Text=Wert
+159-1	6510-6514	Wert	_	_	_	Labor
+
+#Text=Normb / Dimension
+160-1	6515-6520	Normb	_	_	_	Labor
+160-2	6521-6522	/	_	_	_	Labor
+160-3	6523-6532	Dimension	_	_	_	Labor
+
+#Text=Datum
+161-1	6533-6538	Datum	_	_	_	Labor
+
+#Text=Chlorid -LRB- ISE -RRB-
+162-1	6539-6546	Chlorid	_	_	_	Labor
+162-2	6547-6552	-LRB-	_	_	_	Labor
+162-3	6553-6556	ISE	_	_	_	Labor
+162-4	6557-6562	-RRB-	_	_	_	Labor
+
+#Text=99
+163-1	6563-6565	99	_	_	_	Labor
+
+#Text=98 - 111 mmol/L
+164-1	6566-6568	98	_	_	_	Labor
+164-2	6569-6570	-	_	_	_	Labor
+164-3	6571-6574	111	_	_	_	Labor
+164-4	6575-6579	mmol	_	_	_	Labor
+164-5	6579-6580	/	_	_	_	Labor
+164-6	6580-6581	L	_	_	_	Labor
+
+#Text=<[Pseudo] 23/07/36>
+165-1	6582-6591	<[Pseudo]	_	_	_	Labor
+165-2	6592-6594	23	_	_	_	Labor
+165-3	6594-6595	/	_	_	_	Labor
+165-4	6595-6597	07	_	_	_	Labor
+165-5	6597-6598	/	_	_	_	Labor
+165-6	6598-6600	36	_	_	_	Labor
+165-7	6600-6601	>	_	_	_	Labor
+
+#Text=Kreatinin
+166-1	6602-6611	Kreatinin	_	_	_	Labor
+
+#Text=1.33 !H
+167-1	6612-6616	1.33	_	_	_	Labor
+167-2	6617-6618	!	_	_	_	Labor
+167-3	6618-6619	H	_	_	_	Labor
+
+#Text=0,6 - 1,2 mg/dl
+168-1	6620-6623	0,6	_	_	_	Labor
+168-2	6624-6625	-	_	_	_	Labor
+168-3	6626-6629	1,2	_	_	_	Labor
+168-4	6630-6632	mg	_	_	_	Labor
+168-5	6632-6633	/	_	_	_	Labor
+168-6	6633-6635	dl	_	_	_	Labor
+
+#Text=B-DATE
+169-1	6636-6642	B-DATE	_	_	_	Labor
+
+#Text=Harnstoff
+170-1	6643-6652	Harnstoff	_	_	_	Labor
+
+#Text=41
+171-1	6653-6655	41	_	_	_	Labor
+
+#Text=- <45 mg/dl
+172-1	6656-6657	-	_	_	_	Labor
+172-2	6658-6659	<	_	_	_	Labor
+172-3	6659-6661	45	_	_	_	Labor
+172-4	6662-6664	mg	_	_	_	Labor
+172-5	6664-6665	/	_	_	_	Labor
+172-6	6665-6667	dl	_	_	_	Labor
+
+#Text=B-DATE
+173-1	6668-6674	B-DATE	_	_	_	Labor
+
+#Text=GFR, CKD-EPI
+174-1	6675-6678	GFR	_	_	_	Labor
+174-2	6678-6679	,	_	_	_	Labor
+174-3	6680-6687	CKD-EPI	_	_	_	Labor
+
+#Text=62.8
+175-1	6688-6692	62.8	_	_	_	Labor
+
+#Text=>60 s.u.
+176-1	6693-6694	>	_	_	_	Labor
+176-2	6694-6696	60	_	_	_	Labor
+176-3	6697-6700	s.u	_	_	_	Labor
+176-4	6700-6701	.	_	_	_	Labor
+
+#Text=B-DATE
+177-1	6702-6708	B-DATE	_	_	_	Labor
+
+#Text=MDRD
+178-1	6709-6713	MDRD	_	_	_	Labor
+
+#Text=66.09
+179-1	6714-6719	66.09	_	_	_	Labor
+
+#Text=ml/min/1,73qm
+180-1	6720-6722	ml	_	_	_	Labor
+180-2	6722-6723	/	_	_	_	Labor
+180-3	6723-6726	min	_	_	_	Labor
+180-4	6726-6727	/	_	_	_	Labor
+180-5	6727-6733	1,73qm	_	_	_	Labor
+
+#Text=<[Pseudo] 24/07/36>
+181-1	6734-6743	<[Pseudo]	_	_	_	Labor
+181-2	6744-6746	24	_	_	_	Labor
+181-3	6746-6747	/	_	_	_	Labor
+181-4	6747-6749	07	_	_	_	Labor
+181-5	6749-6750	/	_	_	_	Labor
+181-6	6750-6752	36	_	_	_	Labor
+181-7	6752-6753	>	_	_	_	Labor
+
+#Text=Allgemeine Stoffwechsel- & Proteindiagnostik
+182-1	6756-6766	Allgemeine	_	_	_	Labor
+182-2	6767-6780	Stoffwechsel-	_	_	_	Labor
+182-3	6781-6782	&	_	_	_	Labor
+182-4	6783-6800	Proteindiagnostik	_	_	_	Labor
+
+#Text=Parameter
+183-1	6802-6811	Parameter	_	_	_	Labor
+
+#Text=Wert
+184-1	6812-6816	Wert	_	_	_	Labor
+
+#Text=Normb / Dimension
+185-1	6817-6822	Normb	_	_	_	Labor
+185-2	6823-6824	/	_	_	_	Labor
+185-3	6825-6834	Dimension	_	_	_	Labor
+
+#Text=Datum
+186-1	6835-6840	Datum	_	_	_	Labor
+
+#Text=Albumin quant.
+187-1	6841-6848	Albumin	_	_	_	Labor
+187-2	6849-6854	quant	_	_	_	Labor
+187-3	6854-6855	.	_	_	_	Labor
+
+#Text=41.6
+188-1	6856-6860	41.6	_	_	_	Labor
+
+#Text=30 - 50 g/l
+189-1	6861-6863	30	_	_	_	Labor
+189-2	6864-6865	-	_	_	_	Labor
+189-3	6866-6868	50	_	_	_	Labor
+189-4	6869-6870	g	_	_	_	Labor
+189-5	6870-6871	/	_	_	_	Labor
+189-6	6871-6872	l	_	_	_	Labor
+
+#Text=<[Pseudo] 24/07/36>
+190-1	6873-6882	<[Pseudo]	_	_	_	Labor
+190-2	6883-6885	24	_	_	_	Labor
+190-3	6885-6886	/	_	_	_	Labor
+190-4	6886-6888	07	_	_	_	Labor
+190-5	6888-6889	/	_	_	_	Labor
+190-6	6889-6891	36	_	_	_	Labor
+190-7	6891-6892	>	_	_	_	Labor
+
+#Text=Glucose
+191-1	6893-6900	Glucose	_	_	_	Labor
+
+#Text=<NONE> !H
+192-1	6901-6907	<NONE>	_	_	_	Labor
+192-2	6908-6909	!	_	_	_	Labor
+192-3	6909-6910	H	_	_	_	Labor
+
+#Text=65 - 110 mg/dl
+193-1	6911-6913	65	_	_	_	Labor
+193-2	6914-6915	-	_	_	_	Labor
+193-3	6916-6919	110	_	_	_	Labor
+193-4	6920-6922	mg	_	_	_	Labor
+193-5	6922-6923	/	_	_	_	Labor
+193-6	6923-6925	dl	_	_	_	Labor
+
+#Text=B-DATE
+194-1	6926-6932	B-DATE	_	_	_	Labor
+
+#Text=GOT/AST
+195-1	6933-6936	GOT	_	_	_	Labor
+195-2	6936-6937	/	_	_	_	Labor
+195-3	6937-6940	AST	_	_	_	Labor
+
+#Text=55 !H
+196-1	6941-6943	55	_	_	_	Labor
+196-2	6944-6945	!	_	_	_	Labor
+196-3	6945-6946	H	_	_	_	Labor
+
+#Text=- <46 U/l
+197-1	6947-6948	-	_	_	_	Labor
+197-2	6949-6950	<	_	_	_	Labor
+197-3	6950-6952	46	_	_	_	Labor
+197-4	6953-6954	U	_	_	_	Labor
+197-5	6954-6955	/	_	_	_	Labor
+197-6	6955-6956	l	_	_	_	Labor
+
+#Text=B-DATE
+198-1	6957-6963	B-DATE	_	_	_	Labor
+
+#Text=GPT/ALT
+199-1	6964-6967	GPT	_	_	_	Labor
+199-2	6967-6968	/	_	_	_	Labor
+199-3	6968-6971	ALT	_	_	_	Labor
+
+#Text=16
+200-1	6972-6974	16	_	_	_	Labor
+
+#Text=- <50 U/l
+201-1	6975-6976	-	_	_	_	Labor
+201-2	6977-6978	<	_	_	_	Labor
+201-3	6978-6980	50	_	_	_	Labor
+201-4	6981-6982	U	_	_	_	Labor
+201-5	6982-6983	/	_	_	_	Labor
+201-6	6983-6984	l	_	_	_	Labor
+
+#Text=B-DATE
+202-1	6985-6991	B-DATE	_	_	_	Labor
+
+#Text=AP
+203-1	6992-6994	AP	_	_	_	Labor
+
+#Text=79
+204-1	6995-6997	79	_	_	_	Labor
+
+#Text=40 - 130 U/l
+205-1	6998-7000	40	_	_	_	Labor
+205-2	7001-7002	-	_	_	_	Labor
+205-3	7003-7006	130	_	_	_	Labor
+205-4	7007-7008	U	_	_	_	Labor
+205-5	7008-7009	/	_	_	_	Labor
+205-6	7009-7010	l	_	_	_	Labor
+
+#Text=B-DATE
+206-1	7011-7017	B-DATE	_	_	_	Labor
+
+#Text=GGT
+207-1	7018-7021	GGT	_	_	_	Labor
+
+#Text=18
+208-1	7022-7024	18	_	_	_	Labor
+
+#Text=- <60 U/l
+209-1	7025-7026	-	_	_	_	Labor
+209-2	7027-7028	<	_	_	_	Labor
+209-3	7028-7030	60	_	_	_	Labor
+209-4	7031-7032	U	_	_	_	Labor
+209-5	7032-7033	/	_	_	_	Labor
+209-6	7033-7034	l	_	_	_	Labor
+
+#Text=B-DATE
+210-1	7035-7041	B-DATE	_	_	_	Labor
+
+#Text=Ges.Bili.
+211-1	7042-7045	Ges	_	_	_	Labor
+211-2	7045-7046	.	_	_	_	Labor
+211-3	7046-7050	Bili	_	_	_	Labor
+211-4	7050-7051	.	_	_	_	Labor
+
+#Text=0.80
+212-1	7052-7056	0.80	_	_	_	Labor
+
+#Text=- <1.0 mg/dl
+213-1	7057-7058	-	_	_	_	Labor
+213-2	7059-7060	<	_	_	_	Labor
+213-3	7060-7063	1.0	_	_	_	Labor
+213-4	7064-7066	mg	_	_	_	Labor
+213-5	7066-7067	/	_	_	_	Labor
+213-6	7067-7069	dl	_	_	_	Labor
+
+#Text=B-DATE
+214-1	7070-7076	B-DATE	_	_	_	Labor
+
+#Text=Triglyceride
+215-1	7077-7089	Triglyceride	_	_	_	Labor
+
+#Text=198 !H
+216-1	7090-7093	198	_	_	_	Labor
+216-2	7094-7095	!	_	_	_	Labor
+216-3	7095-7096	H	_	_	_	Labor
+
+#Text=- <150 mg/dl
+217-1	7097-7098	-	_	_	_	Labor
+217-2	7099-7100	<	_	_	_	Labor
+217-3	7100-7103	150	_	_	_	Labor
+217-4	7104-7106	mg	_	_	_	Labor
+217-5	7106-7107	/	_	_	_	Labor
+217-6	7107-7109	dl	_	_	_	Labor
+
+#Text=B-DATE
+218-1	7110-7116	B-DATE	_	_	_	Labor
+
+#Text=Parameter
+219-1	7119-7128	Parameter	_	_	_	Labor
+
+#Text=Wert
+220-1	7129-7133	Wert	_	_	_	Labor
+
+#Text=Normb / Dimension
+221-1	7134-7139	Normb	_	_	_	Labor
+221-2	7140-7141	/	_	_	_	Labor
+221-3	7142-7151	Dimension	_	_	_	Labor
+
+#Text=Datum
+222-1	7152-7157	Datum	_	_	_	Labor
+
+#Text=Cholesterin
+223-1	7158-7169	Cholesterin	_	_	_	Labor
+
+#Text=241.0
+224-1	7170-7175	241.0	_	_	_	Labor
+
+#Text=- alt.abh. mg/dl
+225-1	7176-7177	-	_	_	_	Labor
+225-2	7178-7185	alt.abh	_	_	_	Labor
+225-3	7185-7186	.	_	_	_	Labor
+225-4	7187-7189	mg	_	_	_	Labor
+225-5	7189-7190	/	_	_	_	Labor
+225-6	7190-7192	dl	_	_	_	Labor
+
+#Text=<[Pseudo] 24/07/36>
+226-1	7193-7202	<[Pseudo]	_	_	_	Labor
+226-2	7203-7205	24	_	_	_	Labor
+226-3	7205-7206	/	_	_	_	Labor
+226-4	7206-7208	07	_	_	_	Labor
+226-5	7208-7209	/	_	_	_	Labor
+226-6	7209-7211	36	_	_	_	Labor
+226-7	7211-7212	>	_	_	_	Labor
+
+#Text=LDL-Chol. -LRB- berechn. -RRB-
+227-1	7213-7221	LDL-Chol	_	_	_	Labor
+227-2	7221-7222	.	_	_	_	Labor
+227-3	7223-7228	-LRB-	_	_	_	Labor
+227-4	7229-7236	berechn	_	_	_	Labor
+227-5	7236-7237	.	_	_	_	Labor
+227-6	7238-7243	-RRB-	_	_	_	Labor
+
+#Text=159
+228-1	7244-7247	159	_	_	_	Labor
+
+#Text=- <160 mg/dl
+229-1	7248-7249	-	_	_	_	Labor
+229-2	7250-7251	<	_	_	_	Labor
+229-3	7251-7254	160	_	_	_	Labor
+229-4	7255-7257	mg	_	_	_	Labor
+229-5	7257-7258	/	_	_	_	Labor
+229-6	7258-7260	dl	_	_	_	Labor
+
+#Text=B-DATE
+230-1	7261-7267	B-DATE	_	_	_	Labor
+
+#Text=HDL-Cholesterin
+231-1	7268-7283	HDL-Cholesterin	_	_	_	Labor
+
+#Text=42
+232-1	7284-7286	42	_	_	_	Labor
+
+#Text=>40 mg/dl
+233-1	7287-7288	>	_	_	_	Labor
+233-2	7288-7290	40	_	_	_	Labor
+233-3	7291-7293	mg	_	_	_	Labor
+233-4	7293-7294	/	_	_	_	Labor
+233-5	7294-7296	dl	_	_	_	Labor
+
+#Text=B-DATE
+234-1	7297-7303	B-DATE	_	_	_	Labor
+
+#Text=CRP
+235-1	7304-7307	CRP	_	_	_	Labor
+
+#Text=8.9 !H
+236-1	7308-7311	8.9	_	_	_	Labor
+236-2	7312-7313	!	_	_	_	Labor
+236-3	7313-7314	H	_	_	_	Labor
+
+#Text=- <5 mg/l
+237-1	7315-7316	-	_	_	_	Labor
+237-2	7317-7318	<	_	_	_	Labor
+237-3	7318-7319	5	_	_	_	Labor
+237-4	7320-7322	mg	_	_	_	Labor
+237-5	7322-7323	/	_	_	_	Labor
+237-6	7323-7324	l	_	_	_	Labor
+
+#Text=<[Pseudo] 28/07/36>
+238-1	7325-7334	<[Pseudo]	_	_	_	Labor
+238-2	7335-7337	28	_	_	_	Labor
+238-3	7337-7338	/	_	_	_	Labor
+238-4	7338-7340	07	_	_	_	Labor
+238-5	7340-7341	/	_	_	_	Labor
+238-6	7341-7343	36	_	_	_	Labor
+238-7	7343-7344	>	_	_	_	Labor
+
+#Text=Laktat
+239-1	7345-7351	Laktat	_	_	_	Labor
+
+#Text=1.61 !H
+240-1	7352-7356	1.61	_	_	_	Labor
+240-2	7357-7358	!	_	_	_	Labor
+240-3	7358-7359	H	_	_	_	Labor
+
+#Text=0,9 - 1,6 mmol/l
+241-1	7360-7363	0,9	_	_	_	Labor
+241-2	7364-7365	-	_	_	_	Labor
+241-3	7366-7369	1,6	_	_	_	Labor
+241-4	7370-7374	mmol	_	_	_	Labor
+241-5	7374-7375	/	_	_	_	Labor
+241-6	7375-7376	l	_	_	_	Labor
+
+#Text=<[Pseudo] 23/07/36>
+242-1	7377-7386	<[Pseudo]	_	_	_	Labor
+242-2	7387-7389	23	_	_	_	Labor
+242-3	7389-7390	/	_	_	_	Labor
+242-4	7390-7392	07	_	_	_	Labor
+242-5	7392-7393	/	_	_	_	Labor
+242-6	7393-7395	36	_	_	_	Labor
+242-7	7395-7396	>	_	_	_	Labor
+
+#Text=Hämolyse
+243-1	7397-7405	Hämolyse	_	_	_	Labor
+
+#Text=-
+244-1	7406-7407	-	_	_	_	Labor
+
+#Text=<[Pseudo] 28/07/36>
+245-1	7409-7418	<[Pseudo]	_	_	_	Labor
+245-2	7419-7421	28	_	_	_	Labor
+245-3	7421-7422	/	_	_	_	Labor
+245-4	7422-7424	07	_	_	_	Labor
+245-5	7424-7425	/	_	_	_	Labor
+245-6	7425-7427	36	_	_	_	Labor
+245-7	7427-7428	>	_	_	_	Labor
+
+#Text=ikterisch
+246-1	7429-7438	ikterisch	_	_	_	Labor
+
+#Text=-
+247-1	7439-7440	-	_	_	_	Labor
+
+#Text=<[Pseudo] 28/07/36>
+248-1	7442-7451	<[Pseudo]	_	_	_	Labor
+248-2	7452-7454	28	_	_	_	Labor
+248-3	7454-7455	/	_	_	_	Labor
+248-4	7455-7457	07	_	_	_	Labor
+248-5	7457-7458	/	_	_	_	Labor
+248-6	7458-7460	36	_	_	_	Labor
+248-7	7460-7461	>	_	_	_	Labor
+
+#Text=Lipämie
+249-1	7462-7469	Lipämie	_	_	_	Labor
+
+#Text=-
+250-1	7470-7471	-	_	_	_	Labor
+
+#Text=<[Pseudo] 28/07/36>
+251-1	7473-7482	<[Pseudo]	_	_	_	Labor
+251-2	7483-7485	28	_	_	_	Labor
+251-3	7485-7486	/	_	_	_	Labor
+251-4	7486-7488	07	_	_	_	Labor
+251-5	7488-7489	/	_	_	_	Labor
+251-6	7489-7491	36	_	_	_	Labor
+251-7	7491-7492	>	_	_	_	Labor
+
+#Text=Aktivitätsparameter & Elektrophorese
+252-1	7495-7514	Aktivitätsparameter	_	_	_	Labor
+252-2	7515-7516	&	_	_	_	Labor
+252-3	7517-7531	Elektrophorese	_	_	_	Labor
+
+#Text=Parameter
+253-1	7533-7542	Parameter	_	_	_	Labor
+
+#Text=Wert
+254-1	7543-7547	Wert	_	_	_	Labor
+
+#Text=Normb / Dimension
+255-1	7548-7553	Normb	_	_	_	Labor
+255-2	7554-7555	/	_	_	_	Labor
+255-3	7556-7565	Dimension	_	_	_	Labor
+
+#Text=Datum
+256-1	7566-7571	Datum	_	_	_	Labor
+
+#Text=LDH
+257-1	7572-7575	LDH	_	_	_	Labor
+
+#Text=259
+258-1	7576-7579	259	_	_	_	Labor
+
+#Text=- <317 U/l
+259-1	7580-7581	-	_	_	_	Labor
+259-2	7582-7583	<	_	_	_	Labor
+259-3	7583-7586	317	_	_	_	Labor
+259-4	7587-7588	U	_	_	_	Labor
+259-5	7588-7589	/	_	_	_	Labor
+259-6	7589-7590	l	_	_	_	Labor
+
+#Text=B-DATE
+260-1	7591-7597	B-DATE	_	_	_	Labor
+
+#Text=CK
+261-1	7598-7600	CK	_	_	_	Labor
+
+#Text=285 !H
+262-1	7601-7604	285	_	_	_	Labor
+262-2	7605-7606	!	_	_	_	Labor
+262-3	7606-7607	H	_	_	_	Labor
+
+#Text=- <190 U/l
+263-1	7608-7609	-	_	_	_	Labor
+263-2	7610-7611	<	_	_	_	Labor
+263-3	7611-7614	190	_	_	_	Labor
+263-4	7615-7616	U	_	_	_	Labor
+263-5	7616-7617	/	_	_	_	Labor
+263-6	7617-7618	l	_	_	_	Labor
+
+#Text=B-DATE
+264-1	7619-7625	B-DATE	_	_	_	Labor
+
+#Text=hs-TroponinT
+265-1	7626-7638	hs-TroponinT	_	_	_	Labor
+
+#Text=396 !H
+266-1	7639-7642	396	_	_	_	Labor
+266-2	7643-7644	!	_	_	_	Labor
+266-3	7644-7645	H	_	_	_	Labor
+
+#Text=- <14 pg/ml
+267-1	7646-7647	-	_	_	_	Labor
+267-2	7648-7649	<	_	_	_	Labor
+267-3	7649-7651	14	_	_	_	Labor
+267-4	7652-7654	pg	_	_	_	Labor
+267-5	7654-7655	/	_	_	_	Labor
+267-6	7655-7657	ml	_	_	_	Labor
+
+#Text=B-DATE
+268-1	7658-7664	B-DATE	_	_	_	Labor
+
+#Text=Parameter
+269-1	7667-7676	Parameter	_	_	_	Labor
+
+#Text=Wert
+270-1	7677-7681	Wert	_	_	_	Labor
+
+#Text=Normb / Dimension
+271-1	7682-7687	Normb	_	_	_	Labor
+271-2	7688-7689	/	_	_	_	Labor
+271-3	7690-7699	Dimension	_	_	_	Labor
+
+#Text=Datum
+272-1	7700-7705	Datum	_	_	_	Labor
+
+#Text=hs-TroponinT
+273-1	7706-7718	hs-TroponinT	_	_	_	Labor
+
+#Text=693 !H
+274-1	7719-7722	693	_	_	_	Labor
+274-2	7723-7724	!	_	_	_	Labor
+274-3	7724-7725	H	_	_	_	Labor
+
+#Text=- <14 pg/ml
+275-1	7726-7727	-	_	_	_	Labor
+275-2	7728-7729	<	_	_	_	Labor
+275-3	7729-7731	14	_	_	_	Labor
+275-4	7732-7734	pg	_	_	_	Labor
+275-5	7734-7735	/	_	_	_	Labor
+275-6	7735-7737	ml	_	_	_	Labor
+
+#Text=B-DATE
+276-1	7738-7744	B-DATE	_	_	_	Labor
+
+#Text=NT-BNP
+277-1	7745-7751	NT-BNP	_	_	_	Labor
+
+#Text=2598 !H
+278-1	7752-7756	2598	_	_	_	Labor
+278-2	7757-7758	!	_	_	_	Labor
+278-3	7758-7759	H	_	_	_	Labor
+
+#Text=- <125 ng/l
+279-1	7760-7761	-	_	_	_	Labor
+279-2	7762-7763	<	_	_	_	Labor
+279-3	7763-7766	125	_	_	_	Labor
+279-4	7767-7769	ng	_	_	_	Labor
+279-5	7769-7770	/	_	_	_	Labor
+279-6	7770-7771	l	_	_	_	Labor
+
+#Text=<[Pseudo] 24/07/36>
+280-1	7772-7781	<[Pseudo]	_	_	_	Labor
+280-2	7782-7784	24	_	_	_	Labor
+280-3	7784-7785	/	_	_	_	Labor
+280-4	7785-7787	07	_	_	_	Labor
+280-5	7787-7788	/	_	_	_	Labor
+280-6	7788-7790	36	_	_	_	Labor
+280-7	7790-7791	>	_	_	_	Labor
+
+#Text=Endokrinologie & Diabetologie
+281-1	7794-7808	Endokrinologie	_	_	_	Labor
+281-2	7809-7810	&	_	_	_	Labor
+281-3	7811-7823	Diabetologie	_	_	_	Labor
+
+#Text=Parameter
+282-1	7825-7834	Parameter	_	_	_	Labor
+
+#Text=Wert
+283-1	7835-7839	Wert	_	_	_	Labor
+
+#Text=Normb / Dimension
+284-1	7840-7845	Normb	_	_	_	Labor
+284-2	7846-7847	/	_	_	_	Labor
+284-3	7848-7857	Dimension	_	_	_	Labor
+
+#Text=Datum
+285-1	7858-7863	Datum	_	_	_	Labor
+
+#Text=HbA1c
+286-1	7864-7869	HbA1c	_	_	_	Labor
+
+#Text=8.3 !H
+287-1	7870-7873	8.3	_	_	_	Labor
+287-2	7874-7875	!	_	_	_	Labor
+287-3	7875-7876	H	_	_	_	Labor
+
+#Text=- <6,1 %
+288-1	7877-7878	-	_	_	_	Labor
+288-2	7879-7880	<	_	_	_	Labor
+288-3	7880-7883	6,1	_	_	_	Labor
+288-4	7884-7885	%	_	_	_	Labor
+
+#Text=B-DATE
+289-1	7886-7892	B-DATE	_	_	_	Labor
+
+#Text=HbA1c -LRB- IFCC -RRB-
+290-1	7893-7898	HbA1c	_	_	_	Labor
+290-2	7899-7904	-LRB-	_	_	_	Labor
+290-3	7905-7909	IFCC	_	_	_	Labor
+290-4	7910-7915	-RRB-	_	_	_	Labor
+
+#Text=67 !H
+291-1	7916-7918	67	_	_	_	Labor
+291-2	7919-7920	!	_	_	_	Labor
+291-3	7920-7921	H	_	_	_	Labor
+
+#Text=20 - 42 mmol/mol
+292-1	7922-7924	20	_	_	_	Labor
+292-2	7925-7926	-	_	_	_	Labor
+292-3	7927-7929	42	_	_	_	Labor
+292-4	7930-7934	mmol	_	_	_	Labor
+292-5	7934-7935	/	_	_	_	Labor
+292-6	7935-7938	mol	_	_	_	Labor
+
+#Text=<[Pseudo] 24/07/36>
+293-1	7939-7948	<[Pseudo]	_	_	_	Labor
+293-2	7949-7951	24	_	_	_	Labor
+293-3	7951-7952	/	_	_	_	Labor
+293-4	7952-7954	07	_	_	_	Labor
+293-5	7954-7955	/	_	_	_	Labor
+293-6	7955-7957	36	_	_	_	Labor
+293-7	7957-7958	>	_	_	_	Labor
+
+#Text=Parameter
+294-1	7961-7970	Parameter	_	_	_	Labor
+
+#Text=Wert
+295-1	7971-7975	Wert	_	_	_	Labor
+
+#Text=Normb / Dimension
+296-1	7976-7981	Normb	_	_	_	Labor
+296-2	7982-7983	/	_	_	_	Labor
+296-3	7984-7993	Dimension	_	_	_	Labor
+
+#Text=Datum
+297-1	7994-7999	Datum	_	_	_	Labor
+
+#Text=mittlere Glucose
+298-1	8000-8008	mittlere	_	_	_	Labor
+298-2	8009-8016	Glucose	_	_	_	Labor
+
+#Text=192 !H
+299-1	8017-8020	192	_	_	_	Labor
+299-2	8021-8022	!	_	_	_	Labor
+299-3	8022-8023	H	_	_	_	Labor
+
+#Text=- <110 mg/dl
+300-1	8024-8025	-	_	_	_	Labor
+300-2	8026-8027	<	_	_	_	Labor
+300-3	8027-8030	110	_	_	_	Labor
+300-4	8031-8033	mg	_	_	_	Labor
+300-5	8033-8034	/	_	_	_	Labor
+300-6	8034-8036	dl	_	_	_	Labor
+
+#Text=B-DATE
+301-1	8037-8043	B-DATE	_	_	_	Labor
+
+#Text=TSH
+302-1	8044-8047	TSH	_	_	_	Labor
+
+#Text=0.810
+303-1	8048-8053	0.810	_	_	_	Labor
+
+#Text=0,400 - 4,000 mU/l
+304-1	8054-8059	0,400	_	_	_	Labor
+304-2	8060-8061	-	_	_	_	Labor
+304-3	8062-8067	4,000	_	_	_	Labor
+304-4	8068-8070	mU	_	_	_	Labor
+304-5	8070-8071	/	_	_	_	Labor
+304-6	8071-8072	l	_	_	_	Labor
+
+#Text=<[Pseudo] 24/07/36>
+305-1	8073-8082	<[Pseudo]	_	_	_	Labor
+305-2	8083-8085	24	_	_	_	Labor
+305-3	8085-8086	/	_	_	_	Labor
+305-4	8086-8088	07	_	_	_	Labor
+305-5	8088-8089	/	_	_	_	Labor
+305-6	8089-8091	36	_	_	_	Labor
+305-7	8091-8092	>	_	_	_	Labor
+
+#Text=Gerinnungsdiagnostik
+306-1	8095-8115	Gerinnungsdiagnostik	_	_	_	Labor
+
+#Text=Parameter
+307-1	8117-8126	Parameter	_	_	_	Labor
+
+#Text=Wert
+308-1	8127-8131	Wert	_	_	_	Labor
+
+#Text=Normb / Dimension
+309-1	8132-8137	Normb	_	_	_	Labor
+309-2	8138-8139	/	_	_	_	Labor
+309-3	8140-8149	Dimension	_	_	_	Labor
+
+#Text=Datum
+310-1	8150-8155	Datum	_	_	_	Labor
+
+#Text=Quick
+311-1	8156-8161	Quick	_	_	_	Labor
+
+#Text=92.6
+312-1	8162-8166	92.6	_	_	_	Labor
+
+#Text=70 - 125 %
+313-1	8167-8169	70	_	_	_	Labor
+313-2	8170-8171	-	_	_	_	Labor
+313-3	8172-8175	125	_	_	_	Labor
+313-4	8176-8177	%	_	_	_	Labor
+
+#Text=<[Pseudo] 25/07/36>
+314-1	8178-8187	<[Pseudo]	_	_	_	Labor
+314-2	8188-8190	25	_	_	_	Labor
+314-3	8190-8191	/	_	_	_	Labor
+314-4	8191-8193	07	_	_	_	Labor
+314-5	8193-8194	/	_	_	_	Labor
+314-6	8194-8196	36	_	_	_	Labor
+314-7	8196-8197	>	_	_	_	Labor
+
+#Text=INR - ber.
+315-1	8198-8201	INR	_	_	_	Labor
+315-2	8202-8203	-	_	_	_	Labor
+315-3	8204-8207	ber	_	_	_	Labor
+315-4	8207-8208	.	_	_	_	Labor
+
+#Text=1.05
+316-1	8209-8213	1.05	_	_	_	Labor
+
+#Text=- <1.2
+317-1	8214-8215	-	_	_	_	Labor
+317-2	8216-8217	<	_	_	_	Labor
+317-3	8217-8220	1.2	_	_	_	Labor
+
+#Text=<[Pseudo] 25/07/36>
+318-1	8221-8230	<[Pseudo]	_	_	_	Labor
+318-2	8231-8233	25	_	_	_	Labor
+318-3	8233-8234	/	_	_	_	Labor
+318-4	8234-8236	07	_	_	_	Labor
+318-5	8236-8237	/	_	_	_	Labor
+318-6	8237-8239	36	_	_	_	Labor
+318-7	8239-8240	>	_	_	_	Labor
+
+#Text=Parameter
+319-1	8243-8252	Parameter	_	_	_	Labor
+
+#Text=Wert
+320-1	8253-8257	Wert	_	_	_	Labor
+
+#Text=Normb / Dimension
+321-1	8258-8263	Normb	_	_	_	Labor
+321-2	8264-8265	/	_	_	_	Labor
+321-3	8266-8275	Dimension	_	_	_	Labor
+
+#Text=Datum
+322-1	8276-8281	Datum	_	_	_	Labor
+
+#Text=aPTT
+323-1	8282-8286	aPTT	_	_	_	Labor
+
+#Text=21.5
+324-1	8287-8291	21.5	_	_	_	Labor
+
+#Text=- <35 s
+325-1	8292-8293	-	_	_	_	Labor
+325-2	8294-8295	<	_	_	_	Labor
+325-3	8295-8297	35	_	_	_	Labor
+325-4	8298-8299	s	_	_	_	Labor
+
+#Text=<[Pseudo] 25/07/36>
+326-1	8300-8309	<[Pseudo]	_	_	_	Labor
+326-2	8310-8312	25	_	_	_	Labor
+326-3	8312-8313	/	_	_	_	Labor
+326-4	8313-8315	07	_	_	_	Labor
+326-5	8315-8316	/	_	_	_	Labor
+326-6	8316-8318	36	_	_	_	Labor
+326-7	8318-8319	>	_	_	_	Labor
+
+#Text=Urindiagnostik
+327-1	8322-8336	Urindiagnostik	_	_	_	Labor
+
+#Text=Parameter
+328-1	8338-8347	Parameter	_	_	_	Labor
+
+#Text=Wert
+329-1	8348-8352	Wert	_	_	_	Labor
+
+#Text=Normb / Dimension
+330-1	8353-8358	Normb	_	_	_	Labor
+330-2	8359-8360	/	_	_	_	Labor
+330-3	8361-8370	Dimension	_	_	_	Labor
+
+#Text=Datum
+331-1	8371-8376	Datum	_	_	_	Labor
+
+#Text=SpezGew/Tstr.
+332-1	8377-8384	SpezGew	_	_	_	Labor
+332-2	8384-8385	/	_	_	_	Labor
+332-3	8385-8389	Tstr	_	_	_	Labor
+332-4	8389-8390	.	_	_	_	Labor
+
+#Text=Kein Material
+333-1	8391-8395	Kein	_	_	_	Labor
+333-2	8396-8404	Material	_	_	_	Labor
+
+#Text=1001 - 1035
+334-1	8405-8409	1001	_	_	_	Labor
+334-2	8410-8411	-	_	_	_	Labor
+334-3	8412-8416	1035	_	_	_	Labor
+
+#Text=<[Pseudo] 23/07/36>
+335-1	8417-8426	<[Pseudo]	_	_	_	Labor
+335-2	8427-8429	23	_	_	_	Labor
+335-3	8429-8430	/	_	_	_	Labor
+335-4	8430-8432	07	_	_	_	Labor
+335-5	8432-8433	/	_	_	_	Labor
+335-6	8433-8435	36	_	_	_	Labor
+335-7	8435-8436	>	_	_	_	Labor
+
+#Text=Medikamentenspiegel & Toxikologie
+336-1	8441-8460	Medikamentenspiegel	_	_	_	Labor
+336-2	8461-8462	&	_	_	_	Labor
+336-3	8463-8474	Toxikologie	_	_	_	Labor
+
+#Text=Parameter
+337-1	8476-8485	Parameter	_	_	_	Labor
+
+#Text=Wert
+338-1	8486-8490	Wert	_	_	_	Labor
+
+#Text=Normb / Dimension
+339-1	8491-8496	Normb	_	_	_	Labor
+339-2	8497-8498	/	_	_	_	Labor
+339-3	8499-8508	Dimension	_	_	_	Labor
+
+#Text=Datum
+340-1	8509-8514	Datum	_	_	_	Labor
+
+#Text=CSA -LRB- MS -RRB-
+341-1	8515-8518	CSA	_	_	_	Labor
+341-2	8519-8524	-LRB-	_	_	_	Labor
+341-3	8525-8527	MS	_	_	_	Labor
+341-4	8528-8533	-RRB-	_	_	_	Labor
+
+#Text=71 !L
+342-1	8534-8536	71	_	_	_	Labor
+342-2	8537-8538	!	_	_	_	Labor
+342-3	8538-8539	L	_	_	_	Labor
+
+#Text=100 - 250 µg/l
+343-1	8540-8543	100	_	_	_	Labor
+343-2	8544-8545	-	_	_	_	Labor
+343-3	8546-8549	250	_	_	_	Labor
+343-4	8550-8552	µg	_	_	_	Labor
+343-5	8552-8553	/	_	_	_	Labor
+343-6	8553-8554	l	_	_	_	Labor
+
+#Text=<[Pseudo] 26/07/36>
+344-1	8555-8564	<[Pseudo]	_	_	_	Labor
+344-2	8565-8567	26	_	_	_	Labor
+344-3	8567-8568	/	_	_	_	Labor
+344-4	8568-8570	07	_	_	_	Labor
+344-5	8570-8571	/	_	_	_	Labor
+344-6	8571-8573	36	_	_	_	Labor
+344-7	8573-8574	>	_	_	_	Labor
+
+#Text=Blutgasanalyse
+345-1	8579-8593	Blutgasanalyse	_	_	_	Labor
+
+#Text=Parameter
+346-1	8595-8604	Parameter	_	_	_	Labor
+
+#Text=Wert
+347-1	8605-8609	Wert	_	_	_	Labor
+
+#Text=Normb / Dimension
+348-1	8610-8615	Normb	_	_	_	Labor
+348-2	8616-8617	/	_	_	_	Labor
+348-3	8618-8627	Dimension	_	_	_	Labor
+
+#Text=Datum
+349-1	8628-8633	Datum	_	_	_	Labor
+
+#Text=pH
+350-1	8634-8636	pH	_	_	_	Labor
+
+#Text=7.30 !L
+351-1	8637-8641	7.30	_	_	_	Labor
+351-2	8642-8643	!	_	_	_	Labor
+351-3	8643-8644	L	_	_	_	Labor
+
+#Text=7,37 - 7,45
+352-1	8645-8649	7,37	_	_	_	Labor
+352-2	8650-8651	-	_	_	_	Labor
+352-3	8652-8656	7,45	_	_	_	Labor
+
+#Text=B-DATE
+353-1	8657-8663	B-DATE	_	_	_	Labor
+
+#Text=pO2
+354-1	8664-8667	pO2	_	_	_	Labor
+
+#Text=39
+355-1	8668-8670	39	_	_	_	Labor
+
+#Text=mmHg
+356-1	8671-8675	mmHg	_	_	_	Labor
+
+#Text=B-DATE
+357-1	8676-8682	B-DATE	_	_	_	Labor
+
+#Text=pCO2
+358-1	8683-8687	pCO2	_	_	_	Labor
+
+#Text=42.7
+359-1	8688-8692	42.7	_	_	_	Labor
+
+#Text=35 - 45 mmHg
+360-1	8693-8695	35	_	_	_	Labor
+360-2	8696-8697	-	_	_	_	Labor
+360-3	8698-8700	45	_	_	_	Labor
+360-4	8701-8705	mmHg	_	_	_	Labor
+
+#Text=<[Pseudo] 23/07/36>
+361-1	8706-8715	<[Pseudo]	_	_	_	Labor
+361-2	8716-8718	23	_	_	_	Labor
+361-3	8718-8719	/	_	_	_	Labor
+361-4	8719-8721	07	_	_	_	Labor
+361-5	8721-8722	/	_	_	_	Labor
+361-6	8722-8724	36	_	_	_	Labor
+361-7	8724-8725	>	_	_	_	Labor
+
+#Text=Parameter
+362-1	8728-8737	Parameter	_	_	_	Labor
+
+#Text=Wert
+363-1	8738-8742	Wert	_	_	_	Labor
+
+#Text=Normb / Dimension
+364-1	8743-8748	Normb	_	_	_	Labor
+364-2	8749-8750	/	_	_	_	Labor
+364-3	8751-8760	Dimension	_	_	_	Labor
+
+#Text=Datum
+365-1	8761-8766	Datum	_	_	_	Labor
+
+#Text=BE/Std.
+366-1	8767-8769	BE	_	_	_	Labor
+366-2	8769-8770	/	_	_	_	Labor
+366-3	8770-8774	Std.	_	_	_	Labor
+
+#Text=-6.0 !L
+367-1	8775-8779	-6.0	_	_	_	Labor
+367-2	8780-8781	!	_	_	_	Labor
+367-3	8781-8782	L	_	_	_	Labor
+
+#Text=-2 - +3 mmol/L
+368-1	8783-8785	-2	_	_	_	Labor
+368-2	8786-8787	-	_	_	_	Labor
+368-3	8788-8790	+3	_	_	_	Labor
+368-4	8791-8795	mmol	_	_	_	Labor
+368-5	8795-8796	/	_	_	_	Labor
+368-6	8796-8797	L	_	_	_	Labor
+
+#Text=B-DATE
+369-1	8798-8804	B-DATE	_	_	_	Labor
+
+#Text=Bicarb. /Std.
+370-1	8805-8811	Bicarb	_	_	_	Labor
+370-2	8811-8812	.	_	_	_	Labor
+370-3	8813-8817	/Std	_	_	_	Labor
+370-4	8817-8818	.	_	_	_	Labor
+
+#Text=19.2
+371-1	8819-8823	19.2	_	_	_	Labor
+
+#Text=mmol/l
+372-1	8824-8828	mmol	_	_	_	Labor
+372-2	8828-8829	/	_	_	_	Labor
+372-3	8829-8830	l	_	_	_	Labor
+
+#Text=B-DATE
+373-1	8831-8837	B-DATE	_	_	_	Labor
+
+#Text=Laktat
+374-1	8838-8844	Laktat	_	_	_	Labor
+
+#Text=14.7
+375-1	8845-8849	14.7	_	_	_	Labor
+
+#Text=- <16 mg/dl
+376-1	8850-8851	-	_	_	_	Labor
+376-2	8852-8853	<	_	_	_	Labor
+376-3	8853-8855	16	_	_	_	Labor
+376-4	8856-8858	mg	_	_	_	Labor
+376-5	8858-8859	/	_	_	_	Labor
+376-6	8859-8861	dl	_	_	_	Labor
+
+#Text=<[Pseudo] 23/07/36>
+377-1	8862-8871	<[Pseudo]	_	_	_	Labor
+377-2	8872-8874	23	_	_	_	Labor
+377-3	8874-8875	/	_	_	_	Labor
+377-4	8875-8877	07	_	_	_	Labor
+377-5	8877-8878	/	_	_	_	Labor
+377-6	8878-8880	36	_	_	_	Labor
+377-7	8880-8881	>	_	_	_	Labor
+
+#Text=Ruhe-EKG vom <[Pseudo] 23/07/2036> -LRB- über Intensiv, 6h nach Katheter -RRB- :
+378-1	8887-8895	Ruhe-EKG	_	_	_	Befunde
+378-2	8896-8899	vom	_	_	_	Befunde
+378-3	8900-8909	<[Pseudo]	_	_	_	Befunde
+378-4	8910-8912	23	_	_	_	Befunde
+378-5	8912-8913	/	_	_	_	Befunde
+378-6	8913-8915	07	_	_	_	Befunde
+378-7	8915-8916	/	_	_	_	Befunde
+378-8	8916-8920	2036	_	_	_	Befunde
+378-9	8920-8921	>	_	_	_	Befunde
+378-10	8922-8927	-LRB-	_	_	_	Befunde
+378-11	8928-8932	über	_	_	_	Befunde
+378-12	8933-8941	Intensiv	_	_	_	Befunde
+378-13	8941-8942	,	_	_	_	Befunde
+378-14	8943-8945	6h	_	_	_	Befunde
+378-15	8946-8950	nach	_	_	_	Befunde
+378-16	8951-8959	Katheter	_	_	_	Befunde
+378-17	8960-8965	-RRB-	_	_	_	Befunde
+378-18	8966-8967	:	_	_	_	Befunde
+
+#Text=Tachykarder Sinusrhythmus, regelmäßig, 100/min, Steiltyp. PQ 173msec, QRS 92msec., QTc 399msec. Zeiten im Normbereich. Verzögerte R-Progression, R/S Umschlag in V3/V4. Keine S-Persistenz. Unspezifische Knotung in II, III, aVF, V4-6. Rückläufige ST-Streckenhebungen in II, III und aVF.
+379-1	8968-8979	Tachykarder	_	_	_	Befunde
+379-2	8980-8993	Sinusrhythmus	_	_	_	Befunde
+379-3	8993-8994	,	_	_	_	Befunde
+379-4	8995-9005	regelmäßig	_	_	_	Befunde
+379-5	9005-9006	,	_	_	_	Befunde
+379-6	9007-9010	100	_	_	_	Befunde
+379-7	9010-9011	/	_	_	_	Befunde
+379-8	9011-9014	min	_	_	_	Befunde
+379-9	9014-9015	,	_	_	_	Befunde
+379-10	9016-9024	Steiltyp	_	_	_	Befunde
+379-11	9024-9025	.	_	_	_	Befunde
+379-12	9026-9028	PQ	_	_	_	Befunde
+379-13	9029-9036	173msec	_	_	_	Befunde
+379-14	9036-9037	,	_	_	_	Befunde
+379-15	9038-9041	QRS	_	_	_	Befunde
+379-16	9042-9048	92msec	_	_	_	Befunde
+379-17	9048-9049	.	_	_	_	Befunde
+379-18	9049-9050	,	_	_	_	Befunde
+379-19	9051-9054	QTc	_	_	_	Befunde
+379-20	9055-9062	399msec	_	_	_	Befunde
+379-21	9062-9063	.	_	_	_	Befunde
+379-22	9064-9070	Zeiten	_	_	_	Befunde
+379-23	9071-9073	im	_	_	_	Befunde
+379-24	9074-9085	Normbereich	_	_	_	Befunde
+379-25	9085-9086	.	_	_	_	Befunde
+379-26	9087-9097	Verzögerte	_	_	_	Befunde
+379-27	9098-9111	R-Progression	_	_	_	Befunde
+379-28	9111-9112	,	_	_	_	Befunde
+379-29	9113-9114	R	_	_	_	Befunde
+379-30	9114-9115	/	_	_	_	Befunde
+379-31	9115-9116	S	_	_	_	Befunde
+379-32	9117-9125	Umschlag	_	_	_	Befunde
+379-33	9126-9128	in	_	_	_	Befunde
+379-34	9129-9131	V3	_	_	_	Befunde
+379-35	9131-9132	/	_	_	_	Befunde
+379-36	9132-9135	V4.	_	_	_	Befunde
+379-37	9136-9141	Keine	_	_	_	Befunde
+379-38	9142-9154	S-Persistenz	_	_	_	Befunde
+379-39	9154-9155	.	_	_	_	Befunde
+379-40	9156-9169	Unspezifische	_	_	_	Befunde
+379-41	9170-9177	Knotung	_	_	_	Befunde
+379-42	9178-9180	in	_	_	_	Befunde
+379-43	9181-9183	II	_	_	_	Befunde
+379-44	9183-9184	,	_	_	_	Befunde
+379-45	9185-9188	III	_	_	_	Befunde
+379-46	9188-9189	,	_	_	_	Befunde
+379-47	9190-9193	aVF	_	_	_	Befunde
+379-48	9193-9194	,	_	_	_	Befunde
+379-49	9195-9197	V4	_	_	_	Befunde
+379-50	9197-9198	-	_	_	_	Befunde
+379-51	9198-9200	6.	_	_	_	Befunde
+379-52	9201-9212	Rückläufige	_	_	_	Befunde
+379-53	9213-9232	ST-Streckenhebungen	_	_	_	Befunde
+379-54	9233-9235	in	_	_	_	Befunde
+379-55	9236-9238	II	_	_	_	Befunde
+379-56	9238-9239	,	_	_	_	Befunde
+379-57	9240-9243	III	_	_	_	Befunde
+379-58	9244-9247	und	_	_	_	Befunde
+379-59	9248-9251	aVF	_	_	_	Befunde
+379-60	9251-9252	.	_	_	_	Befunde
+
+#Text=Ruhe-EKG vom <[Pseudo] 24/07/2036:>
+380-1	9254-9262	Ruhe-EKG	_	_	_	Befunde
+380-2	9263-9266	vom	_	_	_	Befunde
+380-3	9267-9276	<[Pseudo]	_	_	_	Befunde
+380-4	9277-9279	24	_	_	_	Befunde
+380-5	9279-9280	/	_	_	_	Befunde
+380-6	9280-9282	07	_	_	_	Befunde
+380-7	9282-9283	/	_	_	_	Befunde
+380-8	9283-9287	2036	_	_	_	Befunde
+380-9	9287-9289	:>	_	_	_	Befunde
+
+#Text=Sinusrhythmus, regelmäßig, 85/min, Linkstyp. PQ 154msec, QRS 90msec., QTc 396msec. Zeiten im Normbereich. Verzögerte R-Progression, R/S Umschlag in V4/V5. Unspezifische Knotung in II, III, aVF. ST-Streckenhebungen in II, III, aVF, V4-6.
+381-1	9290-9303	Sinusrhythmus	_	_	_	Befunde
+381-2	9303-9304	,	_	_	_	Befunde
+381-3	9305-9315	regelmäßig	_	_	_	Befunde
+381-4	9315-9316	,	_	_	_	Befunde
+381-5	9317-9319	85	_	_	_	Befunde
+381-6	9319-9320	/	_	_	_	Befunde
+381-7	9320-9323	min	_	_	_	Befunde
+381-8	9323-9324	,	_	_	_	Befunde
+381-9	9325-9333	Linkstyp	_	_	_	Befunde
+381-10	9333-9334	.	_	_	_	Befunde
+381-11	9335-9337	PQ	_	_	_	Befunde
+381-12	9338-9345	154msec	_	_	_	Befunde
+381-13	9345-9346	,	_	_	_	Befunde
+381-14	9347-9350	QRS	_	_	_	Befunde
+381-15	9351-9357	90msec	_	_	_	Befunde
+381-16	9357-9358	.	_	_	_	Befunde
+381-17	9358-9359	,	_	_	_	Befunde
+381-18	9360-9363	QTc	_	_	_	Befunde
+381-19	9364-9371	396msec	_	_	_	Befunde
+381-20	9371-9372	.	_	_	_	Befunde
+381-21	9373-9379	Zeiten	_	_	_	Befunde
+381-22	9380-9382	im	_	_	_	Befunde
+381-23	9383-9394	Normbereich	_	_	_	Befunde
+381-24	9394-9395	.	_	_	_	Befunde
+381-25	9396-9406	Verzögerte	_	_	_	Befunde
+381-26	9407-9420	R-Progression	_	_	_	Befunde
+381-27	9420-9421	,	_	_	_	Befunde
+381-28	9422-9423	R	_	_	_	Befunde
+381-29	9423-9424	/	_	_	_	Befunde
+381-30	9424-9425	S	_	_	_	Befunde
+381-31	9426-9434	Umschlag	_	_	_	Befunde
+381-32	9435-9437	in	_	_	_	Befunde
+381-33	9438-9440	V4	_	_	_	Befunde
+381-34	9440-9441	/	_	_	_	Befunde
+381-35	9441-9444	V5.	_	_	_	Befunde
+381-36	9445-9458	Unspezifische	_	_	_	Befunde
+381-37	9459-9466	Knotung	_	_	_	Befunde
+381-38	9467-9469	in	_	_	_	Befunde
+381-39	9470-9472	II	_	_	_	Befunde
+381-40	9472-9473	,	_	_	_	Befunde
+381-41	9474-9477	III	_	_	_	Befunde
+381-42	9477-9478	,	_	_	_	Befunde
+381-43	9479-9482	aVF	_	_	_	Befunde
+381-44	9482-9483	.	_	_	_	Befunde
+381-45	9484-9503	ST-Streckenhebungen	_	_	_	Befunde
+381-46	9504-9506	in	_	_	_	Befunde
+381-47	9507-9509	II	_	_	_	Befunde
+381-48	9509-9510	,	_	_	_	Befunde
+381-49	9511-9514	III	_	_	_	Befunde
+381-50	9514-9515	,	_	_	_	Befunde
+381-51	9516-9519	aVF	_	_	_	Befunde
+381-52	9519-9520	,	_	_	_	Befunde
+381-53	9521-9523	V4	_	_	_	Befunde
+381-54	9523-9524	-	_	_	_	Befunde
+381-55	9524-9526	6.	_	_	_	Befunde
+
+#Text=Ruhe-EKG vom <[Pseudo] 26/07/2036:>
+382-1	9528-9536	Ruhe-EKG	_	_	_	Befunde
+382-2	9537-9540	vom	_	_	_	Befunde
+382-3	9541-9550	<[Pseudo]	_	_	_	Befunde
+382-4	9551-9553	26	_	_	_	Befunde
+382-5	9553-9554	/	_	_	_	Befunde
+382-6	9554-9556	07	_	_	_	Befunde
+382-7	9556-9557	/	_	_	_	Befunde
+382-8	9557-9561	2036	_	_	_	Befunde
+382-9	9561-9563	:>	_	_	_	Befunde
+
+#Text=Sinusrhythmus, regelmäßig, 68/min, Indifferenzlagetyp. PQ 166 msec, QRS 101 msec., QTc 409 msec. Zeiten im Normbereich. Verzögerte R-Progression, R/S Umschlag in V4/V5. Unspezifische Knotung in II, III, aVF, V6. Keine signifikanten Kammerendteilveränderungen.
+383-1	9564-9577	Sinusrhythmus	_	_	_	Befunde
+383-2	9577-9578	,	_	_	_	Befunde
+383-3	9579-9589	regelmäßig	_	_	_	Befunde
+383-4	9589-9590	,	_	_	_	Befunde
+383-5	9591-9593	68	_	_	_	Befunde
+383-6	9593-9594	/	_	_	_	Befunde
+383-7	9594-9597	min	_	_	_	Befunde
+383-8	9597-9598	,	_	_	_	Befunde
+383-9	9599-9617	Indifferenzlagetyp	_	_	_	Befunde
+383-10	9617-9618	.	_	_	_	Befunde
+383-11	9619-9621	PQ	_	_	_	Befunde
+383-12	9622-9625	166	_	_	_	Befunde
+383-13	9626-9630	msec	_	_	_	Befunde
+383-14	9630-9631	,	_	_	_	Befunde
+383-15	9632-9635	QRS	_	_	_	Befunde
+383-16	9636-9639	101	_	_	_	Befunde
+383-17	9640-9644	msec	_	_	_	Befunde
+383-18	9644-9645	.	_	_	_	Befunde
+383-19	9645-9646	,	_	_	_	Befunde
+383-20	9647-9650	QTc	_	_	_	Befunde
+383-21	9651-9654	409	_	_	_	Befunde
+383-22	9655-9659	msec	_	_	_	Befunde
+383-23	9659-9660	.	_	_	_	Befunde
+383-24	9661-9667	Zeiten	_	_	_	Befunde
+383-25	9668-9670	im	_	_	_	Befunde
+383-26	9671-9682	Normbereich	_	_	_	Befunde
+383-27	9682-9683	.	_	_	_	Befunde
+383-28	9684-9694	Verzögerte	_	_	_	Befunde
+383-29	9695-9708	R-Progression	_	_	_	Befunde
+383-30	9708-9709	,	_	_	_	Befunde
+383-31	9710-9711	R	_	_	_	Befunde
+383-32	9711-9712	/	_	_	_	Befunde
+383-33	9712-9713	S	_	_	_	Befunde
+383-34	9714-9722	Umschlag	_	_	_	Befunde
+383-35	9723-9725	in	_	_	_	Befunde
+383-36	9726-9728	V4	_	_	_	Befunde
+383-37	9728-9729	/	_	_	_	Befunde
+383-38	9729-9732	V5.	_	_	_	Befunde
+383-39	9733-9746	Unspezifische	_	_	_	Befunde
+383-40	9747-9754	Knotung	_	_	_	Befunde
+383-41	9755-9757	in	_	_	_	Befunde
+383-42	9758-9760	II	_	_	_	Befunde
+383-43	9760-9761	,	_	_	_	Befunde
+383-44	9762-9765	III	_	_	_	Befunde
+383-45	9765-9766	,	_	_	_	Befunde
+383-46	9767-9770	aVF	_	_	_	Befunde
+383-47	9770-9771	,	_	_	_	Befunde
+383-48	9772-9775	V6.	_	_	_	Befunde
+383-49	9776-9781	Keine	_	_	_	Befunde
+383-50	9782-9795	signifikanten	_	_	_	Befunde
+383-51	9796-9822	Kammerendteilveränderungen	_	_	_	Befunde
+383-52	9822-9823	.	_	_	_	Befunde
+
+#Text=Ruhe-EKG vom <[Pseudo] 28/07/2036:>
+384-1	9825-9833	Ruhe-EKG	_	_	_	Befunde
+384-2	9834-9837	vom	_	_	_	Befunde
+384-3	9838-9847	<[Pseudo]	_	_	_	Befunde
+384-4	9848-9850	28	_	_	_	Befunde
+384-5	9850-9851	/	_	_	_	Befunde
+384-6	9851-9853	07	_	_	_	Befunde
+384-7	9853-9854	/	_	_	_	Befunde
+384-8	9854-9858	2036	_	_	_	Befunde
+384-9	9858-9860	:>	_	_	_	Befunde
+
+#Text=Sinusrhythmus, regelmäßig, 98/min, Indifferenzlagetyp. PQ 163 msec, QRS 198 msec., QTc 398 msec. Zeiten im Normbereich. Verzögerte R-Progression, R/S Umschlag in V4/V5. Unspezifische Knotung in II, III, aVF, V6. Keine signifikanten Kammerendteilveränderungen.
+385-1	9861-9874	Sinusrhythmus	_	_	_	Befunde
+385-2	9874-9875	,	_	_	_	Befunde
+385-3	9876-9886	regelmäßig	_	_	_	Befunde
+385-4	9886-9887	,	_	_	_	Befunde
+385-5	9888-9890	98	_	_	_	Befunde
+385-6	9890-9891	/	_	_	_	Befunde
+385-7	9891-9894	min	_	_	_	Befunde
+385-8	9894-9895	,	_	_	_	Befunde
+385-9	9896-9914	Indifferenzlagetyp	_	_	_	Befunde
+385-10	9914-9915	.	_	_	_	Befunde
+385-11	9916-9918	PQ	_	_	_	Befunde
+385-12	9919-9922	163	_	_	_	Befunde
+385-13	9923-9927	msec	_	_	_	Befunde
+385-14	9927-9928	,	_	_	_	Befunde
+385-15	9929-9932	QRS	_	_	_	Befunde
+385-16	9933-9936	198	_	_	_	Befunde
+385-17	9937-9941	msec	_	_	_	Befunde
+385-18	9941-9942	.	_	_	_	Befunde
+385-19	9942-9943	,	_	_	_	Befunde
+385-20	9944-9947	QTc	_	_	_	Befunde
+385-21	9948-9951	398	_	_	_	Befunde
+385-22	9952-9956	msec	_	_	_	Befunde
+385-23	9956-9957	.	_	_	_	Befunde
+385-24	9958-9964	Zeiten	_	_	_	Befunde
+385-25	9965-9967	im	_	_	_	Befunde
+385-26	9968-9979	Normbereich	_	_	_	Befunde
+385-27	9979-9980	.	_	_	_	Befunde
+385-28	9981-9991	Verzögerte	_	_	_	Befunde
+385-29	9992-10005	R-Progression	_	_	_	Befunde
+385-30	10005-10006	,	_	_	_	Befunde
+385-31	10007-10008	R	_	_	_	Befunde
+385-32	10008-10009	/	_	_	_	Befunde
+385-33	10009-10010	S	_	_	_	Befunde
+385-34	10011-10019	Umschlag	_	_	_	Befunde
+385-35	10020-10022	in	_	_	_	Befunde
+385-36	10023-10025	V4	_	_	_	Befunde
+385-37	10025-10026	/	_	_	_	Befunde
+385-38	10026-10029	V5.	_	_	_	Befunde
+385-39	10030-10043	Unspezifische	_	_	_	Befunde
+385-40	10044-10051	Knotung	_	_	_	Befunde
+385-41	10052-10054	in	_	_	_	Befunde
+385-42	10055-10057	II	_	_	_	Befunde
+385-43	10057-10058	,	_	_	_	Befunde
+385-44	10059-10062	III	_	_	_	Befunde
+385-45	10062-10063	,	_	_	_	Befunde
+385-46	10064-10067	aVF	_	_	_	Befunde
+385-47	10067-10068	,	_	_	_	Befunde
+385-48	10069-10072	V6.	_	_	_	Befunde
+385-49	10073-10078	Keine	_	_	_	Befunde
+385-50	10079-10092	signifikanten	_	_	_	Befunde
+385-51	10093-10119	Kammerendteilveränderungen	_	_	_	Befunde
+385-52	10119-10120	.	_	_	_	Befunde
+
+#Text=Langzeit-EKG vom B-DATE:
+386-1	10122-10134	Langzeit-EKG	_	_	_	Befunde
+386-2	10135-10138	vom	_	_	_	Befunde
+386-3	10139-10145	B-DATE	_	_	_	Befunde
+386-4	10145-10146	:	_	_	_	Befunde
+
+#Text=Normofrequenter Sinusrhythmus als Grundrhythmus mit Frequenzen zwischen 65/min und 113/min, im Mittel 79/min. Deutlich eingeschränkte Herzfrequenzvariabilität. Wenige supraventrikuläre Extrasystolen. Keine Pausen. Vereinzelte polymorphe ventrikuläre Extrasystolen. Lown III a.
+387-1	10147-10162	Normofrequenter	_	_	_	Befunde
+387-2	10163-10176	Sinusrhythmus	_	_	_	Befunde
+387-3	10177-10180	als	_	_	_	Befunde
+387-4	10181-10194	Grundrhythmus	_	_	_	Befunde
+387-5	10195-10198	mit	_	_	_	Befunde
+387-6	10199-10209	Frequenzen	_	_	_	Befunde
+387-7	10210-10218	zwischen	_	_	_	Befunde
+387-8	10219-10221	65	_	_	_	Befunde
+387-9	10221-10222	/	_	_	_	Befunde
+387-10	10222-10225	min	_	_	_	Befunde
+387-11	10226-10229	und	_	_	_	Befunde
+387-12	10230-10233	113	_	_	_	Befunde
+387-13	10233-10234	/	_	_	_	Befunde
+387-14	10234-10237	min	_	_	_	Befunde
+387-15	10237-10238	,	_	_	_	Befunde
+387-16	10239-10241	im	_	_	_	Befunde
+387-17	10242-10248	Mittel	_	_	_	Befunde
+387-18	10249-10251	79	_	_	_	Befunde
+387-19	10251-10252	/	_	_	_	Befunde
+387-20	10252-10256	min.	_	_	_	Befunde
+387-21	10257-10265	Deutlich	_	_	_	Befunde
+387-22	10266-10280	eingeschränkte	_	_	_	Befunde
+387-23	10281-10305	Herzfrequenzvariabilität	_	_	_	Befunde
+387-24	10305-10306	.	_	_	_	Befunde
+387-25	10307-10313	Wenige	_	_	_	Befunde
+387-26	10314-10331	supraventrikuläre	_	_	_	Befunde
+387-27	10332-10345	Extrasystolen	_	_	_	Befunde
+387-28	10345-10346	.	_	_	_	Befunde
+387-29	10347-10352	Keine	_	_	_	Befunde
+387-30	10353-10359	Pausen	_	_	_	Befunde
+387-31	10359-10360	.	_	_	_	Befunde
+387-32	10361-10372	Vereinzelte	_	_	_	Befunde
+387-33	10373-10383	polymorphe	_	_	_	Befunde
+387-34	10384-10396	ventrikuläre	_	_	_	Befunde
+387-35	10397-10410	Extrasystolen	_	_	_	Befunde
+387-36	10410-10411	.	_	_	_	Befunde
+387-37	10412-10416	Lown	_	_	_	Befunde
+387-38	10417-10420	III	_	_	_	Befunde
+387-39	10421-10423	a.	_	_	_	Befunde
+
+#Text=Virologischer Befund vom <[Pseudo] 23/07/2036> -LRB- Kard-Intensiv -RRB- :
+388-1	10425-10438	Virologischer	_	_	_	Befunde
+388-2	10439-10445	Befund	_	_	_	Befunde
+388-3	10446-10449	vom	_	_	_	Befunde
+388-4	10450-10459	<[Pseudo]	_	_	_	Befunde
+388-5	10460-10462	23	_	_	_	Befunde
+388-6	10462-10463	/	_	_	_	Befunde
+388-7	10463-10465	07	_	_	_	Befunde
+388-8	10465-10466	/	_	_	_	Befunde
+388-9	10466-10470	2036	_	_	_	Befunde
+388-10	10470-10471	>	_	_	_	Befunde
+388-11	10472-10477	-LRB-	_	_	_	Befunde
+388-12	10478-10491	Kard-Intensiv	_	_	_	Befunde
+388-13	10492-10497	-RRB-	_	_	_	Befunde
+388-14	10498-10499	:	_	_	_	Befunde
+
+#Text=Nasenabstrich vom <[Pseudo] 23/07/2036> -LRB- Kard-Intensiv -RRB- :
+389-1	10503-10516	Nasenabstrich	_	_	_	Befunde
+389-2	10517-10520	vom	_	_	_	Befunde
+389-3	10521-10530	<[Pseudo]	_	_	_	Befunde
+389-4	10531-10533	23	_	_	_	Befunde
+389-5	10533-10534	/	_	_	_	Befunde
+389-6	10534-10536	07	_	_	_	Befunde
+389-7	10536-10537	/	_	_	_	Befunde
+389-8	10537-10541	2036	_	_	_	Befunde
+389-9	10541-10542	>	_	_	_	Befunde
+389-10	10543-10548	-LRB-	_	_	_	Befunde
+389-11	10549-10562	Kard-Intensiv	_	_	_	Befunde
+389-12	10563-10568	-RRB-	_	_	_	Befunde
+389-13	10569-10570	:	_	_	_	Befunde
+
+#Text=Kultureller Befund:
+390-1	10571-10582	Kultureller	_	_	_	Befunde
+390-2	10583-10589	Befund	_	_	_	Befunde
+390-3	10589-10590	:	_	_	_	Befunde
+
+#Text=Kein Nachweis von Staphylococcus aureus
+391-1	10591-10595	Kein	_	_	_	Befunde
+391-2	10596-10604	Nachweis	_	_	_	Befunde
+391-3	10605-10608	von	_	_	_	Befunde
+391-4	10609-10623	Staphylococcus	_	_	_	Befunde
+391-5	10624-10630	aureus	_	_	_	Befunde
+
+#Text=Kein Nachweis von Methicillin resistenten Staphylococcus aureus -LRB- MRSA -RRB-
+392-1	10631-10635	Kein	_	_	_	Befunde
+392-2	10636-10644	Nachweis	_	_	_	Befunde
+392-3	10645-10648	von	_	_	_	Befunde
+392-4	10649-10660	Methicillin	_	_	_	Befunde
+392-5	10661-10672	resistenten	_	_	_	Befunde
+392-6	10673-10687	Staphylococcus	_	_	_	Befunde
+392-7	10688-10694	aureus	_	_	_	Befunde
+392-8	10695-10700	-LRB-	_	_	_	Befunde
+392-9	10701-10705	MRSA	_	_	_	Befunde
+392-10	10706-10711	-RRB-	_	_	_	Befunde
+
+#Text=Rektalabstrich vom <[Pseudo] 23/07/2036> -LRB- Kard-Intensiv -RRB- :
+393-1	10713-10727	Rektalabstrich	_	_	_	Befunde
+393-2	10728-10731	vom	_	_	_	Befunde
+393-3	10732-10741	<[Pseudo]	_	_	_	Befunde
+393-4	10742-10744	23	_	_	_	Befunde
+393-5	10744-10745	/	_	_	_	Befunde
+393-6	10745-10747	07	_	_	_	Befunde
+393-7	10747-10748	/	_	_	_	Befunde
+393-8	10748-10752	2036	_	_	_	Befunde
+393-9	10752-10753	>	_	_	_	Befunde
+393-10	10754-10759	-LRB-	_	_	_	Befunde
+393-11	10760-10773	Kard-Intensiv	_	_	_	Befunde
+393-12	10774-10779	-RRB-	_	_	_	Befunde
+393-13	10780-10781	:	_	_	_	Befunde
+
+#Text=Kultureller Befund:
+394-1	10782-10793	Kultureller	_	_	_	Befunde
+394-2	10794-10800	Befund	_	_	_	Befunde
+394-3	10800-10801	:	_	_	_	Befunde
+
+#Text=Kein Nachweis von Staphylococcus aureus
+395-1	10802-10806	Kein	_	_	_	Befunde
+395-2	10807-10815	Nachweis	_	_	_	Befunde
+395-3	10816-10819	von	_	_	_	Befunde
+395-4	10820-10834	Staphylococcus	_	_	_	Befunde
+395-5	10835-10841	aureus	_	_	_	Befunde
+
+#Text=Kein Nachweis von Methicillin resistenten Staphylococcus aureus -LRB- MRSA -RRB-
+396-1	10842-10846	Kein	_	_	_	Befunde
+396-2	10847-10855	Nachweis	_	_	_	Befunde
+396-3	10856-10859	von	_	_	_	Befunde
+396-4	10860-10871	Methicillin	_	_	_	Befunde
+396-5	10872-10883	resistenten	_	_	_	Befunde
+396-6	10884-10898	Staphylococcus	_	_	_	Befunde
+396-7	10899-10905	aureus	_	_	_	Befunde
+396-8	10906-10911	-LRB-	_	_	_	Befunde
+396-9	10912-10916	MRSA	_	_	_	Befunde
+396-10	10917-10922	-RRB-	_	_	_	Befunde
+
+#Text=Kein Nachweis von Vancomycin-resistenten Enterokokken
+397-1	10923-10927	Kein	_	_	_	Befunde
+397-2	10928-10936	Nachweis	_	_	_	Befunde
+397-3	10937-10940	von	_	_	_	Befunde
+397-4	10941-10963	Vancomycin-resistenten	_	_	_	Befunde
+397-5	10964-10976	Enterokokken	_	_	_	Befunde
+
+#Text=Kein Nachweis von multiresistenten gramnegativen Stäbchen
+398-1	10977-10981	Kein	_	_	_	Befunde
+398-2	10982-10990	Nachweis	_	_	_	Befunde
+398-3	10991-10994	von	_	_	_	Befunde
+398-4	10995-11011	multiresistenten	_	_	_	Befunde
+398-5	11012-11025	gramnegativen	_	_	_	Befunde
+398-6	11026-11034	Stäbchen	_	_	_	Befunde
+
+#Text=Herzkatheteruntersuchung vom <[Pseudo] 23/07/2036> -LRB- B-OTHER -RRB- , Endbefund:
+399-1	11036-11060	Herzkatheteruntersuchung	_	_	_	Befunde
+399-2	11061-11064	vom	_	_	_	Befunde
+399-3	11065-11074	<[Pseudo]	_	_	_	Befunde
+399-4	11075-11077	23	_	_	_	Befunde
+399-5	11077-11078	/	_	_	_	Befunde
+399-6	11078-11080	07	_	_	_	Befunde
+399-7	11080-11081	/	_	_	_	Befunde
+399-8	11081-11085	2036	_	_	_	Befunde
+399-9	11085-11086	>	_	_	_	Befunde
+399-10	11087-11092	-LRB-	_	_	_	Befunde
+399-11	11093-11100	B-OTHER	_	_	_	Befunde
+399-12	11101-11106	-RRB-	_	_	_	Befunde
+399-13	11107-11108	,	_	_	_	Befunde
+399-14	11109-11118	Endbefund	_	_	_	Befunde
+399-15	11118-11119	:	_	_	_	Befunde
+
+#Text=Invasive Diagnostik bei STEMI. Koronare 3-GE mit subtotalem Verschluss der RCA. Erfolgreiche Rekanalisation der RCA mittels PTCA+3xDE-Stentimplantation. Gutes Ergebnis bei Z. n. 3xStenting der LCX bei STEMI DATE Keine LV-Angio zur Nephroprotektion. Z. n. PTCA/Stentimplantation der RCA <[Pseudo] 2032> bei Hinterwandinfarkt -LRB- B-ORG -RRB- . Z. n. NTX <[Pseudo] 2030>
+400-1	11120-11128	Invasive	_	_	_	Befunde
+400-2	11129-11139	Diagnostik	_	_	_	Befunde
+400-3	11140-11143	bei	_	_	_	Befunde
+400-4	11144-11149	STEMI	_	_	_	Befunde
+400-5	11149-11150	.	_	_	_	Befunde
+400-6	11151-11159	Koronare	_	_	_	Befunde
+400-7	11160-11164	3-GE	_	_	_	Befunde
+400-8	11165-11168	mit	_	_	_	Befunde
+400-9	11169-11179	subtotalem	_	_	_	Befunde
+400-10	11180-11190	Verschluss	_	_	_	Befunde
+400-11	11191-11194	der	_	_	_	Befunde
+400-12	11195-11198	RCA	_	_	_	Befunde
+400-13	11198-11199	.	_	_	_	Befunde
+400-14	11200-11212	Erfolgreiche	_	_	_	Befunde
+400-15	11213-11227	Rekanalisation	_	_	_	Befunde
+400-16	11228-11231	der	_	_	_	Befunde
+400-17	11232-11235	RCA	_	_	_	Befunde
+400-18	11236-11243	mittels	_	_	_	Befunde
+400-19	11244-11271	PTCA+3xDE-Stentimplantation	_	_	_	Befunde
+400-20	11271-11272	.	_	_	_	Befunde
+400-21	11273-11278	Gutes	_	_	_	Befunde
+400-22	11279-11287	Ergebnis	_	_	_	Befunde
+400-23	11288-11291	bei	_	_	_	Befunde
+400-24	11292-11294	Z.	_	_	_	Befunde
+400-25	11295-11297	n.	_	_	_	Befunde
+400-26	11298-11308	3xStenting	_	_	_	Befunde
+400-27	11309-11312	der	_	_	_	Befunde
+400-28	11313-11316	LCX	_	_	_	Befunde
+400-29	11317-11320	bei	_	_	_	Befunde
+400-30	11321-11326	STEMI	_	_	_	Befunde
+400-31	11327-11331	DATE	_	_	_	Befunde
+400-32	11332-11337	Keine	_	_	_	Befunde
+400-33	11338-11346	LV-Angio	_	_	_	Befunde
+400-34	11347-11350	zur	_	_	_	Befunde
+400-35	11351-11367	Nephroprotektion	_	_	_	Befunde
+400-36	11367-11368	.	_	_	_	Befunde
+400-37	11369-11371	Z.	_	_	_	Befunde
+400-38	11372-11374	n.	_	_	_	Befunde
+400-39	11375-11379	PTCA	_	_	_	Befunde
+400-40	11379-11380	/	_	_	_	Befunde
+400-41	11380-11397	Stentimplantation	_	_	_	Befunde
+400-42	11398-11401	der	_	_	_	Befunde
+400-43	11402-11405	RCA	_	_	_	Befunde
+400-44	11406-11415	<[Pseudo]	_	_	_	Befunde
+400-45	11416-11420	2032	_	_	_	Befunde
+400-46	11420-11421	>	_	_	_	Befunde
+400-47	11422-11425	bei	_	_	_	Befunde
+400-48	11426-11443	Hinterwandinfarkt	_	_	_	Befunde
+400-49	11444-11449	-LRB-	_	_	_	Befunde
+400-50	11450-11455	B-ORG	_	_	_	Befunde
+400-51	11456-11461	-RRB-	_	_	_	Befunde
+400-52	11462-11463	.	_	_	_	Befunde
+400-53	11464-11466	Z.	_	_	_	Befunde
+400-54	11467-11469	n.	_	_	_	Befunde
+400-55	11470-11473	NTX	_	_	_	Befunde
+400-56	11474-11483	<[Pseudo]	_	_	_	Befunde
+400-57	11484-11488	2030	_	_	_	Befunde
+400-58	11488-11489	>	_	_	_	Befunde
+
+#Text=Arterieller Hypertonus, Hypercholesterinämie, Diabetes mellitus
+401-1	11490-11501	Arterieller	_	_	_	AllergienUnverträglichkeitenRisiken
+401-2	11502-11512	Hypertonus	_	_	_	AllergienUnverträglichkeitenRisiken
+401-3	11512-11513	,	_	_	_	AllergienUnverträglichkeitenRisiken
+401-4	11514-11534	Hypercholesterinämie	_	_	_	AllergienUnverträglichkeitenRisiken
+401-5	11534-11535	,	_	_	_	AllergienUnverträglichkeitenRisiken
+401-6	11536-11544	Diabetes	_	_	_	AllergienUnverträglichkeitenRisiken
+401-7	11545-11553	mellitus	_	_	_	AllergienUnverträglichkeitenRisiken
+
+#Text=Maßnahmen:
+402-1	11554-11563	Maßnahmen	_	_	_	Befunde
+402-2	11563-11564	:	_	_	_	Befunde
+
+#Text=- DAPT nach SOP
+403-1	11565-11566	-	_	_	_	Befunde
+403-2	11567-11571	DAPT	_	_	_	Befunde
+403-3	11572-11576	nach	_	_	_	Befunde
+403-4	11577-11580	SOP	_	_	_	Befunde
+
+#Text=- Echo zur Bestimmung LV-Funktion und Beurteilung Vitien
+404-1	11581-11582	-	_	_	_	Befunde
+404-2	11583-11587	Echo	_	_	_	Befunde
+404-3	11588-11591	zur	_	_	_	Befunde
+404-4	11592-11602	Bestimmung	_	_	_	Befunde
+404-5	11603-11614	LV-Funktion	_	_	_	Befunde
+404-6	11615-11618	und	_	_	_	Befunde
+404-7	11619-11630	Beurteilung	_	_	_	Befunde
+404-8	11631-11637	Vitien	_	_	_	Befunde
+
+#Text=Echokardiographie vom <[Pseudo] 23/07/2036:>
+405-1	11639-11656	Echokardiographie	_	_	_	EchoBefunde
+405-2	11657-11660	vom	_	_	_	EchoBefunde
+405-3	11661-11670	<[Pseudo]	_	_	_	EchoBefunde
+405-4	11671-11673	23	_	_	_	EchoBefunde
+405-5	11673-11674	/	_	_	_	EchoBefunde
+405-6	11674-11676	07	_	_	_	EchoBefunde
+405-7	11676-11677	/	_	_	_	EchoBefunde
+405-8	11677-11681	2036	_	_	_	EchoBefunde
+405-9	11681-11683	:>	_	_	_	EchoBefunde
+
+#Text=Bemerkungen:
+406-1	11684-11695	Bemerkungen	_	_	_	EchoBefunde
+406-2	11695-11696	:	_	_	_	EchoBefunde
+
+#Text=Untersuchung am Bett auf Kardio-Intensiv. Vorbekannt deutlich reduzierte Schallbedingungen, v.a. von parasternal.
+407-1	11697-11709	Untersuchung	_	_	_	EchoBefunde
+407-2	11710-11712	am	_	_	_	EchoBefunde
+407-3	11713-11717	Bett	_	_	_	EchoBefunde
+407-4	11718-11721	auf	_	_	_	EchoBefunde
+407-5	11722-11737	Kardio-Intensiv	_	_	_	EchoBefunde
+407-6	11737-11738	.	_	_	_	EchoBefunde
+407-7	11739-11749	Vorbekannt	_	_	_	EchoBefunde
+407-8	11750-11758	deutlich	_	_	_	EchoBefunde
+407-9	11759-11769	reduzierte	_	_	_	EchoBefunde
+407-10	11770-11787	Schallbedingungen	_	_	_	EchoBefunde
+407-11	11787-11788	,	_	_	_	EchoBefunde
+407-12	11789-11793	v.a.	_	_	_	EchoBefunde
+407-13	11794-11797	von	_	_	_	EchoBefunde
+407-14	11798-11809	parasternal	_	_	_	EchoBefunde
+407-15	11809-11810	.	_	_	_	EchoBefunde
+
+#Text=Beurteilung:
+408-1	11811-11822	Beurteilung	_	_	_	EchoBefunde
+408-2	11822-11823	:	_	_	_	EchoBefunde
+
+#Text=Normal großer, septal betont hypertrophierter linker Ventrikel mit noch guter systolischer Pumpfunktion bei Hypokinesie inferolateral mediobasal sowie inferior basal. Noch erhaltene longitudinale Funktion. Relaxationsstörung des LV. LA, RA und RV normal groß, gute RV-Funktion. Kein Perikarderguss nachweisbar. Vena cava inferior nicht gestaut. Klappen sonographisch und dopplersonographisch regelrecht. Systolischer PA-Druck bei fehlender Trikuspidalinsuffizienz nicht bestimmbar. Im Vergleich zur Voruntersuchung vom <[Pseudo] 17/07/2036:> keine wesentliche Befundänderung.
+409-1	11824-11830	Normal	_	_	_	EchoBefunde
+409-2	11831-11837	großer	_	_	_	EchoBefunde
+409-3	11837-11838	,	_	_	_	EchoBefunde
+409-4	11839-11845	septal	_	_	_	EchoBefunde
+409-5	11846-11852	betont	_	_	_	EchoBefunde
+409-6	11853-11869	hypertrophierter	_	_	_	EchoBefunde
+409-7	11870-11876	linker	_	_	_	EchoBefunde
+409-8	11877-11886	Ventrikel	_	_	_	EchoBefunde
+409-9	11887-11890	mit	_	_	_	EchoBefunde
+409-10	11891-11895	noch	_	_	_	EchoBefunde
+409-11	11896-11901	guter	_	_	_	EchoBefunde
+409-12	11902-11914	systolischer	_	_	_	EchoBefunde
+409-13	11915-11927	Pumpfunktion	_	_	_	EchoBefunde
+409-14	11928-11931	bei	_	_	_	EchoBefunde
+409-15	11932-11943	Hypokinesie	_	_	_	EchoBefunde
+409-16	11944-11957	inferolateral	_	_	_	EchoBefunde
+409-17	11958-11968	mediobasal	_	_	_	EchoBefunde
+409-18	11969-11974	sowie	_	_	_	EchoBefunde
+409-19	11975-11983	inferior	_	_	_	EchoBefunde
+409-20	11984-11989	basal	_	_	_	EchoBefunde
+409-21	11989-11990	.	_	_	_	EchoBefunde
+409-22	11991-11995	Noch	_	_	_	EchoBefunde
+409-23	11996-12005	erhaltene	_	_	_	EchoBefunde
+409-24	12006-12019	longitudinale	_	_	_	EchoBefunde
+409-25	12020-12028	Funktion	_	_	_	EchoBefunde
+409-26	12028-12029	.	_	_	_	EchoBefunde
+409-27	12030-12048	Relaxationsstörung	_	_	_	EchoBefunde
+409-28	12049-12052	des	_	_	_	EchoBefunde
+409-29	12053-12055	LV	_	_	_	EchoBefunde
+409-30	12055-12056	.	_	_	_	EchoBefunde
+409-31	12057-12059	LA	_	_	_	EchoBefunde
+409-32	12059-12060	,	_	_	_	EchoBefunde
+409-33	12061-12063	RA	_	_	_	EchoBefunde
+409-34	12064-12067	und	_	_	_	EchoBefunde
+409-35	12068-12070	RV	_	_	_	EchoBefunde
+409-36	12071-12077	normal	_	_	_	EchoBefunde
+409-37	12078-12082	groß	_	_	_	EchoBefunde
+409-38	12082-12083	,	_	_	_	EchoBefunde
+409-39	12084-12088	gute	_	_	_	EchoBefunde
+409-40	12089-12100	RV-Funktion	_	_	_	EchoBefunde
+409-41	12100-12101	.	_	_	_	EchoBefunde
+409-42	12102-12106	Kein	_	_	_	EchoBefunde
+409-43	12107-12121	Perikarderguss	_	_	_	EchoBefunde
+409-44	12122-12133	nachweisbar	_	_	_	EchoBefunde
+409-45	12133-12134	.	_	_	_	EchoBefunde
+409-46	12135-12139	Vena	_	_	_	EchoBefunde
+409-47	12140-12144	cava	_	_	_	EchoBefunde
+409-48	12145-12153	inferior	_	_	_	EchoBefunde
+409-49	12154-12159	nicht	_	_	_	EchoBefunde
+409-50	12160-12167	gestaut	_	_	_	EchoBefunde
+409-51	12167-12168	.	_	_	_	EchoBefunde
+409-52	12169-12176	Klappen	_	_	_	EchoBefunde
+409-53	12177-12190	sonographisch	_	_	_	EchoBefunde
+409-54	12191-12194	und	_	_	_	EchoBefunde
+409-55	12195-12215	dopplersonographisch	_	_	_	EchoBefunde
+409-56	12216-12226	regelrecht	_	_	_	EchoBefunde
+409-57	12226-12227	.	_	_	_	EchoBefunde
+409-58	12228-12240	Systolischer	_	_	_	EchoBefunde
+409-59	12241-12249	PA-Druck	_	_	_	EchoBefunde
+409-60	12250-12253	bei	_	_	_	EchoBefunde
+409-61	12254-12263	fehlender	_	_	_	EchoBefunde
+409-62	12264-12287	Trikuspidalinsuffizienz	_	_	_	EchoBefunde
+409-63	12288-12293	nicht	_	_	_	EchoBefunde
+409-64	12294-12304	bestimmbar	_	_	_	EchoBefunde
+409-65	12304-12305	.	_	_	_	EchoBefunde
+409-66	12306-12308	Im	_	_	_	EchoBefunde
+409-67	12309-12318	Vergleich	_	_	_	EchoBefunde
+409-68	12319-12322	zur	_	_	_	EchoBefunde
+409-69	12323-12338	Voruntersuchung	_	_	_	EchoBefunde
+409-70	12339-12342	vom	_	_	_	EchoBefunde
+409-71	12343-12352	<[Pseudo]	_	_	_	EchoBefunde
+409-72	12353-12355	17	_	_	_	EchoBefunde
+409-73	12355-12356	/	_	_	_	EchoBefunde
+409-74	12356-12358	07	_	_	_	EchoBefunde
+409-75	12358-12359	/	_	_	_	EchoBefunde
+409-76	12359-12363	2036	_	_	_	EchoBefunde
+409-77	12363-12365	:>	_	_	_	EchoBefunde
+409-78	12366-12371	keine	_	_	_	EchoBefunde
+409-79	12372-12383	wesentliche	_	_	_	EchoBefunde
+409-80	12384-12398	Befundänderung	_	_	_	EchoBefunde
+409-81	12398-12399	.	_	_	_	EchoBefunde
+
+#Text=Zusammenfassende Beurteilung:
+410-1	12401-12417	Zusammenfassende	_	_	_	Zusammenfassung
+410-2	12418-12429	Beurteilung	_	_	_	Zusammenfassung
+410-3	12429-12430	:	_	_	_	Zusammenfassung
+
+#Text=Die stationäre Aufnahme des Patienten auf unsere Station erfolgte über unsere B-ORG zur Nachsorge nach einer Koronarangiographie -LRB- HK vom <[Pseudo] 23/07/2036> B-OTHER -RRB- bei akutem Myokardinfarkt -LRB- STEMI -RRB- vom B-DATE.
+411-1	12431-12434	Die	_	_	_	Zusammenfassung
+411-2	12435-12445	stationäre	_	_	_	Zusammenfassung
+411-3	12446-12454	Aufnahme	_	_	_	Zusammenfassung
+411-4	12455-12458	des	_	_	_	Zusammenfassung
+411-5	12459-12468	Patienten	_	_	_	Zusammenfassung
+411-6	12469-12472	auf	_	_	_	Zusammenfassung
+411-7	12473-12479	unsere	_	_	_	Zusammenfassung
+411-8	12480-12487	Station	_	_	_	Zusammenfassung
+411-9	12488-12496	erfolgte	_	_	_	Zusammenfassung
+411-10	12497-12501	über	_	_	_	Zusammenfassung
+411-11	12502-12508	unsere	_	_	_	Zusammenfassung
+411-12	12509-12514	B-ORG	_	_	_	Zusammenfassung
+411-13	12515-12518	zur	_	_	_	Zusammenfassung
+411-14	12519-12528	Nachsorge	_	_	_	Zusammenfassung
+411-15	12529-12533	nach	_	_	_	Zusammenfassung
+411-16	12534-12539	einer	_	_	_	Zusammenfassung
+411-17	12540-12559	Koronarangiographie	_	_	_	Zusammenfassung
+411-18	12560-12565	-LRB-	_	_	_	Zusammenfassung
+411-19	12566-12568	HK	_	_	_	Zusammenfassung
+411-20	12569-12572	vom	_	_	_	Zusammenfassung
+411-21	12573-12582	<[Pseudo]	_	_	_	Zusammenfassung
+411-22	12583-12585	23	_	_	_	Zusammenfassung
+411-23	12585-12586	/	_	_	_	Zusammenfassung
+411-24	12586-12588	07	_	_	_	Zusammenfassung
+411-25	12588-12589	/	_	_	_	Zusammenfassung
+411-26	12589-12593	2036	_	_	_	Zusammenfassung
+411-27	12593-12594	>	_	_	_	Zusammenfassung
+411-28	12595-12602	B-OTHER	_	_	_	Zusammenfassung
+411-29	12603-12608	-RRB-	_	_	_	Zusammenfassung
+411-30	12609-12612	bei	_	_	_	Zusammenfassung
+411-31	12613-12619	akutem	_	_	_	Zusammenfassung
+411-32	12620-12634	Myokardinfarkt	_	_	_	Zusammenfassung
+411-33	12635-12640	-LRB-	_	_	_	Zusammenfassung
+411-34	12641-12646	STEMI	_	_	_	Zusammenfassung
+411-35	12647-12652	-RRB-	_	_	_	Zusammenfassung
+411-36	12653-12656	vom	_	_	_	Zusammenfassung
+411-37	12657-12663	B-DATE	_	_	_	Zusammenfassung
+411-38	12663-12664	.	_	_	_	Zusammenfassung
+
+#Text=In der am <[Pseudo] 23/07/2036> durchgeführten Herzkatheteruntersuchung ergab sich eine koronare 3-Gefäßerkrankung mit subtotalem Verschluss der RCA. Es wurde eine erfolgreiche PTCA und 3xStentimplantation -LRB- DES -RRB- der RCA durchgeführt. Es lag ein gutes Ergebnis bei Z. n. Stenting der LCX vor. Auf eine LV-Angiographie wurde zur Nephroprotektion bei Z. n. Nieren-Pankreas-Transplantation verzichtet.
+412-1	12666-12668	In	_	_	_	Zusammenfassung
+412-2	12669-12672	der	_	_	_	Zusammenfassung
+412-3	12673-12675	am	_	_	_	Zusammenfassung
+412-4	12676-12685	<[Pseudo]	_	_	_	Zusammenfassung
+412-5	12686-12688	23	_	_	_	Zusammenfassung
+412-6	12688-12689	/	_	_	_	Zusammenfassung
+412-7	12689-12691	07	_	_	_	Zusammenfassung
+412-8	12691-12692	/	_	_	_	Zusammenfassung
+412-9	12692-12696	2036	_	_	_	Zusammenfassung
+412-10	12696-12697	>	_	_	_	Zusammenfassung
+412-11	12698-12712	durchgeführten	_	_	_	Zusammenfassung
+412-12	12713-12737	Herzkatheteruntersuchung	_	_	_	Zusammenfassung
+412-13	12738-12743	ergab	_	_	_	Zusammenfassung
+412-14	12744-12748	sich	_	_	_	Zusammenfassung
+412-15	12749-12753	eine	_	_	_	Zusammenfassung
+412-16	12754-12762	koronare	_	_	_	Zusammenfassung
+412-17	12763-12780	3-Gefäßerkrankung	_	_	_	Zusammenfassung
+412-18	12781-12784	mit	_	_	_	Zusammenfassung
+412-19	12785-12795	subtotalem	_	_	_	Zusammenfassung
+412-20	12796-12806	Verschluss	_	_	_	Zusammenfassung
+412-21	12807-12810	der	_	_	_	Zusammenfassung
+412-22	12811-12814	RCA	_	_	_	Zusammenfassung
+412-23	12814-12815	.	_	_	_	Zusammenfassung
+412-24	12816-12818	Es	_	_	_	Zusammenfassung
+412-25	12819-12824	wurde	_	_	_	Zusammenfassung
+412-26	12825-12829	eine	_	_	_	Zusammenfassung
+412-27	12830-12842	erfolgreiche	_	_	_	Zusammenfassung
+412-28	12843-12847	PTCA	_	_	_	Zusammenfassung
+412-29	12848-12851	und	_	_	_	Zusammenfassung
+412-30	12852-12871	3xStentimplantation	_	_	_	Zusammenfassung
+412-31	12872-12877	-LRB-	_	_	_	Zusammenfassung
+412-32	12878-12881	DES	_	_	_	Zusammenfassung
+412-33	12882-12887	-RRB-	_	_	_	Zusammenfassung
+412-34	12888-12891	der	_	_	_	Zusammenfassung
+412-35	12892-12895	RCA	_	_	_	Zusammenfassung
+412-36	12896-12908	durchgeführt	_	_	_	Zusammenfassung
+412-37	12908-12909	.	_	_	_	Zusammenfassung
+412-38	12910-12912	Es	_	_	_	Zusammenfassung
+412-39	12913-12916	lag	_	_	_	Zusammenfassung
+412-40	12917-12920	ein	_	_	_	Zusammenfassung
+412-41	12921-12926	gutes	_	_	_	Zusammenfassung
+412-42	12927-12935	Ergebnis	_	_	_	Zusammenfassung
+412-43	12936-12939	bei	_	_	_	Zusammenfassung
+412-44	12940-12942	Z.	_	_	_	Zusammenfassung
+412-45	12943-12945	n.	_	_	_	Zusammenfassung
+412-46	12946-12954	Stenting	_	_	_	Zusammenfassung
+412-47	12955-12958	der	_	_	_	Zusammenfassung
+412-48	12959-12962	LCX	_	_	_	Zusammenfassung
+412-49	12963-12966	vor	_	_	_	Zusammenfassung
+412-50	12966-12967	.	_	_	_	Zusammenfassung
+412-51	12968-12971	Auf	_	_	_	Zusammenfassung
+412-52	12972-12976	eine	_	_	_	Zusammenfassung
+412-53	12977-12992	LV-Angiographie	_	_	_	Zusammenfassung
+412-54	12993-12998	wurde	_	_	_	Zusammenfassung
+412-55	12999-13002	zur	_	_	_	Zusammenfassung
+412-56	13003-13019	Nephroprotektion	_	_	_	Zusammenfassung
+412-57	13020-13023	bei	_	_	_	Zusammenfassung
+412-58	13024-13026	Z.	_	_	_	Zusammenfassung
+412-59	13027-13029	n.	_	_	_	Zusammenfassung
+412-60	13030-13061	Nieren-Pankreas-Transplantation	_	_	_	Zusammenfassung
+412-61	13062-13072	verzichtet	_	_	_	Zusammenfassung
+412-62	13072-13073	.	_	_	_	Zusammenfassung
+
+#Text=Weiterhin wird ein Ischämie Nachweis der LAD empfohlen, hierfür vereinbarten wir einen Termin zum Stress Kardio-MRT für den <[Pseudo] 11/12/2036> um 14:00 Uhr. Bitte zum Termin aktuelle Laborwerte -LRB- TSH, Kreatinin, Blutbild, Elektrolyte -RRB- , sowie einen aktuellen Überweisungsschein mitbringen. Weiterhin bitten wir 24 h vor der Untersuchung keinen Kaffee, Schwarztee -LRB- Koffein im Allgemeinen -RRB- , Kakao oder Schokolade einzunehmen.
+413-1	13075-13084	Weiterhin	_	_	_	Zusammenfassung
+413-2	13085-13089	wird	_	_	_	Zusammenfassung
+413-3	13090-13093	ein	_	_	_	Zusammenfassung
+413-4	13094-13102	Ischämie	_	_	_	Zusammenfassung
+413-5	13103-13111	Nachweis	_	_	_	Zusammenfassung
+413-6	13112-13115	der	_	_	_	Zusammenfassung
+413-7	13116-13119	LAD	_	_	_	Zusammenfassung
+413-8	13120-13129	empfohlen	_	_	_	Zusammenfassung
+413-9	13129-13130	,	_	_	_	Zusammenfassung
+413-10	13131-13138	hierfür	_	_	_	Zusammenfassung
+413-11	13139-13151	vereinbarten	_	_	_	Zusammenfassung
+413-12	13152-13155	wir	_	_	_	Zusammenfassung
+413-13	13156-13161	einen	_	_	_	Zusammenfassung
+413-14	13162-13168	Termin	_	_	_	Zusammenfassung
+413-15	13169-13172	zum	_	_	_	Zusammenfassung
+413-16	13173-13179	Stress	_	_	_	Zusammenfassung
+413-17	13180-13190	Kardio-MRT	_	_	_	Zusammenfassung
+413-18	13191-13194	für	_	_	_	Zusammenfassung
+413-19	13195-13198	den	_	_	_	Zusammenfassung
+413-20	13199-13208	<[Pseudo]	_	_	_	Zusammenfassung
+413-21	13209-13211	11	_	_	_	Zusammenfassung
+413-22	13211-13212	/	_	_	_	Zusammenfassung
+413-23	13212-13214	12	_	_	_	Zusammenfassung
+413-24	13214-13215	/	_	_	_	Zusammenfassung
+413-25	13215-13219	2036	_	_	_	Zusammenfassung
+413-26	13219-13220	>	_	_	_	Zusammenfassung
+413-27	13221-13223	um	_	_	_	Zusammenfassung
+413-28	13224-13229	14:00	_	_	_	Zusammenfassung
+413-29	13230-13233	Uhr	_	_	_	Zusammenfassung
+413-30	13233-13234	.	_	_	_	Zusammenfassung
+413-31	13235-13240	Bitte	_	_	_	Zusammenfassung
+413-32	13241-13244	zum	_	_	_	Zusammenfassung
+413-33	13245-13251	Termin	_	_	_	Zusammenfassung
+413-34	13252-13260	aktuelle	_	_	_	Zusammenfassung
+413-35	13261-13271	Laborwerte	_	_	_	Zusammenfassung
+413-36	13272-13277	-LRB-	_	_	_	Zusammenfassung
+413-37	13278-13281	TSH	_	_	_	Zusammenfassung
+413-38	13281-13282	,	_	_	_	Zusammenfassung
+413-39	13283-13292	Kreatinin	_	_	_	Zusammenfassung
+413-40	13292-13293	,	_	_	_	Zusammenfassung
+413-41	13294-13302	Blutbild	_	_	_	Zusammenfassung
+413-42	13302-13303	,	_	_	_	Zusammenfassung
+413-43	13304-13315	Elektrolyte	_	_	_	Zusammenfassung
+413-44	13316-13321	-RRB-	_	_	_	Zusammenfassung
+413-45	13322-13323	,	_	_	_	Zusammenfassung
+413-46	13324-13329	sowie	_	_	_	Zusammenfassung
+413-47	13330-13335	einen	_	_	_	Zusammenfassung
+413-48	13336-13345	aktuellen	_	_	_	Zusammenfassung
+413-49	13346-13364	Überweisungsschein	_	_	_	Zusammenfassung
+413-50	13365-13375	mitbringen	_	_	_	Zusammenfassung
+413-51	13375-13376	.	_	_	_	Zusammenfassung
+413-52	13377-13386	Weiterhin	_	_	_	Zusammenfassung
+413-53	13387-13393	bitten	_	_	_	Zusammenfassung
+413-54	13394-13397	wir	_	_	_	Zusammenfassung
+413-55	13398-13400	24	_	_	_	Zusammenfassung
+413-56	13401-13402	h	_	_	_	Zusammenfassung
+413-57	13403-13406	vor	_	_	_	Zusammenfassung
+413-58	13407-13410	der	_	_	_	Zusammenfassung
+413-59	13411-13423	Untersuchung	_	_	_	Zusammenfassung
+413-60	13424-13430	keinen	_	_	_	Zusammenfassung
+413-61	13431-13437	Kaffee	_	_	_	Zusammenfassung
+413-62	13437-13438	,	_	_	_	Zusammenfassung
+413-63	13439-13449	Schwarztee	_	_	_	Zusammenfassung
+413-64	13450-13455	-LRB-	_	_	_	Zusammenfassung
+413-65	13456-13463	Koffein	_	_	_	Zusammenfassung
+413-66	13464-13466	im	_	_	_	Zusammenfassung
+413-67	13467-13478	Allgemeinen	_	_	_	Zusammenfassung
+413-68	13479-13484	-RRB-	_	_	_	Zusammenfassung
+413-69	13485-13486	,	_	_	_	Zusammenfassung
+413-70	13487-13492	Kakao	_	_	_	Zusammenfassung
+413-71	13493-13497	oder	_	_	_	Zusammenfassung
+413-72	13498-13508	Schokolade	_	_	_	Zusammenfassung
+413-73	13509-13520	einzunehmen	_	_	_	Zusammenfassung
+413-74	13520-13521	.	_	_	_	Zusammenfassung
+
+#Text=Der postinterventionelle Verlauf gestaltete sich komplikationslos, insbesondere ergab sich klinisch kein Anhalt für ein Aneurysma spurium oder eine AV-Fistel im Bereich der Punktionsstelle.
+414-1	13523-13526	Der	_	_	_	Zusammenfassung
+414-2	13527-13547	postinterventionelle	_	_	_	Zusammenfassung
+414-3	13548-13555	Verlauf	_	_	_	Zusammenfassung
+414-4	13556-13566	gestaltete	_	_	_	Zusammenfassung
+414-5	13567-13571	sich	_	_	_	Zusammenfassung
+414-6	13572-13588	komplikationslos	_	_	_	Zusammenfassung
+414-7	13588-13589	,	_	_	_	Zusammenfassung
+414-8	13590-13602	insbesondere	_	_	_	Zusammenfassung
+414-9	13603-13608	ergab	_	_	_	Zusammenfassung
+414-10	13609-13613	sich	_	_	_	Zusammenfassung
+414-11	13614-13622	klinisch	_	_	_	Zusammenfassung
+414-12	13623-13627	kein	_	_	_	Zusammenfassung
+414-13	13628-13634	Anhalt	_	_	_	Zusammenfassung
+414-14	13635-13638	für	_	_	_	Zusammenfassung
+414-15	13639-13642	ein	_	_	_	Zusammenfassung
+414-16	13643-13652	Aneurysma	_	_	_	Zusammenfassung
+414-17	13653-13660	spurium	_	_	_	Zusammenfassung
+414-18	13661-13665	oder	_	_	_	Zusammenfassung
+414-19	13666-13670	eine	_	_	_	Zusammenfassung
+414-20	13671-13680	AV-Fistel	_	_	_	Zusammenfassung
+414-21	13681-13683	im	_	_	_	Zusammenfassung
+414-22	13684-13691	Bereich	_	_	_	Zusammenfassung
+414-23	13692-13695	der	_	_	_	Zusammenfassung
+414-24	13696-13711	Punktionsstelle	_	_	_	Zusammenfassung
+414-25	13711-13712	.	_	_	_	Zusammenfassung
+
+#Text=Zur Stentverschlussprophylaxe empfehlen wir eine duale Thrombozytenaggregationshemmung wie unten angegeben für insgesamt 12 Monate postinterventionell. Anschließend ist eine dauerhafte Thrombozytenaggregationshemmung mit ASS 100 mg/tägl. ausreichend. Über die Notwendigkeit einer lückenlosen Einnahme einer Thrombozytenaggregationshemmung zur Vermeidung eines In-Stent-Verschlusses wurde ausführlich aufgeklärt. Dem Patienten wurde ein Implantat Ausweis ausgehändigt. Er wurde über notwendige Verhaltensanweisungen informiert.
+415-1	13714-13717	Zur	_	_	_	Zusammenfassung
+415-2	13718-13743	Stentverschlussprophylaxe	_	_	_	Zusammenfassung
+415-3	13744-13753	empfehlen	_	_	_	Zusammenfassung
+415-4	13754-13757	wir	_	_	_	Zusammenfassung
+415-5	13758-13762	eine	_	_	_	Zusammenfassung
+415-6	13763-13768	duale	REASON[25]	true[25]	_	Zusammenfassung
+415-7	13769-13800	Thrombozytenaggregationshemmung	REASON[25]	true[25]	_	Zusammenfassung
+415-8	13801-13804	wie	_	_	_	Zusammenfassung
+415-9	13805-13810	unten	_	_	_	Zusammenfassung
+415-10	13811-13820	angegeben	_	_	_	Zusammenfassung
+415-11	13821-13824	für	_	_	_	Zusammenfassung
+415-12	13825-13834	insgesamt	_	_	_	Zusammenfassung
+415-13	13835-13837	12	DURATION[26]	true[26]	415-6[25_26]	Zusammenfassung
+415-14	13838-13844	Monate	DURATION[26]	true[26]	_	Zusammenfassung
+415-15	13845-13864	postinterventionell	_	_	_	Zusammenfassung
+415-16	13864-13865	.	_	_	_	Zusammenfassung
+415-17	13866-13878	Anschließend	_	_	_	Zusammenfassung
+415-18	13879-13882	ist	_	_	_	Zusammenfassung
+415-19	13883-13887	eine	_	_	_	Zusammenfassung
+415-20	13888-13898	dauerhafte	_	_	_	Zusammenfassung
+415-21	13899-13930	Thrombozytenaggregationshemmung	REASON	false	415-23	Zusammenfassung
+415-22	13931-13934	mit	_	_	_	Zusammenfassung
+415-23	13935-13938	ASS	ACTIVEING	true	_	Zusammenfassung
+415-24	13939-13942	100	DOSAGE[27]	false[27]	415-23[0_27]	Zusammenfassung
+415-25	13943-13945	mg	DOSAGE[27]	false[27]	_	Zusammenfassung
+415-26	13945-13946	/	_	_	_	Zusammenfassung
+415-27	13946-13951	tägl.	FREQUENCY	false	415-23	Zusammenfassung
+415-28	13952-13963	ausreichend	_	_	_	Zusammenfassung
+415-29	13963-13964	.	_	_	_	Zusammenfassung
+415-30	13965-13969	Über	_	_	_	Zusammenfassung
+415-31	13970-13973	die	_	_	_	Zusammenfassung
+415-32	13974-13987	Notwendigkeit	_	_	_	Zusammenfassung
+415-33	13988-13993	einer	_	_	_	Zusammenfassung
+415-34	13994-14005	lückenlosen	_	_	_	Zusammenfassung
+415-35	14006-14014	Einnahme	_	_	_	Zusammenfassung
+415-36	14015-14020	einer	_	_	_	Zusammenfassung
+415-37	14021-14052	Thrombozytenaggregationshemmung	_	_	_	Zusammenfassung
+415-38	14053-14056	zur	_	_	_	Zusammenfassung
+415-39	14057-14067	Vermeidung	_	_	_	Zusammenfassung
+415-40	14068-14073	eines	_	_	_	Zusammenfassung
+415-41	14074-14095	In-Stent-Verschlusses	_	_	_	Zusammenfassung
+415-42	14096-14101	wurde	_	_	_	Zusammenfassung
+415-43	14102-14113	ausführlich	_	_	_	Zusammenfassung
+415-44	14114-14124	aufgeklärt	_	_	_	Zusammenfassung
+415-45	14124-14125	.	_	_	_	Zusammenfassung
+415-46	14126-14129	Dem	_	_	_	Zusammenfassung
+415-47	14130-14139	Patienten	_	_	_	Zusammenfassung
+415-48	14140-14145	wurde	_	_	_	Zusammenfassung
+415-49	14146-14149	ein	_	_	_	Zusammenfassung
+415-50	14150-14159	Implantat	_	_	_	Zusammenfassung
+415-51	14160-14167	Ausweis	_	_	_	Zusammenfassung
+415-52	14168-14180	ausgehändigt	_	_	_	Zusammenfassung
+415-53	14180-14181	.	_	_	_	Zusammenfassung
+415-54	14182-14184	Er	_	_	_	Zusammenfassung
+415-55	14185-14190	wurde	_	_	_	Zusammenfassung
+415-56	14191-14195	über	_	_	_	Zusammenfassung
+415-57	14196-14206	notwendige	_	_	_	Zusammenfassung
+415-58	14207-14228	Verhaltensanweisungen	_	_	_	Zusammenfassung
+415-59	14229-14239	informiert	_	_	_	Zusammenfassung
+415-60	14239-14240	.	_	_	_	Zusammenfassung
+
+#Text=Bei häufigen hypertensiven Episoden während des stationären Aufenthaltes bis zu 160 mmHg systolisch steigerten wir die antihypertensive Therapie wie unten angegeben. Wir bitten um regelmäßige Blutdruck-, Herzfrequenz-, Nierenwert- und Elektrolytkontrollen und ggf. Anpassung der Medikation.
+416-1	14242-14245	Bei	_	_	_	Zusammenfassung
+416-2	14246-14254	häufigen	_	_	_	Zusammenfassung
+416-3	14255-14268	hypertensiven	_	_	_	Zusammenfassung
+416-4	14269-14277	Episoden	_	_	_	Zusammenfassung
+416-5	14278-14285	während	_	_	_	Zusammenfassung
+416-6	14286-14289	des	_	_	_	Zusammenfassung
+416-7	14290-14301	stationären	_	_	_	Zusammenfassung
+416-8	14302-14314	Aufenthaltes	_	_	_	Zusammenfassung
+416-9	14315-14318	bis	_	_	_	Zusammenfassung
+416-10	14319-14321	zu	_	_	_	Zusammenfassung
+416-11	14322-14325	160	_	_	_	Zusammenfassung
+416-12	14326-14330	mmHg	_	_	_	Zusammenfassung
+416-13	14331-14341	systolisch	_	_	_	Zusammenfassung
+416-14	14342-14352	steigerten	_	_	_	Zusammenfassung
+416-15	14353-14356	wir	_	_	_	Zusammenfassung
+416-16	14357-14360	die	_	_	_	Zusammenfassung
+416-17	14361-14377	antihypertensive	_	_	_	Zusammenfassung
+416-18	14378-14386	Therapie	_	_	_	Zusammenfassung
+416-19	14387-14390	wie	_	_	_	Zusammenfassung
+416-20	14391-14396	unten	_	_	_	Zusammenfassung
+416-21	14397-14406	angegeben	_	_	_	Zusammenfassung
+416-22	14406-14407	.	_	_	_	Zusammenfassung
+416-23	14408-14411	Wir	_	_	_	Zusammenfassung
+416-24	14412-14418	bitten	_	_	_	Zusammenfassung
+416-25	14419-14421	um	_	_	_	Zusammenfassung
+416-26	14422-14433	regelmäßige	_	_	_	Zusammenfassung
+416-27	14434-14444	Blutdruck-	_	_	_	Zusammenfassung
+416-28	14444-14445	,	_	_	_	Zusammenfassung
+416-29	14446-14459	Herzfrequenz-	_	_	_	Zusammenfassung
+416-30	14459-14460	,	_	_	_	Zusammenfassung
+416-31	14461-14472	Nierenwert-	_	_	_	Zusammenfassung
+416-32	14473-14476	und	_	_	_	Zusammenfassung
+416-33	14477-14497	Elektrolytkontrollen	_	_	_	Zusammenfassung
+416-34	14498-14501	und	_	_	_	Zusammenfassung
+416-35	14502-14506	ggf.	_	_	_	Zusammenfassung
+416-36	14507-14516	Anpassung	_	_	_	Zusammenfassung
+416-37	14517-14520	der	_	_	_	Zusammenfassung
+416-38	14521-14531	Medikation	_	_	_	Zusammenfassung
+416-39	14531-14532	.	_	_	_	Zusammenfassung
+
+#Text=In den laborchemischen Kontrollen fiel auf, dass der Ciclosporin-Spiegel unterhalb des Zielbereichs lag, es erfolgte nach Rücksprache mit den B-SALUTE der Nephrologie eine Dosissteigerung. Hierfür empfehlen wir eine Wirkspiegelkontrolle für Dienstag, den <[Pseudo] 29/07/2036> im B-ORG B-LOC.
+417-1	14534-14536	In	_	_	_	Zusammenfassung
+417-2	14537-14540	den	_	_	_	Zusammenfassung
+417-3	14541-14556	laborchemischen	_	_	_	Zusammenfassung
+417-4	14557-14567	Kontrollen	_	_	_	Zusammenfassung
+417-5	14568-14572	fiel	_	_	_	Zusammenfassung
+417-6	14573-14576	auf	_	_	_	Zusammenfassung
+417-7	14576-14577	,	_	_	_	Zusammenfassung
+417-8	14578-14582	dass	_	_	_	Zusammenfassung
+417-9	14583-14586	der	_	_	_	Zusammenfassung
+417-10	14587-14606	Ciclosporin-Spiegel	_	_	_	Zusammenfassung
+417-11	14607-14616	unterhalb	_	_	_	Zusammenfassung
+417-12	14617-14620	des	_	_	_	Zusammenfassung
+417-13	14621-14633	Zielbereichs	_	_	_	Zusammenfassung
+417-14	14634-14637	lag	_	_	_	Zusammenfassung
+417-15	14637-14638	,	_	_	_	Zusammenfassung
+417-16	14639-14641	es	_	_	_	Zusammenfassung
+417-17	14642-14650	erfolgte	_	_	_	Zusammenfassung
+417-18	14651-14655	nach	_	_	_	Zusammenfassung
+417-19	14656-14667	Rücksprache	_	_	_	Zusammenfassung
+417-20	14668-14671	mit	_	_	_	Zusammenfassung
+417-21	14672-14675	den	_	_	_	Zusammenfassung
+417-22	14676-14684	B-SALUTE	_	_	_	Zusammenfassung
+417-23	14685-14688	der	_	_	_	Zusammenfassung
+417-24	14689-14700	Nephrologie	_	_	_	Zusammenfassung
+417-25	14701-14705	eine	_	_	_	Zusammenfassung
+417-26	14706-14721	Dosissteigerung	_	_	_	Zusammenfassung
+417-27	14721-14722	.	_	_	_	Zusammenfassung
+417-28	14723-14730	Hierfür	_	_	_	Zusammenfassung
+417-29	14731-14740	empfehlen	_	_	_	Zusammenfassung
+417-30	14741-14744	wir	_	_	_	Zusammenfassung
+417-31	14745-14749	eine	_	_	_	Zusammenfassung
+417-32	14750-14770	Wirkspiegelkontrolle	_	_	_	Zusammenfassung
+417-33	14771-14774	für	_	_	_	Zusammenfassung
+417-34	14775-14783	Dienstag	_	_	_	Zusammenfassung
+417-35	14783-14784	,	_	_	_	Zusammenfassung
+417-36	14785-14788	den	_	_	_	Zusammenfassung
+417-37	14789-14798	<[Pseudo]	_	_	_	Zusammenfassung
+417-38	14799-14801	29	_	_	_	Zusammenfassung
+417-39	14801-14802	/	_	_	_	Zusammenfassung
+417-40	14802-14804	07	_	_	_	Zusammenfassung
+417-41	14804-14805	/	_	_	_	Zusammenfassung
+417-42	14805-14809	2036	_	_	_	Zusammenfassung
+417-43	14809-14810	>	_	_	_	Zusammenfassung
+417-44	14811-14813	im	_	_	_	Zusammenfassung
+417-45	14814-14819	B-ORG	_	_	_	Zusammenfassung
+417-46	14820-14825	B-LOC	_	_	_	Zusammenfassung
+417-47	14825-14826	.	_	_	_	Zusammenfassung
+
+#Text=Weiterhin imponierte ein HbA1C von 8,3 %, wir empfehlen eine Änderung der Ernährungsgewohnheiten bzw. des Lebensstils sowie ggf. eine Optimierung der antidiabetischen Therapie -LRB- ggf. Gliflozin-Beginn -RRB- .
+418-1	14828-14837	Weiterhin	_	_	_	Zusammenfassung
+418-2	14838-14848	imponierte	_	_	_	Zusammenfassung
+418-3	14849-14852	ein	_	_	_	Zusammenfassung
+418-4	14853-14858	HbA1C	_	_	_	Zusammenfassung
+418-5	14859-14862	von	_	_	_	Zusammenfassung
+418-6	14863-14866	8,3	_	_	_	Zusammenfassung
+418-7	14867-14868	%	_	_	_	Zusammenfassung
+418-8	14868-14869	,	_	_	_	Zusammenfassung
+418-9	14870-14873	wir	_	_	_	Zusammenfassung
+418-10	14874-14883	empfehlen	_	_	_	Zusammenfassung
+418-11	14884-14888	eine	_	_	_	Zusammenfassung
+418-12	14889-14897	Änderung	_	_	_	Zusammenfassung
+418-13	14898-14901	der	_	_	_	Zusammenfassung
+418-14	14902-14924	Ernährungsgewohnheiten	_	_	_	Zusammenfassung
+418-15	14925-14929	bzw.	_	_	_	Zusammenfassung
+418-16	14930-14933	des	_	_	_	Zusammenfassung
+418-17	14934-14945	Lebensstils	_	_	_	Zusammenfassung
+418-18	14946-14951	sowie	_	_	_	Zusammenfassung
+418-19	14952-14956	ggf.	_	_	_	Zusammenfassung
+418-20	14957-14961	eine	_	_	_	Zusammenfassung
+418-21	14962-14973	Optimierung	_	_	_	Zusammenfassung
+418-22	14974-14977	der	_	_	_	Zusammenfassung
+418-23	14978-14994	antidiabetischen	_	_	_	Zusammenfassung
+418-24	14995-15003	Therapie	_	_	_	Zusammenfassung
+418-25	15004-15009	-LRB-	_	_	_	Zusammenfassung
+418-26	15010-15014	ggf.	_	_	_	Zusammenfassung
+418-27	15015-15031	Gliflozin-Beginn	_	_	_	Zusammenfassung
+418-28	15032-15037	-RRB-	_	_	_	Zusammenfassung
+418-29	15038-15039	.	_	_	_	Zusammenfassung
+
+#Text=Das Langzeit-EKG lieferte keinen Anhalt für höhergradige Herzrhythmusstörungen.
+419-1	15041-15044	Das	_	_	_	Zusammenfassung
+419-2	15045-15057	Langzeit-EKG	_	_	_	Zusammenfassung
+419-3	15058-15066	lieferte	_	_	_	Zusammenfassung
+419-4	15067-15073	keinen	_	_	_	Zusammenfassung
+419-5	15074-15080	Anhalt	_	_	_	Zusammenfassung
+419-6	15081-15084	für	_	_	_	Zusammenfassung
+419-7	15085-15097	höhergradige	_	_	_	Zusammenfassung
+419-8	15098-15119	Herzrhythmusstörungen	_	_	_	Zusammenfassung
+419-9	15119-15120	.	_	_	_	Zusammenfassung
+
+#Text=Eine Anschlussheilbehandlung wurde dem Patienten angeboten, aktuell aber abgelehnt.
+420-1	15122-15126	Eine	_	_	_	Zusammenfassung
+420-2	15127-15150	Anschlussheilbehandlung	_	_	_	Zusammenfassung
+420-3	15151-15156	wurde	_	_	_	Zusammenfassung
+420-4	15157-15160	dem	_	_	_	Zusammenfassung
+420-5	15161-15170	Patienten	_	_	_	Zusammenfassung
+420-6	15171-15180	angeboten	_	_	_	Zusammenfassung
+420-7	15180-15181	,	_	_	_	Zusammenfassung
+420-8	15182-15189	aktuell	_	_	_	Zusammenfassung
+420-9	15190-15194	aber	_	_	_	Zusammenfassung
+420-10	15195-15204	abgelehnt	_	_	_	Zusammenfassung
+420-11	15204-15205	.	_	_	_	Zusammenfassung
+
+#Text=Abschließend empfehlen wir insbesondere die konsequente Einstellung der kardiovaskulären Risikofaktoren -LRB- RR, Lipide, HbA1c -RRB- gemäß den Leitlinien und Fortführung der u. a. medikamentösen Therapie.
+421-1	15207-15219	Abschließend	_	_	_	Zusammenfassung
+421-2	15220-15229	empfehlen	_	_	_	Zusammenfassung
+421-3	15230-15233	wir	_	_	_	Zusammenfassung
+421-4	15234-15246	insbesondere	_	_	_	Zusammenfassung
+421-5	15247-15250	die	_	_	_	Zusammenfassung
+421-6	15251-15262	konsequente	_	_	_	Zusammenfassung
+421-7	15263-15274	Einstellung	_	_	_	Zusammenfassung
+421-8	15275-15278	der	_	_	_	Zusammenfassung
+421-9	15279-15295	kardiovaskulären	_	_	_	Zusammenfassung
+421-10	15296-15310	Risikofaktoren	_	_	_	Zusammenfassung
+421-11	15311-15316	-LRB-	_	_	_	Zusammenfassung
+421-12	15317-15319	RR	_	_	_	Zusammenfassung
+421-13	15319-15320	,	_	_	_	Zusammenfassung
+421-14	15321-15327	Lipide	_	_	_	Zusammenfassung
+421-15	15327-15328	,	_	_	_	Zusammenfassung
+421-16	15329-15334	HbA1c	_	_	_	Zusammenfassung
+421-17	15335-15340	-RRB-	_	_	_	Zusammenfassung
+421-18	15341-15346	gemäß	_	_	_	Zusammenfassung
+421-19	15347-15350	den	_	_	_	Zusammenfassung
+421-20	15351-15361	Leitlinien	_	_	_	Zusammenfassung
+421-21	15362-15365	und	_	_	_	Zusammenfassung
+421-22	15366-15377	Fortführung	_	_	_	Zusammenfassung
+421-23	15378-15381	der	_	_	_	Zusammenfassung
+421-24	15382-15384	u.	_	_	_	Zusammenfassung
+421-25	15385-15387	a.	_	_	_	Zusammenfassung
+421-26	15388-15402	medikamentösen	_	_	_	Zusammenfassung
+421-27	15403-15411	Therapie	_	_	_	Zusammenfassung
+421-28	15411-15412	.	_	_	_	Zusammenfassung
+
+#Text=Medikation bei Entlassung:
+422-1	15414-15424	Medikation	_	_	_	EntlassMedikation
+422-2	15425-15428	bei	_	_	_	EntlassMedikation
+422-3	15429-15439	Entlassung	_	_	_	EntlassMedikation
+422-4	15439-15440	:	_	_	_	EntlassMedikation
+
+#Text=ASS 100 mg 1-0-0 dauerhaft!
+423-1	15441-15444	ASS	ACTIVEING	false	_	EntlassMedikation
+423-2	15445-15448	100	STRENGTH[28]	false[28]	423-1[0_28]	EntlassMedikation
+423-3	15449-15451	mg	STRENGTH[28]	false[28]	_	EntlassMedikation
+423-4	15452-15453	1	FREQUENCY[29]	false[29]	423-1[0_29]	EntlassMedikation
+423-5	15453-15454	-	FREQUENCY[29]	false[29]	_	EntlassMedikation
+423-6	15454-15455	0	FREQUENCY[29]	false[29]	_	EntlassMedikation
+423-7	15455-15456	-	FREQUENCY[29]	false[29]	_	EntlassMedikation
+423-8	15456-15457	0	FREQUENCY[29]	false[29]	_	EntlassMedikation
+423-9	15458-15467	dauerhaft	_	_	_	EntlassMedikation
+423-10	15467-15468	!	_	_	_	EntlassMedikation
+
+#Text=Ticagrelor 90 mg 1-0-1 neu! bis einschließlich <[Pseudo] 23/07/2037>
+424-1	15469-15479	Ticagrelor	ACTIVEING	false	_	EntlassMedikation
+424-2	15480-15482	90	STRENGTH[30]	false[30]	424-1[0_30]	EntlassMedikation
+424-3	15483-15485	mg	STRENGTH[30]	false[30]	_	EntlassMedikation
+424-4	15486-15487	1	FREQUENCY[31]	false[31]	424-1[0_31]	EntlassMedikation
+424-5	15487-15488	-	FREQUENCY[31]	false[31]	_	EntlassMedikation
+424-6	15488-15489	0	FREQUENCY[31]	false[31]	_	EntlassMedikation
+424-7	15489-15490	-	FREQUENCY[31]	false[31]	_	EntlassMedikation
+424-8	15490-15491	1	FREQUENCY[31]	false[31]	_	EntlassMedikation
+424-9	15492-15495	neu	_	_	_	EntlassMedikation
+424-10	15495-15496	!	_	_	_	EntlassMedikation
+424-11	15497-15500	bis	DURATION[32]	false[32]	424-1[0_32]	EntlassMedikation
+424-12	15501-15515	einschließlich	DURATION[32]	false[32]	_	EntlassMedikation
+424-13	15516-15525	<[Pseudo]	DURATION[32]	false[32]	_	EntlassMedikation
+424-14	15526-15528	23	DURATION[32]	false[32]	_	EntlassMedikation
+424-15	15528-15529	/	DURATION[32]	false[32]	_	EntlassMedikation
+424-16	15529-15531	07	DURATION[32]	false[32]	_	EntlassMedikation
+424-17	15531-15532	/	DURATION[32]	false[32]	_	EntlassMedikation
+424-18	15532-15536	2037	DURATION[32]	false[32]	_	EntlassMedikation
+424-19	15536-15537	>	DURATION[32]	false[32]	_	EntlassMedikation
+
+#Text=Metoprolol 50 mg 1-0-0 Kontrolle: RR, HF
+425-1	15538-15548	Metoprolol	ACTIVEING	false	_	EntlassMedikation
+425-2	15549-15551	50	STRENGTH[33]	false[33]	425-1[0_33]	EntlassMedikation
+425-3	15552-15554	mg	STRENGTH[33]	false[33]	_	EntlassMedikation
+425-4	15555-15556	1	FREQUENCY[34]	false[34]	425-1[0_34]	EntlassMedikation
+425-5	15556-15557	-	FREQUENCY[34]	false[34]	_	EntlassMedikation
+425-6	15557-15558	0	FREQUENCY[34]	false[34]	_	EntlassMedikation
+425-7	15558-15559	-	FREQUENCY[34]	false[34]	_	EntlassMedikation
+425-8	15559-15560	0	FREQUENCY[34]	false[34]	_	EntlassMedikation
+425-9	15561-15570	Kontrolle	_	_	_	EntlassMedikation
+425-10	15570-15571	:	_	_	_	EntlassMedikation
+425-11	15572-15574	RR	_	_	_	EntlassMedikation
+425-12	15574-15575	,	_	_	_	EntlassMedikation
+425-13	15576-15578	HF	_	_	_	EntlassMedikation
+
+#Text=Ramipril 5 mg 1-0- -UNK- Dosissteigerung! Kontrolle: RR, Elektrolyte, Nierenparameter
+426-1	15579-15587	Ramipril	ACTIVEING	false	_	EntlassMedikation
+426-2	15588-15589	5	STRENGTH[35]	false[35]	426-1[0_35]	EntlassMedikation
+426-3	15590-15592	mg	STRENGTH[35]	false[35]	_	EntlassMedikation
+426-4	15593-15594	1	FREQUENCY[36]	false[36]	426-1[0_36]	EntlassMedikation
+426-5	15594-15595	-	FREQUENCY[36]	false[36]	_	EntlassMedikation
+426-6	15595-15597	0-	FREQUENCY[36]	false[36]	_	EntlassMedikation
+426-7	15598-15603	-UNK-	FREQUENCY[36]	false[36]	_	EntlassMedikation
+426-8	15604-15619	Dosissteigerung	_	_	_	EntlassMedikation
+426-9	15619-15620	!	_	_	_	EntlassMedikation
+426-10	15621-15630	Kontrolle	_	_	_	EntlassMedikation
+426-11	15630-15631	:	_	_	_	EntlassMedikation
+426-12	15632-15634	RR	_	_	_	EntlassMedikation
+426-13	15634-15635	,	_	_	_	EntlassMedikation
+426-14	15636-15647	Elektrolyte	_	_	_	EntlassMedikation
+426-15	15647-15648	,	_	_	_	EntlassMedikation
+426-16	15649-15664	Nierenparameter	_	_	_	EntlassMedikation
+
+#Text=Amlodipin 5 mg 2-0-0 Dosissteigerung! Kontrolle: RR
+427-1	15665-15674	Amlodipin	ACTIVEING	false	_	EntlassMedikation
+427-2	15675-15676	5	STRENGTH[37]	false[37]	427-1[0_37]	EntlassMedikation
+427-3	15677-15679	mg	STRENGTH[37]	false[37]	_	EntlassMedikation
+427-4	15680-15681	2	FREQUENCY[38]	false[38]	427-1[0_38]	EntlassMedikation
+427-5	15681-15682	-	FREQUENCY[38]	false[38]	_	EntlassMedikation
+427-6	15682-15683	0	FREQUENCY[38]	false[38]	_	EntlassMedikation
+427-7	15683-15684	-	FREQUENCY[38]	false[38]	_	EntlassMedikation
+427-8	15684-15685	0	FREQUENCY[38]	false[38]	_	EntlassMedikation
+427-9	15686-15701	Dosissteigerung	_	_	_	EntlassMedikation
+427-10	15701-15702	!	_	_	_	EntlassMedikation
+427-11	15703-15712	Kontrolle	_	_	_	EntlassMedikation
+427-12	15712-15713	:	_	_	_	EntlassMedikation
+427-13	15714-15716	RR	_	_	_	EntlassMedikation
+
+#Text=Atorvastatin 20 mg 0-0-1 neu! Ziel-LDL < 55mg/dl
+428-1	15717-15729	Atorvastatin	ACTIVEING	false	_	EntlassMedikation
+428-2	15730-15732	20	STRENGTH[39]	false[39]	428-1[0_39]	EntlassMedikation
+428-3	15733-15735	mg	STRENGTH[39]	false[39]	_	EntlassMedikation
+428-4	15736-15737	0	FREQUENCY[40]	false[40]	428-1[0_40]	EntlassMedikation
+428-5	15737-15738	-	FREQUENCY[40]	false[40]	_	EntlassMedikation
+428-6	15738-15739	0	FREQUENCY[40]	false[40]	_	EntlassMedikation
+428-7	15739-15740	-	FREQUENCY[40]	false[40]	_	EntlassMedikation
+428-8	15740-15741	1	FREQUENCY[40]	false[40]	_	EntlassMedikation
+428-9	15742-15745	neu	_	_	_	EntlassMedikation
+428-10	15745-15746	!	_	_	_	EntlassMedikation
+428-11	15747-15755	Ziel-LDL	_	_	_	EntlassMedikation
+428-12	15756-15757	<	_	_	_	EntlassMedikation
+428-13	15758-15762	55mg	_	_	_	EntlassMedikation
+428-14	15762-15763	/	_	_	_	EntlassMedikation
+428-15	15763-15765	dl	_	_	_	EntlassMedikation
+
+#Text=Pantoprazol 40 mg 1-0-0
+429-1	15766-15777	Pantoprazol	ACTIVEING	false	_	EntlassMedikation
+429-2	15778-15780	40	STRENGTH[41]	false[41]	429-1[0_41]	EntlassMedikation
+429-3	15781-15783	mg	STRENGTH[41]	false[41]	_	EntlassMedikation
+429-4	15784-15785	1	FREQUENCY[42]	false[42]	429-1[0_42]	EntlassMedikation
+429-5	15785-15786	-	FREQUENCY[42]	false[42]	_	EntlassMedikation
+429-6	15786-15787	0	FREQUENCY[42]	false[42]	_	EntlassMedikation
+429-7	15787-15788	-	FREQUENCY[42]	false[42]	_	EntlassMedikation
+429-8	15788-15789	0	FREQUENCY[42]	false[42]	_	EntlassMedikation
+
+#Text=Ciclosporin 75 mg 1-0-1
+430-1	15790-15801	Ciclosporin	ACTIVEING	false	_	EntlassMedikation
+430-2	15802-15804	75	STRENGTH[43]	false[43]	430-1[0_43]	EntlassMedikation
+430-3	15805-15807	mg	STRENGTH[43]	false[43]	_	EntlassMedikation
+430-4	15808-15809	1	FREQUENCY[44]	false[44]	430-1[0_44]	EntlassMedikation
+430-5	15809-15810	-	FREQUENCY[44]	false[44]	_	EntlassMedikation
+430-6	15810-15811	0	FREQUENCY[44]	false[44]	_	EntlassMedikation
+430-7	15811-15812	-	FREQUENCY[44]	false[44]	_	EntlassMedikation
+430-8	15812-15813	1	FREQUENCY[44]	false[44]	_	EntlassMedikation
+
+#Text=Ciclosporin 25 mg 1-0-0 Dosissteigerung! Regelhafte Spiegelkontrolle
+431-1	15814-15825	Ciclosporin	ACTIVEING	false	_	EntlassMedikation
+431-2	15826-15828	25	STRENGTH[45]	false[45]	431-1[0_45]	EntlassMedikation
+431-3	15829-15831	mg	STRENGTH[45]	false[45]	_	EntlassMedikation
+431-4	15832-15833	1	FREQUENCY[46]	false[46]	431-1[0_46]	EntlassMedikation
+431-5	15833-15834	-	FREQUENCY[46]	false[46]	_	EntlassMedikation
+431-6	15834-15835	0	FREQUENCY[46]	false[46]	_	EntlassMedikation
+431-7	15835-15836	-	FREQUENCY[46]	false[46]	_	EntlassMedikation
+431-8	15836-15837	0	FREQUENCY[46]	false[46]	_	EntlassMedikation
+431-9	15838-15853	Dosissteigerung	_	_	_	EntlassMedikation
+431-10	15853-15854	!	_	_	_	EntlassMedikation
+431-11	15855-15865	Regelhafte	_	_	_	EntlassMedikation
+431-12	15866-15882	Spiegelkontrolle	_	_	_	EntlassMedikation
+
+#Text=Mycophenolat 500 mg 1-0-1
+432-1	15883-15895	Mycophenolat	ACTIVEING	false	_	EntlassMedikation
+432-2	15896-15899	500	STRENGTH[47]	false[47]	432-1[0_47]	EntlassMedikation
+432-3	15900-15902	mg	STRENGTH[47]	false[47]	_	EntlassMedikation
+432-4	15903-15904	1	FREQUENCY[48]	false[48]	432-1[0_48]	EntlassMedikation
+432-5	15904-15905	-	FREQUENCY[48]	false[48]	_	EntlassMedikation
+432-6	15905-15906	0	FREQUENCY[48]	false[48]	_	EntlassMedikation
+432-7	15906-15907	-	FREQUENCY[48]	false[48]	_	EntlassMedikation
+432-8	15907-15908	1	FREQUENCY[48]	false[48]	_	EntlassMedikation
+
+#Text=Methyprednisolon 4 mg -UNK- -0-0
+433-1	15909-15925	Methyprednisolon	ACTIVEING	false	_	EntlassMedikation
+433-2	15926-15927	4	STRENGTH[49]	false[49]	433-1[0_49]	EntlassMedikation
+433-3	15928-15930	mg	STRENGTH[49]	false[49]	_	EntlassMedikation
+433-4	15931-15936	-UNK-	FREQUENCY[50]	false[50]	433-1[0_50]	EntlassMedikation
+433-5	15937-15939	-0	FREQUENCY[50]	false[50]	_	EntlassMedikation
+433-6	15939-15940	-	FREQUENCY[50]	false[50]	_	EntlassMedikation
+433-7	15940-15941	0	FREQUENCY[50]	false[50]	_	EntlassMedikation
+
+#Text=Lantus 0-0-18
+434-1	15943-15949	Lantus	DOSAGE	false	_	EntlassMedikation
+434-2	15950-15951	0	FREQUENCY[51]	false[51]	434-1[0_51]	EntlassMedikation
+434-3	15951-15952	-	FREQUENCY[51]	false[51]	_	EntlassMedikation
+434-4	15952-15953	0	FREQUENCY[51]	false[51]	_	EntlassMedikation
+434-5	15953-15954	-	FREQUENCY[51]	false[51]	_	EntlassMedikation
+434-6	15954-15956	18	FREQUENCY[51]	false[51]	_	EntlassMedikation
+
+#Text=Insulin nach eigenem Schema
+435-1	15957-15964	Insulin	ACTIVEING	false	_	EntlassMedikation
+435-2	15965-15969	nach	_	_	_	EntlassMedikation
+435-3	15970-15977	eigenem	_	_	_	EntlassMedikation
+435-4	15978-15984	Schema	_	_	_	EntlassMedikation
+
+#Text=Tilidin/Naloxon Ret. 50/4 mg morgens und abends bei Bedarf
+436-1	15986-15993	Tilidin	ACTIVEING	false	_	EntlassMedikation
+436-2	15993-15994	/	_	_	_	EntlassMedikation
+436-3	15994-16001	Naloxon	ACTIVEING	false	_	EntlassMedikation
+436-4	16002-16005	Ret	_	_	_	EntlassMedikation
+436-5	16005-16006	.	_	_	_	EntlassMedikation
+436-6	16007-16009	50	STRENGTH	false	436-1	EntlassMedikation
+436-7	16009-16010	/	_	_	_	EntlassMedikation
+436-8	16010-16011	4	FREQUENCY[52]	false[52]	436-3[0_52]	EntlassMedikation
+436-9	16012-16014	mg	FREQUENCY[52]	false[52]	_	EntlassMedikation
+436-10	16015-16022	morgens	FREQUENCY[53]	false[53]	436-1[0_53]|436-3[0_53]	EntlassMedikation
+436-11	16023-16026	und	FREQUENCY[53]	false[53]	_	EntlassMedikation
+436-12	16027-16033	abends	FREQUENCY[53]	false[53]	_	EntlassMedikation
+436-13	16034-16037	bei	FREQUENCY[53]	false[53]	_	EntlassMedikation
+436-14	16038-16044	Bedarf	FREQUENCY[53]	false[53]	_	EntlassMedikation
+
+#Text=Novalgin 500 mg 3x täglich bei Bedarf
+437-1	16045-16053	Novalgin	ACTIVEING	false	_	EntlassMedikation
+437-2	16054-16057	500	STRENGTH[54]	false[54]	437-1[0_54]	EntlassMedikation
+437-3	16058-16060	mg	STRENGTH[54]	false[54]	_	EntlassMedikation
+437-4	16061-16063	3x	FREQUENCY[55]	false[55]	437-1[0_55]	EntlassMedikation
+437-5	16064-16071	täglich	FREQUENCY[55]	false[55]	_	EntlassMedikation
+437-6	16072-16075	bei	FREQUENCY[56]	false[56]	437-1[0_56]	EntlassMedikation
+437-7	16076-16082	Bedarf	FREQUENCY[56]	false[56]	_	EntlassMedikation
+
+#Text=Bakterielle Endokarditisprophylaxe gemäß Empfehlungen der Paul-Ehrlich-Gesellschaft
+438-1	16084-16095	Bakterielle	_	_	_	EntlassMedikation
+438-2	16096-16118	Endokarditisprophylaxe	_	_	_	EntlassMedikation
+438-3	16119-16124	gemäß	_	_	_	EntlassMedikation
+438-4	16125-16137	Empfehlungen	_	_	_	EntlassMedikation
+438-5	16138-16141	der	_	_	_	EntlassMedikation
+438-6	16142-16167	Paul-Ehrlich-Gesellschaft	_	_	_	EntlassMedikation
+
+#Text=Selbstverständlich können Präparate mit gleichem Wirkstoff und gleicher Wirkung von anderen Herstellern verordnet werden. Ebenso ist natürlich möglich, verwandte Wirkstoffe aus derselben Wirkstoffgruppe alternativ zu verordnen. Zusätzliche Medikationen nach Haus- bzw. fachärztlicher Empfehlung.
+439-1	16169-16187	Selbstverständlich	_	_	_	Abschluss
+439-2	16188-16194	können	_	_	_	Abschluss
+439-3	16195-16204	Präparate	_	_	_	Abschluss
+439-4	16205-16208	mit	_	_	_	Abschluss
+439-5	16209-16217	gleichem	_	_	_	Abschluss
+439-6	16218-16227	Wirkstoff	_	_	_	Abschluss
+439-7	16228-16231	und	_	_	_	Abschluss
+439-8	16232-16240	gleicher	_	_	_	Abschluss
+439-9	16241-16248	Wirkung	_	_	_	Abschluss
+439-10	16249-16252	von	_	_	_	Abschluss
+439-11	16253-16260	anderen	_	_	_	Abschluss
+439-12	16261-16272	Herstellern	_	_	_	Abschluss
+439-13	16273-16282	verordnet	_	_	_	Abschluss
+439-14	16283-16289	werden	_	_	_	Abschluss
+439-15	16289-16290	.	_	_	_	Abschluss
+439-16	16291-16297	Ebenso	_	_	_	Abschluss
+439-17	16298-16301	ist	_	_	_	Abschluss
+439-18	16302-16311	natürlich	_	_	_	Abschluss
+439-19	16312-16319	möglich	_	_	_	Abschluss
+439-20	16319-16320	,	_	_	_	Abschluss
+439-21	16321-16330	verwandte	_	_	_	Abschluss
+439-22	16331-16341	Wirkstoffe	_	_	_	Abschluss
+439-23	16342-16345	aus	_	_	_	Abschluss
+439-24	16346-16355	derselben	_	_	_	Abschluss
+439-25	16356-16371	Wirkstoffgruppe	_	_	_	Abschluss
+439-26	16372-16382	alternativ	_	_	_	Abschluss
+439-27	16383-16385	zu	_	_	_	Abschluss
+439-28	16386-16395	verordnen	_	_	_	Abschluss
+439-29	16395-16396	.	_	_	_	Abschluss
+439-30	16397-16408	Zusätzliche	_	_	_	Abschluss
+439-31	16409-16421	Medikationen	_	_	_	Abschluss
+439-32	16422-16426	nach	_	_	_	Abschluss
+439-33	16427-16432	Haus-	_	_	_	Abschluss
+439-34	16433-16437	bzw.	_	_	_	Abschluss
+439-35	16438-16452	fachärztlicher	_	_	_	Abschluss
+439-36	16453-16463	Empfehlung	_	_	_	Abschluss
+439-37	16463-16464	.	_	_	_	Abschluss
+
+#Text=Eine jährliche Grippeimpfung sowie eine Pneumokokken-Impfung mit 6-jährlicher Auffrischung werden bei Patienten jenseits des 60. Lebensjahres sowie bei KHK-Patienten im Besonderen empfohlen.
+440-1	16466-16470	Eine	_	_	_	Abschluss
+440-2	16471-16480	jährliche	_	_	_	Abschluss
+440-3	16481-16494	Grippeimpfung	_	_	_	Abschluss
+440-4	16495-16500	sowie	_	_	_	Abschluss
+440-5	16501-16505	eine	_	_	_	Abschluss
+440-6	16506-16526	Pneumokokken-Impfung	_	_	_	Abschluss
+440-7	16527-16530	mit	_	_	_	Abschluss
+440-8	16531-16543	6-jährlicher	_	_	_	Abschluss
+440-9	16544-16556	Auffrischung	_	_	_	Abschluss
+440-10	16557-16563	werden	_	_	_	Abschluss
+440-11	16564-16567	bei	_	_	_	Abschluss
+440-12	16568-16577	Patienten	_	_	_	Abschluss
+440-13	16578-16586	jenseits	_	_	_	Abschluss
+440-14	16587-16590	des	_	_	_	Abschluss
+440-15	16591-16594	60.	_	_	_	Abschluss
+440-16	16595-16607	Lebensjahres	_	_	_	Abschluss
+440-17	16608-16613	sowie	_	_	_	Abschluss
+440-18	16614-16617	bei	_	_	_	Abschluss
+440-19	16618-16631	KHK-Patienten	_	_	_	Abschluss
+440-20	16632-16634	im	_	_	_	Abschluss
+440-21	16635-16645	Besonderen	_	_	_	Abschluss
+440-22	16646-16655	empfohlen	_	_	_	Abschluss
+440-23	16655-16656	.	_	_	_	Abschluss
+
+#Text=In 6 Monaten bzw. in Abhängigkeit vom Belastungstest empfehlen wir eine ambulante kardiologische Kontrolluntersuchung, die wir - falls nicht vom einweisenden Kardiologen durchgeführt - nach telefonischer Voranmeldung -LRB- Tel.: B-PHONE -RRB- vorzunehmen gerne bereit sind.
+441-1	16658-16660	In	_	_	_	Abschluss
+441-2	16661-16662	6	_	_	_	Abschluss
+441-3	16663-16670	Monaten	_	_	_	Abschluss
+441-4	16671-16675	bzw.	_	_	_	Abschluss
+441-5	16676-16678	in	_	_	_	Abschluss
+441-6	16679-16691	Abhängigkeit	_	_	_	Abschluss
+441-7	16692-16695	vom	_	_	_	Abschluss
+441-8	16696-16710	Belastungstest	_	_	_	Abschluss
+441-9	16711-16720	empfehlen	_	_	_	Abschluss
+441-10	16721-16724	wir	_	_	_	Abschluss
+441-11	16725-16729	eine	_	_	_	Abschluss
+441-12	16730-16739	ambulante	_	_	_	Abschluss
+441-13	16740-16754	kardiologische	_	_	_	Abschluss
+441-14	16755-16775	Kontrolluntersuchung	_	_	_	Abschluss
+441-15	16775-16776	,	_	_	_	Abschluss
+441-16	16777-16780	die	_	_	_	Abschluss
+441-17	16781-16784	wir	_	_	_	Abschluss
+441-18	16785-16786	-	_	_	_	Abschluss
+441-19	16787-16792	falls	_	_	_	Abschluss
+441-20	16793-16798	nicht	_	_	_	Abschluss
+441-21	16799-16802	vom	_	_	_	Abschluss
+441-22	16803-16815	einweisenden	_	_	_	Abschluss
+441-23	16816-16827	Kardiologen	_	_	_	Abschluss
+441-24	16828-16840	durchgeführt	_	_	_	Abschluss
+441-25	16841-16842	-	_	_	_	Abschluss
+441-26	16843-16847	nach	_	_	_	Abschluss
+441-27	16848-16861	telefonischer	_	_	_	Abschluss
+441-28	16862-16874	Voranmeldung	_	_	_	Abschluss
+441-29	16875-16880	-LRB-	_	_	_	Abschluss
+441-30	16881-16885	Tel.	_	_	_	Abschluss
+441-31	16885-16886	:	_	_	_	Abschluss
+441-32	16887-16894	B-PHONE	_	_	_	Abschluss
+441-33	16895-16900	-RRB-	_	_	_	Abschluss
+441-34	16901-16912	vorzunehmen	_	_	_	Abschluss
+441-35	16913-16918	gerne	_	_	_	Abschluss
+441-36	16919-16925	bereit	_	_	_	Abschluss
+441-37	16926-16930	sind	_	_	_	Abschluss
+441-38	16930-16931	.	_	_	_	Abschluss
+
+#Text=Bei Auftreten von Problemen oder Komplikationen sind wir jederzeit gerne bereit, den Patienten unverzüglich wieder zu sehen -LRB- B-ORG I-ORG - B-ORG I-ORG I-ORG Tel.: B-PHONE -RRB- .
+442-1	16933-16936	Bei	_	_	_	Abschluss
+442-2	16937-16946	Auftreten	_	_	_	Abschluss
+442-3	16947-16950	von	_	_	_	Abschluss
+442-4	16951-16960	Problemen	_	_	_	Abschluss
+442-5	16961-16965	oder	_	_	_	Abschluss
+442-6	16966-16980	Komplikationen	_	_	_	Abschluss
+442-7	16981-16985	sind	_	_	_	Abschluss
+442-8	16986-16989	wir	_	_	_	Abschluss
+442-9	16990-16999	jederzeit	_	_	_	Abschluss
+442-10	17000-17005	gerne	_	_	_	Abschluss
+442-11	17006-17012	bereit	_	_	_	Abschluss
+442-12	17012-17013	,	_	_	_	Abschluss
+442-13	17014-17017	den	_	_	_	Abschluss
+442-14	17018-17027	Patienten	_	_	_	Abschluss
+442-15	17028-17040	unverzüglich	_	_	_	Abschluss
+442-16	17041-17047	wieder	_	_	_	Abschluss
+442-17	17048-17050	zu	_	_	_	Abschluss
+442-18	17051-17056	sehen	_	_	_	Abschluss
+442-19	17057-17062	-LRB-	_	_	_	Abschluss
+442-20	17063-17068	B-ORG	_	_	_	Abschluss
+442-21	17069-17074	I-ORG	_	_	_	Abschluss
+442-22	17075-17076	-	_	_	_	Abschluss
+442-23	17077-17082	B-ORG	_	_	_	Abschluss
+442-24	17083-17088	I-ORG	_	_	_	Abschluss
+442-25	17089-17094	I-ORG	_	_	_	Abschluss
+442-26	17095-17099	Tel.	_	_	_	Abschluss
+442-27	17099-17100	:	_	_	_	Abschluss
+442-28	17101-17108	B-PHONE	_	_	_	Abschluss
+442-29	17109-17114	-RRB-	_	_	_	Abschluss
+442-30	17115-17116	.	_	_	_	Abschluss
+
+#Text=Wir danken für die vertrauensvolle Zusammenarbeit und stehen bei Rückfragen jederzeit gerne zur Verfügung.
+443-1	17118-17121	Wir	_	_	_	Abschluss
+443-2	17122-17128	danken	_	_	_	Abschluss
+443-3	17129-17132	für	_	_	_	Abschluss
+443-4	17133-17136	die	_	_	_	Abschluss
+443-5	17137-17152	vertrauensvolle	_	_	_	Abschluss
+443-6	17153-17167	Zusammenarbeit	_	_	_	Abschluss
+443-7	17168-17171	und	_	_	_	Abschluss
+443-8	17172-17178	stehen	_	_	_	Abschluss
+443-9	17179-17182	bei	_	_	_	Abschluss
+443-10	17183-17193	Rückfragen	_	_	_	Abschluss
+443-11	17194-17203	jederzeit	_	_	_	Abschluss
+443-12	17204-17209	gerne	_	_	_	Abschluss
+443-13	17210-17213	zur	_	_	_	Abschluss
+443-14	17214-17223	Verfügung	_	_	_	Abschluss
+443-15	17223-17224	.	_	_	_	Abschluss
+
+#Text=Wir entlassen den Patienten heute in gutem Allgemeinzustand in Ihre geschätzte ambulante Betreuung.
+444-1	17226-17229	Wir	_	_	_	Abschluss
+444-2	17230-17239	entlassen	_	_	_	Abschluss
+444-3	17240-17243	den	_	_	_	Abschluss
+444-4	17244-17253	Patienten	_	_	_	Abschluss
+444-5	17254-17259	heute	_	_	_	Abschluss
+444-6	17260-17262	in	_	_	_	Abschluss
+444-7	17263-17268	gutem	_	_	_	Abschluss
+444-8	17269-17285	Allgemeinzustand	_	_	_	Abschluss
+444-9	17286-17288	in	_	_	_	Abschluss
+444-10	17289-17293	Ihre	_	_	_	Abschluss
+444-11	17294-17304	geschätzte	_	_	_	Abschluss
+444-12	17305-17314	ambulante	_	_	_	Abschluss
+444-13	17315-17324	Betreuung	_	_	_	Abschluss
+444-14	17324-17325	.	_	_	_	Abschluss
+
+#Text=Mit freundlichen kollegialen Grüßen
+445-1	17327-17330	Mit	_	_	_	Abschluss
+445-2	17331-17343	freundlichen	_	_	_	Abschluss
+445-3	17344-17355	kollegialen	_	_	_	Abschluss
+445-4	17356-17362	Grüßen	_	_	_	Abschluss
+
+#Text=B-PER
+446-1	17363-17368	B-PER	_	_	_	Abschluss
+
+#Text=B-TITLE I-TITLE I-TITLE B-PER - B-PER I-PER B-TITLE I-TITLE I-TITLE B-PER I-PER B-PER I-PER
+447-1	17371-17378	B-TITLE	_	_	_	Abschluss
+447-2	17379-17386	I-TITLE	_	_	_	Abschluss
+447-3	17387-17394	I-TITLE	_	_	_	Abschluss
+447-4	17395-17400	B-PER	_	_	_	Abschluss
+447-5	17401-17402	-	_	_	_	Abschluss
+447-6	17403-17408	B-PER	_	_	_	Abschluss
+447-7	17409-17414	I-PER	_	_	_	Abschluss
+447-8	17415-17422	B-TITLE	_	_	_	Abschluss
+447-9	17423-17430	I-TITLE	_	_	_	Abschluss
+447-10	17431-17438	I-TITLE	_	_	_	Abschluss
+447-11	17439-17444	B-PER	_	_	_	Abschluss
+447-12	17445-17450	I-PER	_	_	_	Abschluss
+447-13	17451-17456	B-PER	_	_	_	Abschluss
+447-14	17457-17462	I-PER	_	_	_	Abschluss
+
+#Text=Ärztl. Direktor Oberarzt Assistenzarzt
+448-1	17463-17468	Ärztl	_	_	_	Abschluss
+448-2	17468-17469	.	_	_	_	Abschluss
+448-3	17470-17478	Direktor	_	_	_	Abschluss
+448-4	17479-17487	Oberarzt	_	_	_	Abschluss
+448-5	17488-17501	Assistenzarzt	_	_	_	Abschluss
+
+#Text=Anlagen: 2 Seiten Medikationsübersicht
+449-1	17505-17512	Anlagen	_	_	_	Mix
+449-2	17512-17513	:	_	_	_	Mix
+449-3	17514-17515	2	_	_	_	Mix
+449-4	17516-17522	Seiten	_	_	_	Mix
+449-5	17523-17543	Medikationsübersicht	_	_	_	Mix

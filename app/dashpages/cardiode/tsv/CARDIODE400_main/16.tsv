@@ -1,0 +1,701 @@
+#FORMAT=WebAnno TSV 3.3
+#T_SP=webanno.custom.Medication|ClassType|InNarrative
+#T_RL=webanno.custom.MedRel|BT_webanno.custom.Medication
+#T_SP=webanno.custom.Sectionsentence|Sectiontypes
+
+
+#Text=Aufnahmedatum: <[Pseudo] 2035-07-04 >
+1-1	0-13	Aufnahmedatum	_	_	_	_
+1-2	13-14	:	_	_	_	_
+1-3	15-24	<[Pseudo]	_	_	_	_
+1-4	25-29	2035	_	_	_	_
+1-5	29-30	-	_	_	_	_
+1-6	30-32	07	_	_	_	_
+1-7	32-33	-	_	_	_	_
+1-8	33-35	04	_	_	_	_
+1-9	36-37	>	_	_	_	_
+
+#Text=Geburtsdatum: <[Pseudo] 1974-10-11 >
+2-1	38-50	Geburtsdatum	_	_	_	_
+2-2	50-51	:	_	_	_	_
+2-3	52-61	<[Pseudo]	_	_	_	_
+2-4	62-66	1974	_	_	_	_
+2-5	66-67	-	_	_	_	_
+2-6	67-69	10	_	_	_	_
+2-7	69-70	-	_	_	_	_
+2-8	70-72	11	_	_	_	_
+2-9	73-74	>	_	_	_	_
+
+#Text=Alter: 60
+3-1	75-80	Alter	_	_	_	_
+3-2	80-81	:	_	_	_	_
+3-3	82-84	60	_	_	_	_
+
+#Text=über Ihren Patienten B-SALUTE B-PER I-PER geboren am <[Pseudo] 11/10/1974> wohnhaft in B-PLZ B-LOC B-ADDR I-ADDR der sich vom bis in unserer stationären Behandlung befand.
+4-1	86-90	über	_	_	_	Anrede
+4-2	91-96	Ihren	_	_	_	Anrede
+4-3	97-106	Patienten	_	_	_	Anrede
+4-4	107-115	B-SALUTE	_	_	_	Anrede
+4-5	116-121	B-PER	_	_	_	Anrede
+4-6	122-127	I-PER	_	_	_	Anrede
+4-7	128-135	geboren	_	_	_	Anrede
+4-8	136-138	am	_	_	_	Anrede
+4-9	139-148	<[Pseudo]	_	_	_	Anrede
+4-10	149-151	11	_	_	_	Anrede
+4-11	151-152	/	_	_	_	Anrede
+4-12	152-154	10	_	_	_	Anrede
+4-13	154-155	/	_	_	_	Anrede
+4-14	155-159	1974	_	_	_	Anrede
+4-15	159-160	>	_	_	_	Anrede
+4-16	161-169	wohnhaft	_	_	_	Anrede
+4-17	170-172	in	_	_	_	Anrede
+4-18	173-178	B-PLZ	_	_	_	Anrede
+4-19	179-184	B-LOC	_	_	_	Anrede
+4-20	185-191	B-ADDR	_	_	_	Anrede
+4-21	192-198	I-ADDR	_	_	_	Anrede
+4-22	199-202	der	_	_	_	Anrede
+4-23	203-207	sich	_	_	_	Anrede
+4-24	208-211	vom	_	_	_	Anrede
+4-25	212-215	bis	_	_	_	Anrede
+4-26	216-218	in	_	_	_	Anrede
+4-27	219-226	unserer	_	_	_	Anrede
+4-28	227-238	stationären	_	_	_	Anrede
+4-29	239-249	Behandlung	_	_	_	Anrede
+4-30	250-256	befand	_	_	_	Anrede
+4-31	256-257	.	_	_	_	Anrede
+
+#Text=Diagnosen:
+5-1	259-268	Diagnosen	_	_	_	Diagnosen
+5-2	268-269	:	_	_	_	Diagnosen
+
+#Text=- Exitus letalis am <[Pseudo] 04/07/2035> um 05.57 Uhr im protrahierten kardiogenen Schock
+6-1	270-271	-	_	_	_	Diagnosen
+6-2	272-278	Exitus	_	_	_	Diagnosen
+6-3	279-286	letalis	_	_	_	Diagnosen
+6-4	287-289	am	_	_	_	Diagnosen
+6-5	290-299	<[Pseudo]	_	_	_	Diagnosen
+6-6	300-302	04	_	_	_	Diagnosen
+6-7	302-303	/	_	_	_	Diagnosen
+6-8	303-305	07	_	_	_	Diagnosen
+6-9	305-306	/	_	_	_	Diagnosen
+6-10	306-310	2035	_	_	_	Diagnosen
+6-11	310-311	>	_	_	_	Diagnosen
+6-12	312-314	um	_	_	_	Diagnosen
+6-13	315-320	05.57	_	_	_	Diagnosen
+6-14	321-324	Uhr	_	_	_	Diagnosen
+6-15	325-327	im	_	_	_	Diagnosen
+6-16	328-341	protrahierten	_	_	_	Diagnosen
+6-17	342-353	kardiogenen	_	_	_	Diagnosen
+6-18	354-360	Schock	_	_	_	Diagnosen
+
+#Text=- Akuter Myokardinfarkt -LRB- NSTEMI -RRB-
+7-1	361-362	-	_	_	_	Diagnosen
+7-2	363-369	Akuter	_	_	_	Diagnosen
+7-3	370-384	Myokardinfarkt	_	_	_	Diagnosen
+7-4	385-390	-LRB-	_	_	_	Diagnosen
+7-5	391-397	NSTEMI	_	_	_	Diagnosen
+7-6	398-403	-RRB-	_	_	_	Diagnosen
+
+#Text=- Schwere Aspiration
+8-1	404-405	-	_	_	_	Diagnosen
+8-2	406-413	Schwere	_	_	_	Diagnosen
+8-3	414-424	Aspiration	_	_	_	Diagnosen
+
+#Text=-UNK- Tazobac -LRB- <[Pseudo] 03.07.> - dato -RRB-
+9-1	425-430	-UNK-	_	_	_	Diagnosen
+9-2	431-438	Tazobac	_	_	_	Diagnosen
+9-3	439-444	-LRB-	_	_	_	Diagnosen
+9-4	445-454	<[Pseudo]	_	_	_	Diagnosen
+9-5	455-461	03.07.	_	_	_	Diagnosen
+9-6	461-462	>	_	_	_	Diagnosen
+9-7	463-464	-	_	_	_	Diagnosen
+9-8	465-469	dato	_	_	_	Diagnosen
+9-9	470-475	-RRB-	_	_	_	Diagnosen
+
+#Text=-UNK- Bronchoskopie -LRB- <[Pseudo] 03/07/35> -RRB-
+10-1	476-481	-UNK-	_	_	_	Diagnosen
+10-2	482-495	Bronchoskopie	_	_	_	Diagnosen
+10-3	496-501	-LRB-	_	_	_	Diagnosen
+10-4	502-511	<[Pseudo]	_	_	_	Diagnosen
+10-5	512-514	03	_	_	_	Diagnosen
+10-6	514-515	/	_	_	_	Diagnosen
+10-7	515-517	07	_	_	_	Diagnosen
+10-8	517-518	/	_	_	_	Diagnosen
+10-9	518-520	35	_	_	_	Diagnosen
+10-10	520-521	>	_	_	_	Diagnosen
+10-11	522-527	-RRB-	_	_	_	Diagnosen
+
+#Text=-UNK- Inhalative NO-Therapie -LRB- <[Pseudo] 03.07.> - dato -RRB-
+11-1	528-533	-UNK-	_	_	_	Diagnosen
+11-2	534-544	Inhalative	_	_	_	Diagnosen
+11-3	545-556	NO-Therapie	_	_	_	Diagnosen
+11-4	557-562	-LRB-	_	_	_	Diagnosen
+11-5	563-572	<[Pseudo]	_	_	_	Diagnosen
+11-6	573-579	03.07.	_	_	_	Diagnosen
+11-7	579-580	>	_	_	_	Diagnosen
+11-8	581-582	-	_	_	_	Diagnosen
+11-9	583-587	dato	_	_	_	Diagnosen
+11-10	588-593	-RRB-	_	_	_	Diagnosen
+
+#Text=- Hämatothorax beidseits a.e. nach Reanimation
+12-1	594-595	-	_	_	_	Diagnosen
+12-2	596-608	Hämatothorax	_	_	_	Diagnosen
+12-3	609-618	beidseits	_	_	_	Diagnosen
+12-4	619-622	a.e	_	_	_	Diagnosen
+12-5	622-623	.	_	_	_	Diagnosen
+12-6	624-628	nach	_	_	_	Diagnosen
+12-7	629-640	Reanimation	_	_	_	Diagnosen
+
+#Text=-UNK- Bülau Drainagen-Anlage bds -LRB- <[Pseudo] 03/07/35> -RRB-
+13-1	641-646	-UNK-	_	_	_	Diagnosen
+13-2	647-652	Bülau	_	_	_	Diagnosen
+13-3	653-669	Drainagen-Anlage	_	_	_	Diagnosen
+13-4	670-673	bds	_	_	_	Diagnosen
+13-5	674-679	-LRB-	_	_	_	Diagnosen
+13-6	680-689	<[Pseudo]	_	_	_	Diagnosen
+13-7	690-692	03	_	_	_	Diagnosen
+13-8	692-693	/	_	_	_	Diagnosen
+13-9	693-695	07	_	_	_	Diagnosen
+13-10	695-696	/	_	_	_	Diagnosen
+13-11	696-698	35	_	_	_	Diagnosen
+13-12	698-699	>	_	_	_	Diagnosen
+13-13	700-705	-RRB-	_	_	_	Diagnosen
+
+#Text=- Extrahospitale Reanimation mit unklarer Latenz bei Asystolie über 10 min am <[Pseudo] 03/07/2035>
+14-1	706-707	-	_	_	_	Diagnosen
+14-2	708-722	Extrahospitale	_	_	_	Diagnosen
+14-3	723-734	Reanimation	_	_	_	Diagnosen
+14-4	735-738	mit	_	_	_	Diagnosen
+14-5	739-747	unklarer	_	_	_	Diagnosen
+14-6	748-754	Latenz	_	_	_	Diagnosen
+14-7	755-758	bei	_	_	_	Diagnosen
+14-8	759-768	Asystolie	_	_	_	Diagnosen
+14-9	769-773	über	_	_	_	Diagnosen
+14-10	774-776	10	_	_	_	Diagnosen
+14-11	777-780	min	_	_	_	Diagnosen
+14-12	781-783	am	_	_	_	Diagnosen
+14-13	784-793	<[Pseudo]	_	_	_	Diagnosen
+14-14	794-796	03	_	_	_	Diagnosen
+14-15	796-797	/	_	_	_	Diagnosen
+14-16	797-799	07	_	_	_	Diagnosen
+14-17	799-800	/	_	_	_	Diagnosen
+14-18	800-804	2035	_	_	_	Diagnosen
+14-19	804-805	>	_	_	_	Diagnosen
+
+#Text=-UNK- Intubation und maschinelle Beatmung vom -LRB- <[Pseudo] 03.07.> - dato -RRB-
+15-1	806-811	-UNK-	_	_	_	Diagnosen
+15-2	812-822	Intubation	_	_	_	Diagnosen
+15-3	823-826	und	_	_	_	Diagnosen
+15-4	827-838	maschinelle	_	_	_	Diagnosen
+15-5	839-847	Beatmung	_	_	_	Diagnosen
+15-6	848-851	vom	_	_	_	Diagnosen
+15-7	852-857	-LRB-	_	_	_	Diagnosen
+15-8	858-867	<[Pseudo]	_	_	_	Diagnosen
+15-9	868-874	03.07.	_	_	_	Diagnosen
+15-10	874-875	>	_	_	_	Diagnosen
+15-11	876-877	-	_	_	_	Diagnosen
+15-12	878-882	dato	_	_	_	Diagnosen
+15-13	883-888	-RRB-	_	_	_	Diagnosen
+
+#Text=-UNK- Differenzierte Katecholamintherapie -LRB- <[Pseudo] 03.07.> - dato -RRB-
+16-1	889-894	-UNK-	_	_	_	Diagnosen
+16-2	895-909	Differenzierte	_	_	_	Diagnosen
+16-3	910-930	Katecholamintherapie	_	_	_	Diagnosen
+16-4	931-936	-LRB-	_	_	_	Diagnosen
+16-5	937-946	<[Pseudo]	_	_	_	Diagnosen
+16-6	947-953	03.07.	_	_	_	Diagnosen
+16-7	953-954	>	_	_	_	Diagnosen
+16-8	955-956	-	_	_	_	Diagnosen
+16-9	957-961	dato	_	_	_	Diagnosen
+16-10	962-967	-RRB-	_	_	_	Diagnosen
+
+#Text=- Koronare 3-Gefäßerkrankung -LRB- HK vom <[Pseudo] 15/01/2035> B-OTHER -RRB- mit/bei:
+17-1	968-969	-	_	_	_	Diagnosen
+17-2	970-978	Koronare	_	_	_	Diagnosen
+17-3	979-996	3-Gefäßerkrankung	_	_	_	Diagnosen
+17-4	997-1002	-LRB-	_	_	_	Diagnosen
+17-5	1003-1005	HK	_	_	_	Diagnosen
+17-6	1006-1009	vom	_	_	_	Diagnosen
+17-7	1010-1019	<[Pseudo]	_	_	_	Diagnosen
+17-8	1020-1022	15	_	_	_	Diagnosen
+17-9	1022-1023	/	_	_	_	Diagnosen
+17-10	1023-1025	01	_	_	_	Diagnosen
+17-11	1025-1026	/	_	_	_	Diagnosen
+17-12	1026-1030	2035	_	_	_	Diagnosen
+17-13	1030-1031	>	_	_	_	Diagnosen
+17-14	1032-1039	B-OTHER	_	_	_	Diagnosen
+17-15	1040-1045	-RRB-	_	_	_	Diagnosen
+17-16	1046-1049	mit	_	_	_	Diagnosen
+17-17	1049-1050	/	_	_	_	Diagnosen
+17-18	1050-1053	bei	_	_	_	Diagnosen
+17-19	1053-1054	:	_	_	_	Diagnosen
+
+#Text=-UNK- Gutes Kurzzeitergebnis nach PCI der LAD
+18-1	1055-1060	-UNK-	_	_	_	Diagnosen
+18-2	1061-1066	Gutes	_	_	_	Diagnosen
+18-3	1067-1083	Kurzzeitergebnis	_	_	_	Diagnosen
+18-4	1084-1088	nach	_	_	_	Diagnosen
+18-5	1089-1092	PCI	_	_	_	Diagnosen
+18-6	1093-1096	der	_	_	_	Diagnosen
+18-7	1097-1100	LAD	_	_	_	Diagnosen
+
+#Text=-UNK- Erfolgreiche PTCA/2-fach DE-Stentimplantation bei In-Stent-Stenose der RCA.
+19-1	1101-1106	-UNK-	_	_	_	Diagnosen
+19-2	1107-1119	Erfolgreiche	_	_	_	Diagnosen
+19-3	1120-1124	PTCA	_	_	_	Diagnosen
+19-4	1124-1125	/	_	_	_	Diagnosen
+19-5	1125-1131	2-fach	_	_	_	Diagnosen
+19-6	1132-1152	DE-Stentimplantation	_	_	_	Diagnosen
+19-7	1153-1156	bei	_	_	_	Diagnosen
+19-8	1157-1173	In-Stent-Stenose	_	_	_	Diagnosen
+19-9	1174-1177	der	_	_	_	Diagnosen
+19-10	1178-1181	RCA	_	_	_	Diagnosen
+19-11	1181-1182	.	_	_	_	Diagnosen
+
+#Text=- Z. n. STEMI am <[Pseudo] 04/12/2034> mit initial hochgradig eingeschränkter LV-Funktion
+20-1	1183-1184	-	_	_	_	Diagnosen
+20-2	1185-1187	Z.	_	_	_	Diagnosen
+20-3	1188-1190	n.	_	_	_	Diagnosen
+20-4	1191-1196	STEMI	_	_	_	Diagnosen
+20-5	1197-1199	am	_	_	_	Diagnosen
+20-6	1200-1209	<[Pseudo]	_	_	_	Diagnosen
+20-7	1210-1212	04	_	_	_	Diagnosen
+20-8	1212-1213	/	_	_	_	Diagnosen
+20-9	1213-1215	12	_	_	_	Diagnosen
+20-10	1215-1216	/	_	_	_	Diagnosen
+20-11	1216-1220	2034	_	_	_	Diagnosen
+20-12	1220-1221	>	_	_	_	Diagnosen
+20-13	1222-1225	mit	_	_	_	Diagnosen
+20-14	1226-1233	initial	_	_	_	Diagnosen
+20-15	1234-1244	hochgradig	_	_	_	Diagnosen
+20-16	1245-1260	eingeschränkter	_	_	_	Diagnosen
+20-17	1261-1272	LV-Funktion	_	_	_	Diagnosen
+
+#Text=- Z. n. Angioplastie am <[Pseudo] 04/12/2034> mit cutting balloon, Hochdruck-PTCA und 3x DE-Stent-Implantation der medial subtotal verschlossenen LAD
+21-1	1273-1274	-	_	_	_	Diagnosen
+21-2	1275-1277	Z.	_	_	_	Diagnosen
+21-3	1278-1280	n.	_	_	_	Diagnosen
+21-4	1281-1293	Angioplastie	_	_	_	Diagnosen
+21-5	1294-1296	am	_	_	_	Diagnosen
+21-6	1297-1306	<[Pseudo]	_	_	_	Diagnosen
+21-7	1307-1309	04	_	_	_	Diagnosen
+21-8	1309-1310	/	_	_	_	Diagnosen
+21-9	1310-1312	12	_	_	_	Diagnosen
+21-10	1312-1313	/	_	_	_	Diagnosen
+21-11	1313-1317	2034	_	_	_	Diagnosen
+21-12	1317-1318	>	_	_	_	Diagnosen
+21-13	1319-1322	mit	_	_	_	Diagnosen
+21-14	1323-1330	cutting	_	_	_	Diagnosen
+21-15	1331-1338	balloon	_	_	_	Diagnosen
+21-16	1338-1339	,	_	_	_	Diagnosen
+21-17	1340-1354	Hochdruck-PTCA	_	_	_	Diagnosen
+21-18	1355-1358	und	_	_	_	Diagnosen
+21-19	1359-1361	3x	_	_	_	Diagnosen
+21-20	1362-1383	DE-Stent-Implantation	_	_	_	Diagnosen
+21-21	1384-1387	der	_	_	_	Diagnosen
+21-22	1388-1394	medial	_	_	_	Diagnosen
+21-23	1395-1403	subtotal	_	_	_	Diagnosen
+21-24	1404-1418	verschlossenen	_	_	_	Diagnosen
+21-25	1419-1422	LAD	_	_	_	Diagnosen
+
+#Text=- Z. n. PTCA / 3x BM-Stent-Implantation der RCA nach akutem Hinterwandinfarkt mit Rechtsherzbeteiligung <[Pseudo] 10/2020>
+22-1	1423-1424	-	_	_	_	Diagnosen
+22-2	1425-1427	Z.	_	_	_	Diagnosen
+22-3	1428-1430	n.	_	_	_	Diagnosen
+22-4	1431-1435	PTCA	_	_	_	Diagnosen
+22-5	1436-1437	/	_	_	_	Diagnosen
+22-6	1438-1440	3x	_	_	_	Diagnosen
+22-7	1441-1462	BM-Stent-Implantation	_	_	_	Diagnosen
+22-8	1463-1466	der	_	_	_	Diagnosen
+22-9	1467-1470	RCA	_	_	_	Diagnosen
+22-10	1471-1475	nach	_	_	_	Diagnosen
+22-11	1476-1482	akutem	_	_	_	Diagnosen
+22-12	1483-1500	Hinterwandinfarkt	_	_	_	Diagnosen
+22-13	1501-1504	mit	_	_	_	Diagnosen
+22-14	1505-1526	Rechtsherzbeteiligung	_	_	_	Diagnosen
+22-15	1527-1536	<[Pseudo]	_	_	_	Diagnosen
+22-16	1537-1539	10	_	_	_	Diagnosen
+22-17	1539-1540	/	_	_	_	Diagnosen
+22-18	1540-1544	2020	_	_	_	Diagnosen
+22-19	1544-1545	>	_	_	_	Diagnosen
+
+#Text=- Z. n. Stammhirninfarkt
+23-1	1546-1547	-	_	_	_	Diagnosen
+23-2	1548-1550	Z.	_	_	_	Diagnosen
+23-3	1551-1553	n.	_	_	_	Diagnosen
+23-4	1554-1570	Stammhirninfarkt	_	_	_	Diagnosen
+
+#Text=- Hochgradige Truncusabgangsstenose durch Ligamentum arcuatum
+24-1	1571-1572	-	_	_	_	Diagnosen
+24-2	1573-1584	Hochgradige	_	_	_	Diagnosen
+24-3	1585-1606	Truncusabgangsstenose	_	_	_	Diagnosen
+24-4	1607-1612	durch	_	_	_	Diagnosen
+24-5	1613-1623	Ligamentum	_	_	_	Diagnosen
+24-6	1624-1632	arcuatum	_	_	_	Diagnosen
+
+#Text=- COPD
+25-1	1633-1634	-	_	_	_	Diagnosen
+25-2	1635-1639	COPD	_	_	_	Diagnosen
+
+#Text=-UNK- Zentrilobuläres Emphysem
+26-1	1640-1645	-UNK-	_	_	_	Diagnosen
+26-2	1646-1661	Zentrilobuläres	_	_	_	Diagnosen
+26-3	1662-1670	Emphysem	_	_	_	Diagnosen
+
+#Text=- Alkoholabusus
+27-1	1671-1672	-	_	_	_	Diagnosen
+27-2	1673-1686	Alkoholabusus	_	_	_	Diagnosen
+
+#Text=-UNK- Z. n. zweimaliger Alkoholentzugstherapie
+28-1	1687-1692	-UNK-	_	_	_	Diagnosen
+28-2	1693-1695	Z.	_	_	_	Diagnosen
+28-3	1696-1698	n.	_	_	_	Diagnosen
+28-4	1699-1710	zweimaliger	_	_	_	Diagnosen
+28-5	1711-1733	Alkoholentzugstherapie	_	_	_	Diagnosen
+
+#Text=- Steatosis hepatis
+29-1	1734-1735	-	_	_	_	Diagnosen
+29-2	1736-1745	Steatosis	_	_	_	Diagnosen
+29-3	1746-1753	hepatis	_	_	_	Diagnosen
+
+#Text=- Nierenzyste rechts
+30-1	1754-1755	-	_	_	_	Diagnosen
+30-2	1756-1767	Nierenzyste	_	_	_	Diagnosen
+30-3	1768-1774	rechts	_	_	_	Diagnosen
+
+#Text=- Sigmadivertikulose
+31-1	1775-1776	-	_	_	_	Diagnosen
+31-2	1777-1795	Sigmadivertikulose	_	_	_	Diagnosen
+
+#Text=- Spinalkanalstenose C3-C7
+32-1	1796-1797	-	_	_	_	Diagnosen
+32-2	1798-1816	Spinalkanalstenose	_	_	_	Diagnosen
+32-3	1817-1822	C3-C7	_	_	_	Diagnosen
+
+#Text=- Z. n. Diskusprolaps
+33-1	1823-1824	-	_	_	_	Diagnosen
+33-2	1825-1827	Z.	_	_	_	Diagnosen
+33-3	1828-1830	n.	_	_	_	Diagnosen
+33-4	1831-1844	Diskusprolaps	_	_	_	Diagnosen
+
+#Text=- Spondylose
+34-1	1845-1846	-	_	_	_	Diagnosen
+34-2	1847-1857	Spondylose	_	_	_	Diagnosen
+
+#Text=- Z. n. Spondylodese der oberen BWS
+35-1	1858-1859	-	_	_	_	Diagnosen
+35-2	1860-1862	Z.	_	_	_	Diagnosen
+35-3	1863-1865	n.	_	_	_	Diagnosen
+35-4	1866-1878	Spondylodese	_	_	_	Diagnosen
+35-5	1879-1882	der	_	_	_	Diagnosen
+35-6	1883-1889	oberen	_	_	_	Diagnosen
+35-7	1890-1893	BWS	_	_	_	Diagnosen
+
+#Text=- Kyphose
+36-1	1894-1895	-	_	_	_	Diagnosen
+36-2	1896-1903	Kyphose	_	_	_	Diagnosen
+
+#Text=- Arthrose
+37-1	1904-1905	-	_	_	_	Diagnosen
+37-2	1906-1914	Arthrose	_	_	_	Diagnosen
+
+#Text=- Osteoporose
+38-1	1915-1916	-	_	_	_	Diagnosen
+38-2	1917-1928	Osteoporose	_	_	_	Diagnosen
+
+#Text=- Z. n. Leistenhernien-OP links
+39-1	1929-1930	-	_	_	_	Diagnosen
+39-2	1931-1933	Z.	_	_	_	Diagnosen
+39-3	1934-1936	n.	_	_	_	Diagnosen
+39-4	1937-1954	Leistenhernien-OP	_	_	_	Diagnosen
+39-5	1955-1960	links	_	_	_	Diagnosen
+
+#Text=Kardiovaskuläre Risikofaktoren:
+40-1	1962-1977	Kardiovaskuläre	_	_	_	AllergienUnverträglichkeitenRisiken
+40-2	1978-1992	Risikofaktoren	_	_	_	AllergienUnverträglichkeitenRisiken
+40-3	1992-1993	:	_	_	_	AllergienUnverträglichkeitenRisiken
+
+#Text=Arterielle Hypertonie, Hypercholesterinämie, fortgesetzter Nikotinabusus -LRB- kumulativ 30 PJ -RRB- , aktuell anamnestisch pausiert, keine Adipositas -LRB- BMI 25,9 kg/m² -RRB- , pos. Familienanamnese -LRB- Mutter mit Herztod im Alter von OTHER 60 Vater mit 60 -RRB-
+41-1	1994-2004	Arterielle	_	_	_	AllergienUnverträglichkeitenRisiken
+41-2	2005-2015	Hypertonie	_	_	_	AllergienUnverträglichkeitenRisiken
+41-3	2015-2016	,	_	_	_	AllergienUnverträglichkeitenRisiken
+41-4	2017-2037	Hypercholesterinämie	_	_	_	AllergienUnverträglichkeitenRisiken
+41-5	2037-2038	,	_	_	_	AllergienUnverträglichkeitenRisiken
+41-6	2039-2052	fortgesetzter	_	_	_	AllergienUnverträglichkeitenRisiken
+41-7	2053-2066	Nikotinabusus	_	_	_	AllergienUnverträglichkeitenRisiken
+41-8	2067-2072	-LRB-	_	_	_	AllergienUnverträglichkeitenRisiken
+41-9	2073-2082	kumulativ	_	_	_	AllergienUnverträglichkeitenRisiken
+41-10	2083-2085	30	_	_	_	AllergienUnverträglichkeitenRisiken
+41-11	2086-2088	PJ	_	_	_	AllergienUnverträglichkeitenRisiken
+41-12	2089-2094	-RRB-	_	_	_	AllergienUnverträglichkeitenRisiken
+41-13	2095-2096	,	_	_	_	AllergienUnverträglichkeitenRisiken
+41-14	2097-2104	aktuell	_	_	_	AllergienUnverträglichkeitenRisiken
+41-15	2105-2117	anamnestisch	_	_	_	AllergienUnverträglichkeitenRisiken
+41-16	2118-2126	pausiert	_	_	_	AllergienUnverträglichkeitenRisiken
+41-17	2126-2127	,	_	_	_	AllergienUnverträglichkeitenRisiken
+41-18	2128-2133	keine	_	_	_	AllergienUnverträglichkeitenRisiken
+41-19	2134-2144	Adipositas	_	_	_	AllergienUnverträglichkeitenRisiken
+41-20	2145-2150	-LRB-	_	_	_	AllergienUnverträglichkeitenRisiken
+41-21	2151-2154	BMI	_	_	_	AllergienUnverträglichkeitenRisiken
+41-22	2155-2159	25,9	_	_	_	AllergienUnverträglichkeitenRisiken
+41-23	2160-2162	kg	_	_	_	AllergienUnverträglichkeitenRisiken
+41-24	2162-2163	/	_	_	_	AllergienUnverträglichkeitenRisiken
+41-25	2163-2165	m²	_	_	_	AllergienUnverträglichkeitenRisiken
+41-26	2166-2171	-RRB-	_	_	_	AllergienUnverträglichkeitenRisiken
+41-27	2172-2173	,	_	_	_	AllergienUnverträglichkeitenRisiken
+41-28	2174-2177	pos	_	_	_	AllergienUnverträglichkeitenRisiken
+41-29	2177-2178	.	_	_	_	AllergienUnverträglichkeitenRisiken
+41-30	2179-2195	Familienanamnese	_	_	_	AllergienUnverträglichkeitenRisiken
+41-31	2196-2201	-LRB-	_	_	_	AllergienUnverträglichkeitenRisiken
+41-32	2202-2208	Mutter	_	_	_	AllergienUnverträglichkeitenRisiken
+41-33	2209-2212	mit	_	_	_	AllergienUnverträglichkeitenRisiken
+41-34	2213-2220	Herztod	_	_	_	AllergienUnverträglichkeitenRisiken
+41-35	2221-2223	im	_	_	_	AllergienUnverträglichkeitenRisiken
+41-36	2224-2229	Alter	_	_	_	AllergienUnverträglichkeitenRisiken
+41-37	2230-2233	von	_	_	_	AllergienUnverträglichkeitenRisiken
+41-38	2234-2239	OTHER	_	_	_	AllergienUnverträglichkeitenRisiken
+41-39	2240-2242	60	_	_	_	AllergienUnverträglichkeitenRisiken
+41-40	2243-2248	Vater	_	_	_	AllergienUnverträglichkeitenRisiken
+41-41	2249-2252	mit	_	_	_	AllergienUnverträglichkeitenRisiken
+41-42	2253-2255	60	_	_	_	AllergienUnverträglichkeitenRisiken
+41-43	2256-2261	-RRB-	_	_	_	AllergienUnverträglichkeitenRisiken
+
+#Text=Allergien:
+42-1	2263-2272	Allergien	_	_	_	AllergienUnverträglichkeitenRisiken
+42-2	2272-2273	:	_	_	_	AllergienUnverträglichkeitenRisiken
+
+#Text=Hausstaub, Tierhaare, Formaldehyd, Wespengift, Pollinosis
+43-1	2274-2283	Hausstaub	_	_	_	AllergienUnverträglichkeitenRisiken
+43-2	2283-2284	,	_	_	_	AllergienUnverträglichkeitenRisiken
+43-3	2285-2294	Tierhaare	_	_	_	AllergienUnverträglichkeitenRisiken
+43-4	2294-2295	,	_	_	_	AllergienUnverträglichkeitenRisiken
+43-5	2296-2307	Formaldehyd	_	_	_	AllergienUnverträglichkeitenRisiken
+43-6	2307-2308	,	_	_	_	AllergienUnverträglichkeitenRisiken
+43-7	2309-2319	Wespengift	_	_	_	AllergienUnverträglichkeitenRisiken
+43-8	2319-2320	,	_	_	_	AllergienUnverträglichkeitenRisiken
+43-9	2321-2331	Pollinosis	_	_	_	AllergienUnverträglichkeitenRisiken
+
+#Text=Externer Zuweiser: NA
+44-1	2333-2341	Externer	_	_	_	Mix
+44-2	2342-2350	Zuweiser	_	_	_	Mix
+44-3	2350-2351	:	_	_	_	Mix
+44-4	2352-2354	NA	_	_	_	Mix
+
+#Text=MRE: ausstehend
+45-1	2355-2358	MRE	_	_	_	Mix
+45-2	2358-2359	:	_	_	_	Mix
+45-3	2360-2370	ausstehend	_	_	_	Mix
+
+#Text=Zusammenfassung:
+46-1	2372-2387	Zusammenfassung	_	_	_	Zusammenfassung
+46-2	2387-2388	:	_	_	_	Zusammenfassung
+
+#Text=Die Aufnahme des Patienten erfolgte über den Notarzt nach erfolgreicher präklinischer Reanimation über 10 Minuten bei Asystolie mit unklarer Latenz. Nach 10min leitliniengerechter Reanimation ROSC. Im Rahmen der Atemwegssicherung durch den Notarzt ergab sich der Nachweis einer massiven Aspiration.
+47-1	2389-2392	Die	_	_	_	Zusammenfassung
+47-2	2393-2401	Aufnahme	_	_	_	Zusammenfassung
+47-3	2402-2405	des	_	_	_	Zusammenfassung
+47-4	2406-2415	Patienten	_	_	_	Zusammenfassung
+47-5	2416-2424	erfolgte	_	_	_	Zusammenfassung
+47-6	2425-2429	über	_	_	_	Zusammenfassung
+47-7	2430-2433	den	_	_	_	Zusammenfassung
+47-8	2434-2441	Notarzt	_	_	_	Zusammenfassung
+47-9	2442-2446	nach	_	_	_	Zusammenfassung
+47-10	2447-2460	erfolgreicher	_	_	_	Zusammenfassung
+47-11	2461-2474	präklinischer	_	_	_	Zusammenfassung
+47-12	2475-2486	Reanimation	_	_	_	Zusammenfassung
+47-13	2487-2491	über	_	_	_	Zusammenfassung
+47-14	2492-2494	10	_	_	_	Zusammenfassung
+47-15	2495-2502	Minuten	_	_	_	Zusammenfassung
+47-16	2503-2506	bei	_	_	_	Zusammenfassung
+47-17	2507-2516	Asystolie	_	_	_	Zusammenfassung
+47-18	2517-2520	mit	_	_	_	Zusammenfassung
+47-19	2521-2529	unklarer	_	_	_	Zusammenfassung
+47-20	2530-2536	Latenz	_	_	_	Zusammenfassung
+47-21	2536-2537	.	_	_	_	Zusammenfassung
+47-22	2538-2542	Nach	_	_	_	Zusammenfassung
+47-23	2543-2548	10min	_	_	_	Zusammenfassung
+47-24	2549-2568	leitliniengerechter	_	_	_	Zusammenfassung
+47-25	2569-2580	Reanimation	_	_	_	Zusammenfassung
+47-26	2581-2585	ROSC	_	_	_	Zusammenfassung
+47-27	2585-2586	.	_	_	_	Zusammenfassung
+47-28	2587-2589	Im	_	_	_	Zusammenfassung
+47-29	2590-2596	Rahmen	_	_	_	Zusammenfassung
+47-30	2597-2600	der	_	_	_	Zusammenfassung
+47-31	2601-2618	Atemwegssicherung	_	_	_	Zusammenfassung
+47-32	2619-2624	durch	_	_	_	Zusammenfassung
+47-33	2625-2628	den	_	_	_	Zusammenfassung
+47-34	2629-2636	Notarzt	_	_	_	Zusammenfassung
+47-35	2637-2642	ergab	_	_	_	Zusammenfassung
+47-36	2643-2647	sich	_	_	_	Zusammenfassung
+47-37	2648-2651	der	_	_	_	Zusammenfassung
+47-38	2652-2660	Nachweis	_	_	_	Zusammenfassung
+47-39	2661-2666	einer	_	_	_	Zusammenfassung
+47-40	2667-2675	massiven	_	_	_	Zusammenfassung
+47-41	2676-2686	Aspiration	_	_	_	Zusammenfassung
+47-42	2686-2687	.	_	_	_	Zusammenfassung
+
+#Text=Bei Eintreffen auf unserer Intensivstation katecholaminpflichtiger, intubierte Patient mit ausgeprägten Beatmungsdrücken. Im EKG zeigten sich keine Hebungen post Reanimationem bei allerdings signifikanter Troponinkinetik DD im Rahmen des persistierenden Katecholamin-refraktären Schocks bei ausgeprägter kombinierter Azidose. Unter Pufferung und hohen Aminlaufraten erfolgte eine CT-Thorax / Abdomen / Schädel ohne wegweisenden Befund. Hier demaskierten sich jedoch massive bipulmonale Infiltrate, eine LAE konnte ausgeschlossen werden. Bei Hämatothorax bds. erfolgte jeweils die Anlage von Bülau-Drainagen.
+48-1	2688-2691	Bei	_	_	_	Zusammenfassung
+48-2	2692-2702	Eintreffen	_	_	_	Zusammenfassung
+48-3	2703-2706	auf	_	_	_	Zusammenfassung
+48-4	2707-2714	unserer	_	_	_	Zusammenfassung
+48-5	2715-2730	Intensivstation	_	_	_	Zusammenfassung
+48-6	2731-2754	katecholaminpflichtiger	_	_	_	Zusammenfassung
+48-7	2754-2755	,	_	_	_	Zusammenfassung
+48-8	2756-2766	intubierte	_	_	_	Zusammenfassung
+48-9	2767-2774	Patient	_	_	_	Zusammenfassung
+48-10	2775-2778	mit	_	_	_	Zusammenfassung
+48-11	2779-2791	ausgeprägten	_	_	_	Zusammenfassung
+48-12	2792-2808	Beatmungsdrücken	_	_	_	Zusammenfassung
+48-13	2808-2809	.	_	_	_	Zusammenfassung
+48-14	2810-2812	Im	_	_	_	Zusammenfassung
+48-15	2813-2816	EKG	_	_	_	Zusammenfassung
+48-16	2817-2824	zeigten	_	_	_	Zusammenfassung
+48-17	2825-2829	sich	_	_	_	Zusammenfassung
+48-18	2830-2835	keine	_	_	_	Zusammenfassung
+48-19	2836-2844	Hebungen	_	_	_	Zusammenfassung
+48-20	2845-2849	post	_	_	_	Zusammenfassung
+48-21	2850-2863	Reanimationem	_	_	_	Zusammenfassung
+48-22	2864-2867	bei	_	_	_	Zusammenfassung
+48-23	2868-2878	allerdings	_	_	_	Zusammenfassung
+48-24	2879-2892	signifikanter	_	_	_	Zusammenfassung
+48-25	2893-2908	Troponinkinetik	_	_	_	Zusammenfassung
+48-26	2909-2911	DD	_	_	_	Zusammenfassung
+48-27	2912-2914	im	_	_	_	Zusammenfassung
+48-28	2915-2921	Rahmen	_	_	_	Zusammenfassung
+48-29	2922-2925	des	_	_	_	Zusammenfassung
+48-30	2926-2941	persistierenden	_	_	_	Zusammenfassung
+48-31	2942-2966	Katecholamin-refraktären	_	_	_	Zusammenfassung
+48-32	2967-2974	Schocks	_	_	_	Zusammenfassung
+48-33	2975-2978	bei	_	_	_	Zusammenfassung
+48-34	2979-2991	ausgeprägter	_	_	_	Zusammenfassung
+48-35	2992-3004	kombinierter	_	_	_	Zusammenfassung
+48-36	3005-3012	Azidose	_	_	_	Zusammenfassung
+48-37	3012-3013	.	_	_	_	Zusammenfassung
+48-38	3014-3019	Unter	_	_	_	Zusammenfassung
+48-39	3020-3029	Pufferung	_	_	_	Zusammenfassung
+48-40	3030-3033	und	_	_	_	Zusammenfassung
+48-41	3034-3039	hohen	_	_	_	Zusammenfassung
+48-42	3040-3053	Aminlaufraten	_	_	_	Zusammenfassung
+48-43	3054-3062	erfolgte	_	_	_	Zusammenfassung
+48-44	3063-3067	eine	_	_	_	Zusammenfassung
+48-45	3068-3077	CT-Thorax	_	_	_	Zusammenfassung
+48-46	3078-3079	/	_	_	_	Zusammenfassung
+48-47	3080-3087	Abdomen	_	_	_	Zusammenfassung
+48-48	3088-3089	/	_	_	_	Zusammenfassung
+48-49	3090-3097	Schädel	_	_	_	Zusammenfassung
+48-50	3098-3102	ohne	_	_	_	Zusammenfassung
+48-51	3103-3115	wegweisenden	_	_	_	Zusammenfassung
+48-52	3116-3122	Befund	_	_	_	Zusammenfassung
+48-53	3122-3123	.	_	_	_	Zusammenfassung
+48-54	3124-3128	Hier	_	_	_	Zusammenfassung
+48-55	3129-3141	demaskierten	_	_	_	Zusammenfassung
+48-56	3142-3146	sich	_	_	_	Zusammenfassung
+48-57	3147-3153	jedoch	_	_	_	Zusammenfassung
+48-58	3154-3161	massive	_	_	_	Zusammenfassung
+48-59	3162-3173	bipulmonale	_	_	_	Zusammenfassung
+48-60	3174-3184	Infiltrate	_	_	_	Zusammenfassung
+48-61	3184-3185	,	_	_	_	Zusammenfassung
+48-62	3186-3190	eine	_	_	_	Zusammenfassung
+48-63	3191-3194	LAE	_	_	_	Zusammenfassung
+48-64	3195-3201	konnte	_	_	_	Zusammenfassung
+48-65	3202-3216	ausgeschlossen	_	_	_	Zusammenfassung
+48-66	3217-3223	werden	_	_	_	Zusammenfassung
+48-67	3223-3224	.	_	_	_	Zusammenfassung
+48-68	3225-3228	Bei	_	_	_	Zusammenfassung
+48-69	3229-3241	Hämatothorax	_	_	_	Zusammenfassung
+48-70	3242-3245	bds	_	_	_	Zusammenfassung
+48-71	3245-3246	.	_	_	_	Zusammenfassung
+48-72	3247-3255	erfolgte	_	_	_	Zusammenfassung
+48-73	3256-3263	jeweils	_	_	_	Zusammenfassung
+48-74	3264-3267	die	_	_	_	Zusammenfassung
+48-75	3268-3274	Anlage	_	_	_	Zusammenfassung
+48-76	3275-3278	von	_	_	_	Zusammenfassung
+48-77	3279-3294	Bülau-Drainagen	_	_	_	Zusammenfassung
+48-78	3294-3295	.	_	_	_	Zusammenfassung
+
+#Text=Im weiteren Verlauf kam es zum raschen Progress der Katecholamin-Laufraten mit Exitus letalis im protrahierten kardiogenen Schock am <[Pseudo] 04/07/2035> um 05.57 Uhr. Unser Mitgefühl gilt den Angehörigen.
+49-1	3296-3298	Im	_	_	_	Zusammenfassung
+49-2	3299-3307	weiteren	_	_	_	Zusammenfassung
+49-3	3308-3315	Verlauf	_	_	_	Zusammenfassung
+49-4	3316-3319	kam	_	_	_	Zusammenfassung
+49-5	3320-3322	es	_	_	_	Zusammenfassung
+49-6	3323-3326	zum	_	_	_	Zusammenfassung
+49-7	3327-3334	raschen	_	_	_	Zusammenfassung
+49-8	3335-3343	Progress	_	_	_	Zusammenfassung
+49-9	3344-3347	der	_	_	_	Zusammenfassung
+49-10	3348-3370	Katecholamin-Laufraten	_	_	_	Zusammenfassung
+49-11	3371-3374	mit	_	_	_	Zusammenfassung
+49-12	3375-3381	Exitus	_	_	_	Zusammenfassung
+49-13	3382-3389	letalis	_	_	_	Zusammenfassung
+49-14	3390-3392	im	_	_	_	Zusammenfassung
+49-15	3393-3406	protrahierten	_	_	_	Zusammenfassung
+49-16	3407-3418	kardiogenen	_	_	_	Zusammenfassung
+49-17	3419-3425	Schock	_	_	_	Zusammenfassung
+49-18	3426-3428	am	_	_	_	Zusammenfassung
+49-19	3429-3438	<[Pseudo]	_	_	_	Zusammenfassung
+49-20	3439-3441	04	_	_	_	Zusammenfassung
+49-21	3441-3442	/	_	_	_	Zusammenfassung
+49-22	3442-3444	07	_	_	_	Zusammenfassung
+49-23	3444-3445	/	_	_	_	Zusammenfassung
+49-24	3445-3449	2035	_	_	_	Zusammenfassung
+49-25	3449-3450	>	_	_	_	Zusammenfassung
+49-26	3451-3453	um	_	_	_	Zusammenfassung
+49-27	3454-3459	05.57	_	_	_	Zusammenfassung
+49-28	3460-3463	Uhr	_	_	_	Zusammenfassung
+49-29	3463-3464	.	_	_	_	Zusammenfassung
+49-30	3465-3470	Unser	_	_	_	Zusammenfassung
+49-31	3471-3480	Mitgefühl	_	_	_	Zusammenfassung
+49-32	3481-3485	gilt	_	_	_	Zusammenfassung
+49-33	3486-3489	den	_	_	_	Zusammenfassung
+49-34	3490-3501	Angehörigen	_	_	_	Zusammenfassung
+49-35	3501-3502	.	_	_	_	Zusammenfassung
+
+#Text=Wir bedanken uns für die Zusammenarbeit und stehen für Rückfragen unter -LRB- B-PHONE -RRB- B-PHONE zur Verfügung.
+50-1	3504-3507	Wir	_	_	_	Abschluss
+50-2	3508-3516	bedanken	_	_	_	Abschluss
+50-3	3517-3520	uns	_	_	_	Abschluss
+50-4	3521-3524	für	_	_	_	Abschluss
+50-5	3525-3528	die	_	_	_	Abschluss
+50-6	3529-3543	Zusammenarbeit	_	_	_	Abschluss
+50-7	3544-3547	und	_	_	_	Abschluss
+50-8	3548-3554	stehen	_	_	_	Abschluss
+50-9	3555-3558	für	_	_	_	Abschluss
+50-10	3559-3569	Rückfragen	_	_	_	Abschluss
+50-11	3570-3575	unter	_	_	_	Abschluss
+50-12	3576-3581	-LRB-	_	_	_	Abschluss
+50-13	3582-3589	B-PHONE	_	_	_	Abschluss
+50-14	3590-3595	-RRB-	_	_	_	Abschluss
+50-15	3596-3603	B-PHONE	_	_	_	Abschluss
+50-16	3604-3607	zur	_	_	_	Abschluss
+50-17	3608-3617	Verfügung	_	_	_	Abschluss
+50-18	3617-3618	.	_	_	_	Abschluss
+
+#Text=Mit freundlichen Grüßen
+51-1	3622-3625	Mit	_	_	_	Abschluss
+51-2	3626-3638	freundlichen	_	_	_	Abschluss
+51-3	3639-3645	Grüßen	_	_	_	Abschluss
+
+#Text=B-PER
+52-1	3646-3651	B-PER	_	_	_	Abschluss
+
+#Text=B-TITLE I-TITLE I-TITLE B-PER I-PER B-TITLE I-TITLE I-TITLE B-PER I-PER I-PER I-PER
+53-1	3652-3659	B-TITLE	_	_	_	Abschluss
+53-2	3660-3667	I-TITLE	_	_	_	Abschluss
+53-3	3668-3675	I-TITLE	_	_	_	Abschluss
+53-4	3676-3681	B-PER	_	_	_	Abschluss
+53-5	3682-3687	I-PER	_	_	_	Abschluss
+53-6	3688-3695	B-TITLE	_	_	_	Abschluss
+53-7	3696-3703	I-TITLE	_	_	_	Abschluss
+53-8	3704-3711	I-TITLE	_	_	_	Abschluss
+53-9	3712-3717	B-PER	_	_	_	Abschluss
+53-10	3718-3723	I-PER	_	_	_	Abschluss
+53-11	3724-3729	I-PER	_	_	_	Abschluss
+53-12	3730-3735	I-PER	_	_	_	Abschluss
+
+#Text=Ärztl. Direktor Oberarzt Facharzt
+54-1	3736-3741	Ärztl	_	_	_	Abschluss
+54-2	3741-3742	.	_	_	_	Abschluss
+54-3	3743-3751	Direktor	_	_	_	Abschluss
+54-4	3752-3760	Oberarzt	_	_	_	Abschluss
+54-5	3761-3769	Facharzt	_	_	_	Abschluss

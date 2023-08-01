@@ -1,0 +1,1053 @@
+#FORMAT=WebAnno TSV 3.3
+#T_SP=webanno.custom.Medication|ClassType|InNarrative
+#T_RL=webanno.custom.MedRel|BT_webanno.custom.Medication
+#T_SP=webanno.custom.Sectionsentence|Sectiontypes
+
+
+#Text=Aufnahmedatum: <[Pseudo] 2041-02-05 >
+1-1	0-13	Aufnahmedatum	_	_	_	_
+1-2	13-14	:	_	_	_	_
+1-3	15-24	<[Pseudo]	_	_	_	_
+1-4	25-29	2041	_	_	_	_
+1-5	29-30	-	_	_	_	_
+1-6	30-32	02	_	_	_	_
+1-7	32-33	-	_	_	_	_
+1-8	33-35	05	_	_	_	_
+1-9	36-37	>	_	_	_	_
+
+#Text=Geburtsdatum: <[Pseudo] 1979-10-28 >
+2-1	38-50	Geburtsdatum	_	_	_	_
+2-2	50-51	:	_	_	_	_
+2-3	52-61	<[Pseudo]	_	_	_	_
+2-4	62-66	1979	_	_	_	_
+2-5	66-67	-	_	_	_	_
+2-6	67-69	10	_	_	_	_
+2-7	69-70	-	_	_	_	_
+2-8	70-72	28	_	_	_	_
+2-9	73-74	>	_	_	_	_
+
+#Text=Alter: 61
+3-1	75-80	Alter	_	_	_	_
+3-2	80-81	:	_	_	_	_
+3-3	82-84	61	_	_	_	_
+
+#Text=über Ihre Patientin B-SALUTE B-PER I-PER geboren am <[Pseudo] 28/10/1979> wh. B-PLZ B-LOC B-ADDR I-ADDR die sich am in unserer Ambulanz vorstellte.
+4-1	86-90	über	_	_	_	Anrede
+4-2	91-95	Ihre	_	_	_	Anrede
+4-3	96-105	Patientin	_	_	_	Anrede
+4-4	106-114	B-SALUTE	_	_	_	Anrede
+4-5	115-120	B-PER	_	_	_	Anrede
+4-6	121-126	I-PER	_	_	_	Anrede
+4-7	127-134	geboren	_	_	_	Anrede
+4-8	135-137	am	_	_	_	Anrede
+4-9	138-147	<[Pseudo]	_	_	_	Anrede
+4-10	148-150	28	_	_	_	Anrede
+4-11	150-151	/	_	_	_	Anrede
+4-12	151-153	10	_	_	_	Anrede
+4-13	153-154	/	_	_	_	Anrede
+4-14	154-158	1979	_	_	_	Anrede
+4-15	158-159	>	_	_	_	Anrede
+4-16	160-162	wh	_	_	_	Anrede
+4-17	162-163	.	_	_	_	Anrede
+4-18	164-169	B-PLZ	_	_	_	Anrede
+4-19	170-175	B-LOC	_	_	_	Anrede
+4-20	176-182	B-ADDR	_	_	_	Anrede
+4-21	183-189	I-ADDR	_	_	_	Anrede
+4-22	190-193	die	_	_	_	Anrede
+4-23	194-198	sich	_	_	_	Anrede
+4-24	199-201	am	_	_	_	Anrede
+4-25	202-204	in	_	_	_	Anrede
+4-26	205-212	unserer	_	_	_	Anrede
+4-27	213-221	Ambulanz	_	_	_	Anrede
+4-28	222-232	vorstellte	_	_	_	Anrede
+4-29	232-233	.	_	_	_	Anrede
+
+#Text=Aktuell:
+5-1	235-242	Aktuell	_	_	_	AktuellDiagnosen
+5-2	242-243	:	_	_	_	AktuellDiagnosen
+
+#Text=- Stabiler kardialer Verlauf bei Ektasie der Aorta ascendens:
+6-1	244-245	-	_	_	_	AktuellDiagnosen
+6-2	246-254	Stabiler	_	_	_	AktuellDiagnosen
+6-3	255-264	kardialer	_	_	_	AktuellDiagnosen
+6-4	265-272	Verlauf	_	_	_	AktuellDiagnosen
+6-5	273-276	bei	_	_	_	AktuellDiagnosen
+6-6	277-284	Ektasie	_	_	_	AktuellDiagnosen
+6-7	285-288	der	_	_	_	AktuellDiagnosen
+6-8	289-294	Aorta	_	_	_	AktuellDiagnosen
+6-9	295-304	ascendens	_	_	_	AktuellDiagnosen
+6-10	304-305	:	_	_	_	AktuellDiagnosen
+
+#Text=-UNK- Echokardiographisch gute linksventrikuläre Funktion
+7-1	306-311	-UNK-	_	_	_	AktuellDiagnosen
+7-2	312-331	Echokardiographisch	_	_	_	AktuellDiagnosen
+7-3	332-336	gute	_	_	_	AktuellDiagnosen
+7-4	337-354	linksventrikuläre	_	_	_	AktuellDiagnosen
+7-5	355-363	Funktion	_	_	_	AktuellDiagnosen
+
+#Text=-UNK- Kein Hinweis auf Progress der Aortenektasie
+8-1	364-369	-UNK-	_	_	_	AktuellDiagnosen
+8-2	370-374	Kein	_	_	_	AktuellDiagnosen
+8-3	375-382	Hinweis	_	_	_	AktuellDiagnosen
+8-4	383-386	auf	_	_	_	AktuellDiagnosen
+8-5	387-395	Progress	_	_	_	AktuellDiagnosen
+8-6	396-399	der	_	_	_	AktuellDiagnosen
+8-7	400-413	Aortenektasie	_	_	_	AktuellDiagnosen
+
+#Text=-UNK- Unauffälliges Belastungs-EKG bis zu 125 Watt -LRB- 89% Ziel-Hf -RRB-
+9-1	414-419	-UNK-	_	_	_	AktuellDiagnosen
+9-2	420-433	Unauffälliges	_	_	_	AktuellDiagnosen
+9-3	434-448	Belastungs-EKG	_	_	_	AktuellDiagnosen
+9-4	449-452	bis	_	_	_	AktuellDiagnosen
+9-5	453-455	zu	_	_	_	AktuellDiagnosen
+9-6	456-459	125	_	_	_	AktuellDiagnosen
+9-7	460-464	Watt	_	_	_	AktuellDiagnosen
+9-8	465-470	-LRB-	_	_	_	AktuellDiagnosen
+9-9	471-473	89	_	_	_	AktuellDiagnosen
+9-10	473-474	%	_	_	_	AktuellDiagnosen
+9-11	475-482	Ziel-Hf	_	_	_	AktuellDiagnosen
+9-12	483-488	-RRB-	_	_	_	AktuellDiagnosen
+
+#Text=-UNK- Klinisch stabiler kardialer Verlauf
+10-1	489-494	-UNK-	_	_	_	AktuellDiagnosen
+10-2	495-503	Klinisch	_	_	_	AktuellDiagnosen
+10-3	504-512	stabiler	_	_	_	AktuellDiagnosen
+10-4	513-522	kardialer	_	_	_	AktuellDiagnosen
+10-5	523-530	Verlauf	_	_	_	AktuellDiagnosen
+
+#Text=Diagnosen:
+11-1	532-541	Diagnosen	_	_	_	Diagnosen
+11-2	541-542	:	_	_	_	Diagnosen
+
+#Text=- Ektasie der Aorta ascendens -LRB- 40 mm im Kardio-MRT vom <[Pseudo] 22/01/2039> ED <[Pseudo] 2033> -RRB-
+12-1	543-544	-	_	_	_	Diagnosen
+12-2	545-552	Ektasie	_	_	_	Diagnosen
+12-3	553-556	der	_	_	_	Diagnosen
+12-4	557-562	Aorta	_	_	_	Diagnosen
+12-5	563-572	ascendens	_	_	_	Diagnosen
+12-6	573-578	-LRB-	_	_	_	Diagnosen
+12-7	579-581	40	_	_	_	Diagnosen
+12-8	582-584	mm	_	_	_	Diagnosen
+12-9	585-587	im	_	_	_	Diagnosen
+12-10	588-598	Kardio-MRT	_	_	_	Diagnosen
+12-11	599-602	vom	_	_	_	Diagnosen
+12-12	603-612	<[Pseudo]	_	_	_	Diagnosen
+12-13	613-615	22	_	_	_	Diagnosen
+12-14	615-616	/	_	_	_	Diagnosen
+12-15	616-618	01	_	_	_	Diagnosen
+12-16	618-619	/	_	_	_	Diagnosen
+12-17	619-623	2039	_	_	_	Diagnosen
+12-18	623-624	>	_	_	_	Diagnosen
+12-19	625-627	ED	_	_	_	Diagnosen
+12-20	628-637	<[Pseudo]	_	_	_	Diagnosen
+12-21	638-642	2033	_	_	_	Diagnosen
+12-22	642-643	>	_	_	_	Diagnosen
+12-23	644-649	-RRB-	_	_	_	Diagnosen
+
+#Text=-UNK- Aktuell: Aorta ascendens -LRB- 39 mm -RRB- , Aortenwurzel -LRB- 37 mm -RRB- in TTE <[Pseudo] 05/02/2041>
+13-1	650-655	-UNK-	_	_	_	Diagnosen
+13-2	656-663	Aktuell	_	_	_	Diagnosen
+13-3	663-664	:	_	_	_	Diagnosen
+13-4	665-670	Aorta	_	_	_	Diagnosen
+13-5	671-680	ascendens	_	_	_	Diagnosen
+13-6	681-686	-LRB-	_	_	_	Diagnosen
+13-7	687-689	39	_	_	_	Diagnosen
+13-8	690-692	mm	_	_	_	Diagnosen
+13-9	693-698	-RRB-	_	_	_	Diagnosen
+13-10	699-700	,	_	_	_	Diagnosen
+13-11	701-713	Aortenwurzel	_	_	_	Diagnosen
+13-12	714-719	-LRB-	_	_	_	Diagnosen
+13-13	720-722	37	_	_	_	Diagnosen
+13-14	723-725	mm	_	_	_	Diagnosen
+13-15	726-731	-RRB-	_	_	_	Diagnosen
+13-16	732-734	in	_	_	_	Diagnosen
+13-17	735-738	TTE	_	_	_	Diagnosen
+13-18	739-748	<[Pseudo]	_	_	_	Diagnosen
+13-19	749-751	05	_	_	_	Diagnosen
+13-20	751-752	/	_	_	_	Diagnosen
+13-21	752-754	02	_	_	_	Diagnosen
+13-22	754-755	/	_	_	_	Diagnosen
+13-23	755-759	2041	_	_	_	Diagnosen
+13-24	759-760	>	_	_	_	Diagnosen
+
+#Text=- MR-graphisch normale linksventrikuläre Funktion -LRB- LVEF 61%, MRT vom <[Pseudo] 22/01/2039> -RRB-
+14-1	761-762	-	_	_	_	Diagnosen
+14-2	763-775	MR-graphisch	_	_	_	Diagnosen
+14-3	776-783	normale	_	_	_	Diagnosen
+14-4	784-801	linksventrikuläre	_	_	_	Diagnosen
+14-5	802-810	Funktion	_	_	_	Diagnosen
+14-6	811-816	-LRB-	_	_	_	Diagnosen
+14-7	817-821	LVEF	_	_	_	Diagnosen
+14-8	822-824	61	_	_	_	Diagnosen
+14-9	824-825	%	_	_	_	Diagnosen
+14-10	825-826	,	_	_	_	Diagnosen
+14-11	827-830	MRT	_	_	_	Diagnosen
+14-12	831-834	vom	_	_	_	Diagnosen
+14-13	835-844	<[Pseudo]	_	_	_	Diagnosen
+14-14	845-847	22	_	_	_	Diagnosen
+14-15	847-848	/	_	_	_	Diagnosen
+14-16	848-850	01	_	_	_	Diagnosen
+14-17	850-851	/	_	_	_	Diagnosen
+14-18	851-855	2039	_	_	_	Diagnosen
+14-19	855-856	>	_	_	_	Diagnosen
+14-20	857-862	-RRB-	_	_	_	Diagnosen
+
+#Text=- Facettendenervierung LWS -LRB- ED <[Pseudo] 2039> -RRB-
+15-1	863-864	-	_	_	_	Diagnosen
+15-2	865-885	Facettendenervierung	_	_	_	Diagnosen
+15-3	886-889	LWS	_	_	_	Diagnosen
+15-4	890-895	-LRB-	_	_	_	Diagnosen
+15-5	896-898	ED	_	_	_	Diagnosen
+15-6	899-908	<[Pseudo]	_	_	_	Diagnosen
+15-7	909-913	2039	_	_	_	Diagnosen
+15-8	913-914	>	_	_	_	Diagnosen
+15-9	915-920	-RRB-	_	_	_	Diagnosen
+
+#Text=- Mitralklappenprolaps ohne Insuffizienz
+16-1	921-922	-	_	_	_	Diagnosen
+16-2	923-943	Mitralklappenprolaps	_	_	_	Diagnosen
+16-3	944-948	ohne	_	_	_	Diagnosen
+16-4	949-961	Insuffizienz	_	_	_	Diagnosen
+
+#Text=- Z.n. operativer Versorgung einer Narbenhernie, <[Pseudo] 06/2037>
+17-1	962-963	-	_	_	_	Diagnosen
+17-2	964-967	Z.n	_	_	_	Diagnosen
+17-3	967-968	.	_	_	_	Diagnosen
+17-4	969-979	operativer	_	_	_	Diagnosen
+17-5	980-990	Versorgung	_	_	_	Diagnosen
+17-6	991-996	einer	_	_	_	Diagnosen
+17-7	997-1009	Narbenhernie	_	_	_	Diagnosen
+17-8	1009-1010	,	_	_	_	Diagnosen
+17-9	1011-1020	<[Pseudo]	_	_	_	Diagnosen
+17-10	1021-1023	06	_	_	_	Diagnosen
+17-11	1023-1024	/	_	_	_	Diagnosen
+17-12	1024-1028	2037	_	_	_	Diagnosen
+17-13	1028-1029	>	_	_	_	Diagnosen
+
+#Text=- Z.n. Cholecystektomie bei Cholezystolithiasis <[Pseudo] 07/2039>
+18-1	1030-1031	-	_	_	_	Diagnosen
+18-2	1032-1035	Z.n	_	_	_	Diagnosen
+18-3	1035-1036	.	_	_	_	Diagnosen
+18-4	1037-1053	Cholecystektomie	_	_	_	Diagnosen
+18-5	1054-1057	bei	_	_	_	Diagnosen
+18-6	1058-1077	Cholezystolithiasis	_	_	_	Diagnosen
+18-7	1078-1087	<[Pseudo]	_	_	_	Diagnosen
+18-8	1088-1090	07	_	_	_	Diagnosen
+18-9	1090-1091	/	_	_	_	Diagnosen
+18-10	1091-1095	2039	_	_	_	Diagnosen
+18-11	1095-1096	>	_	_	_	Diagnosen
+
+#Text=- Leberzyste ED <[Pseudo] 2038>
+19-1	1097-1098	-	_	_	_	Diagnosen
+19-2	1099-1109	Leberzyste	_	_	_	Diagnosen
+19-3	1110-1112	ED	_	_	_	Diagnosen
+19-4	1113-1122	<[Pseudo]	_	_	_	Diagnosen
+19-5	1123-1127	2038	_	_	_	Diagnosen
+19-6	1127-1128	>	_	_	_	Diagnosen
+
+#Text=Kardiovaskuläre Risikofaktoren: Hypercholesterinämie
+20-1	1130-1145	Kardiovaskuläre	_	_	_	AllergienUnverträglichkeitenRisiken
+20-2	1146-1160	Risikofaktoren	_	_	_	AllergienUnverträglichkeitenRisiken
+20-3	1160-1161	:	_	_	_	AllergienUnverträglichkeitenRisiken
+20-4	1162-1182	Hypercholesterinämie	_	_	_	AllergienUnverträglichkeitenRisiken
+
+#Text=Allergien: Keine bekannt
+21-1	1183-1192	Allergien	_	_	_	AllergienUnverträglichkeitenRisiken
+21-2	1192-1193	:	_	_	_	AllergienUnverträglichkeitenRisiken
+21-3	1194-1199	Keine	_	_	_	AllergienUnverträglichkeitenRisiken
+21-4	1200-1207	bekannt	_	_	_	AllergienUnverträglichkeitenRisiken
+
+#Text=Anamnese:
+22-1	1209-1217	Anamnese	_	_	_	Anamnese
+22-2	1217-1218	:	_	_	_	Anamnese
+
+#Text=Die Vorstellung in unserer B-ORG I-ORG erfolgt zur Verlaufskontrolle bei bekannter Ektasie der Aorta ascendens. Seit letzter Vorstellung gäbe es keine Veränderung. Die Patientin beschreibt jedoch Schmerzen im Rücken bei Wirbelkörperverschiebung. Zudem bestünden muskuläre Krämpfe in Ruhe im Brustbereich. Im Alltag bestünde eine gute Belastbarkeit ohne inadäquate Belastungsdyspnoe -LRB- NYHA I -RRB- . Es bestünden keine belastungsabhängigen und -unabhängigen pectanginösen Beschwerden. Palpitationen, Schwindel sowie stattgehabte Synkopen werden verneint. Es bestünde keine Nykturie bei ca. einmaliger Miktion pro Nacht. Periphere Ödeme seien bei Gewichtskonstanz nicht aufgefallen. Die häuslichen Blutdruckmessungen ergäben Werte um 110/70 mmHg. Subjektiv bestünde seit der letzten Vorstellung ein stabiler kardialer Verlauf.
+23-1	1219-1222	Die	_	_	_	Anamnese
+23-2	1223-1234	Vorstellung	_	_	_	Anamnese
+23-3	1235-1237	in	_	_	_	Anamnese
+23-4	1238-1245	unserer	_	_	_	Anamnese
+23-5	1246-1251	B-ORG	_	_	_	Anamnese
+23-6	1252-1257	I-ORG	_	_	_	Anamnese
+23-7	1258-1265	erfolgt	_	_	_	Anamnese
+23-8	1266-1269	zur	_	_	_	Anamnese
+23-9	1270-1287	Verlaufskontrolle	_	_	_	Anamnese
+23-10	1288-1291	bei	_	_	_	Anamnese
+23-11	1292-1301	bekannter	_	_	_	Anamnese
+23-12	1302-1309	Ektasie	_	_	_	Anamnese
+23-13	1310-1313	der	_	_	_	Anamnese
+23-14	1314-1319	Aorta	_	_	_	Anamnese
+23-15	1320-1329	ascendens	_	_	_	Anamnese
+23-16	1329-1330	.	_	_	_	Anamnese
+23-17	1331-1335	Seit	_	_	_	Anamnese
+23-18	1336-1343	letzter	_	_	_	Anamnese
+23-19	1344-1355	Vorstellung	_	_	_	Anamnese
+23-20	1356-1360	gäbe	_	_	_	Anamnese
+23-21	1361-1363	es	_	_	_	Anamnese
+23-22	1364-1369	keine	_	_	_	Anamnese
+23-23	1370-1381	Veränderung	_	_	_	Anamnese
+23-24	1381-1382	.	_	_	_	Anamnese
+23-25	1383-1386	Die	_	_	_	Anamnese
+23-26	1387-1396	Patientin	_	_	_	Anamnese
+23-27	1397-1407	beschreibt	_	_	_	Anamnese
+23-28	1408-1414	jedoch	_	_	_	Anamnese
+23-29	1415-1424	Schmerzen	_	_	_	Anamnese
+23-30	1425-1427	im	_	_	_	Anamnese
+23-31	1428-1434	Rücken	_	_	_	Anamnese
+23-32	1435-1438	bei	_	_	_	Anamnese
+23-33	1439-1463	Wirbelkörperverschiebung	_	_	_	Anamnese
+23-34	1463-1464	.	_	_	_	Anamnese
+23-35	1465-1470	Zudem	_	_	_	Anamnese
+23-36	1471-1480	bestünden	_	_	_	Anamnese
+23-37	1481-1490	muskuläre	_	_	_	Anamnese
+23-38	1491-1498	Krämpfe	_	_	_	Anamnese
+23-39	1499-1501	in	_	_	_	Anamnese
+23-40	1502-1506	Ruhe	_	_	_	Anamnese
+23-41	1507-1509	im	_	_	_	Anamnese
+23-42	1510-1522	Brustbereich	_	_	_	Anamnese
+23-43	1522-1523	.	_	_	_	Anamnese
+23-44	1524-1526	Im	_	_	_	Anamnese
+23-45	1527-1533	Alltag	_	_	_	Anamnese
+23-46	1534-1542	bestünde	_	_	_	Anamnese
+23-47	1543-1547	eine	_	_	_	Anamnese
+23-48	1548-1552	gute	_	_	_	Anamnese
+23-49	1553-1566	Belastbarkeit	_	_	_	Anamnese
+23-50	1567-1571	ohne	_	_	_	Anamnese
+23-51	1572-1582	inadäquate	_	_	_	Anamnese
+23-52	1583-1600	Belastungsdyspnoe	_	_	_	Anamnese
+23-53	1601-1606	-LRB-	_	_	_	Anamnese
+23-54	1607-1611	NYHA	_	_	_	Anamnese
+23-55	1612-1613	I	_	_	_	Anamnese
+23-56	1614-1619	-RRB-	_	_	_	Anamnese
+23-57	1620-1621	.	_	_	_	Anamnese
+23-58	1622-1624	Es	_	_	_	Anamnese
+23-59	1625-1634	bestünden	_	_	_	Anamnese
+23-60	1635-1640	keine	_	_	_	Anamnese
+23-61	1641-1661	belastungsabhängigen	_	_	_	Anamnese
+23-62	1662-1665	und	_	_	_	Anamnese
+23-63	1666-1679	-unabhängigen	_	_	_	Anamnese
+23-64	1680-1693	pectanginösen	_	_	_	Anamnese
+23-65	1694-1705	Beschwerden	_	_	_	Anamnese
+23-66	1705-1706	.	_	_	_	Anamnese
+23-67	1707-1720	Palpitationen	_	_	_	Anamnese
+23-68	1720-1721	,	_	_	_	Anamnese
+23-69	1722-1731	Schwindel	_	_	_	Anamnese
+23-70	1732-1737	sowie	_	_	_	Anamnese
+23-71	1738-1750	stattgehabte	_	_	_	Anamnese
+23-72	1751-1759	Synkopen	_	_	_	Anamnese
+23-73	1760-1766	werden	_	_	_	Anamnese
+23-74	1767-1775	verneint	_	_	_	Anamnese
+23-75	1775-1776	.	_	_	_	Anamnese
+23-76	1777-1779	Es	_	_	_	Anamnese
+23-77	1780-1788	bestünde	_	_	_	Anamnese
+23-78	1789-1794	keine	_	_	_	Anamnese
+23-79	1795-1803	Nykturie	_	_	_	Anamnese
+23-80	1804-1807	bei	_	_	_	Anamnese
+23-81	1808-1811	ca.	_	_	_	Anamnese
+23-82	1812-1822	einmaliger	_	_	_	Anamnese
+23-83	1823-1830	Miktion	_	_	_	Anamnese
+23-84	1831-1834	pro	_	_	_	Anamnese
+23-85	1835-1840	Nacht	_	_	_	Anamnese
+23-86	1840-1841	.	_	_	_	Anamnese
+23-87	1842-1851	Periphere	_	_	_	Anamnese
+23-88	1852-1857	Ödeme	_	_	_	Anamnese
+23-89	1858-1863	seien	_	_	_	Anamnese
+23-90	1864-1867	bei	_	_	_	Anamnese
+23-91	1868-1884	Gewichtskonstanz	_	_	_	Anamnese
+23-92	1885-1890	nicht	_	_	_	Anamnese
+23-93	1891-1902	aufgefallen	_	_	_	Anamnese
+23-94	1902-1903	.	_	_	_	Anamnese
+23-95	1904-1907	Die	_	_	_	Anamnese
+23-96	1908-1918	häuslichen	_	_	_	Anamnese
+23-97	1919-1937	Blutdruckmessungen	_	_	_	Anamnese
+23-98	1938-1945	ergäben	_	_	_	Anamnese
+23-99	1946-1951	Werte	_	_	_	Anamnese
+23-100	1952-1954	um	_	_	_	Anamnese
+23-101	1955-1958	110	_	_	_	Anamnese
+23-102	1958-1959	/	_	_	_	Anamnese
+23-103	1959-1961	70	_	_	_	Anamnese
+23-104	1962-1966	mmHg	_	_	_	Anamnese
+23-105	1966-1967	.	_	_	_	Anamnese
+23-106	1968-1977	Subjektiv	_	_	_	Anamnese
+23-107	1978-1986	bestünde	_	_	_	Anamnese
+23-108	1987-1991	seit	_	_	_	Anamnese
+23-109	1992-1995	der	_	_	_	Anamnese
+23-110	1996-2003	letzten	_	_	_	Anamnese
+23-111	2004-2015	Vorstellung	_	_	_	Anamnese
+23-112	2016-2019	ein	_	_	_	Anamnese
+23-113	2020-2028	stabiler	_	_	_	Anamnese
+23-114	2029-2038	kardialer	_	_	_	Anamnese
+23-115	2039-2046	Verlauf	_	_	_	Anamnese
+23-116	2046-2047	.	_	_	_	Anamnese
+
+#Text=Aktuelle Medikation:
+24-1	2049-2057	Aktuelle	_	_	_	EntlassMedikation
+24-2	2058-2068	Medikation	_	_	_	EntlassMedikation
+24-3	2068-2069	:	_	_	_	EntlassMedikation
+
+#Text=Ramipril 2,5mg 1-0-0
+25-1	2070-2078	Ramipril	ACTIVEING	false	_	EntlassMedikation
+25-2	2079-2082	2,5	STRENGTH[1]	false[1]	25-1[0_1]	EntlassMedikation
+25-3	2082-2084	mg	STRENGTH[1]	false[1]	_	EntlassMedikation
+25-4	2085-2086	1	FREQUENCY[2]	false[2]	25-1[0_2]	EntlassMedikation
+25-5	2086-2087	-	FREQUENCY[2]	false[2]	_	EntlassMedikation
+25-6	2087-2088	0	FREQUENCY[2]	false[2]	_	EntlassMedikation
+25-7	2088-2089	-	FREQUENCY[2]	false[2]	_	EntlassMedikation
+25-8	2089-2090	0	FREQUENCY[2]	false[2]	_	EntlassMedikation
+
+#Text=Körperlicher Untersuchungsbefund:
+26-1	2092-2104	Körperlicher	_	_	_	KUBefunde
+26-2	2105-2124	Untersuchungsbefund	_	_	_	KUBefunde
+26-3	2124-2125	:	_	_	_	KUBefunde
+
+#Text=AZ: gut
+27-1	2126-2128	AZ	_	_	_	KUBefunde
+27-2	2128-2129	:	_	_	_	KUBefunde
+27-3	2130-2133	gut	_	_	_	KUBefunde
+
+#Text=EZ: 175 cm 75 kg
+28-1	2134-2136	EZ	_	_	_	KUBefunde
+28-2	2136-2137	:	_	_	_	KUBefunde
+28-3	2138-2141	175	_	_	_	KUBefunde
+28-4	2142-2144	cm	_	_	_	KUBefunde
+28-5	2145-2147	75	_	_	_	KUBefunde
+28-6	2148-2150	kg	_	_	_	KUBefunde
+
+#Text=HF: 61/min, regelmäßig
+29-1	2151-2153	HF	_	_	_	KUBefunde
+29-2	2153-2154	:	_	_	_	KUBefunde
+29-3	2155-2157	61	_	_	_	KUBefunde
+29-4	2157-2158	/	_	_	_	KUBefunde
+29-5	2158-2161	min	_	_	_	KUBefunde
+29-6	2161-2162	,	_	_	_	KUBefunde
+29-7	2163-2173	regelmäßig	_	_	_	KUBefunde
+
+#Text=RR: 105/90 mmHg
+30-1	2174-2176	RR	_	_	_	KUBefunde
+30-2	2176-2177	:	_	_	_	KUBefunde
+30-3	2178-2181	105	_	_	_	KUBefunde
+30-4	2181-2182	/	_	_	_	KUBefunde
+30-5	2182-2184	90	_	_	_	KUBefunde
+30-6	2185-2189	mmHg	_	_	_	KUBefunde
+
+#Text=Keine Zyanose, Anämiezeichen, Ikterus.
+31-1	2190-2195	Keine	_	_	_	KUBefunde
+31-2	2196-2203	Zyanose	_	_	_	KUBefunde
+31-3	2203-2204	,	_	_	_	KUBefunde
+31-4	2205-2218	Anämiezeichen	_	_	_	KUBefunde
+31-5	2218-2219	,	_	_	_	KUBefunde
+31-6	2220-2227	Ikterus	_	_	_	KUBefunde
+31-7	2227-2228	.	_	_	_	KUBefunde
+
+#Text=HT: rein, keine path. Geräusche
+32-1	2229-2231	HT	_	_	_	KUBefunde
+32-2	2231-2232	:	_	_	_	KUBefunde
+32-3	2233-2237	rein	_	_	_	KUBefunde
+32-4	2237-2238	,	_	_	_	KUBefunde
+32-5	2239-2244	keine	_	_	_	KUBefunde
+32-6	2245-2249	path	_	_	_	KUBefunde
+32-7	2249-2250	.	_	_	_	KUBefunde
+32-8	2251-2260	Geräusche	_	_	_	KUBefunde
+
+#Text=Lunge: vesikuläres AG, keine NG
+33-1	2261-2266	Lunge	_	_	_	KUBefunde
+33-2	2266-2267	:	_	_	_	KUBefunde
+33-3	2268-2279	vesikuläres	_	_	_	KUBefunde
+33-4	2280-2282	AG	_	_	_	KUBefunde
+33-5	2282-2283	,	_	_	_	KUBefunde
+33-6	2284-2289	keine	_	_	_	KUBefunde
+33-7	2290-2292	NG	_	_	_	KUBefunde
+
+#Text=Periphere Ödeme: keine
+34-1	2293-2302	Periphere	_	_	_	KUBefunde
+34-2	2303-2308	Ödeme	_	_	_	KUBefunde
+34-3	2308-2309	:	_	_	_	KUBefunde
+34-4	2310-2315	keine	_	_	_	KUBefunde
+
+#Text=Ruhe-EKG:
+35-1	2318-2326	Ruhe-EKG	_	_	_	Befunde
+35-2	2326-2327	:	_	_	_	Befunde
+
+#Text=Normofrequenter Sinusrhythmus, HF 61/min, Steiltyp. PQ 150 ms, QRS 98 ms, QTc 430 ms. Beginnender inkompletter RSB -LRB- vorbekannt -RRB- . Regelrechte R-Progression, R/S Umschlag in V2/V3, keine S-Persistenz. Keine signifikanten Erregungsrückbildungsstörungen.
+36-1	2328-2343	Normofrequenter	_	_	_	Befunde
+36-2	2344-2357	Sinusrhythmus	_	_	_	Befunde
+36-3	2357-2358	,	_	_	_	Befunde
+36-4	2359-2361	HF	_	_	_	Befunde
+36-5	2362-2364	61	_	_	_	Befunde
+36-6	2364-2365	/	_	_	_	Befunde
+36-7	2365-2368	min	_	_	_	Befunde
+36-8	2368-2369	,	_	_	_	Befunde
+36-9	2370-2378	Steiltyp	_	_	_	Befunde
+36-10	2378-2379	.	_	_	_	Befunde
+36-11	2380-2382	PQ	_	_	_	Befunde
+36-12	2383-2386	150	_	_	_	Befunde
+36-13	2387-2389	ms	_	_	_	Befunde
+36-14	2389-2390	,	_	_	_	Befunde
+36-15	2391-2394	QRS	_	_	_	Befunde
+36-16	2395-2397	98	_	_	_	Befunde
+36-17	2398-2400	ms	_	_	_	Befunde
+36-18	2400-2401	,	_	_	_	Befunde
+36-19	2402-2405	QTc	_	_	_	Befunde
+36-20	2406-2409	430	_	_	_	Befunde
+36-21	2410-2412	ms	_	_	_	Befunde
+36-22	2412-2413	.	_	_	_	Befunde
+36-23	2414-2425	Beginnender	_	_	_	Befunde
+36-24	2426-2438	inkompletter	_	_	_	Befunde
+36-25	2439-2442	RSB	_	_	_	Befunde
+36-26	2443-2448	-LRB-	_	_	_	Befunde
+36-27	2449-2459	vorbekannt	_	_	_	Befunde
+36-28	2460-2465	-RRB-	_	_	_	Befunde
+36-29	2466-2467	.	_	_	_	Befunde
+36-30	2468-2479	Regelrechte	_	_	_	Befunde
+36-31	2480-2493	R-Progression	_	_	_	Befunde
+36-32	2493-2494	,	_	_	_	Befunde
+36-33	2495-2496	R	_	_	_	Befunde
+36-34	2496-2497	/	_	_	_	Befunde
+36-35	2497-2498	S	_	_	_	Befunde
+36-36	2499-2507	Umschlag	_	_	_	Befunde
+36-37	2508-2510	in	_	_	_	Befunde
+36-38	2511-2513	V2	_	_	_	Befunde
+36-39	2513-2514	/	_	_	_	Befunde
+36-40	2514-2516	V3	_	_	_	Befunde
+36-41	2516-2517	,	_	_	_	Befunde
+36-42	2518-2523	keine	_	_	_	Befunde
+36-43	2524-2536	S-Persistenz	_	_	_	Befunde
+36-44	2536-2537	.	_	_	_	Befunde
+36-45	2538-2543	Keine	_	_	_	Befunde
+36-46	2544-2557	signifikanten	_	_	_	Befunde
+36-47	2558-2588	Erregungsrückbildungsstörungen	_	_	_	Befunde
+36-48	2588-2589	.	_	_	_	Befunde
+
+#Text=Belastungs-EKG:
+37-1	2591-2605	Belastungs-EKG	_	_	_	Befunde
+37-2	2605-2606	:	_	_	_	Befunde
+
+#Text=Beschreibender Abschnitt:
+38-1	2607-2621	Beschreibender	_	_	_	Befunde
+38-2	2622-2631	Abschnitt	_	_	_	Befunde
+38-3	2631-2632	:	_	_	_	Befunde
+
+#Text=Stufenweise fahrradergometrische Belastung im Sitzen bis 125 Watt über 00:23 min. Maximale Frequenz 143/min -LRB- 89% der Zielfrequenz -RRB- . Maximaler Blutdruck systolisch 172 mmHg, diastolisch 98 mmHg. Abbruch wegen Atemnot beim Tragen von MNS-Maske. Keine Angina pectoris oder inadäquate Dyspnoe. Keine periphere Zyanose.
+39-1	2633-2644	Stufenweise	_	_	_	Befunde
+39-2	2645-2665	fahrradergometrische	_	_	_	Befunde
+39-3	2666-2675	Belastung	_	_	_	Befunde
+39-4	2676-2678	im	_	_	_	Befunde
+39-5	2679-2685	Sitzen	_	_	_	Befunde
+39-6	2686-2689	bis	_	_	_	Befunde
+39-7	2690-2693	125	_	_	_	Befunde
+39-8	2694-2698	Watt	_	_	_	Befunde
+39-9	2699-2703	über	_	_	_	Befunde
+39-10	2704-2709	00:23	_	_	_	Befunde
+39-11	2710-2714	min.	_	_	_	Befunde
+39-12	2715-2723	Maximale	_	_	_	Befunde
+39-13	2724-2732	Frequenz	_	_	_	Befunde
+39-14	2733-2736	143	_	_	_	Befunde
+39-15	2736-2737	/	_	_	_	Befunde
+39-16	2737-2740	min	_	_	_	Befunde
+39-17	2741-2746	-LRB-	_	_	_	Befunde
+39-18	2747-2749	89	_	_	_	Befunde
+39-19	2749-2750	%	_	_	_	Befunde
+39-20	2751-2754	der	_	_	_	Befunde
+39-21	2755-2767	Zielfrequenz	_	_	_	Befunde
+39-22	2768-2773	-RRB-	_	_	_	Befunde
+39-23	2774-2775	.	_	_	_	Befunde
+39-24	2776-2785	Maximaler	_	_	_	Befunde
+39-25	2786-2795	Blutdruck	_	_	_	Befunde
+39-26	2796-2806	systolisch	_	_	_	Befunde
+39-27	2807-2810	172	_	_	_	Befunde
+39-28	2811-2815	mmHg	_	_	_	Befunde
+39-29	2815-2816	,	_	_	_	Befunde
+39-30	2817-2828	diastolisch	_	_	_	Befunde
+39-31	2829-2831	98	_	_	_	Befunde
+39-32	2832-2836	mmHg	_	_	_	Befunde
+39-33	2836-2837	.	_	_	_	Befunde
+39-34	2838-2845	Abbruch	_	_	_	Befunde
+39-35	2846-2851	wegen	_	_	_	Befunde
+39-36	2852-2859	Atemnot	_	_	_	Befunde
+39-37	2860-2864	beim	_	_	_	Befunde
+39-38	2865-2871	Tragen	_	_	_	Befunde
+39-39	2872-2875	von	_	_	_	Befunde
+39-40	2876-2885	MNS-Maske	_	_	_	Befunde
+39-41	2885-2886	.	_	_	_	Befunde
+39-42	2887-2892	Keine	_	_	_	Befunde
+39-43	2893-2899	Angina	_	_	_	Befunde
+39-44	2900-2908	pectoris	_	_	_	Befunde
+39-45	2909-2913	oder	_	_	_	Befunde
+39-46	2914-2924	inadäquate	_	_	_	Befunde
+39-47	2925-2932	Dyspnoe	_	_	_	Befunde
+39-48	2932-2933	.	_	_	_	Befunde
+39-49	2934-2939	Keine	_	_	_	Befunde
+39-50	2940-2949	periphere	_	_	_	Befunde
+39-51	2950-2957	Zyanose	_	_	_	Befunde
+39-52	2957-2958	.	_	_	_	Befunde
+
+#Text=Beurteilender Abschnitt:
+40-1	2959-2972	Beurteilender	_	_	_	Befunde
+40-2	2973-2982	Abschnitt	_	_	_	Befunde
+40-3	2982-2983	:	_	_	_	Befunde
+
+#Text=Unter maximaler Belastung diskrete aszendierende ST-Streckensenkungen in den Ableitungen V4-V6 mit rascher Rückbildung in der Erholungsphase.
+41-1	2984-2989	Unter	_	_	_	Befunde
+41-2	2990-2999	maximaler	_	_	_	Befunde
+41-3	3000-3009	Belastung	_	_	_	Befunde
+41-4	3010-3018	diskrete	_	_	_	Befunde
+41-5	3019-3032	aszendierende	_	_	_	Befunde
+41-6	3033-3053	ST-Streckensenkungen	_	_	_	Befunde
+41-7	3054-3056	in	_	_	_	Befunde
+41-8	3057-3060	den	_	_	_	Befunde
+41-9	3061-3072	Ableitungen	_	_	_	Befunde
+41-10	3073-3078	V4-V6	_	_	_	Befunde
+41-11	3079-3082	mit	_	_	_	Befunde
+41-12	3083-3090	rascher	_	_	_	Befunde
+41-13	3091-3102	Rückbildung	_	_	_	Befunde
+41-14	3103-3105	in	_	_	_	Befunde
+41-15	3106-3109	der	_	_	_	Befunde
+41-16	3110-3124	Erholungsphase	_	_	_	Befunde
+41-17	3124-3125	.	_	_	_	Befunde
+
+#Text=Keine signifikanten Kammerendteilveränderungen unter Belastung. Durchgehend Sinusrhythmus. Keine VES. Keine höhergradigen Herzrhythmusstörungen. Regelrechter Anstieg und Abfall von Herzfrequenz und Blutdruck.
+42-1	3126-3131	Keine	_	_	_	Befunde
+42-2	3132-3145	signifikanten	_	_	_	Befunde
+42-3	3146-3172	Kammerendteilveränderungen	_	_	_	Befunde
+42-4	3173-3178	unter	_	_	_	Befunde
+42-5	3179-3188	Belastung	_	_	_	Befunde
+42-6	3188-3189	.	_	_	_	Befunde
+42-7	3190-3201	Durchgehend	_	_	_	Befunde
+42-8	3202-3215	Sinusrhythmus	_	_	_	Befunde
+42-9	3215-3216	.	_	_	_	Befunde
+42-10	3217-3222	Keine	_	_	_	Befunde
+42-11	3223-3226	VES	_	_	_	Befunde
+42-12	3226-3227	.	_	_	_	Befunde
+42-13	3228-3233	Keine	_	_	_	Befunde
+42-14	3234-3247	höhergradigen	_	_	_	Befunde
+42-15	3248-3269	Herzrhythmusstörungen	_	_	_	Befunde
+42-16	3269-3270	.	_	_	_	Befunde
+42-17	3271-3283	Regelrechter	_	_	_	Befunde
+42-18	3284-3291	Anstieg	_	_	_	Befunde
+42-19	3292-3295	und	_	_	_	Befunde
+42-20	3296-3302	Abfall	_	_	_	Befunde
+42-21	3303-3306	von	_	_	_	Befunde
+42-22	3307-3319	Herzfrequenz	_	_	_	Befunde
+42-23	3320-3323	und	_	_	_	Befunde
+42-24	3324-3333	Blutdruck	_	_	_	Befunde
+42-25	3333-3334	.	_	_	_	Befunde
+
+#Text=Transthorakale Echokardiographie:
+43-1	3336-3350	Transthorakale	_	_	_	EchoBefunde
+43-2	3351-3368	Echokardiographie	_	_	_	EchoBefunde
+43-3	3368-3369	:	_	_	_	EchoBefunde
+
+#Text=Soweit von transthorakal einsehbar Aorta ascendens -LRB- 39 mm -RRB- erweitert und, Aortenwurzel -LRB- 37 mm -RRB- grenzwertig weit. Normal großer linker Ventrikel mit global guter Pumpfunktion bei dyskoordinierten Septumbewegungen. Erhaltene longitudinale Funktion. Relaxationsstörung des LV. LA, RA und RV normal groß. Gute RV-Funktion. Kein Perikarderguss nachweisbar. Vena cava inferior nicht gestaut. Diskreter Prolaps des vorderen Mitralsegels mit minimaler Insuffizienz. Aortenklappe trikuspid, leicht verdickt mit guter Separation. Übrige Klappen sonographisch und dopplersonographisch regelrecht. Der systolische PA-Druck ist bei fehlender Trikuspidalklappeninsuffizienz nicht valide ableitbar. Im Vergleich zur Voruntersuchung von <[Pseudo] 07/02/2040:> keine wesentliche Befundänderung.
+44-1	3370-3376	Soweit	_	_	_	EchoBefunde
+44-2	3377-3380	von	_	_	_	EchoBefunde
+44-3	3381-3394	transthorakal	_	_	_	EchoBefunde
+44-4	3395-3404	einsehbar	_	_	_	EchoBefunde
+44-5	3405-3410	Aorta	_	_	_	EchoBefunde
+44-6	3411-3420	ascendens	_	_	_	EchoBefunde
+44-7	3421-3426	-LRB-	_	_	_	EchoBefunde
+44-8	3427-3429	39	_	_	_	EchoBefunde
+44-9	3430-3432	mm	_	_	_	EchoBefunde
+44-10	3433-3438	-RRB-	_	_	_	EchoBefunde
+44-11	3439-3448	erweitert	_	_	_	EchoBefunde
+44-12	3449-3452	und	_	_	_	EchoBefunde
+44-13	3452-3453	,	_	_	_	EchoBefunde
+44-14	3454-3466	Aortenwurzel	_	_	_	EchoBefunde
+44-15	3467-3472	-LRB-	_	_	_	EchoBefunde
+44-16	3473-3475	37	_	_	_	EchoBefunde
+44-17	3476-3478	mm	_	_	_	EchoBefunde
+44-18	3479-3484	-RRB-	_	_	_	EchoBefunde
+44-19	3485-3496	grenzwertig	_	_	_	EchoBefunde
+44-20	3497-3501	weit	_	_	_	EchoBefunde
+44-21	3501-3502	.	_	_	_	EchoBefunde
+44-22	3503-3509	Normal	_	_	_	EchoBefunde
+44-23	3510-3516	großer	_	_	_	EchoBefunde
+44-24	3517-3523	linker	_	_	_	EchoBefunde
+44-25	3524-3533	Ventrikel	_	_	_	EchoBefunde
+44-26	3534-3537	mit	_	_	_	EchoBefunde
+44-27	3538-3544	global	_	_	_	EchoBefunde
+44-28	3545-3550	guter	_	_	_	EchoBefunde
+44-29	3551-3563	Pumpfunktion	_	_	_	EchoBefunde
+44-30	3564-3567	bei	_	_	_	EchoBefunde
+44-31	3568-3584	dyskoordinierten	_	_	_	EchoBefunde
+44-32	3585-3601	Septumbewegungen	_	_	_	EchoBefunde
+44-33	3601-3602	.	_	_	_	EchoBefunde
+44-34	3603-3612	Erhaltene	_	_	_	EchoBefunde
+44-35	3613-3626	longitudinale	_	_	_	EchoBefunde
+44-36	3627-3635	Funktion	_	_	_	EchoBefunde
+44-37	3635-3636	.	_	_	_	EchoBefunde
+44-38	3637-3655	Relaxationsstörung	_	_	_	EchoBefunde
+44-39	3656-3659	des	_	_	_	EchoBefunde
+44-40	3660-3662	LV	_	_	_	EchoBefunde
+44-41	3662-3663	.	_	_	_	EchoBefunde
+44-42	3664-3666	LA	_	_	_	EchoBefunde
+44-43	3666-3667	,	_	_	_	EchoBefunde
+44-44	3668-3670	RA	_	_	_	EchoBefunde
+44-45	3671-3674	und	_	_	_	EchoBefunde
+44-46	3675-3677	RV	_	_	_	EchoBefunde
+44-47	3678-3684	normal	_	_	_	EchoBefunde
+44-48	3685-3689	groß	_	_	_	EchoBefunde
+44-49	3689-3690	.	_	_	_	EchoBefunde
+44-50	3691-3695	Gute	_	_	_	EchoBefunde
+44-51	3696-3707	RV-Funktion	_	_	_	EchoBefunde
+44-52	3707-3708	.	_	_	_	EchoBefunde
+44-53	3709-3713	Kein	_	_	_	EchoBefunde
+44-54	3714-3728	Perikarderguss	_	_	_	EchoBefunde
+44-55	3729-3740	nachweisbar	_	_	_	EchoBefunde
+44-56	3740-3741	.	_	_	_	EchoBefunde
+44-57	3742-3746	Vena	_	_	_	EchoBefunde
+44-58	3747-3751	cava	_	_	_	EchoBefunde
+44-59	3752-3760	inferior	_	_	_	EchoBefunde
+44-60	3761-3766	nicht	_	_	_	EchoBefunde
+44-61	3767-3774	gestaut	_	_	_	EchoBefunde
+44-62	3774-3775	.	_	_	_	EchoBefunde
+44-63	3776-3785	Diskreter	_	_	_	EchoBefunde
+44-64	3786-3793	Prolaps	_	_	_	EchoBefunde
+44-65	3794-3797	des	_	_	_	EchoBefunde
+44-66	3798-3806	vorderen	_	_	_	EchoBefunde
+44-67	3807-3819	Mitralsegels	_	_	_	EchoBefunde
+44-68	3820-3823	mit	_	_	_	EchoBefunde
+44-69	3824-3833	minimaler	_	_	_	EchoBefunde
+44-70	3834-3846	Insuffizienz	_	_	_	EchoBefunde
+44-71	3846-3847	.	_	_	_	EchoBefunde
+44-72	3848-3860	Aortenklappe	_	_	_	EchoBefunde
+44-73	3861-3870	trikuspid	_	_	_	EchoBefunde
+44-74	3870-3871	,	_	_	_	EchoBefunde
+44-75	3872-3878	leicht	_	_	_	EchoBefunde
+44-76	3879-3887	verdickt	_	_	_	EchoBefunde
+44-77	3888-3891	mit	_	_	_	EchoBefunde
+44-78	3892-3897	guter	_	_	_	EchoBefunde
+44-79	3898-3908	Separation	_	_	_	EchoBefunde
+44-80	3908-3909	.	_	_	_	EchoBefunde
+44-81	3910-3916	Übrige	_	_	_	EchoBefunde
+44-82	3917-3924	Klappen	_	_	_	EchoBefunde
+44-83	3925-3938	sonographisch	_	_	_	EchoBefunde
+44-84	3939-3942	und	_	_	_	EchoBefunde
+44-85	3943-3963	dopplersonographisch	_	_	_	EchoBefunde
+44-86	3964-3974	regelrecht	_	_	_	EchoBefunde
+44-87	3974-3975	.	_	_	_	EchoBefunde
+44-88	3976-3979	Der	_	_	_	EchoBefunde
+44-89	3980-3991	systolische	_	_	_	EchoBefunde
+44-90	3992-4000	PA-Druck	_	_	_	EchoBefunde
+44-91	4001-4004	ist	_	_	_	EchoBefunde
+44-92	4005-4008	bei	_	_	_	EchoBefunde
+44-93	4009-4018	fehlender	_	_	_	EchoBefunde
+44-94	4019-4049	Trikuspidalklappeninsuffizienz	_	_	_	EchoBefunde
+44-95	4050-4055	nicht	_	_	_	EchoBefunde
+44-96	4056-4062	valide	_	_	_	EchoBefunde
+44-97	4063-4072	ableitbar	_	_	_	EchoBefunde
+44-98	4072-4073	.	_	_	_	EchoBefunde
+44-99	4074-4076	Im	_	_	_	EchoBefunde
+44-100	4077-4086	Vergleich	_	_	_	EchoBefunde
+44-101	4087-4090	zur	_	_	_	EchoBefunde
+44-102	4091-4106	Voruntersuchung	_	_	_	EchoBefunde
+44-103	4107-4110	von	_	_	_	EchoBefunde
+44-104	4111-4120	<[Pseudo]	_	_	_	EchoBefunde
+44-105	4121-4123	07	_	_	_	EchoBefunde
+44-106	4123-4124	/	_	_	_	EchoBefunde
+44-107	4124-4126	02	_	_	_	EchoBefunde
+44-108	4126-4127	/	_	_	_	EchoBefunde
+44-109	4127-4131	2040	_	_	_	EchoBefunde
+44-110	4131-4133	:>	_	_	_	EchoBefunde
+44-111	4134-4139	keine	_	_	_	EchoBefunde
+44-112	4140-4151	wesentliche	_	_	_	EchoBefunde
+44-113	4152-4166	Befundänderung	_	_	_	EchoBefunde
+44-114	4166-4167	.	_	_	_	EchoBefunde
+
+#Text=Zusammenfassung:
+45-1	4169-4184	Zusammenfassung	_	_	_	Zusammenfassung
+45-2	4184-4185	:	_	_	_	Zusammenfassung
+
+#Text=Die Vorstellung in unserer B-ORG I-ORG erfolgt zur Verlaufskontrolle bei bekannter Ektasie der Aorta ascendens. Subjektiv wird von einem klinisch stabilen kardialen Verlauf berichtet.
+46-1	4186-4189	Die	_	_	_	Zusammenfassung
+46-2	4190-4201	Vorstellung	_	_	_	Zusammenfassung
+46-3	4202-4204	in	_	_	_	Zusammenfassung
+46-4	4205-4212	unserer	_	_	_	Zusammenfassung
+46-5	4213-4218	B-ORG	_	_	_	Zusammenfassung
+46-6	4219-4224	I-ORG	_	_	_	Zusammenfassung
+46-7	4225-4232	erfolgt	_	_	_	Zusammenfassung
+46-8	4233-4236	zur	_	_	_	Zusammenfassung
+46-9	4237-4254	Verlaufskontrolle	_	_	_	Zusammenfassung
+46-10	4255-4258	bei	_	_	_	Zusammenfassung
+46-11	4259-4268	bekannter	_	_	_	Zusammenfassung
+46-12	4269-4276	Ektasie	_	_	_	Zusammenfassung
+46-13	4277-4280	der	_	_	_	Zusammenfassung
+46-14	4281-4286	Aorta	_	_	_	Zusammenfassung
+46-15	4287-4296	ascendens	_	_	_	Zusammenfassung
+46-16	4296-4297	.	_	_	_	Zusammenfassung
+46-17	4298-4307	Subjektiv	_	_	_	Zusammenfassung
+46-18	4308-4312	wird	_	_	_	Zusammenfassung
+46-19	4313-4316	von	_	_	_	Zusammenfassung
+46-20	4317-4322	einem	_	_	_	Zusammenfassung
+46-21	4323-4331	klinisch	_	_	_	Zusammenfassung
+46-22	4332-4340	stabilen	_	_	_	Zusammenfassung
+46-23	4341-4350	kardialen	_	_	_	Zusammenfassung
+46-24	4351-4358	Verlauf	_	_	_	Zusammenfassung
+46-25	4359-4368	berichtet	_	_	_	Zusammenfassung
+46-26	4368-4369	.	_	_	_	Zusammenfassung
+
+#Text=Das Belastungs-EKG bis 125 Watt ergab weder klinisch noch elektrokardiographisch einen Hinweis auf eine belastungsinduzierte Myokardischämie oder höhergradige Herzrhythmusstörungen.
+47-1	4371-4374	Das	_	_	_	Zusammenfassung
+47-2	4375-4389	Belastungs-EKG	_	_	_	Zusammenfassung
+47-3	4390-4393	bis	_	_	_	Zusammenfassung
+47-4	4394-4397	125	_	_	_	Zusammenfassung
+47-5	4398-4402	Watt	_	_	_	Zusammenfassung
+47-6	4403-4408	ergab	_	_	_	Zusammenfassung
+47-7	4409-4414	weder	_	_	_	Zusammenfassung
+47-8	4415-4423	klinisch	_	_	_	Zusammenfassung
+47-9	4424-4428	noch	_	_	_	Zusammenfassung
+47-10	4429-4451	elektrokardiographisch	_	_	_	Zusammenfassung
+47-11	4452-4457	einen	_	_	_	Zusammenfassung
+47-12	4458-4465	Hinweis	_	_	_	Zusammenfassung
+47-13	4466-4469	auf	_	_	_	Zusammenfassung
+47-14	4470-4474	eine	_	_	_	Zusammenfassung
+47-15	4475-4495	belastungsinduzierte	_	_	_	Zusammenfassung
+47-16	4496-4511	Myokardischämie	_	_	_	Zusammenfassung
+47-17	4512-4516	oder	_	_	_	Zusammenfassung
+47-18	4517-4529	höhergradige	_	_	_	Zusammenfassung
+47-19	4530-4551	Herzrhythmusstörungen	_	_	_	Zusammenfassung
+47-20	4551-4552	.	_	_	_	Zusammenfassung
+
+#Text=Echokardiographisch sahen wir eine gute linksventrikuläre Pumpfunktion ohne regionale Kontraktionsstörungen. Die VCI war nicht gestaut. Soweit von transthorakal einsehbar ergab die Untersuchung eine Befundkonstanz der Aorta ascendens -LRB- 39 mm -RRB- und Aortenwurzel -LRB- 37 mm -RRB- . Erneut zeigte sich der vorbeschriebene diskrete Prolaps des vorderen Mitralsegels mit minimaler Insuffizienz. Im Vergleich zur Voruntersuchung vom <[Pseudo] 07/02/2040> fand sich keine wesentliche Befundänderung.
+48-1	4554-4573	Echokardiographisch	_	_	_	Zusammenfassung
+48-2	4574-4579	sahen	_	_	_	Zusammenfassung
+48-3	4580-4583	wir	_	_	_	Zusammenfassung
+48-4	4584-4588	eine	_	_	_	Zusammenfassung
+48-5	4589-4593	gute	_	_	_	Zusammenfassung
+48-6	4594-4611	linksventrikuläre	_	_	_	Zusammenfassung
+48-7	4612-4624	Pumpfunktion	_	_	_	Zusammenfassung
+48-8	4625-4629	ohne	_	_	_	Zusammenfassung
+48-9	4630-4639	regionale	_	_	_	Zusammenfassung
+48-10	4640-4661	Kontraktionsstörungen	_	_	_	Zusammenfassung
+48-11	4661-4662	.	_	_	_	Zusammenfassung
+48-12	4663-4666	Die	_	_	_	Zusammenfassung
+48-13	4667-4670	VCI	_	_	_	Zusammenfassung
+48-14	4671-4674	war	_	_	_	Zusammenfassung
+48-15	4675-4680	nicht	_	_	_	Zusammenfassung
+48-16	4681-4688	gestaut	_	_	_	Zusammenfassung
+48-17	4688-4689	.	_	_	_	Zusammenfassung
+48-18	4690-4696	Soweit	_	_	_	Zusammenfassung
+48-19	4697-4700	von	_	_	_	Zusammenfassung
+48-20	4701-4714	transthorakal	_	_	_	Zusammenfassung
+48-21	4715-4724	einsehbar	_	_	_	Zusammenfassung
+48-22	4725-4730	ergab	_	_	_	Zusammenfassung
+48-23	4731-4734	die	_	_	_	Zusammenfassung
+48-24	4735-4747	Untersuchung	_	_	_	Zusammenfassung
+48-25	4748-4752	eine	_	_	_	Zusammenfassung
+48-26	4753-4767	Befundkonstanz	_	_	_	Zusammenfassung
+48-27	4768-4771	der	_	_	_	Zusammenfassung
+48-28	4772-4777	Aorta	_	_	_	Zusammenfassung
+48-29	4778-4787	ascendens	_	_	_	Zusammenfassung
+48-30	4788-4793	-LRB-	_	_	_	Zusammenfassung
+48-31	4794-4796	39	_	_	_	Zusammenfassung
+48-32	4797-4799	mm	_	_	_	Zusammenfassung
+48-33	4800-4805	-RRB-	_	_	_	Zusammenfassung
+48-34	4806-4809	und	_	_	_	Zusammenfassung
+48-35	4810-4822	Aortenwurzel	_	_	_	Zusammenfassung
+48-36	4823-4828	-LRB-	_	_	_	Zusammenfassung
+48-37	4829-4831	37	_	_	_	Zusammenfassung
+48-38	4832-4834	mm	_	_	_	Zusammenfassung
+48-39	4835-4840	-RRB-	_	_	_	Zusammenfassung
+48-40	4841-4842	.	_	_	_	Zusammenfassung
+48-41	4843-4849	Erneut	_	_	_	Zusammenfassung
+48-42	4850-4856	zeigte	_	_	_	Zusammenfassung
+48-43	4857-4861	sich	_	_	_	Zusammenfassung
+48-44	4862-4865	der	_	_	_	Zusammenfassung
+48-45	4866-4881	vorbeschriebene	_	_	_	Zusammenfassung
+48-46	4882-4890	diskrete	_	_	_	Zusammenfassung
+48-47	4891-4898	Prolaps	_	_	_	Zusammenfassung
+48-48	4899-4902	des	_	_	_	Zusammenfassung
+48-49	4903-4911	vorderen	_	_	_	Zusammenfassung
+48-50	4912-4924	Mitralsegels	_	_	_	Zusammenfassung
+48-51	4925-4928	mit	_	_	_	Zusammenfassung
+48-52	4929-4938	minimaler	_	_	_	Zusammenfassung
+48-53	4939-4951	Insuffizienz	_	_	_	Zusammenfassung
+48-54	4951-4952	.	_	_	_	Zusammenfassung
+48-55	4953-4955	Im	_	_	_	Zusammenfassung
+48-56	4956-4965	Vergleich	_	_	_	Zusammenfassung
+48-57	4966-4969	zur	_	_	_	Zusammenfassung
+48-58	4970-4985	Voruntersuchung	_	_	_	Zusammenfassung
+48-59	4986-4989	vom	_	_	_	Zusammenfassung
+48-60	4990-4999	<[Pseudo]	_	_	_	Zusammenfassung
+48-61	5000-5002	07	_	_	_	Zusammenfassung
+48-62	5002-5003	/	_	_	_	Zusammenfassung
+48-63	5003-5005	02	_	_	_	Zusammenfassung
+48-64	5005-5006	/	_	_	_	Zusammenfassung
+48-65	5006-5010	2040	_	_	_	Zusammenfassung
+48-66	5010-5011	>	_	_	_	Zusammenfassung
+48-67	5012-5016	fand	_	_	_	Zusammenfassung
+48-68	5017-5021	sich	_	_	_	Zusammenfassung
+48-69	5022-5027	keine	_	_	_	Zusammenfassung
+48-70	5028-5039	wesentliche	_	_	_	Zusammenfassung
+48-71	5040-5054	Befundänderung	_	_	_	Zusammenfassung
+48-72	5054-5055	.	_	_	_	Zusammenfassung
+
+#Text=In der Zusammenschau der heutigen klinischen und apparativen Befunde gehen wir von einem stabilen kardialen Befund aus. Wir empfehlen die konsequente Einstellung der kardiovaskulären Risikofaktoren gemäß den aktuellen Leitlinien und nach Möglichkeit die regelmäßige körperliche Aktivität 3 bis 4 Mal pro Woche für ca. 40 bis 50 Minuten.
+49-1	5057-5059	In	_	_	_	Zusammenfassung
+49-2	5060-5063	der	_	_	_	Zusammenfassung
+49-3	5064-5077	Zusammenschau	_	_	_	Zusammenfassung
+49-4	5078-5081	der	_	_	_	Zusammenfassung
+49-5	5082-5090	heutigen	_	_	_	Zusammenfassung
+49-6	5091-5101	klinischen	_	_	_	Zusammenfassung
+49-7	5102-5105	und	_	_	_	Zusammenfassung
+49-8	5106-5117	apparativen	_	_	_	Zusammenfassung
+49-9	5118-5125	Befunde	_	_	_	Zusammenfassung
+49-10	5126-5131	gehen	_	_	_	Zusammenfassung
+49-11	5132-5135	wir	_	_	_	Zusammenfassung
+49-12	5136-5139	von	_	_	_	Zusammenfassung
+49-13	5140-5145	einem	_	_	_	Zusammenfassung
+49-14	5146-5154	stabilen	_	_	_	Zusammenfassung
+49-15	5155-5164	kardialen	_	_	_	Zusammenfassung
+49-16	5165-5171	Befund	_	_	_	Zusammenfassung
+49-17	5172-5175	aus	_	_	_	Zusammenfassung
+49-18	5175-5176	.	_	_	_	Zusammenfassung
+49-19	5177-5180	Wir	_	_	_	Zusammenfassung
+49-20	5181-5190	empfehlen	_	_	_	Zusammenfassung
+49-21	5191-5194	die	_	_	_	Zusammenfassung
+49-22	5195-5206	konsequente	_	_	_	Zusammenfassung
+49-23	5207-5218	Einstellung	_	_	_	Zusammenfassung
+49-24	5219-5222	der	_	_	_	Zusammenfassung
+49-25	5223-5239	kardiovaskulären	_	_	_	Zusammenfassung
+49-26	5240-5254	Risikofaktoren	_	_	_	Zusammenfassung
+49-27	5255-5260	gemäß	_	_	_	Zusammenfassung
+49-28	5261-5264	den	_	_	_	Zusammenfassung
+49-29	5265-5274	aktuellen	_	_	_	Zusammenfassung
+49-30	5275-5285	Leitlinien	_	_	_	Zusammenfassung
+49-31	5286-5289	und	_	_	_	Zusammenfassung
+49-32	5290-5294	nach	_	_	_	Zusammenfassung
+49-33	5295-5306	Möglichkeit	_	_	_	Zusammenfassung
+49-34	5307-5310	die	_	_	_	Zusammenfassung
+49-35	5311-5322	regelmäßige	_	_	_	Zusammenfassung
+49-36	5323-5334	körperliche	_	_	_	Zusammenfassung
+49-37	5335-5344	Aktivität	_	_	_	Zusammenfassung
+49-38	5345-5346	3	_	_	_	Zusammenfassung
+49-39	5347-5350	bis	_	_	_	Zusammenfassung
+49-40	5351-5352	4	_	_	_	Zusammenfassung
+49-41	5353-5356	Mal	_	_	_	Zusammenfassung
+49-42	5357-5360	pro	_	_	_	Zusammenfassung
+49-43	5361-5366	Woche	_	_	_	Zusammenfassung
+49-44	5367-5370	für	_	_	_	Zusammenfassung
+49-45	5371-5374	ca.	_	_	_	Zusammenfassung
+49-46	5375-5377	40	_	_	_	Zusammenfassung
+49-47	5378-5381	bis	_	_	_	Zusammenfassung
+49-48	5382-5384	50	_	_	_	Zusammenfassung
+49-49	5385-5392	Minuten	_	_	_	Zusammenfassung
+49-50	5392-5393	.	_	_	_	Zusammenfassung
+
+#Text=In 24 Monaten empfehlen wir eine kardiologische Kontrolluntersuchung, gerne auch bei einem niedergelassenen Kardiologen, sowie die regelmäßige hausärztliche Vorstellung. Bei Auftreten von Beschwerden oder Komplikationen sind wir gerne bereit, die Patientin wiederzusehen -in Notfällen über unsere B-ORG I-ORG I-ORG unter B-PHONE
+50-1	5395-5397	In	_	_	_	Zusammenfassung
+50-2	5398-5400	24	_	_	_	Zusammenfassung
+50-3	5401-5408	Monaten	_	_	_	Zusammenfassung
+50-4	5409-5418	empfehlen	_	_	_	Zusammenfassung
+50-5	5419-5422	wir	_	_	_	Zusammenfassung
+50-6	5423-5427	eine	_	_	_	Zusammenfassung
+50-7	5428-5442	kardiologische	_	_	_	Zusammenfassung
+50-8	5443-5463	Kontrolluntersuchung	_	_	_	Zusammenfassung
+50-9	5463-5464	,	_	_	_	Zusammenfassung
+50-10	5465-5470	gerne	_	_	_	Zusammenfassung
+50-11	5471-5475	auch	_	_	_	Zusammenfassung
+50-12	5476-5479	bei	_	_	_	Zusammenfassung
+50-13	5480-5485	einem	_	_	_	Zusammenfassung
+50-14	5486-5502	niedergelassenen	_	_	_	Zusammenfassung
+50-15	5503-5514	Kardiologen	_	_	_	Zusammenfassung
+50-16	5514-5515	,	_	_	_	Zusammenfassung
+50-17	5516-5521	sowie	_	_	_	Zusammenfassung
+50-18	5522-5525	die	_	_	_	Zusammenfassung
+50-19	5526-5537	regelmäßige	_	_	_	Zusammenfassung
+50-20	5538-5551	hausärztliche	_	_	_	Zusammenfassung
+50-21	5552-5563	Vorstellung	_	_	_	Zusammenfassung
+50-22	5563-5564	.	_	_	_	Zusammenfassung
+50-23	5565-5568	Bei	_	_	_	Zusammenfassung
+50-24	5569-5578	Auftreten	_	_	_	Zusammenfassung
+50-25	5579-5582	von	_	_	_	Zusammenfassung
+50-26	5583-5594	Beschwerden	_	_	_	Zusammenfassung
+50-27	5595-5599	oder	_	_	_	Zusammenfassung
+50-28	5600-5614	Komplikationen	_	_	_	Zusammenfassung
+50-29	5615-5619	sind	_	_	_	Zusammenfassung
+50-30	5620-5623	wir	_	_	_	Zusammenfassung
+50-31	5624-5629	gerne	_	_	_	Zusammenfassung
+50-32	5630-5636	bereit	_	_	_	Zusammenfassung
+50-33	5636-5637	,	_	_	_	Zusammenfassung
+50-34	5638-5641	die	_	_	_	Zusammenfassung
+50-35	5642-5651	Patientin	_	_	_	Zusammenfassung
+50-36	5652-5665	wiederzusehen	_	_	_	Zusammenfassung
+50-37	5666-5669	-in	_	_	_	Zusammenfassung
+50-38	5670-5679	Notfällen	_	_	_	Zusammenfassung
+50-39	5680-5684	über	_	_	_	Zusammenfassung
+50-40	5685-5691	unsere	_	_	_	Zusammenfassung
+50-41	5692-5697	B-ORG	_	_	_	Zusammenfassung
+50-42	5698-5703	I-ORG	_	_	_	Zusammenfassung
+50-43	5704-5709	I-ORG	_	_	_	Zusammenfassung
+50-44	5710-5715	unter	_	_	_	Zusammenfassung
+50-45	5716-5723	B-PHONE	_	_	_	Zusammenfassung
+
+#Text=Therapieempfehlung: -LRB- unverändert -RRB-
+51-1	5725-5743	Therapieempfehlung	_	_	_	EntlassMedikation
+51-2	5743-5744	:	_	_	_	EntlassMedikation
+51-3	5745-5750	-LRB-	_	_	_	EntlassMedikation
+51-4	5751-5762	unverändert	_	_	_	EntlassMedikation
+51-5	5763-5768	-RRB-	_	_	_	EntlassMedikation
+
+#Text=Ramipril 2,5 mg 1-0-0
+52-1	5769-5777	Ramipril	ACTIVEING	false	_	EntlassMedikation
+52-2	5778-5781	2,5	STRENGTH[3]	false[3]	52-1[0_3]	EntlassMedikation
+52-3	5782-5784	mg	STRENGTH[3]	false[3]	_	EntlassMedikation
+52-4	5785-5786	1	FREQUENCY[4]	false[4]	52-1[0_4]	EntlassMedikation
+52-5	5786-5787	-	FREQUENCY[4]	false[4]	_	EntlassMedikation
+52-6	5787-5788	0	FREQUENCY[4]	false[4]	_	EntlassMedikation
+52-7	5788-5789	-	FREQUENCY[4]	false[4]	_	EntlassMedikation
+52-8	5789-5790	0	FREQUENCY[4]	false[4]	_	EntlassMedikation
+
+#Text=Selbstverständlich können auch preiswertere, wirkstoffgleiche Präparate anderer Hersteller verordnet werden.
+53-1	5792-5810	Selbstverständlich	_	_	_	Abschluss
+53-2	5811-5817	können	_	_	_	Abschluss
+53-3	5818-5822	auch	_	_	_	Abschluss
+53-4	5823-5835	preiswertere	_	_	_	Abschluss
+53-5	5835-5836	,	_	_	_	Abschluss
+53-6	5837-5853	wirkstoffgleiche	_	_	_	Abschluss
+53-7	5854-5863	Präparate	_	_	_	Abschluss
+53-8	5864-5871	anderer	_	_	_	Abschluss
+53-9	5872-5882	Hersteller	_	_	_	Abschluss
+53-10	5883-5892	verordnet	_	_	_	Abschluss
+53-11	5893-5899	werden	_	_	_	Abschluss
+53-12	5899-5900	.	_	_	_	Abschluss
+
+#Text=Wir danken für die Zusammenarbeit und stehen bei Rückfragen selbstverständlich gerne zur Verfügung.
+54-1	5902-5905	Wir	_	_	_	Abschluss
+54-2	5906-5912	danken	_	_	_	Abschluss
+54-3	5913-5916	für	_	_	_	Abschluss
+54-4	5917-5920	die	_	_	_	Abschluss
+54-5	5921-5935	Zusammenarbeit	_	_	_	Abschluss
+54-6	5936-5939	und	_	_	_	Abschluss
+54-7	5940-5946	stehen	_	_	_	Abschluss
+54-8	5947-5950	bei	_	_	_	Abschluss
+54-9	5951-5961	Rückfragen	_	_	_	Abschluss
+54-10	5962-5980	selbstverständlich	_	_	_	Abschluss
+54-11	5981-5986	gerne	_	_	_	Abschluss
+54-12	5987-5990	zur	_	_	_	Abschluss
+54-13	5991-6000	Verfügung	_	_	_	Abschluss
+54-14	6000-6001	.	_	_	_	Abschluss
+
+#Text=Mit freundlichen Grüßen,
+55-1	6004-6007	Mit	_	_	_	Abschluss
+55-2	6008-6020	freundlichen	_	_	_	Abschluss
+55-3	6021-6027	Grüßen	_	_	_	Abschluss
+55-4	6027-6028	,	_	_	_	Abschluss
+
+#Text=B-TITLE I-TITLE I-TITLE B-PER I-PER B-TITLE I-TITLE I-TITLE B-PER I-PER B-PER I-PER
+56-1	6032-6039	B-TITLE	_	_	_	Abschluss
+56-2	6040-6047	I-TITLE	_	_	_	Abschluss
+56-3	6048-6055	I-TITLE	_	_	_	Abschluss
+56-4	6056-6061	B-PER	_	_	_	Abschluss
+56-5	6062-6067	I-PER	_	_	_	Abschluss
+56-6	6068-6075	B-TITLE	_	_	_	Abschluss
+56-7	6076-6083	I-TITLE	_	_	_	Abschluss
+56-8	6084-6091	I-TITLE	_	_	_	Abschluss
+56-9	6092-6097	B-PER	_	_	_	Abschluss
+56-10	6098-6103	I-PER	_	_	_	Abschluss
+56-11	6104-6109	B-PER	_	_	_	Abschluss
+56-12	6110-6115	I-PER	_	_	_	Abschluss
+
+#Text=Ärztlicher Direktor Oberarzt Assistenzarzt
+57-1	6116-6126	Ärztlicher	_	_	_	Abschluss
+57-2	6127-6135	Direktor	_	_	_	Abschluss
+57-3	6136-6144	Oberarzt	_	_	_	Abschluss
+57-4	6145-6158	Assistenzarzt	_	_	_	Abschluss

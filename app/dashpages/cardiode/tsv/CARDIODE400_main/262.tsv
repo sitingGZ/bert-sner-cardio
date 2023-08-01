@@ -1,0 +1,944 @@
+#FORMAT=WebAnno TSV 3.3
+#T_SP=webanno.custom.Medication|ClassType|InNarrative
+#T_RL=webanno.custom.MedRel|BT_webanno.custom.Medication
+#T_SP=webanno.custom.Sectionsentence|Sectiontypes
+
+
+#Text=Aufnahmedatum: <[Pseudo] 2034-11-06 >
+1-1	0-13	Aufnahmedatum	_	_	_	_
+1-2	13-14	:	_	_	_	_
+1-3	15-24	<[Pseudo]	_	_	_	_
+1-4	25-29	2034	_	_	_	_
+1-5	29-30	-	_	_	_	_
+1-6	30-32	11	_	_	_	_
+1-7	32-33	-	_	_	_	_
+1-8	33-35	06	_	_	_	_
+1-9	36-37	>	_	_	_	_
+
+#Text=Geburtsdatum: <[Pseudo] 1980-04-25 >
+2-1	38-50	Geburtsdatum	_	_	_	_
+2-2	50-51	:	_	_	_	_
+2-3	52-61	<[Pseudo]	_	_	_	_
+2-4	62-66	1980	_	_	_	_
+2-5	66-67	-	_	_	_	_
+2-6	67-69	04	_	_	_	_
+2-7	69-70	-	_	_	_	_
+2-8	70-72	25	_	_	_	_
+2-9	73-74	>	_	_	_	_
+
+#Text=Alter: 54
+3-1	75-80	Alter	_	_	_	_
+3-2	80-81	:	_	_	_	_
+3-3	82-84	54	_	_	_	_
+
+#Text=über Ihren Patienten B-SALUTE B-PER I-PER geboren am <[Pseudo] 25/04/1980> wh. B-PLZ B-LOC B-ADDR I-ADDR I-ADDR der sich am in unserer Ambulanz vorstellte.
+4-1	86-90	über	_	_	_	Anrede
+4-2	91-96	Ihren	_	_	_	Anrede
+4-3	97-106	Patienten	_	_	_	Anrede
+4-4	107-115	B-SALUTE	_	_	_	Anrede
+4-5	116-121	B-PER	_	_	_	Anrede
+4-6	122-127	I-PER	_	_	_	Anrede
+4-7	128-135	geboren	_	_	_	Anrede
+4-8	136-138	am	_	_	_	Anrede
+4-9	139-148	<[Pseudo]	_	_	_	Anrede
+4-10	149-151	25	_	_	_	Anrede
+4-11	151-152	/	_	_	_	Anrede
+4-12	152-154	04	_	_	_	Anrede
+4-13	154-155	/	_	_	_	Anrede
+4-14	155-159	1980	_	_	_	Anrede
+4-15	159-160	>	_	_	_	Anrede
+4-16	161-163	wh	_	_	_	Anrede
+4-17	163-164	.	_	_	_	Anrede
+4-18	165-170	B-PLZ	_	_	_	Anrede
+4-19	171-176	B-LOC	_	_	_	Anrede
+4-20	177-183	B-ADDR	_	_	_	Anrede
+4-21	184-190	I-ADDR	_	_	_	Anrede
+4-22	191-197	I-ADDR	_	_	_	Anrede
+4-23	198-201	der	_	_	_	Anrede
+4-24	202-206	sich	_	_	_	Anrede
+4-25	207-209	am	_	_	_	Anrede
+4-26	210-212	in	_	_	_	Anrede
+4-27	213-220	unserer	_	_	_	Anrede
+4-28	221-229	Ambulanz	_	_	_	Anrede
+4-29	230-240	vorstellte	_	_	_	Anrede
+4-30	240-241	.	_	_	_	Anrede
+
+#Text=Aktuell:
+5-1	244-251	Aktuell	_	_	_	AktuellDiagnosen
+5-2	251-252	:	_	_	_	AktuellDiagnosen
+
+#Text=- Befundbesprechung der Stress-Kardio-MRT-Untersuchung vom <[Pseudo] 23/10/2034>
+6-1	253-254	-	_	_	_	AktuellDiagnosen
+6-2	255-272	Befundbesprechung	_	_	_	AktuellDiagnosen
+6-3	273-276	der	_	_	_	AktuellDiagnosen
+6-4	277-307	Stress-Kardio-MRT-Untersuchung	_	_	_	AktuellDiagnosen
+6-5	308-311	vom	_	_	_	AktuellDiagnosen
+6-6	312-321	<[Pseudo]	_	_	_	AktuellDiagnosen
+6-7	322-324	23	_	_	_	AktuellDiagnosen
+6-8	324-325	/	_	_	_	AktuellDiagnosen
+6-9	325-327	10	_	_	_	AktuellDiagnosen
+6-10	327-328	/	_	_	_	AktuellDiagnosen
+6-11	328-332	2034	_	_	_	AktuellDiagnosen
+6-12	332-333	>	_	_	_	AktuellDiagnosen
+
+#Text=-UNK- Negativer Ischämienachweis bezüglich LCX-Stromgebiets
+7-1	334-339	-UNK-	_	_	_	AktuellDiagnosen
+7-2	340-349	Negativer	_	_	_	AktuellDiagnosen
+7-3	350-366	Ischämienachweis	_	_	_	AktuellDiagnosen
+7-4	367-376	bezüglich	_	_	_	AktuellDiagnosen
+7-5	377-393	LCX-Stromgebiets	_	_	_	AktuellDiagnosen
+
+#Text=-UNK- Klinisch stabiler kardialer Verlauf
+8-1	394-399	-UNK-	_	_	_	AktuellDiagnosen
+8-2	400-408	Klinisch	_	_	_	AktuellDiagnosen
+8-3	409-417	stabiler	_	_	_	AktuellDiagnosen
+8-4	418-427	kardialer	_	_	_	AktuellDiagnosen
+8-5	428-435	Verlauf	_	_	_	AktuellDiagnosen
+
+#Text=-UNK- Zunächst konservatives Procedere bzgl. Koronarien
+9-1	436-441	-UNK-	_	_	_	AktuellDiagnosen
+9-2	442-450	Zunächst	_	_	_	AktuellDiagnosen
+9-3	451-464	konservatives	_	_	_	AktuellDiagnosen
+9-4	465-474	Procedere	_	_	_	AktuellDiagnosen
+9-5	475-480	bzgl.	_	_	_	AktuellDiagnosen
+9-6	481-491	Koronarien	_	_	_	AktuellDiagnosen
+
+#Text=Diagnosen:
+10-1	493-502	Diagnosen	_	_	_	Diagnosen
+10-2	502-503	:	_	_	_	Diagnosen
+
+#Text=- Z.n. akutem Myokardinfarkt -LRB- STEMI -RRB- der Vorderwand am <[Pseudo] 01/08/2034>
+11-1	504-505	-	_	_	_	Diagnosen
+11-2	506-509	Z.n	_	_	_	Diagnosen
+11-3	509-510	.	_	_	_	Diagnosen
+11-4	511-517	akutem	_	_	_	Diagnosen
+11-5	518-532	Myokardinfarkt	_	_	_	Diagnosen
+11-6	533-538	-LRB-	_	_	_	Diagnosen
+11-7	539-544	STEMI	_	_	_	Diagnosen
+11-8	545-550	-RRB-	_	_	_	Diagnosen
+11-9	551-554	der	_	_	_	Diagnosen
+11-10	555-565	Vorderwand	_	_	_	Diagnosen
+11-11	566-568	am	_	_	_	Diagnosen
+11-12	569-578	<[Pseudo]	_	_	_	Diagnosen
+11-13	579-581	01	_	_	_	Diagnosen
+11-14	581-582	/	_	_	_	Diagnosen
+11-15	582-584	08	_	_	_	Diagnosen
+11-16	584-585	/	_	_	_	Diagnosen
+11-17	585-589	2034	_	_	_	Diagnosen
+11-18	589-590	>	_	_	_	Diagnosen
+
+#Text=- Koronare 3-Gefäßerkrankung mit leichtgradig eingeschränkter linksventrikulärer Pumpfunktion bei Hypokinesie/Akinesie der Vorderwand -LRB- B-OTHER vom <[Pseudo] 01/08/2034> -RRB-
+12-1	591-592	-	_	_	_	Diagnosen
+12-2	593-601	Koronare	_	_	_	Diagnosen
+12-3	602-619	3-Gefäßerkrankung	_	_	_	Diagnosen
+12-4	620-623	mit	_	_	_	Diagnosen
+12-5	624-636	leichtgradig	_	_	_	Diagnosen
+12-6	637-652	eingeschränkter	_	_	_	Diagnosen
+12-7	653-671	linksventrikulärer	_	_	_	Diagnosen
+12-8	672-684	Pumpfunktion	_	_	_	Diagnosen
+12-9	685-688	bei	_	_	_	Diagnosen
+12-10	689-700	Hypokinesie	_	_	_	Diagnosen
+12-11	700-701	/	_	_	_	Diagnosen
+12-12	701-709	Akinesie	_	_	_	Diagnosen
+12-13	710-713	der	_	_	_	Diagnosen
+12-14	714-724	Vorderwand	_	_	_	Diagnosen
+12-15	725-730	-LRB-	_	_	_	Diagnosen
+12-16	731-738	B-OTHER	_	_	_	Diagnosen
+12-17	739-742	vom	_	_	_	Diagnosen
+12-18	743-752	<[Pseudo]	_	_	_	Diagnosen
+12-19	753-755	01	_	_	_	Diagnosen
+12-20	755-756	/	_	_	_	Diagnosen
+12-21	756-758	08	_	_	_	Diagnosen
+12-22	758-759	/	_	_	_	Diagnosen
+12-23	759-763	2034	_	_	_	Diagnosen
+12-24	763-764	>	_	_	_	Diagnosen
+12-25	765-770	-RRB-	_	_	_	Diagnosen
+
+#Text=-UNK- Erfolgreiche Rekanalisation der LAD mittels PTCA/1-fach DE-Stentimplantation bei proximalem Verschluss der LAD
+13-1	771-776	-UNK-	_	_	_	Diagnosen
+13-2	777-789	Erfolgreiche	_	_	_	Diagnosen
+13-3	790-804	Rekanalisation	_	_	_	Diagnosen
+13-4	805-808	der	_	_	_	Diagnosen
+13-5	809-812	LAD	_	_	_	Diagnosen
+13-6	813-820	mittels	_	_	_	Diagnosen
+13-7	821-825	PTCA	_	_	_	Diagnosen
+13-8	825-826	/	_	_	_	Diagnosen
+13-9	826-832	1-fach	_	_	_	Diagnosen
+13-10	833-853	DE-Stentimplantation	_	_	_	Diagnosen
+13-11	854-857	bei	_	_	_	Diagnosen
+13-12	858-868	proximalem	_	_	_	Diagnosen
+13-13	869-879	Verschluss	_	_	_	Diagnosen
+13-14	880-883	der	_	_	_	Diagnosen
+13-15	884-887	LAD	_	_	_	Diagnosen
+
+#Text=-UNK- höhergradige Stenose der LAD und des RIM
+14-1	888-893	-UNK-	_	_	_	Diagnosen
+14-2	894-906	höhergradige	_	_	_	Diagnosen
+14-3	907-914	Stenose	_	_	_	Diagnosen
+14-4	915-918	der	_	_	_	Diagnosen
+14-5	919-922	LAD	_	_	_	Diagnosen
+14-6	923-926	und	_	_	_	Diagnosen
+14-7	927-930	des	_	_	_	Diagnosen
+14-8	931-934	RIM	_	_	_	Diagnosen
+
+#Text=-UNK- negativer Ischämienachweis Kardio-MRT <[Pseudo] 23/10/2034>
+15-1	935-940	-UNK-	_	_	_	Diagnosen
+15-2	941-950	negativer	_	_	_	Diagnosen
+15-3	951-967	Ischämienachweis	_	_	_	Diagnosen
+15-4	968-978	Kardio-MRT	_	_	_	Diagnosen
+15-5	979-988	<[Pseudo]	_	_	_	Diagnosen
+15-6	989-991	23	_	_	_	Diagnosen
+15-7	991-992	/	_	_	_	Diagnosen
+15-8	992-994	10	_	_	_	Diagnosen
+15-9	994-995	/	_	_	_	Diagnosen
+15-10	995-999	2034	_	_	_	Diagnosen
+15-11	999-1000	>	_	_	_	Diagnosen
+
+#Text=CvRF: Grenzwertige arterielle Hypertonie, grenzwertige Hyperlipidämie, positive Familienanamnese -LRB- Vater, Bruder -RRB-
+16-1	1002-1006	CvRF	_	_	_	AllergienUnverträglichkeitenRisiken
+16-2	1006-1007	:	_	_	_	AllergienUnverträglichkeitenRisiken
+16-3	1008-1020	Grenzwertige	_	_	_	AllergienUnverträglichkeitenRisiken
+16-4	1021-1031	arterielle	_	_	_	AllergienUnverträglichkeitenRisiken
+16-5	1032-1042	Hypertonie	_	_	_	AllergienUnverträglichkeitenRisiken
+16-6	1042-1043	,	_	_	_	AllergienUnverträglichkeitenRisiken
+16-7	1044-1056	grenzwertige	_	_	_	AllergienUnverträglichkeitenRisiken
+16-8	1057-1071	Hyperlipidämie	_	_	_	AllergienUnverträglichkeitenRisiken
+16-9	1071-1072	,	_	_	_	AllergienUnverträglichkeitenRisiken
+16-10	1073-1081	positive	_	_	_	AllergienUnverträglichkeitenRisiken
+16-11	1082-1098	Familienanamnese	_	_	_	AllergienUnverträglichkeitenRisiken
+16-12	1099-1104	-LRB-	_	_	_	AllergienUnverträglichkeitenRisiken
+16-13	1105-1110	Vater	_	_	_	AllergienUnverträglichkeitenRisiken
+16-14	1110-1111	,	_	_	_	AllergienUnverträglichkeitenRisiken
+16-15	1112-1118	Bruder	_	_	_	AllergienUnverträglichkeitenRisiken
+16-16	1119-1124	-RRB-	_	_	_	AllergienUnverträglichkeitenRisiken
+
+#Text=Allergien: Keine bekannt
+17-1	1125-1134	Allergien	_	_	_	AllergienUnverträglichkeitenRisiken
+17-2	1134-1135	:	_	_	_	AllergienUnverträglichkeitenRisiken
+17-3	1136-1141	Keine	_	_	_	AllergienUnverträglichkeitenRisiken
+17-4	1142-1149	bekannt	_	_	_	AllergienUnverträglichkeitenRisiken
+
+#Text=Anamnese:
+18-1	1151-1159	Anamnese	_	_	_	Anamnese
+18-2	1159-1160	:	_	_	_	Anamnese
+
+#Text=Die ambulante Vorstellung erfolgt zur Befundbesprechung des Kardio-MRT vom <[Pseudo] 23/10/2034> bei bekannter koronarer Herzerkrankung. Im Alltag bestehe eine gute Belastbarkeit -LRB- 5 Etagen Treppensteigen möglich -RRB- ; Es bestehen keine typischen pectanginösen Beschwerden bei Belastung oder in Ruhe. Palpitationen, Schwindel sowie stattgehabte Synkopen werden verneint. Es bestehe Nykturie mit ca. 1-facher Miktion pro Nacht. Periphere Ödeme seien nicht aufgefallen. Die häuslichen Blutdruckmessungen ergäben Werte um 110/65 mmHg. Subjektiv bestehe seit der letzten Vorstellung ein stabiler kardialer Verlauf.
+19-1	1161-1164	Die	_	_	_	Anamnese
+19-2	1165-1174	ambulante	_	_	_	Anamnese
+19-3	1175-1186	Vorstellung	_	_	_	Anamnese
+19-4	1187-1194	erfolgt	_	_	_	Anamnese
+19-5	1195-1198	zur	_	_	_	Anamnese
+19-6	1199-1216	Befundbesprechung	_	_	_	Anamnese
+19-7	1217-1220	des	_	_	_	Anamnese
+19-8	1221-1231	Kardio-MRT	_	_	_	Anamnese
+19-9	1232-1235	vom	_	_	_	Anamnese
+19-10	1236-1245	<[Pseudo]	_	_	_	Anamnese
+19-11	1246-1248	23	_	_	_	Anamnese
+19-12	1248-1249	/	_	_	_	Anamnese
+19-13	1249-1251	10	_	_	_	Anamnese
+19-14	1251-1252	/	_	_	_	Anamnese
+19-15	1252-1256	2034	_	_	_	Anamnese
+19-16	1256-1257	>	_	_	_	Anamnese
+19-17	1258-1261	bei	_	_	_	Anamnese
+19-18	1262-1271	bekannter	_	_	_	Anamnese
+19-19	1272-1281	koronarer	_	_	_	Anamnese
+19-20	1282-1296	Herzerkrankung	_	_	_	Anamnese
+19-21	1296-1297	.	_	_	_	Anamnese
+19-22	1298-1300	Im	_	_	_	Anamnese
+19-23	1301-1307	Alltag	_	_	_	Anamnese
+19-24	1308-1315	bestehe	_	_	_	Anamnese
+19-25	1316-1320	eine	_	_	_	Anamnese
+19-26	1321-1325	gute	_	_	_	Anamnese
+19-27	1326-1339	Belastbarkeit	_	_	_	Anamnese
+19-28	1340-1345	-LRB-	_	_	_	Anamnese
+19-29	1346-1347	5	_	_	_	Anamnese
+19-30	1348-1354	Etagen	_	_	_	Anamnese
+19-31	1355-1369	Treppensteigen	_	_	_	Anamnese
+19-32	1370-1377	möglich	_	_	_	Anamnese
+19-33	1378-1383	-RRB-	_	_	_	Anamnese
+19-34	1384-1385	;	_	_	_	Anamnese
+19-35	1386-1388	Es	_	_	_	Anamnese
+19-36	1389-1397	bestehen	_	_	_	Anamnese
+19-37	1398-1403	keine	_	_	_	Anamnese
+19-38	1404-1413	typischen	_	_	_	Anamnese
+19-39	1414-1427	pectanginösen	_	_	_	Anamnese
+19-40	1428-1439	Beschwerden	_	_	_	Anamnese
+19-41	1440-1443	bei	_	_	_	Anamnese
+19-42	1444-1453	Belastung	_	_	_	Anamnese
+19-43	1454-1458	oder	_	_	_	Anamnese
+19-44	1459-1461	in	_	_	_	Anamnese
+19-45	1462-1466	Ruhe	_	_	_	Anamnese
+19-46	1466-1467	.	_	_	_	Anamnese
+19-47	1468-1481	Palpitationen	_	_	_	Anamnese
+19-48	1481-1482	,	_	_	_	Anamnese
+19-49	1483-1492	Schwindel	_	_	_	Anamnese
+19-50	1493-1498	sowie	_	_	_	Anamnese
+19-51	1499-1511	stattgehabte	_	_	_	Anamnese
+19-52	1512-1520	Synkopen	_	_	_	Anamnese
+19-53	1521-1527	werden	_	_	_	Anamnese
+19-54	1528-1536	verneint	_	_	_	Anamnese
+19-55	1536-1537	.	_	_	_	Anamnese
+19-56	1538-1540	Es	_	_	_	Anamnese
+19-57	1541-1548	bestehe	_	_	_	Anamnese
+19-58	1549-1557	Nykturie	_	_	_	Anamnese
+19-59	1558-1561	mit	_	_	_	Anamnese
+19-60	1562-1565	ca.	_	_	_	Anamnese
+19-61	1566-1574	1-facher	_	_	_	Anamnese
+19-62	1575-1582	Miktion	_	_	_	Anamnese
+19-63	1583-1586	pro	_	_	_	Anamnese
+19-64	1587-1592	Nacht	_	_	_	Anamnese
+19-65	1592-1593	.	_	_	_	Anamnese
+19-66	1594-1603	Periphere	_	_	_	Anamnese
+19-67	1604-1609	Ödeme	_	_	_	Anamnese
+19-68	1610-1615	seien	_	_	_	Anamnese
+19-69	1616-1621	nicht	_	_	_	Anamnese
+19-70	1622-1633	aufgefallen	_	_	_	Anamnese
+19-71	1633-1634	.	_	_	_	Anamnese
+19-72	1635-1638	Die	_	_	_	Anamnese
+19-73	1639-1649	häuslichen	_	_	_	Anamnese
+19-74	1650-1668	Blutdruckmessungen	_	_	_	Anamnese
+19-75	1669-1676	ergäben	_	_	_	Anamnese
+19-76	1677-1682	Werte	_	_	_	Anamnese
+19-77	1683-1685	um	_	_	_	Anamnese
+19-78	1686-1689	110	_	_	_	Anamnese
+19-79	1689-1690	/	_	_	_	Anamnese
+19-80	1690-1692	65	_	_	_	Anamnese
+19-81	1693-1697	mmHg	_	_	_	Anamnese
+19-82	1697-1698	.	_	_	_	Anamnese
+19-83	1699-1708	Subjektiv	_	_	_	Anamnese
+19-84	1709-1716	bestehe	_	_	_	Anamnese
+19-85	1717-1721	seit	_	_	_	Anamnese
+19-86	1722-1725	der	_	_	_	Anamnese
+19-87	1726-1733	letzten	_	_	_	Anamnese
+19-88	1734-1745	Vorstellung	_	_	_	Anamnese
+19-89	1746-1749	ein	_	_	_	Anamnese
+19-90	1750-1758	stabiler	_	_	_	Anamnese
+19-91	1759-1768	kardialer	_	_	_	Anamnese
+19-92	1769-1776	Verlauf	_	_	_	Anamnese
+19-93	1776-1777	.	_	_	_	Anamnese
+
+#Text=Bisherige Medikation:
+20-1	1779-1788	Bisherige	_	_	_	AufnahmeMedikation
+20-2	1789-1799	Medikation	_	_	_	AufnahmeMedikation
+20-3	1799-1800	:	_	_	_	AufnahmeMedikation
+
+#Text=ASS 100 mg 1-0-0
+21-1	1801-1804	ASS	ACTIVEING	false	_	AufnahmeMedikation
+21-2	1805-1808	100	STRENGTH[1]	false[1]	21-1[0_1]	AufnahmeMedikation
+21-3	1809-1811	mg	STRENGTH[1]	false[1]	_	AufnahmeMedikation
+21-4	1812-1813	1	FREQUENCY[2]	false[2]	21-1[0_2]	AufnahmeMedikation
+21-5	1813-1814	-	FREQUENCY[2]	false[2]	_	AufnahmeMedikation
+21-6	1814-1815	0	FREQUENCY[2]	false[2]	_	AufnahmeMedikation
+21-7	1815-1816	-	FREQUENCY[2]	false[2]	_	AufnahmeMedikation
+21-8	1816-1817	0	FREQUENCY[2]	false[2]	_	AufnahmeMedikation
+
+#Text=Ticagrelor 90 mg 1-0-1 bis <[Pseudo] 02/08/2035> nach PTCA/DES
+22-1	1818-1828	Ticagrelor	ACTIVEING	false	_	AufnahmeMedikation
+22-2	1829-1831	90	STRENGTH[3]	false[3]	22-1[0_3]	AufnahmeMedikation
+22-3	1832-1834	mg	STRENGTH[3]	false[3]	_	AufnahmeMedikation
+22-4	1835-1836	1	FREQUENCY[4]	false[4]	22-1[0_4]	AufnahmeMedikation
+22-5	1836-1837	-	FREQUENCY[4]	false[4]	_	AufnahmeMedikation
+22-6	1837-1838	0	FREQUENCY[4]	false[4]	_	AufnahmeMedikation
+22-7	1838-1839	-	FREQUENCY[4]	false[4]	_	AufnahmeMedikation
+22-8	1839-1840	1	FREQUENCY[4]	false[4]	_	AufnahmeMedikation
+22-9	1841-1844	bis	DURATION[5]	false[5]	22-1[0_5]	AufnahmeMedikation
+22-10	1845-1854	<[Pseudo]	DURATION[5]	false[5]	_	AufnahmeMedikation
+22-11	1855-1857	02	DURATION[5]	false[5]	_	AufnahmeMedikation
+22-12	1857-1858	/	DURATION[5]	false[5]	_	AufnahmeMedikation
+22-13	1858-1860	08	DURATION[5]	false[5]	_	AufnahmeMedikation
+22-14	1860-1861	/	DURATION[5]	false[5]	_	AufnahmeMedikation
+22-15	1861-1865	2035	DURATION[5]	false[5]	_	AufnahmeMedikation
+22-16	1865-1866	>	DURATION[5]	false[5]	_	AufnahmeMedikation
+22-17	1867-1871	nach	_	_	_	AufnahmeMedikation
+22-18	1872-1876	PTCA	REASON[6]	false[6]	22-1[0_6]	AufnahmeMedikation
+22-19	1876-1877	/	REASON[6]	false[6]	_	AufnahmeMedikation
+22-20	1877-1880	DES	REASON[6]	false[6]	_	AufnahmeMedikation
+
+#Text=Metoprolol 23,75 mg 1-0-0
+23-1	1881-1891	Metoprolol	ACTIVEING	false	_	AufnahmeMedikation
+23-2	1892-1897	23,75	STRENGTH[7]	false[7]	23-1[0_7]	AufnahmeMedikation
+23-3	1898-1900	mg	STRENGTH[7]	false[7]	_	AufnahmeMedikation
+23-4	1901-1902	1	FREQUENCY[8]	false[8]	23-1[0_8]	AufnahmeMedikation
+23-5	1902-1903	-	FREQUENCY[8]	false[8]	_	AufnahmeMedikation
+23-6	1903-1904	0	FREQUENCY[8]	false[8]	_	AufnahmeMedikation
+23-7	1904-1905	-	FREQUENCY[8]	false[8]	_	AufnahmeMedikation
+23-8	1905-1906	0	FREQUENCY[8]	false[8]	_	AufnahmeMedikation
+
+#Text=Ramipril 2,5 mg 1-0-0
+24-1	1907-1915	Ramipril	ACTIVEING	false	_	AufnahmeMedikation
+24-2	1916-1919	2,5	STRENGTH[9]	false[9]	24-1[0_9]	AufnahmeMedikation
+24-3	1920-1922	mg	STRENGTH[9]	false[9]	_	AufnahmeMedikation
+24-4	1923-1924	1	FREQUENCY[10]	false[10]	24-1[0_10]	AufnahmeMedikation
+24-5	1924-1925	-	FREQUENCY[10]	false[10]	_	AufnahmeMedikation
+24-6	1925-1926	0	FREQUENCY[10]	false[10]	_	AufnahmeMedikation
+24-7	1926-1927	-	FREQUENCY[10]	false[10]	_	AufnahmeMedikation
+24-8	1927-1928	0	FREQUENCY[10]	false[10]	_	AufnahmeMedikation
+
+#Text=Atorvastatin 40 mg 0-0-1
+25-1	1929-1941	Atorvastatin	ACTIVEING	false	_	AufnahmeMedikation
+25-2	1942-1944	40	STRENGTH[11]	false[11]	25-1[0_11]	AufnahmeMedikation
+25-3	1945-1947	mg	STRENGTH[11]	false[11]	_	AufnahmeMedikation
+25-4	1948-1949	0	FREQUENCY[12]	false[12]	25-1[0_12]	AufnahmeMedikation
+25-5	1949-1950	-	FREQUENCY[12]	false[12]	_	AufnahmeMedikation
+25-6	1950-1951	0	FREQUENCY[12]	false[12]	_	AufnahmeMedikation
+25-7	1951-1952	-	FREQUENCY[12]	false[12]	_	AufnahmeMedikation
+25-8	1952-1953	1	FREQUENCY[12]	false[12]	_	AufnahmeMedikation
+
+#Text=Ezetimib 10 1-0-0
+26-1	1954-1962	Ezetimib	ACTIVEING	false	_	AufnahmeMedikation
+26-2	1963-1965	10	STRENGTH	false	26-1	AufnahmeMedikation
+26-3	1966-1967	1	FREQUENCY[13]	false[13]	26-1[0_13]	AufnahmeMedikation
+26-4	1967-1968	-	FREQUENCY[13]	false[13]	_	AufnahmeMedikation
+26-5	1968-1969	0	FREQUENCY[13]	false[13]	_	AufnahmeMedikation
+26-6	1969-1970	-	FREQUENCY[13]	false[13]	_	AufnahmeMedikation
+26-7	1970-1971	0	FREQUENCY[13]	false[13]	_	AufnahmeMedikation
+
+#Text=Pantozol 20 1-0-0
+27-1	1972-1980	Pantozol	DRUG	false	_	AufnahmeMedikation
+27-2	1981-1983	20	STRENGTH	false	27-1	AufnahmeMedikation
+27-3	1984-1985	1	FREQUENCY[14]	false[14]	27-1[0_14]	AufnahmeMedikation
+27-4	1985-1986	-	FREQUENCY[14]	false[14]	_	AufnahmeMedikation
+27-5	1986-1987	0	FREQUENCY[14]	false[14]	_	AufnahmeMedikation
+27-6	1987-1988	-	FREQUENCY[14]	false[14]	_	AufnahmeMedikation
+27-7	1988-1989	0	FREQUENCY[14]	false[14]	_	AufnahmeMedikation
+
+#Text=Körperliche Untersuchung:
+28-1	1991-2002	Körperliche	_	_	_	KUBefunde
+28-2	2003-2015	Untersuchung	_	_	_	KUBefunde
+28-3	2015-2016	:	_	_	_	KUBefunde
+
+#Text=AZ: gut
+29-1	2017-2019	AZ	_	_	_	KUBefunde
+29-2	2019-2020	:	_	_	_	KUBefunde
+29-3	2021-2024	gut	_	_	_	KUBefunde
+
+#Text=EZ: 185 cm 89 kg
+30-1	2025-2027	EZ	_	_	_	KUBefunde
+30-2	2027-2028	:	_	_	_	KUBefunde
+30-3	2029-2032	185	_	_	_	KUBefunde
+30-4	2033-2035	cm	_	_	_	KUBefunde
+30-5	2036-2038	89	_	_	_	KUBefunde
+30-6	2039-2041	kg	_	_	_	KUBefunde
+
+#Text=HF: 66/min, regelmäßig
+31-1	2042-2044	HF	_	_	_	KUBefunde
+31-2	2044-2045	:	_	_	_	KUBefunde
+31-3	2046-2048	66	_	_	_	KUBefunde
+31-4	2048-2049	/	_	_	_	KUBefunde
+31-5	2049-2052	min	_	_	_	KUBefunde
+31-6	2052-2053	,	_	_	_	KUBefunde
+31-7	2054-2064	regelmäßig	_	_	_	KUBefunde
+
+#Text=RR: 115/60 mmHg
+32-1	2065-2067	RR	_	_	_	KUBefunde
+32-2	2067-2068	:	_	_	_	KUBefunde
+32-3	2069-2072	115	_	_	_	KUBefunde
+32-4	2072-2073	/	_	_	_	KUBefunde
+32-5	2073-2075	60	_	_	_	KUBefunde
+32-6	2076-2080	mmHg	_	_	_	KUBefunde
+
+#Text=Keine Cyanose, Anämiezeichen, Ikterus.
+33-1	2081-2086	Keine	_	_	_	KUBefunde
+33-2	2087-2094	Cyanose	_	_	_	KUBefunde
+33-3	2094-2095	,	_	_	_	KUBefunde
+33-4	2096-2109	Anämiezeichen	_	_	_	KUBefunde
+33-5	2109-2110	,	_	_	_	KUBefunde
+33-6	2111-2118	Ikterus	_	_	_	KUBefunde
+33-7	2118-2119	.	_	_	_	KUBefunde
+
+#Text=HT: rein, keine path. Geräusche
+34-1	2120-2122	HT	_	_	_	KUBefunde
+34-2	2122-2123	:	_	_	_	KUBefunde
+34-3	2124-2128	rein	_	_	_	KUBefunde
+34-4	2128-2129	,	_	_	_	KUBefunde
+34-5	2130-2135	keine	_	_	_	KUBefunde
+34-6	2136-2140	path	_	_	_	KUBefunde
+34-7	2140-2141	.	_	_	_	KUBefunde
+34-8	2142-2151	Geräusche	_	_	_	KUBefunde
+
+#Text=Lunge: vesikuläres AG, keine NG
+35-1	2152-2157	Lunge	_	_	_	KUBefunde
+35-2	2157-2158	:	_	_	_	KUBefunde
+35-3	2159-2170	vesikuläres	_	_	_	KUBefunde
+35-4	2171-2173	AG	_	_	_	KUBefunde
+35-5	2173-2174	,	_	_	_	KUBefunde
+35-6	2175-2180	keine	_	_	_	KUBefunde
+35-7	2181-2183	NG	_	_	_	KUBefunde
+
+#Text=Periphere Ödeme: keine
+36-1	2184-2193	Periphere	_	_	_	KUBefunde
+36-2	2194-2199	Ödeme	_	_	_	KUBefunde
+36-3	2199-2200	:	_	_	_	KUBefunde
+36-4	2201-2206	keine	_	_	_	KUBefunde
+
+#Text=sonstige Auffälligkeiten: keine
+37-1	2207-2215	sonstige	_	_	_	KUBefunde
+37-2	2216-2231	Auffälligkeiten	_	_	_	KUBefunde
+37-3	2231-2232	:	_	_	_	KUBefunde
+37-4	2233-2238	keine	_	_	_	KUBefunde
+
+#Text=Ruhe-EKG:
+38-1	2240-2248	Ruhe-EKG	_	_	_	Befunde
+38-2	2248-2249	:	_	_	_	Befunde
+
+#Text=Normofrequenter Sinusrhythmus, Hf 66/min, Indifferenztyp. PQ 162ms, QRS 83ms, QTc 400ms. Regelrechte R-Progression, R/S Umschlag in V3/V4, keine S-Persistenz. Keine signifikanten Erregungsrückbildungsstörungen.
+39-1	2250-2265	Normofrequenter	_	_	_	Befunde
+39-2	2266-2279	Sinusrhythmus	_	_	_	Befunde
+39-3	2279-2280	,	_	_	_	Befunde
+39-4	2281-2283	Hf	_	_	_	Befunde
+39-5	2284-2286	66	_	_	_	Befunde
+39-6	2286-2287	/	_	_	_	Befunde
+39-7	2287-2290	min	_	_	_	Befunde
+39-8	2290-2291	,	_	_	_	Befunde
+39-9	2292-2306	Indifferenztyp	_	_	_	Befunde
+39-10	2306-2307	.	_	_	_	Befunde
+39-11	2308-2310	PQ	_	_	_	Befunde
+39-12	2311-2316	162ms	_	_	_	Befunde
+39-13	2316-2317	,	_	_	_	Befunde
+39-14	2318-2321	QRS	_	_	_	Befunde
+39-15	2322-2326	83ms	_	_	_	Befunde
+39-16	2326-2327	,	_	_	_	Befunde
+39-17	2328-2331	QTc	_	_	_	Befunde
+39-18	2332-2337	400ms	_	_	_	Befunde
+39-19	2337-2338	.	_	_	_	Befunde
+39-20	2339-2350	Regelrechte	_	_	_	Befunde
+39-21	2351-2364	R-Progression	_	_	_	Befunde
+39-22	2364-2365	,	_	_	_	Befunde
+39-23	2366-2367	R	_	_	_	Befunde
+39-24	2367-2368	/	_	_	_	Befunde
+39-25	2368-2369	S	_	_	_	Befunde
+39-26	2370-2378	Umschlag	_	_	_	Befunde
+39-27	2379-2381	in	_	_	_	Befunde
+39-28	2382-2384	V3	_	_	_	Befunde
+39-29	2384-2385	/	_	_	_	Befunde
+39-30	2385-2387	V4	_	_	_	Befunde
+39-31	2387-2388	,	_	_	_	Befunde
+39-32	2389-2394	keine	_	_	_	Befunde
+39-33	2395-2407	S-Persistenz	_	_	_	Befunde
+39-34	2407-2408	.	_	_	_	Befunde
+39-35	2409-2414	Keine	_	_	_	Befunde
+39-36	2415-2428	signifikanten	_	_	_	Befunde
+39-37	2429-2459	Erregungsrückbildungsstörungen	_	_	_	Befunde
+39-38	2459-2460	.	_	_	_	Befunde
+
+#Text=Kardio-MRT vom <[Pseudo] 23/10/2034:>
+40-1	2462-2472	Kardio-MRT	_	_	_	Befunde
+40-2	2473-2476	vom	_	_	_	Befunde
+40-3	2477-2486	<[Pseudo]	_	_	_	Befunde
+40-4	2487-2489	23	_	_	_	Befunde
+40-5	2489-2490	/	_	_	_	Befunde
+40-6	2490-2492	10	_	_	_	Befunde
+40-7	2492-2493	/	_	_	_	Befunde
+40-8	2493-2497	2034	_	_	_	Befunde
+40-9	2497-2499	:>	_	_	_	Befunde
+
+#Text=Zusammenfassung:
+41-1	2504-2519	Zusammenfassung	_	_	_	Zusammenfassung
+41-2	2519-2520	:	_	_	_	Zusammenfassung
+
+#Text=Die ambulante Vorstellung erfolgt zur Befundbesprechung des Kardio-MRT vom <[Pseudo] 23/10/2034> bei bekannter koronarer Herzerkrankung. Subjektiv wird von einem klinisch stabilen kardialen Verlauf berichtet.
+42-1	2521-2524	Die	_	_	_	Zusammenfassung
+42-2	2525-2534	ambulante	_	_	_	Zusammenfassung
+42-3	2535-2546	Vorstellung	_	_	_	Zusammenfassung
+42-4	2547-2554	erfolgt	_	_	_	Zusammenfassung
+42-5	2555-2558	zur	_	_	_	Zusammenfassung
+42-6	2559-2576	Befundbesprechung	_	_	_	Zusammenfassung
+42-7	2577-2580	des	_	_	_	Zusammenfassung
+42-8	2581-2591	Kardio-MRT	_	_	_	Zusammenfassung
+42-9	2592-2595	vom	_	_	_	Zusammenfassung
+42-10	2596-2605	<[Pseudo]	_	_	_	Zusammenfassung
+42-11	2606-2608	23	_	_	_	Zusammenfassung
+42-12	2608-2609	/	_	_	_	Zusammenfassung
+42-13	2609-2611	10	_	_	_	Zusammenfassung
+42-14	2611-2612	/	_	_	_	Zusammenfassung
+42-15	2612-2616	2034	_	_	_	Zusammenfassung
+42-16	2616-2617	>	_	_	_	Zusammenfassung
+42-17	2618-2621	bei	_	_	_	Zusammenfassung
+42-18	2622-2631	bekannter	_	_	_	Zusammenfassung
+42-19	2632-2641	koronarer	_	_	_	Zusammenfassung
+42-20	2642-2656	Herzerkrankung	_	_	_	Zusammenfassung
+42-21	2656-2657	.	_	_	_	Zusammenfassung
+42-22	2658-2667	Subjektiv	_	_	_	Zusammenfassung
+42-23	2668-2672	wird	_	_	_	Zusammenfassung
+42-24	2673-2676	von	_	_	_	Zusammenfassung
+42-25	2677-2682	einem	_	_	_	Zusammenfassung
+42-26	2683-2691	klinisch	_	_	_	Zusammenfassung
+42-27	2692-2700	stabilen	_	_	_	Zusammenfassung
+42-28	2701-2710	kardialen	_	_	_	Zusammenfassung
+42-29	2711-2718	Verlauf	_	_	_	Zusammenfassung
+42-30	2719-2728	berichtet	_	_	_	Zusammenfassung
+42-31	2728-2729	.	_	_	_	Zusammenfassung
+
+#Text=Im Kardio-MRT fand sich eine belastungsinduzierte Hypokinesie inferolateral mittventrikulär, sowie die vorbeschriebene Hypokinesie anterior mittventrikulär. Nach erneuter Durchsicht des letzten Koronarangiographie-Befundes und dem gesehenen Versorgungstyp ist der Ischämienachweis im Kardio-MRT-Befund bezüglich des LCX-Stromgebietes als negativ zu werten, sodass wir zunächst ein konservatives Procedere bezüglich der Koronarien empfehlen und aktuell keine interventionsbedürftigen Stenosen sehen.
+43-1	2731-2733	Im	_	_	_	Zusammenfassung
+43-2	2734-2744	Kardio-MRT	_	_	_	Zusammenfassung
+43-3	2745-2749	fand	_	_	_	Zusammenfassung
+43-4	2750-2754	sich	_	_	_	Zusammenfassung
+43-5	2755-2759	eine	_	_	_	Zusammenfassung
+43-6	2760-2780	belastungsinduzierte	_	_	_	Zusammenfassung
+43-7	2781-2792	Hypokinesie	_	_	_	Zusammenfassung
+43-8	2793-2806	inferolateral	_	_	_	Zusammenfassung
+43-9	2807-2822	mittventrikulär	_	_	_	Zusammenfassung
+43-10	2822-2823	,	_	_	_	Zusammenfassung
+43-11	2824-2829	sowie	_	_	_	Zusammenfassung
+43-12	2830-2833	die	_	_	_	Zusammenfassung
+43-13	2834-2849	vorbeschriebene	_	_	_	Zusammenfassung
+43-14	2850-2861	Hypokinesie	_	_	_	Zusammenfassung
+43-15	2862-2870	anterior	_	_	_	Zusammenfassung
+43-16	2871-2886	mittventrikulär	_	_	_	Zusammenfassung
+43-17	2886-2887	.	_	_	_	Zusammenfassung
+43-18	2888-2892	Nach	_	_	_	Zusammenfassung
+43-19	2893-2901	erneuter	_	_	_	Zusammenfassung
+43-20	2902-2912	Durchsicht	_	_	_	Zusammenfassung
+43-21	2913-2916	des	_	_	_	Zusammenfassung
+43-22	2917-2924	letzten	_	_	_	Zusammenfassung
+43-23	2925-2953	Koronarangiographie-Befundes	_	_	_	Zusammenfassung
+43-24	2954-2957	und	_	_	_	Zusammenfassung
+43-25	2958-2961	dem	_	_	_	Zusammenfassung
+43-26	2962-2971	gesehenen	_	_	_	Zusammenfassung
+43-27	2972-2986	Versorgungstyp	_	_	_	Zusammenfassung
+43-28	2987-2990	ist	_	_	_	Zusammenfassung
+43-29	2991-2994	der	_	_	_	Zusammenfassung
+43-30	2995-3011	Ischämienachweis	_	_	_	Zusammenfassung
+43-31	3012-3014	im	_	_	_	Zusammenfassung
+43-32	3015-3032	Kardio-MRT-Befund	_	_	_	Zusammenfassung
+43-33	3033-3042	bezüglich	_	_	_	Zusammenfassung
+43-34	3043-3046	des	_	_	_	Zusammenfassung
+43-35	3047-3064	LCX-Stromgebietes	_	_	_	Zusammenfassung
+43-36	3065-3068	als	_	_	_	Zusammenfassung
+43-37	3069-3076	negativ	_	_	_	Zusammenfassung
+43-38	3077-3079	zu	_	_	_	Zusammenfassung
+43-39	3080-3086	werten	_	_	_	Zusammenfassung
+43-40	3086-3087	,	_	_	_	Zusammenfassung
+43-41	3088-3094	sodass	_	_	_	Zusammenfassung
+43-42	3095-3098	wir	_	_	_	Zusammenfassung
+43-43	3099-3107	zunächst	_	_	_	Zusammenfassung
+43-44	3108-3111	ein	_	_	_	Zusammenfassung
+43-45	3112-3125	konservatives	_	_	_	Zusammenfassung
+43-46	3126-3135	Procedere	_	_	_	Zusammenfassung
+43-47	3136-3145	bezüglich	_	_	_	Zusammenfassung
+43-48	3146-3149	der	_	_	_	Zusammenfassung
+43-49	3150-3160	Koronarien	_	_	_	Zusammenfassung
+43-50	3161-3170	empfehlen	_	_	_	Zusammenfassung
+43-51	3171-3174	und	_	_	_	Zusammenfassung
+43-52	3175-3182	aktuell	_	_	_	Zusammenfassung
+43-53	3183-3188	keine	_	_	_	Zusammenfassung
+43-54	3189-3213	interventionsbedürftigen	_	_	_	Zusammenfassung
+43-55	3214-3222	Stenosen	_	_	_	Zusammenfassung
+43-56	3223-3228	sehen	_	_	_	Zusammenfassung
+43-57	3228-3229	.	_	_	_	Zusammenfassung
+
+#Text=In Zusammenschau der klinischen und apparativen Befunde gehen wir von einem stabilen kardialen Befund aus und empfehlen daher eine Fortführung der konservativen Therapie.
+44-1	3231-3233	In	_	_	_	Zusammenfassung
+44-2	3234-3247	Zusammenschau	_	_	_	Zusammenfassung
+44-3	3248-3251	der	_	_	_	Zusammenfassung
+44-4	3252-3262	klinischen	_	_	_	Zusammenfassung
+44-5	3263-3266	und	_	_	_	Zusammenfassung
+44-6	3267-3278	apparativen	_	_	_	Zusammenfassung
+44-7	3279-3286	Befunde	_	_	_	Zusammenfassung
+44-8	3287-3292	gehen	_	_	_	Zusammenfassung
+44-9	3293-3296	wir	_	_	_	Zusammenfassung
+44-10	3297-3300	von	_	_	_	Zusammenfassung
+44-11	3301-3306	einem	_	_	_	Zusammenfassung
+44-12	3307-3315	stabilen	_	_	_	Zusammenfassung
+44-13	3316-3325	kardialen	_	_	_	Zusammenfassung
+44-14	3326-3332	Befund	_	_	_	Zusammenfassung
+44-15	3333-3336	aus	_	_	_	Zusammenfassung
+44-16	3337-3340	und	_	_	_	Zusammenfassung
+44-17	3341-3350	empfehlen	_	_	_	Zusammenfassung
+44-18	3351-3356	daher	_	_	_	Zusammenfassung
+44-19	3357-3361	eine	_	_	_	Zusammenfassung
+44-20	3362-3373	Fortführung	_	_	_	Zusammenfassung
+44-21	3374-3377	der	_	_	_	Zusammenfassung
+44-22	3378-3391	konservativen	_	_	_	Zusammenfassung
+44-23	3392-3400	Therapie	_	_	_	Zusammenfassung
+44-24	3400-3401	.	_	_	_	Zusammenfassung
+
+#Text=Wir empfehlen die konsequente Einstellung der kardiovaskulären Risikofaktoren gemäß den aktuellen Leitlinien, sowie die Fortführung der u.a. medikamentösen Therapie. Wir empfehlen regelmäßige körperliche Aktivität 3 bis 4 Mal pro Woche für ca. 40 bis 50 Minuten in Form von zum Beispiel B-ORG I-ORG Radfahren, Schwimmen, I-ORG oder Ergometertraining, sowie weiterhin nichtmedikamentösen Maßnahmen -LRB- z.B. Reduktion des Salzkonsums, mediterrane Diät und Gewichtsreduktion -RRB- .
+45-1	3403-3406	Wir	_	_	_	Zusammenfassung
+45-2	3407-3416	empfehlen	_	_	_	Zusammenfassung
+45-3	3417-3420	die	_	_	_	Zusammenfassung
+45-4	3421-3432	konsequente	_	_	_	Zusammenfassung
+45-5	3433-3444	Einstellung	_	_	_	Zusammenfassung
+45-6	3445-3448	der	_	_	_	Zusammenfassung
+45-7	3449-3465	kardiovaskulären	_	_	_	Zusammenfassung
+45-8	3466-3480	Risikofaktoren	_	_	_	Zusammenfassung
+45-9	3481-3486	gemäß	_	_	_	Zusammenfassung
+45-10	3487-3490	den	_	_	_	Zusammenfassung
+45-11	3491-3500	aktuellen	_	_	_	Zusammenfassung
+45-12	3501-3511	Leitlinien	_	_	_	Zusammenfassung
+45-13	3511-3512	,	_	_	_	Zusammenfassung
+45-14	3513-3518	sowie	_	_	_	Zusammenfassung
+45-15	3519-3522	die	_	_	_	Zusammenfassung
+45-16	3523-3534	Fortführung	_	_	_	Zusammenfassung
+45-17	3535-3538	der	_	_	_	Zusammenfassung
+45-18	3539-3543	u.a.	_	_	_	Zusammenfassung
+45-19	3544-3558	medikamentösen	_	_	_	Zusammenfassung
+45-20	3559-3567	Therapie	_	_	_	Zusammenfassung
+45-21	3567-3568	.	_	_	_	Zusammenfassung
+45-22	3569-3572	Wir	_	_	_	Zusammenfassung
+45-23	3573-3582	empfehlen	_	_	_	Zusammenfassung
+45-24	3583-3594	regelmäßige	_	_	_	Zusammenfassung
+45-25	3595-3606	körperliche	_	_	_	Zusammenfassung
+45-26	3607-3616	Aktivität	_	_	_	Zusammenfassung
+45-27	3617-3618	3	_	_	_	Zusammenfassung
+45-28	3619-3622	bis	_	_	_	Zusammenfassung
+45-29	3623-3624	4	_	_	_	Zusammenfassung
+45-30	3625-3628	Mal	_	_	_	Zusammenfassung
+45-31	3629-3632	pro	_	_	_	Zusammenfassung
+45-32	3633-3638	Woche	_	_	_	Zusammenfassung
+45-33	3639-3642	für	_	_	_	Zusammenfassung
+45-34	3643-3646	ca.	_	_	_	Zusammenfassung
+45-35	3647-3649	40	_	_	_	Zusammenfassung
+45-36	3650-3653	bis	_	_	_	Zusammenfassung
+45-37	3654-3656	50	_	_	_	Zusammenfassung
+45-38	3657-3664	Minuten	_	_	_	Zusammenfassung
+45-39	3665-3667	in	_	_	_	Zusammenfassung
+45-40	3668-3672	Form	_	_	_	Zusammenfassung
+45-41	3673-3676	von	_	_	_	Zusammenfassung
+45-42	3677-3680	zum	_	_	_	Zusammenfassung
+45-43	3681-3689	Beispiel	_	_	_	Zusammenfassung
+45-44	3690-3695	B-ORG	_	_	_	Zusammenfassung
+45-45	3696-3701	I-ORG	_	_	_	Zusammenfassung
+45-46	3702-3711	Radfahren	_	_	_	Zusammenfassung
+45-47	3711-3712	,	_	_	_	Zusammenfassung
+45-48	3713-3722	Schwimmen	_	_	_	Zusammenfassung
+45-49	3722-3723	,	_	_	_	Zusammenfassung
+45-50	3724-3729	I-ORG	_	_	_	Zusammenfassung
+45-51	3730-3734	oder	_	_	_	Zusammenfassung
+45-52	3735-3752	Ergometertraining	_	_	_	Zusammenfassung
+45-53	3752-3753	,	_	_	_	Zusammenfassung
+45-54	3754-3759	sowie	_	_	_	Zusammenfassung
+45-55	3760-3769	weiterhin	_	_	_	Zusammenfassung
+45-56	3770-3789	nichtmedikamentösen	_	_	_	Zusammenfassung
+45-57	3790-3799	Maßnahmen	_	_	_	Zusammenfassung
+45-58	3800-3805	-LRB-	_	_	_	Zusammenfassung
+45-59	3806-3810	z.B.	_	_	_	Zusammenfassung
+45-60	3811-3820	Reduktion	_	_	_	Zusammenfassung
+45-61	3821-3824	des	_	_	_	Zusammenfassung
+45-62	3825-3836	Salzkonsums	_	_	_	Zusammenfassung
+45-63	3836-3837	,	_	_	_	Zusammenfassung
+45-64	3838-3849	mediterrane	_	_	_	Zusammenfassung
+45-65	3850-3854	Diät	_	_	_	Zusammenfassung
+45-66	3855-3858	und	_	_	_	Zusammenfassung
+45-67	3859-3876	Gewichtsreduktion	_	_	_	Zusammenfassung
+45-68	3877-3882	-RRB-	_	_	_	Zusammenfassung
+45-69	3883-3884	.	_	_	_	Zusammenfassung
+
+#Text=Zur Einschätzung der erlaubten Pulsrate bzw. anaeroben Schwelle empfehlen wir eine Vorstellung in der Sportmedizin inkl. Spiroergometrischer Untersuchung.
+46-1	3885-3888	Zur	_	_	_	Zusammenfassung
+46-2	3889-3901	Einschätzung	_	_	_	Zusammenfassung
+46-3	3902-3905	der	_	_	_	Zusammenfassung
+46-4	3906-3915	erlaubten	_	_	_	Zusammenfassung
+46-5	3916-3924	Pulsrate	_	_	_	Zusammenfassung
+46-6	3925-3929	bzw.	_	_	_	Zusammenfassung
+46-7	3930-3939	anaeroben	_	_	_	Zusammenfassung
+46-8	3940-3948	Schwelle	_	_	_	Zusammenfassung
+46-9	3949-3958	empfehlen	_	_	_	Zusammenfassung
+46-10	3959-3962	wir	_	_	_	Zusammenfassung
+46-11	3963-3967	eine	_	_	_	Zusammenfassung
+46-12	3968-3979	Vorstellung	_	_	_	Zusammenfassung
+46-13	3980-3982	in	_	_	_	Zusammenfassung
+46-14	3983-3986	der	_	_	_	Zusammenfassung
+46-15	3987-3999	Sportmedizin	_	_	_	Zusammenfassung
+46-16	4000-4005	inkl.	_	_	_	Zusammenfassung
+46-17	4006-4025	Spiroergometrischer	_	_	_	Zusammenfassung
+46-18	4026-4038	Untersuchung	_	_	_	Zusammenfassung
+46-19	4038-4039	.	_	_	_	Zusammenfassung
+
+#Text=In 12 Monaten empfehlen wir eine kardiologische Kontrolluntersuchung gerne auch bei einem niedergelassenen Kardiologen. Des Weiteren empfehlen wir regelmäßige hausärztliche Kontrollen. Bei Auftreten von Beschwerden oder Komplikationen sind wir jederzeit gerne bereit, den Patienten wiederzusehen -in Notfällen über unsere B-ORG I-ORG I-ORG unter B-PHONE
+47-1	4041-4043	In	_	_	_	Zusammenfassung
+47-2	4044-4046	12	_	_	_	Zusammenfassung
+47-3	4047-4054	Monaten	_	_	_	Zusammenfassung
+47-4	4055-4064	empfehlen	_	_	_	Zusammenfassung
+47-5	4065-4068	wir	_	_	_	Zusammenfassung
+47-6	4069-4073	eine	_	_	_	Zusammenfassung
+47-7	4074-4088	kardiologische	_	_	_	Zusammenfassung
+47-8	4089-4109	Kontrolluntersuchung	_	_	_	Zusammenfassung
+47-9	4110-4115	gerne	_	_	_	Zusammenfassung
+47-10	4116-4120	auch	_	_	_	Zusammenfassung
+47-11	4121-4124	bei	_	_	_	Zusammenfassung
+47-12	4125-4130	einem	_	_	_	Zusammenfassung
+47-13	4131-4147	niedergelassenen	_	_	_	Zusammenfassung
+47-14	4148-4159	Kardiologen	_	_	_	Zusammenfassung
+47-15	4159-4160	.	_	_	_	Zusammenfassung
+47-16	4161-4164	Des	_	_	_	Zusammenfassung
+47-17	4165-4173	Weiteren	_	_	_	Zusammenfassung
+47-18	4174-4183	empfehlen	_	_	_	Zusammenfassung
+47-19	4184-4187	wir	_	_	_	Zusammenfassung
+47-20	4188-4199	regelmäßige	_	_	_	Zusammenfassung
+47-21	4200-4213	hausärztliche	_	_	_	Zusammenfassung
+47-22	4214-4224	Kontrollen	_	_	_	Zusammenfassung
+47-23	4224-4225	.	_	_	_	Zusammenfassung
+47-24	4226-4229	Bei	_	_	_	Zusammenfassung
+47-25	4230-4239	Auftreten	_	_	_	Zusammenfassung
+47-26	4240-4243	von	_	_	_	Zusammenfassung
+47-27	4244-4255	Beschwerden	_	_	_	Zusammenfassung
+47-28	4256-4260	oder	_	_	_	Zusammenfassung
+47-29	4261-4275	Komplikationen	_	_	_	Zusammenfassung
+47-30	4276-4280	sind	_	_	_	Zusammenfassung
+47-31	4281-4284	wir	_	_	_	Zusammenfassung
+47-32	4285-4294	jederzeit	_	_	_	Zusammenfassung
+47-33	4295-4300	gerne	_	_	_	Zusammenfassung
+47-34	4301-4307	bereit	_	_	_	Zusammenfassung
+47-35	4307-4308	,	_	_	_	Zusammenfassung
+47-36	4309-4312	den	_	_	_	Zusammenfassung
+47-37	4313-4322	Patienten	_	_	_	Zusammenfassung
+47-38	4323-4336	wiederzusehen	_	_	_	Zusammenfassung
+47-39	4337-4340	-in	_	_	_	Zusammenfassung
+47-40	4341-4350	Notfällen	_	_	_	Zusammenfassung
+47-41	4351-4355	über	_	_	_	Zusammenfassung
+47-42	4356-4362	unsere	_	_	_	Zusammenfassung
+47-43	4363-4368	B-ORG	_	_	_	Zusammenfassung
+47-44	4369-4374	I-ORG	_	_	_	Zusammenfassung
+47-45	4375-4380	I-ORG	_	_	_	Zusammenfassung
+47-46	4381-4386	unter	_	_	_	Zusammenfassung
+47-47	4387-4394	B-PHONE	_	_	_	Zusammenfassung
+
+#Text=Therapieempfehlung von kardiologischer Seite -LRB- unverändert -RRB- :
+48-1	4396-4414	Therapieempfehlung	_	_	_	EntlassMedikation
+48-2	4415-4418	von	_	_	_	EntlassMedikation
+48-3	4419-4434	kardiologischer	_	_	_	EntlassMedikation
+48-4	4435-4440	Seite	_	_	_	EntlassMedikation
+48-5	4441-4446	-LRB-	_	_	_	EntlassMedikation
+48-6	4447-4458	unverändert	_	_	_	EntlassMedikation
+48-7	4459-4464	-RRB-	_	_	_	EntlassMedikation
+48-8	4465-4466	:	_	_	_	EntlassMedikation
+
+#Text=ASS 100 mg 1-0-0
+49-1	4467-4470	ASS	ACTIVEING	false	_	EntlassMedikation
+49-2	4471-4474	100	STRENGTH[15]	false[15]	49-1[0_15]	EntlassMedikation
+49-3	4475-4477	mg	STRENGTH[15]	false[15]	_	EntlassMedikation
+49-4	4478-4479	1	FREQUENCY[16]	false[16]	49-1[0_16]	EntlassMedikation
+49-5	4479-4480	-	FREQUENCY[16]	false[16]	_	EntlassMedikation
+49-6	4480-4481	0	FREQUENCY[16]	false[16]	_	EntlassMedikation
+49-7	4481-4482	-	FREQUENCY[16]	false[16]	_	EntlassMedikation
+49-8	4482-4483	0	FREQUENCY[16]	false[16]	_	EntlassMedikation
+
+#Text=Ticagrelor 90 mg 1-0-1 bis <[Pseudo] 02/08/2035> nach PTCA/DES
+50-1	4484-4494	Ticagrelor	ACTIVEING	false	_	EntlassMedikation
+50-2	4495-4497	90	STRENGTH[17]	false[17]	50-1[0_17]	EntlassMedikation
+50-3	4498-4500	mg	STRENGTH[17]	false[17]	_	EntlassMedikation
+50-4	4501-4502	1	FREQUENCY[18]	false[18]	50-1[0_18]	EntlassMedikation
+50-5	4502-4503	-	FREQUENCY[18]	false[18]	_	EntlassMedikation
+50-6	4503-4504	0	FREQUENCY[18]	false[18]	_	EntlassMedikation
+50-7	4504-4505	-	FREQUENCY[18]	false[18]	_	EntlassMedikation
+50-8	4505-4506	1	FREQUENCY[18]	false[18]	_	EntlassMedikation
+50-9	4507-4510	bis	DURATION[19]	false[19]	50-1[0_19]	EntlassMedikation
+50-10	4511-4520	<[Pseudo]	DURATION[19]	false[19]	_	EntlassMedikation
+50-11	4521-4523	02	DURATION[19]	false[19]	_	EntlassMedikation
+50-12	4523-4524	/	DURATION[19]	false[19]	_	EntlassMedikation
+50-13	4524-4526	08	DURATION[19]	false[19]	_	EntlassMedikation
+50-14	4526-4527	/	DURATION[19]	false[19]	_	EntlassMedikation
+50-15	4527-4531	2035	DURATION[19]	false[19]	_	EntlassMedikation
+50-16	4531-4532	>	DURATION[19]	false[19]	_	EntlassMedikation
+50-17	4533-4537	nach	_	_	_	EntlassMedikation
+50-18	4538-4542	PTCA	REASON[20]	false[20]	50-1[0_20]	EntlassMedikation
+50-19	4542-4543	/	REASON[20]	false[20]	_	EntlassMedikation
+50-20	4543-4546	DES	REASON[20]	false[20]	_	EntlassMedikation
+
+#Text=Metoprolol 23,75 mg 1-0-0
+51-1	4547-4557	Metoprolol	ACTIVEING	false	_	EntlassMedikation
+51-2	4558-4563	23,75	STRENGTH[21]	false[21]	51-1[0_21]	EntlassMedikation
+51-3	4564-4566	mg	STRENGTH[21]	false[21]	_	EntlassMedikation
+51-4	4567-4568	1	FREQUENCY[22]	false[22]	51-1[0_22]	EntlassMedikation
+51-5	4568-4569	-	FREQUENCY[22]	false[22]	_	EntlassMedikation
+51-6	4569-4570	0	FREQUENCY[22]	false[22]	_	EntlassMedikation
+51-7	4570-4571	-	FREQUENCY[22]	false[22]	_	EntlassMedikation
+51-8	4571-4572	0	FREQUENCY[22]	false[22]	_	EntlassMedikation
+
+#Text=Ramipril 2,5 mg 1-0-0
+52-1	4573-4581	Ramipril	ACTIVEING	false	_	EntlassMedikation
+52-2	4582-4585	2,5	STRENGTH[23]	false[23]	52-1[0_23]	EntlassMedikation
+52-3	4586-4588	mg	STRENGTH[23]	false[23]	_	EntlassMedikation
+52-4	4589-4590	1	FREQUENCY[24]	false[24]	52-1[0_24]	EntlassMedikation
+52-5	4590-4591	-	FREQUENCY[24]	false[24]	_	EntlassMedikation
+52-6	4591-4592	0	FREQUENCY[24]	false[24]	_	EntlassMedikation
+52-7	4592-4593	-	FREQUENCY[24]	false[24]	_	EntlassMedikation
+52-8	4593-4594	0	FREQUENCY[24]	false[24]	_	EntlassMedikation
+
+#Text=Atorvastatin 40 mg 0-0-1
+53-1	4595-4607	Atorvastatin	ACTIVEING	false	_	EntlassMedikation
+53-2	4608-4610	40	STRENGTH[25]	false[25]	53-1[0_25]	EntlassMedikation
+53-3	4611-4613	mg	STRENGTH[25]	false[25]	_	EntlassMedikation
+53-4	4614-4615	0	FREQUENCY[26]	false[26]	53-1[0_26]	EntlassMedikation
+53-5	4615-4616	-	FREQUENCY[26]	false[26]	_	EntlassMedikation
+53-6	4616-4617	0	FREQUENCY[26]	false[26]	_	EntlassMedikation
+53-7	4617-4618	-	FREQUENCY[26]	false[26]	_	EntlassMedikation
+53-8	4618-4619	1	FREQUENCY[26]	false[26]	_	EntlassMedikation
+
+#Text=Ezetimib 10 1-0-0
+54-1	4620-4628	Ezetimib	ACTIVEING	false	_	EntlassMedikation
+54-2	4629-4631	10	STRENGTH	false	54-1	EntlassMedikation
+54-3	4632-4633	1	FREQUENCY[27]	false[27]	54-1[0_27]	EntlassMedikation
+54-4	4633-4634	-	FREQUENCY[27]	false[27]	_	EntlassMedikation
+54-5	4634-4635	0	FREQUENCY[27]	false[27]	_	EntlassMedikation
+54-6	4635-4636	-	FREQUENCY[27]	false[27]	_	EntlassMedikation
+54-7	4636-4637	0	FREQUENCY[27]	false[27]	_	EntlassMedikation
+
+#Text=Pantozol 20 1-0-0
+55-1	4638-4646	Pantozol	ACTIVEING	false	_	EntlassMedikation
+55-2	4647-4649	20	STRENGTH	false	55-1	EntlassMedikation
+55-3	4650-4651	1	FREQUENCY[28]	false[28]	55-1[0_28]	EntlassMedikation
+55-4	4651-4652	-	FREQUENCY[28]	false[28]	_	EntlassMedikation
+55-5	4652-4653	0	FREQUENCY[28]	false[28]	_	EntlassMedikation
+55-6	4653-4654	-	FREQUENCY[28]	false[28]	_	EntlassMedikation
+55-7	4654-4655	0	FREQUENCY[28]	false[28]	_	EntlassMedikation
+
+#Text=Selbstverständlich können auch preiswertere, wirkstoffgleiche Präparate anderer Hersteller verordnet werden.
+56-1	4658-4676	Selbstverständlich	_	_	_	Abschluss
+56-2	4677-4683	können	_	_	_	Abschluss
+56-3	4684-4688	auch	_	_	_	Abschluss
+56-4	4689-4701	preiswertere	_	_	_	Abschluss
+56-5	4701-4702	,	_	_	_	Abschluss
+56-6	4703-4719	wirkstoffgleiche	_	_	_	Abschluss
+56-7	4720-4729	Präparate	_	_	_	Abschluss
+56-8	4730-4737	anderer	_	_	_	Abschluss
+56-9	4738-4748	Hersteller	_	_	_	Abschluss
+56-10	4749-4758	verordnet	_	_	_	Abschluss
+56-11	4759-4765	werden	_	_	_	Abschluss
+56-12	4765-4766	.	_	_	_	Abschluss
+
+#Text=Wir danken für die vertrauensvolle Zusammenarbeit und stehen bei Rückfragen selbstverständlich gerne zur Verfügung.
+57-1	4768-4771	Wir	_	_	_	Abschluss
+57-2	4772-4778	danken	_	_	_	Abschluss
+57-3	4779-4782	für	_	_	_	Abschluss
+57-4	4783-4786	die	_	_	_	Abschluss
+57-5	4787-4802	vertrauensvolle	_	_	_	Abschluss
+57-6	4803-4817	Zusammenarbeit	_	_	_	Abschluss
+57-7	4818-4821	und	_	_	_	Abschluss
+57-8	4822-4828	stehen	_	_	_	Abschluss
+57-9	4829-4832	bei	_	_	_	Abschluss
+57-10	4833-4843	Rückfragen	_	_	_	Abschluss
+57-11	4844-4862	selbstverständlich	_	_	_	Abschluss
+57-12	4863-4868	gerne	_	_	_	Abschluss
+57-13	4869-4872	zur	_	_	_	Abschluss
+57-14	4873-4882	Verfügung	_	_	_	Abschluss
+57-15	4882-4883	.	_	_	_	Abschluss
+
+#Text=Mit freundlichen Grüßen
+58-1	4885-4888	Mit	_	_	_	Abschluss
+58-2	4889-4901	freundlichen	_	_	_	Abschluss
+58-3	4902-4908	Grüßen	_	_	_	Abschluss
+
+#Text=B-PER
+59-1	4909-4914	B-PER	_	_	_	Abschluss
+
+#Text=B-TITLE I-TITLE I-TITLE B-PER I-PER B-TITLE I-TITLE I-TITLE B-PER I-PER PER
+60-1	4915-4922	B-TITLE	_	_	_	Abschluss
+60-2	4923-4930	I-TITLE	_	_	_	Abschluss
+60-3	4931-4938	I-TITLE	_	_	_	Abschluss
+60-4	4939-4944	B-PER	_	_	_	Abschluss
+60-5	4945-4950	I-PER	_	_	_	Abschluss
+60-6	4951-4958	B-TITLE	_	_	_	Abschluss
+60-7	4959-4966	I-TITLE	_	_	_	Abschluss
+60-8	4967-4974	I-TITLE	_	_	_	Abschluss
+60-9	4975-4980	B-PER	_	_	_	Abschluss
+60-10	4981-4986	I-PER	_	_	_	Abschluss
+60-11	4987-4990	PER	_	_	_	Abschluss
+
+#Text=Ärztlicher Direktor Oberarzt Assistenzärztin
+61-1	4991-5001	Ärztlicher	_	_	_	Abschluss
+61-2	5002-5010	Direktor	_	_	_	Abschluss
+61-3	5011-5019	Oberarzt	_	_	_	Abschluss
+61-4	5020-5035	Assistenzärztin	_	_	_	Abschluss

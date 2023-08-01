@@ -1,0 +1,1277 @@
+#FORMAT=WebAnno TSV 3.3
+#T_SP=webanno.custom.Medication|ClassType|InNarrative
+#T_RL=webanno.custom.MedRel|BT_webanno.custom.Medication
+#T_SP=webanno.custom.Sectionsentence|Sectiontypes
+
+
+#Text=Aufnahmedatum: <[Pseudo] 2037-05-05 >
+1-1	0-13	Aufnahmedatum	_	_	_	_
+1-2	13-14	:	_	_	_	_
+1-3	15-24	<[Pseudo]	_	_	_	_
+1-4	25-29	2037	_	_	_	_
+1-5	29-30	-	_	_	_	_
+1-6	30-32	05	_	_	_	_
+1-7	32-33	-	_	_	_	_
+1-8	33-35	05	_	_	_	_
+1-9	36-37	>	_	_	_	_
+
+#Text=Geburtsdatum: <[Pseudo] 2012-12-24 >
+2-1	38-50	Geburtsdatum	_	_	_	_
+2-2	50-51	:	_	_	_	_
+2-3	52-61	<[Pseudo]	_	_	_	_
+2-4	62-66	2012	_	_	_	_
+2-5	66-67	-	_	_	_	_
+2-6	67-69	12	_	_	_	_
+2-7	69-70	-	_	_	_	_
+2-8	70-72	24	_	_	_	_
+2-9	73-74	>	_	_	_	_
+
+#Text=Alter: 24
+3-1	75-80	Alter	_	_	_	_
+3-2	80-81	:	_	_	_	_
+3-3	82-84	24	_	_	_	_
+
+#Text=über Ihre Patientin B-SALUTE B-PER B-PER geboren am <[Pseudo] 24/12/2012> wohnhaft in B-PLZ B-LOC I-ADDR I-ADDR die sich vom bis in unserer stationären Behandlung befand.
+4-1	86-90	über	_	_	_	Anrede
+4-2	91-95	Ihre	_	_	_	Anrede
+4-3	96-105	Patientin	_	_	_	Anrede
+4-4	106-114	B-SALUTE	_	_	_	Anrede
+4-5	115-120	B-PER	_	_	_	Anrede
+4-6	121-126	B-PER	_	_	_	Anrede
+4-7	127-134	geboren	_	_	_	Anrede
+4-8	135-137	am	_	_	_	Anrede
+4-9	138-147	<[Pseudo]	_	_	_	Anrede
+4-10	148-150	24	_	_	_	Anrede
+4-11	150-151	/	_	_	_	Anrede
+4-12	151-153	12	_	_	_	Anrede
+4-13	153-154	/	_	_	_	Anrede
+4-14	154-158	2012	_	_	_	Anrede
+4-15	158-159	>	_	_	_	Anrede
+4-16	160-168	wohnhaft	_	_	_	Anrede
+4-17	169-171	in	_	_	_	Anrede
+4-18	172-177	B-PLZ	_	_	_	Anrede
+4-19	178-183	B-LOC	_	_	_	Anrede
+4-20	184-190	I-ADDR	_	_	_	Anrede
+4-21	191-197	I-ADDR	_	_	_	Anrede
+4-22	198-201	die	_	_	_	Anrede
+4-23	202-206	sich	_	_	_	Anrede
+4-24	207-210	vom	_	_	_	Anrede
+4-25	211-214	bis	_	_	_	Anrede
+4-26	215-217	in	_	_	_	Anrede
+4-27	218-225	unserer	_	_	_	Anrede
+4-28	226-237	stationären	_	_	_	Anrede
+4-29	238-248	Behandlung	_	_	_	Anrede
+4-30	249-255	befand	_	_	_	Anrede
+4-31	255-256	.	_	_	_	Anrede
+
+#Text=Diagnosen:
+5-1	258-267	Diagnosen	_	_	_	Diagnosen
+5-2	267-268	:	_	_	_	Diagnosen
+
+#Text=- Ad Vorstellung in Arrhythmie-Sprechstunde am <[Pseudo] 13/08/2037> um 13 Uhr in unsere HIS-Ambulanz
+6-1	269-270	-	_	_	_	Diagnosen
+6-2	271-273	Ad	_	_	_	Diagnosen
+6-3	274-285	Vorstellung	_	_	_	Diagnosen
+6-4	286-288	in	_	_	_	Diagnosen
+6-5	289-312	Arrhythmie-Sprechstunde	_	_	_	Diagnosen
+6-6	313-315	am	_	_	_	Diagnosen
+6-7	316-325	<[Pseudo]	_	_	_	Diagnosen
+6-8	326-328	13	_	_	_	Diagnosen
+6-9	328-329	/	_	_	_	Diagnosen
+6-10	329-331	08	_	_	_	Diagnosen
+6-11	331-332	/	_	_	_	Diagnosen
+6-12	332-336	2037	_	_	_	Diagnosen
+6-13	336-337	>	_	_	_	Diagnosen
+6-14	338-340	um	_	_	_	Diagnosen
+6-15	341-343	13	_	_	_	Diagnosen
+6-16	344-347	Uhr	_	_	_	Diagnosen
+6-17	348-350	in	_	_	_	Diagnosen
+6-18	351-357	unsere	_	_	_	Diagnosen
+6-19	358-370	HIS-Ambulanz	_	_	_	Diagnosen
+
+#Text=- Kriterien für Brugada-Syndrom nicht vollständig erfüllt -LRB- s.o -RRB- . Ausgeprägte Sinusarrhythmie, normale supra- und infrahisäre Leitungszeiten -LRB- B-OTHER vom <[Pseudo] 06/05/2037> -RRB-
+7-1	371-372	-	_	_	_	Diagnosen
+7-2	373-382	Kriterien	_	_	_	Diagnosen
+7-3	383-386	für	_	_	_	Diagnosen
+7-4	387-402	Brugada-Syndrom	_	_	_	Diagnosen
+7-5	403-408	nicht	_	_	_	Diagnosen
+7-6	409-420	vollständig	_	_	_	Diagnosen
+7-7	421-428	erfüllt	_	_	_	Diagnosen
+7-8	429-434	-LRB-	_	_	_	Diagnosen
+7-9	435-438	s.o	_	_	_	Diagnosen
+7-10	439-444	-RRB-	_	_	_	Diagnosen
+7-11	445-446	.	_	_	_	Diagnosen
+7-12	447-458	Ausgeprägte	_	_	_	Diagnosen
+7-13	459-474	Sinusarrhythmie	_	_	_	Diagnosen
+7-14	474-475	,	_	_	_	Diagnosen
+7-15	476-483	normale	_	_	_	Diagnosen
+7-16	484-490	supra-	_	_	_	Diagnosen
+7-17	491-494	und	_	_	_	Diagnosen
+7-18	495-506	infrahisäre	_	_	_	Diagnosen
+7-19	507-521	Leitungszeiten	_	_	_	Diagnosen
+7-20	522-527	-LRB-	_	_	_	Diagnosen
+7-21	528-535	B-OTHER	_	_	_	Diagnosen
+7-22	536-539	vom	_	_	_	Diagnosen
+7-23	540-549	<[Pseudo]	_	_	_	Diagnosen
+7-24	550-552	06	_	_	_	Diagnosen
+7-25	552-553	/	_	_	_	Diagnosen
+7-26	553-555	05	_	_	_	Diagnosen
+7-27	555-556	/	_	_	_	Diagnosen
+7-28	556-560	2037	_	_	_	Diagnosen
+7-29	560-561	>	_	_	_	Diagnosen
+7-30	562-567	-RRB-	_	_	_	Diagnosen
+
+#Text=- Synkope unklarer Genese am <[Pseudo] 25/04/2037>
+8-1	568-569	-	_	_	_	Diagnosen
+8-2	570-577	Synkope	_	_	_	Diagnosen
+8-3	578-586	unklarer	_	_	_	Diagnosen
+8-4	587-593	Genese	_	_	_	Diagnosen
+8-5	594-596	am	_	_	_	Diagnosen
+8-6	597-606	<[Pseudo]	_	_	_	Diagnosen
+8-7	607-609	25	_	_	_	Diagnosen
+8-8	609-610	/	_	_	_	Diagnosen
+8-9	610-612	04	_	_	_	Diagnosen
+8-10	612-613	/	_	_	_	Diagnosen
+8-11	613-617	2037	_	_	_	Diagnosen
+8-12	617-618	>	_	_	_	Diagnosen
+
+#Text=-UNK- V.a. rhythmogene Genese
+9-1	619-624	-UNK-	_	_	_	Diagnosen
+9-2	625-628	V.a	_	_	_	Diagnosen
+9-3	628-629	.	_	_	_	Diagnosen
+9-4	630-641	rhythmogene	_	_	_	Diagnosen
+9-5	642-648	Genese	_	_	_	Diagnosen
+
+#Text=- Ausschluss akuter Myokardinfarkt
+10-1	649-650	-	_	_	_	Diagnosen
+10-2	651-661	Ausschluss	_	_	_	Diagnosen
+10-3	662-668	akuter	_	_	_	Diagnosen
+10-4	669-683	Myokardinfarkt	_	_	_	Diagnosen
+
+#Text=- Klinisch und laborchemisch kein Hinweis auf Lungenarterienembolie oder Aortendissektion
+11-1	684-685	-	_	_	_	Diagnosen
+11-2	686-694	Klinisch	_	_	_	Diagnosen
+11-3	695-698	und	_	_	_	Diagnosen
+11-4	699-712	laborchemisch	_	_	_	Diagnosen
+11-5	713-717	kein	_	_	_	Diagnosen
+11-6	718-725	Hinweis	_	_	_	Diagnosen
+11-7	726-729	auf	_	_	_	Diagnosen
+11-8	730-751	Lungenarterienembolie	_	_	_	Diagnosen
+11-9	752-756	oder	_	_	_	Diagnosen
+11-10	757-773	Aortendissektion	_	_	_	Diagnosen
+
+#Text=- Anamnestisch depressive Erkrankung
+12-1	774-775	-	_	_	_	Diagnosen
+12-2	776-788	Anamnestisch	_	_	_	Diagnosen
+12-3	789-799	depressive	_	_	_	Diagnosen
+12-4	800-810	Erkrankung	_	_	_	Diagnosen
+
+#Text=Kardiovaskuläre Risikofaktoren: Nikotinanamnese: früher, Packyears: 1,5
+13-1	812-827	Kardiovaskuläre	_	_	_	AllergienUnverträglichkeitenRisiken
+13-2	828-842	Risikofaktoren	_	_	_	AllergienUnverträglichkeitenRisiken
+13-3	842-843	:	_	_	_	AllergienUnverträglichkeitenRisiken
+13-4	844-859	Nikotinanamnese	_	_	_	AllergienUnverträglichkeitenRisiken
+13-5	859-860	:	_	_	_	AllergienUnverträglichkeitenRisiken
+13-6	861-867	früher	_	_	_	AllergienUnverträglichkeitenRisiken
+13-7	867-868	,	_	_	_	AllergienUnverträglichkeitenRisiken
+13-8	869-878	Packyears	_	_	_	AllergienUnverträglichkeitenRisiken
+13-9	878-879	:	_	_	_	AllergienUnverträglichkeitenRisiken
+13-10	880-883	1,5	_	_	_	AllergienUnverträglichkeitenRisiken
+
+#Text=Allergien: Novalgin -LRB- keine Allergie jedoch deutlicher Blutdruckabfall -RRB-
+14-1	885-894	Allergien	_	_	_	AllergienUnverträglichkeitenRisiken
+14-2	894-895	:	_	_	_	AllergienUnverträglichkeitenRisiken
+14-3	896-904	Novalgin	_	_	_	AllergienUnverträglichkeitenRisiken
+14-4	905-910	-LRB-	_	_	_	AllergienUnverträglichkeitenRisiken
+14-5	911-916	keine	_	_	_	AllergienUnverträglichkeitenRisiken
+14-6	917-925	Allergie	_	_	_	AllergienUnverträglichkeitenRisiken
+14-7	926-932	jedoch	_	_	_	AllergienUnverträglichkeitenRisiken
+14-8	933-943	deutlicher	_	_	_	AllergienUnverträglichkeitenRisiken
+14-9	944-959	Blutdruckabfall	_	_	_	AllergienUnverträglichkeitenRisiken
+14-10	960-965	-RRB-	_	_	_	AllergienUnverträglichkeitenRisiken
+
+#Text=Indikationen für verlängerten stationären Aufenthalt:
+15-1	967-979	Indikationen	_	_	_	Mix
+15-2	980-983	für	_	_	_	Mix
+15-3	984-996	verlängerten	_	_	_	Mix
+15-4	997-1008	stationären	_	_	_	Mix
+15-5	1009-1019	Aufenthalt	_	_	_	Mix
+15-6	1019-1020	:	_	_	_	Mix
+
+#Text=- Katheter-gestützte elektrophysiologische Untersuchung erst am Folgetag aus Kapazitätsgründen
+16-1	1021-1022	-	_	_	_	Mix
+16-2	1023-1041	Katheter-gestützte	_	_	_	Mix
+16-3	1042-1063	elektrophysiologische	_	_	_	Mix
+16-4	1064-1076	Untersuchung	_	_	_	Mix
+16-5	1077-1081	erst	_	_	_	Mix
+16-6	1082-1084	am	_	_	_	Mix
+16-7	1085-1093	Folgetag	_	_	_	Mix
+16-8	1094-1097	aus	_	_	_	Mix
+16-9	1098-1115	Kapazitätsgründen	_	_	_	Mix
+
+#Text=Anamnese:
+17-1	1117-1125	Anamnese	_	_	_	Anamnese
+17-2	1125-1126	:	_	_	_	Anamnese
+
+#Text=Die aktuelle Vorstellung der Patientin erfolgt als Übernahme aus dem B-ORG zur elektiven elektrophysiologischen Untersuchung mit Ablation bei Z.n. Synkope unklarer Genese am B-DATE. Die initiale Vorstellung erfolgte in unserer B-ORG als Selbstvorstellung bei Synkopen und Bradykardien am B-DATE Anamnestisch bestanden seit 2-3 Jahren wiederkehrende Bradykardien bis 38/min in Ruhe mit begleitendem Schwindel und mehrmalig stattgehabte Synkopen. Eine umfangreiche Diagnostik sei bisher immer ergebnislos verlaufen. Am Samstag trat nach Sitzen im Auto ein plötzlicher Schwindel auf. Darüber hinaus zeigte sich eine Synkope beim Liegen im Bett mit einer Bewusstlosigkeit von 3-4 min. Es folgte die notfallmäßige Aufnahme im B-ORG. Die Patientin entließ sich gegen ärztlichen Rat. Heute Morgen zeigte sich beim Hausarzt eine erneute Episode mit Bradykardie und Schwindel, gefolgt von einer Tachykardie bis zu 180/min. Darüber hinaus zeigte sich eine präsynkopale Symptomatik, wobei keine Synkope eintrat. B-SALUTE B-PER berichtet von Palpitationen bei Belastung, neuerdings auch in Ruhe. Auf spezifische Nachfrage berichtet die Patientin von einer mäßigen Belastbarkeit im Alltag, einem gelegentlich auftretenden retrosternalen Druckgefühl ohne Ausstrahlung sowie einer Belastungsdyspnoe -LRB- entsprechend NYHA II -RRB- . Es liegen keine Ödeme vor. Es besteht zusätzlich kein Hinweis auf einen akuten Infekt. Häusliche Blutdruckwerte werden als schwankend bewertet. Es liegt keine Immobilisation und keine TVT/LAE in der Vorgeschichte vor.
+18-1	1127-1130	Die	_	_	_	Anamnese
+18-2	1131-1139	aktuelle	_	_	_	Anamnese
+18-3	1140-1151	Vorstellung	_	_	_	Anamnese
+18-4	1152-1155	der	_	_	_	Anamnese
+18-5	1156-1165	Patientin	_	_	_	Anamnese
+18-6	1166-1173	erfolgt	_	_	_	Anamnese
+18-7	1174-1177	als	_	_	_	Anamnese
+18-8	1178-1187	Übernahme	_	_	_	Anamnese
+18-9	1188-1191	aus	_	_	_	Anamnese
+18-10	1192-1195	dem	_	_	_	Anamnese
+18-11	1196-1201	B-ORG	_	_	_	Anamnese
+18-12	1202-1205	zur	_	_	_	Anamnese
+18-13	1206-1215	elektiven	_	_	_	Anamnese
+18-14	1216-1238	elektrophysiologischen	_	_	_	Anamnese
+18-15	1239-1251	Untersuchung	_	_	_	Anamnese
+18-16	1252-1255	mit	_	_	_	Anamnese
+18-17	1256-1264	Ablation	_	_	_	Anamnese
+18-18	1265-1268	bei	_	_	_	Anamnese
+18-19	1269-1272	Z.n	_	_	_	Anamnese
+18-20	1272-1273	.	_	_	_	Anamnese
+18-21	1274-1281	Synkope	_	_	_	Anamnese
+18-22	1282-1290	unklarer	_	_	_	Anamnese
+18-23	1291-1297	Genese	_	_	_	Anamnese
+18-24	1298-1300	am	_	_	_	Anamnese
+18-25	1301-1307	B-DATE	_	_	_	Anamnese
+18-26	1307-1308	.	_	_	_	Anamnese
+18-27	1309-1312	Die	_	_	_	Anamnese
+18-28	1313-1321	initiale	_	_	_	Anamnese
+18-29	1322-1333	Vorstellung	_	_	_	Anamnese
+18-30	1334-1342	erfolgte	_	_	_	Anamnese
+18-31	1343-1345	in	_	_	_	Anamnese
+18-32	1346-1353	unserer	_	_	_	Anamnese
+18-33	1354-1359	B-ORG	_	_	_	Anamnese
+18-34	1360-1363	als	_	_	_	Anamnese
+18-35	1364-1381	Selbstvorstellung	_	_	_	Anamnese
+18-36	1382-1385	bei	_	_	_	Anamnese
+18-37	1386-1394	Synkopen	_	_	_	Anamnese
+18-38	1395-1398	und	_	_	_	Anamnese
+18-39	1399-1411	Bradykardien	_	_	_	Anamnese
+18-40	1412-1414	am	_	_	_	Anamnese
+18-41	1415-1421	B-DATE	_	_	_	Anamnese
+18-42	1422-1434	Anamnestisch	_	_	_	Anamnese
+18-43	1435-1444	bestanden	_	_	_	Anamnese
+18-44	1445-1449	seit	_	_	_	Anamnese
+18-45	1450-1451	2	_	_	_	Anamnese
+18-46	1451-1452	-	_	_	_	Anamnese
+18-47	1452-1453	3	_	_	_	Anamnese
+18-48	1454-1460	Jahren	_	_	_	Anamnese
+18-49	1461-1475	wiederkehrende	_	_	_	Anamnese
+18-50	1476-1488	Bradykardien	_	_	_	Anamnese
+18-51	1489-1492	bis	_	_	_	Anamnese
+18-52	1493-1495	38	_	_	_	Anamnese
+18-53	1495-1496	/	_	_	_	Anamnese
+18-54	1496-1499	min	_	_	_	Anamnese
+18-55	1500-1502	in	_	_	_	Anamnese
+18-56	1503-1507	Ruhe	_	_	_	Anamnese
+18-57	1508-1511	mit	_	_	_	Anamnese
+18-58	1512-1524	begleitendem	_	_	_	Anamnese
+18-59	1525-1534	Schwindel	_	_	_	Anamnese
+18-60	1535-1538	und	_	_	_	Anamnese
+18-61	1539-1548	mehrmalig	_	_	_	Anamnese
+18-62	1549-1561	stattgehabte	_	_	_	Anamnese
+18-63	1562-1570	Synkopen	_	_	_	Anamnese
+18-64	1570-1571	.	_	_	_	Anamnese
+18-65	1572-1576	Eine	_	_	_	Anamnese
+18-66	1577-1589	umfangreiche	_	_	_	Anamnese
+18-67	1590-1600	Diagnostik	_	_	_	Anamnese
+18-68	1601-1604	sei	_	_	_	Anamnese
+18-69	1605-1611	bisher	_	_	_	Anamnese
+18-70	1612-1617	immer	_	_	_	Anamnese
+18-71	1618-1629	ergebnislos	_	_	_	Anamnese
+18-72	1630-1639	verlaufen	_	_	_	Anamnese
+18-73	1639-1640	.	_	_	_	Anamnese
+18-74	1641-1643	Am	_	_	_	Anamnese
+18-75	1644-1651	Samstag	_	_	_	Anamnese
+18-76	1652-1656	trat	_	_	_	Anamnese
+18-77	1657-1661	nach	_	_	_	Anamnese
+18-78	1662-1668	Sitzen	_	_	_	Anamnese
+18-79	1669-1671	im	_	_	_	Anamnese
+18-80	1672-1676	Auto	_	_	_	Anamnese
+18-81	1677-1680	ein	_	_	_	Anamnese
+18-82	1681-1692	plötzlicher	_	_	_	Anamnese
+18-83	1693-1702	Schwindel	_	_	_	Anamnese
+18-84	1703-1706	auf	_	_	_	Anamnese
+18-85	1706-1707	.	_	_	_	Anamnese
+18-86	1708-1715	Darüber	_	_	_	Anamnese
+18-87	1716-1722	hinaus	_	_	_	Anamnese
+18-88	1723-1729	zeigte	_	_	_	Anamnese
+18-89	1730-1734	sich	_	_	_	Anamnese
+18-90	1735-1739	eine	_	_	_	Anamnese
+18-91	1740-1747	Synkope	_	_	_	Anamnese
+18-92	1748-1752	beim	_	_	_	Anamnese
+18-93	1753-1759	Liegen	_	_	_	Anamnese
+18-94	1760-1762	im	_	_	_	Anamnese
+18-95	1763-1767	Bett	_	_	_	Anamnese
+18-96	1768-1771	mit	_	_	_	Anamnese
+18-97	1772-1777	einer	_	_	_	Anamnese
+18-98	1778-1794	Bewusstlosigkeit	_	_	_	Anamnese
+18-99	1795-1798	von	_	_	_	Anamnese
+18-100	1799-1800	3	_	_	_	Anamnese
+18-101	1800-1801	-	_	_	_	Anamnese
+18-102	1801-1802	4	_	_	_	Anamnese
+18-103	1803-1807	min.	_	_	_	Anamnese
+18-104	1808-1810	Es	_	_	_	Anamnese
+18-105	1811-1817	folgte	_	_	_	Anamnese
+18-106	1818-1821	die	_	_	_	Anamnese
+18-107	1822-1835	notfallmäßige	_	_	_	Anamnese
+18-108	1836-1844	Aufnahme	_	_	_	Anamnese
+18-109	1845-1847	im	_	_	_	Anamnese
+18-110	1848-1853	B-ORG	_	_	_	Anamnese
+18-111	1853-1854	.	_	_	_	Anamnese
+18-112	1855-1858	Die	_	_	_	Anamnese
+18-113	1859-1868	Patientin	_	_	_	Anamnese
+18-114	1869-1876	entließ	_	_	_	Anamnese
+18-115	1877-1881	sich	_	_	_	Anamnese
+18-116	1882-1887	gegen	_	_	_	Anamnese
+18-117	1888-1898	ärztlichen	_	_	_	Anamnese
+18-118	1899-1902	Rat	_	_	_	Anamnese
+18-119	1902-1903	.	_	_	_	Anamnese
+18-120	1904-1909	Heute	_	_	_	Anamnese
+18-121	1910-1916	Morgen	_	_	_	Anamnese
+18-122	1917-1923	zeigte	_	_	_	Anamnese
+18-123	1924-1928	sich	_	_	_	Anamnese
+18-124	1929-1933	beim	_	_	_	Anamnese
+18-125	1934-1942	Hausarzt	_	_	_	Anamnese
+18-126	1943-1947	eine	_	_	_	Anamnese
+18-127	1948-1955	erneute	_	_	_	Anamnese
+18-128	1956-1963	Episode	_	_	_	Anamnese
+18-129	1964-1967	mit	_	_	_	Anamnese
+18-130	1968-1979	Bradykardie	_	_	_	Anamnese
+18-131	1980-1983	und	_	_	_	Anamnese
+18-132	1984-1993	Schwindel	_	_	_	Anamnese
+18-133	1993-1994	,	_	_	_	Anamnese
+18-134	1995-2002	gefolgt	_	_	_	Anamnese
+18-135	2003-2006	von	_	_	_	Anamnese
+18-136	2007-2012	einer	_	_	_	Anamnese
+18-137	2013-2024	Tachykardie	_	_	_	Anamnese
+18-138	2025-2028	bis	_	_	_	Anamnese
+18-139	2029-2031	zu	_	_	_	Anamnese
+18-140	2032-2035	180	_	_	_	Anamnese
+18-141	2035-2036	/	_	_	_	Anamnese
+18-142	2036-2040	min.	_	_	_	Anamnese
+18-143	2041-2048	Darüber	_	_	_	Anamnese
+18-144	2049-2055	hinaus	_	_	_	Anamnese
+18-145	2056-2062	zeigte	_	_	_	Anamnese
+18-146	2063-2067	sich	_	_	_	Anamnese
+18-147	2068-2072	eine	_	_	_	Anamnese
+18-148	2073-2085	präsynkopale	_	_	_	Anamnese
+18-149	2086-2097	Symptomatik	_	_	_	Anamnese
+18-150	2097-2098	,	_	_	_	Anamnese
+18-151	2099-2104	wobei	_	_	_	Anamnese
+18-152	2105-2110	keine	_	_	_	Anamnese
+18-153	2111-2118	Synkope	_	_	_	Anamnese
+18-154	2119-2126	eintrat	_	_	_	Anamnese
+18-155	2126-2127	.	_	_	_	Anamnese
+18-156	2128-2136	B-SALUTE	_	_	_	Anamnese
+18-157	2137-2142	B-PER	_	_	_	Anamnese
+18-158	2143-2152	berichtet	_	_	_	Anamnese
+18-159	2153-2156	von	_	_	_	Anamnese
+18-160	2157-2170	Palpitationen	_	_	_	Anamnese
+18-161	2171-2174	bei	_	_	_	Anamnese
+18-162	2175-2184	Belastung	_	_	_	Anamnese
+18-163	2184-2185	,	_	_	_	Anamnese
+18-164	2186-2196	neuerdings	_	_	_	Anamnese
+18-165	2197-2201	auch	_	_	_	Anamnese
+18-166	2202-2204	in	_	_	_	Anamnese
+18-167	2205-2209	Ruhe	_	_	_	Anamnese
+18-168	2209-2210	.	_	_	_	Anamnese
+18-169	2211-2214	Auf	_	_	_	Anamnese
+18-170	2215-2226	spezifische	_	_	_	Anamnese
+18-171	2227-2236	Nachfrage	_	_	_	Anamnese
+18-172	2237-2246	berichtet	_	_	_	Anamnese
+18-173	2247-2250	die	_	_	_	Anamnese
+18-174	2251-2260	Patientin	_	_	_	Anamnese
+18-175	2261-2264	von	_	_	_	Anamnese
+18-176	2265-2270	einer	_	_	_	Anamnese
+18-177	2271-2278	mäßigen	_	_	_	Anamnese
+18-178	2279-2292	Belastbarkeit	_	_	_	Anamnese
+18-179	2293-2295	im	_	_	_	Anamnese
+18-180	2296-2302	Alltag	_	_	_	Anamnese
+18-181	2302-2303	,	_	_	_	Anamnese
+18-182	2304-2309	einem	_	_	_	Anamnese
+18-183	2310-2322	gelegentlich	_	_	_	Anamnese
+18-184	2323-2335	auftretenden	_	_	_	Anamnese
+18-185	2336-2350	retrosternalen	_	_	_	Anamnese
+18-186	2351-2362	Druckgefühl	_	_	_	Anamnese
+18-187	2363-2367	ohne	_	_	_	Anamnese
+18-188	2368-2380	Ausstrahlung	_	_	_	Anamnese
+18-189	2381-2386	sowie	_	_	_	Anamnese
+18-190	2387-2392	einer	_	_	_	Anamnese
+18-191	2393-2410	Belastungsdyspnoe	_	_	_	Anamnese
+18-192	2411-2416	-LRB-	_	_	_	Anamnese
+18-193	2417-2429	entsprechend	_	_	_	Anamnese
+18-194	2430-2434	NYHA	_	_	_	Anamnese
+18-195	2435-2437	II	_	_	_	Anamnese
+18-196	2438-2443	-RRB-	_	_	_	Anamnese
+18-197	2444-2445	.	_	_	_	Anamnese
+18-198	2446-2448	Es	_	_	_	Anamnese
+18-199	2449-2455	liegen	_	_	_	Anamnese
+18-200	2456-2461	keine	_	_	_	Anamnese
+18-201	2462-2467	Ödeme	_	_	_	Anamnese
+18-202	2468-2471	vor	_	_	_	Anamnese
+18-203	2471-2472	.	_	_	_	Anamnese
+18-204	2473-2475	Es	_	_	_	Anamnese
+18-205	2476-2483	besteht	_	_	_	Anamnese
+18-206	2484-2494	zusätzlich	_	_	_	Anamnese
+18-207	2495-2499	kein	_	_	_	Anamnese
+18-208	2500-2507	Hinweis	_	_	_	Anamnese
+18-209	2508-2511	auf	_	_	_	Anamnese
+18-210	2512-2517	einen	_	_	_	Anamnese
+18-211	2518-2524	akuten	_	_	_	Anamnese
+18-212	2525-2531	Infekt	_	_	_	Anamnese
+18-213	2531-2532	.	_	_	_	Anamnese
+18-214	2533-2542	Häusliche	_	_	_	Anamnese
+18-215	2543-2557	Blutdruckwerte	_	_	_	Anamnese
+18-216	2558-2564	werden	_	_	_	Anamnese
+18-217	2565-2568	als	_	_	_	Anamnese
+18-218	2569-2579	schwankend	_	_	_	Anamnese
+18-219	2580-2588	bewertet	_	_	_	Anamnese
+18-220	2588-2589	.	_	_	_	Anamnese
+18-221	2590-2592	Es	_	_	_	Anamnese
+18-222	2593-2598	liegt	_	_	_	Anamnese
+18-223	2599-2604	keine	_	_	_	Anamnese
+18-224	2605-2619	Immobilisation	_	_	_	Anamnese
+18-225	2620-2623	und	_	_	_	Anamnese
+18-226	2624-2629	keine	_	_	_	Anamnese
+18-227	2630-2633	TVT	_	_	_	Anamnese
+18-228	2633-2634	/	_	_	_	Anamnese
+18-229	2634-2637	LAE	_	_	_	Anamnese
+18-230	2638-2640	in	_	_	_	Anamnese
+18-231	2641-2644	der	_	_	_	Anamnese
+18-232	2645-2658	Vorgeschichte	_	_	_	Anamnese
+18-233	2659-2662	vor	_	_	_	Anamnese
+18-234	2662-2663	.	_	_	_	Anamnese
+
+#Text=Körperlicher Untersuchungsbefund:
+19-1	2665-2677	Körperlicher	_	_	_	KUBefunde
+19-2	2678-2697	Untersuchungsbefund	_	_	_	KUBefunde
+19-3	2697-2698	:	_	_	_	KUBefunde
+
+#Text=AZ: gut
+20-1	2699-2701	AZ	_	_	_	KUBefunde
+20-2	2701-2702	:	_	_	_	KUBefunde
+20-3	2703-2706	gut	_	_	_	KUBefunde
+
+#Text=EZ: 170 cm; 65 kg
+21-1	2707-2709	EZ	_	_	_	KUBefunde
+21-2	2709-2710	:	_	_	_	KUBefunde
+21-3	2711-2714	170	_	_	_	KUBefunde
+21-4	2715-2717	cm	_	_	_	KUBefunde
+21-5	2717-2718	;	_	_	_	KUBefunde
+21-6	2719-2721	65	_	_	_	KUBefunde
+21-7	2722-2724	kg	_	_	_	KUBefunde
+
+#Text=HF: 48/min, regelmäßig
+22-1	2725-2727	HF	_	_	_	KUBefunde
+22-2	2727-2728	:	_	_	_	KUBefunde
+22-3	2729-2731	48	_	_	_	KUBefunde
+22-4	2731-2732	/	_	_	_	KUBefunde
+22-5	2732-2735	min	_	_	_	KUBefunde
+22-6	2735-2736	,	_	_	_	KUBefunde
+22-7	2737-2747	regelmäßig	_	_	_	KUBefunde
+
+#Text=RR: 128/69 mmHg
+23-1	2748-2750	RR	_	_	_	KUBefunde
+23-2	2750-2751	:	_	_	_	KUBefunde
+23-3	2752-2755	128	_	_	_	KUBefunde
+23-4	2755-2756	/	_	_	_	KUBefunde
+23-5	2756-2758	69	_	_	_	KUBefunde
+23-6	2759-2763	mmHg	_	_	_	KUBefunde
+
+#Text=Temperatur 36,8° Keine Cyanose, Anämiezeichen, Ikterus. Kopf/Hals unauffällig
+24-1	2764-2774	Temperatur	_	_	_	KUBefunde
+24-2	2775-2779	36,8	_	_	_	KUBefunde
+24-3	2779-2780	°	_	_	_	KUBefunde
+24-4	2781-2786	Keine	_	_	_	KUBefunde
+24-5	2787-2794	Cyanose	_	_	_	KUBefunde
+24-6	2794-2795	,	_	_	_	KUBefunde
+24-7	2796-2809	Anämiezeichen	_	_	_	KUBefunde
+24-8	2809-2810	,	_	_	_	KUBefunde
+24-9	2811-2818	Ikterus	_	_	_	KUBefunde
+24-10	2818-2819	.	_	_	_	KUBefunde
+24-11	2820-2824	Kopf	_	_	_	KUBefunde
+24-12	2824-2825	/	_	_	_	KUBefunde
+24-13	2825-2829	Hals	_	_	_	KUBefunde
+24-14	2830-2841	unauffällig	_	_	_	KUBefunde
+
+#Text=HT: rein, keine patholog. Geräusche
+25-1	2842-2844	HT	_	_	_	KUBefunde
+25-2	2844-2845	:	_	_	_	KUBefunde
+25-3	2846-2850	rein	_	_	_	KUBefunde
+25-4	2850-2851	,	_	_	_	KUBefunde
+25-5	2852-2857	keine	_	_	_	KUBefunde
+25-6	2858-2866	patholog	_	_	_	KUBefunde
+25-7	2866-2867	.	_	_	_	KUBefunde
+25-8	2868-2877	Geräusche	_	_	_	KUBefunde
+
+#Text=Lunge: bds. frei
+26-1	2878-2883	Lunge	_	_	_	KUBefunde
+26-2	2883-2884	:	_	_	_	KUBefunde
+26-3	2885-2888	bds	_	_	_	KUBefunde
+26-4	2888-2889	.	_	_	_	KUBefunde
+26-5	2890-2894	frei	_	_	_	KUBefunde
+
+#Text=Periphere Ödeme: keine
+27-1	2895-2904	Periphere	_	_	_	KUBefunde
+27-2	2905-2910	Ödeme	_	_	_	KUBefunde
+27-3	2910-2911	:	_	_	_	KUBefunde
+27-4	2912-2917	keine	_	_	_	KUBefunde
+
+#Text=Pulsstatus: regelrecht
+28-1	2918-2928	Pulsstatus	_	_	_	KUBefunde
+28-2	2928-2929	:	_	_	_	KUBefunde
+28-3	2930-2940	regelrecht	_	_	_	KUBefunde
+
+#Text=Neurol. Status: orientierend o.B.
+29-1	2941-2947	Neurol	_	_	_	KUBefunde
+29-2	2947-2948	.	_	_	_	KUBefunde
+29-3	2949-2955	Status	_	_	_	KUBefunde
+29-4	2955-2956	:	_	_	_	KUBefunde
+29-5	2957-2969	orientierend	_	_	_	KUBefunde
+29-6	2970-2972	o.	_	_	_	KUBefunde
+29-7	2972-2974	B.	_	_	_	KUBefunde
+
+#Text=sonstige Auffälligkeiten: keine
+30-1	2975-2983	sonstige	_	_	_	KUBefunde
+30-2	2984-2999	Auffälligkeiten	_	_	_	KUBefunde
+30-3	2999-3000	:	_	_	_	KUBefunde
+30-4	3001-3006	keine	_	_	_	KUBefunde
+
+#Text=Ruhe-EKG post ablationem -LRB- <[Pseudo] 30/04/2037> -RRB- :
+31-1	3008-3016	Ruhe-EKG	_	_	_	Befunde
+31-2	3017-3021	post	_	_	_	Befunde
+31-3	3022-3032	ablationem	_	_	_	Befunde
+31-4	3033-3038	-LRB-	_	_	_	Befunde
+31-5	3039-3048	<[Pseudo]	_	_	_	Befunde
+31-6	3049-3051	30	_	_	_	Befunde
+31-7	3051-3052	/	_	_	_	Befunde
+31-8	3052-3054	04	_	_	_	Befunde
+31-9	3054-3055	/	_	_	_	Befunde
+31-10	3055-3059	2037	_	_	_	Befunde
+31-11	3059-3060	>	_	_	_	Befunde
+31-12	3061-3066	-RRB-	_	_	_	Befunde
+31-13	3067-3068	:	_	_	_	Befunde
+
+#Text=Sinusrhythmus, Herzfrequenz 55/min, Linkstyp, PQ 142 ms, QRS 100 ms , QTc 422 ms. Zeiten im Normbereich. Regelrechte R-Progression, R/S Umschlag in V3/V4. T-Wellen Negativierung in V1. Darüber hinaus keine signifikanten Kammerendteilveränderungen.
+32-1	3069-3082	Sinusrhythmus	_	_	_	Befunde
+32-2	3082-3083	,	_	_	_	Befunde
+32-3	3084-3096	Herzfrequenz	_	_	_	Befunde
+32-4	3097-3099	55	_	_	_	Befunde
+32-5	3099-3100	/	_	_	_	Befunde
+32-6	3100-3103	min	_	_	_	Befunde
+32-7	3103-3104	,	_	_	_	Befunde
+32-8	3105-3113	Linkstyp	_	_	_	Befunde
+32-9	3113-3114	,	_	_	_	Befunde
+32-10	3115-3117	PQ	_	_	_	Befunde
+32-11	3118-3121	142	_	_	_	Befunde
+32-12	3122-3124	ms	_	_	_	Befunde
+32-13	3124-3125	,	_	_	_	Befunde
+32-14	3126-3129	QRS	_	_	_	Befunde
+32-15	3130-3133	100	_	_	_	Befunde
+32-16	3134-3136	ms	_	_	_	Befunde
+32-17	3137-3138	,	_	_	_	Befunde
+32-18	3139-3142	QTc	_	_	_	Befunde
+32-19	3143-3146	422	_	_	_	Befunde
+32-20	3147-3149	ms	_	_	_	Befunde
+32-21	3149-3150	.	_	_	_	Befunde
+32-22	3151-3157	Zeiten	_	_	_	Befunde
+32-23	3158-3160	im	_	_	_	Befunde
+32-24	3161-3172	Normbereich	_	_	_	Befunde
+32-25	3172-3173	.	_	_	_	Befunde
+32-26	3174-3185	Regelrechte	_	_	_	Befunde
+32-27	3186-3199	R-Progression	_	_	_	Befunde
+32-28	3199-3200	,	_	_	_	Befunde
+32-29	3201-3202	R	_	_	_	Befunde
+32-30	3202-3203	/	_	_	_	Befunde
+32-31	3203-3204	S	_	_	_	Befunde
+32-32	3205-3213	Umschlag	_	_	_	Befunde
+32-33	3214-3216	in	_	_	_	Befunde
+32-34	3217-3219	V3	_	_	_	Befunde
+32-35	3219-3220	/	_	_	_	Befunde
+32-36	3220-3223	V4.	_	_	_	Befunde
+32-37	3224-3232	T-Wellen	_	_	_	Befunde
+32-38	3233-3246	Negativierung	_	_	_	Befunde
+32-39	3247-3249	in	_	_	_	Befunde
+32-40	3250-3253	V1.	_	_	_	Befunde
+32-41	3254-3261	Darüber	_	_	_	Befunde
+32-42	3262-3268	hinaus	_	_	_	Befunde
+32-43	3269-3274	keine	_	_	_	Befunde
+32-44	3275-3288	signifikanten	_	_	_	Befunde
+32-45	3289-3315	Kammerendteilveränderungen	_	_	_	Befunde
+32-46	3315-3316	.	_	_	_	Befunde
+
+#Text=Elektrophysiologische Untersuchung -LRB- B-OTHER vom <[Pseudo] 06/05/2037> -RRB- :
+33-1	3318-3339	Elektrophysiologische	_	_	_	Befunde
+33-2	3340-3352	Untersuchung	_	_	_	Befunde
+33-3	3353-3358	-LRB-	_	_	_	Befunde
+33-4	3359-3366	B-OTHER	_	_	_	Befunde
+33-5	3367-3370	vom	_	_	_	Befunde
+33-6	3371-3380	<[Pseudo]	_	_	_	Befunde
+33-7	3381-3383	06	_	_	_	Befunde
+33-8	3383-3384	/	_	_	_	Befunde
+33-9	3384-3386	05	_	_	_	Befunde
+33-10	3386-3387	/	_	_	_	Befunde
+33-11	3387-3391	2037	_	_	_	Befunde
+33-12	3391-3392	>	_	_	_	Befunde
+33-13	3393-3398	-RRB-	_	_	_	Befunde
+33-14	3399-3400	:	_	_	_	Befunde
+
+#Text=3-fache Punktion der V. femoralis dextra. Einbringen von drei 4-poligen diagnostischen Standardkathetern in HRA-, RV-Apex und HIS-Position. Zu Untersuchungsbeginn ausgeprägte Sinusarrhythmie, keine auffällige ventrikuläre Extrasystolie. Kein Epsilon-Potential. Normale QT-Zeit. Rechtsverspätung in V1. Normale Sinusknotenerholungszeit -LRB- korrigiert -RRB- . Ausschluss einer akzessorischen Bahn durch inkrementale RA- und RV-Stimulation. Bei programmierter RA-Stimulation mit 1 ES bei 2 BZL keine supraventrikuläre Tachyarrhythmie induzierbar. Anhalt für dualen AV-Knoten, jedoch ohne induzierbare AVNRT. Bei programmierter RV-Stimulation mit 3 ES vom RV-Apex keine ventrikuläre Tachyarrhythmie induzierbar. Intermittierend Induktion von kurzen, selbstlimitierenden atrialen Salven unklarer klinischer Signifikanz. Unauffälliger Carotis-Druckversuch im Liegen bds -LRB- häufige VES unter CSM -RRB- . Unter Ajmalin morphologisch Induktion eines Brugada-Typ-I arigen EKG Morphologie, Grad der ST-Elevation jedoch nicht signfikant. Normale supra- und infrahisäre Leitungszeiten.
+34-1	3401-3408	3-fache	_	_	_	Befunde
+34-2	3409-3417	Punktion	_	_	_	Befunde
+34-3	3418-3421	der	_	_	_	Befunde
+34-4	3422-3424	V.	_	_	_	Befunde
+34-5	3425-3434	femoralis	_	_	_	Befunde
+34-6	3435-3441	dextra	_	_	_	Befunde
+34-7	3441-3442	.	_	_	_	Befunde
+34-8	3443-3453	Einbringen	_	_	_	Befunde
+34-9	3454-3457	von	_	_	_	Befunde
+34-10	3458-3462	drei	_	_	_	Befunde
+34-11	3463-3472	4-poligen	_	_	_	Befunde
+34-12	3473-3487	diagnostischen	_	_	_	Befunde
+34-13	3488-3505	Standardkathetern	_	_	_	Befunde
+34-14	3506-3508	in	_	_	_	Befunde
+34-15	3509-3513	HRA-	_	_	_	Befunde
+34-16	3513-3514	,	_	_	_	Befunde
+34-17	3515-3522	RV-Apex	_	_	_	Befunde
+34-18	3523-3526	und	_	_	_	Befunde
+34-19	3527-3539	HIS-Position	_	_	_	Befunde
+34-20	3539-3540	.	_	_	_	Befunde
+34-21	3541-3543	Zu	_	_	_	Befunde
+34-22	3544-3563	Untersuchungsbeginn	_	_	_	Befunde
+34-23	3564-3575	ausgeprägte	_	_	_	Befunde
+34-24	3576-3591	Sinusarrhythmie	_	_	_	Befunde
+34-25	3591-3592	,	_	_	_	Befunde
+34-26	3593-3598	keine	_	_	_	Befunde
+34-27	3599-3609	auffällige	_	_	_	Befunde
+34-28	3610-3622	ventrikuläre	_	_	_	Befunde
+34-29	3623-3636	Extrasystolie	_	_	_	Befunde
+34-30	3636-3637	.	_	_	_	Befunde
+34-31	3638-3642	Kein	_	_	_	Befunde
+34-32	3643-3660	Epsilon-Potential	_	_	_	Befunde
+34-33	3660-3661	.	_	_	_	Befunde
+34-34	3662-3669	Normale	_	_	_	Befunde
+34-35	3670-3677	QT-Zeit	_	_	_	Befunde
+34-36	3677-3678	.	_	_	_	Befunde
+34-37	3679-3695	Rechtsverspätung	_	_	_	Befunde
+34-38	3696-3698	in	_	_	_	Befunde
+34-39	3699-3702	V1.	_	_	_	Befunde
+34-40	3703-3710	Normale	_	_	_	Befunde
+34-41	3711-3735	Sinusknotenerholungszeit	_	_	_	Befunde
+34-42	3736-3741	-LRB-	_	_	_	Befunde
+34-43	3742-3752	korrigiert	_	_	_	Befunde
+34-44	3753-3758	-RRB-	_	_	_	Befunde
+34-45	3759-3760	.	_	_	_	Befunde
+34-46	3761-3771	Ausschluss	_	_	_	Befunde
+34-47	3772-3777	einer	_	_	_	Befunde
+34-48	3778-3792	akzessorischen	_	_	_	Befunde
+34-49	3793-3797	Bahn	_	_	_	Befunde
+34-50	3798-3803	durch	_	_	_	Befunde
+34-51	3804-3816	inkrementale	_	_	_	Befunde
+34-52	3817-3820	RA-	_	_	_	Befunde
+34-53	3821-3824	und	_	_	_	Befunde
+34-54	3825-3839	RV-Stimulation	_	_	_	Befunde
+34-55	3839-3840	.	_	_	_	Befunde
+34-56	3841-3844	Bei	_	_	_	Befunde
+34-57	3845-3859	programmierter	_	_	_	Befunde
+34-58	3860-3874	RA-Stimulation	_	_	_	Befunde
+34-59	3875-3878	mit	_	_	_	Befunde
+34-60	3879-3880	1	_	_	_	Befunde
+34-61	3881-3883	ES	_	_	_	Befunde
+34-62	3884-3887	bei	_	_	_	Befunde
+34-63	3888-3889	2	_	_	_	Befunde
+34-64	3890-3893	BZL	_	_	_	Befunde
+34-65	3894-3899	keine	_	_	_	Befunde
+34-66	3900-3917	supraventrikuläre	_	_	_	Befunde
+34-67	3918-3933	Tachyarrhythmie	_	_	_	Befunde
+34-68	3934-3945	induzierbar	_	_	_	Befunde
+34-69	3945-3946	.	_	_	_	Befunde
+34-70	3947-3953	Anhalt	_	_	_	Befunde
+34-71	3954-3957	für	_	_	_	Befunde
+34-72	3958-3964	dualen	_	_	_	Befunde
+34-73	3965-3974	AV-Knoten	_	_	_	Befunde
+34-74	3974-3975	,	_	_	_	Befunde
+34-75	3976-3982	jedoch	_	_	_	Befunde
+34-76	3983-3987	ohne	_	_	_	Befunde
+34-77	3988-4000	induzierbare	_	_	_	Befunde
+34-78	4001-4006	AVNRT	_	_	_	Befunde
+34-79	4006-4007	.	_	_	_	Befunde
+34-80	4008-4011	Bei	_	_	_	Befunde
+34-81	4012-4026	programmierter	_	_	_	Befunde
+34-82	4027-4041	RV-Stimulation	_	_	_	Befunde
+34-83	4042-4045	mit	_	_	_	Befunde
+34-84	4046-4047	3	_	_	_	Befunde
+34-85	4048-4050	ES	_	_	_	Befunde
+34-86	4051-4054	vom	_	_	_	Befunde
+34-87	4055-4062	RV-Apex	_	_	_	Befunde
+34-88	4063-4068	keine	_	_	_	Befunde
+34-89	4069-4081	ventrikuläre	_	_	_	Befunde
+34-90	4082-4097	Tachyarrhythmie	_	_	_	Befunde
+34-91	4098-4109	induzierbar	_	_	_	Befunde
+34-92	4109-4110	.	_	_	_	Befunde
+34-93	4111-4126	Intermittierend	_	_	_	Befunde
+34-94	4127-4136	Induktion	_	_	_	Befunde
+34-95	4137-4140	von	_	_	_	Befunde
+34-96	4141-4147	kurzen	_	_	_	Befunde
+34-97	4147-4148	,	_	_	_	Befunde
+34-98	4149-4168	selbstlimitierenden	_	_	_	Befunde
+34-99	4169-4177	atrialen	_	_	_	Befunde
+34-100	4178-4184	Salven	_	_	_	Befunde
+34-101	4185-4193	unklarer	_	_	_	Befunde
+34-102	4194-4204	klinischer	_	_	_	Befunde
+34-103	4205-4216	Signifikanz	_	_	_	Befunde
+34-104	4216-4217	.	_	_	_	Befunde
+34-105	4218-4231	Unauffälliger	_	_	_	Befunde
+34-106	4232-4252	Carotis-Druckversuch	_	_	_	Befunde
+34-107	4253-4255	im	_	_	_	Befunde
+34-108	4256-4262	Liegen	_	_	_	Befunde
+34-109	4263-4266	bds	_	_	_	Befunde
+34-110	4267-4272	-LRB-	_	_	_	Befunde
+34-111	4273-4280	häufige	_	_	_	Befunde
+34-112	4281-4284	VES	_	_	_	Befunde
+34-113	4285-4290	unter	_	_	_	Befunde
+34-114	4291-4294	CSM	_	_	_	Befunde
+34-115	4295-4300	-RRB-	_	_	_	Befunde
+34-116	4301-4302	.	_	_	_	Befunde
+34-117	4303-4308	Unter	_	_	_	Befunde
+34-118	4309-4316	Ajmalin	ACTIVEING	true	_	Befunde
+34-119	4317-4330	morphologisch	_	_	_	Befunde
+34-120	4331-4340	Induktion	_	_	_	Befunde
+34-121	4341-4346	eines	_	_	_	Befunde
+34-122	4347-4360	Brugada-Typ-I	_	_	_	Befunde
+34-123	4361-4367	arigen	_	_	_	Befunde
+34-124	4368-4371	EKG	_	_	_	Befunde
+34-125	4372-4383	Morphologie	_	_	_	Befunde
+34-126	4383-4384	,	_	_	_	Befunde
+34-127	4385-4389	Grad	_	_	_	Befunde
+34-128	4390-4393	der	_	_	_	Befunde
+34-129	4394-4406	ST-Elevation	_	_	_	Befunde
+34-130	4407-4413	jedoch	_	_	_	Befunde
+34-131	4414-4419	nicht	_	_	_	Befunde
+34-132	4420-4430	signfikant	_	_	_	Befunde
+34-133	4430-4431	.	_	_	_	Befunde
+34-134	4432-4439	Normale	_	_	_	Befunde
+34-135	4440-4446	supra-	_	_	_	Befunde
+34-136	4447-4450	und	_	_	_	Befunde
+34-137	4451-4462	infrahisäre	_	_	_	Befunde
+34-138	4463-4477	Leitungszeiten	_	_	_	Befunde
+34-139	4477-4478	.	_	_	_	Befunde
+
+#Text=Nomale infrahisäre Leitungsreserve -LRB- HV-Zeit ms 42 --> 68 ms, 1:1 AV-Überleitung bis 460 ms mit suprahisärer Blockierung unter Ajmalin -RRB- .
+35-1	4479-4485	Nomale	_	_	_	Befunde
+35-2	4486-4497	infrahisäre	_	_	_	Befunde
+35-3	4498-4513	Leitungsreserve	_	_	_	Befunde
+35-4	4514-4519	-LRB-	ACTIVEING[1]	true[1]	_	Befunde
+35-5	4520-4527	HV-Zeit	ACTIVEING[1]	true[1]	_	Befunde
+35-6	4528-4530	ms	ACTIVEING[1]	true[1]	_	Befunde
+35-7	4531-4533	42	ACTIVEING[1]	true[1]	_	Befunde
+35-8	4534-4536	--	ACTIVEING[1]	true[1]	_	Befunde
+35-9	4536-4537	>	ACTIVEING[1]	true[1]	_	Befunde
+35-10	4538-4540	68	ACTIVEING[1]	true[1]	_	Befunde
+35-11	4541-4543	ms	ACTIVEING[1]	true[1]	_	Befunde
+35-12	4543-4544	,	ACTIVEING[1]	true[1]	_	Befunde
+35-13	4545-4548	1:1	ACTIVEING[1]	true[1]	_	Befunde
+35-14	4549-4563	AV-Überleitung	ACTIVEING[1]	true[1]	_	Befunde
+35-15	4564-4567	bis	ACTIVEING[1]	true[1]	_	Befunde
+35-16	4568-4571	460	ACTIVEING[1]	true[1]	_	Befunde
+35-17	4572-4574	ms	ACTIVEING[1]	true[1]	_	Befunde
+35-18	4575-4578	mit	ACTIVEING[1]	true[1]	_	Befunde
+35-19	4579-4591	suprahisärer	ACTIVEING[1]	true[1]	_	Befunde
+35-20	4592-4603	Blockierung	ACTIVEING[1]	true[1]	_	Befunde
+35-21	4604-4609	unter	ACTIVEING[1]	true[1]	_	Befunde
+35-22	4610-4617	Ajmalin	ACTIVEING[1]	true[1]	_	Befunde
+35-23	4618-4623	-RRB-	ACTIVEING[1]	true[1]	_	Befunde
+35-24	4624-4625	.	_	_	_	Befunde
+
+#Text=Zusammenfassung:
+36-1	4626-4641	Zusammenfassung	_	_	_	Befunde
+36-2	4641-4642	:	_	_	_	Befunde
+
+#Text=Kriterien für Brugada-Syndrom nicht vollständig erfüllt -LRB- s.o -RRB- . Ausgeprägte Sinusarrhythmie, normale supra und infrahisäre Leitungszeiten.
+37-1	4643-4652	Kriterien	_	_	_	Befunde
+37-2	4653-4656	für	_	_	_	Befunde
+37-3	4657-4672	Brugada-Syndrom	_	_	_	Befunde
+37-4	4673-4678	nicht	_	_	_	Befunde
+37-5	4679-4690	vollständig	_	_	_	Befunde
+37-6	4691-4698	erfüllt	_	_	_	Befunde
+37-7	4699-4704	-LRB-	_	_	_	Befunde
+37-8	4705-4708	s.o	_	_	_	Befunde
+37-9	4709-4714	-RRB-	_	_	_	Befunde
+37-10	4715-4716	.	_	_	_	Befunde
+37-11	4717-4728	Ausgeprägte	_	_	_	Befunde
+37-12	4729-4744	Sinusarrhythmie	_	_	_	Befunde
+37-13	4744-4745	,	_	_	_	Befunde
+37-14	4746-4753	normale	_	_	_	Befunde
+37-15	4754-4759	supra	_	_	_	Befunde
+37-16	4760-4763	und	_	_	_	Befunde
+37-17	4764-4775	infrahisäre	_	_	_	Befunde
+37-18	4776-4790	Leitungszeiten	_	_	_	Befunde
+37-19	4790-4791	.	_	_	_	Befunde
+
+#Text=Proc.:
+38-1	4792-4796	Proc	_	_	_	Befunde
+38-2	4796-4797	.	_	_	_	Befunde
+38-3	4797-4798	:	_	_	_	Befunde
+
+#Text=DV 4h. Monitorüberwachung streng bis 14:30 Uhr nach Ajmalinapplikation, anschließend gemäß Anordnung Stationsarzt. LZ-EKG in domo. Sofern weiter nicht richtungsweisen ad ILR-Implantation bei unklaren Synkopen und Palpitationen nach Klärung der Kostenerstattung durch die Krankenkasse. Vorstellung in Arrhythmie-Sprechstunde -LRB- B-TITLE B-PER -RRB- im Verlauf zum genetischen Screening.
+39-1	4799-4801	DV	_	_	_	Befunde
+39-2	4802-4804	4h	_	_	_	Befunde
+39-3	4804-4805	.	_	_	_	Befunde
+39-4	4806-4824	Monitorüberwachung	_	_	_	Befunde
+39-5	4825-4831	streng	_	_	_	Befunde
+39-6	4832-4835	bis	_	_	_	Befunde
+39-7	4836-4841	14:30	_	_	_	Befunde
+39-8	4842-4845	Uhr	_	_	_	Befunde
+39-9	4846-4850	nach	_	_	_	Befunde
+39-10	4851-4869	Ajmalinapplikation	ACTIVEING	true	_	Befunde
+39-11	4869-4870	,	_	_	_	Befunde
+39-12	4871-4883	anschließend	_	_	_	Befunde
+39-13	4884-4889	gemäß	_	_	_	Befunde
+39-14	4890-4899	Anordnung	_	_	_	Befunde
+39-15	4900-4912	Stationsarzt	_	_	_	Befunde
+39-16	4912-4913	.	_	_	_	Befunde
+39-17	4914-4920	LZ-EKG	_	_	_	Befunde
+39-18	4921-4923	in	_	_	_	Befunde
+39-19	4924-4928	domo	_	_	_	Befunde
+39-20	4928-4929	.	_	_	_	Befunde
+39-21	4930-4936	Sofern	_	_	_	Befunde
+39-22	4937-4943	weiter	_	_	_	Befunde
+39-23	4944-4949	nicht	_	_	_	Befunde
+39-24	4950-4965	richtungsweisen	_	_	_	Befunde
+39-25	4966-4968	ad	_	_	_	Befunde
+39-26	4969-4985	ILR-Implantation	_	_	_	Befunde
+39-27	4986-4989	bei	_	_	_	Befunde
+39-28	4990-4998	unklaren	_	_	_	Befunde
+39-29	4999-5007	Synkopen	_	_	_	Befunde
+39-30	5008-5011	und	_	_	_	Befunde
+39-31	5012-5025	Palpitationen	_	_	_	Befunde
+39-32	5026-5030	nach	_	_	_	Befunde
+39-33	5031-5038	Klärung	_	_	_	Befunde
+39-34	5039-5042	der	_	_	_	Befunde
+39-35	5043-5059	Kostenerstattung	_	_	_	Befunde
+39-36	5060-5065	durch	_	_	_	Befunde
+39-37	5066-5069	die	_	_	_	Befunde
+39-38	5070-5082	Krankenkasse	_	_	_	Befunde
+39-39	5082-5083	.	_	_	_	Befunde
+39-40	5084-5095	Vorstellung	_	_	_	Befunde
+39-41	5096-5098	in	_	_	_	Befunde
+39-42	5099-5122	Arrhythmie-Sprechstunde	_	_	_	Befunde
+39-43	5123-5128	-LRB-	_	_	_	Befunde
+39-44	5129-5136	B-TITLE	_	_	_	Befunde
+39-45	5137-5142	B-PER	_	_	_	Befunde
+39-46	5143-5148	-RRB-	_	_	_	Befunde
+39-47	5149-5151	im	_	_	_	Befunde
+39-48	5152-5159	Verlauf	_	_	_	Befunde
+39-49	5160-5163	zum	_	_	_	Befunde
+39-50	5164-5175	genetischen	_	_	_	Befunde
+39-51	5176-5185	Screening	_	_	_	Befunde
+39-52	5185-5186	.	_	_	_	Befunde
+
+#Text=Labor:
+40-1	5188-5193	Labor	_	_	_	Labor
+40-2	5193-5194	:	_	_	_	Labor
+
+#Text=Werte wurden ermittelt am B-DAY B-MONTH <[Pseudo] 2036>
+41-1	5197-5202	Werte	_	_	_	Labor
+41-2	5203-5209	wurden	_	_	_	Labor
+41-3	5210-5219	ermittelt	_	_	_	Labor
+41-4	5220-5222	am	_	_	_	Labor
+41-5	5223-5228	B-DAY	_	_	_	Labor
+41-6	5229-5236	B-MONTH	_	_	_	Labor
+41-7	5237-5246	<[Pseudo]	_	_	_	Labor
+41-8	5247-5251	2036	_	_	_	Labor
+41-9	5251-5252	>	_	_	_	Labor
+
+#Text=Aktivitätsparameter & Elektrophorese
+42-1	5253-5272	Aktivitätsparameter	_	_	_	Labor
+42-2	5273-5274	&	_	_	_	Labor
+42-3	5275-5289	Elektrophorese	_	_	_	Labor
+
+#Text=Parameter
+43-1	5290-5299	Parameter	_	_	_	Labor
+
+#Text=Wert
+44-1	5300-5304	Wert	_	_	_	Labor
+
+#Text=Normb / Dimension
+45-1	5305-5310	Normb	_	_	_	Labor
+45-2	5311-5312	/	_	_	_	Labor
+45-3	5313-5322	Dimension	_	_	_	Labor
+
+#Text=Datum
+46-1	5323-5328	Datum	_	_	_	Labor
+
+#Text=Gesamt-HCG
+47-1	5329-5339	Gesamt-HCG	_	_	_	Labor
+
+#Text=<2.0
+48-1	5340-5341	<	_	_	_	Labor
+48-2	5341-5344	2.0	_	_	_	Labor
+
+#Text=- <6 mIE/ml
+49-1	5345-5346	-	_	_	_	Labor
+49-2	5347-5348	<	_	_	_	Labor
+49-3	5348-5349	6	_	_	_	Labor
+49-4	5350-5353	mIE	_	_	_	Labor
+49-5	5353-5354	/	_	_	_	Labor
+49-6	5354-5356	ml	_	_	_	Labor
+
+#Text=B-DATE
+50-1	5357-5363	B-DATE	_	_	_	Labor
+
+#Text=Zusammenfassung:
+51-1	5373-5388	Zusammenfassung	_	_	_	Zusammenfassung
+51-2	5388-5389	:	_	_	_	Zusammenfassung
+
+#Text=Am <[Pseudo] 06/05/2037> erfolgte eine elektrophysiologische Untersuchung. Die Kriterien für Brugada-Syndrom wurden nicht vollständig erfüllt. Es zeigte sich eine ausgeprägte Sinusarrhythmie mit normalen supra und infrahisäre Leitungszeiten.
+52-1	5390-5392	Am	_	_	_	Zusammenfassung
+52-2	5393-5402	<[Pseudo]	_	_	_	Zusammenfassung
+52-3	5403-5405	06	_	_	_	Zusammenfassung
+52-4	5405-5406	/	_	_	_	Zusammenfassung
+52-5	5406-5408	05	_	_	_	Zusammenfassung
+52-6	5408-5409	/	_	_	_	Zusammenfassung
+52-7	5409-5413	2037	_	_	_	Zusammenfassung
+52-8	5413-5414	>	_	_	_	Zusammenfassung
+52-9	5415-5423	erfolgte	_	_	_	Zusammenfassung
+52-10	5424-5428	eine	_	_	_	Zusammenfassung
+52-11	5429-5450	elektrophysiologische	_	_	_	Zusammenfassung
+52-12	5451-5463	Untersuchung	_	_	_	Zusammenfassung
+52-13	5463-5464	.	_	_	_	Zusammenfassung
+52-14	5465-5468	Die	_	_	_	Zusammenfassung
+52-15	5469-5478	Kriterien	_	_	_	Zusammenfassung
+52-16	5479-5482	für	_	_	_	Zusammenfassung
+52-17	5483-5498	Brugada-Syndrom	_	_	_	Zusammenfassung
+52-18	5499-5505	wurden	_	_	_	Zusammenfassung
+52-19	5506-5511	nicht	_	_	_	Zusammenfassung
+52-20	5512-5523	vollständig	_	_	_	Zusammenfassung
+52-21	5524-5531	erfüllt	_	_	_	Zusammenfassung
+52-22	5531-5532	.	_	_	_	Zusammenfassung
+52-23	5533-5535	Es	_	_	_	Zusammenfassung
+52-24	5536-5542	zeigte	_	_	_	Zusammenfassung
+52-25	5543-5547	sich	_	_	_	Zusammenfassung
+52-26	5548-5552	eine	_	_	_	Zusammenfassung
+52-27	5553-5564	ausgeprägte	_	_	_	Zusammenfassung
+52-28	5565-5580	Sinusarrhythmie	_	_	_	Zusammenfassung
+52-29	5581-5584	mit	_	_	_	Zusammenfassung
+52-30	5585-5593	normalen	_	_	_	Zusammenfassung
+52-31	5594-5599	supra	_	_	_	Zusammenfassung
+52-32	5600-5603	und	_	_	_	Zusammenfassung
+52-33	5604-5615	infrahisäre	_	_	_	Zusammenfassung
+52-34	5616-5630	Leitungszeiten	_	_	_	Zusammenfassung
+52-35	5630-5631	.	_	_	_	Zusammenfassung
+
+#Text=Procedere:
+53-1	5633-5642	Procedere	_	_	_	Mix
+53-2	5642-5643	:	_	_	_	Mix
+
+#Text=Wir empfehlen die Durchführung eines LZ-EKGs. Sofern dies nicht weiter richtungsweisend sein sollte empfehlen wir eine ILR-Implantation bei unklaren Synkopen und Palpitationen nach Klärung der Kostenerstattung durch die Krankenkasse. Darüber hinaus empfehlen wir die Vorstellung in unserer B-ORG -LRB- B-TITLE I-TITLE B-PER -RRB- im Verlauf zum genetischen Screening. Ein Termin hierfür wurde für den <[Pseudo] 13/08/2037> um 13 Uhr in unsere HIS-Ambulanz vereinbart.
+54-1	5644-5647	Wir	_	_	_	Mix
+54-2	5648-5657	empfehlen	_	_	_	Mix
+54-3	5658-5661	die	_	_	_	Mix
+54-4	5662-5674	Durchführung	_	_	_	Mix
+54-5	5675-5680	eines	_	_	_	Mix
+54-6	5681-5688	LZ-EKGs	_	_	_	Mix
+54-7	5688-5689	.	_	_	_	Mix
+54-8	5690-5696	Sofern	_	_	_	Mix
+54-9	5697-5701	dies	_	_	_	Mix
+54-10	5702-5707	nicht	_	_	_	Mix
+54-11	5708-5714	weiter	_	_	_	Mix
+54-12	5715-5731	richtungsweisend	_	_	_	Mix
+54-13	5732-5736	sein	_	_	_	Mix
+54-14	5737-5743	sollte	_	_	_	Mix
+54-15	5744-5753	empfehlen	_	_	_	Mix
+54-16	5754-5757	wir	_	_	_	Mix
+54-17	5758-5762	eine	_	_	_	Mix
+54-18	5763-5779	ILR-Implantation	_	_	_	Mix
+54-19	5780-5783	bei	_	_	_	Mix
+54-20	5784-5792	unklaren	_	_	_	Mix
+54-21	5793-5801	Synkopen	_	_	_	Mix
+54-22	5802-5805	und	_	_	_	Mix
+54-23	5806-5819	Palpitationen	_	_	_	Mix
+54-24	5820-5824	nach	_	_	_	Mix
+54-25	5825-5832	Klärung	_	_	_	Mix
+54-26	5833-5836	der	_	_	_	Mix
+54-27	5837-5853	Kostenerstattung	_	_	_	Mix
+54-28	5854-5859	durch	_	_	_	Mix
+54-29	5860-5863	die	_	_	_	Mix
+54-30	5864-5876	Krankenkasse	_	_	_	Mix
+54-31	5876-5877	.	_	_	_	Mix
+54-32	5878-5885	Darüber	_	_	_	Mix
+54-33	5886-5892	hinaus	_	_	_	Mix
+54-34	5893-5902	empfehlen	_	_	_	Mix
+54-35	5903-5906	wir	_	_	_	Mix
+54-36	5907-5910	die	_	_	_	Mix
+54-37	5911-5922	Vorstellung	_	_	_	Mix
+54-38	5923-5925	in	_	_	_	Mix
+54-39	5926-5933	unserer	_	_	_	Mix
+54-40	5934-5939	B-ORG	_	_	_	Mix
+54-41	5940-5945	-LRB-	_	_	_	Mix
+54-42	5946-5953	B-TITLE	_	_	_	Mix
+54-43	5954-5961	I-TITLE	_	_	_	Mix
+54-44	5962-5967	B-PER	_	_	_	Mix
+54-45	5968-5973	-RRB-	_	_	_	Mix
+54-46	5974-5976	im	_	_	_	Mix
+54-47	5977-5984	Verlauf	_	_	_	Mix
+54-48	5985-5988	zum	_	_	_	Mix
+54-49	5989-6000	genetischen	_	_	_	Mix
+54-50	6001-6010	Screening	_	_	_	Mix
+54-51	6010-6011	.	_	_	_	Mix
+54-52	6012-6015	Ein	_	_	_	Mix
+54-53	6016-6022	Termin	_	_	_	Mix
+54-54	6023-6030	hierfür	_	_	_	Mix
+54-55	6031-6036	wurde	_	_	_	Mix
+54-56	6037-6040	für	_	_	_	Mix
+54-57	6041-6044	den	_	_	_	Mix
+54-58	6045-6054	<[Pseudo]	_	_	_	Mix
+54-59	6055-6057	13	_	_	_	Mix
+54-60	6057-6058	/	_	_	_	Mix
+54-61	6058-6060	08	_	_	_	Mix
+54-62	6060-6061	/	_	_	_	Mix
+54-63	6061-6065	2037	_	_	_	Mix
+54-64	6065-6066	>	_	_	_	Mix
+54-65	6067-6069	um	_	_	_	Mix
+54-66	6070-6072	13	_	_	_	Mix
+54-67	6073-6076	Uhr	_	_	_	Mix
+54-68	6077-6079	in	_	_	_	Mix
+54-69	6080-6086	unsere	_	_	_	Mix
+54-70	6087-6099	HIS-Ambulanz	_	_	_	Mix
+54-71	6100-6110	vereinbart	_	_	_	Mix
+54-72	6110-6111	.	_	_	_	Mix
+
+#Text=Wir empfehlen die Kontrolle und ggf. Einstellung der kardiovaskulären Risikofaktoren -LRB- Blutdruck, Lipide, HbA1c -RRB- gemäß den aktuellen Leitlinien.
+55-1	6113-6116	Wir	_	_	_	Mix
+55-2	6117-6126	empfehlen	_	_	_	Mix
+55-3	6127-6130	die	_	_	_	Mix
+55-4	6131-6140	Kontrolle	_	_	_	Mix
+55-5	6141-6144	und	_	_	_	Mix
+55-6	6145-6149	ggf.	_	_	_	Mix
+55-7	6150-6161	Einstellung	_	_	_	Mix
+55-8	6162-6165	der	_	_	_	Mix
+55-9	6166-6182	kardiovaskulären	_	_	_	Mix
+55-10	6183-6197	Risikofaktoren	_	_	_	Mix
+55-11	6198-6203	-LRB-	_	_	_	Mix
+55-12	6204-6213	Blutdruck	_	_	_	Mix
+55-13	6213-6214	,	_	_	_	Mix
+55-14	6215-6221	Lipide	_	_	_	Mix
+55-15	6221-6222	,	_	_	_	Mix
+55-16	6223-6228	HbA1c	_	_	_	Mix
+55-17	6229-6234	-RRB-	_	_	_	Mix
+55-18	6235-6240	gemäß	_	_	_	Mix
+55-19	6241-6244	den	_	_	_	Mix
+55-20	6245-6254	aktuellen	_	_	_	Mix
+55-21	6255-6265	Leitlinien	_	_	_	Mix
+55-22	6265-6266	.	_	_	_	Mix
+
+#Text=Wir empfehlen regelmäßige kardiologische Kontrolluntersuchungen, welche gerne auch bei einem niedergelassenen B-SALUTE durchgeführt werden können. Falls gewünscht kann hierfür auch ein Termin in unserer B-ORG I-ORG -LRB- Tel.: B-PHONE -RRB- vereinbart werden.
+56-1	6268-6271	Wir	_	_	_	Mix
+56-2	6272-6281	empfehlen	_	_	_	Mix
+56-3	6282-6293	regelmäßige	_	_	_	Mix
+56-4	6294-6308	kardiologische	_	_	_	Mix
+56-5	6309-6331	Kontrolluntersuchungen	_	_	_	Mix
+56-6	6331-6332	,	_	_	_	Mix
+56-7	6333-6339	welche	_	_	_	Mix
+56-8	6340-6345	gerne	_	_	_	Mix
+56-9	6346-6350	auch	_	_	_	Mix
+56-10	6351-6354	bei	_	_	_	Mix
+56-11	6355-6360	einem	_	_	_	Mix
+56-12	6361-6377	niedergelassenen	_	_	_	Mix
+56-13	6378-6386	B-SALUTE	_	_	_	Mix
+56-14	6387-6399	durchgeführt	_	_	_	Mix
+56-15	6400-6406	werden	_	_	_	Mix
+56-16	6407-6413	können	_	_	_	Mix
+56-17	6413-6414	.	_	_	_	Mix
+56-18	6415-6420	Falls	_	_	_	Mix
+56-19	6421-6430	gewünscht	_	_	_	Mix
+56-20	6431-6435	kann	_	_	_	Mix
+56-21	6436-6443	hierfür	_	_	_	Mix
+56-22	6444-6448	auch	_	_	_	Mix
+56-23	6449-6452	ein	_	_	_	Mix
+56-24	6453-6459	Termin	_	_	_	Mix
+56-25	6460-6462	in	_	_	_	Mix
+56-26	6463-6470	unserer	_	_	_	Mix
+56-27	6471-6476	B-ORG	_	_	_	Mix
+56-28	6477-6482	I-ORG	_	_	_	Mix
+56-29	6483-6488	-LRB-	_	_	_	Mix
+56-30	6489-6493	Tel.	_	_	_	Mix
+56-31	6493-6494	:	_	_	_	Mix
+56-32	6495-6502	B-PHONE	_	_	_	Mix
+56-33	6503-6508	-RRB-	_	_	_	Mix
+56-34	6509-6519	vereinbart	_	_	_	Mix
+56-35	6520-6526	werden	_	_	_	Mix
+56-36	6526-6527	.	_	_	_	Mix
+
+#Text=Nächster Termin/Kontrolle:
+57-1	6529-6537	Nächster	_	_	_	Mix
+57-2	6538-6544	Termin	_	_	_	Mix
+57-3	6544-6545	/	_	_	_	Mix
+57-4	6545-6554	Kontrolle	_	_	_	Mix
+57-5	6554-6555	:	_	_	_	Mix
+
+#Text=Regelmäßige kardiologische Kontrolluntersuchungen, wenn vom zuweisenden B-SALUTE gewünscht, gerne auch in unserer B-ORG -LRB- Terminvereinbarung: B-PHONE -RRB- .
+58-1	6556-6567	Regelmäßige	_	_	_	Mix
+58-2	6568-6582	kardiologische	_	_	_	Mix
+58-3	6583-6605	Kontrolluntersuchungen	_	_	_	Mix
+58-4	6605-6606	,	_	_	_	Mix
+58-5	6607-6611	wenn	_	_	_	Mix
+58-6	6612-6615	vom	_	_	_	Mix
+58-7	6616-6627	zuweisenden	_	_	_	Mix
+58-8	6628-6636	B-SALUTE	_	_	_	Mix
+58-9	6637-6646	gewünscht	_	_	_	Mix
+58-10	6646-6647	,	_	_	_	Mix
+58-11	6648-6653	gerne	_	_	_	Mix
+58-12	6654-6658	auch	_	_	_	Mix
+58-13	6659-6661	in	_	_	_	Mix
+58-14	6662-6669	unserer	_	_	_	Mix
+58-15	6670-6675	B-ORG	_	_	_	Mix
+58-16	6676-6681	-LRB-	_	_	_	Mix
+58-17	6682-6700	Terminvereinbarung	_	_	_	Mix
+58-18	6700-6701	:	_	_	_	Mix
+58-19	6702-6709	B-PHONE	_	_	_	Mix
+58-20	6710-6715	-RRB-	_	_	_	Mix
+58-21	6716-6717	.	_	_	_	Mix
+
+#Text=Therapieempfehlung -LRB- von kardiologischer Seite -RRB- :
+59-1	6719-6737	Therapieempfehlung	_	_	_	EntlassMedikation
+59-2	6738-6743	-LRB-	_	_	_	EntlassMedikation
+59-3	6744-6747	von	_	_	_	EntlassMedikation
+59-4	6748-6763	kardiologischer	_	_	_	EntlassMedikation
+59-5	6764-6769	Seite	_	_	_	EntlassMedikation
+59-6	6770-6775	-RRB-	_	_	_	EntlassMedikation
+59-7	6776-6777	:	_	_	_	EntlassMedikation
+
+#Text=Eszitalopram 10 1-0-0
+60-1	6778-6790	Eszitalopram	ACTIVEING	false	_	EntlassMedikation
+60-2	6791-6793	10	STRENGTH	false	60-1	EntlassMedikation
+60-3	6794-6795	1	FREQUENCY[2]	false[2]	60-1[0_2]	EntlassMedikation
+60-4	6795-6796	-	FREQUENCY[2]	false[2]	_	EntlassMedikation
+60-5	6796-6797	0	FREQUENCY[2]	false[2]	_	EntlassMedikation
+60-6	6797-6798	-	FREQUENCY[2]	false[2]	_	EntlassMedikation
+60-7	6798-6799	0	FREQUENCY[2]	false[2]	_	EntlassMedikation
+
+#Text=Selbstverständlich können Präparate mit gleichem Wirkstoff und gleicher Wirkung von anderen Herstellern verordnet werden.
+61-1	6801-6819	Selbstverständlich	_	_	_	Abschluss
+61-2	6820-6826	können	_	_	_	Abschluss
+61-3	6827-6836	Präparate	_	_	_	Abschluss
+61-4	6837-6840	mit	_	_	_	Abschluss
+61-5	6841-6849	gleichem	_	_	_	Abschluss
+61-6	6850-6859	Wirkstoff	_	_	_	Abschluss
+61-7	6860-6863	und	_	_	_	Abschluss
+61-8	6864-6872	gleicher	_	_	_	Abschluss
+61-9	6873-6880	Wirkung	_	_	_	Abschluss
+61-10	6881-6884	von	_	_	_	Abschluss
+61-11	6885-6892	anderen	_	_	_	Abschluss
+61-12	6893-6904	Herstellern	_	_	_	Abschluss
+61-13	6905-6914	verordnet	_	_	_	Abschluss
+61-14	6915-6921	werden	_	_	_	Abschluss
+61-15	6921-6922	.	_	_	_	Abschluss
+
+#Text=Wir entließen die kardiorespiratorisch stabile und beschwerdefreie Patientin am <[Pseudo] 07/05/2037> in Ihre geschätzte ambulante Betreuung. Für Rückfragen stehen wir selbstverständlich gern zur Verfügung.
+62-1	6924-6927	Wir	_	_	_	Abschluss
+62-2	6928-6937	entließen	_	_	_	Abschluss
+62-3	6938-6941	die	_	_	_	Abschluss
+62-4	6942-6962	kardiorespiratorisch	_	_	_	Abschluss
+62-5	6963-6970	stabile	_	_	_	Abschluss
+62-6	6971-6974	und	_	_	_	Abschluss
+62-7	6975-6990	beschwerdefreie	_	_	_	Abschluss
+62-8	6991-7000	Patientin	_	_	_	Abschluss
+62-9	7001-7003	am	_	_	_	Abschluss
+62-10	7004-7013	<[Pseudo]	_	_	_	Abschluss
+62-11	7014-7016	07	_	_	_	Abschluss
+62-12	7016-7017	/	_	_	_	Abschluss
+62-13	7017-7019	05	_	_	_	Abschluss
+62-14	7019-7020	/	_	_	_	Abschluss
+62-15	7020-7024	2037	_	_	_	Abschluss
+62-16	7024-7025	>	_	_	_	Abschluss
+62-17	7026-7028	in	_	_	_	Abschluss
+62-18	7029-7033	Ihre	_	_	_	Abschluss
+62-19	7034-7044	geschätzte	_	_	_	Abschluss
+62-20	7045-7054	ambulante	_	_	_	Abschluss
+62-21	7055-7064	Betreuung	_	_	_	Abschluss
+62-22	7064-7065	.	_	_	_	Abschluss
+62-23	7066-7069	Für	_	_	_	Abschluss
+62-24	7070-7080	Rückfragen	_	_	_	Abschluss
+62-25	7081-7087	stehen	_	_	_	Abschluss
+62-26	7088-7091	wir	_	_	_	Abschluss
+62-27	7092-7110	selbstverständlich	_	_	_	Abschluss
+62-28	7111-7115	gern	_	_	_	Abschluss
+62-29	7116-7119	zur	_	_	_	Abschluss
+62-30	7120-7129	Verfügung	_	_	_	Abschluss
+62-31	7129-7130	.	_	_	_	Abschluss
+
+#Text=Bei Auftreten von Problemen oder Komplikationen sind wir jederzeit gerne bereit, die Patientin unverzüglich wieder zu sehen -LRB- B-ORG I-ORG - B-ORG I-ORG I-ORG Tel.: B-PHONE -RRB- .
+63-1	7132-7135	Bei	_	_	_	Abschluss
+63-2	7136-7145	Auftreten	_	_	_	Abschluss
+63-3	7146-7149	von	_	_	_	Abschluss
+63-4	7150-7159	Problemen	_	_	_	Abschluss
+63-5	7160-7164	oder	_	_	_	Abschluss
+63-6	7165-7179	Komplikationen	_	_	_	Abschluss
+63-7	7180-7184	sind	_	_	_	Abschluss
+63-8	7185-7188	wir	_	_	_	Abschluss
+63-9	7189-7198	jederzeit	_	_	_	Abschluss
+63-10	7199-7204	gerne	_	_	_	Abschluss
+63-11	7205-7211	bereit	_	_	_	Abschluss
+63-12	7211-7212	,	_	_	_	Abschluss
+63-13	7213-7216	die	_	_	_	Abschluss
+63-14	7217-7226	Patientin	_	_	_	Abschluss
+63-15	7227-7239	unverzüglich	_	_	_	Abschluss
+63-16	7240-7246	wieder	_	_	_	Abschluss
+63-17	7247-7249	zu	_	_	_	Abschluss
+63-18	7250-7255	sehen	_	_	_	Abschluss
+63-19	7256-7261	-LRB-	_	_	_	Abschluss
+63-20	7262-7267	B-ORG	_	_	_	Abschluss
+63-21	7268-7273	I-ORG	_	_	_	Abschluss
+63-22	7274-7275	-	_	_	_	Abschluss
+63-23	7276-7281	B-ORG	_	_	_	Abschluss
+63-24	7282-7287	I-ORG	_	_	_	Abschluss
+63-25	7288-7293	I-ORG	_	_	_	Abschluss
+63-26	7294-7298	Tel.	_	_	_	Abschluss
+63-27	7298-7299	:	_	_	_	Abschluss
+63-28	7300-7307	B-PHONE	_	_	_	Abschluss
+63-29	7308-7313	-RRB-	_	_	_	Abschluss
+63-30	7314-7315	.	_	_	_	Abschluss
+
+#Text=Wir bedanken uns für die Überweisung und die vertrauensvolle Zusammenarbeit.
+64-1	7317-7320	Wir	_	_	_	Abschluss
+64-2	7321-7329	bedanken	_	_	_	Abschluss
+64-3	7330-7333	uns	_	_	_	Abschluss
+64-4	7334-7337	für	_	_	_	Abschluss
+64-5	7338-7341	die	_	_	_	Abschluss
+64-6	7342-7353	Überweisung	_	_	_	Abschluss
+64-7	7354-7357	und	_	_	_	Abschluss
+64-8	7358-7361	die	_	_	_	Abschluss
+64-9	7362-7377	vertrauensvolle	_	_	_	Abschluss
+64-10	7378-7392	Zusammenarbeit	_	_	_	Abschluss
+64-11	7392-7393	.	_	_	_	Abschluss
+
+#Text=Mit freundlichen Grüßen
+65-1	7395-7398	Mit	_	_	_	Abschluss
+65-2	7399-7411	freundlichen	_	_	_	Abschluss
+65-3	7412-7418	Grüßen	_	_	_	Abschluss
+
+#Text=B-TITLE I-TITLE I-TITLE B-PER I-PER B-TITLE I-TITLE B-PER B-PER I-PER B-TITLE B-PER I-PER
+66-1	7423-7430	B-TITLE	_	_	_	Abschluss
+66-2	7431-7438	I-TITLE	_	_	_	Abschluss
+66-3	7439-7446	I-TITLE	_	_	_	Abschluss
+66-4	7447-7452	B-PER	_	_	_	Abschluss
+66-5	7453-7458	I-PER	_	_	_	Abschluss
+66-6	7459-7466	B-TITLE	_	_	_	Abschluss
+66-7	7467-7474	I-TITLE	_	_	_	Abschluss
+66-8	7475-7480	B-PER	_	_	_	Abschluss
+66-9	7481-7486	B-PER	_	_	_	Abschluss
+66-10	7487-7492	I-PER	_	_	_	Abschluss
+66-11	7493-7500	B-TITLE	_	_	_	Abschluss
+66-12	7501-7506	B-PER	_	_	_	Abschluss
+66-13	7507-7512	I-PER	_	_	_	Abschluss
+
+#Text=Ärztlicher Direktor Oberarzt Assistenzarzt
+67-1	7513-7523	Ärztlicher	_	_	_	Abschluss
+67-2	7524-7532	Direktor	_	_	_	Abschluss
+67-3	7533-7541	Oberarzt	_	_	_	Abschluss
+67-4	7542-7555	Assistenzarzt	_	_	_	Abschluss

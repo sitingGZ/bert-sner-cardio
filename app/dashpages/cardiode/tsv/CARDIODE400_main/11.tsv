@@ -1,0 +1,1969 @@
+#FORMAT=WebAnno TSV 3.3
+#T_SP=webanno.custom.Medication|ClassType|InNarrative
+#T_RL=webanno.custom.MedRel|BT_webanno.custom.Medication
+#T_SP=webanno.custom.Sectionsentence|Sectiontypes
+
+
+#Text=Aufnahmedatum: <[Pseudo] 2031-01-15 >
+1-1	0-13	Aufnahmedatum	_	_	_	_
+1-2	13-14	:	_	_	_	_
+1-3	15-24	<[Pseudo]	_	_	_	_
+1-4	25-29	2031	_	_	_	_
+1-5	29-30	-	_	_	_	_
+1-6	30-32	01	_	_	_	_
+1-7	32-33	-	_	_	_	_
+1-8	33-35	15	_	_	_	_
+1-9	36-37	>	_	_	_	_
+
+#Text=Geburtsdatum: <[Pseudo] 1992-12-23 >
+2-1	38-50	Geburtsdatum	_	_	_	_
+2-2	50-51	:	_	_	_	_
+2-3	52-61	<[Pseudo]	_	_	_	_
+2-4	62-66	1992	_	_	_	_
+2-5	66-67	-	_	_	_	_
+2-6	67-69	12	_	_	_	_
+2-7	69-70	-	_	_	_	_
+2-8	70-72	23	_	_	_	_
+2-9	73-74	>	_	_	_	_
+
+#Text=Alter: 38
+3-1	75-80	Alter	_	_	_	_
+3-2	80-81	:	_	_	_	_
+3-3	82-84	38	_	_	_	_
+
+#Text=über Ihre Patientin B-SALUTE B-PER I-PER geboren am <[Pseudo] 23/12/1992> wh. B-PLZ B-LOC B-ADDR I-ADDR die sich am in unserer Ambulanz vorstellte.
+4-1	86-90	über	_	_	_	Anrede
+4-2	91-95	Ihre	_	_	_	Anrede
+4-3	96-105	Patientin	_	_	_	Anrede
+4-4	106-114	B-SALUTE	_	_	_	Anrede
+4-5	115-120	B-PER	_	_	_	Anrede
+4-6	121-126	I-PER	_	_	_	Anrede
+4-7	127-134	geboren	_	_	_	Anrede
+4-8	135-137	am	_	_	_	Anrede
+4-9	138-147	<[Pseudo]	_	_	_	Anrede
+4-10	148-150	23	_	_	_	Anrede
+4-11	150-151	/	_	_	_	Anrede
+4-12	151-153	12	_	_	_	Anrede
+4-13	153-154	/	_	_	_	Anrede
+4-14	154-158	1992	_	_	_	Anrede
+4-15	158-159	>	_	_	_	Anrede
+4-16	160-162	wh	_	_	_	Anrede
+4-17	162-163	.	_	_	_	Anrede
+4-18	164-169	B-PLZ	_	_	_	Anrede
+4-19	170-175	B-LOC	_	_	_	Anrede
+4-20	176-182	B-ADDR	_	_	_	Anrede
+4-21	183-189	I-ADDR	_	_	_	Anrede
+4-22	190-193	die	_	_	_	Anrede
+4-23	194-198	sich	_	_	_	Anrede
+4-24	199-201	am	_	_	_	Anrede
+4-25	202-204	in	_	_	_	Anrede
+4-26	205-212	unserer	_	_	_	Anrede
+4-27	213-221	Ambulanz	_	_	_	Anrede
+4-28	222-232	vorstellte	_	_	_	Anrede
+4-29	232-233	.	_	_	_	Anrede
+
+#Text=Diagnosen:
+5-1	235-244	Diagnosen	_	_	_	Diagnosen
+5-2	244-245	:	_	_	_	Diagnosen
+
+#Text=- Dilatative Kardiomyopathie a.e. bei Z.n. Myokarditis mit aktuell leichtgradig eingeschränkter LVEF -LRB- TTE vom <[Pseudo] 15/01/2031> -RRB-
+6-1	246-247	-	_	_	_	Diagnosen
+6-2	248-258	Dilatative	_	_	_	Diagnosen
+6-3	259-274	Kardiomyopathie	_	_	_	Diagnosen
+6-4	275-278	a.e	_	_	_	Diagnosen
+6-5	278-279	.	_	_	_	Diagnosen
+6-6	280-283	bei	_	_	_	Diagnosen
+6-7	284-287	Z.n	_	_	_	Diagnosen
+6-8	287-288	.	_	_	_	Diagnosen
+6-9	289-300	Myokarditis	_	_	_	Diagnosen
+6-10	301-304	mit	_	_	_	Diagnosen
+6-11	305-312	aktuell	_	_	_	Diagnosen
+6-12	313-325	leichtgradig	_	_	_	Diagnosen
+6-13	326-341	eingeschränkter	_	_	_	Diagnosen
+6-14	342-346	LVEF	_	_	_	Diagnosen
+6-15	347-352	-LRB-	_	_	_	Diagnosen
+6-16	353-356	TTE	_	_	_	Diagnosen
+6-17	357-360	vom	_	_	_	Diagnosen
+6-18	361-370	<[Pseudo]	_	_	_	Diagnosen
+6-19	371-373	15	_	_	_	Diagnosen
+6-20	373-374	/	_	_	_	Diagnosen
+6-21	374-376	01	_	_	_	Diagnosen
+6-22	376-377	/	_	_	_	Diagnosen
+6-23	377-381	2031	_	_	_	Diagnosen
+6-24	381-382	>	_	_	_	Diagnosen
+6-25	383-388	-RRB-	_	_	_	Diagnosen
+
+#Text=-UNK- Initial noch gute systolische Pumpfunktion -LRB- EF 55% -RRB-
+7-1	389-394	-UNK-	_	_	_	Diagnosen
+7-2	395-402	Initial	_	_	_	Diagnosen
+7-3	403-407	noch	_	_	_	Diagnosen
+7-4	408-412	gute	_	_	_	Diagnosen
+7-5	413-424	systolische	_	_	_	Diagnosen
+7-6	425-437	Pumpfunktion	_	_	_	Diagnosen
+7-7	438-443	-LRB-	_	_	_	Diagnosen
+7-8	444-446	EF	_	_	_	Diagnosen
+7-9	447-449	55	_	_	_	Diagnosen
+7-10	449-450	%	_	_	_	Diagnosen
+7-11	451-456	-RRB-	_	_	_	Diagnosen
+
+#Text=-UNK- Unauffällige Koronarien -LRB- B-OTHER vom <[Pseudo] 03/05/2026> -RRB-
+8-1	457-462	-UNK-	_	_	_	Diagnosen
+8-2	463-475	Unauffällige	_	_	_	Diagnosen
+8-3	476-486	Koronarien	_	_	_	Diagnosen
+8-4	487-492	-LRB-	_	_	_	Diagnosen
+8-5	493-500	B-OTHER	_	_	_	Diagnosen
+8-6	501-504	vom	_	_	_	Diagnosen
+8-7	505-514	<[Pseudo]	_	_	_	Diagnosen
+8-8	515-517	03	_	_	_	Diagnosen
+8-9	517-518	/	_	_	_	Diagnosen
+8-10	518-520	05	_	_	_	Diagnosen
+8-11	520-521	/	_	_	_	Diagnosen
+8-12	521-525	2026	_	_	_	Diagnosen
+8-13	525-526	>	_	_	_	Diagnosen
+8-14	527-532	-RRB-	_	_	_	Diagnosen
+
+#Text=- Generalisierte Angststörung
+9-1	533-534	-	_	_	_	Diagnosen
+9-2	535-549	Generalisierte	_	_	_	Diagnosen
+9-3	550-562	Angststörung	_	_	_	Diagnosen
+
+#Text=- Reizmagen
+10-1	563-564	-	_	_	_	Diagnosen
+10-2	565-574	Reizmagen	_	_	_	Diagnosen
+
+#Text=Kardiovaskuläre Risikofaktoren: Keine bekannt. Familienanamnese leer für Herzerkrankungen
+11-1	575-590	Kardiovaskuläre	_	_	_	AllergienUnverträglichkeitenRisiken
+11-2	591-605	Risikofaktoren	_	_	_	AllergienUnverträglichkeitenRisiken
+11-3	605-606	:	_	_	_	AllergienUnverträglichkeitenRisiken
+11-4	607-612	Keine	_	_	_	AllergienUnverträglichkeitenRisiken
+11-5	613-620	bekannt	_	_	_	AllergienUnverträglichkeitenRisiken
+11-6	620-621	.	_	_	_	AllergienUnverträglichkeitenRisiken
+11-7	622-638	Familienanamnese	_	_	_	AllergienUnverträglichkeitenRisiken
+11-8	639-643	leer	_	_	_	AllergienUnverträglichkeitenRisiken
+11-9	644-647	für	_	_	_	AllergienUnverträglichkeitenRisiken
+11-10	648-664	Herzerkrankungen	_	_	_	AllergienUnverträglichkeitenRisiken
+
+#Text=Allergien: Pollen, Hausstaub, Tierhaare, Laktoseintoleranz
+12-1	665-674	Allergien	_	_	_	AllergienUnverträglichkeitenRisiken
+12-2	674-675	:	_	_	_	AllergienUnverträglichkeitenRisiken
+12-3	676-682	Pollen	_	_	_	AllergienUnverträglichkeitenRisiken
+12-4	682-683	,	_	_	_	AllergienUnverträglichkeitenRisiken
+12-5	684-693	Hausstaub	_	_	_	AllergienUnverträglichkeitenRisiken
+12-6	693-694	,	_	_	_	AllergienUnverträglichkeitenRisiken
+12-7	695-704	Tierhaare	_	_	_	AllergienUnverträglichkeitenRisiken
+12-8	704-705	,	_	_	_	AllergienUnverträglichkeitenRisiken
+12-9	706-723	Laktoseintoleranz	_	_	_	AllergienUnverträglichkeitenRisiken
+
+#Text=Aktuell:
+13-1	725-732	Aktuell	_	_	_	AktuellDiagnosen
+13-2	732-733	:	_	_	_	AktuellDiagnosen
+
+#Text=- Herzinsuffizienz NYHA Stadium I
+14-1	734-735	-	_	_	_	AktuellDiagnosen
+14-2	736-752	Herzinsuffizienz	_	_	_	AktuellDiagnosen
+14-3	753-757	NYHA	_	_	_	AktuellDiagnosen
+14-4	758-765	Stadium	_	_	_	AktuellDiagnosen
+14-5	766-767	I	_	_	_	AktuellDiagnosen
+
+#Text=- Klinisch und apparativ gebesserter Verlauf
+15-1	768-769	-	_	_	_	AktuellDiagnosen
+15-2	770-778	Klinisch	_	_	_	AktuellDiagnosen
+15-3	779-782	und	_	_	_	AktuellDiagnosen
+15-4	783-792	apparativ	_	_	_	AktuellDiagnosen
+15-5	793-804	gebesserter	_	_	_	AktuellDiagnosen
+15-6	805-812	Verlauf	_	_	_	AktuellDiagnosen
+
+#Text=Anamnese:
+16-1	814-822	Anamnese	_	_	_	Anamnese
+16-2	822-823	:	_	_	_	Anamnese
+
+#Text=Die ambulante Vorstellung von B-SALUTE B-PER erfolgt zur Verlaufskontrolle bei dilatativer Kardiomyopathie.
+17-1	824-827	Die	_	_	_	Anamnese
+17-2	828-837	ambulante	_	_	_	Anamnese
+17-3	838-849	Vorstellung	_	_	_	Anamnese
+17-4	850-853	von	_	_	_	Anamnese
+17-5	854-862	B-SALUTE	_	_	_	Anamnese
+17-6	863-868	B-PER	_	_	_	Anamnese
+17-7	869-876	erfolgt	_	_	_	Anamnese
+17-8	877-880	zur	_	_	_	Anamnese
+17-9	881-898	Verlaufskontrolle	_	_	_	Anamnese
+17-10	899-902	bei	_	_	_	Anamnese
+17-11	903-914	dilatativer	_	_	_	Anamnese
+17-12	915-930	Kardiomyopathie	_	_	_	Anamnese
+17-13	930-931	.	_	_	_	Anamnese
+
+#Text=B-SALUTE B-PER berichtet über einen stabilen kardialen Verlauf. Im Alltag bestehe eine gute Belastbarkeit -LRB- 3-4 Etagen Treppensteigen möglich, NYHA I -RRB- , limitiert durch periphere Erschöpfung. Keine Angina pectoris. Glg. Schwindel vor allem seit Wiederbeginn von Sertralin. Palpitationen und Synkopen werden verneint. Nykturie: 1mal pro Nacht. Häusliche Blutdruckwerte 110/70. Aktuell kein Hinweis auf einen Infekt -LRB- kein Husten, Schnupfen, Heiserkeit, Brennen beim Wasserlassen -RRB- .
+18-1	932-940	B-SALUTE	_	_	_	Anamnese
+18-2	941-946	B-PER	_	_	_	Anamnese
+18-3	947-956	berichtet	_	_	_	Anamnese
+18-4	957-961	über	_	_	_	Anamnese
+18-5	962-967	einen	_	_	_	Anamnese
+18-6	968-976	stabilen	_	_	_	Anamnese
+18-7	977-986	kardialen	_	_	_	Anamnese
+18-8	987-994	Verlauf	_	_	_	Anamnese
+18-9	994-995	.	_	_	_	Anamnese
+18-10	996-998	Im	_	_	_	Anamnese
+18-11	999-1005	Alltag	_	_	_	Anamnese
+18-12	1006-1013	bestehe	_	_	_	Anamnese
+18-13	1014-1018	eine	_	_	_	Anamnese
+18-14	1019-1023	gute	_	_	_	Anamnese
+18-15	1024-1037	Belastbarkeit	_	_	_	Anamnese
+18-16	1038-1043	-LRB-	_	_	_	Anamnese
+18-17	1044-1045	3	_	_	_	Anamnese
+18-18	1045-1046	-	_	_	_	Anamnese
+18-19	1046-1047	4	_	_	_	Anamnese
+18-20	1048-1054	Etagen	_	_	_	Anamnese
+18-21	1055-1069	Treppensteigen	_	_	_	Anamnese
+18-22	1070-1077	möglich	_	_	_	Anamnese
+18-23	1077-1078	,	_	_	_	Anamnese
+18-24	1079-1083	NYHA	_	_	_	Anamnese
+18-25	1084-1085	I	_	_	_	Anamnese
+18-26	1086-1091	-RRB-	_	_	_	Anamnese
+18-27	1092-1093	,	_	_	_	Anamnese
+18-28	1094-1103	limitiert	_	_	_	Anamnese
+18-29	1104-1109	durch	_	_	_	Anamnese
+18-30	1110-1119	periphere	_	_	_	Anamnese
+18-31	1120-1131	Erschöpfung	_	_	_	Anamnese
+18-32	1131-1132	.	_	_	_	Anamnese
+18-33	1133-1138	Keine	_	_	_	Anamnese
+18-34	1139-1145	Angina	_	_	_	Anamnese
+18-35	1146-1154	pectoris	_	_	_	Anamnese
+18-36	1154-1155	.	_	_	_	Anamnese
+18-37	1156-1159	Glg	_	_	_	Anamnese
+18-38	1159-1160	.	_	_	_	Anamnese
+18-39	1161-1170	Schwindel	_	_	_	Anamnese
+18-40	1171-1174	vor	_	_	_	Anamnese
+18-41	1175-1180	allem	_	_	_	Anamnese
+18-42	1181-1185	seit	_	_	_	Anamnese
+18-43	1186-1198	Wiederbeginn	_	_	_	Anamnese
+18-44	1199-1202	von	_	_	_	Anamnese
+18-45	1203-1212	Sertralin	ACTIVEING	true	_	Anamnese
+18-46	1212-1213	.	_	_	_	Anamnese
+18-47	1214-1227	Palpitationen	_	_	_	Anamnese
+18-48	1228-1231	und	_	_	_	Anamnese
+18-49	1232-1240	Synkopen	_	_	_	Anamnese
+18-50	1241-1247	werden	_	_	_	Anamnese
+18-51	1248-1256	verneint	_	_	_	Anamnese
+18-52	1256-1257	.	_	_	_	Anamnese
+18-53	1258-1266	Nykturie	_	_	_	Anamnese
+18-54	1266-1267	:	_	_	_	Anamnese
+18-55	1268-1272	1mal	_	_	_	Anamnese
+18-56	1273-1276	pro	_	_	_	Anamnese
+18-57	1277-1282	Nacht	_	_	_	Anamnese
+18-58	1282-1283	.	_	_	_	Anamnese
+18-59	1284-1293	Häusliche	_	_	_	Anamnese
+18-60	1294-1308	Blutdruckwerte	_	_	_	Anamnese
+18-61	1309-1312	110	_	_	_	Anamnese
+18-62	1312-1313	/	_	_	_	Anamnese
+18-63	1313-1316	70.	_	_	_	Anamnese
+18-64	1317-1324	Aktuell	_	_	_	Anamnese
+18-65	1325-1329	kein	_	_	_	Anamnese
+18-66	1330-1337	Hinweis	_	_	_	Anamnese
+18-67	1338-1341	auf	_	_	_	Anamnese
+18-68	1342-1347	einen	_	_	_	Anamnese
+18-69	1348-1354	Infekt	_	_	_	Anamnese
+18-70	1355-1360	-LRB-	_	_	_	Anamnese
+18-71	1361-1365	kein	_	_	_	Anamnese
+18-72	1366-1372	Husten	_	_	_	Anamnese
+18-73	1372-1373	,	_	_	_	Anamnese
+18-74	1374-1383	Schnupfen	_	_	_	Anamnese
+18-75	1383-1384	,	_	_	_	Anamnese
+18-76	1385-1395	Heiserkeit	_	_	_	Anamnese
+18-77	1395-1396	,	_	_	_	Anamnese
+18-78	1397-1404	Brennen	_	_	_	Anamnese
+18-79	1405-1409	beim	_	_	_	Anamnese
+18-80	1410-1422	Wasserlassen	_	_	_	Anamnese
+18-81	1423-1428	-RRB-	_	_	_	Anamnese
+18-82	1429-1430	.	_	_	_	Anamnese
+
+#Text=Körperlicher Untersuchungsbefund:
+19-1	1435-1447	Körperlicher	_	_	_	KUBefunde
+19-2	1448-1467	Untersuchungsbefund	_	_	_	KUBefunde
+19-3	1467-1468	:	_	_	_	KUBefunde
+
+#Text=OTHER Patientin, 158 cm, 91 kg, in gutem Allgemeinzustand. Klares Bewusstsein. Herztöne unauffällig, keine pathologischen Geräusche. Vesikuläres Atemgeräusch, keine Nebengeräusche. Keine Ödeme.
+20-1	1469-1474	OTHER	_	_	_	KUBefunde
+20-2	1475-1484	Patientin	_	_	_	KUBefunde
+20-3	1484-1485	,	_	_	_	KUBefunde
+20-4	1486-1489	158	_	_	_	KUBefunde
+20-5	1490-1492	cm	_	_	_	KUBefunde
+20-6	1492-1493	,	_	_	_	KUBefunde
+20-7	1494-1496	91	_	_	_	KUBefunde
+20-8	1497-1499	kg	_	_	_	KUBefunde
+20-9	1499-1500	,	_	_	_	KUBefunde
+20-10	1501-1503	in	_	_	_	KUBefunde
+20-11	1504-1509	gutem	_	_	_	KUBefunde
+20-12	1510-1526	Allgemeinzustand	_	_	_	KUBefunde
+20-13	1526-1527	.	_	_	_	KUBefunde
+20-14	1528-1534	Klares	_	_	_	KUBefunde
+20-15	1535-1546	Bewusstsein	_	_	_	KUBefunde
+20-16	1546-1547	.	_	_	_	KUBefunde
+20-17	1548-1556	Herztöne	_	_	_	KUBefunde
+20-18	1557-1568	unauffällig	_	_	_	KUBefunde
+20-19	1568-1569	,	_	_	_	KUBefunde
+20-20	1570-1575	keine	_	_	_	KUBefunde
+20-21	1576-1590	pathologischen	_	_	_	KUBefunde
+20-22	1591-1600	Geräusche	_	_	_	KUBefunde
+20-23	1600-1601	.	_	_	_	KUBefunde
+20-24	1602-1613	Vesikuläres	_	_	_	KUBefunde
+20-25	1614-1626	Atemgeräusch	_	_	_	KUBefunde
+20-26	1626-1627	,	_	_	_	KUBefunde
+20-27	1628-1633	keine	_	_	_	KUBefunde
+20-28	1634-1648	Nebengeräusche	_	_	_	KUBefunde
+20-29	1648-1649	.	_	_	_	KUBefunde
+20-30	1650-1655	Keine	_	_	_	KUBefunde
+20-31	1656-1661	Ödeme	_	_	_	KUBefunde
+20-32	1661-1662	.	_	_	_	KUBefunde
+
+#Text=Ruhe-EKG:
+21-1	1664-1672	Ruhe-EKG	_	_	_	Befunde
+21-2	1672-1673	:	_	_	_	Befunde
+
+#Text=Sinusrhythmus Herzfrequenz 67/min, Linkslagetyp. PQ 163 ms, QRS 136 ms, QTc 423 ms. Kompletter Linksschenkelblock mit konsekutiven Kammerendstreckenveränderungen.
+22-1	1674-1687	Sinusrhythmus	_	_	_	Befunde
+22-2	1688-1700	Herzfrequenz	_	_	_	Befunde
+22-3	1701-1703	67	_	_	_	Befunde
+22-4	1703-1704	/	_	_	_	Befunde
+22-5	1704-1707	min	_	_	_	Befunde
+22-6	1707-1708	,	_	_	_	Befunde
+22-7	1709-1721	Linkslagetyp	_	_	_	Befunde
+22-8	1721-1722	.	_	_	_	Befunde
+22-9	1723-1725	PQ	_	_	_	Befunde
+22-10	1726-1729	163	_	_	_	Befunde
+22-11	1730-1732	ms	_	_	_	Befunde
+22-12	1732-1733	,	_	_	_	Befunde
+22-13	1734-1737	QRS	_	_	_	Befunde
+22-14	1738-1741	136	_	_	_	Befunde
+22-15	1742-1744	ms	_	_	_	Befunde
+22-16	1744-1745	,	_	_	_	Befunde
+22-17	1746-1749	QTc	_	_	_	Befunde
+22-18	1750-1753	423	_	_	_	Befunde
+22-19	1754-1756	ms	_	_	_	Befunde
+22-20	1756-1757	.	_	_	_	Befunde
+22-21	1758-1768	Kompletter	_	_	_	Befunde
+22-22	1769-1787	Linksschenkelblock	_	_	_	Befunde
+22-23	1788-1791	mit	_	_	_	Befunde
+22-24	1792-1804	konsekutiven	_	_	_	Befunde
+22-25	1805-1835	Kammerendstreckenveränderungen	_	_	_	Befunde
+22-26	1835-1836	.	_	_	_	Befunde
+
+#Text=Echokardiographie:
+23-1	1838-1855	Echokardiographie	_	_	_	EchoBefunde
+23-2	1855-1856	:	_	_	_	EchoBefunde
+
+#Text=Normal großer linker Ventrikel mit leichtgradig eingeschränkter systolischer Pumpfunktion bei zT assynchroner Kontraktion und Hypokinesie aller Wandabschnitte, vor allem apikal, septal, anterolateral und inferolateral -LRB- LV EF 50% -RRB- . Erhaltene longitudinale Funktion. Keine Relaxationsstörung des LV. LA grenzwertig, RA und RV noch normal groß, gute RV-Funktion. Hypermobiles Vorhofseptum .Kein Perikarderguss nachweisbar. Vena cava inferior nicht gestaut.
+24-1	1857-1863	Normal	_	_	_	EchoBefunde
+24-2	1864-1870	großer	_	_	_	EchoBefunde
+24-3	1871-1877	linker	_	_	_	EchoBefunde
+24-4	1878-1887	Ventrikel	_	_	_	EchoBefunde
+24-5	1888-1891	mit	_	_	_	EchoBefunde
+24-6	1892-1904	leichtgradig	_	_	_	EchoBefunde
+24-7	1905-1920	eingeschränkter	_	_	_	EchoBefunde
+24-8	1921-1933	systolischer	_	_	_	EchoBefunde
+24-9	1934-1946	Pumpfunktion	_	_	_	EchoBefunde
+24-10	1947-1950	bei	_	_	_	EchoBefunde
+24-11	1951-1953	zT	_	_	_	EchoBefunde
+24-12	1954-1966	assynchroner	_	_	_	EchoBefunde
+24-13	1967-1978	Kontraktion	_	_	_	EchoBefunde
+24-14	1979-1982	und	_	_	_	EchoBefunde
+24-15	1983-1994	Hypokinesie	_	_	_	EchoBefunde
+24-16	1995-2000	aller	_	_	_	EchoBefunde
+24-17	2001-2015	Wandabschnitte	_	_	_	EchoBefunde
+24-18	2015-2016	,	_	_	_	EchoBefunde
+24-19	2017-2020	vor	_	_	_	EchoBefunde
+24-20	2021-2026	allem	_	_	_	EchoBefunde
+24-21	2027-2033	apikal	_	_	_	EchoBefunde
+24-22	2033-2034	,	_	_	_	EchoBefunde
+24-23	2035-2041	septal	_	_	_	EchoBefunde
+24-24	2041-2042	,	_	_	_	EchoBefunde
+24-25	2043-2056	anterolateral	_	_	_	EchoBefunde
+24-26	2057-2060	und	_	_	_	EchoBefunde
+24-27	2061-2074	inferolateral	_	_	_	EchoBefunde
+24-28	2075-2080	-LRB-	_	_	_	EchoBefunde
+24-29	2081-2083	LV	_	_	_	EchoBefunde
+24-30	2084-2086	EF	_	_	_	EchoBefunde
+24-31	2087-2089	50	_	_	_	EchoBefunde
+24-32	2089-2090	%	_	_	_	EchoBefunde
+24-33	2091-2096	-RRB-	_	_	_	EchoBefunde
+24-34	2097-2098	.	_	_	_	EchoBefunde
+24-35	2099-2108	Erhaltene	_	_	_	EchoBefunde
+24-36	2109-2122	longitudinale	_	_	_	EchoBefunde
+24-37	2123-2131	Funktion	_	_	_	EchoBefunde
+24-38	2131-2132	.	_	_	_	EchoBefunde
+24-39	2133-2138	Keine	_	_	_	EchoBefunde
+24-40	2139-2157	Relaxationsstörung	_	_	_	EchoBefunde
+24-41	2158-2161	des	_	_	_	EchoBefunde
+24-42	2162-2164	LV	_	_	_	EchoBefunde
+24-43	2164-2165	.	_	_	_	EchoBefunde
+24-44	2166-2168	LA	_	_	_	EchoBefunde
+24-45	2169-2180	grenzwertig	_	_	_	EchoBefunde
+24-46	2180-2181	,	_	_	_	EchoBefunde
+24-47	2182-2184	RA	_	_	_	EchoBefunde
+24-48	2185-2188	und	_	_	_	EchoBefunde
+24-49	2189-2191	RV	_	_	_	EchoBefunde
+24-50	2192-2196	noch	_	_	_	EchoBefunde
+24-51	2197-2203	normal	_	_	_	EchoBefunde
+24-52	2204-2208	groß	_	_	_	EchoBefunde
+24-53	2208-2209	,	_	_	_	EchoBefunde
+24-54	2210-2214	gute	_	_	_	EchoBefunde
+24-55	2215-2226	RV-Funktion	_	_	_	EchoBefunde
+24-56	2226-2227	.	_	_	_	EchoBefunde
+24-57	2228-2240	Hypermobiles	_	_	_	EchoBefunde
+24-58	2241-2253	Vorhofseptum	_	_	_	EchoBefunde
+24-59	2254-2259	.Kein	_	_	_	EchoBefunde
+24-60	2260-2274	Perikarderguss	_	_	_	EchoBefunde
+24-61	2275-2286	nachweisbar	_	_	_	EchoBefunde
+24-62	2286-2287	.	_	_	_	EchoBefunde
+24-63	2288-2292	Vena	_	_	_	EchoBefunde
+24-64	2293-2297	cava	_	_	_	EchoBefunde
+24-65	2298-2306	inferior	_	_	_	EchoBefunde
+24-66	2307-2312	nicht	_	_	_	EchoBefunde
+24-67	2313-2320	gestaut	_	_	_	EchoBefunde
+24-68	2320-2321	.	_	_	_	EchoBefunde
+
+#Text=Klappen sonographisch regelrecht. Dopplersonographisch nur Regurgitation über Mitralklappe. Systolischer PA-Druck bei fehlender Trikuspidalinsuffizienz nicht bestimmbar. Im Vergleich zur Voruntersuchung vom <[Pseudo] 16/01/2030:> neue Relaxationsstörung sonst keine wesentliche Befundänderung.
+25-1	2322-2329	Klappen	_	_	_	EchoBefunde
+25-2	2330-2343	sonographisch	_	_	_	EchoBefunde
+25-3	2344-2354	regelrecht	_	_	_	EchoBefunde
+25-4	2354-2355	.	_	_	_	EchoBefunde
+25-5	2356-2376	Dopplersonographisch	_	_	_	EchoBefunde
+25-6	2377-2380	nur	_	_	_	EchoBefunde
+25-7	2381-2394	Regurgitation	_	_	_	EchoBefunde
+25-8	2395-2399	über	_	_	_	EchoBefunde
+25-9	2400-2412	Mitralklappe	_	_	_	EchoBefunde
+25-10	2412-2413	.	_	_	_	EchoBefunde
+25-11	2414-2426	Systolischer	_	_	_	EchoBefunde
+25-12	2427-2435	PA-Druck	_	_	_	EchoBefunde
+25-13	2436-2439	bei	_	_	_	EchoBefunde
+25-14	2440-2449	fehlender	_	_	_	EchoBefunde
+25-15	2450-2473	Trikuspidalinsuffizienz	_	_	_	EchoBefunde
+25-16	2474-2479	nicht	_	_	_	EchoBefunde
+25-17	2480-2490	bestimmbar	_	_	_	EchoBefunde
+25-18	2490-2491	.	_	_	_	EchoBefunde
+25-19	2492-2494	Im	_	_	_	EchoBefunde
+25-20	2495-2504	Vergleich	_	_	_	EchoBefunde
+25-21	2505-2508	zur	_	_	_	EchoBefunde
+25-22	2509-2524	Voruntersuchung	_	_	_	EchoBefunde
+25-23	2525-2528	vom	_	_	_	EchoBefunde
+25-24	2529-2538	<[Pseudo]	_	_	_	EchoBefunde
+25-25	2539-2541	16	_	_	_	EchoBefunde
+25-26	2541-2542	/	_	_	_	EchoBefunde
+25-27	2542-2544	01	_	_	_	EchoBefunde
+25-28	2544-2545	/	_	_	_	EchoBefunde
+25-29	2545-2549	2030	_	_	_	EchoBefunde
+25-30	2549-2551	:>	_	_	_	EchoBefunde
+25-31	2552-2556	neue	_	_	_	EchoBefunde
+25-32	2557-2575	Relaxationsstörung	_	_	_	EchoBefunde
+25-33	2576-2581	sonst	_	_	_	EchoBefunde
+25-34	2582-2587	keine	_	_	_	EchoBefunde
+25-35	2588-2599	wesentliche	_	_	_	EchoBefunde
+25-36	2600-2614	Befundänderung	_	_	_	EchoBefunde
+25-37	2614-2615	.	_	_	_	EchoBefunde
+
+#Text=Labordiagnostik:
+26-1	2617-2632	Labordiagnostik	_	_	_	EchoBefunde
+26-2	2632-2633	:	_	_	_	EchoBefunde
+
+#Text=Werte wurden ermittelt am B-DAY B-MONTH <[Pseudo] 2030>
+27-1	2636-2641	Werte	_	_	_	EchoBefunde
+27-2	2642-2648	wurden	_	_	_	EchoBefunde
+27-3	2649-2658	ermittelt	_	_	_	EchoBefunde
+27-4	2659-2661	am	_	_	_	EchoBefunde
+27-5	2662-2667	B-DAY	_	_	_	EchoBefunde
+27-6	2668-2675	B-MONTH	_	_	_	EchoBefunde
+27-7	2676-2685	<[Pseudo]	_	_	_	EchoBefunde
+27-8	2686-2690	2030	_	_	_	EchoBefunde
+27-9	2690-2691	>	_	_	_	EchoBefunde
+
+#Text=Blutbild
+28-1	2693-2701	Blutbild	_	_	_	EchoBefunde
+
+#Text=Parameter
+29-1	2703-2712	Parameter	_	_	_	EchoBefunde
+
+#Text=Wert
+30-1	2713-2717	Wert	_	_	_	EchoBefunde
+
+#Text=Normb / Dimension
+31-1	2718-2723	Normb	_	_	_	EchoBefunde
+31-2	2724-2725	/	_	_	_	EchoBefunde
+31-3	2726-2735	Dimension	_	_	_	EchoBefunde
+
+#Text=Datum
+32-1	2736-2741	Datum	_	_	_	EchoBefunde
+
+#Text=Leukozyten
+33-1	2742-2752	Leukozyten	_	_	_	EchoBefunde
+
+#Text=5.85
+34-1	2753-2757	5.85	_	_	_	EchoBefunde
+
+#Text=4 - 10 /nl
+35-1	2758-2759	4	_	_	_	EchoBefunde
+35-2	2760-2761	-	_	_	_	EchoBefunde
+35-3	2762-2764	10	_	_	_	EchoBefunde
+35-4	2765-2768	/nl	_	_	_	EchoBefunde
+
+#Text=B-DATE
+36-1	2769-2775	B-DATE	_	_	_	EchoBefunde
+
+#Text=Hb
+37-1	2776-2778	Hb	_	_	_	EchoBefunde
+
+#Text=13.8
+38-1	2779-2783	13.8	_	_	_	EchoBefunde
+
+#Text=12 - 15 g/dl
+39-1	2784-2786	12	_	_	_	EchoBefunde
+39-2	2787-2788	-	_	_	_	EchoBefunde
+39-3	2789-2791	15	_	_	_	EchoBefunde
+39-4	2792-2793	g	_	_	_	EchoBefunde
+39-5	2793-2794	/	_	_	_	EchoBefunde
+39-6	2794-2796	dl	_	_	_	EchoBefunde
+
+#Text=B-DATE
+40-1	2797-2803	B-DATE	_	_	_	EchoBefunde
+
+#Text=Erythrozyten
+41-1	2804-2816	Erythrozyten	_	_	_	EchoBefunde
+
+#Text=4.9
+42-1	2817-2820	4.9	_	_	_	EchoBefunde
+
+#Text=4 - 5,2 /pl
+43-1	2821-2822	4	_	_	_	EchoBefunde
+43-2	2823-2824	-	_	_	_	EchoBefunde
+43-3	2825-2828	5,2	_	_	_	EchoBefunde
+43-4	2829-2832	/pl	_	_	_	EchoBefunde
+
+#Text=B-DATE
+44-1	2833-2839	B-DATE	_	_	_	EchoBefunde
+
+#Text=Haematokrit
+45-1	2840-2851	Haematokrit	_	_	_	EchoBefunde
+
+#Text=0.420
+46-1	2852-2857	0.420	_	_	_	EchoBefunde
+
+#Text=0,36 - 0,47 l/l
+47-1	2858-2862	0,36	_	_	_	EchoBefunde
+47-2	2863-2864	-	_	_	_	EchoBefunde
+47-3	2865-2869	0,47	_	_	_	EchoBefunde
+47-4	2870-2871	l	_	_	_	EchoBefunde
+47-5	2871-2872	/	_	_	_	EchoBefunde
+47-6	2872-2873	l	_	_	_	EchoBefunde
+
+#Text=B-DATE
+48-1	2874-2880	B-DATE	_	_	_	EchoBefunde
+
+#Text=MCV
+49-1	2881-2884	MCV	_	_	_	EchoBefunde
+
+#Text=85
+50-1	2885-2887	85	_	_	_	EchoBefunde
+
+#Text=83 - 97 fl
+51-1	2888-2890	83	_	_	_	EchoBefunde
+51-2	2891-2892	-	_	_	_	EchoBefunde
+51-3	2893-2895	97	_	_	_	EchoBefunde
+51-4	2896-2898	fl	_	_	_	EchoBefunde
+
+#Text=B-DATE
+52-1	2899-2905	B-DATE	_	_	_	EchoBefunde
+
+#Text=MCH
+53-1	2906-2909	MCH	_	_	_	EchoBefunde
+
+#Text=28
+54-1	2910-2912	28	_	_	_	EchoBefunde
+
+#Text=27 - 33 pg
+55-1	2913-2915	27	_	_	_	EchoBefunde
+55-2	2916-2917	-	_	_	_	EchoBefunde
+55-3	2918-2920	33	_	_	_	EchoBefunde
+55-4	2921-2923	pg	_	_	_	EchoBefunde
+
+#Text=B-DATE
+56-1	2924-2930	B-DATE	_	_	_	EchoBefunde
+
+#Text=MCHC
+57-1	2931-2935	MCHC	_	_	_	EchoBefunde
+
+#Text=33
+58-1	2936-2938	33	_	_	_	EchoBefunde
+
+#Text=30 - 36 g/dl
+59-1	2939-2941	30	_	_	_	EchoBefunde
+59-2	2942-2943	-	_	_	_	EchoBefunde
+59-3	2944-2946	36	_	_	_	EchoBefunde
+59-4	2947-2948	g	_	_	_	EchoBefunde
+59-5	2948-2949	/	_	_	_	EchoBefunde
+59-6	2949-2951	dl	_	_	_	EchoBefunde
+
+#Text=B-DATE
+60-1	2952-2958	B-DATE	_	_	_	EchoBefunde
+
+#Text=RDW
+61-1	2959-2962	RDW	_	_	_	EchoBefunde
+
+#Text=13.6
+62-1	2963-2967	13.6	_	_	_	EchoBefunde
+
+#Text=12,9 - 18,7 %
+63-1	2968-2972	12,9	_	_	_	EchoBefunde
+63-2	2973-2974	-	_	_	_	EchoBefunde
+63-3	2975-2979	18,7	_	_	_	EchoBefunde
+63-4	2980-2981	%	_	_	_	EchoBefunde
+
+#Text=<[Pseudo] 15/01/31>
+64-1	2982-2991	<[Pseudo]	_	_	_	EchoBefunde
+64-2	2992-2994	15	_	_	_	EchoBefunde
+64-3	2994-2995	/	_	_	_	EchoBefunde
+64-4	2995-2997	01	_	_	_	EchoBefunde
+64-5	2997-2998	/	_	_	_	EchoBefunde
+64-6	2998-3000	31	_	_	_	EchoBefunde
+64-7	3000-3001	>	_	_	_	EchoBefunde
+
+#Text=hypochr.Erythroz.
+65-1	3002-3009	hypochr	_	_	_	EchoBefunde
+65-2	3009-3010	.	_	_	_	EchoBefunde
+65-3	3010-3018	Erythroz	_	_	_	EchoBefunde
+65-4	3018-3019	.	_	_	_	EchoBefunde
+
+#Text=1.0
+66-1	3020-3023	1.0	_	_	_	EchoBefunde
+
+#Text=0 - 2 %
+67-1	3024-3025	0	_	_	_	EchoBefunde
+67-2	3026-3027	-	_	_	_	EchoBefunde
+67-3	3028-3029	2	_	_	_	EchoBefunde
+67-4	3030-3031	%	_	_	_	EchoBefunde
+
+#Text=<[Pseudo] 15/01/31>
+68-1	3032-3041	<[Pseudo]	_	_	_	EchoBefunde
+68-2	3042-3044	15	_	_	_	EchoBefunde
+68-3	3044-3045	/	_	_	_	EchoBefunde
+68-4	3045-3047	01	_	_	_	EchoBefunde
+68-5	3047-3048	/	_	_	_	EchoBefunde
+68-6	3048-3050	31	_	_	_	EchoBefunde
+68-7	3050-3051	>	_	_	_	EchoBefunde
+
+#Text=Thrombozyten
+69-1	3052-3064	Thrombozyten	_	_	_	EchoBefunde
+
+#Text=377
+70-1	3065-3068	377	_	_	_	EchoBefunde
+
+#Text=150 - 440 /nl
+71-1	3069-3072	150	_	_	_	EchoBefunde
+71-2	3073-3074	-	_	_	_	EchoBefunde
+71-3	3075-3078	440	_	_	_	EchoBefunde
+71-4	3079-3082	/nl	_	_	_	EchoBefunde
+
+#Text=B-DATE
+72-1	3083-3089	B-DATE	_	_	_	EchoBefunde
+
+#Text=Parameter
+73-1	3092-3101	Parameter	_	_	_	EchoBefunde
+
+#Text=Wert
+74-1	3102-3106	Wert	_	_	_	EchoBefunde
+
+#Text=Normb / Dimension
+75-1	3107-3112	Normb	_	_	_	EchoBefunde
+75-2	3113-3114	/	_	_	_	EchoBefunde
+75-3	3115-3124	Dimension	_	_	_	EchoBefunde
+
+#Text=Datum
+76-1	3125-3130	Datum	_	_	_	EchoBefunde
+
+#Text=Lympho -LRB- abs. -RRB-
+77-1	3131-3137	Lympho	_	_	_	EchoBefunde
+77-2	3138-3143	-LRB-	_	_	_	EchoBefunde
+77-3	3144-3147	abs	_	_	_	EchoBefunde
+77-4	3147-3148	.	_	_	_	EchoBefunde
+77-5	3149-3154	-RRB-	_	_	_	EchoBefunde
+
+#Text=1.95
+78-1	3155-3159	1.95	_	_	_	EchoBefunde
+
+#Text=1,0 - 4,8 /nl
+79-1	3160-3163	1,0	_	_	_	EchoBefunde
+79-2	3164-3165	-	_	_	_	EchoBefunde
+79-3	3166-3169	4,8	_	_	_	EchoBefunde
+79-4	3170-3173	/nl	_	_	_	EchoBefunde
+
+#Text=B-DATE
+80-1	3174-3180	B-DATE	_	_	_	EchoBefunde
+
+#Text=Neutroph.G.-abs.
+81-1	3181-3189	Neutroph	_	_	_	EchoBefunde
+81-2	3189-3190	.	_	_	_	EchoBefunde
+81-3	3190-3196	G.-abs	_	_	_	EchoBefunde
+81-4	3196-3197	.	_	_	_	EchoBefunde
+
+#Text=3.24
+82-1	3198-3202	3.24	_	_	_	EchoBefunde
+
+#Text=1,8 - 7,7 /nl
+83-1	3203-3206	1,8	_	_	_	EchoBefunde
+83-2	3207-3208	-	_	_	_	EchoBefunde
+83-3	3209-3212	7,7	_	_	_	EchoBefunde
+83-4	3213-3216	/nl	_	_	_	EchoBefunde
+
+#Text=B-DATE
+84-1	3217-3223	B-DATE	_	_	_	EchoBefunde
+
+#Text=Mono. -LRB- abs. -RRB-
+85-1	3224-3228	Mono	_	_	_	EchoBefunde
+85-2	3228-3229	.	_	_	_	EchoBefunde
+85-3	3230-3235	-LRB-	_	_	_	EchoBefunde
+85-4	3236-3239	abs	_	_	_	EchoBefunde
+85-5	3239-3240	.	_	_	_	EchoBefunde
+85-6	3241-3246	-RRB-	_	_	_	EchoBefunde
+
+#Text=0.28
+86-1	3247-3251	0.28	_	_	_	EchoBefunde
+
+#Text=0,2 - 0,8 /nl
+87-1	3252-3255	0,2	_	_	_	EchoBefunde
+87-2	3256-3257	-	_	_	_	EchoBefunde
+87-3	3258-3261	0,8	_	_	_	EchoBefunde
+87-4	3262-3265	/nl	_	_	_	EchoBefunde
+
+#Text=B-DATE
+88-1	3266-3272	B-DATE	_	_	_	EchoBefunde
+
+#Text=Eos. G. -LRB- abs. -RRB-
+89-1	3273-3276	Eos	_	_	_	EchoBefunde
+89-2	3276-3277	.	_	_	_	EchoBefunde
+89-3	3278-3280	G.	_	_	_	EchoBefunde
+89-4	3281-3286	-LRB-	_	_	_	EchoBefunde
+89-5	3287-3290	abs	_	_	_	EchoBefunde
+89-6	3290-3291	.	_	_	_	EchoBefunde
+89-7	3292-3297	-RRB-	_	_	_	EchoBefunde
+
+#Text=0.22
+90-1	3298-3302	0.22	_	_	_	EchoBefunde
+
+#Text=- <0,5 /nl
+91-1	3303-3304	-	_	_	_	EchoBefunde
+91-2	3305-3306	<	_	_	_	EchoBefunde
+91-3	3306-3309	0,5	_	_	_	EchoBefunde
+91-4	3310-3313	/nl	_	_	_	EchoBefunde
+
+#Text=<[Pseudo] 15/01/31>
+92-1	3314-3323	<[Pseudo]	_	_	_	EchoBefunde
+92-2	3324-3326	15	_	_	_	EchoBefunde
+92-3	3326-3327	/	_	_	_	EchoBefunde
+92-4	3327-3329	01	_	_	_	EchoBefunde
+92-5	3329-3330	/	_	_	_	EchoBefunde
+92-6	3330-3332	31	_	_	_	EchoBefunde
+92-7	3332-3333	>	_	_	_	EchoBefunde
+
+#Text=Basoph.G. -LRB- abs -RRB-
+93-1	3334-3340	Basoph	_	_	_	EchoBefunde
+93-2	3340-3341	.	_	_	_	EchoBefunde
+93-3	3341-3343	G.	_	_	_	EchoBefunde
+93-4	3344-3349	-LRB-	_	_	_	EchoBefunde
+93-5	3350-3353	abs	_	_	_	EchoBefunde
+93-6	3354-3359	-RRB-	_	_	_	EchoBefunde
+
+#Text=0.02
+94-1	3360-3364	0.02	_	_	_	EchoBefunde
+
+#Text=- <0,2 /nl
+95-1	3365-3366	-	_	_	_	EchoBefunde
+95-2	3367-3368	<	_	_	_	EchoBefunde
+95-3	3368-3371	0,2	_	_	_	EchoBefunde
+95-4	3372-3375	/nl	_	_	_	EchoBefunde
+
+#Text=<[Pseudo] 15/01/31>
+96-1	3376-3385	<[Pseudo]	_	_	_	EchoBefunde
+96-2	3386-3388	15	_	_	_	EchoBefunde
+96-3	3388-3389	/	_	_	_	EchoBefunde
+96-4	3389-3391	01	_	_	_	EchoBefunde
+96-5	3391-3392	/	_	_	_	EchoBefunde
+96-6	3392-3394	31	_	_	_	EchoBefunde
+96-7	3394-3395	>	_	_	_	EchoBefunde
+
+#Text=Neutroph.G. -LRB- mech. -RRB-
+97-1	3396-3404	Neutroph	_	_	_	EchoBefunde
+97-2	3404-3405	.	_	_	_	EchoBefunde
+97-3	3405-3407	G.	_	_	_	EchoBefunde
+97-4	3408-3413	-LRB-	_	_	_	EchoBefunde
+97-5	3414-3418	mech	_	_	_	EchoBefunde
+97-6	3418-3419	.	_	_	_	EchoBefunde
+97-7	3420-3425	-RRB-	_	_	_	EchoBefunde
+
+#Text=55.3
+98-1	3426-3430	55.3	_	_	_	EchoBefunde
+
+#Text=50 - 80 %
+99-1	3431-3433	50	_	_	_	EchoBefunde
+99-2	3434-3435	-	_	_	_	EchoBefunde
+99-3	3436-3438	80	_	_	_	EchoBefunde
+99-4	3439-3440	%	_	_	_	EchoBefunde
+
+#Text=<[Pseudo] 15/01/31>
+100-1	3441-3450	<[Pseudo]	_	_	_	EchoBefunde
+100-2	3451-3453	15	_	_	_	EchoBefunde
+100-3	3453-3454	/	_	_	_	EchoBefunde
+100-4	3454-3456	01	_	_	_	EchoBefunde
+100-5	3456-3457	/	_	_	_	EchoBefunde
+100-6	3457-3459	31	_	_	_	EchoBefunde
+100-7	3459-3460	>	_	_	_	EchoBefunde
+
+#Text=Lympho -LRB- mech. -RRB-
+101-1	3461-3467	Lympho	_	_	_	EchoBefunde
+101-2	3468-3473	-LRB-	_	_	_	EchoBefunde
+101-3	3474-3478	mech	_	_	_	EchoBefunde
+101-4	3478-3479	.	_	_	_	EchoBefunde
+101-5	3480-3485	-RRB-	_	_	_	EchoBefunde
+
+#Text=33.4
+102-1	3486-3490	33.4	_	_	_	EchoBefunde
+
+#Text=25 - 40 %
+103-1	3491-3493	25	_	_	_	EchoBefunde
+103-2	3494-3495	-	_	_	_	EchoBefunde
+103-3	3496-3498	40	_	_	_	EchoBefunde
+103-4	3499-3500	%	_	_	_	EchoBefunde
+
+#Text=<[Pseudo] 15/01/31>
+104-1	3501-3510	<[Pseudo]	_	_	_	EchoBefunde
+104-2	3511-3513	15	_	_	_	EchoBefunde
+104-3	3513-3514	/	_	_	_	EchoBefunde
+104-4	3514-3516	01	_	_	_	EchoBefunde
+104-5	3516-3517	/	_	_	_	EchoBefunde
+104-6	3517-3519	31	_	_	_	EchoBefunde
+104-7	3519-3520	>	_	_	_	EchoBefunde
+
+#Text=Basoph.G.
+105-1	3521-3527	Basoph	_	_	_	EchoBefunde
+105-2	3527-3528	.	_	_	_	EchoBefunde
+105-3	3528-3530	G.	_	_	_	EchoBefunde
+
+#Text=0.4
+106-1	3531-3534	0.4	_	_	_	EchoBefunde
+
+#Text=- <1 %
+107-1	3535-3536	-	_	_	_	EchoBefunde
+107-2	3537-3538	<	_	_	_	EchoBefunde
+107-3	3538-3539	1	_	_	_	EchoBefunde
+107-4	3540-3541	%	_	_	_	EchoBefunde
+
+#Text=<[Pseudo] 15/01/31>
+108-1	3542-3551	<[Pseudo]	_	_	_	EchoBefunde
+108-2	3552-3554	15	_	_	_	EchoBefunde
+108-3	3554-3555	/	_	_	_	EchoBefunde
+108-4	3555-3557	01	_	_	_	EchoBefunde
+108-5	3557-3558	/	_	_	_	EchoBefunde
+108-6	3558-3560	31	_	_	_	EchoBefunde
+108-7	3560-3561	>	_	_	_	EchoBefunde
+
+#Text=Monozyten -LRB- mech. -RRB-
+109-1	3562-3571	Monozyten	_	_	_	EchoBefunde
+109-2	3572-3577	-LRB-	_	_	_	EchoBefunde
+109-3	3578-3582	mech	_	_	_	EchoBefunde
+109-4	3582-3583	.	_	_	_	EchoBefunde
+109-5	3584-3589	-RRB-	_	_	_	EchoBefunde
+
+#Text=4.8
+110-1	3590-3593	4.8	_	_	_	EchoBefunde
+
+#Text=2 - 9 %
+111-1	3594-3595	2	_	_	_	EchoBefunde
+111-2	3596-3597	-	_	_	_	EchoBefunde
+111-3	3598-3599	9	_	_	_	EchoBefunde
+111-4	3600-3601	%	_	_	_	EchoBefunde
+
+#Text=<[Pseudo] 15/01/31>
+112-1	3602-3611	<[Pseudo]	_	_	_	EchoBefunde
+112-2	3612-3614	15	_	_	_	EchoBefunde
+112-3	3614-3615	/	_	_	_	EchoBefunde
+112-4	3615-3617	01	_	_	_	EchoBefunde
+112-5	3617-3618	/	_	_	_	EchoBefunde
+112-6	3618-3620	31	_	_	_	EchoBefunde
+112-7	3620-3621	>	_	_	_	EchoBefunde
+
+#Text=Eosinoph.G. -LRB- mech. -RRB-
+113-1	3622-3630	Eosinoph	_	_	_	EchoBefunde
+113-2	3630-3631	.	_	_	_	EchoBefunde
+113-3	3631-3633	G.	_	_	_	EchoBefunde
+113-4	3634-3639	-LRB-	_	_	_	EchoBefunde
+113-5	3640-3644	mech	_	_	_	EchoBefunde
+113-6	3644-3645	.	_	_	_	EchoBefunde
+113-7	3646-3651	-RRB-	_	_	_	EchoBefunde
+
+#Text=3.8
+114-1	3652-3655	3.8	_	_	_	EchoBefunde
+
+#Text=2 - 4 %
+115-1	3656-3657	2	_	_	_	EchoBefunde
+115-2	3658-3659	-	_	_	_	EchoBefunde
+115-3	3660-3661	4	_	_	_	EchoBefunde
+115-4	3662-3663	%	_	_	_	EchoBefunde
+
+#Text=<[Pseudo] 15/01/31>
+116-1	3664-3673	<[Pseudo]	_	_	_	EchoBefunde
+116-2	3674-3676	15	_	_	_	EchoBefunde
+116-3	3676-3677	/	_	_	_	EchoBefunde
+116-4	3677-3679	01	_	_	_	EchoBefunde
+116-5	3679-3680	/	_	_	_	EchoBefunde
+116-6	3680-3682	31	_	_	_	EchoBefunde
+116-7	3682-3683	>	_	_	_	EchoBefunde
+
+#Text=Elektrolyte & Nierenfunktionsparameter
+117-1	3686-3697	Elektrolyte	_	_	_	EchoBefunde
+117-2	3698-3699	&	_	_	_	EchoBefunde
+117-3	3700-3724	Nierenfunktionsparameter	_	_	_	EchoBefunde
+
+#Text=Parameter
+118-1	3726-3735	Parameter	_	_	_	EchoBefunde
+
+#Text=Wert
+119-1	3736-3740	Wert	_	_	_	EchoBefunde
+
+#Text=Normb / Dimension
+120-1	3741-3746	Normb	_	_	_	EchoBefunde
+120-2	3747-3748	/	_	_	_	EchoBefunde
+120-3	3749-3758	Dimension	_	_	_	EchoBefunde
+
+#Text=Datum
+121-1	3759-3764	Datum	_	_	_	EchoBefunde
+
+#Text=Natrium -LRB- ISE -RRB-
+122-1	3765-3772	Natrium	_	_	_	EchoBefunde
+122-2	3773-3778	-LRB-	_	_	_	EchoBefunde
+122-3	3779-3782	ISE	_	_	_	EchoBefunde
+122-4	3783-3788	-RRB-	_	_	_	EchoBefunde
+
+#Text=143
+123-1	3789-3792	143	_	_	_	EchoBefunde
+
+#Text=135 - 146 mmol/l
+124-1	3793-3796	135	_	_	_	EchoBefunde
+124-2	3797-3798	-	_	_	_	EchoBefunde
+124-3	3799-3802	146	_	_	_	EchoBefunde
+124-4	3803-3807	mmol	_	_	_	EchoBefunde
+124-5	3807-3808	/	_	_	_	EchoBefunde
+124-6	3808-3809	l	_	_	_	EchoBefunde
+
+#Text=<[Pseudo] 15/01/31>
+125-1	3810-3819	<[Pseudo]	_	_	_	EchoBefunde
+125-2	3820-3822	15	_	_	_	EchoBefunde
+125-3	3822-3823	/	_	_	_	EchoBefunde
+125-4	3823-3825	01	_	_	_	EchoBefunde
+125-5	3825-3826	/	_	_	_	EchoBefunde
+125-6	3826-3828	31	_	_	_	EchoBefunde
+125-7	3828-3829	>	_	_	_	EchoBefunde
+
+#Text=Kalium -LRB- ISE -RRB-
+126-1	3830-3836	Kalium	_	_	_	EchoBefunde
+126-2	3837-3842	-LRB-	_	_	_	EchoBefunde
+126-3	3843-3846	ISE	_	_	_	EchoBefunde
+126-4	3847-3852	-RRB-	_	_	_	EchoBefunde
+
+#Text=3.97
+127-1	3853-3857	3.97	_	_	_	EchoBefunde
+
+#Text=3,4 - 4,6 mmol/l
+128-1	3858-3861	3,4	_	_	_	EchoBefunde
+128-2	3862-3863	-	_	_	_	EchoBefunde
+128-3	3864-3867	4,6	_	_	_	EchoBefunde
+128-4	3868-3872	mmol	_	_	_	EchoBefunde
+128-5	3872-3873	/	_	_	_	EchoBefunde
+128-6	3873-3874	l	_	_	_	EchoBefunde
+
+#Text=B-DATE
+129-1	3875-3881	B-DATE	_	_	_	EchoBefunde
+
+#Text=Calcium
+130-1	3882-3889	Calcium	_	_	_	EchoBefunde
+
+#Text=2.24
+131-1	3890-3894	2.24	_	_	_	EchoBefunde
+
+#Text=2,11 - 2,59 mmol/l
+132-1	3895-3899	2,11	_	_	_	EchoBefunde
+132-2	3900-3901	-	_	_	_	EchoBefunde
+132-3	3902-3906	2,59	_	_	_	EchoBefunde
+132-4	3907-3911	mmol	_	_	_	EchoBefunde
+132-5	3911-3912	/	_	_	_	EchoBefunde
+132-6	3912-3913	l	_	_	_	EchoBefunde
+
+#Text=B-DATE
+133-1	3914-3920	B-DATE	_	_	_	EchoBefunde
+
+#Text=Kreatinin
+134-1	3921-3930	Kreatinin	_	_	_	EchoBefunde
+
+#Text=0.50
+135-1	3931-3935	0.50	_	_	_	EchoBefunde
+
+#Text=0,5 - 0,9 mg/dl
+136-1	3936-3939	0,5	_	_	_	EchoBefunde
+136-2	3940-3941	-	_	_	_	EchoBefunde
+136-3	3942-3945	0,9	_	_	_	EchoBefunde
+136-4	3946-3948	mg	_	_	_	EchoBefunde
+136-5	3948-3949	/	_	_	_	EchoBefunde
+136-6	3949-3951	dl	_	_	_	EchoBefunde
+
+#Text=B-DATE
+137-1	3952-3958	B-DATE	_	_	_	EchoBefunde
+
+#Text=Harnstoff
+138-1	3959-3968	Harnstoff	_	_	_	EchoBefunde
+
+#Text=23
+139-1	3969-3971	23	_	_	_	EchoBefunde
+
+#Text=- <45 mg/dl
+140-1	3972-3973	-	_	_	_	EchoBefunde
+140-2	3974-3975	<	_	_	_	EchoBefunde
+140-3	3975-3977	45	_	_	_	EchoBefunde
+140-4	3978-3980	mg	_	_	_	EchoBefunde
+140-5	3980-3981	/	_	_	_	EchoBefunde
+140-6	3981-3983	dl	_	_	_	EchoBefunde
+
+#Text=B-DATE
+141-1	3984-3990	B-DATE	_	_	_	EchoBefunde
+
+#Text=Parameter
+142-1	3993-4002	Parameter	_	_	_	EchoBefunde
+
+#Text=Wert
+143-1	4003-4007	Wert	_	_	_	EchoBefunde
+
+#Text=Normb / Dimension
+144-1	4008-4013	Normb	_	_	_	EchoBefunde
+144-2	4014-4015	/	_	_	_	EchoBefunde
+144-3	4016-4025	Dimension	_	_	_	EchoBefunde
+
+#Text=Datum
+145-1	4026-4031	Datum	_	_	_	EchoBefunde
+
+#Text=Cystatin C
+146-1	4032-4040	Cystatin	_	_	_	EchoBefunde
+146-2	4041-4042	C	_	_	_	EchoBefunde
+
+#Text=0.86
+147-1	4043-4047	0.86	_	_	_	EchoBefunde
+
+#Text=0,5 - 0,96 mg/l
+148-1	4048-4051	0,5	_	_	_	EchoBefunde
+148-2	4052-4053	-	_	_	_	EchoBefunde
+148-3	4054-4058	0,96	_	_	_	EchoBefunde
+148-4	4059-4061	mg	_	_	_	EchoBefunde
+148-5	4061-4062	/	_	_	_	EchoBefunde
+148-6	4062-4063	l	_	_	_	EchoBefunde
+
+#Text=B-DATE
+149-1	4064-4070	B-DATE	_	_	_	EchoBefunde
+
+#Text=GFR, CKD-EPI
+150-1	4071-4074	GFR	_	_	_	EchoBefunde
+150-2	4074-4075	,	_	_	_	EchoBefunde
+150-3	4076-4083	CKD-EPI	_	_	_	EchoBefunde
+
+#Text=123.2
+151-1	4084-4089	123.2	_	_	_	EchoBefunde
+
+#Text=>60 s.u.
+152-1	4090-4091	>	_	_	_	EchoBefunde
+152-2	4091-4093	60	_	_	_	EchoBefunde
+152-3	4094-4097	s.u	_	_	_	EchoBefunde
+152-4	4097-4098	.	_	_	_	EchoBefunde
+
+#Text=B-DATE
+153-1	4099-4105	B-DATE	_	_	_	EchoBefunde
+
+#Text=GFR -LRB- Cystatin C -RRB-
+154-1	4106-4109	GFR	_	_	_	EchoBefunde
+154-2	4110-4115	-LRB-	_	_	_	EchoBefunde
+154-3	4116-4124	Cystatin	_	_	_	EchoBefunde
+154-4	4125-4126	C	_	_	_	EchoBefunde
+154-5	4127-4132	-RRB-	_	_	_	EchoBefunde
+
+#Text=92.80
+155-1	4133-4138	92.80	_	_	_	EchoBefunde
+
+#Text=90 - 150 ml/min/1,73qm
+156-1	4139-4141	90	_	_	_	EchoBefunde
+156-2	4142-4143	-	_	_	_	EchoBefunde
+156-3	4144-4147	150	_	_	_	EchoBefunde
+156-4	4148-4150	ml	_	_	_	EchoBefunde
+156-5	4150-4151	/	_	_	_	EchoBefunde
+156-6	4151-4154	min	_	_	_	EchoBefunde
+156-7	4154-4155	/	_	_	_	EchoBefunde
+156-8	4155-4161	1,73qm	_	_	_	EchoBefunde
+
+#Text=B-DATE
+157-1	4162-4168	B-DATE	_	_	_	EchoBefunde
+
+#Text=MDRD
+158-1	4169-4173	MDRD	_	_	_	EchoBefunde
+
+#Text=145.01
+159-1	4174-4180	145.01	_	_	_	EchoBefunde
+
+#Text=ml/min/1,73qm
+160-1	4181-4183	ml	_	_	_	EchoBefunde
+160-2	4183-4184	/	_	_	_	EchoBefunde
+160-3	4184-4187	min	_	_	_	EchoBefunde
+160-4	4187-4188	/	_	_	_	EchoBefunde
+160-5	4188-4194	1,73qm	_	_	_	EchoBefunde
+
+#Text=B-DATE
+161-1	4195-4201	B-DATE	_	_	_	EchoBefunde
+
+#Text=Allgemeine Stoffwechsel- & Proteindiagnostik
+162-1	4204-4214	Allgemeine	_	_	_	EchoBefunde
+162-2	4215-4228	Stoffwechsel-	_	_	_	EchoBefunde
+162-3	4229-4230	&	_	_	_	EchoBefunde
+162-4	4231-4248	Proteindiagnostik	_	_	_	EchoBefunde
+
+#Text=Parameter
+163-1	4250-4259	Parameter	_	_	_	EchoBefunde
+
+#Text=Wert
+164-1	4260-4264	Wert	_	_	_	EchoBefunde
+
+#Text=Normb / Dimension
+165-1	4265-4270	Normb	_	_	_	EchoBefunde
+165-2	4271-4272	/	_	_	_	EchoBefunde
+165-3	4273-4282	Dimension	_	_	_	EchoBefunde
+
+#Text=Datum
+166-1	4283-4288	Datum	_	_	_	EchoBefunde
+
+#Text=Albumin quant.
+167-1	4289-4296	Albumin	_	_	_	EchoBefunde
+167-2	4297-4302	quant	_	_	_	EchoBefunde
+167-3	4302-4303	.	_	_	_	EchoBefunde
+
+#Text=42.7
+168-1	4304-4308	42.7	_	_	_	EchoBefunde
+
+#Text=30 - 50 g/l
+169-1	4309-4311	30	_	_	_	EchoBefunde
+169-2	4312-4313	-	_	_	_	EchoBefunde
+169-3	4314-4316	50	_	_	_	EchoBefunde
+169-4	4317-4318	g	_	_	_	EchoBefunde
+169-5	4318-4319	/	_	_	_	EchoBefunde
+169-6	4319-4320	l	_	_	_	EchoBefunde
+
+#Text=<[Pseudo] 15/01/31>
+170-1	4321-4330	<[Pseudo]	_	_	_	EchoBefunde
+170-2	4331-4333	15	_	_	_	EchoBefunde
+170-3	4333-4334	/	_	_	_	EchoBefunde
+170-4	4334-4336	01	_	_	_	EchoBefunde
+170-5	4336-4337	/	_	_	_	EchoBefunde
+170-6	4337-4339	31	_	_	_	EchoBefunde
+170-7	4339-4340	>	_	_	_	EchoBefunde
+
+#Text=Glucose
+171-1	4341-4348	Glucose	_	_	_	EchoBefunde
+
+#Text=92
+172-1	4349-4351	92	_	_	_	EchoBefunde
+
+#Text=65 - 110 mg/dl
+173-1	4352-4354	65	_	_	_	EchoBefunde
+173-2	4355-4356	-	_	_	_	EchoBefunde
+173-3	4357-4360	110	_	_	_	EchoBefunde
+173-4	4361-4363	mg	_	_	_	EchoBefunde
+173-5	4363-4364	/	_	_	_	EchoBefunde
+173-6	4364-4366	dl	_	_	_	EchoBefunde
+
+#Text=B-DATE
+174-1	4367-4373	B-DATE	_	_	_	EchoBefunde
+
+#Text=GOT/AST
+175-1	4374-4377	GOT	_	_	_	EchoBefunde
+175-2	4377-4378	/	_	_	_	EchoBefunde
+175-3	4378-4381	AST	_	_	_	EchoBefunde
+
+#Text=15
+176-1	4382-4384	15	_	_	_	EchoBefunde
+
+#Text=- <37 U/l
+177-1	4385-4386	-	_	_	_	EchoBefunde
+177-2	4387-4388	<	_	_	_	EchoBefunde
+177-3	4388-4390	37	_	_	_	EchoBefunde
+177-4	4391-4392	U	_	_	_	EchoBefunde
+177-5	4392-4393	/	_	_	_	EchoBefunde
+177-6	4393-4394	l	_	_	_	EchoBefunde
+
+#Text=B-DATE
+178-1	4395-4401	B-DATE	_	_	_	EchoBefunde
+
+#Text=GPT/ALT
+179-1	4402-4405	GPT	_	_	_	EchoBefunde
+179-2	4405-4406	/	_	_	_	EchoBefunde
+179-3	4406-4409	ALT	_	_	_	EchoBefunde
+
+#Text=16
+180-1	4410-4412	16	_	_	_	EchoBefunde
+
+#Text=- <35 U/l
+181-1	4413-4414	-	_	_	_	EchoBefunde
+181-2	4415-4416	<	_	_	_	EchoBefunde
+181-3	4416-4418	35	_	_	_	EchoBefunde
+181-4	4419-4420	U	_	_	_	EchoBefunde
+181-5	4420-4421	/	_	_	_	EchoBefunde
+181-6	4421-4422	l	_	_	_	EchoBefunde
+
+#Text=B-DATE
+182-1	4423-4429	B-DATE	_	_	_	EchoBefunde
+
+#Text=AP
+183-1	4430-4432	AP	_	_	_	EchoBefunde
+
+#Text=83
+184-1	4433-4435	83	_	_	_	EchoBefunde
+
+#Text=55 - 105 U/l
+185-1	4436-4438	55	_	_	_	EchoBefunde
+185-2	4439-4440	-	_	_	_	EchoBefunde
+185-3	4441-4444	105	_	_	_	EchoBefunde
+185-4	4445-4446	U	_	_	_	EchoBefunde
+185-5	4446-4447	/	_	_	_	EchoBefunde
+185-6	4447-4448	l	_	_	_	EchoBefunde
+
+#Text=B-DATE
+186-1	4449-4455	B-DATE	_	_	_	EchoBefunde
+
+#Text=GGT
+187-1	4456-4459	GGT	_	_	_	EchoBefunde
+
+#Text=17
+188-1	4460-4462	17	_	_	_	EchoBefunde
+
+#Text=- <40 U/l
+189-1	4463-4464	-	_	_	_	EchoBefunde
+189-2	4465-4466	<	_	_	_	EchoBefunde
+189-3	4466-4468	40	_	_	_	EchoBefunde
+189-4	4469-4470	U	_	_	_	EchoBefunde
+189-5	4470-4471	/	_	_	_	EchoBefunde
+189-6	4471-4472	l	_	_	_	EchoBefunde
+
+#Text=B-DATE
+190-1	4473-4479	B-DATE	_	_	_	EchoBefunde
+
+#Text=Ges.Bili.
+191-1	4480-4483	Ges	_	_	_	EchoBefunde
+191-2	4483-4484	.	_	_	_	EchoBefunde
+191-3	4484-4488	Bili	_	_	_	EchoBefunde
+191-4	4488-4489	.	_	_	_	EchoBefunde
+
+#Text=0.30
+192-1	4490-4494	0.30	_	_	_	EchoBefunde
+
+#Text=- <1.0 mg/dl
+193-1	4495-4496	-	_	_	_	EchoBefunde
+193-2	4497-4498	<	_	_	_	EchoBefunde
+193-3	4498-4501	1.0	_	_	_	EchoBefunde
+193-4	4502-4504	mg	_	_	_	EchoBefunde
+193-5	4504-4505	/	_	_	_	EchoBefunde
+193-6	4505-4507	dl	_	_	_	EchoBefunde
+
+#Text=B-DATE
+194-1	4508-4514	B-DATE	_	_	_	EchoBefunde
+
+#Text=Harnsäure
+195-1	4515-4524	Harnsäure	_	_	_	EchoBefunde
+
+#Text=3.8
+196-1	4525-4528	3.8	_	_	_	EchoBefunde
+
+#Text=- <6 mg/dl
+197-1	4529-4530	-	_	_	_	EchoBefunde
+197-2	4531-4532	<	_	_	_	EchoBefunde
+197-3	4532-4533	6	_	_	_	EchoBefunde
+197-4	4534-4536	mg	_	_	_	EchoBefunde
+197-5	4536-4537	/	_	_	_	EchoBefunde
+197-6	4537-4539	dl	_	_	_	EchoBefunde
+
+#Text=B-DATE
+198-1	4540-4546	B-DATE	_	_	_	EchoBefunde
+
+#Text=Triglyceride
+199-1	4547-4559	Triglyceride	_	_	_	EchoBefunde
+
+#Text=56
+200-1	4560-4562	56	_	_	_	EchoBefunde
+
+#Text=- <150 mg/dl
+201-1	4563-4564	-	_	_	_	EchoBefunde
+201-2	4565-4566	<	_	_	_	EchoBefunde
+201-3	4566-4569	150	_	_	_	EchoBefunde
+201-4	4570-4572	mg	_	_	_	EchoBefunde
+201-5	4572-4573	/	_	_	_	EchoBefunde
+201-6	4573-4575	dl	_	_	_	EchoBefunde
+
+#Text=B-DATE
+202-1	4576-4582	B-DATE	_	_	_	EchoBefunde
+
+#Text=Parameter
+203-1	4585-4594	Parameter	_	_	_	EchoBefunde
+
+#Text=Wert
+204-1	4595-4599	Wert	_	_	_	EchoBefunde
+
+#Text=Normb / Dimension
+205-1	4600-4605	Normb	_	_	_	EchoBefunde
+205-2	4606-4607	/	_	_	_	EchoBefunde
+205-3	4608-4617	Dimension	_	_	_	EchoBefunde
+
+#Text=Datum
+206-1	4618-4623	Datum	_	_	_	EchoBefunde
+
+#Text=Cholesterin
+207-1	4624-4635	Cholesterin	_	_	_	EchoBefunde
+
+#Text=183.2
+208-1	4636-4641	183.2	_	_	_	EchoBefunde
+
+#Text=- alt.abh. mg/dl
+209-1	4642-4643	-	_	_	_	EchoBefunde
+209-2	4644-4651	alt.abh	_	_	_	EchoBefunde
+209-3	4651-4652	.	_	_	_	EchoBefunde
+209-4	4653-4655	mg	_	_	_	EchoBefunde
+209-5	4655-4656	/	_	_	_	EchoBefunde
+209-6	4656-4658	dl	_	_	_	EchoBefunde
+
+#Text=<[Pseudo] 15/01/31>
+210-1	4659-4668	<[Pseudo]	_	_	_	EchoBefunde
+210-2	4669-4671	15	_	_	_	EchoBefunde
+210-3	4671-4672	/	_	_	_	EchoBefunde
+210-4	4672-4674	01	_	_	_	EchoBefunde
+210-5	4674-4675	/	_	_	_	EchoBefunde
+210-6	4675-4677	31	_	_	_	EchoBefunde
+210-7	4677-4678	>	_	_	_	EchoBefunde
+
+#Text=LDL-Chol. -LRB- berechn. -RRB-
+211-1	4679-4687	LDL-Chol	_	_	_	EchoBefunde
+211-2	4687-4688	.	_	_	_	EchoBefunde
+211-3	4689-4694	-LRB-	_	_	_	EchoBefunde
+211-4	4695-4702	berechn	_	_	_	EchoBefunde
+211-5	4702-4703	.	_	_	_	EchoBefunde
+211-6	4704-4709	-RRB-	_	_	_	EchoBefunde
+
+#Text=114
+212-1	4710-4713	114	_	_	_	EchoBefunde
+
+#Text=- <160 mg/dl
+213-1	4714-4715	-	_	_	_	EchoBefunde
+213-2	4716-4717	<	_	_	_	EchoBefunde
+213-3	4717-4720	160	_	_	_	EchoBefunde
+213-4	4721-4723	mg	_	_	_	EchoBefunde
+213-5	4723-4724	/	_	_	_	EchoBefunde
+213-6	4724-4726	dl	_	_	_	EchoBefunde
+
+#Text=B-DATE
+214-1	4727-4733	B-DATE	_	_	_	EchoBefunde
+
+#Text=HDL-Cholesterin
+215-1	4734-4749	HDL-Cholesterin	_	_	_	EchoBefunde
+
+#Text=58
+216-1	4750-4752	58	_	_	_	EchoBefunde
+
+#Text=>50 mg/dl
+217-1	4753-4754	>	_	_	_	EchoBefunde
+217-2	4754-4756	50	_	_	_	EchoBefunde
+217-3	4757-4759	mg	_	_	_	EchoBefunde
+217-4	4759-4760	/	_	_	_	EchoBefunde
+217-5	4760-4762	dl	_	_	_	EchoBefunde
+
+#Text=B-DATE
+218-1	4763-4769	B-DATE	_	_	_	EchoBefunde
+
+#Text=Eisen
+219-1	4770-4775	Eisen	_	_	_	EchoBefunde
+
+#Text=7.9 !L
+220-1	4776-4779	7.9	_	_	_	EchoBefunde
+220-2	4780-4781	!	_	_	_	EchoBefunde
+220-3	4781-4782	L	_	_	_	EchoBefunde
+
+#Text=12 - 27 µmol/l
+221-1	4783-4785	12	_	_	_	EchoBefunde
+221-2	4786-4787	-	_	_	_	EchoBefunde
+221-3	4788-4790	27	_	_	_	EchoBefunde
+221-4	4791-4795	µmol	_	_	_	EchoBefunde
+221-5	4795-4796	/	_	_	_	EchoBefunde
+221-6	4796-4797	l	_	_	_	EchoBefunde
+
+#Text=B-DATE
+222-1	4798-4804	B-DATE	_	_	_	EchoBefunde
+
+#Text=Ferritin
+223-1	4805-4813	Ferritin	_	_	_	EchoBefunde
+
+#Text=51
+224-1	4814-4816	51	_	_	_	EchoBefunde
+
+#Text=20 - 120 µg/l
+225-1	4817-4819	20	_	_	_	EchoBefunde
+225-2	4820-4821	-	_	_	_	EchoBefunde
+225-3	4822-4825	120	_	_	_	EchoBefunde
+225-4	4826-4828	µg	_	_	_	EchoBefunde
+225-5	4828-4829	/	_	_	_	EchoBefunde
+225-6	4829-4830	l	_	_	_	EchoBefunde
+
+#Text=<[Pseudo] 15/01/31>
+226-1	4831-4840	<[Pseudo]	_	_	_	EchoBefunde
+226-2	4841-4843	15	_	_	_	EchoBefunde
+226-3	4843-4844	/	_	_	_	EchoBefunde
+226-4	4844-4846	01	_	_	_	EchoBefunde
+226-5	4846-4847	/	_	_	_	EchoBefunde
+226-6	4847-4849	31	_	_	_	EchoBefunde
+226-7	4849-4850	>	_	_	_	EchoBefunde
+
+#Text=Transferrin
+227-1	4851-4862	Transferrin	_	_	_	EchoBefunde
+
+#Text=2.41
+228-1	4863-4867	2.41	_	_	_	EchoBefunde
+
+#Text=2,0 - 3,6 g/l
+229-1	4868-4871	2,0	_	_	_	EchoBefunde
+229-2	4872-4873	-	_	_	_	EchoBefunde
+229-3	4874-4877	3,6	_	_	_	EchoBefunde
+229-4	4878-4879	g	_	_	_	EchoBefunde
+229-5	4879-4880	/	_	_	_	EchoBefunde
+229-6	4880-4881	l	_	_	_	EchoBefunde
+
+#Text=<[Pseudo] 15/01/31>
+230-1	4882-4891	<[Pseudo]	_	_	_	EchoBefunde
+230-2	4892-4894	15	_	_	_	EchoBefunde
+230-3	4894-4895	/	_	_	_	EchoBefunde
+230-4	4895-4897	01	_	_	_	EchoBefunde
+230-5	4897-4898	/	_	_	_	EchoBefunde
+230-6	4898-4900	31	_	_	_	EchoBefunde
+230-7	4900-4901	>	_	_	_	EchoBefunde
+
+#Text=TFSG
+231-1	4902-4906	TFSG	_	_	_	EchoBefunde
+
+#Text=13 !L
+232-1	4907-4909	13	_	_	_	EchoBefunde
+232-2	4910-4911	!	_	_	_	EchoBefunde
+232-3	4911-4912	L	_	_	_	EchoBefunde
+
+#Text=16 - 45 %
+233-1	4913-4915	16	_	_	_	EchoBefunde
+233-2	4916-4917	-	_	_	_	EchoBefunde
+233-3	4918-4920	45	_	_	_	EchoBefunde
+233-4	4921-4922	%	_	_	_	EchoBefunde
+
+#Text=<[Pseudo] 15/01/31>
+234-1	4923-4932	<[Pseudo]	_	_	_	EchoBefunde
+234-2	4933-4935	15	_	_	_	EchoBefunde
+234-3	4935-4936	/	_	_	_	EchoBefunde
+234-4	4936-4938	01	_	_	_	EchoBefunde
+234-5	4938-4939	/	_	_	_	EchoBefunde
+234-6	4939-4941	31	_	_	_	EchoBefunde
+234-7	4941-4942	>	_	_	_	EchoBefunde
+
+#Text=CRP
+235-1	4943-4946	CRP	_	_	_	EchoBefunde
+
+#Text=16.6 !H
+236-1	4947-4951	16.6	_	_	_	EchoBefunde
+236-2	4952-4953	!	_	_	_	EchoBefunde
+236-3	4953-4954	H	_	_	_	EchoBefunde
+
+#Text=- <5 mg/l
+237-1	4955-4956	-	_	_	_	EchoBefunde
+237-2	4957-4958	<	_	_	_	EchoBefunde
+237-3	4958-4959	5	_	_	_	EchoBefunde
+237-4	4960-4962	mg	_	_	_	EchoBefunde
+237-5	4962-4963	/	_	_	_	EchoBefunde
+237-6	4963-4964	l	_	_	_	EchoBefunde
+
+#Text=<[Pseudo] 15/01/31>
+238-1	4965-4974	<[Pseudo]	_	_	_	EchoBefunde
+238-2	4975-4977	15	_	_	_	EchoBefunde
+238-3	4977-4978	/	_	_	_	EchoBefunde
+238-4	4978-4980	01	_	_	_	EchoBefunde
+238-5	4980-4981	/	_	_	_	EchoBefunde
+238-6	4981-4983	31	_	_	_	EchoBefunde
+238-7	4983-4984	>	_	_	_	EchoBefunde
+
+#Text=Aktivitätsparameter & Elektrophorese
+239-1	4987-5006	Aktivitätsparameter	_	_	_	EchoBefunde
+239-2	5007-5008	&	_	_	_	EchoBefunde
+239-3	5009-5023	Elektrophorese	_	_	_	EchoBefunde
+
+#Text=Parameter
+240-1	5025-5034	Parameter	_	_	_	EchoBefunde
+
+#Text=Wert
+241-1	5035-5039	Wert	_	_	_	EchoBefunde
+
+#Text=Normb / Dimension
+242-1	5040-5045	Normb	_	_	_	EchoBefunde
+242-2	5046-5047	/	_	_	_	EchoBefunde
+242-3	5048-5057	Dimension	_	_	_	EchoBefunde
+
+#Text=Datum
+243-1	5058-5063	Datum	_	_	_	EchoBefunde
+
+#Text=LDH
+244-1	5064-5067	LDH	_	_	_	EchoBefunde
+
+#Text=305 !H
+245-1	5068-5071	305	_	_	_	EchoBefunde
+245-2	5072-5073	!	_	_	_	EchoBefunde
+245-3	5073-5074	H	_	_	_	EchoBefunde
+
+#Text=- <264 U/l
+246-1	5075-5076	-	_	_	_	EchoBefunde
+246-2	5077-5078	<	_	_	_	EchoBefunde
+246-3	5078-5081	264	_	_	_	EchoBefunde
+246-4	5082-5083	U	_	_	_	EchoBefunde
+246-5	5083-5084	/	_	_	_	EchoBefunde
+246-6	5084-5085	l	_	_	_	EchoBefunde
+
+#Text=B-DATE
+247-1	5086-5092	B-DATE	_	_	_	EchoBefunde
+
+#Text=CK
+248-1	5093-5095	CK	_	_	_	EchoBefunde
+
+#Text=160
+249-1	5096-5099	160	_	_	_	EchoBefunde
+
+#Text=- <170 U/l
+250-1	5100-5101	-	_	_	_	EchoBefunde
+250-2	5102-5103	<	_	_	_	EchoBefunde
+250-3	5103-5106	170	_	_	_	EchoBefunde
+250-4	5107-5108	U	_	_	_	EchoBefunde
+250-5	5108-5109	/	_	_	_	EchoBefunde
+250-6	5109-5110	l	_	_	_	EchoBefunde
+
+#Text=<[Pseudo] 15/01/31>
+251-1	5111-5120	<[Pseudo]	_	_	_	EchoBefunde
+251-2	5121-5123	15	_	_	_	EchoBefunde
+251-3	5123-5124	/	_	_	_	EchoBefunde
+251-4	5124-5126	01	_	_	_	EchoBefunde
+251-5	5126-5127	/	_	_	_	EchoBefunde
+251-6	5127-5129	31	_	_	_	EchoBefunde
+251-7	5129-5130	>	_	_	_	EchoBefunde
+
+#Text=Parameter
+252-1	5133-5142	Parameter	_	_	_	EchoBefunde
+
+#Text=Wert
+253-1	5143-5147	Wert	_	_	_	EchoBefunde
+
+#Text=Normb / Dimension
+254-1	5148-5153	Normb	_	_	_	EchoBefunde
+254-2	5154-5155	/	_	_	_	EchoBefunde
+254-3	5156-5165	Dimension	_	_	_	EchoBefunde
+
+#Text=Datum
+255-1	5166-5171	Datum	_	_	_	EchoBefunde
+
+#Text=hs-TroponinT
+256-1	5172-5184	hs-TroponinT	_	_	_	EchoBefunde
+
+#Text=3
+257-1	5185-5186	3	_	_	_	EchoBefunde
+
+#Text=- <14 pg/ml
+258-1	5187-5188	-	_	_	_	EchoBefunde
+258-2	5189-5190	<	_	_	_	EchoBefunde
+258-3	5190-5192	14	_	_	_	EchoBefunde
+258-4	5193-5195	pg	_	_	_	EchoBefunde
+258-5	5195-5196	/	_	_	_	EchoBefunde
+258-6	5196-5198	ml	_	_	_	EchoBefunde
+
+#Text=B-DATE
+259-1	5199-5205	B-DATE	_	_	_	EchoBefunde
+
+#Text=NT-BNP
+260-1	5206-5212	NT-BNP	_	_	_	EchoBefunde
+
+#Text=288 !H
+261-1	5213-5216	288	_	_	_	EchoBefunde
+261-2	5217-5218	!	_	_	_	EchoBefunde
+261-3	5218-5219	H	_	_	_	EchoBefunde
+
+#Text=- <125 ng/l
+262-1	5220-5221	-	_	_	_	EchoBefunde
+262-2	5222-5223	<	_	_	_	EchoBefunde
+262-3	5223-5226	125	_	_	_	EchoBefunde
+262-4	5227-5229	ng	_	_	_	EchoBefunde
+262-5	5229-5230	/	_	_	_	EchoBefunde
+262-6	5230-5231	l	_	_	_	EchoBefunde
+
+#Text=<[Pseudo] 15/01/31>
+263-1	5232-5241	<[Pseudo]	_	_	_	EchoBefunde
+263-2	5242-5244	15	_	_	_	EchoBefunde
+263-3	5244-5245	/	_	_	_	EchoBefunde
+263-4	5245-5247	01	_	_	_	EchoBefunde
+263-5	5247-5248	/	_	_	_	EchoBefunde
+263-6	5248-5250	31	_	_	_	EchoBefunde
+263-7	5250-5251	>	_	_	_	EchoBefunde
+
+#Text=Endokrinologie & Diabetologie
+264-1	5254-5268	Endokrinologie	_	_	_	EchoBefunde
+264-2	5269-5270	&	_	_	_	EchoBefunde
+264-3	5271-5283	Diabetologie	_	_	_	EchoBefunde
+
+#Text=Parameter
+265-1	5285-5294	Parameter	_	_	_	EchoBefunde
+
+#Text=Wert
+266-1	5295-5299	Wert	_	_	_	EchoBefunde
+
+#Text=Normb / Dimension
+267-1	5300-5305	Normb	_	_	_	EchoBefunde
+267-2	5306-5307	/	_	_	_	EchoBefunde
+267-3	5308-5317	Dimension	_	_	_	EchoBefunde
+
+#Text=Datum
+268-1	5318-5323	Datum	_	_	_	EchoBefunde
+
+#Text=HbA1c
+269-1	5324-5329	HbA1c	_	_	_	EchoBefunde
+
+#Text=5.6
+270-1	5330-5333	5.6	_	_	_	EchoBefunde
+
+#Text=- <6,1 %
+271-1	5334-5335	-	_	_	_	EchoBefunde
+271-2	5336-5337	<	_	_	_	EchoBefunde
+271-3	5337-5340	6,1	_	_	_	EchoBefunde
+271-4	5341-5342	%	_	_	_	EchoBefunde
+
+#Text=B-DATE
+272-1	5343-5349	B-DATE	_	_	_	EchoBefunde
+
+#Text=HbA1c -LRB- IFCC -RRB-
+273-1	5350-5355	HbA1c	_	_	_	EchoBefunde
+273-2	5356-5361	-LRB-	_	_	_	EchoBefunde
+273-3	5362-5366	IFCC	_	_	_	EchoBefunde
+273-4	5367-5372	-RRB-	_	_	_	EchoBefunde
+
+#Text=38
+274-1	5373-5375	38	_	_	_	EchoBefunde
+
+#Text=20 - 42 mmol/mol
+275-1	5376-5378	20	_	_	_	EchoBefunde
+275-2	5379-5380	-	_	_	_	EchoBefunde
+275-3	5381-5383	42	_	_	_	EchoBefunde
+275-4	5384-5388	mmol	_	_	_	EchoBefunde
+275-5	5388-5389	/	_	_	_	EchoBefunde
+275-6	5389-5392	mol	_	_	_	EchoBefunde
+
+#Text=B-DATE
+276-1	5393-5399	B-DATE	_	_	_	EchoBefunde
+
+#Text=Parameter
+277-1	5402-5411	Parameter	_	_	_	EchoBefunde
+
+#Text=Wert
+278-1	5412-5416	Wert	_	_	_	EchoBefunde
+
+#Text=Normb / Dimension
+279-1	5417-5422	Normb	_	_	_	EchoBefunde
+279-2	5423-5424	/	_	_	_	EchoBefunde
+279-3	5425-5434	Dimension	_	_	_	EchoBefunde
+
+#Text=Datum
+280-1	5435-5440	Datum	_	_	_	EchoBefunde
+
+#Text=mittlere Glucose
+281-1	5441-5449	mittlere	_	_	_	EchoBefunde
+281-2	5450-5457	Glucose	_	_	_	EchoBefunde
+
+#Text=114 !H
+282-1	5458-5461	114	_	_	_	EchoBefunde
+282-2	5462-5463	!	_	_	_	EchoBefunde
+282-3	5463-5464	H	_	_	_	EchoBefunde
+
+#Text=- <110 mg/dl
+283-1	5465-5466	-	_	_	_	EchoBefunde
+283-2	5467-5468	<	_	_	_	EchoBefunde
+283-3	5468-5471	110	_	_	_	EchoBefunde
+283-4	5472-5474	mg	_	_	_	EchoBefunde
+283-5	5474-5475	/	_	_	_	EchoBefunde
+283-6	5475-5477	dl	_	_	_	EchoBefunde
+
+#Text=<[Pseudo] 15/01/31>
+284-1	5478-5487	<[Pseudo]	_	_	_	EchoBefunde
+284-2	5488-5490	15	_	_	_	EchoBefunde
+284-3	5490-5491	/	_	_	_	EchoBefunde
+284-4	5491-5493	01	_	_	_	EchoBefunde
+284-5	5493-5494	/	_	_	_	EchoBefunde
+284-6	5494-5496	31	_	_	_	EchoBefunde
+284-7	5496-5497	>	_	_	_	EchoBefunde
+
+#Text=TSH
+285-1	5498-5501	TSH	_	_	_	EchoBefunde
+
+#Text=1.94
+286-1	5502-5506	1.94	_	_	_	EchoBefunde
+
+#Text=0,400 - 4,000 mU/l
+287-1	5507-5512	0,400	_	_	_	EchoBefunde
+287-2	5513-5514	-	_	_	_	EchoBefunde
+287-3	5515-5520	4,000	_	_	_	EchoBefunde
+287-4	5521-5523	mU	_	_	_	EchoBefunde
+287-5	5523-5524	/	_	_	_	EchoBefunde
+287-6	5524-5525	l	_	_	_	EchoBefunde
+
+#Text=<[Pseudo] 15/01/31>
+288-1	5526-5535	<[Pseudo]	_	_	_	EchoBefunde
+288-2	5536-5538	15	_	_	_	EchoBefunde
+288-3	5538-5539	/	_	_	_	EchoBefunde
+288-4	5539-5541	01	_	_	_	EchoBefunde
+288-5	5541-5542	/	_	_	_	EchoBefunde
+288-6	5542-5544	31	_	_	_	EchoBefunde
+288-7	5544-5545	>	_	_	_	EchoBefunde
+
+#Text=Zusammenfassung:
+289-1	5552-5567	Zusammenfassung	_	_	_	Zusammenfassung
+289-2	5567-5568	:	_	_	_	Zusammenfassung
+
+#Text=Die ambulante Vorstellung von erfolgt zur Verlaufskontrolle bei dilatativer Kardiomyopathie. Klinisch stabiler Verlauf. Echokardiographisch zeigte sich ein konstanter Befund. Das NTproBNP war mit 288ng/l -LRB- Vorwert: 114 ng/l -RRB- leicht erhöht.
+290-1	5569-5572	Die	_	_	_	Zusammenfassung
+290-2	5573-5582	ambulante	_	_	_	Zusammenfassung
+290-3	5583-5594	Vorstellung	_	_	_	Zusammenfassung
+290-4	5595-5598	von	_	_	_	Zusammenfassung
+290-5	5599-5606	erfolgt	_	_	_	Zusammenfassung
+290-6	5607-5610	zur	_	_	_	Zusammenfassung
+290-7	5611-5628	Verlaufskontrolle	_	_	_	Zusammenfassung
+290-8	5629-5632	bei	_	_	_	Zusammenfassung
+290-9	5633-5644	dilatativer	_	_	_	Zusammenfassung
+290-10	5645-5660	Kardiomyopathie	_	_	_	Zusammenfassung
+290-11	5660-5661	.	_	_	_	Zusammenfassung
+290-12	5662-5670	Klinisch	_	_	_	Zusammenfassung
+290-13	5671-5679	stabiler	_	_	_	Zusammenfassung
+290-14	5680-5687	Verlauf	_	_	_	Zusammenfassung
+290-15	5687-5688	.	_	_	_	Zusammenfassung
+290-16	5689-5708	Echokardiographisch	_	_	_	Zusammenfassung
+290-17	5709-5715	zeigte	_	_	_	Zusammenfassung
+290-18	5716-5720	sich	_	_	_	Zusammenfassung
+290-19	5721-5724	ein	_	_	_	Zusammenfassung
+290-20	5725-5735	konstanter	_	_	_	Zusammenfassung
+290-21	5736-5742	Befund	_	_	_	Zusammenfassung
+290-22	5742-5743	.	_	_	_	Zusammenfassung
+290-23	5744-5747	Das	_	_	_	Zusammenfassung
+290-24	5748-5756	NTproBNP	_	_	_	Zusammenfassung
+290-25	5757-5760	war	_	_	_	Zusammenfassung
+290-26	5761-5764	mit	_	_	_	Zusammenfassung
+290-27	5765-5770	288ng	_	_	_	Zusammenfassung
+290-28	5770-5771	/	_	_	_	Zusammenfassung
+290-29	5771-5772	l	_	_	_	Zusammenfassung
+290-30	5773-5778	-LRB-	_	_	_	Zusammenfassung
+290-31	5779-5786	Vorwert	_	_	_	Zusammenfassung
+290-32	5786-5787	:	_	_	_	Zusammenfassung
+290-33	5788-5791	114	_	_	_	Zusammenfassung
+290-34	5792-5794	ng	_	_	_	Zusammenfassung
+290-35	5794-5795	/	_	_	_	Zusammenfassung
+290-36	5795-5796	l	_	_	_	Zusammenfassung
+290-37	5797-5802	-RRB-	_	_	_	Zusammenfassung
+290-38	5803-5809	leicht	_	_	_	Zusammenfassung
+290-39	5810-5816	erhöht	_	_	_	Zusammenfassung
+290-40	5816-5817	.	_	_	_	Zusammenfassung
+
+#Text=Wir gehen insgesamt von einem stabilen Verlauf aus und empfehlen die Fortführung der medikamentösen Therapie wie unten angegeben, hierunter regelmäßige Kontrollen der Elektrolyte, Retentionsparameter und des Blutdrucks und der Herzfrequenz.
+291-1	5819-5822	Wir	_	_	_	Zusammenfassung
+291-2	5823-5828	gehen	_	_	_	Zusammenfassung
+291-3	5829-5838	insgesamt	_	_	_	Zusammenfassung
+291-4	5839-5842	von	_	_	_	Zusammenfassung
+291-5	5843-5848	einem	_	_	_	Zusammenfassung
+291-6	5849-5857	stabilen	_	_	_	Zusammenfassung
+291-7	5858-5865	Verlauf	_	_	_	Zusammenfassung
+291-8	5866-5869	aus	_	_	_	Zusammenfassung
+291-9	5870-5873	und	_	_	_	Zusammenfassung
+291-10	5874-5883	empfehlen	_	_	_	Zusammenfassung
+291-11	5884-5887	die	_	_	_	Zusammenfassung
+291-12	5888-5899	Fortführung	_	_	_	Zusammenfassung
+291-13	5900-5903	der	_	_	_	Zusammenfassung
+291-14	5904-5918	medikamentösen	_	_	_	Zusammenfassung
+291-15	5919-5927	Therapie	_	_	_	Zusammenfassung
+291-16	5928-5931	wie	_	_	_	Zusammenfassung
+291-17	5932-5937	unten	_	_	_	Zusammenfassung
+291-18	5938-5947	angegeben	_	_	_	Zusammenfassung
+291-19	5947-5948	,	_	_	_	Zusammenfassung
+291-20	5949-5958	hierunter	_	_	_	Zusammenfassung
+291-21	5959-5970	regelmäßige	_	_	_	Zusammenfassung
+291-22	5971-5981	Kontrollen	_	_	_	Zusammenfassung
+291-23	5982-5985	der	_	_	_	Zusammenfassung
+291-24	5986-5997	Elektrolyte	_	_	_	Zusammenfassung
+291-25	5997-5998	,	_	_	_	Zusammenfassung
+291-26	5999-6018	Retentionsparameter	_	_	_	Zusammenfassung
+291-27	6019-6022	und	_	_	_	Zusammenfassung
+291-28	6023-6026	des	_	_	_	Zusammenfassung
+291-29	6027-6037	Blutdrucks	_	_	_	Zusammenfassung
+291-30	6038-6041	und	_	_	_	Zusammenfassung
+291-31	6042-6045	der	_	_	_	Zusammenfassung
+291-32	6046-6058	Herzfrequenz	_	_	_	Zusammenfassung
+291-33	6058-6059	.	_	_	_	Zusammenfassung
+
+#Text=Wir bitten um Wiedervorstellung in 12 Monaten in unserer B-ORG -LRB- mit Echokontrolle -RRB- . Bei vorher auftretenden Problemen kann kurzfristig eine Terminvereinbarung in unserer Ambulanz oder in Notfällen über unsere B-ORG I-ORG I-ORG unter B-PHONE erfolgen.
+292-1	6061-6064	Wir	_	_	_	Zusammenfassung
+292-2	6065-6071	bitten	_	_	_	Zusammenfassung
+292-3	6072-6074	um	_	_	_	Zusammenfassung
+292-4	6075-6092	Wiedervorstellung	_	_	_	Zusammenfassung
+292-5	6093-6095	in	_	_	_	Zusammenfassung
+292-6	6096-6098	12	_	_	_	Zusammenfassung
+292-7	6099-6106	Monaten	_	_	_	Zusammenfassung
+292-8	6107-6109	in	_	_	_	Zusammenfassung
+292-9	6110-6117	unserer	_	_	_	Zusammenfassung
+292-10	6118-6123	B-ORG	_	_	_	Zusammenfassung
+292-11	6124-6129	-LRB-	_	_	_	Zusammenfassung
+292-12	6130-6133	mit	_	_	_	Zusammenfassung
+292-13	6134-6147	Echokontrolle	_	_	_	Zusammenfassung
+292-14	6148-6153	-RRB-	_	_	_	Zusammenfassung
+292-15	6154-6155	.	_	_	_	Zusammenfassung
+292-16	6156-6159	Bei	_	_	_	Zusammenfassung
+292-17	6160-6166	vorher	_	_	_	Zusammenfassung
+292-18	6167-6179	auftretenden	_	_	_	Zusammenfassung
+292-19	6180-6189	Problemen	_	_	_	Zusammenfassung
+292-20	6190-6194	kann	_	_	_	Zusammenfassung
+292-21	6195-6206	kurzfristig	_	_	_	Zusammenfassung
+292-22	6207-6211	eine	_	_	_	Zusammenfassung
+292-23	6212-6230	Terminvereinbarung	_	_	_	Zusammenfassung
+292-24	6231-6233	in	_	_	_	Zusammenfassung
+292-25	6234-6241	unserer	_	_	_	Zusammenfassung
+292-26	6242-6250	Ambulanz	_	_	_	Zusammenfassung
+292-27	6251-6255	oder	_	_	_	Zusammenfassung
+292-28	6256-6258	in	_	_	_	Zusammenfassung
+292-29	6259-6268	Notfällen	_	_	_	Zusammenfassung
+292-30	6269-6273	über	_	_	_	Zusammenfassung
+292-31	6274-6280	unsere	_	_	_	Zusammenfassung
+292-32	6281-6286	B-ORG	_	_	_	Zusammenfassung
+292-33	6287-6292	I-ORG	_	_	_	Zusammenfassung
+292-34	6293-6298	I-ORG	_	_	_	Zusammenfassung
+292-35	6299-6304	unter	_	_	_	Zusammenfassung
+292-36	6305-6312	B-PHONE	_	_	_	Zusammenfassung
+292-37	6313-6321	erfolgen	_	_	_	Zusammenfassung
+292-38	6321-6322	.	_	_	_	Zusammenfassung
+
+#Text=Medikation:
+293-1	6324-6334	Medikation	_	_	_	EntlassMedikation
+293-2	6334-6335	:	_	_	_	EntlassMedikation
+
+#Text=Beloc zok 95 mg 1-0-1
+294-1	6336-6341	Beloc	DRUG[1]	false[1]	_	EntlassMedikation
+294-2	6342-6345	zok	DRUG[1]	false[1]	_	EntlassMedikation
+294-3	6346-6348	95	STRENGTH[2]	false[2]	294-1[1_2]	EntlassMedikation
+294-4	6349-6351	mg	STRENGTH[2]	false[2]	_	EntlassMedikation
+294-5	6352-6353	1	FREQUENCY[3]	false[3]	294-1[1_3]	EntlassMedikation
+294-6	6353-6354	-	FREQUENCY[3]	false[3]	_	EntlassMedikation
+294-7	6354-6355	0	FREQUENCY[3]	false[3]	_	EntlassMedikation
+294-8	6355-6356	-	FREQUENCY[3]	false[3]	_	EntlassMedikation
+294-9	6356-6357	1	FREQUENCY[3]	false[3]	_	EntlassMedikation
+
+#Text=Delix 2,5 mg 2-0-1, bei guter Verträglichkeit erhöhen -LRB- Ziel 10mg/d -RRB-
+295-1	6358-6363	Delix	DRUG	false	_	EntlassMedikation
+295-2	6364-6367	2,5	STRENGTH[4]	false[4]	295-1[0_4]	EntlassMedikation
+295-3	6368-6370	mg	STRENGTH[4]	false[4]	_	EntlassMedikation
+295-4	6371-6372	2	FREQUENCY[5]	false[5]	295-1[0_5]	EntlassMedikation
+295-5	6372-6373	-	FREQUENCY[5]	false[5]	_	EntlassMedikation
+295-6	6373-6374	0	FREQUENCY[5]	false[5]	_	EntlassMedikation
+295-7	6374-6375	-	FREQUENCY[5]	false[5]	_	EntlassMedikation
+295-8	6375-6376	1	FREQUENCY[5]	false[5]	_	EntlassMedikation
+295-9	6376-6377	,	FREQUENCY[5]	false[5]	_	EntlassMedikation
+295-10	6378-6381	bei	_	_	_	EntlassMedikation
+295-11	6382-6387	guter	_	_	_	EntlassMedikation
+295-12	6388-6403	Verträglichkeit	_	_	_	EntlassMedikation
+295-13	6404-6411	erhöhen	_	_	_	EntlassMedikation
+295-14	6412-6417	-LRB-	STRENGTH[6]	false[6]	295-1[0_6]	EntlassMedikation
+295-15	6418-6422	Ziel	STRENGTH[6]	false[6]	_	EntlassMedikation
+295-16	6423-6427	10mg	STRENGTH[6]	false[6]	_	EntlassMedikation
+295-17	6427-6428	/	STRENGTH[6]	false[6]	_	EntlassMedikation
+295-18	6428-6429	d	STRENGTH[6]	false[6]	_	EntlassMedikation
+295-19	6430-6435	-RRB-	STRENGTH[6]	false[6]	_	EntlassMedikation
+
+#Text=Sertralin 50 mg 1-0-0
+296-1	6436-6445	Sertralin	ACTIVEING	false	_	EntlassMedikation
+296-2	6446-6448	50	STRENGTH[7]	false[7]	296-1[0_7]	EntlassMedikation
+296-3	6449-6451	mg	STRENGTH[7]	false[7]	_	EntlassMedikation
+296-4	6452-6453	1	FREQUENCY[8]	false[8]	296-1[0_8]	EntlassMedikation
+296-5	6453-6454	-	FREQUENCY[8]	false[8]	_	EntlassMedikation
+296-6	6454-6455	0	FREQUENCY[8]	false[8]	_	EntlassMedikation
+296-7	6455-6456	-	FREQUENCY[8]	false[8]	_	EntlassMedikation
+296-8	6456-6457	0	FREQUENCY[8]	false[8]	_	EntlassMedikation
+
+#Text=Mirtazapin 15 mg 0-0- -UNK-
+297-1	6458-6468	Mirtazapin	ACTIVEING	false	_	EntlassMedikation
+297-2	6469-6471	15	STRENGTH[9]	false[9]	297-1[0_9]	EntlassMedikation
+297-3	6472-6474	mg	STRENGTH[9]	false[9]	_	EntlassMedikation
+297-4	6475-6476	0	FREQUENCY[10]	false[10]	297-1[0_10]	EntlassMedikation
+297-5	6476-6477	-	FREQUENCY[10]	false[10]	_	EntlassMedikation
+297-6	6477-6479	0-	FREQUENCY[10]	false[10]	_	EntlassMedikation
+297-7	6480-6485	-UNK-	FREQUENCY[10]	false[10]	_	EntlassMedikation
+
+#Text=Pantozol 40 mg b. Bedarf
+298-1	6486-6494	Pantozol	DRUG	false	_	EntlassMedikation
+298-2	6495-6497	40	STRENGTH[11]	false[11]	298-1[0_11]	EntlassMedikation
+298-3	6498-6500	mg	STRENGTH[11]	false[11]	_	EntlassMedikation
+298-4	6501-6503	b.	FREQUENCY[12]	false[12]	298-1[0_12]	EntlassMedikation
+298-5	6504-6510	Bedarf	FREQUENCY[12]	false[12]	_	EntlassMedikation
+
+#Text=Selbstverständlich können Präparate mit gleichem Wirkstoff und gleicher Wirkung von anderen Herstellern verordnet werden.
+299-1	6512-6530	Selbstverständlich	_	_	_	Abschluss
+299-2	6531-6537	können	_	_	_	Abschluss
+299-3	6538-6547	Präparate	_	_	_	Abschluss
+299-4	6548-6551	mit	_	_	_	Abschluss
+299-5	6552-6560	gleichem	_	_	_	Abschluss
+299-6	6561-6570	Wirkstoff	_	_	_	Abschluss
+299-7	6571-6574	und	_	_	_	Abschluss
+299-8	6575-6583	gleicher	_	_	_	Abschluss
+299-9	6584-6591	Wirkung	_	_	_	Abschluss
+299-10	6592-6595	von	_	_	_	Abschluss
+299-11	6596-6603	anderen	_	_	_	Abschluss
+299-12	6604-6615	Herstellern	_	_	_	Abschluss
+299-13	6616-6625	verordnet	_	_	_	Abschluss
+299-14	6626-6632	werden	_	_	_	Abschluss
+299-15	6632-6633	.	_	_	_	Abschluss
+
+#Text=Wir danken für die vertrauensvolle Zusammenarbeit und stehen bei Rückfragen jederzeit gerne zur Verfügung.
+300-1	6635-6638	Wir	_	_	_	Abschluss
+300-2	6639-6645	danken	_	_	_	Abschluss
+300-3	6646-6649	für	_	_	_	Abschluss
+300-4	6650-6653	die	_	_	_	Abschluss
+300-5	6654-6669	vertrauensvolle	_	_	_	Abschluss
+300-6	6670-6684	Zusammenarbeit	_	_	_	Abschluss
+300-7	6685-6688	und	_	_	_	Abschluss
+300-8	6689-6695	stehen	_	_	_	Abschluss
+300-9	6696-6699	bei	_	_	_	Abschluss
+300-10	6700-6710	Rückfragen	_	_	_	Abschluss
+300-11	6711-6720	jederzeit	_	_	_	Abschluss
+300-12	6721-6726	gerne	_	_	_	Abschluss
+300-13	6727-6730	zur	_	_	_	Abschluss
+300-14	6731-6740	Verfügung	_	_	_	Abschluss
+300-15	6740-6741	.	_	_	_	Abschluss
+
+#Text=Mit freundlichen kollegialen Grüßen,
+301-1	6743-6746	Mit	_	_	_	Abschluss
+301-2	6747-6759	freundlichen	_	_	_	Abschluss
+301-3	6760-6771	kollegialen	_	_	_	Abschluss
+301-4	6772-6778	Grüßen	_	_	_	Abschluss
+301-5	6778-6779	,	_	_	_	Abschluss
+
+#Text=B-TITLE I-TITLE I-TITLE B-PER I-PER B-TITLE B-PER I-PER
+302-1	6785-6792	B-TITLE	_	_	_	Abschluss
+302-2	6793-6800	I-TITLE	_	_	_	Abschluss
+302-3	6801-6808	I-TITLE	_	_	_	Abschluss
+302-4	6809-6814	B-PER	_	_	_	Abschluss
+302-5	6815-6820	I-PER	_	_	_	Abschluss
+302-6	6821-6828	B-TITLE	_	_	_	Abschluss
+302-7	6829-6834	B-PER	_	_	_	Abschluss
+302-8	6835-6840	I-PER	_	_	_	Abschluss
+
+#Text=Ärztl. Direktor Fachärztin
+303-1	6841-6846	Ärztl	_	_	_	Abschluss
+303-2	6846-6847	.	_	_	_	Abschluss
+303-3	6848-6856	Direktor	_	_	_	Abschluss
+303-4	6857-6867	Fachärztin	_	_	_	Abschluss
