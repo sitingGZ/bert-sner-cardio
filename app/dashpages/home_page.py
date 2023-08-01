@@ -294,9 +294,9 @@ left_container_children = [select_domain, html.Br(), select_document,html.Br(),
                                 section_checklist,
                                  html.Hr()]
 left_container =  dmc.Card(id='left-container',  
-                           children=left_container_children,className = "two columns" , 
+                           children=left_container_children, 
                            style = { "overflow":'scroll',
-                            "background-color": "#f8f9fa", "height": "600px"}, withBorder=True,
+                            "background-color": "#f8f9fa", "height": "auto"}, withBorder=True,
                             shadow="sm",
                         radius="md",)
 # Make_right_container
@@ -329,8 +329,8 @@ container_exp_card = dmc.Card(children=[
                         dmc.CardSection(container_exp, inheritPadding=True, py='xs')], 
                               shadow="sm", radius="md",)
 
-right_container_children = [container_vis, html.Br(), container_exp_card]
-right_container= html.Div(id="right-container", children=right_container_children, className = "seven columns",)
+right_container_children = [container_vis,]
+right_container= html.Div(id="right-container", children=right_container_children)
 
 # Third column
 PALETTE_ent = Palette([], {l: colors_ent[i] for i, l in enumerate(list(multi_layer_suggested_terms.keys()))})
@@ -382,7 +382,7 @@ third_container_children_old = [default_types_ent,
                             default_types_risk]
 third_container_children = [default_types_ent]
 
-third_container = dmc.Card(id='types-container', children=third_container_children, className = "three columns", style = { "overflow-y":'auto',
+third_container = dmc.Card(id='types-container', children=third_container_children, style = { "overflow-y":'auto',
     "background-color": "#f8f9fa", "height": "1200px", }, withBorder=True,shadow="sm",radius="md")
 # Session store
 # Init_home_page_content(app_skeleton):
@@ -410,10 +410,14 @@ home_page_content = [store_prediction_files,
                             html.Div([title,
                             html.H5("(Cross-domain Clinical Entity Recognition with Unified Medical Semantic Types)")], 
                                     style= {'text-align':'center',  "background-color": "#f8f9fa"}), 
-                           left_container,
-                            right_container,
-                            third_container
-                                ]
+                           dbc.Row([dbc.Col([dbc.Row([dbc.Col(left_container, width=3), 
+                                                      dbc.Col(right_container, width=9)]),
+                                             dbc.Row(container_exp_card)]), 
+                                    dbc.Col(third_container, width=3)]),
+                           
+                               ]
+
+
 
 layout = html.Div(children = home_page_content, id = 'home-page-content')
 
