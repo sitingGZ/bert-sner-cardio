@@ -864,11 +864,11 @@ def make_sentence_explanation(active_page, word_scores):
 def make_sentence_annotation(revised_memory, group_sentences_classification_dict, active_page, tsv_id, section, selected_columns, reselect_btn, type_selected, group_selected):   
         #if len(sem_types) > 0 and 
         
-        if revised_memory is None or ctx.triggered_id == "annotate-vis-section-radios":
+        if tsv_id is not None and revised_memory is None or ctx.triggered_id == "annotate-vis-section-radios":
             #if len(revised_memory) == 0 and len(group_sentences_classification_dict) > 0: 
             print(ctx.triggered_id)
             print(tsv_id, section)
-            if section in group_sentences_classification_dict[tsv_id]:
+            if  section in group_sentences_classification_dict[tsv_id]:
                 revised_memory = deepcopy(group_sentences_classification_dict)
         
         if ctx.triggered_id == "annotate-reselect":
