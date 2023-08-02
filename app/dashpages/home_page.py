@@ -412,7 +412,8 @@ home_page_content = [store_prediction_files,
                                     style= {'text-align':'center',  "background-color": "#f8f9fa"}), 
                            dbc.Row([dbc.Col([dbc.Row([dbc.Col(left_container, width=3), 
                                                       dbc.Col(right_container, width=9)]),
-                                             dbc.Row(container_exp_card)]), 
+                                             html.Hr(),
+                                             dbc.Row(dbc.Col(container_exp_card, width=12))], width=9), 
                                     dbc.Col(third_container, width=3)]),
                            
                                ]

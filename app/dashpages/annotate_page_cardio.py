@@ -44,6 +44,7 @@ BASE_PATH = pathlib.Path(__file__).parent.resolve()
 RESULT_PATH_cardio = BASE_PATH.joinpath("cardiode/finetuned_ex4cds/shot_500").resolve()
 classification_csv = os.path.join(RESULT_PATH_cardio, "classification.csv")
 user_csv_path = os.path.join(RESULT_PATH_cardio, 'users.csv')
+definition_file_german = os.path.join(BASE_PATH, "data/tui_sem_dict_2001_german_removed_umlaut.json")
 #CLASSIFICATION_DB = pd.read_csv(classification_csv)
 #USER_DB = pd.read_csv(user_csv_path)
 
@@ -89,6 +90,8 @@ multi_layer_suggested_terms = {'Physical Object':
                                                "T301": "Verschlechter Zustand"},
                                "Factuality": {'T400': 'kein oder negiert', 'T401' : 'gering',  'T402' : 'fraglich','T403': 'zukueftig', 'T404': 'unwahrscheinlich'},
                                "Temporal": {'T500': 'aktuelles Ereignis', 'T501': 'Vergangenheit zum aktuellen Ereignis','T502': 'vergangenes Ereignis','T503': 'zukuenftiges Ereignis'}}
+
+TERM_DEF_DB = json.load(open(definition_file_german))
 
 FACTUALITY = {'T400': 'kein oder negiert', 'T401' : 'gering',  'T402' : 'fraglich','T403': 'zukueftig', 'T404': 'unwahrscheinlich'}
 
@@ -406,7 +409,8 @@ vis_groups =html.Div(children = [
         color = PALETTE_ent.get(g).text.value,
         multiline=True,
         width=100,
-        label = ' '.join([t + ': ' + w  for t,w in terms.items()]), position="top" ) for g, terms in multi_layer_suggested_terms.items()],
+        label = ' '.join([t + ': ' + w  for t,w in terms.items()]), position="top" ) for g, terms in multi_layer_suggested_terms.items()
+    ] ,
             )
 #vis_groups = html.Div(
 #    children = [dbc.Accordion(
@@ -435,6 +439,15 @@ vis_head = button_group = html.Div(
     ],
     className="radio-group",
 )
+
+def_offcanvas = dbc.Offcanvas([html.Div([
+    html.P([
+        dmc.Text('{}: {}'.format(t, name), style={'color': PALETTE_ent.get(group).text.value, 'font-size':'15px'}),
+        dmc.Text("" if t not in TERM_DEF_DB else TERM_DEF_DB[t][1])]) for t, name in terms.items()]) for group,terms in multi_layer_suggested_terms.items()
+    ],
+    id="annotate-vis-def-offcanvas", backdrop=False, is_open=False)
+
+open_def_offcanvas = dbc.Button("Check term definitions", id ="annotate-vis-open-definition")
 
 vis_classification = html.Div(id="annotate-vis-section-classification", style = {"height": "330px", "overflow": "scroll" })
 card_vis = dmc.Card(children=[vis_head, html.Hr(), vis_classification], style = {'borderWidth': '1px',
@@ -513,19 +526,12 @@ container_ann = html.Div(children = [ dbc.Row(children=[
 task_overview = [dbc.Label("Task Overview", style={'font-size':'20px', 'text-align':'center'}, color= 'primary'), dmc.Card(id='annotate-eval-overview', style={'borderWidth': '1px',
             'borderRadius': '2px', "background-color": "#ffffff","height": "auto", "overflow": "scroll" }, shadow="sm")]
 
-plot1 = [dbc.Label("Precision", style={'font-size':'20px', 'text-align':'center'}, color= 'primary'), dmc.Card(id='annotate-eval-plot1', style={'borderWidth': '1px',
-            'borderRadius': '2px', "background-color": "#ffffff","height": "auto", "overflow": "scroll" }, shadow="sm")]
 
-plot2 = [dbc.Label("Recall", style={'font-size':'20px', 'text-align':'center'}, color= 'primary'), dmc.Card(id='annotate-eval-plot2', style={'borderWidth': '1px',
-            'borderRadius': '2px', "background-color": "#ffffff","height": "auto", "overflow": "scroll" }, shadow="sm")]
-
-plot3 = [dbc.Label("F-score", style={'font-size':'20px','text-align':'center'},color= 'primary'), dmc.Card(id='annotate-eval-plot3', style={'borderWidth': '1px',
-            'borderRadius': '2px', "background-color": "#ffffff","height": "auto", "overflow": "scroll" }, shadow="sm")]
 
 container_vis = html.Div(children= [ 
                                      vis_head_row, 
                                       html.Hr(),
-                                    dbc.Row(children = [dbc.Col([vis_groups], width='auto'), dbc.Col([card_vis], width=10)]),
+                                    dbc.Row(children = [dbc.Col([vis_groups, open_def_offcanvas], width='auto'), dbc.Col([card_vis], width=10)]),
                                     html.Br(),
                                     ])
 
@@ -537,6 +543,16 @@ container_exp_anns = html.Div(children = [html.Hr(style={'border-top':'1px solid
                                                    ], width=4), 
                                               dbc.Col([container_ann, 
                                                    ], width=8)]),], style={'padding':'1rem 1rem'})
+
+plot1 = [dbc.Label("Precision", style={'font-size':'20px', 'text-align':'center'}, color= 'primary'), dmc.Card(id='annotate-eval-plot1', style={'borderWidth': '1px',
+            'borderRadius': '2px', "background-color": "#ffffff","height": "auto", "overflow": "scroll" }, shadow="sm")]
+
+plot2 = [dbc.Label("Recall", style={'font-size':'20px', 'text-align':'center'}, color= 'primary'), dmc.Card(id='annotate-eval-plot2', style={'borderWidth': '1px',
+            'borderRadius': '2px', "background-color": "#ffffff","height": "auto", "overflow": "scroll" }, shadow="sm")]
+
+plot3 = [dbc.Label("F-score", style={'font-size':'20px','text-align':'center'},color= 'primary'), dmc.Card(id='annotate-eval-plot3', style={'borderWidth': '1px',
+            'borderRadius': '2px', "background-color": "#ffffff","height": "auto", "overflow": "scroll" }, shadow="sm")]
+
 plots =   html.Div(children = [
                                 html.Hr(style={'border-top':'2px solid black'}),
                                 dbc.Row(children = [dbc.Col(task_overview, width=6),
@@ -564,6 +580,8 @@ store_spans_all_sentences = dcc.Store(id='annotate-spans-all-sentences-memory', 
 store_word_scores = dcc.Store(id = 'annotate-word-scores-memory', storage_type ='session')
 
 title = html.Div(id='annotate-interface-title')
+
+
 storage = [store_annotator,
         store_prediction_files,
                     store_classification_files,
@@ -581,8 +599,8 @@ storage = [store_annotator,
                     store_classification_section_db,
                     store_classification_annotator_section_db]
 
-home_page_content = [login_annotator, html.Hr(), 
-    dbc.Row([dbc.Col([left_container], width=2),
+home_page_content = [login_annotator, html.Hr(), def_offcanvas,
+    dbc.Row([dbc.Col([left_container], width=2), 
                         dbc.Col([container_vis], width=10)], style={'padding':'1rem 1rem'}),
                       container_exp_anns,
                      plots]
@@ -745,6 +763,13 @@ def get_group_sentences_classification(tsv_id, section, selected_groups, classif
     #print("sentences_classification_group ", sentences_classification_dict.keys() )
     return sentences_classification_dict
 
+@callback(Output("annotate-vis-def-offcanvas", "is_open"),
+          Input("annotate-vis-open-definition", 'n_clicks'))
+def open_definition_offcanvas(open_btn):
+    open_offcanvas = False
+    if ctx.triggered_id == "annotate-vis-open-definition":
+        open_offcanvas = True
+    return open_offcanvas
        
 @callback([Output("annotate-vis-section-classification", 'children'),
            Output('annotate-section-scores-dict-memory','data')], 
