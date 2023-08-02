@@ -14,6 +14,7 @@ from dash import MATCH, ALL
 from dash.dependencies import Output, Input, State
 from dash_extensions import Purify
 import ast
+import numpy as np
 
 from flask import Flask
 import pathlib
@@ -523,9 +524,6 @@ container_ann = html.Div(children = [ dbc.Row(children=[
           dbc.Col(dbc.Alert(id='annotate-alert-save'), width=10)])])
 #  dbc.Button('Update', id= "annotate-update-btn", n_clicks=0,  color="primary", size="sm"),
        
-task_overview = [dbc.Label("Task Overview", style={'font-size':'20px', 'text-align':'center'}, color= 'primary'), dmc.Card(id='annotate-eval-overview', style={'borderWidth': '1px',
-            'borderRadius': '2px', "background-color": "#ffffff","height": "auto", "overflow": "scroll" }, shadow="sm")]
-
 
 
 container_vis = html.Div(children= [ 
@@ -543,6 +541,12 @@ container_exp_anns = html.Div(children = [html.Hr(style={'border-top':'1px solid
                                                    ], width=4), 
                                               dbc.Col([container_ann, 
                                                    ], width=8)]),], style={'padding':'1rem 1rem'})
+
+section_progresses = {"Diagnosen": 150, "Befund": 150, "Zusammenfassung" :150} 
+progress_div = html.Div(children = [dbc.ListGroup([html.H5(sec), dbc.Progress(id ="annotate-progress-{}".format(sec) ,value=0, label="{}\%".format(0))]) for sec, total_amount in section_progresses.items()])
+task_overview = [dbc.Label("Task Overview", style={'font-size':'20px', 'text-align':'center'}, color= 'primary'), dmc.Card(id='annotate-eval-task-overview', children=[progress_div], style={'borderWidth': '1px',
+            'borderRadius': '2px', "background-color": "#ffffff","height": "auto", "overflow": "scroll" }, shadow="sm")]
+
 
 plot1 = [dbc.Label("Precision", style={'font-size':'20px', 'text-align':'center'}, color= 'primary'), dmc.Card(id='annotate-eval-plot1', style={'borderWidth': '1px',
             'borderRadius': '2px', "background-color": "#ffffff","height": "auto", "overflow": "scroll" }, shadow="sm")]
@@ -1022,8 +1026,27 @@ def make_revision(save_btn, revise_memory,  section, annotator, tsv_id):
     return save_btn , text
                    
 
-                   
-                    
+@callback([
+    Output("annotate-progress-{}".format(sec), "value") for sec in list(section_progresses.keys())] + 
+    [Output("annotate-progress-{}".format(sec), "label") for sec in list(section_progresses.keys())], 
+    Input("annotate-annotator-memory", 'data'))
+def update_progress( annotator):
+    sections = list(section_progresses.keys())
+    new_value = [0, 0, 0]
+    labels = [str(0), str(0), str(0)]
+    path_anntotator = os.path.join(RESULT_PATH_cardio, "classification_{}.json".format(annotator))
+    #if ctx.triggered_id == "annotate-save":
+        #path_anntotator = os.path.join(RESULT_PATH_cardio, "classification_{}.json".format(annotator))
+    if  os.path.exists(path_anntotator):
+            previous_saved = json.load(open(path_anntotator))
+            for tid, sections_saved in previous_saved.items():
+                for i, sec in enumerate(sections):
+                    if sec in sections_saved:
+                        new_value[i] += len(sections_saved[sec]["Physical Object"])
+        
+    new_value = [v/150*100 for v in new_value]
+    labels = [str(ratio)+"%" for ratio in new_value]
+    return new_value[0], new_value[1], new_value[2], labels[0], labels[1], labels[2]
             
             
         
