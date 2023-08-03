@@ -51,6 +51,14 @@ definition_file_german = os.path.join(BASE_PATH, "data/tui_sem_dict_2001_german_
 
 USER_DB = json.load(open(os.path.join(RESULT_PATH_cardio, 'users.json')))
 
+#ids_section_path = os.path.join(BASE_PATH, "to_annotate_ids.xlsx")
+#ids_df = pd.read_excel(ids_section_path)
+
+IDEAL_SECTIONS = ['Befunde', 'Diagnosen', 'Zusammenfassung']
+IDEAL_SECTIONS_IDS = {'Befunde': ['118', '122', '174', '190', '197', '198', '218', '225', '235', '247', '263', '275', '288'], 
+                      'Diagnosen': ['1', '13', '106', '109', '119', '132', '133', '150', '164', '165', '172'], 
+                      'Zusammenfassung': ['21', '101', '135', '149', '151', '209', '210', '219', '249', '251', '256', '259', '262', '264', '296', '311', '322']}
+
 
 #all_sections = list(set(CLASSIFICATION_DB['Section']))
 
@@ -357,7 +365,7 @@ tooltips = {}
 # Init_home_page_content(app_skeleton):
 prediction_file_paths, classification_file_paths = get_result_cardio_files(RESULT_PATH_cardio)
 #print(len(prediction_file_paths), len(classification_file_paths), 'length of files')
-TEXT_IDS = sorted([k.split('.')[0] for k in prediction_file_paths.keys()])
+#TEXT_IDS = sorted([k.split('.')[0] for k in prediction_file_paths.keys()])
 #sorted(TEXT_IDS)
 #print(text_ids, 'the text ids')
 
@@ -370,10 +378,14 @@ login_annotator = html.Div(children =
     dbc.Alert("Invalid Password. ", id='annotate-sigin-fail-alert', color="danger", is_open=False)]
 )
 
-select_document = html.Div(children = [dbc.Label('Document ID', style={'font-size': '20px'}),
-                                       dbc.Row([dbc.Col(dcc.Dropdown(id='annotate-selected-id'), width=8),
-                                                dbc.Col(dbc.Button("Next", id="annotate-next-doc", outline=True, color="primary",  size="sm")), 
-                                                dbc.Col(dbc.Alert("The last document!",id="alert-fade",dismissable=True,is_open=False))])])
+select_section = html.Div([
+    dbc.RadioItems(id = "annotate-select-section", options = [])])
+
+
+#select_document = html.Div(children = [dbc.Label('Document ID', style={'font-size': '20px'}),
+#                                       dbc.Row([dbc.Col(dcc.Dropdown(id='annotate-selected-id'), width=8),
+#                                                dbc.Col(dbc.Button("Next", id="annotate-next-doc", outline=True, color="primary",  size="sm")), 
+#                                                dbc.Col(dbc.Alert("The last document!",id="alert-fade",dismissable=True,is_open=False))])])
 # Row 2
 #section_checklist =  html.Div(children = [dbc.Label('Select sections for revision', style={'font-size': '20px'}), 
 #                                          dbc.Checklist(id='annotate-cardio-section-checklist', options = [{'label': s, 'value':s} for s in list(set(CLASSIFICATION_DB['Section']))], value = [], label_style={'font-size': '20px'})])
@@ -385,14 +397,24 @@ plot_data_statistic = html.Div(children = [dbc.Label('Number of sentences and to
 html_div_children = []
 html_div_dropdown_ids = {}
 
-left_container_children = [
-                        select_document, html.Hr(),
-                        html.Br(), 
-                         plot_data_statistic,
-                            html.Br(),
-                                 html.Hr(style={'border-top':'1px solid blue'}),
+#left_container_children = [
+#                        select_document, html.Hr(),
+#                        html.Br(), 
+#                         plot_data_statistic,
+#                            html.Br(),
+#                                 html.Hr(style={'border-top':'1px solid blue'}),
                                  
-                                 ]
+#                                 ]
+section_progresses = {"Diagnosen": 155, "Befunde": 157, "Zusammenfassung" :147} 
+progress_div = html.Div(children = [
+                                    dbc.ListGroup([html.H5(sec), 
+                                                   dbc.Progress(id ="annotate-progress-{}".format(sec) ,value=0, label="{}\%".format(0))]) for sec in IDEAL_SECTIONS])
+left_container_children = [dbc.Label('Select Section', style={'font-size': '20px'}), 
+                        select_section, html.Hr(),
+                        html.Br(), 
+                        dbc.Label('Progress', style={'font-size': '20px'}), 
+                        progress_div ]
+
 left_container =  dmc.Card(id='annotate-left-container',  
                            children=left_container_children, 
                            style = { "overflow":'scroll',
@@ -428,15 +450,16 @@ vis_groups =html.Div(children = [
 #vis_tabs = dmc.Tabs(id='annotate-container-vis-tabs', 
 #                                                    orientation="horizontal", variant='pills',
 #                                                    persistence_type='local')
-vis_head = button_group = html.Div(
-    [ dbc.RadioItems(
+vis_head = button_group = html.Div( 
+    [ dbc.Row([dbc.Col(dbc.Label("Document IDs"), width = 1),
+               dbc.Col(dbc.RadioItems(
             id="annotate-vis-section-radios",
             className="btn-group",
             inputClassName="btn-check",
             labelClassName="btn btn-outline-primary",
             labelCheckedClassName="active",
             label_style= {'font-size':'18px'}
-        ),
+        ))]),
     ],
     className="radio-group",
 )
@@ -448,7 +471,7 @@ def_offcanvas = dbc.Offcanvas([html.Div([
     ],
     id="annotate-vis-def-offcanvas", backdrop=False, is_open=False)
 
-open_def_offcanvas = dbc.Button("Check term definitions", id ="annotate-vis-open-definition")
+open_def_offcanvas = dbc.Button("Check type definitions", id ="annotate-vis-open-definition")
 
 vis_classification = html.Div(id="annotate-vis-section-classification", style = {"height": "330px", "overflow": "scroll" })
 card_vis = dmc.Card(children=[vis_head, html.Hr(), vis_classification], style = {'borderWidth': '1px',
@@ -542,9 +565,8 @@ container_exp_anns = html.Div(children = [html.Hr(style={'border-top':'1px solid
                                               dbc.Col([container_ann, 
                                                    ], width=8)]),], style={'padding':'1rem 1rem'})
 
-section_progresses = {"Diagnosen": 150, "Befund": 150, "Zusammenfassung" :150} 
-progress_div = html.Div(children = [dbc.ListGroup([html.H5(sec), dbc.Progress(id ="annotate-progress-{}".format(sec) ,value=0, label="{}\%".format(0))]) for sec, total_amount in section_progresses.items()])
-task_overview = [dbc.Label("Task Overview", style={'font-size':'20px', 'text-align':'center'}, color= 'primary'), dmc.Card(id='annotate-eval-task-overview', children=[progress_div], style={'borderWidth': '1px',
+
+task_overview = [dbc.Label("Task Overview", style={'font-size':'20px', 'text-align':'center'}, color= 'primary'), dmc.Card(id='annotate-eval-task-overview', style={'borderWidth': '1px',
             'borderRadius': '2px', "background-color": "#ffffff","height": "auto", "overflow": "scroll" }, shadow="sm")]
 
 
@@ -569,8 +591,8 @@ store_tsv_sentences = dcc.Store(id='annotate-tsv-or-line-sentences-memory', stor
 store_section_tab = dcc.Store(id='annotate-section-tab-memory', storage_type = 'session')
 store_section_sentence = dcc.Store(id='annotate-section-sentence-memory', storage_type='session')
 store_section_scores = dcc.Store(id='annotate-section-scores-dict-memory', storage_type='session')
-store_sentences_classification = dcc.Store(id="annotate-sentences-classification-memory", storage_type="local")
-store_sentences_classification_revision = dcc.Store(id = "annotate-sentences-revision-memory", storage_type= "local")
+store_sentences_classification = dcc.Store(id="annotate-sentences-classification-memory", storage_type="session")
+store_sentences_classification_revision = dcc.Store(id = "annotate-sentences-revision-memory", storage_type= "session")
 store_prediction_files = dcc.Store(id="annotate-prediction-files-memory", storage_type="session", data=prediction_file_paths)
 store_classification_files = dcc.Store(id="annotate-classification-files-memory", storage_type = "session", data=classification_file_paths)
 store_prediction_dict = dcc.Store(id='annotate-prediction-memory', storage_type='session')
@@ -611,25 +633,27 @@ home_page_content = [login_annotator, html.Hr(), def_offcanvas,
 
 layout = html.Div(children = storage + home_page_content  , id='annotate-home-page-content')
 
-@callback(Output("annotate-selected-id", "value"),
-          [Input("annotate-selected-id", "value"),
-           Input("annotate-next-doc", 'n_clicks')],
-          State('annotate-email', 'value'))
-def next_id(current_id, next_btn, annotator):
-    if ctx.triggered_id == "annotate-next-doc":
-        if annotator is not None:
-            annotator_db = USER_DB[annotator]
-            if  current_id is None:
-                current_id = annotator_db.loc[0, 'last_id']
+#@callback(Output("annotate-selected-id", "value"),
+#          [Input("annotate-selected-id", "value"),
+#           Input("annotate-next-doc", 'n_clicks')],
+#          State('annotate-email', 'value'))
+#def next_id(current_id, next_btn, annotator):
+#    if ctx.triggered_id == "annotate-next-doc":
+#        if annotator is not None:
+#            annotator_db = USER_DB[annotator]
+#            if  current_id is None:
+#                current_id = annotator_db.loc[0, 'last_id']
     
-        if current_id is not None:
+#        if current_id is not None:
             
-            current_id_index = TEXT_IDS.index(current_id)
-            current_id_index_next = min(current_id_index+1, len(TEXT_IDS)-1)
-            current_id = TEXT_IDS[current_id_index_next]
-    return current_id
+#            current_id_index = TEXT_IDS.index(current_id)
+#            current_id_index_next = min(current_id_index+1, len(TEXT_IDS)-1)
+#            current_id = TEXT_IDS[current_id_index_next]
+#    return current_id
 
-@callback([Output('annotate-selected-id', 'options'),
+
+
+@callback([Output('annotate-select-section', 'options'),
            Output('annotate-password', 'valid'),
            Output('annotate-sigin-fail-alert', 'is_open'),
            Output("annotate-annotator-memory", 'data')],
@@ -640,17 +664,18 @@ def next_id(current_id, next_btn, annotator):
 def sign_in(user_email, password, login_btn):
     user_password_valid = False
     login_fail = False
-    id_options = []
+    section_options = []
     if ctx.triggered_id == "annotate-login":
         user_current_db = USER_DB[user_email]
         if password == str(user_current_db['password']):
                 user_password_valid = True
-                id_options = [{'label':d, 'value':d} for d in TEXT_IDS]
+                #section_options = [{'label':d, 'value':d} for d in TEXT_IDS]
+                section_options = [{'label': sec,  'value': sec} for sec in IDEAL_SECTIONS]
                
         else:
             login_fail = True
                                                     
-    return id_options, user_password_valid, login_fail, user_email
+    return section_options, user_password_valid, login_fail, user_email
 
 
 @callback(Output('annotate-vis-selected-groups-memory', 'data'),
@@ -683,15 +708,25 @@ def return_label_types(group_name):
             #value = [t for t, w in multi_layer_suggested_terms[group_name].items()]
     return options
 
-@callback([ Output('annotate-table-number-of-sents-tokens', 'children'),
+@callback([Output('annotate-vis-section-radios', 'options'),
+            Output('annotate-vis-section-radios', 'value')],
+          Input('annotate-select-section', 'value'),
+          State('annotate-annotator-memory', 'data'))
+def make_ids_radios(section, annotator):
+    options = []
+    if section is not None:
+        options = [{'label': d, 'value': d } for d in IDEAL_SECTIONS_IDS[section]]
+    return options, None
+        
+@callback([
             Output('annotate-tsv-or-line-sentences-memory', 'data'),
             Output('annotate-prediction-memory', 'data'),
-            Output('annotate-classification-memory', 'data'), 
-            Output('annotate-vis-section-radios', 'options'),
-            Output('annotate-vis-section-radios', 'value')], 
-          Input('annotate-selected-id', 'value'),
-          State('annotate-annotator-memory', 'data'))
-def get_cardio_tsv_sentences(text_id, annotator):
+            Output('annotate-classification-memory', 'data')], 
+        Input('annotate-vis-section-radios', 'value'),
+         [State('annotate-select-section', 'value'),
+             State('annotate-annotator-memory', 'data'),
+          ])
+def get_cardio_tsv_sentences(text_id, section, annotator):
     sentences_dict = {}
     prediction_dict = {}
     classification_dict = {}
@@ -710,8 +745,11 @@ def get_cardio_tsv_sentences(text_id, annotator):
     if text_id is not None:
         prediction_dict, classification_dict_original = return_json_cardio_dict(text_id, RESULT_PATH_cardio, prediction_file_paths=prediction_file_paths, classification_file_paths=classification_file_paths)
         #section_options, section_values = make_section_options(list(prediction_dict.keys()))
-        section_radios_options = [{'label' : s, 'value' :s} for s in prediction_dict.keys()]
-        for section, section_classification in classification_dict_original.items():
+        #section_radios_options = [{'label' : s, 'value' :s} for s in prediction_dict.keys()]
+        
+        #for section, section_classification in classification_dict_original.items():
+        if section in classification_dict_original: 
+            section_classification = classification_dict_original[section]
             classification_dict[section] = {}
             for group in section_classification.keys():
                 if group == "Zeitliche Information":
@@ -723,48 +761,49 @@ def get_cardio_tsv_sentences(text_id, annotator):
         sentences_dict = retrieve_sentences(tsv_lines)
         
         
-        for sec in section_radios_options:
+        #for sec in section_radios_options:
             #print(sec)
-            sentence_ids = prediction_dict[sec['label']]['sentence_ids']
-            sentences, number_of_sentences, number_of_tokens = get_section_sentences(sentence_ids, sentences_dict)
-            number_of_sents_tokens_list.append({'Section': sec['label'], 'NumSentences': number_of_sentences, 'NumTokens' : number_of_tokens})
-        df = pd.DataFrame(number_of_sents_tokens_list)
-        number_of_sents_tokens_table = dash_table.DataTable(df.to_dict('records'), [{"name": i, "id": i} for i in df.columns], style_cell={'textAlign': 'left'}, style_table={ 'overflowX': 'auto'} )
+        #    sentence_ids = prediction_dict[sec['label']]['sentence_ids']
+        #    sentences, number_of_sentences, number_of_tokens = get_section_sentences(sentence_ids, sentences_dict)
+        #    number_of_sents_tokens_list.append({'Section': sec['label'], 'NumSentences': number_of_sentences, 'NumTokens' : number_of_tokens})
+        #df = pd.DataFrame(number_of_sents_tokens_list)
+        #number_of_sents_tokens_table = dash_table.DataTable(df.to_dict('records'), [{"name": i, "id": i} for i in df.columns], style_cell={'textAlign': 'left'}, style_table={ 'overflowX': 'auto'} )
         #selected_sec_default = list(prediction_dict.keys())[0]
-    return number_of_sents_tokens_table, sentences_dict, prediction_dict, classification_dict, section_radios_options, None
+    return sentences_dict, prediction_dict, classification_dict
         
 @callback(Output("annotate-sentences-classification-memory", 'data'),
-          [Input('annotate-selected-id', 'value'), 
+          [
            Input('annotate-vis-section-radios', 'value'),
          Input('annotate-vis-selected-groups-memory', 'data'),
          Input('annotate-classification-memory', 'data'),
          Input("annotate-sentences-classification-memory", 'data')],
-          State("annotate-annotator-memory", 'data'))
-def get_group_sentences_classification(tsv_id, section, selected_groups, classification_dict, sentences_classification_dict, annotator):
+          [State('annotate-select-section', 'value'), 
+              State("annotate-annotator-memory", 'data')])
+def get_group_sentences_classification(tsv_id, selected_groups, classification_dict, sentences_classification_dict, section, annotator):
    
     if sentences_classification_dict is None:
          sentences_classification_dict = {}
         
-    if  tsv_id is not None:
-        if tsv_id not in sentences_classification_dict:
-            sentences_classification_dict[tsv_id] = {}
+    if  section is not None and section in classification_dict:
+        if section not in sentences_classification_dict:
+            sentences_classification_dict[section] = {}
             
         path_annotator = os.path.join(RESULT_PATH_cardio, "classification_{}.json".format(annotator))
-        if section is not None and selected_groups is not None: 
+        if tsv_id is not None and selected_groups is not None: 
             if os.path.exists(path_annotator):    
                 CLASSIFICATION_DB_ANNOTATOR = json.load(open(path_annotator))
-                if tsv_id not in CLASSIFICATION_DB_ANNOTATOR:
-                    sentences_classification_dict[tsv_id][section] = {group : classification_dict[section][group] for group in selected_groups}
+                if section not in CLASSIFICATION_DB_ANNOTATOR:
+                    sentences_classification_dict[section][tsv_id] = {group : classification_dict[section][group] for group in selected_groups}
                 else:
-                    if section in CLASSIFICATION_DB_ANNOTATOR[tsv_id]:
-                        sentences_classification_dict[tsv_id][section] = CLASSIFICATION_DB_ANNOTATOR[tsv_id][section]
+                    if tsv_id in CLASSIFICATION_DB_ANNOTATOR[section]:
+                        sentences_classification_dict[section][tsv_id] = CLASSIFICATION_DB_ANNOTATOR[section][tsv_id]
                     else:
-                        sentences_classification_dict[tsv_id][section] = {group : classification_dict[section][group] for group in selected_groups}
+                        sentences_classification_dict[section][tsv_id] = {group : classification_dict[section][group] for group in selected_groups}
             else:
-                sentences_classification_dict[tsv_id][section] = {group : classification_dict[section][group] for group in selected_groups}
+                sentences_classification_dict[section][tsv_id] = {group : classification_dict[section][group] for group in selected_groups}
         
-                    
-    #print("sentences_classification_group ", sentences_classification_dict.keys() )
+    print(tsv_id, section)
+    print("sentences_classification_group ", sentences_classification_dict.keys() )
     return sentences_classification_dict
 
 @callback(Output("annotate-vis-def-offcanvas", "is_open"),
@@ -777,7 +816,7 @@ def open_definition_offcanvas(open_btn):
        
 @callback([Output("annotate-vis-section-classification", 'children'),
            Output('annotate-section-scores-dict-memory','data')], 
-        [Input('annotate-selected-id', 'value'),
+        [
             Input("annotate-sentences-classification-memory", 'data'),
          Input("annotate-sentences-revision-memory", 'data'),
          Input('annotate-vis-section-radios', 'value'), 
@@ -785,23 +824,25 @@ def open_definition_offcanvas(open_btn):
          Input('annotate-tsv-or-line-sentences-memory', 'data'),
          Input('annotate-prediction-memory', 'data')
          ], 
-        State("annotate-annotator-memory", 'data'))
-def make_section_vis(tsv_id, group_sentences_classification_dict, group_sentences_revision_dict, section, selected_groups, sentences_dict, prediction_current, annotator):
+        [State('annotate-select-section', 'value'),
+            State("annotate-annotator-memory", 'data')])
+def make_section_vis( group_sentences_classification_dict, group_sentences_revision_dict, tsv_id, selected_groups, sentences_dict, prediction_current, section, annotator):
         vis_classification = []
         spans_all_sentences = []
         selected_types = []
         scores_dict_sec = {}
+        print('prediction current ', prediction_current.keys())
         #print('group sentences classification dict ', group_sentences_classification_dict)
-        if tsv_id in group_sentences_classification_dict and section in group_sentences_classification_dict[tsv_id]:
-            if group_sentences_revision_dict is not None and tsv_id in group_sentences_revision_dict:
+        if section in group_sentences_classification_dict and tsv_id in group_sentences_classification_dict[section]:
+            if group_sentences_revision_dict is not None and section in group_sentences_revision_dict:
                 #print('revision dict ', group_sentences_revision_dict)
-                if section in group_sentences_revision_dict[tsv_id]:
-                    current_sec_sentences_classification_dict = group_sentences_revision_dict[tsv_id][section]
+                if tsv_id in group_sentences_revision_dict[section]:
+                    current_sec_sentences_classification_dict = group_sentences_revision_dict[section][tsv_id]
                 else:
-                     current_sec_sentences_classification_dict = group_sentences_classification_dict[tsv_id][section]
+                     current_sec_sentences_classification_dict = group_sentences_classification_dict[section][tsv_id]
             else:
                 #print("memory dict", group_sentences_classification_dict)
-                current_sec_sentences_classification_dict = group_sentences_classification_dict[tsv_id][section]
+                current_sec_sentences_classification_dict = group_sentences_classification_dict[section][tsv_id]
             
             
             if selected_groups is not None and len(selected_groups) > 0:
@@ -832,9 +873,8 @@ def make_section_vis(tsv_id, group_sentences_classification_dict, group_sentence
                 [Input('annotate-prediction-memory', 'data'), 
                  Input('annotate-tsv-or-line-sentences-memory', 'data'), 
                  Input('annotate-select-groups', 'value'),
-                 Input('annotate-vis-section-radios', 'value')
                  ],
-                 prevent_initial_call=True)
+                State('annotate-select-section', 'value'))
 def get_sentences_for_explanation(scores_dict, tsv_sentences, group, section):
         
         main_children = [] 
@@ -844,7 +884,9 @@ def get_sentences_for_explanation(scores_dict, tsv_sentences, group, section):
         #if len(term_types) > 0:
         sem_types = list(multi_layer_suggested_terms[group].values())
 
-        if len(sem_types) > 0 and section :
+        if len(sem_types) > 0 and scores_dict is not None and section in scores_dict:
+                print(scores_dict.keys())
+                
                 scores_dict_sec, sentence_ids = get_scores_dict_by_sec(scores_dict, section)
                 word_scores = get_sentence_scores_by_type_cardio(scores_dict_sec,  sentence_ids=sentence_ids, tsv_sentences=tsv_sentences, sem_types=sem_types, ca=group)
               
@@ -884,21 +926,26 @@ def make_sentence_explanation(active_page, word_scores):
         [Input("annotate-sentences-revision-memory", 'data'),
         Input("annotate-sentences-classification-memory", 'data'), 
         Input("annotate-exp-pagination-sentence-id", 'active_page'),
-        Input('annotate-selected-id', 'value'),
+        
         Input('annotate-vis-section-radios', 'value'),
         Input("annotate-revise-table", 'selected_columns'),
         Input("annotate-reselect", 'n_clicks'),         
         Input('annotate-select-group-types', 'value'),
-        Input('annotate-select-groups', 'value')])
-def make_sentence_annotation(revised_memory, group_sentences_classification_dict, active_page, tsv_id, section, selected_columns, reselect_btn, type_selected, group_selected):   
+        Input('annotate-select-groups', 'value')],
+        State('annotate-select-section', 'value'))
+def make_sentence_annotation(revised_memory, group_sentences_classification_dict, active_page, tsv_id,  selected_columns, reselect_btn, type_selected, group_selected, section):   
         #if len(sem_types) > 0 and 
-        
-        if tsv_id is not None and revised_memory is None or ctx.triggered_id == "annotate-vis-section-radios":
+        print(section, 'section')
+        if revised_memory is None:
+            revised_memory = {}
+        else:
+            if section not in revised_memory and  section in group_sentences_classification_dict:
+        #ctx.triggered_id == "annotate-vis-section-radios":
             #if len(revised_memory) == 0 and len(group_sentences_classification_dict) > 0: 
-            print(ctx.triggered_id)
-            print(tsv_id, section)
-            if  section in group_sentences_classification_dict[tsv_id]:
-                revised_memory = deepcopy(group_sentences_classification_dict)
+                print(ctx.triggered_id)
+                #print(tsv_id, section)
+                #if  tsv_id in group_sentences_classification_dict[section]:
+                revised_memory[section] = deepcopy(group_sentences_classification_dict[section])
         
         if ctx.triggered_id == "annotate-reselect":
                 selected_columns = []
@@ -912,22 +959,27 @@ def make_sentence_annotation(revised_memory, group_sentences_classification_dict
         #rows_tokens = []
         #rows_groups = {g: [] for g in multi_layer_suggested_terms.keys()}
         current_page = 0
-        if revised_memory is not None and len(revised_memory) > 0 and tsv_id is not None and section is not None: 
+        #print('revised memory for annotation', revised_memory.keys(), 'check')
+        if revised_memory is not None and len(revised_memory) > 0 and section in revised_memory: 
+            if tsv_id in group_sentences_classification_dict[section] and tsv_id not in revised_memory[section]:
+                revised_memory[section][tsv_id] = deepcopy(group_sentences_classification_dict[section][tsv_id])
+            
             if ctx.triggered_id == "annotate-select-group-types" and type_selected is not None:
                     #print(ctx.triggered_id, "annotation ")
                     #print(group_selected, type_selected, active_page, )
                     #print("type selected columns and len(selected columns)", type(selected_columns), len(selected_columns))
                     if type_selected is not None and len(selected_columns) >= 1:
                         #print("type selected ", type_selected, "column selected ", selected_columns[0])
-                        if len(revised_memory[tsv_id][section][group_selected]) >= active_page-1:
+                        if len(revised_memory[section][tsv_id][group_selected]) >= active_page-1:
                             #print("current page ", active_page)
                             for sel_col in selected_columns:
-                                revised_memory[tsv_id][section][group_selected][active_page-1][int(sel_col)][2] = type_selected
+                                revised_memory[section][tsv_id][group_selected][active_page-1][int(sel_col)][2] = type_selected
                                 #print("changed revised_memory ")
             
-            #print('revised memory for annotation', revised_memory)
-            if section in revised_memory[tsv_id]:
-                for  group, sentences_classification in revised_memory[tsv_id][section].items():
+            print('revised memory for annotation', revised_memory.keys())
+            
+            if tsv_id in revised_memory[section]:
+                for  group, sentences_classification in revised_memory[section][tsv_id].items():
                     #print(sentences_classification)
                     #sentences_classification = revised_memory[][group]
              
@@ -949,7 +1001,7 @@ def make_sentence_annotation(revised_memory, group_sentences_classification_dict
                             
                             data[group].append(triple[2])
             
-                missing_groups = list(set(multi_layer_suggested_terms.keys()) - set(group_sentences_classification_dict[tsv_id][section].keys()))
+                missing_groups = list(set(multi_layer_suggested_terms.keys()) - set(group_sentences_classification_dict[section][tsv_id].keys()))
                 if len(missing_groups) > 0:
                     for g in missing_groups:
                         data[g] = ['O'] * len(data['Token'])            
@@ -990,16 +1042,16 @@ def make_sentence_annotation(revised_memory, group_sentences_classification_dict
            Input("annotate-sentences-revision-memory", 'data'),
             Input('annotate-vis-section-radios', 'value')], 
             [State("annotate-annotator-memory", 'data'),
-            State('annotate-selected-id', 'value')])
-def make_revision(save_btn, revise_memory,  section, annotator, tsv_id):
+            State('annotate-select-section', 'value')])
+def make_revision(save_btn, revise_memory,  tsv_id, annotator, section):
     text = ""
     save_btn = False
     last_save_id = None
     
     if ctx.triggered_id == "annotate-save" and tsv_id is not None:
         if annotator is not  None and revise_memory is not None and len(revise_memory) > 0:
-            current_revision_dict = {tsv_id : {
-                    section: revise_memory[tsv_id][section]
+            current_revision_dict = {section : {
+                    tsv_id: revise_memory[section][tsv_id]
                 }
                     }
             
@@ -1009,8 +1061,8 @@ def make_revision(save_btn, revise_memory,  section, annotator, tsv_id):
             else:
                 previous_saved = json.load(open(path_anntotator))
                 #print(len(previous_saved), "before append ")
-                if tsv_id in previous_saved:
-                    previous_saved[tsv_id][section] = revise_memory[tsv_id][section]
+                if section in previous_saved:
+                    previous_saved[section][tsv_id] = revise_memory[section][tsv_id]
  
                 else:
                     previous_saved.update(current_revision_dict)
@@ -1019,7 +1071,7 @@ def make_revision(save_btn, revise_memory,  section, annotator, tsv_id):
                 json.dump(previous_saved, open(path_anntotator, 'w'), indent=4)
             # columns = []'ID', 'Section', 'Group', 'Annotator', 'Sentence_idx', 'Classification'
 
-                text = "Save revision of document_{} section_{} to local file for current annotator {} .".format(tsv_id, section, annotator)
+                text = "Save revision of section_{} document_{} to local file for current annotator {} .".format(section, tsv_id,  annotator)
                 #print(text)
                 save_btn = True
             
@@ -1027,25 +1079,37 @@ def make_revision(save_btn, revise_memory,  section, annotator, tsv_id):
                    
 
 @callback([
-    Output("annotate-progress-{}".format(sec), "value") for sec in list(section_progresses.keys())] + 
-    [Output("annotate-progress-{}".format(sec), "label") for sec in list(section_progresses.keys())], 
-    Input("annotate-annotator-memory", 'data'))
-def update_progress( annotator):
+    Output("annotate-progress-{}".format(sec), "value") for sec in IDEAL_SECTIONS] + 
+    [Output("annotate-progress-{}".format(sec), "label") for sec in IDEAL_SECTIONS], 
+    [Input("annotate-save", 'n_clicks'),
+     Input('annotate-login', 'n_clicks'),
+     Input("annotate-annotator-memory", 'data')])
+def update_progress(save_btn, login, annotator):
     sections = list(section_progresses.keys())
+    section_full = {"Diagnosen": 155, "Befunde": 157, "Zusammenfassung" :147} 
     new_value = [0, 0, 0]
+    
     labels = [str(0), str(0), str(0)]
-    path_anntotator = os.path.join(RESULT_PATH_cardio, "classification_{}.json".format(annotator))
-    #if ctx.triggered_id == "annotate-save":
-        #path_anntotator = os.path.join(RESULT_PATH_cardio, "classification_{}.json".format(annotator))
-    if  os.path.exists(path_anntotator):
-            previous_saved = json.load(open(path_anntotator))
-            for tid, sections_saved in previous_saved.items():
-                for i, sec in enumerate(sections):
-                    if sec in sections_saved:
-                        new_value[i] += len(sections_saved[sec]["Physical Object"])
+    
+    if annotator is not None:
+        if ctx.triggered_id == "annotate-login" or ctx.triggered_id == "annotate-save":
+            path_anntotator = os.path.join(RESULT_PATH_cardio, "classification_{}.json".format(annotator))
+            #if ctx.triggered_id == "annotate-save":
+            #path_anntotator = os.path.join(RESULT_PATH_cardio, "classification_{}.json".format(annotator))
+            if  os.path.exists(path_anntotator):
+                previous_saved = json.load(open(path_anntotator))
+                #for tid, sections_saved in previous_saved.items():
+                for i, sec in enumerate(IDEAL_SECTIONS):
+                    if sec in previous_saved:
+                        tid_saved = previous_saved[sec]
+                        for tid, terms in tid_saved.items():
+                            len_sentences = len(list(terms.values())[0])
+                            new_value[i] += len_sentences
+                            print(new_value, 'progress of section ', sec)
         
-    new_value = [v/150*100 for v in new_value]
-    labels = [str(ratio)+"%" for ratio in new_value]
+        
+    new_value = [v/150*100 for i, v in enumerate(new_value)]
+    labels = [str(ratio)[:4]+"%" for ratio in new_value]
     return new_value[0], new_value[1], new_value[2], labels[0], labels[1], labels[2]
             
             
