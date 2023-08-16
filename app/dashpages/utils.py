@@ -8,6 +8,18 @@ import os, json
 # Dataset utils, 
 # Predicted results
 
+def get_result_cardio_files(result_path):
+    prediction_file_paths = {f.split('_')[0]: f for f in os.listdir(result_path) if '_score' in f}
+    classification_file_paths = {f.split('_')[0]: f for f in os.listdir(result_path) if 'ner_' in f}
+    return prediction_file_paths, classification_file_paths
+
+def return_json_cardio_dict(tsv_id,result_path, prediction_file_paths, classification_file_paths):
+    if type(tsv_id) != 'str' or 'tsv' not in tsv_id:
+        tsv_id = '{}.tsv'.format(tsv_id)
+    prediction_dict = json.load(open(os.path.join(result_path, prediction_file_paths[tsv_id])))
+    classification_dict = json.load(open(os.path.join(result_path, classification_file_paths[tsv_id])))
+    return prediction_dict, classification_dict
+
 # Ex4CDS token spans 
 def get_ex4cds_text_id(json_file_name):
     current_file = json_file_name.split('.')[0]
