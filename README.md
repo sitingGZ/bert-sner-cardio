@@ -34,6 +34,7 @@ To capture different aspects of medical information commonly found in clinical t
 
 Login: select user email -> password -> login -> select section
 Select Document ID
+
 See more details in Annotation_instruction.pdf
 
 ## System Demo Screencast
