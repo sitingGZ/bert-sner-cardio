@@ -34,3 +34,9 @@ To capture different aspects of medical information commonly found in clinical t
 
 Login: select user email -> password -> login -> select section
 Select Document ID
+See more details in Annotation_instruction.pdf
+
+## System Demo Screencast
+
+https://github.com/sitingGZ/bert-sner-cardio/assets/33466124/ef413b30-8833-491d-a121-96b7ee84ad63
+
