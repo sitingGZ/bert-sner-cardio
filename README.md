@@ -21,15 +21,13 @@ To capture different aspects of medical information commonly found in clinical t
 
     Conceptual Entity: This group represents abstract ideas or attributes related to clinical concepts and includes clinical attributes, quantitative concepts (e.g., measurements), signs or symptoms, laboratory or test results, and temporal concepts (e.g., time-related information).
 
-    Activity: The Activity group covers different medical procedures and actions, including laboratory procedures, diagnostic procedures, and therapeutic or preventive procedures.
+    Procedure: The Activity group covers different medical procedures and actions, including laboratory procedures, diagnostic procedures, and therapeutic or preventive procedures.
 
     Phenomenon or Process: This group encompasses the entities that represent various physiological and pathological states and processes, such as injuries, physiological functions, pathological functions, diseases, and mental or behavioural disorders. 
 
     Health State: Health State refers to entities representing the condition or state of an individual, either in a healthy state or experiencing a worsening health condition.
 
     Factuality: This group includes entities that indicate the certainty or likelihood of an event or concept. Entities in this group convey information about negated, slight, questionable, future, or unlikely events or states.
-
-    Temporal: The Temporal group contains phrases about the timing or occurrence of events, including current events, recent past events, distant past events, and future events.
 
 
 ## Annotation Guidelines
